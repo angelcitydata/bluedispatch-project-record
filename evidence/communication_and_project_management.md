@@ -57,3 +57,52 @@ Quote
 Significance
 
 Shows written confirmation of the agreed go-live date and a scheduled launch-day meeting, evidencing coordinated communication around launch.
+
+## COMMUNICATION-004
+
+Date: Dec 16, 2025  
+Meeting / Source: Email  
+Source File: `source/emails/joe_morales_2025_12_16.txt`  
+Author: Joe Morales (Director of Marketing)
+
+Quote
+
+> "Hey Brian,
+>
+> Let's go ahead with the soft opening. We also appreciate the updates, and great job on that clearance from Google, those approvals are TOUGH!
+>
+> Thanks,
+>
+> Joe Morales | Director of Marketing"
+
+Significance
+
+Client (Joe Morales) approves proceeding with soft opening and acknowledges updates and Google Play clearance, documenting a clear go-ahead decision and positive acknowledgment of store approval work.
+
+## COMMUNICATION-005
+
+Date: Dec 15, 2025  
+Meeting / Source: Email  
+Source File: `source/emails/bonnie_lucas_2025_12_2025.txt`  
+Author: Bonnie Lucas (President / CEO)
+
+Quote
+
+> "Hi All,
+>
+> This is good news. I have a couple of questions…
+>
+> How long does Google normally take?
+> Will we launch Apple App before the Android? (if so, how does that work???)
+>
+> What is the process going to be to launch the app?
+>
+> Thanks guys!! Great work!
+>
+> Thank You and be safe!
+>
+> Bonnie Lucas | President / CEO"
+
+Significance
+
+Client executive acknowledges good news (e.g. store progress), asks about Google timing, Apple vs. Android launch order, and launch process, and thanks the team—documenting ongoing project communication and process questions from leadership.

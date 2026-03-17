@@ -84,39 +84,7 @@ Strong client sentiment that launch (following successful store approvals) is a 
 Date: Jan 6, 2026  
 Meeting: Pre-launch planning  
 Source File: `source/transcripts/2026-01/GMT20260106-200156_Recording_otter_ai.txt`  
-Speaker: Unknown Speaker (client)  
-Timestamp: 16:19
-
-Quote
-
-> "what else that's about it. Like I said, For updates, we're just chugging along with our little plan, and we're ready to go next Friday"
-
-Significance
-
-Client states they are following the plan and are ready to go for the scheduled Friday (Jan 16) launch.
-
-## SENTIMENT-007
-
-Date: Jan 6, 2026  
-Meeting: Pre-launch planning (go-live time discussion)  
-Source File: `source/transcripts/2026-01/GMT20260106-200156_Recording_otter_ai.txt`  
-Speaker: Unknown Speaker (client)  
-Timestamp: 19:18
-
-Quote
-
-> "Yeah, I'm excited on that."
-
-Significance
-
-Client expresses excitement when discussing the chosen go-live time and launch-day plan.
-
-## SENTIMENT-008
-
-Date: Jan 6, 2026  
-Meeting: Pre-launch planning  
-Source File: `source/transcripts/2026-01/GMT20260106-200156_Recording_otter_ai.txt`  
-Speaker: Joe (client)  
+Speaker: Joe Morales  
 Timestamp: 37:56
 
 Quote
@@ -127,7 +95,7 @@ Significance
 
 Client explicitly treats January 16 as the fixed go date and frames decisions around being ready to launch on that day.
 
-## SENTIMENT-009
+## SENTIMENT-007
 
 Date: Jan 6, 2026  
 Meeting: Pre-launch planning  
@@ -143,7 +111,7 @@ Significance
 
 Client confirms the product is ready and the 16th is the launch day, with positive reaction ("So beautiful").
 
-## SENTIMENT-010
+## SENTIMENT-008
 
 Date: Jan 6, 2026  
 Meeting: Pre-launch planning  
@@ -158,3 +126,33 @@ Quote
 Significance
 
 Client describes launch as a "huge milestone" and "significant" for LES after a long effort, and states they are excited and "a little emotional" and "I love it."
+
+## SENTIMENT-009
+
+Date: Dec 16, 2025  
+Source: Email  
+Source File: `source/emails/joe_morales_2025_12_16.txt`  
+Author: Joe Morales (Director of Marketing)
+
+Quote
+
+> "We also appreciate the updates, and great job on that clearance from Google, those approvals are TOUGH!"
+
+Significance
+
+Client expresses appreciation for updates and explicit positive feedback on Google Play clearance, acknowledging the difficulty of store approvals.
+
+## SENTIMENT-010
+
+Date: Dec 15, 2025  
+Source: Email  
+Source File: `source/emails/bonnie_lucas_2025_12_2025.txt`  
+Author: Bonnie Lucas (President / CEO)
+
+Quote
+
+> "Thanks guys!! Great work!"
+
+Significance
+
+Client executive (President/CEO) expresses positive feedback and thanks to the team in writing during store-approval/launch phase.
