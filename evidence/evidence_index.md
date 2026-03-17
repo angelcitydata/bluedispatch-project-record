@@ -19,9 +19,13 @@ This index lists extracted, timestamped, verbatim evidence entries and links to 
 - [SENTIMENT-001](./client_sentiment.md#sentiment-001) — May 5, 2025 — “This is fantastic” reaction to materials.
 - [SENTIMENT-002](./client_sentiment.md#sentiment-002) — May 5, 2025 — “We absolutely love the wish list.”
 - [SENTIMENT-003](./client_sentiment.md#sentiment-003) — Mar 12, 2026 — Email from Joe Morales: "You're the best! Thank you!"
-- [SENTIMENT-004](./client_sentiment.md#sentiment-004) — Dec 18, 2025 — Client: "First try, which I was amazed" (Google approval).
-- [SENTIMENT-005](./client_sentiment.md#sentiment-005) — Dec 18, 2025 — Client: "You guys are awesome" re store approval.
-- [SENTIMENT-006](./client_sentiment.md#sentiment-006) — Jan 6, 2026 — Launch called a “huge milestone” after a “long, long road.”
+- [SENTIMENT-004](./client_sentiment.md#sentiment-004) — Dec 18, 2025 — Client (Amanda): "You guys are awesome and we work as a great team" (store approval).
+- [SENTIMENT-005](./client_sentiment.md#sentiment-005) — Jan 6, 2026 — Client: excited to get this thing rolling / huge milestone / zoom party.
+- [SENTIMENT-006](./client_sentiment.md#sentiment-006) — Jan 6, 2026 — Client: we're ready to go next Friday.
+- [SENTIMENT-007](./client_sentiment.md#sentiment-007) — Jan 6, 2026 — Client: I'm excited on that (go-live).
+- [SENTIMENT-008](./client_sentiment.md#sentiment-008) — Jan 6, 2026 — Client: the 16th is the answer. Go date.
+- [SENTIMENT-009](./client_sentiment.md#sentiment-009) — Jan 6, 2026 — Client: that's when we're going live. So beautiful.
+- [SENTIMENT-010](./client_sentiment.md#sentiment-010) — Jan 6, 2026 — Client: huge milestone for Les... I love it.
 
 ## REHYDRATION (Rehydration / Force-Close / Session Recovery)
 
