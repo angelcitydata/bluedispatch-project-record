@@ -18,6 +18,10 @@ This index lists extracted, timestamped, verbatim evidence entries and links to 
 
 - [SENTIMENT-001](./client_sentiment.md#sentiment-001) — May 5, 2025 — “This is fantastic” reaction to materials.
 - [SENTIMENT-002](./client_sentiment.md#sentiment-002) — May 5, 2025 — “We absolutely love the wish list.”
+- [SENTIMENT-003](./client_sentiment.md#sentiment-003) — Mar 12, 2026 — Email from Joe Morales: "You're the best! Thank you!"
+- [SENTIMENT-004](./client_sentiment.md#sentiment-004) — Dec 18, 2025 — Client: "First try, which I was amazed" (Google approval).
+- [SENTIMENT-005](./client_sentiment.md#sentiment-005) — Dec 18, 2025 — Client: "You guys are awesome" re store approval.
+- [SENTIMENT-006](./client_sentiment.md#sentiment-006) — Jan 6, 2026 — Launch called a “huge milestone” after a “long, long road.”
 
 ## REHYDRATION (Rehydration / Force-Close / Session Recovery)
 
@@ -34,3 +38,4 @@ This index lists extracted, timestamped, verbatim evidence entries and links to 
 - [LOCATION-003](./location_permissions.md#location-003) — June 25, 2025 — Permission prompt messaging: “only track… when clocked into a job”.
 - [LOCATION-004](./location_permissions.md#location-004) — June 25, 2025 — iOS system UI choices: “Allow while using” vs “always allow”.
 - [LOCATION-005](./location_permissions.md#location-005) — June 25, 2025 — Permission vs recording distinction (access at all times vs use when clocked in).
+- [LOCATION-006](./location_permissions.md#location-006) — Dec 9, 2025 — iOS background GPS indicator; app not sending that data to servers.

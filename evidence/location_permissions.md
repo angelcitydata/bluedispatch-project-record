@@ -79,3 +79,19 @@ Quote
 Significance
 
 Distinguishes between iOS-level permission (“access to their location at all times”) and what the app records/uses (“only when they're clocked in”).
+
+## LOCATION-006
+
+Date: Dec 9, 2025  
+Meeting: Native app behavior / background tracking  
+Source File: `source/transcripts/2025-12/GMT20251209-200151_Recording_otter_ai.txt`  
+Speaker: Unknown Speaker  
+Timestamp: 17:09
+
+Quote
+
+> "it's the phone actually turning on the tracking for the app and telling the app where you happen to be. The app actually isn't requesting and doesn't send it back to our servers. ... it's just kind of something that seems to be happening when you when you have background GPS turned on, which is kind of the highest level of, you know, Location Services, permissions you can have."
+
+Significance
+
+Explains that the blue “tracking” indicator is driven by iOS background GPS behavior, with the app not sending that location back to servers, and ties it to the highest Location Services permission level.
