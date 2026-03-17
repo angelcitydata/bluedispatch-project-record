@@ -47,3 +47,20 @@ Quote
 Significance
 
 Documents a specific scope boundary: moving functionality from FileMaker into the web is described as additional/new work beyond the existing web apps.
+
+## SCOPE-004
+
+Date: Jan 13, 2026  
+Meeting / Source: Email  
+Source File: `source/emails/brian_overby_2026_01_13.txt`  
+Author: Brian Overby (to Joe Morales)
+
+Quote
+
+> "As you know we did not prepare a proposal or estimate exactly for the native app project. The best that was offered and discussed several times was the burn rate we hoped to meet originally. Project starting June 16th 2025 and an original hopeful go live of October 17th 2025."
+>
+> "I am aware we were not about to meet the burn rate, but it looks like the total was very close considering we did not go through a proper discovery, proposal or project preparation."
+
+Significance
+
+Explicitly states that the native app project had no formal proposal or estimate and that the team did not go through proper discovery, proposal, or project preparation—a full scope was never done. The original aggressive go-live target (October 17, 2025, ~18 weeks from June start) reflects client prioritization of speed-to-market over a fully scoped engagement.

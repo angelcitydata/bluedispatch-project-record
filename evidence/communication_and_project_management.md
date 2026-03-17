@@ -173,3 +173,22 @@ Quote
 Significance
 
 Written handover of the test plan from Brian to the client (Ashley): he sends the test plan and sets expectations that clock-in and related features may not work until the Linux databases are reset, likely Monday before testing begins—documenting coordinated timing of test plan delivery and environment readiness.
+
+## COMMUNICATION-010
+
+Date: Jan 15, 2026  
+Meeting / Source: Email (chain)  
+Source File: `source/emails/joe_morales_brian_overby_2026_01_15.txt`  
+Authors: Brian Overby, Joe Morales
+
+Quote
+
+> **Brian Overby (Jan 15, 2026, 1:49 PM)** — Subject: Test / approval  
+> "Hey Joe, We are finished out round of testing and ready to run through with you. Are you available? Brian"
+>
+> **Joe Morales (Jan 15, 2026, 3:59 PM)** — Re: Test / approval  
+> "Absolutely! I'm available now! Joe Morales | Director of Marketing"
+
+Significance
+
+Coordinates time to run through the test plan and obtain final approvals: Brian (dev) invites Joe (client) to run through after finishing their round of testing; Joe accepts. The resulting meeting is documented in `source/documents/participants_83606332537_2026_01_16.csv`: topic **LES Go Live Prep**, Jan 15, 2026, 58 minutes, 6 participants including Brian Overby (host, full duration), Joe Morales (57 min), Jake Johnson (54 min), and others—evidence of client participation in the pre–go-live test run-through and approval step.

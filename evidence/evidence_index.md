@@ -40,6 +40,7 @@ This index lists extracted, timestamped, verbatim evidence entries and links to 
 - [SCOPE-001](./scope_and_phasing.md#scope-001) — May 5, 2025 — Client requests feasibility-based timeline/deadlines.
 - [SCOPE-002](./scope_and_phasing.md#scope-002) — May 5, 2025 — Dev proposes MVP + phasing due to size.
 - [SCOPE-003](./scope_and_phasing.md#scope-003) — May 5, 2025 — FileMaker-to-web work called out as new scope.
+- [SCOPE-004](./scope_and_phasing.md#scope-004) — Jan 13, 2026 — Brian to Joe: no proposal/estimate; no proper discovery, proposal, or project prep (speed-to-market).
 
 ## COMMUNICATION (Project Communication / Meeting Record)
 
@@ -52,3 +53,4 @@ This index lists extracted, timestamped, verbatim evidence entries and links to 
 - [COMMUNICATION-007](./communication_and_project_management.md#communication-007) — Dec 23, 2025 — Writing test plan for client to run through; send out tomorrow.
 - [COMMUNICATION-008](./communication_and_project_management.md#communication-008) — Dec 30, 2025 — Test plan for native app completed; ready to send to Ashley for testing.
 - [COMMUNICATION-009](./communication_and_project_management.md#communication-009) — Jan 2, 2026 — Brian emails Ashley the test plan; notes DB reset timing before testing.
+- [COMMUNICATION-010](./communication_and_project_management.md#communication-010) — Jan 15, 2026 — Email chain: run through test plan / final approvals (Brian–Joe); meeting record in participants CSV.

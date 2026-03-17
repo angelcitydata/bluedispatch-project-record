@@ -1,0 +1,18 @@
+Hi Joe,
+
+Sure, I would be happy to attempt to answer for you. As you know we did not prepare a proposal or estimate exactly for the native app project. The best that was offered and discussed several times was the burn rate we hoped to meet originally. Project starting June 16th 2025 and an original hopeful go live of October 17th 2025. This is 18 weeks at the hopeful burn rate of 120-160 hours per week. This makes a loosely quoted estimate as follows:
+
+Low end: 18 weeks X 120 Hours per = 2,160  hours at $225 per hour = $486,000
+High end: 18 weeks X 160 hours per = 2,880 hours at $225 per hour = $648,000
+
+Making the loosely estimated range $486,000 - $648,000.
+
+With real go live being this Friday it looks like we will be coming in under the low end of that range. I am aware we were not about to meet the burn rate, but it looks like the total was very close considering we did not go through a proper discovery, proposal or project preparation. 
+
+On to your second question. Going back into our system it looks like Scheduler work breaks down into the following:
+
+Complete development into go live was: 399.25 hours at $225 = $89,831.25 total. 
+After go live we also provided 102 hours of work under the 90 day free tech support
+
+Let me know if you have any more questions,
+Brian
