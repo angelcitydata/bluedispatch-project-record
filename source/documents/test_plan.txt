@@ -1,0 +1,87 @@
+Officer Native App: Test Plan
+
+Login Process
+	1. Open app and enter phone number into first screen and touch “Continue”
+	2. Enter confirmation code texted to the phone number on next screen. Touch “Confirm” button.
+
+Onboarding Process
+	1. On location access screen touch “Continue” to bring up location settings dialog box. To allow access choose “Allow While Using App”, then touch “Continue” again. Allowing this access is required.
+	2. On background location screen touch “Continue” to bring up background location settings dialog box. To allow access choose “Change to Always Allow”, then touch “Continue” again. Allowing this access is required.
+	3. On camera access screen touch “Continue” to bring up camera dialog box. To allow access choose “Allow”, then touch “Continue” again. Allowing this access is not required to enter app. It is required to clock into a job.
+	4. On photo library access screen touch “Continue” to bring up photo library dialog box. To allow access choose either “Limit Access” or “Allow Full Access”. If you choose “Limit Access” you may choose some images to share with app then touch check at top, then touch “Continue”. If full access allowed then just touch “Continue”. It is required to clock into a job.
+	5. On notification access screen touch “Continue” to bring up notification settings dialog box. To allow notifications choose “Allow” to turn on notifications for app. Allowing notifications is not required for app use.
+
+Home / Jobs List Screen
+	1. Job list screen should be showing be showing current week and next 2 weeks worth of jobs. For now, this is all that will be offered. The date range being shown is displayed at top right.
+	2. Verify each job card has a category ( Traffic or Security ), customer name, date of job, job name, hours of job, pay information and optional requests below ( Agency car, pov, plain clothes, etc. ).
+
+	3. Scroll job info section to the left to view officer instructions. If “See More” is shown at bottom of officer instructions, touch there to view more of the text.
+	4. Verify on top right of card map is the number of miles from current location to job site. Touch the distance number to bring up directions from current location to job site in Maps app.
+	5. Book a job by touching “Book Job” then touch “Book Now” to book a job. It should display a dialog box stating you were booked on job and where to find the job for more processes.
+
+	6. Try filters on jobs list by selecting different filters and touching checkmark at top left of filter screen. Filter for:
+		a. Days of week
+		b. Category
+		c. Start time range
+		d. End time range
+
+Dashboard Screen – Earnings and Mileage
+	1. Both earnings and mileage charts should display starting at current year.
+	2. Swipe year left to go previous year and right to go to next year.
+	3. Top right of each chart should display the total for the current selected year.
+	4. Touching the bar for a month should display the month total to the left of the year total for each chart.
+
+My Jobs Screen
+	1. Detail card for any booked jobs for today should show at top.
+	2. Another row of cards should show for this week. If multiple jobs booked for this week, you can swipe left to scroll through them.
+	3. Another row of cards should show next week. If multiple jobs booked for next week, you can swipe left to scroll through them.
+	4. Touch a card to view the detail view of the job.
+
+Job Detail Screen
+	
+1. See “Contact LES” button. Testing that touching the button opens mail app with a new email addressed to info@bluedispatch.com.
+	2. Under contact les button, try touching the “Unbook Job”. This should open a dialog box to verify if you want to request being unbooked from a job. 
+3.  Touch button marked #1 at top right to view or edit mileage. A popup screen should appear with a number keyboard. Mileage does not do math, simply collects a number. After entering a number select the check button at top right to submit.
+
+	4. Touch button marked #2 at top right to add images. A popup screen should appear.
+		a. Popup screen will have a plus button to add images. This will 			bring up three choices on the bottom. First is to take a photo to 			upload. Second button will bring up library for image select and 			third will cancel upload.
+		b. Popup screen will show previously uploaded images if any. 
+		c. Once new images selected, touch the checkmark button at top 			right.
+	5. Touch button marked #3 at top right to add notes. A popup screen should appear.
+		a. Popup screen will have a entry area at bottom to add a note. 			Enter text here and touch the upward facing arrow button to 				submit note.
+		b. Notes will show “You” as the posting user until you have left the 			screen and return. Then it will show the user’s name.
+		c. Each note will also show amount of time since note posted.
+
+	6. On detail screen you can clock in using the green clock in button. This will turn into two buttons “Cancel” or “Start Job”. Touch cancel to go back to clock in button.
+		a. If you select cancel selected it should escape the process and 			return the button to “Clock In” label.
+		b. If start job was selected, verify the button now reads “Clock 			Out” and shows the timer for clocked in time.
+	7. Scroll around in the presented map. An arrow icon will appear in the lower right corner of the map. Touching this button will center the map back to your location. 
+
+	8. In center section of job detail screen, you can swipe left to show contact information then officer instructions. In the contact section you should be able to touch the phone number to initiate a call. 
+	9. Touch the “Contact LES” button. This should open your mail app with an addressed email.
+	10. Touch the clock out button, then select “Stop Job” to clock out. This should process then the “Clock in” button show again but greyed out and disabled. Once leaving the detail screen you should no longer see it in your my jobs list.
+
+Account Screen
+	1. Top left of screen shows user’s avatar. This will either be a picture or initials if an image has not been uploaded yet. Touching the avatar will bring 3 buttons at the bottom of the screen. They are to take a new photo, select one from your library or cancel.
+	2. To right of avatar should be user name and rank.
+
+	3. First section you can enter is “Personal Info”. In here you should see user’s name, phone number and email address. Email address should be only editable field and you must touch “Save” button to submit changes.
+	4. Second section is “Work Info”. In here you should see user’s agency, badge # and years of service. No fields editable in this section.
+	5. Third section is “Availability”. In here you should see switches for category ( Traffic and Security). Vehicle Availability (POV). Days availability ( Mon – Fri ). All switches editable.
+	6. Fourth section is “Past Jobs”. In here you should see past completed jobs. Each entry shows date of job, customer name, hours worked and mileage. Nothing is editable on this section.
+	7. Fifth section is “Notifications”. In here you should see switches for All Notifications ( Notifications Allowed ). New Jobs ( New Traffic Jobs and New Security Jobs ). Time Based ( Approaching Start Time, Missed Clock-in, Approaching Stop Time, Missed Clock Out ). All switches are editable.
+	8. Sixth section is “Permissions”. This button will take user to iOS settings area for the app.
+	9. Seventh section is “App Details/Logout”. In here you should see App version, App website link, Powered by and developed by. No fields are editable here, but website link should work. Finally at bottom is the Log Out button that will log you out the app.
+	10. Eighth section is “Contact Us”. In here you should see Company, phone, email and privacy. None are editable. Touching the phone number should initiate a call to LES. Touching email should open mail app with a pre-addressed email to LES. Touching “Our Privacy Policy” should take you to blue dispatch’s website to the privacy policy screen.
+	11. Last section is the “Remove My Data” button. Touching here should ask to confirm before clearing all data from phone and turning off the web account by clearing the “Allow Login” checkbox in FileMaker.
+
+Notifications
+	
+	1. On FileMaker job assignment detail screen, next to Job Location is the button for sending notifications to user that is connected to the job. When receiving this notification, the user can touch the notification and be taken to the job detail for the job in question. 
+	2. On officer detail screen, go to “Website” tab and select the account for native app opening the account detail. Click the notification button to open the message popover. Enter a title and message and click “Send”. This should send a general notification to the officer’s phone.
+	3. All notifications have a limit of 30 characters for title and 130 characters for the message.
+	4. Remember, no notification will go through if user does not have them turned on. We can not control the notification settings.
+
+
+	
+	

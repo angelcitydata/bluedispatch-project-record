@@ -209,3 +209,31 @@ The Evidence Index should form a clear, verifiable record showing:
 - how the client responded to progress
 
 Every entry should help establish this factual timeline.
+
+---
+
+# Mining Non-Transcript Evidence
+
+In addition to transcripts, agents should review the following sources:
+
+/source/emails  
+/source/documents
+
+These materials may contain evidence related to:
+
+- project coordination
+- testing and QA processes
+- client feedback
+- operational planning
+
+Evidence entries should include:
+
+Date  
+Source Type  
+Source File  
+Author  
+Recipients  
+Excerpt  
+Significance
+
+When quoting from emails or documents, include only the relevant excerpt.

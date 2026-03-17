@@ -2,32 +2,58 @@
 
 ## COMMUNICATION-001
 
-Date: May 5, 2025  
-Meeting: Requirements document walkthrough / planning  
-Source File: `source/transcripts/2025-05/GMT20250505-180246_Recording_otter_ai.txt`  
-Speaker: Speaker 3  
-Timestamp: 46:32
+Date: Dec 29, 2025  
+Meeting / Source: Post-meeting summary email  
+Source File: `source/emails/amanda_markham_2025_12_29.txt`  
+Author: Amanda Markham
 
 Quote
 
-> "Thank you guys for doing so much of the legwork for us up front. You know you are going to save yourself some money by not having us have to tease all this stuff out of you."
+> "Here is our BD Summary (sorry - holidays got in the way) lol:
+> From Meeting: 12.23.25; with next Meeting Date, tomorrow: 12.30.25
+> 
+> Current status!! The app is live! Blue Dispatch 1.5 is now available on both Apple App Store and Google Play Store. The team successfully launched notifications as part of this release.
+> We're on track for full go-live on January 16, 2026. We will be conducting final testing between now and then."
 
 Significance
 
-Captures an explicit statement about communication efficiency: client-provided upfront detail reduces discovery time/cost and clarifies requirements.
+Shows the client PM sending structured written summaries that tie a specific past meeting to the next scheduled meeting and capture current status and launch timeline.
 
 ## COMMUNICATION-002
 
-Date: May 5, 2025  
-Meeting: Requirements document walkthrough / planning  
-Source File: `source/transcripts/2025-05/GMT20250505-180246_Recording_otter_ai.txt`  
-Speaker: Speaker 1  
-Timestamp: 40:03
+Date: Dec 29, 2025  
+Meeting / Source: Post-meeting summary email  
+Source File: `source/emails/amanda_markham_2025_12_29.txt`  
+Author: Amanda Markham
 
 Quote
 
-> "How about we just do the two week marker? We're working on a lot of other things, unless our team internally. Becca, Joe, Ashley, if you feel differently, the 19th we could meet again. Plan to meet, and just kind of walk through your preliminary assessment of what that MVP is and the scope and timeline, and break this out into two phases."
+> "What happened last week (according to zoom): 
+> Tested(ing) the app with live production data (coordinating with us for brief testing windows)
+> Finalizing server configurations and security updates
+> Brian creating a comprehensive test plan for our team to follow
+> Worked through the holiday schedule (most of returning today - Monday, December 30th)"
 
 Significance
 
-Records a concrete next-step plan (follow-up meeting date) and an explicit intention to review MVP scope/timeline and split work into phases.
+Documents coordinated testing windows, server/security work, and the creation of a comprehensive test plan as part of ongoing project management communication.
+
+## COMMUNICATION-003
+
+Date: Jan 6, 2026  
+Meeting / Source: Launch + capacity planning email  
+Source File: `source/emails/amanda_markham_2026_01_06.txt`  
+Author: Amanda Markham
+
+Quote
+
+> "Hello everyone! Great news from today's PM meeting with ACD - we are officially 10 days away from launch!
+> 
+> Key Launch Details: Launch Date: January 16, 2026
+> 
+> This is our confirmed go-live date
+> We're having a Zoom celebration meeting on launch day to 'flip the switch' together"
+
+Significance
+
+Shows written confirmation of the agreed go-live date and a scheduled launch-day meeting, evidencing coordinated communication around launch.

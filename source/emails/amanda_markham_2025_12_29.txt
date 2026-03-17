@@ -1,0 +1,35 @@
+Good morning and Happy Monday, BD Team! 
+
+Here is our BD Summary (sorry - holidays got in the way) lol:
+From Meeting: 12.23.25; with next Meeting Date, tomorrow: 12.30.25
+
+Current status!! The app is live! Blue Dispatch 1.5 is now available on both Apple App Store and Google Play Store. The team successfully launched notifications as part of this release.
+We're on track for full go-live on January 16, 2026. We will be conducting final testing between now and then.
+
+What happened last week (according to zoom): 
+Tested(ing) the app with live production data (coordinating with us for brief testing windows)
+Finalizing server configurations and security updates
+Brian creating a comprehensive test plan for our team to follow
+Worked through the holiday schedule (most of returning today - Monday, December 30th)
+Items being addressed: 
+Auto Clock-Out Issue - Occasionally clocking officers out when app is running in background. Development team suspects this is related to server updates currently in progress. Will monitor closely during January testing phase.
+Pin Location Display - Some jobs not showing clock-in/clock-out location pins. This appears to be a data transfer timing issue that's being resolved.
+Past Jobs Display - Showing incorrect dates (April 2025) and zero hours. Related to database synchronization during testing phase.
+Time Zone Display - Clock times showing incorrectly because development server is configured differently than production will be. This will self-correct when we go live.
+Minor items of notes: 
+Contact email routing (needs coordination with Joe/Jeff)
+Map address auto-fill had one quirky result (Google Maps issue)
+Recurring job updates requiring page refresh (temporary during dual-system operation)
+Per Brian, any of the issues we're seeing are expected during this testing phase because:
+
+We're running on a development server that's configured differently than production
+The team is actively making server changes and security updates
+We're operating in a "hybrid" mode where some features work differently than they will at go-live
+Note: These issues should resolve once we switch to the production environment.
+
+From call and may need to be answered in tomorrow's meeting - if not already - 
+
+Confirmation that past jobs/hours issue will resolve in production
+Timeline for final server security patches
+Any additional testing needed from our end before January 16th
+Overall - We're in great shape for our January 16th launch. The issues we're experiencing seem to be quite typical for this testing phase and the team is actively working through them. The app is functional and performing well overall- Jan, here we come (but chat with you all tomorrow at 1pm)!  

@@ -77,3 +77,11 @@ Evidence files must remain factual.
 Do not include analysis, arguments, or speculation.
 
 Interpretation belongs in the `/reports` folder.
+
+---
+
+Evidence may come from transcripts, emails, or documents.
+
+Transcript evidence must include timestamps.
+
+Email and document evidence should include the relevant excerpt and the source file.

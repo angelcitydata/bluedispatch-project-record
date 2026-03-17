@@ -10,8 +10,9 @@ This index lists extracted, timestamped, verbatim evidence entries and links to 
 
 ## COMMUNICATION (Project Communication / Meeting Record)
 
-- [COMMUNICATION-001](./communication_and_project_management.md#communication-001) — May 5, 2025 — Client legwork reduces discovery time/cost.
-- [COMMUNICATION-002](./communication_and_project_management.md#communication-002) — May 5, 2025 — Plan to reconvene to define MVP/scope/timeline/phases.
+- [COMMUNICATION-001](./communication_and_project_management.md#communication-001) — Dec 29, 2025 — Written BD summary linking last and next meetings + status.
+- [COMMUNICATION-002](./communication_and_project_management.md#communication-002) — Dec 29, 2025 — Email lists coordinated testing, server work, and test plan.
+- [COMMUNICATION-003](./communication_and_project_management.md#communication-003) — Jan 6, 2026 — Email confirming go-live date and launch-day Zoom.
 
 ## SENTIMENT (Client Feedback / Project Sentiment)
 

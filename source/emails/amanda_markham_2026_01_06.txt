@@ -1,0 +1,28 @@
+Hello everyone! Great news from today's PM meeting with ACD - we are officially 10 days away from launch!
+
+Key Launch Details: Launch Date: January 16, 2026
+
+This is our confirmed go-live date
+We're having a Zoom celebration meeting on launch day to "flip the switch" together
+Bonnie - please keep an eye out for the meeting invite! We should get confetti poppers! ✨
+THIS WEEK:
+
+Testing session scheduled for Thursday (time TBD - Ashley will confirm)
+All systems are GO for the January 16th timeline
+POST-LAUNCH CAPACITY PLANNING:
+
+Brian shared ACD's availability for ongoing work after launch (and will send a follow up email of his own on this as we start to outline the next area of development): 
+
+App-focused work: 100-120 hours/week capacity
+App + Web work: Can add another developer for up to 40 additional hours/week
+They're currently "spun up" and ready to continue without needing ramp-up time
+Brian will send a detailed capacity overview to help with our planning discussions
+Joe and Ashley are working on prioritizing next phases - whether that's continued app iterations, broker/client side work, or other customizations. Proposed discussing internally with our executive team once we receive Brian's formalized capacity breakdown.
+
+Some Technical Notes: 
+
+Tom is finishing FileMaker server work, but Brian recommends waiting a good month before using it as production server
+Web account creation process reviewed with Ashley - phone number formatting handled automatically (strips out dashes/special characters)
+All in all, we are on track, we're excited, and we're ready to make this happen! I know this has been a long road, and we're about to reach a significant milestone for LES.
+
+Let me know if you have any questions!! 
