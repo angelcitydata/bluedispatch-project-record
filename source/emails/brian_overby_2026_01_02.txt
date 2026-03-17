@@ -1,0 +1,5 @@
+Hey Ashley,
+
+Here is the test plan for the native app. Certain things may not work properly around clocking into jobs and other things until we reset the Linux databases. This may happen over the weekend, but most likely first thing Monday before we start our testing.
+
+Brian

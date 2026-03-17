@@ -4,11 +4,14 @@ This index lists extracted, timestamped, verbatim evidence entries and links to 
 
 ## REHYDRATION (Rehydration / Force-Close / Session Recovery)
 
-- [REHYDRATION-001](./rehydration.md#rehydration-001) — Dec 30, 2025 — Force-quit can leave user “still clocked in”.
-- [REHYDRATION-002](./rehydration.md#rehydration-002) — Dec 30, 2025 — Defines “rehydrate a job”; not before Jan 16 go-live.
-- [REHYDRATION-003](./rehydration.md#rehydration-003) — Dec 30, 2025 — Force quit stops location collection.
-- [REHYDRATION-004](./rehydration.md#rehydration-004) — Dec 18, 2025 — Reset workflow is for accidental force close.
-- [REHYDRATION-005](./rehydration.md#rehydration-005) — Dec 18, 2025 — Reset enables officer to clock back in.
+- [REHYDRATION-001](./rehydration.md#rehydration-001) — Dec 30, 2025 — Defines “rehydrate a job”; not before Jan 16 go-live.
+- [REHYDRATION-002](./rehydration.md#rehydration-002) — Dec 30, 2025 — Force quit stops location collection.
+- [REHYDRATION-003](./rehydration.md#rehydration-003) — Dec 18, 2025 — Reset workflow is for accidental force close.
+- [REHYDRATION-004](./rehydration.md#rehydration-004) — Dec 18, 2025 — Reset enables officer to clock back in.
+- [REHYDRATION-005](./rehydration.md#rehydration-005) — Oct 22, 2025 — “The only thing you can't do is force quit the app…”
+- [REHYDRATION-006](./rehydration.md#rehydration-006) — Nov 4, 2025 — Backgrounding vs force closing; force close “will mess things up”.
+- [REHYDRATION-007](./rehydration.md#rehydration-007) — Nov 4, 2025 — Force close doesn’t resume: “it’s done… clock them out from FileMaker”.
+- [REHYDRATION-008](./rehydration.md#rehydration-008) — Dec 18, 2025 — Rehydration-style improvements “most likely isn't going to make it to go live”.
 
 ## LOCATION (Location Services / Permission Education)
 
@@ -45,3 +48,7 @@ This index lists extracted, timestamped, verbatim evidence entries and links to 
 - [COMMUNICATION-003](./communication_and_project_management.md#communication-003) — Jan 6, 2026 — Email confirming go-live date and launch-day Zoom.
 - [COMMUNICATION-004](./communication_and_project_management.md#communication-004) — Dec 16, 2025 — Joe Morales: approve soft opening; appreciates updates and Google clearance.
 - [COMMUNICATION-005](./communication_and_project_management.md#communication-005) — Dec 15, 2025 — Bonnie Lucas: good news, questions on Google timing / Apple vs Android / launch process.
+- [COMMUNICATION-006](./communication_and_project_management.md#communication-006) — Sep 15, 2025 — TestFlight push after meeting; Joe and Ashley added for client testing access.
+- [COMMUNICATION-007](./communication_and_project_management.md#communication-007) — Dec 23, 2025 — Writing test plan for client to run through; send out tomorrow.
+- [COMMUNICATION-008](./communication_and_project_management.md#communication-008) — Dec 30, 2025 — Test plan for native app completed; ready to send to Ashley for testing.
+- [COMMUNICATION-009](./communication_and_project_management.md#communication-009) — Jan 2, 2026 — Brian emails Ashley the test plan; notes DB reset timing before testing.

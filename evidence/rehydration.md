@@ -6,22 +6,6 @@ Date: Dec 30, 2025
 Meeting: Pre–go-live testing updates  
 Source File: `source/transcripts/2025-12/GMT20251230-200427_Recording_otter_ai.txt`  
 Speaker: Unknown Speaker  
-Timestamp: 1:56
-
-Quote
-
-> "And this will, this could end up happening if they clock into a job and they force quit the app kind of thing before they clock out, and they try to come back in, and they try to clock back into that job, or clock into a different, you know, something else. But it's saying, Hey, you're clocked into something. It thinks you are still"
-
-Significance
-
-Describes a specific failure mode tied to force-quitting: the system still considers the user clocked in, blocking subsequent clock-in attempts.
-
-## REHYDRATION-002
-
-Date: Dec 30, 2025  
-Meeting: Pre–go-live testing updates  
-Source File: `source/transcripts/2025-12/GMT20251230-200427_Recording_otter_ai.txt`  
-Speaker: Unknown Speaker  
 Timestamp: 2:26
 
 Quote
@@ -32,7 +16,7 @@ Significance
 
 Explicitly defines “rehydrate a job” as a session-recovery approach after force quit, and states it will not be delivered before the Jan 16 go-live.
 
-## REHYDRATION-003
+## REHYDRATION-002
 
 Date: Dec 30, 2025  
 Meeting: Pre–go-live testing updates  
@@ -48,7 +32,7 @@ Significance
 
 States a concrete technical limitation: force quitting stops location collection, limiting what session recovery can do.
 
-## REHYDRATION-004
+## REHYDRATION-003
 
 Date: Dec 18, 2025  
 Meeting: Testing feedback / edge cases  
@@ -64,7 +48,7 @@ Significance
 
 Links the “reset button” workflow directly to an “accidentally force closed the app” scenario, i.e., an operational workaround for force-close recovery.
 
-## REHYDRATION-005
+## REHYDRATION-004
 
 Date: Dec 18, 2025  
 Meeting: Testing feedback / edge cases  
@@ -79,3 +63,67 @@ Quote
 Significance
 
 Describes the intended recovery behavior: an internal reset enables an officer to clock back in after a force-close-related issue.
+
+## REHYDRATION-005
+
+Date: Oct 22, 2025  
+Meeting: Testing / app behavior discussion  
+Source File: `source/transcripts/2025-10/GMT20251022-200300_Recording_otter_ai.txt`  
+Speaker: Jake Johnson  
+Timestamp: 2:08
+
+Quote
+
+> "yeah, it's really cool. The only thing you can't do is force quit the app, because obviously that kills, kills the app from memory."
+
+Significance
+
+Directly states a key constraint tied to session recovery: force quitting terminates the app state, creating a known failure mode for ongoing jobs/tracking.
+
+## REHYDRATION-006
+
+Date: Nov 4, 2025  
+Meeting: Testing feedback / edge cases  
+Source File: `source/transcripts/2025-11/GMT20251104-200328_Recording_otter_ai.txt`  
+Speaker: Brian Overby  
+Timestamp: 26:02
+
+Quote
+
+> "Correct, as long as she doesn't swipe up. So you know, you show all your apps and then swipe one of the apps up to close it. Brand is called force closing, or force quitting. That week, we'll mess things up, and there's nothing we can really do about that, but, but switching to another app and having it in the background, nope. That shouldn't affect anything."
+
+Significance
+
+Distinguishes normal multitasking (backgrounding) from force closing, and explicitly ties force closing to a failure mode that “will mess things up.”
+
+## REHYDRATION-007
+
+Date: Nov 4, 2025  
+Meeting: Testing feedback / edge cases  
+Source File: `source/transcripts/2025-11/GMT20251104-200328_Recording_otter_ai.txt`  
+Speaker: Ashley Sidor & Brian Overby  
+Timestamp: 29:28
+
+Quote
+
+> "So if you force close it and then open it back up, will it pick up where you left off? No. If you force close it, it doesn't it's done. Yeah, I get you Okay, it's done. And that's when you guys are going to have to clock them out from file maker."
+
+Significance
+
+Clear Q&A stating that force closing ends continuity (“it’s done”) and creates an operational need for a FileMaker-side administrative clock-out to recover.
+
+## REHYDRATION-008
+
+Date: Dec 18, 2025  
+Meeting: Testing feedback / edge cases  
+Source File: `source/transcripts/2025-12/GMT20251218-201707_Recording_otter_ai.txt`  
+Speaker: Brian Overby  
+Timestamp: 6:48
+
+Quote
+
+> "and we're really this most likely isn't going to make it to go live before go live, but we are still working on more graceful ways to have the app react when somebody is clocked in and they close the app like they're definitely not supposed to"
+
+Significance
+
+Explicitly indicates that improved session-recovery/rehydration behavior for “clocked in + closed app” is unlikely to be ready for the initial go-live window, reinforcing that force-close handling is a known pre-launch gap.
