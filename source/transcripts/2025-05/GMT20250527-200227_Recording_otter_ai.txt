@@ -1,0 +1,934 @@
+Speaker 1  0:02  
+And we sent you guys the agenda earlier, and honestly, that agenda is coming right off of Ashley's list that she updates. She sent you guys that link in real time so you can see edits and things like that.
+
+Unknown Speaker  0:14  
+But that's just kind of a follow up.
+
+Speaker 1  0:18  
+Okay, so I think what we'll want to do is, if you and Jake have anything to present to us that we can kind of check off our list, if there is anything as far as fixes go, and then from there, we'll jump right into each section of, uh, Ashley's fixes from there, yeah, um,
+
+Speaker 2  0:35  
+I don't know that. I think Jake wanted to show a couple things, but I think most of it is, is on the Trello card. So yeah, I can show she's going through testing,
+
+Speaker 3  0:45  
+but yeah, they've been waiting to see some stuff. So let me,
+
+Unknown Speaker  0:52  
+let me share my screen.
+
+Unknown Speaker  0:55  
+So let me pull up my Trello just to
+
+Speaker 3  1:00  
+make sure I'm showing everything off here. Okay, so there was a request to sort jobs ascending by date and time. So I have, I have to get to a week where there's some jobs. Okay, so let me go to this one. All right, so you can see job at the top is on June 23 from 6am to 7am the next job is also June 23 from 10am to 11am but then the next job is Tuesday, June 24 and then followed by Wednesday, June 25 so they are sorting the way that they should on the jobs list. Now that was, that was one thing. The another thing was, I think mostly on here, we wanted a way for officers to leave notes on a job, and so now they have this little notes area. This should sync back to file maker system. They just type in there, and they tap outside, they get a little message, and I have to find, yeah, here we go. Let's see. I think that's this 1/27,
+
+Speaker 3  2:34  
+somewhere. I have to, it's so hard for me to find. Hold on.
+
+Speaker 2  2:39  
+I just tested this earlier.
+
+Speaker 3  2:41  
+So there, there it is. So you can see here that the notes are syncing now to and from so that works, and it works on active jobs or past jobs. So you can see here testing an old job. Notes, just gonna say, banana, Raccoon. I'm just, is that a spell? Raccoon? I think so.
+
+Unknown Speaker  3:13  
+Just so I can find it. Raccoon.
+
+Speaker 3  3:17  
+There it is. See so that is showing up in FileMaker. Now the next thing that I did was the Email button. So there is now this email button for for jobs. I wasn't sure if it should apply to all of them. So right now it does active upcoming, past, anything really, that they've booked. So I can go ahead and click this button, and it opens an email in my native email application, and it drops it just, I wasn't sure what you wanted to put in there, so I just called it question regarding job ID, and then I put the job ID there, and then I've got just the job ID, the customer, the date, the officer, the location, and that's it in there. So that'll work on the phone as well if they if they have a native email app set up that should work there. Another thing is, let's see, oh yeah, this was, this was a big one. So on past here, you notice that we now have a date picker up here, so it's always going to default to the current month, whatever month that is. So you can see, you know, I've got one job this month that I haven't completed. As soon as I completed, it'll show up here, but if I go back, I think most of my jobs were wiped out, so I got to go back to, like, January, maybe, or February. Yeah, here we go. So this is February's job. So now we're not pulling so many jobs into this area. We can. Just cycle back, just like they do on the home screen. So that is how that works. And if they've they're back this far, like I am. They can just click the star and that'll bring them to the current month. That was a big one. And then there was a couple things where I left notes Brian for you on like the pay bonus and some other things. But those
+
+Speaker 2  5:28  
+responded and move those along if needed.
+
+Unknown Speaker  5:32  
+Okay, cool.
+
+Speaker 3  5:34  
+And do not see somebody said, I do not see weekly filter function on my past job screen and dev environment,
+
+Speaker 2  5:43  
+and then right above it, you see, I say, Oh, I did. I had refresh log out, log in once or twice to get it to show up. But then I did see it.
+
+Speaker 3  5:52  
+Okay, yeah, sorry. Trello's new view is kind of confusing me a little bit. So, so Okay, so, yeah, those are the things that I got done on the officer app. Any questions there?
+
+Speaker 2  6:13  
+Oh, sorry, go ahead. I was just gonna say also Jake. It's, I know it's hard to show but Jake and I did get the when they click on today, they'll they can see a job that they haven't clocked into yet. Yeah, yesterday, and now the clock in button shows and they can clock in. I just tested that so, and I put it thank you. I put it into testing for you. Ashley, yeah, but just to say I did know. I do know that was another one that we got done that is for this app,
+
+Unknown Speaker  6:45  
+yep. So that was, I think, like, 12345677,
+
+Speaker 3  6:49  
+or eight different cards. So I chopped through those Friday and this morning,
+
+Unknown Speaker  6:56  
+and that's it.
+
+Speaker 2  7:02  
+I Ashley, you want to take the helm? Yes, I will. It's hard to show off the things I did, and they're, they're on Trello for you.
+
+Speaker 4  7:11  
+Anyway, yeah, I was able to go through Trello, at least most of it this morning.
+
+Unknown Speaker  7:19  
+There's I it. So before
+
+Speaker 2  7:25  
+you get going, I did want to one of them was,
+
+Unknown Speaker  7:29  
+I'm trying to think of the exact scenario I wrote
+
+Speaker 2  7:34  
+it down, the ability for them to where they can still book something off of the Favorites list after it's been canceled, and that no longer happens. So if it's been canceled, it should clear the favorites, and even if it didn't, it checks when they book now to make sure that it's not a canceled job. And you had responded that you know, it's still showing for on hold. The blocking it for canceled is working, but it's still showing for on hold. And that that wasn't something we had necessarily discussed. We can do that. The problem I see there, or potential confusion, is if they put it on a favorite list as soon as it comes out, and then you put it on hold. Say, you know you want to put it on hold to ask a specific officer about it. They say no, so you take it off hold. Well, when you put it on hold, if I clear out the favorites, it's not going to show back up on their favorites. So basically, putting it on hold will clear out anybody who had favored it favorite, did it? That's a hard word. And if you take it off hold, it won't show back up in their favorites. It'll show back up in the regular job list for them to book, but it won't show back up in their favorites. And I didn't know if that was something that you wanted to happen,
+
+Speaker 4  8:56  
+okay, yeah, and it's a lot less, it's more unlikely that if, usually, if it's something we want on hold, we'll put it on hold, and the timing would have to be just right for that. So I will get back to you on that to see if that's something we really, really need. I don't see that being it's definitely not as important as the canceled. The canceled was correct. Yeah, it's a big problem. Yeah. Hey guys,
+
+Speaker 1  9:22  
+just quickly here. Jake, in regards to the the notes that the officers can leave are, are we going to be notified of anytime they make a note?
+
+Unknown Speaker  9:30  
+Nope. Is there a way we can make that a possibility? Sure.
+
+Speaker 3  9:35  
+Brian, if you want to send a notification anytime that happens, that's totally fine. The all the the mechanics are there,
+
+Unknown Speaker  9:44  
+yeah, okie dokie,
+
+Unknown Speaker  9:47  
+okay, awesome. Thanks, fellas. All right, sorry. Ash,
+
+Speaker 4  9:49  
+yeah, that's okay. That was that was gonna bring that up too, notified if they made a note. And then I was curious, does it tell us in the mod log? That, that, you know, a change was made on better forms in the officer Notes tab.
+
+Unknown Speaker  10:06  
+From there, good
+
+Speaker 2  10:07  
+question, not not yet, but I can add that. I have to add that to the scripting that Jake did okay,
+
+Speaker 4  10:16  
+and then for the app, that email feature, I did test that. And I don't know if it's just my phone or if it if you notice this too, but when I press that from dev, it pulls up my my iCloud email, like, that's where it pulls my email from, and instead of like, the one that I have, that I normally use, the only and if it is just my phone. Let me know if it's not. The only issue that I can see with that is like, if we respond to that them not noticing and not knowing where to look. If we reply to them,
+
+Speaker 2  10:51  
+that's going to be apple. That is whichever outgoing account you have set as your default, or the last one you went to, yep, the last one you used,
+
+Speaker 3  11:02  
+I don't get any there's no control I get over which inbox it uses. That. That's why you should I think you should be able to change it when the
+
+Speaker 2  11:14  
+when it you can change it email as you write, yeah, yeah.
+
+Speaker 3  11:18  
+But we don't have any visibility into, like, what accounts they have the Yeah, we don't. There's nothing. There's nothing we can do
+
+Unknown Speaker  11:28  
+about that. No problems.
+
+Speaker 3  11:31  
+I guess we could, like, have them write something and then have the server send it to you, but that kind of obfuscates everything and makes it a little sketchy.
+
+Speaker 4  11:42  
+Yeah, no problem. I will. I'll play around with that some more. Sorry, changing where it's coming from, because I I never use that one, but obviously it says my default. So let's see. And yeah,
+
+Speaker 2  11:58  
+you can only do it from ones that you have, you know, on your phone. If accounts that you have set up on your phone, you can't just, you know, enter whatever outgoing email address you want. It has to be something that's set up on your mail account.
+
+Unknown Speaker  12:15  
+Okay, okay, that makes sense. Yeah.
+
+Speaker 4  12:24  
+I the app that did work for me. I just need to get someone like Paul Gardner, sorry, the past jobs. How you can scroll by month like Paul Gardner on the someone I know that was having that 408 issue, and just make sure that works on his I don't have enough jobs. I never got that error. So I just need to take it one step further. Just make sure he can see his jobs.
+
+Speaker 2  12:47  
+But okay, is that is any of the stuff you just shown today, Jake, that's all on dev, right? It's not on production.
+
+Unknown Speaker  12:55  
+It is on dev, yeah, yeah.
+
+Speaker 4  12:58  
+I'd have to get him on dev, or at least follow up with it after we push dev to make sure it's working.
+
+Speaker 4  13:11  
+Oh, unbook, that's still not working, but I'm sure you know that.
+
+Unknown Speaker  13:15  
+Yeah, I know that. Okay, okay,
+
+Speaker 4  13:18  
+and then let's see. So Brian, the so if I had a job, and then I put hours in, because I clocked in and I clocked out being able to take that job, a different job for later that day. It works on production, because I, you know, can see jobs, but it didn't work for me on dev. I don't know why, but I wasn't able to see other jobs that were available for that same day, most likely because I was booked on it. It's what I was thinking, Yes,
+
+Speaker 2  13:52  
+because I haven't, I haven't made that change. You were always able to do it in production, because that's the old job list search style.
+
+Unknown Speaker  14:01  
+What I thought was,
+
+Speaker 2  14:02  
+oh, go ahead. I have not figured out and gotten that to happen on dev yet.
+
+Speaker 4  14:09  
+Oh, I'm sorry. I thought on the Trello, it said, Please test. So I did it on that one. I thought so. But anyways, one of the things I noticed on it was, so I was able to take that job, but it stayed in my upcoming jobs, even though it was a job that I had today, and then when I clocked in for it, it still stayed in my upcoming it didn't move. They do,
+
+Speaker 3  14:32  
+they do. They eventually. They will move once you clock out. Oh, when I clock out, yeah, yeah, they're technically upcoming because they're today or after,
+
+Unknown Speaker  14:44  
+oh, so they wouldn't move into my today
+
+Speaker 3  14:46  
+tab. They should be if they're today, they should be there.
+
+Speaker 4  14:49  
+It was for today. Yeah, it was the 27th but it wasn't in today. It wasn't, it wasn't, yeah, it was, so is it? So I had taken a job, clocked in, clocked out. And then taken another job for today later, and it just stayed in my upcoming tab.
+
+Speaker 3  15:06  
+No, was that this earlier today? It was earlier today. Yes, I wonder if it's because I was working on stuff during that time, but it's still there. Yeah, let me know, because mine showed up today. When I booked it, it was in my today tab, and that's where I checked in, clocked into it, and then I haven't clocked out yet, but it's so right now it's inactive, but it's also an upcoming because it's today or after,
+
+Unknown Speaker  15:34  
+yeah, I'll test it again. I already
+
+Speaker 4  15:39  
+tested more on that one, so it's not in anything, okay, in a past job. But okay,
+
+Unknown Speaker  15:44  
+let me know. Yeah,
+
+Speaker 4  15:49  
+yeah, the favorite, and we talked about that, it did works for canceled. So that's that is good. Are you still not? Are you still seeing? Are you seeing the no space? Jake, mine is still showing no space on like every all, all the jobs between
+
+Unknown Speaker  16:07  
+mine look right. Really? Yeah,
+
+Unknown Speaker  16:10  
+I look correct too. I found some old stuff,
+
+Speaker 2  16:20  
+like your old Tennessee jobs, Jake may 30.
+
+Unknown Speaker  16:24  
+See this? This,
+
+Unknown Speaker  16:27  
+yeah, see,
+
+Speaker 2  16:30  
+look at the May 30 job for your address. That address,
+
+Unknown Speaker  16:36  
+okay, hold on
+
+Unknown Speaker  16:40  
+in home, in
+
+Speaker 3  16:42  
+the home screen. I don't wait may 30 my job?
+
+Speaker 4  16:46  
+No, I don't think so. I think in home, on home,
+
+Speaker 3  16:50  
+yeah, I don't have, I don't have one because I already looked it. Oh, oh,
+
+Speaker 4  16:55  
+he wouldn't be able to see it, yeah, but he's, I see the no space on May 30 and 28
+
+Unknown Speaker  17:01  
+maybe we're in a different
+
+Unknown Speaker  17:03  
+agency. Hold on. Maybe it's an upcoming
+
+Unknown Speaker  17:07  
+here's May, yeah, see may 30. Oh, and I'm
+
+Unknown Speaker  17:14  
+gonna take a screenshot and send it to you of what I'm seeing, Jake.
+
+Speaker 2  17:20  
+I'll just slack that over real quick, Jake, there we go. Yes. All
+
+Unknown Speaker  17:40  
+right, that's what I see Jake do.
+
+Unknown Speaker  17:46  
+Was that on production?
+
+Unknown Speaker  17:48  
+No, this is Dev. I mean,
+
+Speaker 3  17:53  
+this is so weird. I don't know. There's definitely a space there see, and if I look, hold on. Let me see. Let me take it out of mobile mode. I
+
+Speaker 3  18:28  
+So that right there is the encoding for the space or, yeah, sorry, so, but it what it's doing. Let me just double check. Let's see my job. That was that on home, Brian, or my job? Sorry, I think it was on home, correct? Okay, so let's do this. Is my jobs? Does it look right on my jobs?
+
+Speaker 2  18:57  
+Don't think I see a problem my jobs. Let me check,
+
+Speaker 2  19:09  
+no, I see the same problem in past on my jobs.
+
+Speaker 3  19:15  
+I mean, I'll hard code a space in there. It's between the address and
+
+Unknown Speaker  19:22  
+the and the city. Yeah, yep,
+
+Unknown Speaker  19:25  
+I'm too.
+
+Speaker 2  19:29  
+It's like the it's like, on the phone, it's reading that return differently.
+
+Unknown Speaker  19:37  
+Well, here I'm just gonna force it,
+
+Speaker 3  19:43  
+but you might see an extra space. I don't, I don't know. It doesn't make what
+
+Speaker 4  19:50  
+I was gonna ask. Will that affect when we try to map it from our phones?
+
+Unknown Speaker  19:55  
+It shouldn't, okay.
+
+Unknown Speaker  19:58  
+It should not. Um. Them
+
+Unknown Speaker  20:02  
+there. So now
+
+Unknown Speaker  20:06  
+let me just save that page
+
+Speaker 3  20:10  
+and go to a week with some jobs. There you go. So if you guys go to this week here, 616, through 622,
+
+Unknown Speaker  20:24  
+can you see a space?
+
+Speaker 4  20:26  
+One's loading. Sorry, that's okay.
+
+Speaker 2  20:29  
+I don't know about that one, but I'm still seeing a space on the same job. I just sent you a thing for
+
+Speaker 3  20:36  
+you are seeing a space? Yes? So that's, that's what we want, right?
+
+Unknown Speaker  20:42  
+I mean, I might No.
+
+Unknown Speaker  20:45  
+So me either. Okay, so
+
+Speaker 2  20:56  
+we'll say maybe this is something we got to look. Just look at.
+
+Speaker 3  20:59  
+It doesn't make any sense that it would show one way on mine, and it's not different data, so
+
+Speaker 2  21:06  
+I agree, but it's a different browser, technically showing it.
+
+Speaker 3  21:10  
+What are you using Safari? No, well, I'm
+
+Speaker 2  21:13  
+using my phone. I'm using a progressive web app on my phone. Okay, so let's do that. Technically, that should be Safari, I know, yeah, let's do this. But it is iOS Safari, which is technically a different animal than desktop Safari,
+
+Unknown Speaker  21:36  
+that it is a safari thing.
+
+Unknown Speaker  21:39  
+Aha. Okay, so
+
+Speaker 3  21:43  
+that backspace R works in Chrome, but not Safari. So where is that coming from? Is that coming
+
+Speaker 2  21:55  
+Yeah, that's a return in FileMaker. Okay, well, let's just put a space make it look like a regular address, but I can put a space there instead.
+
+Unknown Speaker  22:03  
+Yeah, that should fix it. Then,
+
+Unknown Speaker  22:06  
+since we're showing it on two lines anyway,
+
+Speaker 3  22:10  
+yeah, that's so silly that Safari won't render that, then Chrome will. Chrome and Firefox both do
+
+Speaker 2  22:18  
+the problem Jake is that's the same field I'm showing location on in in FileMaker, and in FileMaker, we do want it in two separate lines, so I might have to make a new field, calculate it to change that
+
+Speaker 3  22:33  
+well, as long as you give it to me in the same key, just location.
+
+Unknown Speaker  22:40  
+Then, then, yeah, I know we should be good,
+
+Speaker 3  22:44  
+because let me just double check job list,
+
+Unknown Speaker  22:52  
+job location,
+
+Speaker 2  22:55  
+yeah, I don't think Safari likes backslash R. I think, yeah, slash n r,
+
+Unknown Speaker  23:02  
+ah. Our CR control, return,
+
+Unknown Speaker  23:06  
+of course it does.
+
+Speaker 3  23:09  
+Um, yeah, I would need you to there's, I can't, like, it would be, it would be silly to pull that out when you could just fix it in the data. You know what I mean. So because it, it does render
+
+Unknown Speaker  23:30  
+here just fine. So if it's, if we need to,
+
+Speaker 3  23:36  
+it would be easier just to get a job. Dot location that is just formatted like like this,
+
+Unknown Speaker  23:45  
+dokey, cool.
+
+Speaker 4  24:00  
+You guys are still working on the SM, undefined, I saw that in Trello, but didn't say test yet.
+
+Speaker 3  24:04  
+So yeah, Brian, did you find that I threw something in Trello for you? It? I think it's probably your BF is JSON, I don't know, because it works in
+
+Unknown Speaker  24:17  
+I just need the location search is what it is
+
+Speaker 3  24:21  
+and on, Dev, I don't think you're giving it to me, but in production, you
+
+Speaker 2  24:26  
+are giving you what
+
+Speaker 3  24:30  
+location search. So let me just double check here. I'll share my screen again. Sorry.
+
+Unknown Speaker  24:40  
+Let me see.
+
+Speaker 3  24:47  
+So see, okay, yeah, this is the problem. Here's, here's what I get for location, on dev, location, location, say. The location history. All those are good. I need them. But in production, there's another thing. And actually there's some there's it's also exists on my jobs because you're doing you gave it to me in the old job scripting. And the my job section has old job scripting in it. So if you look in the in here, you can see Location, Location city, location history and location search. I'm missing this.
+
+Speaker 2  25:35  
+Well, I don't know that's not in the BF JSON that must be added
+
+Unknown Speaker  25:42  
+during the scripting,
+
+Speaker 3  25:44  
+I don't know, but I'm not getting it in it exists in production and not in development.
+
+Unknown Speaker  25:54  
+That's yeah, that it's got to be the scripting.
+
+Unknown Speaker  25:59  
+That's why my jobs, it's the same.
+
+Speaker 3  26:01  
+My jobs is working fine. It's home, it's the jobs list. See if I click, if I click maps, there, there it is. There's the job, okay. But if I go home, and I go to a week where there's jobs and I click Map watch. It's not going to know it's it knows where I am, but it's not putting a pin,
+
+Unknown Speaker  26:28  
+because there's no location search.
+
+Unknown Speaker  26:32  
+See Okie dokey,
+
+Speaker 2  26:40  
+I don't know where that would difference come from. It's sending the same, same thing, but I'll look at it.
+
+Speaker 3  26:49  
+Okay. If you it's just here, I'll, I'll send you exactly like what it looks like on my jobs, which is what it should look like here.
+
+Speaker 2  27:12  
+Oh, so it looks like in production, you are returning BFS JSON, but in dev, we are returning that BFS JSON for list because it's slimmer.
+
+Speaker 3  27:28  
+Okay, so if you just add that to that field, it should work. That location search thing is, just add that to that and it should be fine. If you do it right now.
+
+Unknown Speaker  27:42  
+I bet you, if I refresh this page, it'll work.
+
+Unknown Speaker  27:47  
+Hold on. Gotta do it first.
+
+Unknown Speaker  27:49  
+No, you gotta hurry
+
+Speaker 3  27:51  
+right now, right now. Brian, go. You
+
+Speaker 2  28:06  
+It's thinking it's processing 200,000 records.
+
+Unknown Speaker  28:10  
+Okay, it went okay, oh,
+
+Speaker 2  28:14  
+no, wait a minute, records remaining to be sorted. Okay, that shouldn't bother anything, though.
+
+Unknown Speaker  28:19  
+Well, let's see if it comes back.
+
+Unknown Speaker  28:28  
+Yep, it did. So now watch if I click it.
+
+Speaker 3  28:32  
+There it is, voila. That was all that was missing.
+
+Unknown Speaker  28:38  
+So that is fixed.
+
+Speaker 3  28:42  
+There you go. There's not much use in a map button if it doesn't open a map and
+
+Speaker 4  28:54  
+okay, this Okay, so I know this was something. I'm just gonna bring it up. Okay. So this morning, Brian Holmes, he was on a Job Bank of America, and he tried to clock in, and it was in his today tab, but when he tried to clock in, it said I gave him an error message and said, You have to be assigned to this job. So to me, I was like, Well, I doubt it's getting crossed with someone else only because he had his own jobs. He had his correct jobs. But I guess I wanted to see what you thought, unless it was just being halfway, you know, cross with someone else's by the time I had him click on the police, you know, the icon, it's it had his name there, and everything was fixed. So it, it had been too long, but I that's the first occurrence that I've had since, you know, the issue was fixed.
+
+Speaker 2  29:54  
+So when he clocked in, it said he was not assigned to that job, but it did show on his. Today tab,
+
+Speaker 5  30:01  
+exactly, yes, yep,
+
+Speaker 2  30:08  
+that's interesting. I'm not even returning an error no matter what on, on clock in,
+
+Speaker 3  30:15  
+I'm looking at my scripting right now. Clock in or out, I
+
+Unknown Speaker  30:28  
+clock in out, it looks like it's, do
+
+Speaker 3  30:33  
+you have the error message? Did he take a screenshot of the error message or No,
+
+Speaker 4  30:37  
+he didn't. And then by the time they transferred him to me, it had already fixed itself, because he was like, Oh, let me get back in there. And I knew at that point that, you know, it was probably going to work either way.
+
+Unknown Speaker  30:50  
+He, like,
+
+Speaker 4  30:51  
+just booked it. No, again, no, he had had it.
+
+Speaker 2  30:58  
+Can you look at the I don't know what the job is, but if you look at the job, the job assignment, it should have a mod log for the clock in. Let's try to find it. And it also should have a time entry record on his officer record,
+
+Speaker 4  31:18  
+what's the it was today? And it was the Bank of America job. His name's Brian Holmes,
+
+Unknown Speaker  31:28  
+Brian with an i
+
+Unknown Speaker  31:30  
+or a why? Why?
+
+Speaker 3  31:34  
+Why? Oh, I bet you I can just go. Is it H, O, L,
+
+Unknown Speaker  31:39  
+yes. Oh, there's two of him.
+
+Unknown Speaker  31:46  
+Oh, there's a Brian and there's a Bryant.
+
+Unknown Speaker  31:48  
+Here's one right here.
+
+Unknown Speaker  31:52  
+Yeah, he clocked
+
+Unknown Speaker  31:54  
+in at 8:54am, yep, and he still hasn't clocked out.
+
+Unknown Speaker  32:02  
+Or at least he didn't use the app to clock out.
+
+Unknown Speaker  32:06  
+He's still there. Yeah, that's fine. Um, yeah.
+
+Speaker 4  32:10  
+It was just it gave him a message saying that, you know, only people assigned to this detail can clock in, or something along those lines.
+
+Speaker 3  32:19  
+Well, okay, so here's the scripting let me see for clocking in and out. First, it double checks that there's a job and there, if there is, it's fine. Then it makes sure that we have an officer, and if there's no officer, then there's an error, and it would make them log back in, then we get the direction, if they're clocking in or out, and we get the time. Then we do this thing, Brian, this guy right here, I'm not even going to pretend to know, really, what's going on here,
+
+Speaker 2  32:54  
+does the clock in real quick, and then it makes a mod log and a
+
+Unknown Speaker  32:58  
+time entry, and then it goes back
+
+Speaker 3  33:02  
+and we just get the result. And if there's an error, then we show an error. Otherwise, we just go ahead and send this thing, which is, you are now clocked in. So I don't have anything in here that's like, only people on that detail
+
+Unknown Speaker  33:20  
+are allowed to clock in. Let me see,
+
+Speaker 2  33:24  
+and there's nowhere in, the clock in or out where I exit that subscript passing an error. So even literally, you can see, wouldn't pass it.
+
+Speaker 3  33:34  
+Brian right here is even if, if get last error is greater than zero, and then there's nothing underneath it. It goes straight to an else. So there's no error coming back from here
+
+Unknown Speaker  33:44  
+exactly. So
+
+Speaker 3  33:48  
+I wonder, well, I don't want to assume, but I wonder if he was just late, like, I can't clock in, so that it's like, well, yes, you can.
+
+Speaker 2  34:02  
+Yeah, I don't see any other I see the mod log for a login at 854 and I see a time entry for 854 you know what see other ones for today.
+
+Unknown Speaker  34:14  
+Let's do this. Let's go into the helper.
+
+Speaker 3  34:19  
+Okay, and this is get filter jobs.
+
+Unknown Speaker  34:38  
+Maybe I'm not searching this right or something. See,
+
+Speaker 3  34:51  
+yeah, I think I'm just screwing this search up. Nevermind I thought we might be able to find, like, where he actually clocked in, but obviously it made the time entry. Record right here,
+
+Unknown Speaker  35:02  
+and the mod log record, yeah, yeah.
+
+Speaker 4  35:05  
+And I think that's honestly when I was talking to him, because I asked him to, you know, click on the the policeman icon, and that's when he had to re log in. And so I was pretty confident at that point that it was going to work, and it did. So I just wanted to bring it up, in case you thought that maybe it was somehow going with someone else's but definitely lining up.
+
+Unknown Speaker  35:30  
+Yeah, I definitely do not think it was
+
+Speaker 2  35:33  
+without better evidence. I'm going to go with operator malfunction. Agreed.
+
+Speaker 4  35:39  
+Got it Okay. Um, that's all I have for the app
+
+Unknown Speaker  35:44  
+for agency.
+
+Speaker 3  35:51  
+Full disclosure too. I haven't touched agency in several days. So, okay, I was just working on my cards for the officer app because I know we're trying to get development push to production.
+
+Speaker 4  36:02  
+So focusing, yeah, there was, there was only a few things that I saw on Trello that I tested, and then one that I didn't see on Trello that I ended up finding, that I wanted to bring up. So when they released the job, we did get the notification. This isn't super important. However, when we got the notification, for some reason, the contact wasn't transferring on there in the email, yeah.
+
+Unknown Speaker  36:34  
+And then let's see.
+
+Speaker 4  36:38  
+I was curious if a job is released from the agency side. Does that also go into the mob log anywhere?
+
+Unknown Speaker  36:46  
+Not currently.
+
+Unknown Speaker  36:49  
+That's something we could do, if you'd like,
+
+Speaker 4  36:54  
+yeah, probably eventually. I don't know if it's urgent, but it might be nice to know, but the notification did work. One thing I did notice when I was in there was so I was unable to remove the officer once, once I so I assigned myself from the agency that worked. I tried to take myself off of it. It did not let me take the officer off of it, but I was able to replace the officer. So I was able to put Joe on it. And it did take me off, but I couldn't just, like, unassign it.
+
+Speaker 3  37:31  
+That is the way that it works. Do you okay? Do you? Do you think they need to be able to, like, strip somebody of a job and not fill it with somebody else. Normally, if something, the reason it's like that is because, if something's been assigned, just from, like, a data preservation standpoint, it's like, if it was empty to begin with, great, we can assign somebody to it. If it was not empty, we we need something to replace it.
+
+Speaker 4  38:04  
+Okay, yeah, and I guess if they really wanted to remove the officer, then they should contact so,
+
+Speaker 3  38:12  
+but like we can do it. Just let me know if that's what you want.
+
+Speaker 4  38:20  
+The only I could see that being that, unless you know how we have the, you know, request to unbook button on the app. I don't know if that's something we could maybe add for the agency side. That way, you know, we're removing them and we're notified.
+
+Speaker 2  38:42  
+Yeah, you're gonna run into some, you know, some agency guy clicking on the wrong thing and unbooking Someone and our job, yeah,
+
+Unknown Speaker  38:52  
+that makes sense. Okay,
+
+Speaker 2  38:55  
+so we want to add unbook request, unbook to the agency,
+
+Speaker 3  39:03  
+yes, and I need all the rules for that, like you know, because I know there's other agency jobs and things like that in there, So I just need specificity please on the card.
+
+Speaker 2  39:22  
+Do don't know what the rules really are. There any rules for that, actually? I mean, if it's the agency that signed in, as long as the job hasn't started yet, I guess that would be other than that they can request, because you guys are actually going to do the unbooking.
+
+Speaker 3  39:40  
+Is That's true, yeah, I guess it doesn't really matter. Yeah, agree.
+
+Speaker 4  39:56  
+Oh, I think I feel like this wasn't a you know, yes, this is from last. Time, Brian, so I let's see. How do I explain this? So I was on a job, and then I took myself off of it, but it stayed in the other in my agency's active list. I did try that again today, and it stayed on the dashboard, but it didn't stay in the jobs area, if that makes sense, what of agency the dashboard on the agency? No, in the agency on agency side. So it did fall off of my
+
+Unknown Speaker  40:40  
+Jake, when did you try it? Because I,
+
+Speaker 2  40:44  
+I was gonna say, I just assigned that to you for testing. Maybe 20 minutes before this meeting started.
+
+Speaker 4  40:50  
+Oh, I had, I'd written Brian fix Ashley test from our last call. So I maybe I jumped the gun on that, and I'll retest.
+
+Speaker 2  41:01  
+Yeah, I think that was one of them I just shot over right before the meeting.
+
+Speaker 4  41:07  
+Okay, well, then I'll get back to you on that, and that's all I have for agency,
+
+Unknown Speaker  41:14  
+okay, scheduler,
+
+Speaker 4  41:17  
+this one I got to show you, because I don't know how to explain it, and I don't know what happened. Okay, so we had an officer on the 13th. He
+
+Unknown Speaker  41:32  
+just really quick. I'm sorry.
+
+Unknown Speaker  41:40  
+Okay, as you can see,
+
+Unknown Speaker  41:43  
+there we go. This one, okay.
+
+Speaker 4  41:46  
+So as you can see, it says he clocked in, he clocked out. We made or not we, but she made the modification of 7.5 because he ended up emailing us saying that he forgot to clock out, so she switched it now, but on the pay report
+
+Unknown Speaker  42:09  
+here, it says 6.25
+
+Speaker 4  42:13  
+now, I can't see in the mod log, I can see where Jessica put in the 7.5 hours. But I can't see anywhere where 6.5 was entered. My The only thing I can honestly think of is because if you read his email, he kind of has a little mistake where he says 14/5 you know, he does military time, but he accidentally says 215 instead of four, but that's when he clocked out, is what he said. So in that sense, it does make sense why 6.25 would be in there. But I don't see anywhere on the mod log that that was ever entered, so I can't say that that's what happened, but I really can't say how this says 6.25 when?
+
+Unknown Speaker  43:06  
+Everywhere else it says 7.5 in our
+
+Unknown Speaker  43:10  
+in scheduler.
+
+Speaker 2  43:12  
+And what does, oh, that's a PO number. I was gonna say that date looks weird. Is that?
+
+Unknown Speaker  43:17  
+Oh, it's a 13, 513, 2513
+
+Unknown Speaker  43:21  
+notes for right here. I
+
+Speaker 4  43:25  
+don't know if you could see more on mod log than we can, but I
+
+Speaker 2  43:29  
+Well, if you click on the little arrow, you can see Yeah, the entry,
+
+Speaker 4  43:32  
+but yeah, but I just can't see anywhere that says
+
+Speaker 2  43:37  
+and then change to seven. That was better for him. So the one
+
+Speaker 4  43:43  
+are, well, that's the other weird part. Was that he Okay, so he, he clocked out like himself. It's, that's what it looks like to me. But yet, how is the base, oh, because she
+
+Unknown Speaker  43:58  
+if he clocked out,
+
+Unknown Speaker  44:01  
+I don't know. Yeah, that's
+
+Speaker 2  44:03  
+it just doesn't make sense to me that it shows our zero, yeah, before she made the change, great.
+
+Unknown Speaker  44:14  
+Let's see
+
+Unknown Speaker  44:18  
+hours detail.
+
+Unknown Speaker  44:24  
+Versus was that the pay report was yes,
+
+Speaker 2  44:42  
+I'm example is 513, 2025,
+
+Unknown Speaker  44:53  
+job for
+
+Unknown Speaker  44:56  
+easy bearcare. I.
+
+Speaker 2  45:01  
+At Broadway and what should listen next door? It's a good guess. Side
+
+Speaker 4  45:19  
+already, okay, along with that, something I noticed was on my mod log. You saw what mine looks like. But when I was trying to figure it out on Stacy's computer, when I was there, I was asking her to click into the mod logs, and hers was saying on the same thing that I saw, what was, you know, going on, but hers just said this. I don't know if you can see this. Yeah, that f JSON, and that was on, like almost all of them. I was on all of all of hers, at least for that day. I didn't go into any other areas, but for at least job
+
+Speaker 2  45:55  
+detail, let's check to see if she has the same version of file maker updated. You know, update version not just the main version, but the update version is you because that's a fairly new function, and if she has an older version of file maker, she might see that. Right?
+
+Unknown Speaker  46:26  
+So you can check your version. Going to
+
+Speaker 2  46:29  
+think file about FileMaker, maybe, or maybe it's under preferences. I'm trying to remember in Windows,
+
+Unknown Speaker  46:37  
+okay, okay, I'll check that out.
+
+Speaker 4  46:50  
+Oh, it's still pulling the from the wrong area. I don't know. I didn't, I don't remember, I don't think I saw that in Trello, but, like, it's not overriding if an external note has been made when they take it online, only when they take it online, if we send them the email, it's good. It's a lane closure or whatever we changed it to. But if they take it from the app, it's pulling just from the officer instructions versus this external note,
+
+Speaker 2  47:22  
+such shoot, there is Officer instructions. That is the same field, X notes, right? Is officers instructions, right?
+
+Speaker 4  47:32  
+But it's so like, it's pulling from, always, from this, yeah, and if we changed it here, just for like, this day, like, let's say Tuesday was different, and we changed it an external note right here. And they took this day on the app. It wouldn't say what we updated it as it would say, you know that main officer notes that right here,
+
+Unknown Speaker  48:01  
+correct? I can change that right now, okay,
+
+Speaker 2  48:12  
+next time you get to a chance, you can test that. Thank you.
+
+Unknown Speaker  48:20  
+Okay, that
+
+Speaker 4  48:34  
+we were wondering if we could add under officer profile, you know how it's active, inactive, retired, adding a status of reserved. It essentially is the same thing as being active, but it you know, they have different they can still work off duty. They're not retired. It's just if we ever needed to identify them. Is that possible? Is that easy?
+
+Unknown Speaker  49:00  
+Probably, let's see where that, yeah, we should.
+
+Speaker 2  49:05  
+It is coming from officer active status, which is, I don't know if this is hard coded or that's what I'm looking up. Sure, sir, active status is hard coded. So you want what would you like?
+
+Unknown Speaker  49:26  
+Reserved, reserved. Yes,
+
+Speaker 2  49:30  
+they're not in alphabetical order. So where would you like it? Right now, it goes active, inactive, deceased, retired,
+
+Speaker 4  49:38  
+maybe above deceased. Either way it's, yeah, where, or honestly, it doesn't matter, as long as it has the same it. You know, they are still technically an active officer. They can work off duty.
+
+Unknown Speaker  49:54  
+Um, I might
+
+Unknown Speaker  49:55  
+have to check whatever's easiest. Okay, no problem.
+
+Speaker 2  49:58  
+Problem. I can. I can make. Get an option. The problem is I don't know what functionality is set on the status being active. I'll have to look all over the system to figure that out. Okay,
+
+Unknown Speaker  50:20  
+that was actually good. I checked that.
+
+Speaker 4  50:24  
+I think still an issue for CLABSI and still an issue. These are all things we've talked about previously.
+
+Unknown Speaker  50:40  
+Oh, the turning on and off access to the portal
+
+Speaker 4  50:44  
+from being an inactive status tested that today. It did work, right? So that can be moved.
+
+Unknown Speaker  50:53  
+It works both ways.
+
+Speaker 2  50:55  
+One, I can tell you right off the bat that is going to be confusing about your request for reserved status. You had request previously that when you go into find mode the automatic,
+
+Speaker 4  51:08  
+oh, active, yes, I see that. Okay, so is there any way to include reserved with active or one or the other?
+
+Speaker 2  51:18  
+No, it's gonna have to be one or the other or or just putting on, and the other ways to use the advanced find features, you know, do one for active and then make new find record and right or reserved
+
+Unknown Speaker  51:35  
+makes sense for to me,
+
+Unknown Speaker  51:37  
+Same stuff in there. Yeah, that's That's not easy.
+
+Speaker 4  51:42  
+Okay, I'll bring that up to her too. Okay, I'll get right. I'll get back to you as soon as I can, on to see if that's,
+
+Speaker 2  51:53  
+that's a deal breaker or not. And I'll, yeah, I'll look around in the system to see if it's looking at that status for other things, you know, make sure you can still book them as jobs and all that kind of
+
+Speaker 4  52:22  
+stuff. Okay, I think that's all that I have on
+
+Unknown Speaker  52:40  
+my list.
+
+Speaker 2  52:52  
+Okay, Joe, you have anything you'd like to add before we wrap up?
+
+Speaker 1  53:01  
+Do you know, actually, the only thing I was going to throw your guy this way is we did present the native app option to Bonnie, and so we should have a decision of which route we're going to take. I'm hoping by Friday's meeting at the latest, but we're just going over a few more things. And I'm assuming at this point, on Friday, Bonnie will be on the call, because I think she's going to have a few more questions as well, sure, in regards to the cost specifically, since, I mean, I know you guys gave us a ballpark, right, six months, things like that could be potentially sooner, but I think she wants more narrow focus as to what we're going to expect Cost wise, obviously.
+
+Speaker 2  53:39  
+So we can, you know, if, if she'd like that, we can obviously put together, you know, we could put together at least a scope with, you know, it's kind of, you guys choice. We can put together a scope with some broader numbers. Or we can put together, you know, an entire proposal with, with pin down estimate numbers.
+
+Speaker 1  54:02  
+Yeah, if you know, what do you think we could get that done by Friday? Is that possible?
+
+Unknown Speaker  54:08  
+Absolutely not. No. I was excited,
+
+Unknown Speaker  54:11  
+Brian. I thought you're gonna say absolutely no.
+
+Speaker 2  54:15  
+That would probably take at least a discovery meeting or two to, you know, find, to hammer out the finer details of the features and everything. Okay, Jake and I would have to go, you know, put together a proposal. I mean, that's what we're doing for the customer app right now. Is Right? Right? Together that proposal, and that's, you know, it takes a little while to to get all that stuff together. Of course, for this, it shouldn't take as long as the customer app, because it's most of it's not conceptual. We know what you know it's supposed to do, mostly. But we would want to make sure any any new features that would be, you know, required or requested that's not on the current app. And then we would want to discuss. A couple of things that we either couldn't do in a PWA or couldn't do as nicely in a PWA that we could do at a native app and see what your opinions on those things would be before Jake and I sat down and worked through numbers for a proposal.
+
+Speaker 1  55:17  
+Okay, okay, yeah, I do know that Bonnie wants to maintain the customer side as as a priority. And I think, like I said, I think Friday should we, we should have some better insight from our end as to what we're looking at, what we want to do, and we can go from there
+
+Speaker 2  55:36  
+and maybe something on. You know, any more questions you have for us or information you need to make a decision on when we want to push the current dev into the current production of the officer app, the current officer app? Okay, so, yeah, we'd like to, we'd like to plan that, and really the agency website is severely hindered until we do that, until we move the dev into prod, because those, all those settings that they're setting for their agency mean nothing until we move the dev to prod of The Right.
+
+Speaker 1  56:20  
+Okay, yeah. I mean, that makes sense, absolutely. So Friday, hopefully, from our end, at least for native app stuff, we'll have a better idea of what we're looking at, and we'll give you an update as well. As far as moving dev over to production,
+
+Speaker 2  56:34  
+all right? And we'll be, we'll be ready to answer as many questions as we can for Bonnie. That's no problem, sure.
+
+Speaker 1  56:39  
+Yeah, absolutely. And we appreciate that fellow. So other than that, think we're all wrapped up until Friday.
+
+Speaker 2  56:45  
+All right, great. I is Amanda still on? Amanda is still on? Good. I'm here totally. I've been working diligently, and I definitely will have the, I guess, the first draft of scope for the to you guys before the end of the week for our meeting next Monday. Perfect on that. So I have been working on that, and I'll have I have got a meeting with Jake later this week to have his input on that and get it wrapped up for you. So just let you know it is coming.
+
+Speaker 5  57:18  
+Thank you. That's a lot of work. I recognize that, and I appreciate that. Thank you so much for the update.
+
+Unknown Speaker  57:22  
+Worries. Alrighty, well, that's all you got.
+
+Unknown Speaker  57:28  
+We're rocking and rolling. Thank you guys. All right,
+
+Speaker 2  57:31  
+everybody, have a great day and talk to you Friday. We'll see ya.
+
+Unknown Speaker  57:35  
+Alrighty. Friday, bye.
+
+Transcribed by https://otter.ai

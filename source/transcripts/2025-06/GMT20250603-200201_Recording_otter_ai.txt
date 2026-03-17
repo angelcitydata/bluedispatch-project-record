@@ -1,0 +1,1492 @@
+Unknown Speaker  0:00  
+Is who we're
+
+Unknown Speaker  0:03  
+is who we'll have.
+
+Unknown Speaker  0:05  
+Alrighty, then, so before we jump into our stuff, I don't know if there's anything on your end, Brian that you wanted to present to us before we started jumping into our agenda here, nope, Thursdays and Fridays are for show. Oh, that's right, obviously I forgot my apologies.
+
+Unknown Speaker  0:25  
+Okay, I'm liking these reasonable length meetings. Yeah, let's
+
+Unknown Speaker  0:31  
+try to keep that rolling. Yeah, seriously, yeah. I think just based off today's agenda, we'll jump in with Ashley's
+
+Unknown Speaker  0:39  
+stuff regarding agency first, and then we'll jump right into the app and then finish up a scheduler. So ash, let's go ahead and get rolling.
+
+Unknown Speaker  0:54  
+Is Jake on or just,
+
+Unknown Speaker  0:56  
+I mean, he's not on right now, I don't know if he plans on it or not, gotcha.
+
+Unknown Speaker  1:04  
+So start with agency.
+
+Unknown Speaker  1:08  
+This you might actually be able to answer For me.
+
+Unknown Speaker  1:11  
+Okay, so be nice.
+
+Unknown Speaker  1:21  
+Standards
+
+Unknown Speaker  1:40  
+do
+
+Unknown Speaker  1:58  
+sorry and lights. I
+
+Unknown Speaker  2:02  
+weird.
+
+Unknown Speaker  2:15  
+Stop that from happening. So try to do the complete that 1500 is that too much?
+
+Unknown Speaker  2:25  
+No, I was playing with it or testing it all morning. I didn't have that issue. So it's kind of strange, but I was curious.
+
+Unknown Speaker  2:33  
+Like, for example, this one central and Washington on five eight. It's showing an active it has a payday attached, but it's also in the completed jobs as well. I had loaded, but I I can show you if you want, if you want to see it. No, no, hold on before you move. I just, I want to try. Yeah, no problem. Job, and I'll see what it looks like.
+
+Unknown Speaker  2:57  
+I guess both it should be. I mean, it could be an inactive even though it's got a well, even got a paid date,
+
+Unknown Speaker  3:08  
+it may, I'd have to look at it, because the paid date may be making it complete, but it may not be clean. Clearing out the is active Exactly. That's what I think, like clocking out does so what is the design? Or Durango? What's Oh, no, it's central in Washington. Was just the one I looked at. Now, the one thing I did see was that, you know, he had clocked in, but he didn't clock out. But I've seen other ones that you know, don't have a clock out. They have hours entered and a pay date was processed for it, and they aren't showing up. So I just wasn't sure why these once
+
+Unknown Speaker  3:48  
+were
+
+Unknown Speaker  3:50  
+second I'm loading that date now.
+
+Unknown Speaker  3:55  
+Signals are going across the country. I
+
+Unknown Speaker  4:10  
+Deegan construction was Hewitt. Hewitt infrastructure West.
+
+Unknown Speaker  4:17  
+Hewitt infrastructure West. That's Central Ave and Washington,
+
+Unknown Speaker  4:25  
+yes.
+
+Unknown Speaker  4:28  
+Michael Smith,
+
+Unknown Speaker  4:30  
+it is out of area.
+
+Unknown Speaker  4:34  
+It does have hours worked, but it doesn't have a clock out time.
+
+Unknown Speaker  4:40  
+Let's see what the flags say in the background.
+
+Unknown Speaker  4:46  
+Job, assign,
+
+Unknown Speaker  4:50  
+payroll,
+
+Unknown Speaker  4:52  
+payroll, pay date. It does have one. I.
+
+Unknown Speaker  5:11  
+Is work complete flag is flagged, so that's why it will show up in the completed
+
+Unknown Speaker  5:19  
+and is active is also so somehow,
+
+Unknown Speaker  5:26  
+it did not clear the is active. Okay,
+
+Unknown Speaker  5:32  
+second, let me,
+
+Unknown Speaker  5:36  
+do, do,
+
+Unknown Speaker  5:38  
+do, do,
+
+Unknown Speaker  5:40  
+get This ID here before we move on.
+
+Unknown Speaker  5:59  
+Sign,
+
+Unknown Speaker  6:01  
+763, 763838,
+
+Unknown Speaker  6:16  
+active
+
+Unknown Speaker  6:19  
+and complete. I'm why
+
+Unknown Speaker  6:28  
+that active flag to, you know, to fix it, but we want to know how it happened so and I'm guessing, I mean, I didn't go through things one by one, but I'm guessing they all are,
+
+Unknown Speaker  6:39  
+you know, maybe active in computer? Yeah, well,
+
+Unknown Speaker  6:47  
+they're at least all active and probably shouldn't be. Yeah, it's just weird, because I've seen and I've tested ones where there was no clock out technically, we entered hours and their pay date was, you know, processed for it, and they weren't showing up in our actives job. So I don't know what makes some do it and others not
+
+Unknown Speaker  7:08  
+okay. I will figure out that answer. Okay.
+
+Unknown Speaker  7:15  
+Oh, the agency
+
+Unknown Speaker  7:17  
+clearing the ID. I think you called it, clearing the officer ID after we've taken them off of it.
+
+Unknown Speaker  7:25  
+I tested that again today, and it still didn't, didn't take remove itself from the list. I think I found I was trying to figure out what ways an officer can be removed
+
+Unknown Speaker  7:39  
+or changed
+
+Unknown Speaker  7:41  
+on a job. And I think I
+
+Unknown Speaker  7:46  
+didn't catch one. And I think it was the if you go to the job assignment detail and click that x to clear, yes, that was not properly doing it, because originally the card was about being canceled and it so I did that. And I found when you go to the selector and you select a different officer, stuff like that, I found those methods, but I overlooked the x
+
+Unknown Speaker  8:16  
+that clears the name. So I just did that. I just added it to that particular process. Okay, I just wasn't testing every possible scenario, obviously.
+
+Unknown Speaker  8:27  
+So test it again. Then please me. Okay, no problem.
+
+Unknown Speaker  8:32  
+Let's see.
+
+Unknown Speaker  8:39  
+Oh, the not billable. So I
+
+Unknown Speaker  8:42  
+the release button. He was
+
+Unknown Speaker  8:45  
+I put it on the Trello card, but I didn't see a response yet. But I the
+
+Unknown Speaker  8:51  
+release button is still showing for non billables
+
+Unknown Speaker  8:55  
+on the dashboard.
+
+Unknown Speaker  8:59  
+It's this one. I so I just wanted to let Jake know that that one in particular wasn't working. The other weird thing, though, that I found was that it says other agency on there. It's it. I mean, it's, I
+
+Unknown Speaker  9:17  
+don't have anyone on there. I don't have any I don't have an officer attached to it, so I don't know why it says
+
+Unknown Speaker  9:24  
+that. I don't know if that matters, but it just seemed strange.
+
+Unknown Speaker  9:29  
+Does it just say other agency there? Or does it sometimes say what the other agency is? Like, the name of the agency?
+
+Unknown Speaker  9:37  
+I have not had it. I've only had it say other agency for non billables, yeah, sounds like it shouldn't
+
+Unknown Speaker  9:44  
+Okay, yeah, if, if you've made that comment on the card, I'm sure Jake will look at it and something, but I can find him. Okay.
+
+Unknown Speaker  9:55  
+I don't know if I put the part about the other agency. I just saw that the last two days.
+
+Unknown Speaker  10:00  
+Um, but I can add it on there.
+
+Unknown Speaker  10:10  
+Oh, this is about the
+
+Unknown Speaker  10:12  
+we went over this last time though the mod log, adding the to the mod log when the agency releases it from their site. Yes, and that could be
+
+Unknown Speaker  10:22  
+I believe it's done. I'm testing it. I just haven't made the card and asked you to test it yet because I'm not testing it
+
+Unknown Speaker  10:30  
+perfect.
+
+Unknown Speaker  10:32  
+This is also last time requesting the unbook. That way, they can't take their own people off of it, but they can request it. I didn't see that on there.
+
+Unknown Speaker  10:44  
+That's it for agency.
+
+Unknown Speaker  10:49  
+Okay, is you didn't see a card for the
+
+Unknown Speaker  10:53  
+on book, on the agency app,
+
+Unknown Speaker  10:56  
+a Trello card. I didn't, but I I can, can go back and look, did you make one? I don't think I did, but okay, I didn't see one, but I could have overlooked it.
+
+Unknown Speaker  11:11  
+Jake kind of made his own especially that day you you guys met when I was at Busch Gardens, when I wasn't here. Yeah, his own cards for those. So if that happened to be at that meeting where that came up, I wouldn't have made the card, and maybe it is there, but I'll triple check and make sure that there's a card for that. Okay,
+
+Unknown Speaker  11:35  
+app is pretty small. I believe I
+
+Unknown Speaker  11:39  
+had a question on the app. Okay, so, like, I took a job for today, and then I gave myself a different job later on today, and they're in both the the
+
+Unknown Speaker  11:53  
+today folder and the upcoming Was that intentional, or is that
+
+Unknown Speaker  11:58  
+bug? That it could be intentional. It could be a bug. So okay,
+
+Unknown Speaker  12:06  
+and it was in today and upcoming. Yes, both jobs. Yeah, I think that has to do with the
+
+Unknown Speaker  12:15  
+when, when we're trying to make sure that they can clock into a job that started at like 1150 clock in, right after midnight. So we want to make sure that it still shows up on today if they hadn't clocked in yet. And I think that's going to
+
+Unknown Speaker  12:32  
+change the upcoming a little bit too, because it could be today and upcoming because we're looking at
+
+Unknown Speaker  12:41  
+one day prior, if a clock in hasn't happened showing up on today. So that they can do that,
+
+Unknown Speaker  12:51  
+we can look I mean, as long as it's not more than one day,
+
+Unknown Speaker  12:56  
+you know, as long as you're not seeing things on today that are next week or up. That is a week in the past. It could be that there could be some overlap.
+
+Unknown Speaker  13:07  
+Yeah, that makes sense. And of course, in real life, hopefully they're clocking in and clocking out, and that factor it being complete will take it out of both lists.
+
+Unknown Speaker  13:19  
+So they, you know, they won't see it for too much time, except in those situations where they really, you know, are clocking in just after midnight. You know, for some reason
+
+Unknown Speaker  13:30  
+that makes sense, perfect. I just saw that. It was different. So I wanted to bring it up because I wasn't sure if that was intentional, but it sounds Yeah, and it doesn't change, like the functionality when I clock in it, they move. So it's, yeah, it's not a problem. I was just throwing it out there. Yeah, I think that's what it has to do. We couldn't figure out any other way to allow them to clock into a job, you know, to see them in the today list, even when it's technically the next day, because as soon as it passes 12 o'clock,
+
+Unknown Speaker  13:59  
+gotcha? I
+
+Unknown Speaker  14:01  
+had a quick question about so, like, if you for the native app that is going to be built, is there a way for, you know, in this app, if to be able to zoom or,
+
+Unknown Speaker  14:16  
+like, turn your phone sideways to enlarge some of the print?
+
+Unknown Speaker  14:21  
+That's definitely stuff we could look into doing, yeah, Zoom
+
+Unknown Speaker  14:27  
+maybe, but definitely, you know, turning horizontal working better and stuff in a native app. Yeah, that stuff will will work better. Perfect. Yeah.
+
+Unknown Speaker  14:44  
+One This is born.
+
+Unknown Speaker  14:48  
+I don't know if you've found any fixes for
+
+Unknown Speaker  14:52  
+if I have hours in
+
+Unknown Speaker  14:54  
+for a job that same day, being able to see other jobs
+
+Unknown Speaker  14:58  
+that are still happening. I.
+
+Unknown Speaker  15:00  
+Are available. Um, that I thought, I mean, it works in production, but just not Dev,
+
+Unknown Speaker  15:09  
+just not Dev.
+
+Unknown Speaker  15:12  
+No, I don't have an update on that, okay.
+
+Unknown Speaker  15:20  
+Oh, and I do see the card now for the
+
+Unknown Speaker  15:24  
+ad request unbook, a job function in agency. App, it is in progress on Jake's Jake's column of work,
+
+Unknown Speaker  15:35  
+perfect. I'll look for that. It's in the Jake column. You said it's in, well, backlog web app, which is
+
+Unknown Speaker  15:43  
+Jake's stuff. So it's, it's not up for testing or anything. He's, he's still got it in in progress, so,
+
+Unknown Speaker  15:53  
+but the card is there. That's, that's what I'm saying.
+
+Unknown Speaker  16:00  
+Nice that we went over last time as well. So that's it For App
+
+Unknown Speaker  16:12  
+scheduler.
+
+Unknown Speaker  16:16  
+I
+
+Unknown Speaker  16:33  
+i
+
+Unknown Speaker  16:46  
+no other way to agency. I found this in but I guess
+
+Unknown Speaker  16:55  
+I was here.
+
+Unknown Speaker  16:59  
+I just noticed that when I
+
+Unknown Speaker  17:03  
+I can't scroll down on this mailbox. No, do you think that's really the end?
+
+Unknown Speaker  17:09  
+There might be a little bit more, but there's not.
+
+Unknown Speaker  17:15  
+I can't make that screen scroll
+
+Unknown Speaker  17:19  
+necessary. And now I can't, but you can believe.
+
+Unknown Speaker  17:29  
+Let me go to a mod log record. Where did I put that?
+
+Unknown Speaker  17:38  
+Like this one, in the job detail you can scroll. So I just didn't know you couldn't scroll here. Well, you can scroll through the list there, but you can't scroll through the detail. You can't do that in job assignment either
+
+Unknown Speaker  17:52  
+you're you can scroll through this list, but if you click on little green arrow and open up one of them, which is what you're doing in the other thing, you can't scroll here. Oh, it what's the same then, yeah, it's, it's just because of how big it is and but it's not there's nothing to scroll through.
+
+Unknown Speaker  18:11  
+Is why you see that. There
+
+Unknown Speaker  18:16  
+you go. Look at a big one that really does say you can't scroll. Okay, do cool,
+
+Unknown Speaker  18:24  
+but
+
+Unknown Speaker  18:27  
+I believe I have on most of them let me go to agency because I'm looking at officer and I
+
+Unknown Speaker  18:33  
+seen something that
+
+Unknown Speaker  18:40  
+second here.
+
+Unknown Speaker  18:54  
+Yeah, I have one on here.
+
+Unknown Speaker  18:59  
+Oh, why not?
+
+Unknown Speaker  19:04  
+Do I have that one on here?
+
+Unknown Speaker  19:10  
+That's where I want to put them.
+
+Unknown Speaker  19:13  
+Where is agency?
+
+Unknown Speaker  19:18  
+Agency?
+
+Unknown Speaker  19:22  
+I'm problem is it's not formatted here. But if you Yeah, so if you go back to the agency here, here on the agency screen, just kind of mouse over one of those and stop over old Yeah, right there, oh yeah, pops up. Oh, that is going to be everything, no matter how big it gets, okay, but it's not formatted nicely. Like, that's okay. Like, the little detail thing is,
+
+Unknown Speaker  19:52  
+that's okay, that's helpful. You can make the detail screen a little bigger, but I can't allow you to scroll, you know?
+
+Unknown Speaker  20:00  
+So there is going to be a limit to how much you can see, but we can make that limit bigger, if you'd like,
+
+Unknown Speaker  20:07  
+okay,
+
+Unknown Speaker  20:08  
+but here on this tool tip, what you're doing now that has no limit. It's just not formatted.
+
+Unknown Speaker  20:15  
+Okay, that's that's helpful. I can still read it. So that's good. The reason why I even found out about this was all of a sudden, King men, like all of these were
+
+Unknown Speaker  20:27  
+unchecked again. Yeah, ladies, do we know? So it's weird because I looked on, you know, like when that happened, and it was a better form. So it obviously happened
+
+Unknown Speaker  20:41  
+from the agency, from the app, yeah, I just don't know, did someone go clear all of the things manually I got? I hope not. I mean, that would take some time. I don't know. I don't remember ever messing with the max hours, because I haven't tested that. Honestly, that hasn't been, you know, yes, I don't know, from zero to 20, yeah, back to zero on May 1.
+
+Unknown Speaker  21:10  
+May 1, okay, so, so the the
+
+Unknown Speaker  21:13  
+modification, last time was modified from better forms, was on the, I think it was a 12th, 13th or 12th, I don't remember,
+
+Unknown Speaker  21:20  
+but yeah, all the settings were gone. And I was like, That's hilarious. So well, if you look at that mod log, you can see yet the last time it was modified, it was by you today. Well, yeah, because I, I rechecked time. Yeah, the last time it was modified by better forms was five. One was May 1, not 13. May 1. Where do you I'm sorry, it's 13, good. Okay, that's blind. I'm like, where do you see that I'm old and blind. All I saw.
+
+Unknown Speaker  21:52  
+It's okay. So yes, you're correct, yeah, okay, and if you click on that one, yeah, oh, if you just mouse over new value and the old value, you can see what changed the max hours. But did the other things change?
+
+Unknown Speaker  22:09  
+Yes, they all went to fall somehow, like I So, and that's how I right. I just don't know how, but either way,
+
+Unknown Speaker  22:17  
+thought that was weird. While we're on the topic of mod logs, though. Let me show you one more thing. Okay, so yesterday, this site was changed, and I know it was changed, but I'm curious
+
+Unknown Speaker  22:32  
+why
+
+Unknown Speaker  22:34  
+it's not in the mod log list, too. Someone changed the site name and the abbreviation. I can tell that only because I I figured out, like, what it was before, and I know when it I know when it was changed. I just don't understand why it wasn't
+
+Unknown Speaker  22:53  
+documented it should be, yeah,
+
+Unknown Speaker  22:59  
+like the last change that was logged was 429,
+
+Unknown Speaker  23:06  
+yeah, normally down here it says modified by, you know, so I was kind of curious,
+
+Unknown Speaker  23:12  
+I don't know, yeah, because this is the, this is the first record. It didn't have a created by, because, I guess the created by wasn't.
+
+Unknown Speaker  23:25  
+Field wasn't created when this,
+
+Unknown Speaker  23:28  
+when? This
+
+Unknown Speaker  23:30  
+is the first record in the table.
+
+Unknown Speaker  23:33  
+The created thing wasn't, didn't exist yet.
+
+Unknown Speaker  23:38  
+So, you know, yeah, it says the date by Bonnie. So that's the modification. It doesn't have a create, and that's why it's just one line instead of two, like it usually is,
+
+Unknown Speaker  23:50  
+okay, yeah, that makes sense. I was just curious why it didn't capture up here, in here. Sorry. Yeah, me too.
+
+Unknown Speaker  24:01  
+I don't know. Are we sure it changed? Because that's blank for a long time. Maybe, I think the whole time I've been this one, should say Texas Street, force and T x, here, I went through all of them, and that's the only one that's missing. And I can see, you know, I can see that at one point, you know, the old value was this, and then, you know, the new one. So I know this used to be Texas street force, and now it's kind of odd that that is the first record in the table. You think Arizona would be.
+
+Unknown Speaker  24:34  
+Yeah, I've always thought that, actually, but that is
+
+Unknown Speaker  24:38  
+this that's been consistently the the first one that shows up. I couldn't tell you why, yeah, or even because all is the second record,
+
+Unknown Speaker  24:48  
+and Virginia is the third record. Like, yeah, Arizona's way back here, yep. Don't know. Don't know how
+
+Unknown Speaker  24:58  
+if we go by when they recruit.
+
+Unknown Speaker  25:00  
+Created looks like, looks
+
+Unknown Speaker  25:03  
+like. Most of them were created in December.
+
+Unknown Speaker  25:12  
+Yeah, which is, which is fine, because that's because you did only have basically Texas street forest, Arizona and all was all you had before, maybe, right? Or two more. So that's when you entered the rest for this system, which is fine,
+
+Unknown Speaker  25:30  
+yeah, I just thought. I just didn't, I couldn't understand, yeah,
+
+Unknown Speaker  25:36  
+it's possible.
+
+Unknown Speaker  25:39  
+Let me try something.
+
+Unknown Speaker  25:43  
+Do we do it? Yeah, it just, it just took the change that I just made so it's back to what it was, but
+
+Unknown Speaker  25:54  
+it put yours in there. Yeah, I know. Just don't know what, how it didn't let me try the edit button instead of because I have the ability to go straight into the site name. But let's, let's try this. We're going to save that. Yes, I want to save the change. Ah, it didn't take it that time.
+
+Unknown Speaker  26:16  
+So it had it's not tracking when the change is done through the pencil. Yeah, the pencil interesting, which is not cool. Why? Why isn't it? I don't know.
+
+Unknown Speaker  26:30  
+Let's see real quick. If, if it's a quick thing, let's deal with it.
+
+Unknown Speaker  26:35  
+Site, name, mod,
+
+Unknown Speaker  26:38  
+parameter, save.
+
+Unknown Speaker  26:42  
+Aim, mod
+
+Unknown Speaker  26:45  
+perimeter save.
+
+Unknown Speaker  26:58  
+See if that does it, or if I've got to be a little more manual about it. I shouldn't
+
+Unknown Speaker  27:05  
+put Texas back in there again.
+
+Unknown Speaker  27:09  
+Save, yes. Mod, log,
+
+Unknown Speaker  27:15  
+yes.
+
+Unknown Speaker  27:18  
+Was that me? Let's
+
+Unknown Speaker  27:21  
+try changing it from Texas to Texas to
+
+Unknown Speaker  27:25  
+just a C, or do it through the pencil. Yes, I want to make the change. Yes, okay.
+
+Unknown Speaker  27:33  
+Well, blank it back out. Okay. I'll change it back to Texas. I just wanted to not touch it until I talk to you. No problem. So the people could be tracking the mod log correctly. Now, perfect, okay.
+
+Unknown Speaker  27:48  
+Oh, the
+
+Unknown Speaker  27:51  
+remember, you asked me if Lee and Stacey had the same version of file maker, and I know you said you didn't know where to, where exactly you would go on a Windows or, I think it's edit and settings.
+
+Unknown Speaker  28:09  
+Does it say anywhere here?
+
+Unknown Speaker  28:12  
+No, all right. Hit Cancel. Let's look
+
+Unknown Speaker  28:18  
+file.
+
+Unknown Speaker  28:21  
+I don't see,
+
+Unknown Speaker  28:24  
+okay, to help
+
+Unknown Speaker  28:33  
+at the very bottom about FileMaker Pro, that's where you want to go. Okay, that'll give you a version number. Your version number 21.1
+
+Unknown Speaker  28:42  
+point 1.41
+
+Unknown Speaker  28:44  
+perfect. Okay, thank you.
+
+Unknown Speaker  28:53  
+Okay.
+
+Unknown Speaker  28:56  
+Oh, did you ever figure out how the hours could have been entered at 7.5 but turned up at 6.5 on the pay report. Do you ever look into that one?
+
+Unknown Speaker  29:05  
+I did okay, no, I didn't come up with a great answer.
+
+Unknown Speaker  29:10  
+Truthfully,
+
+Unknown Speaker  29:13  
+yeah, I looked at it, but I couldn't come up with a great answer for that
+
+Unknown Speaker  29:18  
+one. Every time I try it, it worked. It worked great. So what
+
+Unknown Speaker  29:25  
+I was kind of afraid of because it I've never, we haven't had it happen since, but I just couldn't explain it. Yeah, sure. I couldn't recreate it,
+
+Unknown Speaker  29:36  
+no problem.
+
+Unknown Speaker  29:40  
+Okay, I don't know how hard this would be, but it was a request, so I'm gonna ask. Oh, I don't do requests. Yeah.
+
+Unknown Speaker  29:49  
+So,
+
+Unknown Speaker  29:51  
+oh, dashboard, collapse. So when you're creating a new job, I'm not going to do it, but you know, it brings you in here. Mm.
+
+Unknown Speaker  30:00  
+Come on. And currently, if you miss, you know, like, daily or weekday or something, this submit button doesn't like, if it's not going to create the shift it, yeah, it doesn't go away.
+
+Unknown Speaker  30:16  
+I was curious how hard it would be to have a pop up that says, like, you know,
+
+Unknown Speaker  30:22  
+like when you're doing here, if you don't have a contact or something that gives you a pop up, like you must complete
+
+Unknown Speaker  30:28  
+or something's missing, just to notify them that the job was not scheduled, even though they hit that submit button. Like, I know that it doesn't if it doesn't go away, like that's a red flag. But for the sake of
+
+Unknown Speaker  30:41  
+being more user friendly?
+
+Unknown Speaker  30:44  
+Is that a hard add addition? I don't know. I really have to look at it that okay, that submit and automatic job creation is a long, detailed script, so I'll have to look at
+
+Unknown Speaker  30:59  
+I'll have to look at that. Can it be done absolutely? What way do we want to do it, and how big of a deal it is, I don't know yet. Okay,
+
+Unknown Speaker  31:12  
+two
+
+Unknown Speaker  31:17  
+error handling.
+
+Unknown Speaker  31:22  
+Way. With suggestions
+
+Unknown Speaker  31:31  
+and submit
+
+Unknown Speaker  31:36  
+recurring job process.
+
+Unknown Speaker  31:48  
+Okay,
+
+Unknown Speaker  31:50  
+okay,
+
+Unknown Speaker  31:52  
+oh, this we went over last time too. Just not sure if I saw or if you had any update
+
+Unknown Speaker  32:01  
+on the pulling of the details when they take it on debt or on the like, if
+
+Unknown Speaker  32:07  
+something is put in external notes, it reads that on the app the external notes. But when they take the job and they get emailed the notification, it's only pulling from the officer instructions.
+
+Unknown Speaker  32:18  
+Um, I thought we fixed that, like on the call, but let me
+
+Unknown Speaker  32:24  
+check on time when they book a job. Is the way the notification goes out. Yes, yeah, it's because So, like this one,
+
+Unknown Speaker  32:35  
+I changed this externally, right to, I think I added fake job. But when I actually took the job online and got that notification. It only said, I think it was just, yeah, fake test.
+
+Unknown Speaker  32:48  
+How dare it say, fake test.
+
+Unknown Speaker  32:52  
+That's horrible.
+
+Unknown Speaker  32:56  
+Let's look at what it sends.
+
+Unknown Speaker  33:02  
+Oh, yes, you are, you are you are,
+
+Unknown Speaker  33:09  
+and you're taking a job from the officer app, yes, okay.
+
+Unknown Speaker  33:14  
+Officer app, job, list,
+
+Unknown Speaker  33:18  
+book, job,
+
+Unknown Speaker  33:21  
+yeah, yeah. Because when, when I send it through, like dashboard, like when I physically send it, it's correct. It says the external notes. It's only when you take, they take it
+
+Unknown Speaker  33:34  
+online. The
+
+Unknown Speaker  33:36  
+body of the email
+
+Unknown Speaker  33:40  
+is huge.
+
+Unknown Speaker  33:43  
+It said it does send the related officer instructions,
+
+Unknown Speaker  33:48  
+but we want it to send those external which, I mean, yeah, normally, you know, we do want the officer instructions, but yeah, sometimes they're not. And this is correct. Okay, let's
+
+Unknown Speaker  34:03  
+test out when I get, when you get a moment,
+
+Unknown Speaker  34:08  
+okay, when you can. So I just made a change on where that pulls from for the email. Okay, I'm gonna do it now, or just get back to you. I'd say, get back to me. Let's not, don't want to waste everybody's time on this call.
+
+Unknown Speaker  34:24  
+Perfect quietly as we chat for an hour. Oh,
+
+Unknown Speaker  34:29  
+it's
+
+Unknown Speaker  34:36  
+fun, okay? And now we've talked about this already, sure you don't want to hear about it again. However, I was curious. So the the
+
+Unknown Speaker  34:46  
+font, I don't even know if you I want to call it font, but basically it just cutting off. I was curious.
+
+Unknown Speaker  34:54  
+Can Can we move, like, maybe shift things down, or move this reference box?
+
+Unknown Speaker  35:00  
+Anywhere, just to give this PO number more room,
+
+Unknown Speaker  35:05  
+yes, however, every line will be wider meanings. You'll get probably
+
+Unknown Speaker  35:14  
+you'll get probably one less you know, job per page, per page.
+
+Unknown Speaker  35:21  
+Make it dynamic by line, so
+
+Unknown Speaker  35:27  
+the line either has more every line has more space or no lines have more space.
+
+Unknown Speaker  35:36  
+Yeah.
+
+Unknown Speaker  35:38  
+The only
+
+Unknown Speaker  35:40  
+other types of things I can think of is if, again, if you're if you're copying and pasting into the system, if you right, click
+
+Unknown Speaker  35:51  
+it, you should have paste options. But I don't see that in FileMaker, for some reason. I see it everywhere else me too. But that because that would allow you to paste as plain text instead of having to go through some third party, which is, you know, which sucks.
+
+Unknown Speaker  36:08  
+Was surprised that the whatever shortcut I told you about, the shift, oh, with the V Yes, and it just gives me that strange box, like, I can't explain it, but I
+
+Unknown Speaker  36:20  
+was hope. I was hopeful that would work. But it did not.
+
+Unknown Speaker  36:24  
+Yeah,
+
+Unknown Speaker  36:26  
+I don't know. It's,
+
+Unknown Speaker  36:29  
+doesn't like you copying and pasting it. Would prefer you type it out.
+
+Unknown Speaker  36:34  
+I don't know at this point, can I happen? I guess maybe make, make the space a little bit bigger. It's, it's almost, it doesn't even need that much. It's like, almost there, but it just, you know, cuts off like half of that word. Once you it's, it's lines, once I give them a third line,
+
+Unknown Speaker  36:54  
+then they're going to want a fourth line, because they're going to get some, you know, bigger font or longer Po. It's like I said in the end, it comes down to how many jobs you want to be able to see on one page, especially if you if you know Lori and her team are printing this out onto pieces of paper.
+
+Unknown Speaker  37:15  
+Yeah, they are more pieces of paper, so you can't move reference like to the side over here at all, or anything like that. Um,
+
+Unknown Speaker  37:25  
+reference. Can
+
+Unknown Speaker  37:28  
+I know they utilize reference, but I've never seen like anything in reference when they're doing the officer pay report, so I don't know even how important that is for this report. I don't know the
+
+Unknown Speaker  37:43  
+what really would be best
+
+Unknown Speaker  37:50  
+is if we could guarantee something else is smaller one second. Let me look.
+
+Unknown Speaker  37:58  
+Because the reason I can't dynamically slide the vertical size of PO number is, as you guessed, there's references such under it. Location stretches bigger because it can go all the way down to where internal notes start,
+
+Unknown Speaker  38:14  
+because the reference isn't that wide. So location can be longer and still show than
+
+Unknown Speaker  38:22  
+PO number can
+
+Unknown Speaker  38:24  
+so it's about their placement, right? If I moved reference over, then I have to make location always shorter, or, you know, wherever I move it. And the problem is the little you know, the icons are already on this kind of the same
+
+Unknown Speaker  38:43  
+horizontal line as references, and we've got hours and cancel reason up there on the first line, if you think about it like that.
+
+Unknown Speaker  38:52  
+So I can't slide reference all the way over to the right because there's already stuff there
+
+Unknown Speaker  38:58  
+that I can't see. Okay, yeah, like, cancel reason, ot hours, that kind of stuff.
+
+Unknown Speaker  39:05  
+And then on the second line where reference already is, then that's where the late checkbox can be, the, you know, the category, the car stuff, keys, whatever is shown there,
+
+Unknown Speaker  39:18  
+that kind of stuff. So, I
+
+Unknown Speaker  39:21  
+mean, stuff's already kind of packed on that screen
+
+Unknown Speaker  39:26  
+trying to pull up reports.
+
+Unknown Speaker  39:30  
+What is that screen? That is the officer pay, report,
+
+Unknown Speaker  39:34  
+print. Officer, pay. Let's look at this screen here.
+
+Unknown Speaker  39:39  
+Yeah.
+
+Unknown Speaker  39:42  
+So yeah. Plus, we've got that new alert, that
+
+Unknown Speaker  39:49  
+exclamation point icon, you know, that's another thing. So when, if you want me to move I can't just move reference down. I have to move reference everything.
+
+Unknown Speaker  40:00  
+On the same horizontal line as it, which means that alert, icon,
+
+Unknown Speaker  40:06  
+holidays, checkbox, late, checkbox, the category, and then the agency, car and POV and internal notes. I have to take all of that and slide it down.
+
+Unknown Speaker  40:21  
+I can't just slide down reference, because then it would be on top of internal notes.
+
+Unknown Speaker  40:30  
+And I know internal notes is important. I just don't know is reference there, because they're using it on a different report. So we can't remove it. No, not true. It's this is a print so as far as this print screen is concerned, it is just for the officer pay report.
+
+Unknown Speaker  40:47  
+Um, Lori, do you know if she uses reference on this report specifically?
+
+Unknown Speaker  40:53  
+Or is that should I ask Stacey? I don't, I don't
+
+Unknown Speaker  40:57  
+want to remove something, but I've, I've never seen a reference number on here, yeah, ask Stacey when she gets back. She's on vacation this week.
+
+Unknown Speaker  41:08  
+Okay,
+
+Unknown Speaker  41:10  
+well, so that so let's say just in theory, if reference can be moved, Brian, that would give this more room.
+
+Unknown Speaker  41:18  
+Or Now, yes, yes, okay, I can also move, let's see. So I'm going to move the little exclamation point icon to the left of the word, internal notes of that label over there. And then
+
+Unknown Speaker  41:40  
+I can do this so internal notes horizontally only goes over to right before bonus pay that column so I could move reference over there.
+
+Unknown Speaker  41:54  
+Okay, that would be under holiday. If you see holiday, I know that's not there very often.
+
+Unknown Speaker  42:06  
+So I mean, you'll have to run this report again to see the changes I'm making right now. But
+
+Unknown Speaker  42:12  
+let's say that will give us more vertical room
+
+Unknown Speaker  42:19  
+for PO number and customer name. I don't know if we need it, but
+
+Unknown Speaker  42:28  
+the space is there now,
+
+Unknown Speaker  42:32  
+so that that should do it for you, that'll definitely give you another line, maybe two on the PO number.
+
+Unknown Speaker  42:42  
+Yeah. Reference has moved, and that icon, that exclamation point icon, has moved, but all the information still there. Okay, I will rerun it and or when they when they run it next, I'll just see what it looks like. Thank you.
+
+Unknown Speaker  43:01  
+See any, any update on the dashboard collapsing,
+
+Unknown Speaker  43:06  
+nope. I just saw it happen to you. And I was like, what the Jesus? Yep. And you have two main screens. That's not supposed to be able to happen. Yeah. And, of course, it never happens to me. So I'm gonna have to,
+
+Unknown Speaker  43:21  
+I don't know, I might have to. I have a program called parallels that lets me run Windows on my Mac.
+
+Unknown Speaker  43:28  
+It's not,
+
+Unknown Speaker  43:31  
+it's it's very hard to do things on it, because I can only give it like four gigs of RAM, which is a joke.
+
+Unknown Speaker  43:40  
+So it's really slow and it's really awkward and clanky to use, but it's the only way I can really test some of this stuff on a Windows machine. Since I have a Mac,
+
+Unknown Speaker  43:53  
+I don't. So even when you, even when you follow these, like directions or yours, doesn't collapse when you'd follow these. That's interesting. Absolutely, no. It doesn't
+
+Unknown Speaker  44:03  
+weird.
+
+Unknown Speaker  44:07  
+Okay, it
+
+Unknown Speaker  44:09  
+probably wouldn't for Joe, if he ever got around to signing into the system,
+
+Unknown Speaker  44:16  
+I'm still rebelling.
+
+Unknown Speaker  44:19  
+I'm making sure you were to sleep.
+
+Unknown Speaker  44:27  
+Let's see, oh, the correspondence. The
+
+Unknown Speaker  44:32  
+only one I saw that I couldn't get a notification. Didn't see notifications going in. There was the cancel. Did we talk about that? Why the cancelation notifications aren't going into the correspondence area,
+
+Unknown Speaker  44:46  
+so when you click send notification email under the cancel section
+
+Unknown Speaker  44:55  
+that
+
+Unknown Speaker  44:58  
+I could have swore I did that, let's see.
+
+Unknown Speaker  45:00  
+Um,
+
+Unknown Speaker  45:04  
+where let's go to,
+
+Unknown Speaker  45:07  
+yeah, cuz it says type canceled. Did you just add this,
+
+Unknown Speaker  45:13  
+the type part up there that you can select? I added that maybe two weeks ago. Okay, so, and we discussed on a meeting. But yeah, no, and I saw it. I've seen it before. I just was.
+
+Unknown Speaker  45:26  
+I checked just see if it
+
+Unknown Speaker  45:33  
+canceled. Yes, see
+
+Unknown Speaker  45:36  
+it doesn't. I don't know why it doesn't come.
+
+Unknown Speaker  45:40  
+Come in here, go ahead and change the type filter to like blank.
+
+Unknown Speaker  45:47  
+Do you see there on the Type column? Do we see a canceled? No,
+
+Unknown Speaker  45:55  
+wait a minute, I thought, did I just see one where? No, maybe I didn't.
+
+Unknown Speaker  46:02  
+I just, no, it's okay. I just sent that cancelation to myself. It should be up at this very top, but it's, it's not
+
+Unknown Speaker  46:10  
+cancelation. Okay, one second, let's go to Jake hubs.
+
+Unknown Speaker  46:16  
+It does look like it should go there, though, because when I, you know, to type it says canceled, so it looks like it should go there.
+
+Unknown Speaker  46:23  
+Yeah, that's,
+
+Unknown Speaker  46:27  
+that's interesting. You sure you want to cancel this job? Yes, it's a fake job. I'll cancel it all I want.
+
+Unknown Speaker  46:37  
+We're thinking. We're thinking,
+
+Unknown Speaker  46:41  
+Oh, no, oh, God, oh.
+
+Unknown Speaker  46:44  
+What level did you do it at? Did you do it at the job assignment level, or the recurring job level, job assignment,
+
+Unknown Speaker  46:53  
+job assignment level,
+
+Unknown Speaker  46:59  
+you are?
+
+Unknown Speaker  47:04  
+Dashboard detail toggles,
+
+Unknown Speaker  47:09  
+email,
+
+Unknown Speaker  47:13  
+dashboard toggle
+
+Unknown Speaker  47:22  
+email,
+
+Unknown Speaker  47:26  
+we're setting the type is canceled.
+
+Unknown Speaker  47:32  
+We'll create a new message.
+
+Unknown Speaker  47:40  
+Hmm,
+
+Unknown Speaker  47:44  
+let's see if
+
+Unknown Speaker  47:47  
+Ashley, because I see the coding, so I don't know why
+
+Unknown Speaker  47:53  
+it's not
+
+Unknown Speaker  47:55  
+showing up. Ashley, your
+
+Unknown Speaker  48:01  
+officer, ID is this.
+
+Unknown Speaker  48:06  
+Let's go look at email records
+
+Unknown Speaker  48:13  
+and see
+
+Unknown Speaker  48:16  
+in the background what's attached to you. It
+
+Unknown Speaker  48:21  
+may be making them and not attaching it to you correctly. Let's see
+
+Unknown Speaker  48:30  
+Java sign. It's not what we want. We want. I
+
+Unknown Speaker  48:43  
+have one in here.
+
+Unknown Speaker  48:46  
+It's falling
+
+Unknown Speaker  48:49  
+to
+
+Unknown Speaker  48:50  
+layout, email,
+
+Unknown Speaker  48:55  
+utility, email,
+
+Unknown Speaker  48:59  
+finish. I'm put some fields on here,
+
+Unknown Speaker  49:16  
+find
+
+Unknown Speaker  49:19  
+your officer record, or emails from your officer record.
+
+Unknown Speaker  49:30  
+So you,
+
+Unknown Speaker  49:33  
+you were on the job when it was canceled. You're so you're the one you were sending the cancelation to. Was you
+
+Unknown Speaker  49:39  
+okay? Because that's, that's who it should be. That's
+
+Unknown Speaker  49:44  
+so let's try, you
+
+Unknown Speaker  49:48  
+type canceled,
+
+Unknown Speaker  49:51  
+nothing. So let's try just type canceled and see if there's any. There is. There's 418
+
+Unknown Speaker  50:00  
+Type canceled,
+
+Unknown Speaker  50:02  
+and they all have job assign IDs, but they don't have officer IDs. So it's not attaching it to your officer it's is attaching it to the job assignment.
+
+Unknown Speaker  50:17  
+Interesting,
+
+Unknown Speaker  50:24  
+Create Message new.
+
+Unknown Speaker  50:34  
+All right,
+
+Unknown Speaker  50:36  
+so
+
+Unknown Speaker  50:39  
+looks like what we got here
+
+Unknown Speaker  50:44  
+is it kind of has to
+
+Unknown Speaker  50:47  
+decide what it's attaching it to when it's not necessarily doing, oh yeah, it should be doing both.
+
+Unknown Speaker  50:54  
+Where does it get the officer ID? Oh, Officer ID. So let's go check one more
+
+Unknown Speaker  51:00  
+time. Back to
+
+Unknown Speaker  51:03  
+detail toggles here I am not passing it an officer ID I should be so let's say officer I d
+
+Unknown Speaker  51:21  
+is d is The
+
+Unknown Speaker  51:26  
+assigned officer
+
+Unknown Speaker  51:29  
+to the job assignment
+
+Unknown Speaker  51:42  
+message to make sure
+
+Unknown Speaker  51:46  
+you spell everything correctly, because it's case sensitive.
+
+Unknown Speaker  51:55  
+Okay, we're
+
+Unknown Speaker  52:00  
+going to want to test that again at some point.
+
+Unknown Speaker  52:18  
+You know, go back to your officer record, and you might have to, like, there it is, yeah, I see it. That's yeah, there it is. Okay, cool. Thank you.
+
+Unknown Speaker  52:29  
+The hours needed. I was supposed to get back to you on if there needs, if they need to be in here. And Marissa said, No. So
+
+Unknown Speaker  52:38  
+okay, dokey, so we can remove that from an option
+
+Unknown Speaker  52:44  
+from that list,
+
+Unknown Speaker  52:51  
+find What that list is called.
+
+Unknown Speaker  52:58  
+It is called
+
+Unknown Speaker  53:02  
+Email, type filter.
+
+Unknown Speaker  53:06  
+Email, type filter. There
+
+Unknown Speaker  53:09  
+you are. We are going to take hours needed off of that list.
+
+Unknown Speaker  53:16  
+Okay,
+
+Unknown Speaker  53:19  
+okay,
+
+Unknown Speaker  53:22  
+I know.
+
+Unknown Speaker  53:24  
+Let's see we still need to
+
+Unknown Speaker  53:28  
+get Sean be a helper
+
+Unknown Speaker  53:32  
+whenever you're free, maybe Friday, I don't know.
+
+Unknown Speaker  53:36  
+Yeah,
+
+Unknown Speaker  53:39  
+yeah. Specific plans Friday.
+
+Unknown Speaker  53:44  
+Okay, because we're meeting Thursday this week, so I have no meetings on Friday.
+
+Unknown Speaker  53:49  
+Okay,
+
+Unknown Speaker  53:52  
+that's it.
+
+Unknown Speaker  53:53  
+Let's see sir.
+
+Unknown Speaker  53:55  
+Oh, wait.
+
+Unknown Speaker  53:58  
+I don't think Friday will work, actually, because he doesn't start till like, 345 or 330 or whatever, 10 feet.
+
+Unknown Speaker  54:05  
+Yep, I can't I'm saying, yeah, sorry. All right, maybe next week searching, Oh, just a really old one, you know, like putting in searching by phone number and then hitting Enter and it tabs down. We'll get a fix to that, or should I just take this off? Yeah, I don't, I don't.
+
+Unknown Speaker  54:26  
+I don't know. I've got everything, and it does the same thing for me. I don't know why
+
+Unknown Speaker  54:35  
+it's it's not set to do that.
+
+Unknown Speaker  54:39  
+It's set up like all the other fields that work the way you want them to.
+
+Unknown Speaker  54:45  
+So I've kind of,
+
+Unknown Speaker  54:48  
+I don't have much on that. I don't know what to tell you. I don't know why it won't work. Particular instance, it doesn't for me either. So
+
+Unknown Speaker  54:57  
+okay, just that I'd follow up on that one.
+
+Unknown Speaker  55:00  
+And then the last thing, the new customer, we
+
+Unknown Speaker  55:05  
+said, needs to be different color. But honestly, even if it's like a exclamation point or a.or
+
+Unknown Speaker  55:11  
+just some indicator that this is a new customer, just so Lori knows that she needs to, you know, put the service agreement in there and then charge the card if I narrative,
+
+Unknown Speaker  55:23  
+whatever process she has on that,
+
+Unknown Speaker  55:26  
+aren't we? Aren't we displaying that somewhere,
+
+Unknown Speaker  55:30  
+whether they're a new customer, I could have swore I wrote a flag for that, and I'm sure that would be to run something. Let me
+
+Unknown Speaker  55:41  
+maybe it's on a report screen instead of here.
+
+Unknown Speaker  55:47  
+I don't know Sure.
+
+Unknown Speaker  55:51  
+How
+
+Unknown Speaker  55:57  
+would I find that out? Or you want to get back to me? Okay,
+
+Unknown Speaker  56:14  
+Formula
+
+Unknown Speaker  56:20  
+slime, yeah, I think
+
+Unknown Speaker  56:31  
+we might have taken that
+
+Unknown Speaker  56:34  
+out because we changed to viewing the local Customer Name field instead of the related one to speed things up on the screen.
+
+Unknown Speaker  56:44  
+And when we did that, we
+
+Unknown Speaker  56:46  
+lost the ability to look at that flag.
+
+Unknown Speaker  56:53  
+I think
+
+Unknown Speaker  56:56  
+no, because I don't see a flag for it either. I thought I made one. I really remember making one,
+
+Unknown Speaker  57:03  
+okay, yeah. I mean, it's been a long time since we've first talked about it. So I wasn't, I don't remember seeing anything, but, you know, maybe I wasn't looking,
+
+Unknown Speaker  57:17  
+yeah,
+
+Unknown Speaker  57:18  
+I think we,
+
+Unknown Speaker  57:21  
+I continued to have questions about what a new customer is, because
+
+Unknown Speaker  57:28  
+you don't just have one place to put a document now, you know, now you have assets where they can have multiple documents,
+
+Unknown Speaker  57:37  
+and
+
+Unknown Speaker  57:40  
+Just because they have an asset doesn't mean it's the document that you're thinking of that, you know, makes them no longer a new client, I guess the signed service agreement, or whatever it is, Yeah, this Yeah, this area, yeah, we're not.
+
+Unknown Speaker  57:57  
+We're seeing
+
+Unknown Speaker  58:07  
+Hmm, oh, yeah, there it is. So, okay. So what I'm, what I want to do, at least, is if you, if you go there to customer detail again
+
+Unknown Speaker  58:19  
+and click on the little green arrow next to that asset.
+
+Unknown Speaker  58:24  
+Yeah, so you've already picked that type as service agreement. So I'm going to be looking for that, not just an a document, a asset. I'm going to be looking for an asset that the type is service agreement,
+
+Unknown Speaker  58:36  
+and
+
+Unknown Speaker  58:38  
+I'll see about if I can make
+
+Unknown Speaker  58:47  
+I can definitely, you know, flag, and know when,
+
+Unknown Speaker  58:51  
+when that's there. And if they don't have it, I can have it flagged.
+
+Unknown Speaker  58:58  
+But I don't know. I don't know if job assignment dashboard is the place we want that,
+
+Unknown Speaker  59:03  
+okay?
+
+Unknown Speaker  59:06  
+It just seems to me, it
+
+Unknown Speaker  59:09  
+seems to me, that that's not, I know. I don't know why Lori would be there often, or Marissa. That's for the schedulers to look at.
+
+Unknown Speaker  59:19  
+You know, that's their view,
+
+Unknown Speaker  59:22  
+I would either want it in, like the reporting section, or in the customer detail the customer list view. Maybe
+
+Unknown Speaker  59:33  
+have something that,
+
+Unknown Speaker  59:36  
+you know, a button that shows new customers that just, you know, filters down to new customers there on the customer list, so that they can easily just hit a button and boom, there's all the new the customers that don't have a service agreement,
+
+Unknown Speaker  59:50  
+okay, something like that lost.
+
+Unknown Speaker  59:54  
+I just don't know. Yeah, I know.
+
+Unknown Speaker  59:57  
+Maybe it's just me. I just don't know why.
+
+Unknown Speaker  1:00:00  
+Much, you know, accounting department and such, would want to spend much time on the job dashboard.
+
+Unknown Speaker  1:00:07  
+Lori, do you have any do you have any thoughts? Lori, yeah,
+
+Unknown Speaker  1:00:17  
+can we just make it a different color,
+
+Unknown Speaker  1:00:21  
+company name in a different color, rather than, like having to put a different button or anything in?
+
+Unknown Speaker  1:00:28  
+Well, yes, you can make it at a glance easy. Well, yes, but number one, so these are job assignments, not just customers. Number two, you're looking at like ones that have a job today.
+
+Unknown Speaker  1:00:42  
+That's not going to help you see that a customer needs a service agreement. You know, before their job that they booked next week, because on that job dashboard, you're pretty much always looking at today. You know, maybe tomorrow. You know, whatever you're not
+
+Unknown Speaker  1:01:01  
+this isn't a place to see all customers that need a service agreement,
+
+Unknown Speaker  1:01:06  
+because you're really looking at a very specified date range that's usually just today, and that means that it's the last minute, it's the day of the job, and you're trying to scramble to get a service agreement, I think having it on the customer list or something where you can go every once in a while, click a button and see that list.
+
+Unknown Speaker  1:01:24  
+Might be a better way. We could even do something like we only show if they don't have a service agreement, but they do have a job booked, you know, because maybe it's a customer that is brand new and hasn't even done a job yet, hasn't even, you know, created a job yet. So
+
+Unknown Speaker  1:01:44  
+and especially once we get the customer app online and stuff, and we might end up with some more customers that are really leads, you know, that haven't really turned into a job yet,
+
+Unknown Speaker  1:01:57  
+might end up on this customer list. So I would suggest on the customer list having a button that shows you all the customers that don't have a that don't
+
+Unknown Speaker  1:02:05  
+have a service agreement. So you just click a button and boom, see that.
+
+Unknown Speaker  1:02:10  
+Okay. Does that make sense to you? Lori, yes, it makes sense. Okay, yeah, I don't want, I want to keep you from scrambling at the last day, in the last minute, if possible. And I think that's what's going to happen to you if you use the job dashboard.
+
+Unknown Speaker  1:02:30  
+All right. Well, that's all I have.
+
+Unknown Speaker  1:02:35  
+So on Customer
+
+Unknown Speaker  1:02:41  
+List screen,
+
+Unknown Speaker  1:02:46  
+make button
+
+Unknown Speaker  1:02:50  
+to show
+
+Unknown Speaker  1:02:54  
+only customers
+
+Unknown Speaker  1:02:59  
+with
+
+Unknown Speaker  1:03:02  
+no service agreement
+
+Unknown Speaker  1:03:10  
+In assets
+
+Unknown Speaker  1:03:16  
+will create Thank you.
+
+Unknown Speaker  1:03:22  
+You say that's it? Yeah, that is it nice.
+
+Unknown Speaker  1:03:27  
+All
+
+Unknown Speaker  1:03:29  
+right. Do you have anything more, Joe, you know what? I don't I think we've, we covered everything from the agenda. That's something that Ashley and I put together, mainly Ashley, from her list. So I think our next meeting is Thursday, right? Brian, that's correct. Awesome. No, I think we're good to go this time around for Texas, all right? And if possible, when we meet Thursday, I'll just give you a heads up. I'm going to be asking for, you know,
+
+Unknown Speaker  1:04:02  
+updates on where we are as far as prepared to move officer app dev code to to production. Okay, so, you know, uh, basically, that's going to be revolve around questions. Are we going to leave the app as is as a PWA for now,
+
+Unknown Speaker  1:04:24  
+and have we tested the agency settings and how they run the the job listings? Is that been tested to your satisfaction and such? So those are kind of the top questions for whether or not or when we push that code.
+
+Unknown Speaker  1:04:41  
+Okay, yeah, we'll jot that down make sure that we we cover those areas. I know we've been testing it for a while now, but we'll definitely see if there's anything else that's left hanging at this point. Alrighty, then yeah, because once we get that going, once we get that pushed, then we can immediately start talking.
+
+Unknown Speaker  1:05:00  
+Working when is real? Go Live for the agency, because that's what's been holding up the agency app from being completely live, right, right. Okay, we'll get on that from our end. Thanks, Brian. We appreciate it. Thank you. Thank you guys. Very productive. Thank you.
+
+Transcribed by https://otter.ai

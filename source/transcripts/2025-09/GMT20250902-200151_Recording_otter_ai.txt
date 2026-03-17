@@ -1,0 +1,946 @@
+Unknown Speaker  0:00  
+Finally for today. Great. So this is this is it for us today. This is it. Alrighty,
+
+Unknown Speaker  0:10  
+I don't know how much I have to update on.
+
+Unknown Speaker  0:16  
+As Jake had answered in an email today, he's working on getting the flight test stuff moved over to your guys account and prepared for you to be able to download onto your phones and and mess with those, mess with the native app,
+
+Unknown Speaker  0:36  
+and see where we're at, pretty much, usually about up to a week behind, I guess, because he's, he's trying to, you
+
+Unknown Speaker  0:47  
+know, post every Friday so you know that'll, that'll be any new stuff that we're working on will be posted on Fridays.
+
+Unknown Speaker  0:57  
+Okay, I'm not sure. I haven't been able to talk to him today, so I know he was working on it Friday. I'm not quite sure where he is with it, but I know he was working on it.
+
+Unknown Speaker  1:09  
+So there is that we had some back and forth with you guys in ginger SEC at the end of last week on the AWS server. Right? Yeah, very specifically the Node js that we want to keep, because it is the version that comes out of the package from FileMaker.
+
+Unknown Speaker  1:33  
+We had originally kind of thought actually, that AWS just installed that by default when we created the instance. But no we, we found it was final maker, and it needs it. So
+
+Unknown Speaker  1:47  
+that is the
+
+Unknown Speaker  1:49  
+uses it for its o data connector, which is what we're using for the native app. So we need it, and we prefer to keep the version that they put on there because it's a modified version. It's not an out of the box version. It's a version of no JS that's modified by Claris to be used with FileMaker server. So updating it could cause way more problems than it could help.
+
+Unknown Speaker  2:18  
+That is, I saw Tom wrote back, I guess he would like somebody to sign off on that risk.
+
+Unknown Speaker  2:31  
+Yeah, I don't know who, who he would like to sign off on that, or who he feels is the person, probably somebody from your side. Yeah, I didn't see that email necessarily, Brian, but if you can even forward that to me, because more than likely it's going to have to be Bonnie signs off on that, but that's what I was going to ask. That was my only question. Actually, it was just the status of AWS, what we were looking at, and if there was any progress on that, or what was decided as far as the update, or if we're going to update, if we weren't as far as that particular update, that is, that is our high recommendation is to leave it alone.
+
+Unknown Speaker  3:06  
+You would get a new version when we okay the new version of FileMaker server
+
+Unknown Speaker  3:14  
+that has a different version of no JS on it, but it's not the newest,
+
+Unknown Speaker  3:19  
+so
+
+Unknown Speaker  3:22  
+I don't know how how security will feel on that one.
+
+Unknown Speaker  3:28  
+As far as I know on that, I've been using the AWS server, been doing some development on there, and it's, you know, it's there, and it's running. I wasn't able to get a confirmation if they were done again
+
+Unknown Speaker  3:44  
+with whatever they were doing. I know they were. They said they were done with the security stuff, but then they were doing a bunch of updates, and we really need all that finished
+
+Unknown Speaker  3:56  
+before we can get good testing in. But there's nothing stopping you from testing. It's there.
+
+Unknown Speaker  4:03  
+Okay, you can. And supposedly the security software is there. So any
+
+Unknown Speaker  4:11  
+any slowdown you may see because of that, you should be seeing it.
+
+Unknown Speaker  4:16  
+Okay,
+
+Unknown Speaker  4:18  
+I don't know. Hopefully they're done with updates. Hopefully, the fact that it's still there and it hasn't gone down means that they haven't been doing any more updates,
+
+Unknown Speaker  4:28  
+because that seems to be the the response to a file maker when you update, especially the OS. Because anytime you update the OS, it requires a restart, and file maker does not like that if you don't go through the appropriate process, okay, yeah, Brian, if you can, can you at least try to reach out again and get confirmation from them to see if they are done? Because I know that was something that was sticking with Bonnie in regards to what, what the progress was at that point, because it seemed like it. We were kind of getting stuck there for a little bit. And obviously the back and forth, we were not sure you.
+
+Unknown Speaker  5:00  
+Who was doing what at what time. So we're just trying to, trying to not have the water so muddy, you know? So, yeah, I mean, I've been continuing along, using that server for our development of code. So,
+
+Unknown Speaker  5:19  
+yes, so that's there. We have, okay, we do have backups in case, you know something did. Case it does go down again, we have backups of our code,
+
+Unknown Speaker  5:31  
+but we've been continuing on it, and as far as we're concerned, we were ready for you guys to test. But I again, I don't know if they're 100%
+
+Unknown Speaker  5:40  
+if they've said they're finished with all of their updating and configuring, I can shoot an email and see if I can get a
+
+Unknown Speaker  5:49  
+validation of if they're finished. I guess, yeah, that'd be nice. I'd appreciate that, Brian.
+
+Unknown Speaker  5:55  
+So that's where we're at on that.
+
+Unknown Speaker  5:59  
+And then again, I still recommend
+
+Unknown Speaker  6:05  
+strong week of testing before you make that your production. I know Bonnie was trying to push that faster and and maybe didn't realize why we needed so much testing.
+
+Unknown Speaker  6:20  
+I don't know who was all in that email chain, but I did kind of respond to her that the biggest point of waiting at least a week is there are backup routines and there are security routines that only happen once a week, and we want to make sure we're finished with all the changes we're going to make, and then we have time for those, all of those once a week and once a day processes to run at least once.
+
+Unknown Speaker  6:47  
+So that's usually why. That's the bigger reason why we say a week worth of testing is to make sure all the stuff that doesn't run, you know, all the time that's going to only be running once a day or once a week has a chance to run at least once.
+
+Unknown Speaker  7:02  
+You prefer it to run a couple more times, but you know, if we want to push once is it might be enough?
+
+Unknown Speaker  7:13  
+Yes. So that's that's where we are on that I'm happy to answer any more questions, but as far as I know, we're ready for you guys to be testing. We were ready for you guys to be testing last week.
+
+Unknown Speaker  7:28  
+I haven't really made any more any more configuration changes or anything since we handed it off to ginger sec. So when they're finished, it should be in a stable form where you can test and it should look, you know, a lot like it would if it was your production.
+
+Unknown Speaker  7:48  
+That sound good?
+
+Unknown Speaker  7:50  
+Yeah, sounds, sounds great. From, from our perspective, at least Brian, at least, at least we're making progress. That's, that's the key, yeah, yeah,
+
+Unknown Speaker  7:58  
+it's, it's up and running. Like I said, you just want a good you want a good week of nothing changing and see if problems happen before you make that the center of your business.
+
+Unknown Speaker  8:14  
+So that's, that's what we shoot for.
+
+Unknown Speaker  8:18  
+What else
+
+Unknown Speaker  8:21  
+before we get to Ashley, I don't think I have much else. Just remind I guess Ashley, or whoever else wants to help test the dev version of the agency app and the officer web app are both pointed to AWS. So as part of your testing of AWS, I encourage you to use those apps.
+
+Unknown Speaker  8:45  
+Yeah, absolutely. Ashley was actually on it, I believe, a little earlier, right? Ashley around the dev side, trying to create a
+
+Unknown Speaker  8:52  
+job, yeah. On the agency side, I was, yeah, right.
+
+Unknown Speaker  8:55  
+So yeah, we're in there,
+
+Unknown Speaker  8:58  
+all righty, um, I think that's what I have as far as updates there. Yeah, awesome. I think Ashley has some fun ones for you today, Brian stuff that we can't figure out. So yay.
+
+Unknown Speaker  9:14  
+All right, okay, so
+
+Unknown Speaker  9:18  
+first
+
+Unknown Speaker  9:20  
+thing, so I got a call from an officer this morning, and he was in the app, and he's telling me that he's like, unable to see any jobs, but then also upcoming jobs, past jobs, just anything. He said he had deleted the app, and then we
+
+Unknown Speaker  9:39  
+downloaded it. I was like, okay, so I pull them up and everything looks good, right? I was thinking, okay, maybe traffic or something is not maybe it looks just taking a long time to load like, I wasn't sure. So I asked him to send me a picture, and this is at the bottom of his screen. I was like, How in the heck did he get Dev, the dev link? Like?
+
+Unknown Speaker  10:00  
+Guy. He was no one that was doing testing for us that I remember,
+
+Unknown Speaker  10:06  
+and so I kept I asked him twice, you know, what link did you use to re download it? And he never answered me,
+
+Unknown Speaker  10:15  
+but I sent him the other install link, and everything's fine now, then I get another call, like, maybe an hour or two later from St jorer. I don't know how you say that. Sorry. Same thing. He has the dev one too. I'm just like he now he the first guy. He uses the app a lot. He works a lot, clocks in and out.
+
+Unknown Speaker  10:39  
+That's why it was sort of strange
+
+Unknown Speaker  10:42  
+for me to see him have the dev app and but this other guy, he hadn't worked since, I don't know, a few months ago. So I don't Is there a difference? First of all, is there a difference between the red and the teal?
+
+Unknown Speaker  10:59  
+Wouldn't make any difference or sense to to you guys, that's, you know, it found some error as it was compiling the code on the screen. It could font, it could be expecting a piece of data that it didn't get. But, but nevertheless, that should only show on the dev version. Yeah, I've never seen it on the prod version. And I, I know, I cannot explain why these two and then I was trying to think of like the What a coincidence that I find out, like, both of these officers have the dev version on the same day. And I believe in coincidences, but not really. I just think it's interesting. I don't know. Like I checked my production version. Mine still on production. So I, I guess I wanted to see what your thoughts were and what the odds are. You know,
+
+Unknown Speaker  11:50  
+somehow they got that different link and they went to that's, that is the only explanation.
+
+Unknown Speaker  11:57  
+Now how,
+
+Unknown Speaker  11:59  
+I'm not sure what. I, yeah, I, I'm not sure how they got that link. If you did, if you guys didn't specifically send it out to them,
+
+Unknown Speaker  12:14  
+I don't, I don't. I can't think of any type of process that we would do that would send out the dev version.
+
+Unknown Speaker  12:22  
+You know, link, but that's, I mean, we make it look like an app, but it's, it's really just going to a URL, you know, it would do the same thing in Safari or Chrome or, you know, whatever thing you're using.
+
+Unknown Speaker  12:36  
+Yeah, that looks like Safari. It looks like an iPhone.
+
+Unknown Speaker  12:40  
+Yeah, I think they both have iPhones. So it's, it's going to that dev
+
+Unknown Speaker  12:47  
+URL,
+
+Unknown Speaker  12:51  
+it's those, it's not going to app dot, blue dispatch, calm, which is where it should be. I, I mean, so this guy,
+
+Unknown Speaker  13:00  
+he, he deleted it and re downloaded it today, somehow, using this, this one, he didn't, he said that, you know, he just logged in. He hadn't logged in in a while, according to him. I can't see the backside, so I can't tell how often he looks at his account,
+
+Unknown Speaker  13:21  
+but he's, he's like, You guys keep sending out text messages. And I'm not, I can't see anything. And so after you know this happened earlier today, I was like, send me a picture. And sure enough, there was. So I was just trying to make sure that, like, the only way to get that is to click on that link right there. It's not something that could have been like pushed through somehow or something where either either the link that we emailed to them, or if they go into Safari and they know exactly what it is, and they type it out in the URL,
+
+Unknown Speaker  13:56  
+I did a email search to you know, just see If we had ever emailed them the links. I couldn't find anything, but I don't know how they would have gotten that dev link. Like that's, yeah, crazy trees. Well, I believe if you use the system, they come out of the no reply email address, not info.
+
+Unknown Speaker  14:19  
+Yeah. I was, well, I was thinking that maybe one of that they had called here and someone physically sent them, like, copy and pasted the link and sent it to their email. That's what I was thinking. Otherwise, I don't know how they would have gotten it,
+
+Unknown Speaker  14:34  
+you know.
+
+Unknown Speaker  14:36  
+So I was just making sure that that's the only way, and it wasn't something that could have been pushed from a different you know. I mean,
+
+Unknown Speaker  14:46  
+the only other thing I can think of, maybe, is if they had it
+
+Unknown Speaker  14:52  
+at one point
+
+Unknown Speaker  14:58  
+and then in.
+
+Unknown Speaker  15:00  
+Instead of using the link again to download it,
+
+Unknown Speaker  15:03  
+they went into their browser and went to type,
+
+Unknown Speaker  15:09  
+and they ended up, you know, it remembered that address the wrong one. Because if they did both at two different times, it will remember them both. But depending on what you start to type, is what it's going to come up with. You know, to suggest what URL you're going to, I don't remember what the dev one is,
+
+Unknown Speaker  15:30  
+but is it? No, that's,
+
+Unknown Speaker  15:34  
+that's the agency.
+
+Unknown Speaker  15:37  
+Oh, yes, I do. Here it is. So, yeah, if they,
+
+Unknown Speaker  15:42  
+if they did use the dev link at some point, and then they go into Safari and they start to type, blue dispatch,
+
+Unknown Speaker  15:52  
+the dev one very well may come up, because that's the beginning of that URL. Blue dispatch.fm, better forms.com.
+
+Unknown Speaker  16:02  
+It's instead of app dot blue dispatch, which is where the production is.
+
+Unknown Speaker  16:07  
+So if they had used it at some point and they went to Safari and went into the URL and started to type blue dispatch, and then, you know, let Safari finish the URL for them.
+
+Unknown Speaker  16:20  
+They could end up on the dead version there, but they would have had to have had it at some point, and they would have to go typing into Safari or Chrome or whatever, instead of finding the email and clicking on the link again. Yeah. It just felt so weird that it just happened to happen on the same day, yeah, which is today.
+
+Unknown Speaker  16:42  
+One of the things I was kind of thinking too, was this morning. Technically, it was really, really, really early almost last night ish, where officers weren't able to clock in or clock out of their jobs
+
+Unknown Speaker  16:56  
+at least 2am was the first email that I saw.
+
+Unknown Speaker  17:01  
+There was a lot of people overnight. They weren't able to clock in and clock out. So I'm wondering, I think that's what prompted a nest to delete it, and then we had it. And I don't, I don't know about this guy, but one of the things I was thinking of, but I
+
+Unknown Speaker  17:17  
+just don't know where they got it. So I just wanted to insight on you, I don't know where they got it, if they, I mean, if you think about it, it could make sense if I don't want to go back, you know, nine months and try to find the email that had that link on it, yeah, then I would just start to type it, you know, I'd be like, Oh, I can just go there and, you know, do the process, which is correct, but you would have to type app dot, blue dispatch. If they just type blue dispatch, then their URL may finish it with the dev. But again, in order for that to happen, they would have had to have used the dev once before. You know, it's not,
+
+Unknown Speaker  18:00  
+yeah, they would have had to have used it once before, or their system wouldn't remember it,
+
+Unknown Speaker  18:06  
+right? Okay. Well, I'll keep my hands open our eyes or whatever, to see if any more happen. I just thought it was weird enough to bring up.
+
+Unknown Speaker  18:20  
+Seems strange to me.
+
+Unknown Speaker  18:23  
+I agree that's the only logical explanation I can come up with. Okay,
+
+Unknown Speaker  18:35  
+I was gonna so I did create a job on agency. Okay,
+
+Unknown Speaker  18:42  
+really cool. Quick about the app. We are still having officers seeing other officers profiles.
+
+Unknown Speaker  18:49  
+I don't know what causes that, but is that that
+
+Unknown Speaker  18:54  
+will not happen in the native app, correct?
+
+Unknown Speaker  19:02  
+Really shouldn't. It shouldn't be happening here.
+
+Unknown Speaker  19:11  
+To talk to, yeah, I would have to talk to Jake. I'm I'm ill equipped to, okay, to answer this question. Okay, no worries. Uh, I'll just let you know. But if this is still happening, and error code, strangely, not as much, but it's still happening occasionally, but not not as much, at least this week, which is only two days,
+
+Unknown Speaker  19:33  
+most of the error code, I'm going to say, at this point, is going to be timeout. And it's timeout because your your server is just getting slammed and can't handle high, you know, peak times. Yeah, a lot of officers trying to do some at the same time. It just can't
+
+Unknown Speaker  19:50  
+handle it, yeah?
+
+Unknown Speaker  19:52  
+So I Okay, so I, you can see this so small. So I typed in 15/9 Avenue in Glendale, and.
+
+Unknown Speaker  20:00  
+Hit Enter. And initially I'm going to play around with it some more, because it was, I was having issues. Everything was taking forever today, but it
+
+Unknown Speaker  20:12  
+looked like it. So down here, I know you can't see it, but it's 206 East Indianapolis, Ave, and this I hit, do you remember what it says right here, where it says, like, something about the hold control and hit plus or scroll to zoom in? Yeah? No, this was maybe center on the pin, or, Oh yeah, yeah, center on the pin, or on the marker, whatever it says, yeah, yeah. So when I clicked that, then it pinned it here, which was Third Street and Indian School ish,
+
+Unknown Speaker  20:46  
+was there a step in between that like I type it in here, hit enter or select it, and then it's supposed to take me to the correct it's supposed to pin it correctly and come down here correct. It's supposed to do it correctly. The Center on marker is not supposed to place the marker. It's just for if you've been fumbling around on the map and you lost your pin. Is it's going to bring the map back to where the pin is.
+
+Unknown Speaker  21:09  
+When you as soon as you select from the list, it should place a marker. And the marker may not be perfect, especially when you're talking about intersections sometimes or weird places on the interstate and such. And that's why you can zoom in and kind of click and put the marker exactly where you want,
+
+Unknown Speaker  21:31  
+right? And then I went
+
+Unknown Speaker  21:35  
+through the process of trying to, you know, create the job, which was for this day,
+
+Unknown Speaker  21:42  
+and I just didn't see I did put show for non billable, but I just didn't see it. It's gonna it would show up here, correct? It's not a different place. I should be looking at it. Which file maker system are you looking at?
+
+Unknown Speaker  21:56  
+The normal? And I have to be in the AWS. Yes. The you're looking at Dev version of agency, which is talking to the AWS server. Okay, so my next question, I was kind of, I was skeptical about that one, but I didn't see it also in
+
+Unknown Speaker  22:17  
+Hold on. I
+
+Unknown Speaker  22:30  
+yeah, sorry, I'm trying to move this down, all right.
+
+Unknown Speaker  22:35  
+My like zoom thing is at the very top. Oh, of course, that's why I keep it on my laptop screen
+
+Unknown Speaker  22:42  
+I don't use.
+
+Unknown Speaker  22:47  
+Wow,
+
+Unknown Speaker  22:50  
+okay, Chris, we
+
+Unknown Speaker  22:59  
+didn't I just didn't see it pop up in my jobs. Now, maybe it's because I was having problems, problems loading it earlier, like refreshing everything and getting
+
+Unknown Speaker  23:10  
+it to be print.
+
+Unknown Speaker  23:13  
+But have
+
+Unknown Speaker  23:22  
+you just, I didn't see it pop up here, and I wanted to make sure that this is where I should be logged in. That's just one
+
+Unknown Speaker  23:29  
+needs to have two dates always, all right.
+
+Unknown Speaker  23:35  
+If you're using date range, I
+
+Unknown Speaker  23:39  
+don't know a better way to find my
+
+Unknown Speaker  23:47  
+Okay, hold on, yeah, you probably
+
+Unknown Speaker  23:51  
+could see it under unstaffed
+
+Unknown Speaker  23:54  
+also. Oh, well, still
+
+Unknown Speaker  23:58  
+at a zero. So I don't know if I'll play
+
+Unknown Speaker  24:01  
+around with it a little more, because it was, it's been a slow day, literally, with everything loading. So I'll keep trying on that. I just wanted to make sure before I continued. Yeah, I was doing it. You should. That's how I would check file maker on the AWS server and find the jobs there. I was, yeah, I was afraid to use a double. I wasn't sure if I was able to go back on there or not. Last I heard was they were still doing stuff, and it was unstable. So during this, during this testing stuff, I mean, it problems could happen while you're on there, and truthfully, you could cause a problem. But it doesn't, it's, it's a testing environment right now.
+
+Unknown Speaker  24:45  
+So by all means, the worst that will happen is you get booted like a game before, because something, but,
+
+Unknown Speaker  24:52  
+yeah, but whatever consequences of that,
+
+Unknown Speaker  24:58  
+I.
+
+Unknown Speaker  25:00  
+Oh,
+
+Unknown Speaker  25:01  
+sorry. Oh,
+
+Unknown Speaker  25:03  
+I don't know why. On the agenda, I think I put the time instead of the date 817 but it's actually nine two today.
+
+Unknown Speaker  25:11  
+So I told you earlier that it was going really, really slow, like my just trying to log in. I had to control delete and in task because it just kept trying to load forever. Anything we tried to do we were getting just the coffee cups, or loading,
+
+Unknown Speaker  25:28  
+connecting to the server is pretty ugly. Yeah. I mean, so got so like, let's see Marissa. So she was doing the job, invoicing report, and she was just trying to scroll like this, and it every few like little scrolls. It would have that box up here, you know, where it's thinking. So she, she's like, I can't even work because it just every few seconds of doing it was loading.
+
+Unknown Speaker  25:54  
+Now I tried it right before it literally at 1241 I went back in and tested, and it was fine. So I can't show you, but I'm curious. She was probably doing it while you had a lot of officers clocking out from their morning stuff, or their middle of the night stuff, you know, something like they're clocking in, there's a lot of people doing something here.
+
+Unknown Speaker  26:18  
+Like all morning they were it's trying to
+
+Unknown Speaker  26:22  
+contacts or put in POS or, you know, anything, just trying to put jobs in there, and it was just loading, yeah, if it Yeah, if your server is being just pegged with everything, you know, it can take, it's
+
+Unknown Speaker  26:37  
+going to be slow for everybody. Yeah, yeah. So there's really, there's so much we can there's not much we can do besides just wait pretty much until,
+
+Unknown Speaker  26:49  
+okay, yeah, for now I,
+
+Unknown Speaker  26:53  
+yeah, I don't know what else. The only every option I would have to help you is a bad one for your business, like,
+
+Unknown Speaker  27:02  
+like, booting officers, only allowing a few officers to connect at one time, or, you know, something like that.
+
+Unknown Speaker  27:10  
+But,
+
+Unknown Speaker  27:13  
+okay, yeah, no, we don't want to do that, so it's just a server. Then, yeah, I mean, you could, I could share my screen, and we can connect to the server. You can see how long and horrible it is just to try to get in there and open up the browser on it so that I can get to the Admin console. Is that process
+
+Unknown Speaker  27:35  
+normally, for, you know, another server, it takes me 30 to 45 seconds. With your guys, it's four to five minutes.
+
+Unknown Speaker  27:46  
+And that will not happen with AWS. That's all the point of it. AWS is Zippy in as
+
+Unknown Speaker  27:52  
+has three times the power.
+
+Unknown Speaker  27:55  
+And if it does start to happen at some point, it's AWS. You just kind of go on there and give it more power.
+
+Unknown Speaker  28:07  
+Yeah, that'll be exciting.
+
+Unknown Speaker  28:12  
+On to the next fun thing. Okay, so right here, Stacy ran the pay report. This was
+
+Unknown Speaker  28:20  
+last week. But this, this exclamation point, the red one, typically happens if there's, like, exceeding the amount of time that it was scheduled for.
+
+Unknown Speaker  28:33  
+But we, I couldn't really figure out
+
+Unknown Speaker  28:37  
+what, what is the parameters for this to show up? I'll start there. That might be that might just answer my question. Give me a second. Okay,
+
+Unknown Speaker  28:48  
+I'll tell you.
+
+Unknown Speaker  28:52  
+Okay.
+
+Unknown Speaker  29:01  
+Parameter for that is is
+
+Unknown Speaker  29:06  
+over schedule
+
+Unknown Speaker  29:10  
+does not equal one. It is hidden, so over schedule equals one. What is over schedule is a calculation, and it is mm,
+
+Unknown Speaker  29:31  
+oh, that's A big one. Okay, let's see
+
+Unknown Speaker  29:37  
+it has time.
+
+Unknown Speaker  29:40  
+10.
+
+Unknown Speaker  29:43  
+And then schedule equals.
+
+Unknown Speaker  29:53  
+So, yes, it is.
+
+Unknown Speaker  30:02  
+Should be if they are one hour, the time worked is one hour
+
+Unknown Speaker  30:10  
+or more
+
+Unknown Speaker  30:12  
+over the hours that was scheduled.
+
+Unknown Speaker  30:17  
+It should show,
+
+Unknown Speaker  30:21  
+okay? So this is, this one is, yeah, gotcha. Since it rounded up with point two five, that's why this one was triggered. Yes, what is it? Eight to six? Yeah, eight hours is what it's set for. But yeah, they work nine and a half or 9.25 so, yeah,
+
+Unknown Speaker  30:46  
+yeah. So put them over point two, five from that. Okay,
+
+Unknown Speaker  30:53  
+I will pass that along.
+
+Unknown Speaker  30:58  
+Another
+
+Unknown Speaker  31:00  
+one I I don't know this is,
+
+Unknown Speaker  31:03  
+let's blew my mind a little bit. Alright, so we got a job coming up. Hasn't happened yet.
+
+Unknown Speaker  31:11  
+There we are, okay. So here's
+
+Unknown Speaker  31:17  
+we thought it was a strange that there was hours in there already, but then we got a question mark, so I open it. That's a lot of lot of hours.
+
+Unknown Speaker  31:30  
+Really. Well, no, well, that's no, that's a counting of
+
+Unknown Speaker  31:37  
+that is counting of seconds from January 1, 1975
+
+Unknown Speaker  31:41  
+until
+
+Unknown Speaker  31:44  
+when that clock out. Time was Hi, so I tried to go through because this, like, this isn't on anyone's app, because it's ODM. So that means that, you know, someone has to have clocked him out. Do you see where that happened, because I didn't, I don't, I don't, I don't know, confused.
+
+Unknown Speaker  32:13  
+Lockout time it was, should be near there, but then 8686,
+
+Unknown Speaker  32:20  
+at 1157,
+
+Unknown Speaker  32:23  
+I just don't see anything on here like so it would have happened the day that he created it. But I just don't like that's on hold schedule. That's not it. Officer. He put the officer on there,
+
+Unknown Speaker  32:36  
+something that
+
+Unknown Speaker  32:39  
+we didn't add to tracking, clicking that.
+
+Unknown Speaker  32:53  
+Do we do? We do see what script that BASE HOURS zero doesn't let me doesn't hold long enough for me to read it as always zero.
+
+Unknown Speaker  33:04  
+Now I'm Bill.
+
+Unknown Speaker  33:07  
+Looks like it was clocked out 16 minutes after it was created. Yeah, but I'm just curious why it wasn't
+
+Unknown Speaker  33:17  
+logged.
+
+Unknown Speaker  33:19  
+Oh, let's see if it logs that button.
+
+Unknown Speaker  33:25  
+Yeah, I know it does. If it comes from the app.
+
+Unknown Speaker  33:30  
+It does if, well, I'm no, I'm pretty sure it does. Now, I don't typically clock people out that aren't clocked in, so that part, I don't know, but
+
+Unknown Speaker  33:40  
+I guess I could
+
+Unknown Speaker  33:42  
+test it on the safe one,
+
+Unknown Speaker  33:45  
+it should On that commit, yeah, I would have to,
+
+Unknown Speaker  34:02  
+let's see, actually, that one at the bottom, I'm a little green. Yeah, you're not gonna be able to read it all away. But I know. But I was hoping it would stay at the you know, sometimes I have them set up to say at the top, what process created that? Yes, yeah, log, I've seen that creation was one of them,
+
+Unknown Speaker  34:26  
+so I'm not sure that was the creation that made that mod log. That might have been the clock out that made that mod log, and since it didn't have one before it to
+
+Unknown Speaker  34:40  
+can we wait a minute? I know
+
+Unknown Speaker  34:43  
+created eight, six and 1141,
+
+Unknown Speaker  34:46  
+54 the mod log is 55 so, yeah, that should be the creation.
+
+Unknown Speaker  34:57  
+I can, I can look at the mod log. Process.
+
+Unknown Speaker  35:00  
+US, but I have a feeling
+
+Unknown Speaker  35:02  
+there, that's where the problem would be, is creating the mod log. Because I agree, I don't see a log here that represents that.
+
+Unknown Speaker  35:09  
+Okay,
+
+Unknown Speaker  35:11  
+I can just change it to zero. Then, yeah, I wanted to leave it so you can see it. Yeah.
+
+Unknown Speaker  35:19  
+What did you say? What did you say? Was the date
+
+Unknown Speaker  35:24  
+that is the number of seconds since January 1, 1975
+
+Unknown Speaker  35:31  
+Yeah, which is the universal beginning of computer time?
+
+Unknown Speaker  35:36  
+Oh, well, there's a fun Jake, so all compute, all dates in computers, UTC and everything. It may display it to you as a date and time, but in the background, it is always the number of seconds since you know, the turn of the year, New Year's 1975
+
+Unknown Speaker  35:57  
+and it takes that number and turns it into a calculation to decide what the date and time is.
+
+Unknown Speaker  36:04  
+Oh, that's cool. Little bit of computer geek
+
+Unknown Speaker  36:09  
+on for you, okay.
+
+Unknown Speaker  36:15  
+Oh, we talked about AWS. I can tear
+
+Unknown Speaker  36:19  
+us loss. Oh, the loss of locations on Thursday.
+
+Unknown Speaker  36:24  
+I mean, Lori said she was working, but she doesn't think she was clicking on anything. I was curious.
+
+Unknown Speaker  36:32  
+The other question I kind of had was so Jessica was working that night also, and she didn't notice her locations go away if something did happen while Laurie was in there, would,
+
+Unknown Speaker  36:47  
+would Jessica have noticed if she had not ever logged out?
+
+Unknown Speaker  36:53  
+I don't know if that makes sense, but you remember when we lost, like, all of the locations? Yeah, they would have, I mean, even if she's just staring at, say, this screen,
+
+Unknown Speaker  37:06  
+and as soon as she started scrolling or something, it'll it would have went away.
+
+Unknown Speaker  37:12  
+Yeah, it should have refreshed and committed any changes that were happening to those records. Now, if she's looking at the printable report, you know, for the printable reports, like the officer report, or something, Officer pay report. I mean, that may not have changed as quickly.
+
+Unknown Speaker  37:39  
+Yeah. So she like, she, like, took people off of jobs from the via the dashboard.
+
+Unknown Speaker  37:44  
+Yeah,
+
+Unknown Speaker  37:46  
+that's why I'm like, Well, if it happened at what, 837 or something, she would have listened. She didn't notice. You know, if you're looking at this and you're looking at, you know, Arizona lottery, and I'm looking for the one that Robert Manos is on. I may not looking at the address, and it may not occur to me that the address disappeared,
+
+Unknown Speaker  38:09  
+but I don't know. I just wanted to bring it up in case that triggered something that, oh, maybe it couldn't have happened during at, you know, on that modbug, because I know you said that that was the mod log that would have done it, but I was wondering if there was any way that whatever happened wasn't logged. Yeah, no, I wasn't looking at the mod log. I was looking at the last modification on the records. Okay, they were all worry and they were all the same time.
+
+Unknown Speaker  38:42  
+Yeah. Okay, so it would have been logged somewhere where you were looking, yeah, yeah. Basically, like you see in your little picture there of the job assignment detail, and at the bottom, I've got creation and modification, you know, dates and person there, that's what I was looking at, that is at the record level, completely automated. There's nothing I had to script to make that happen, like the mod log that we're looking at that's different, but that is the last modification, and that is true. It's always going to be true
+
+Unknown Speaker  39:19  
+that creation timestamp and name and the modification.
+
+Unknown Speaker  39:25  
+So Jessica did take officers off and put, you know, take them off through here. That would have
+
+Unknown Speaker  39:32  
+been the last one, right, correct and, and that didn't happen, is what we're saying, not on the ones that I saw that had a blank job location. The ones that have job locate, blank job location, every single one that I saw, I didn't go through them one at a time, because there was several 100. But, you know, I I scrolled through them and I did not see a different name in any of them or different times.
+
+Unknown Speaker  40:00  
+There might have been one or two that I'll look at that specific one that that I know, that she took an officer off of see what time that was okay. I just wanted to bring it again, but it's going to have a modification of me, because, yeah, but I could I recently the date or the locations for you, so it'll probably have me as the last modification, but I'd
+
+Unknown Speaker  40:23  
+be able to see in the mod log what time she made that change, right, and if it was before 837, and that would explain that she just responded late to an email or some points, yes. Okay.
+
+Unknown Speaker  40:37  
+Okay.
+
+Unknown Speaker  40:39  
+Starts.
+
+Unknown Speaker  40:43  
+Ah,
+
+Unknown Speaker  40:46  
+oh, any updates on the address Refresh is that? Is that something that might be easy to fix?
+
+Unknown Speaker  40:53  
+Actually, looking at that, when I jump this, I can't,
+
+Unknown Speaker  40:57  
+I can't get it to to not work really, because
+
+Unknown Speaker  41:04  
+it works flawlessly every time I try it. So I'm trying to figure out what's not
+
+Unknown Speaker  41:12  
+this one. I don't know if this helps at all, but
+
+Unknown Speaker  41:16  
+yeah, on the meeting, I believe you, it's just hard to figure out what the problem is. If I if the problem doesn't happen when I'm walking through the code, yeah, no, I feel I understand that this one, like, it doesn't happen often, like, typically, we put them in the address and write, but this one, when he did it, he did 31st street and Bell, then he's, you know, submitted it and we went back and changed it to 91st Street and Bell, but when you looked on the app, it still said 31st street. So I ended up canceling it out and just re adding that other position. Did someone hit the Refresh All button on the job location? Yes, yeah. I tried. I did just add today,
+
+Unknown Speaker  42:01  
+if it,
+
+Unknown Speaker  42:04  
+if it doesn't find any it should, if it doesn't find any job assignments, it should show
+
+Unknown Speaker  42:14  
+a an error, you know, a dialog box, but right before we got on this meeting. So if you hit Refresh All and it's this one, right, yeah, and it finds no job assignments from today forward,
+
+Unknown Speaker  42:28  
+you know, it'll say, Hey, I didn't find anything. So it'll let you know that it was just kind of bulking out of the process. I mean, it wasn't causing any problems, but it wasn't letting you know that, hey, I don't find any job assignments, so I don't know like you're refreshing. The other one is it does walk through the recurring job. So if the reoccurring job in date is less than today,
+
+Unknown Speaker  43:02  
+it won't go find the related it won't even try to go find the related job assignments. So there's nothing in there, technically, programmatically, that stops you from say that first one has an end date of nine two, you could make a job assignment on there for next week
+
+Unknown Speaker  43:23  
+that even though you you shouldn't, you know, business rule wise, you shouldn't, but programmatically, there's nothing stopping you.
+
+Unknown Speaker  43:31  
+And that's means something, because it's going to say, you know, let's say you try this tomorrow. To hit the refresh, it's going to say, hey, I don't have any reoccurring jobs that end after, you know, tomorrow or after.
+
+Unknown Speaker  43:47  
+So the related job assignment may be next week or two weeks from now. It won't know that, and it won't go try to find it, because it it expects all job assignments to be within the date range that is set on the recurring job. Does that make any sense? Well, it does, because,
+
+Unknown Speaker  44:08  
+yeah. So, okay, so you
+
+Unknown Speaker  44:12  
+did an address, did a reoccurring job, hit submit, right? And then you went back, changed the address, hit refresh all, and it changed on the app for you.
+
+Unknown Speaker  44:23  
+Yeah, I don't believe I said I just kind of went looking for one, and I think I changed the end date of the reoccurring job to make sure that it was within, you know, today would be okay. And then hit Refresh All. And yes, it found them and refreshed them. So,
+
+Unknown Speaker  44:39  
+yeah, because that's the part. So, like, everything works. And even though the one you can see this one, this one that I created today after I couldn't figure like, I couldn't get the 31st straight to change on the app, so I canceled it and just made a new one that one said 91st but it's this, this first one. So when I tried to refresh it.
+
+Unknown Speaker  45:00  
+After, you know, we had already hit submit. That's the one that I just can't get for the life of me to change on the app.
+
+Unknown Speaker  45:09  
+And
+
+Unknown Speaker  45:11  
+it was a job for today, obviously. Sorry, that's Yeah,
+
+Unknown Speaker  45:15  
+but okay, I it doesn't happen a lot, but if someone does, put something in wrong, yeah, and then we try to go back and refresh it. It just doesn't. It wasn't. It's not responding or not. I mean, I'll continue to look at it. I'll put, put a little bit more time into trying to figure out what the displacement is there, what the break is.
+
+Unknown Speaker  45:38  
+It could be caching, if you're really just hitting refresh all and then you know, going and looking at the
+
+Unknown Speaker  45:46  
+at the officer app, it could be a caching thing,
+
+Unknown Speaker  45:52  
+but a refresh should call back to the system and get it.
+
+Unknown Speaker  45:59  
+Let me look pretty sure the JSON is not indexed.
+
+Unknown Speaker  46:06  
+So it should
+
+Unknown Speaker  46:10  
+it's not indexed.
+
+Unknown Speaker  46:12  
+Well, that's the officer one. Let me verify that the job assign is not, yeah, that is also not indexed. It is looking at
+
+Unknown Speaker  46:23  
+the one I think it's looking at right job, location, lookup.
+
+Unknown Speaker  46:29  
+Oh, there's a lot to look through here. Where are you?
+
+Unknown Speaker  46:35  
+Location, history,
+
+Unknown Speaker  46:40  
+location,
+
+Unknown Speaker  46:46  
+scrolling, scrolling
+
+Unknown Speaker  46:49  
+location.
+
+Unknown Speaker  46:55  
+Yeah, the location is the flat version there
+
+Unknown Speaker  47:01  
+on the list, it is
+
+Unknown Speaker  47:05  
+also the flat version,
+
+Unknown Speaker  47:09  
+which is because
+
+Unknown Speaker  47:12  
+I was mostly verifying that it
+
+Unknown Speaker  47:16  
+that I could see the change on the dashboard, because That's where you were showing me stuff, not the app. Look where this is getting it from.
+
+Unknown Speaker  47:26  
+This is pulling it
+
+Unknown Speaker  47:29  
+of that.
+
+Unknown Speaker  47:37  
+Okay, yeah, I'll,
+
+Unknown Speaker  47:42  
+I will continue to look at that, see what I can figure out for you.
+
+Unknown Speaker  47:47  
+Okay. I mean, the only other thing on here, just carry over items from last call. Do you want me to go over those? Or do you think you have them on yours? I'm pretty sure I've got them. I'm looking at that, the Refresh All button, the cancelation,
+
+Unknown Speaker  48:07  
+the bulk cancelation, not sending out emails that looks like it's a bad SMTP credentials. I was also looking at that right before this call. I will work to figure that out.
+
+Unknown Speaker  48:23  
+And then, you know, we still want a secondary contact on the job location to have a selector screen
+
+Unknown Speaker  48:35  
+that and a way to get rid of a secondary contacts if you don't want it. Yeah. And then yeah, clearing them, yeah. And
+
+Unknown Speaker  48:43  
+then whatever I have on Trello
+
+Unknown Speaker  48:46  
+in my list,
+
+Unknown Speaker  48:50  
+which looks like, you know, the cancel, mass email, the ad, this line, the things I just said, seem to be on there.
+
+Unknown Speaker  49:01  
+Yeah, other than that, that's tabbing, tapping. I don't know if that's a word.
+
+Unknown Speaker  49:09  
+Being able to go from here to here by hitting Tab
+
+Unknown Speaker  49:13  
+Oh, start time to end time. Don't have that loaded. Okay?
+
+Unknown Speaker  49:21  
+Signed. Assignment, detail,
+
+Unknown Speaker  49:30  
+detail,
+
+Unknown Speaker  49:34  
+allow
+
+Unknown Speaker  49:36  
+Tabby,
+
+Unknown Speaker  49:39  
+start time, getting time,
+
+Unknown Speaker  49:47  
+and then just this weird tell site job, I keep getting that just randomly too. I don't know what triggers it, but it's always right after I've done something, and I'll only kick clothes and this like.
+
+Unknown Speaker  50:00  
+Like the same tell site, job one pops up. I know I've talked about it before. I don't know it's there's a rhyme reason it pops up? Well, I can tell you the rhyme and reason is, it's just the first record in the table. So it's not even that old. It's not going to whatever. It's just the first one that it runs into. May not be that old, but remember, I, I archived a bunch of older stuff, and it
+
+Unknown Speaker  50:29  
+just it so basically, it didn't find anything, and it goes there, which it shouldn't.
+
+Unknown Speaker  50:38  
+But I think that's, that's one of those that we have to,
+
+Unknown Speaker  50:42  
+we have to sit on Zoom and figure out the exact
+
+Unknown Speaker  50:47  
+clicks that makes it happen. Yeah, okay, because I can't recreate it
+
+Unknown Speaker  50:55  
+again. I see the I see the pictures and such. I believe you
+
+Unknown Speaker  51:02  
+get there? Yeah,
+
+Unknown Speaker  51:05  
+I need to figure out how we get there.
+
+Unknown Speaker  51:09  
+Well, that's all I have
+
+Unknown Speaker  51:12  
+great stuff.
+
+Unknown Speaker  51:14  
+Alrighty,
+
+Unknown Speaker  51:17  
+Miss Amanda, Mr. Joe. Do we have anything?
+
+Unknown Speaker  51:22  
+Nothing for me, nothing for me. Just catching up and thank you, Ashley. I appreciate that. Sharing all that.
+
+Unknown Speaker  51:29  
+Yeah, for my end Brian, I mean nothing really, other than the AWS status, with that security stuff other than that, once you get that validation,
+
+Unknown Speaker  51:38  
+hopefully from Tom or jasmine, at least somebody that we can get some word from in regards to if this thing is ready or not. Other than that, I think that's all we got. Alrighty, yeah, like said, as far as I'm concerned, it's ready. I don't so you know, our part is up and running, and I've been able to connect to it, and
+
+Unknown Speaker  52:00  
+both the dev versions of the web apps are pointed to it so,
+
+Unknown Speaker  52:04  
+you know, test away, but yeah, I'll shoot Tom an email and copy you on that and see if we can get a thumbs up or down if they are completely done with Everything due to it.
+
+Unknown Speaker  52:20  
+Okay, that's it. That's all I got for you. Then, Brian,
+
+Unknown Speaker  52:25  
+all righty, well, everybody have a great day and a great, awesome probably rest of your week, we'll see if we make it through the week without having to talk.
+
+Unknown Speaker  52:35  
+Chances are we'll talk to you again. Brian, yeah, yeah. All right. Thanks again, thanks. Thanks. Guys Bye, Joe Bye, Ashley bye, guys bye.
+
+Transcribed by https://otter.ai

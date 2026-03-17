@@ -1,0 +1,1027 @@
+Unknown Speaker  0:00  
+Jake,
+
+Unknown Speaker  0:02  
+okay,
+
+Unknown Speaker  0:04  
+so Amanda, you You already answered my first big question to get this started and to be to be determined or to be announced, is kind of the answer there, which you know it is, what it is. But definitely as soon as you can get a clearer answer on that,
+
+Unknown Speaker  0:24  
+the better we can, you know, we can target our recommendations and our answers to your questions based off of that.
+
+Unknown Speaker  0:34  
+You know, if, if they're like immediately, then, then we've got work to do. We've got, you know, the answers to your questions are going to be a lot different. If they say, By the beginning of school year, again, you're going to get different answers than if they say immediately. If they say, Hey, we've got a contract with somebody else that runs out at the end of this coming school year. So really, we're talking about a year out before we, you know, can do this, then you get a lot different answers, and probably the best answers if we have that type of lead time, I doubt it'll be like that, but if it is, that's kind of, that's kind of the best situation, okay, and
+
+Unknown Speaker  1:13  
+hello, Mr. Knight. I don't think I've met you. I'm Amanda Markham, and I've just been brought on to assist Joe and Ashley and the team with the project management aspect of it,
+
+Unknown Speaker  1:24  
+yeah, so really, all I've heard is good Amanda about you being part of the process, and it's, it's part of a conversation, you know, I want to continue to have with Bonnie on How, how les is continuing to kind of more,
+
+Unknown Speaker  1:42  
+to apply more structure to how you guys are moving forward with your applications and deployments and so forth. Oh, well, I appreciate that. Thank you for that. Yeah, sorry I didn't. I didn't introduce Amanda. This is this. This is Dave Knight, as you see, he is the president and owner of Angel City data. So Jake and I's boss? Yes, I kind of figured that's about very like he wanted to come on and and sit in for this meeting, because we've been talking a lot lately about about resources and burn rates and such as we've been getting the customer app ready, ready to get started. So when it comes to what kind of burn rate and resources we need, and what we can offer this is, this is the man I got to speak to. So he wanted to be here.
+
+Unknown Speaker  2:32  
+Cut out the middleman a little bit. We understand that. And if I, if I may, Joe, if I have not gotten the most recent affections. I know we've been, you know, yeah, funeral yesterday, and I just haven't been able to connect with you. Was there anything that you had that I didn't in terms of, I know you were drafting questions for more or getting us an extension for submission? Was there anything other updates that we haven't, that we have that I'm just not aware of just yet? No, as far as I know, from our standpoint, for the RFP, we've submitted our questions that we're responsible for in our end. And Brian, just to give you a little context based off of this RFP and in the past, normally something like this is going to start in October. So that gives you kind of a window what we're looking at. It's not set in stone, but October is usually that start date. But what we'll get that confirmed for you, that's, that's great to hear. I hope that's the case. Yeah, I hope that's the case. Okay, all right. So, so as far as our questions or comments, as I look through the scope of work, I'm sure you're, you're wondering, from a technical point of view, you know, what we already have in place. What we need to put in place to meet these requirements, you know, and how we can get that done?
+
+Unknown Speaker  3:48  
+I must say, there's a few points that we would have to look at, 100%
+
+Unknown Speaker  3:56  
+that are features that need to be added to meet these requirements, and the rest with some, you know, with some massaged words and thought, we could absolutely, you know, truthfully, say that we can meet the rest of the requirements already.
+
+Unknown Speaker  4:16  
+If you would like to meet them at a higher level, then we need to, we need to talk. And there's some some more things and more features that we would have to add or shore up to meet them better. Some examples that I saw,
+
+Unknown Speaker  4:31  
+it asks for a mobile application for for officers and for people at the schools, I guess, the school administrators and such. So we have the officer app.
+
+Unknown Speaker  4:44  
+We can stand pretty tall and say that's a mobile application, but somebody may kick back and say, you know, Hey, you can't download it from the, you know, iTunes Store or the Google Play Store. It's not an app.
+
+Unknown Speaker  4:58  
+I don't agree with that, necessarily, but.
+
+Unknown Speaker  5:00  
+What we have is a PWA progressive web app that is really just a a cool bookmark that you can put on your phone to run a website that looks good on your mobile phone. So that is a mobile application, but depending on you know your definition of that.
+
+Unknown Speaker  5:23  
+I don't know if we necessarily meet it. The scope of work is pretty vague on on a lot of things. As far as I'm concerned,
+
+Unknown Speaker  5:32  
+the next thing I look at is geo, fencing and geolocation, again, that's pretty vague. Currently, even with the PWA we have for officers, you know, we could geo fencing to the geolocation we already have and be able to say whether or not the officer is within the geo fence, which is just a radius around the school when they clock in or clock out. Currently, since we can't track things while they're in the background, while the app is in the background and such, we couldn't necessarily notify the school as soon as the officer enters the geo fence. We can only do that when we can only realistically say where they are when they clock in and when they clock out. Well and to be honest. You know, that's a feature that we discussed at length. Oh yeah, at the beginning of all this location stuff was we were only going to track the location of the officers while they were clocked in. And so, you know, you could even say, like for officer privacy, we geo fence only while job activity is active, and so we let them live their private lives until they get on site, you know what I mean? So that that just, just wanted to throw that in, yes, but all, basically all the geolocation stuff that we had talked about before, as far as native app versus the PWA, that's all still going to exist if we don't develop a native app. So again, I think we can meet those requirements minimally, but that's the caveat. Is the caveat, you know, we're we're only able to track when they clock in and when they clock out, as far as where they are.
+
+Unknown Speaker  7:23  
+Another piece I was looking at is, again, with the mobile application. They want people at the school to be able to request jobs and track, you know, a lot of things about when the officers are on the job and such.
+
+Unknown Speaker  7:40  
+Currently, the officer app doesn't do that. They can do most of that through the agency website, but that's just built for desktop. That's not built for mobile. Currently,
+
+Unknown Speaker  7:53  
+if we can again have it as a PWA or just a website that looks good on a mobile phone, then that's something we can provide fairly quickly.
+
+Unknown Speaker  8:07  
+So that's that's another piece, and also part of that is the agency web app is really thought of from the the agency, quote, unquote, being a police department and tracking the jobs and the officers within that agency,
+
+Unknown Speaker  8:26  
+their request for, you know, the school district level, people being aired, being able to see and track all stuff happening within the state, you know, Being able to see all the stuff, and then administrators at individual school levels being able to see stuff. We're going to have to change and add that functionality to the agency portal in order to allow that.
+
+Unknown Speaker  8:55  
+Currently, it's it. We don't have a way to open up, you know, everything that has to do with schools to One to One Login to one administrator. So that's something we would definitely have to work on in order to meet those type of requirements.
+
+Unknown Speaker  9:14  
+I also saw they require 24 hour tech support, so I understand that most likely means, you know, somebody's having a problem logging in or whatever, and your team can handle a large chunk of that.
+
+Unknown Speaker  9:31  
+Again, as we've discussed before, we're a development team. We don't offer 24 hour technical support, so that's something that has to be looked at more from your side and on it, it says they want 24 hours support via phone, via email or via chat. So phone and email, of course, we can easily give them email buttons to email you guys, you know, throughout the system, wherever they are, telephone number, they've got your telephone number, they can call you.
+
+Unknown Speaker  10:00  
+You chat, that's a feature we haven't developed. We haven't discussed developing. So if you want to meet that requirement, we have to develop that feature. That's the one point about 24 hour tech support I want to
+
+Unknown Speaker  10:16  
+speak to. We as our internal team have extended support hours because we have people on both coasts so we can cover support hours in a pretty broad swath. Somebody calls it at three o'clock in the morning, Phoenix time. We don't have that baked in that said. We've talked with other customers. If you really do find the need for having 24/7 tech support, we have, we have colleagues that we can bring in under our under our umbrella, that are in other parts of the world that could act in a support agreement. We have to be really cautious with your money in those situations, because bringing another team of people up to have that 24 hour staffing can be significant in terms of cost and prep time and commitment so can be done. Don't want to say no to it, but I just want to say it likely is not going to be that arduous. Most of the customers we've worked with in the years really haven't needed that 24/7 approach, as long as they've got access to a support line or a chat window or something of that nature. So let us know what that really shakes out to and we can help customize something around that, but just understand that if you really need that 24/7 support, there are people standing by, and those people need to get paid, and that means the clock's running. Thank
+
+Unknown Speaker  11:33  
+you.
+
+Unknown Speaker  11:37  
+And then the last thing I see is kind of spread throughout but the SSO versus SRO versus Lea and all these kind of different entities that need to access in different ways, we don't specifically have that structure currently set up. It's absolutely something we can do, but we don't currently. We basically have officers, customers, agencies, and that's kind of our levels of people coming in.
+
+Unknown Speaker  12:08  
+So to really get things because, because you're going to want this school stuff broken off in a lot of ways, that when anybody in this
+
+Unknown Speaker  12:21  
+enters as far as the schools are concerned, they're only going to see school stuff. They're not going to see the rest of your business, you know, as far as the jobs and such happening and jobs and agencies, so
+
+Unknown Speaker  12:34  
+there's, there's a good amount of work to build that structure and to allow these different types of entities to have access and only see what they're supposed to see,
+
+Unknown Speaker  12:47  
+and that's mostly what I see. As far as the scope of work, the last thing I would point out is
+
+Unknown Speaker  12:58  
+structural capabilities,
+
+Unknown Speaker  13:01  
+if you're looking at like the scope of work says, another 12 150
+
+Unknown Speaker  13:07  
+shifts a week. That's That's almost double what you're currently running.
+
+Unknown Speaker  13:15  
+And to have real cloud based platform as they're requesting, then we're going to have to push up those conversations we've been having about moving to AWS, you
+
+Unknown Speaker  13:29  
+know, moving things off of the server you have there at the office,
+
+Unknown Speaker  13:32  
+moving it up to AWS. And, you know, the support and the in the moving how that happens, we we can definitely recommend somebody to help you, but you're going to need somebody that you know, can run AWS, can open, get an instance up and started correctly for you and and have That going properly. We, we don't tend to do a lot of that structural stuff, especially when you're going to need a lot of uptime. It should be very professionally done
+
+Unknown Speaker  14:13  
+to meet the requirements. It doesn't say, because it says, as part of the deliverables, you're expected to be able to fill 90% of up to 90% or all of validly requested jobs that, to me, says your server uptime needs to be pretty close to 99 point something percent of the time.
+
+Unknown Speaker  14:38  
+And we've, we've had problems with your server currently, where it sits, I know was, it was that last week, Joe, that it restarted again unexpectedly for maybe updates. Yeah, that's exactly what happened. It was, it was an auto update feature that was still, uh, still running. So, yeah, we've, we've had, we've had that, you know.
+
+Unknown Speaker  15:00  
+Occurring every month or two,
+
+Unknown Speaker  15:03  
+stuff like that.
+
+Unknown Speaker  15:06  
+You guys seem to have, you know, great power there at the office, but realistically,
+
+Unknown Speaker  15:12  
+knowing you have something like AWS, where, if you know, if they lose power to a machine, it's immediately moved to another machine, and you have no downtime. You know, it's, yeah, AWS is where is where amazon.com runs. And, you know, huge websites and huge corporations run their stuff. It's, it's really got the bootstraps on it so that you don't have to worry about those type of things. Yeah, we've, we've had a lot of of customers that started with, you know, a Mac Mini on a desk, or a little Dell server in the back closet, and, you know, small power outage, or a cat kicks out the cord, or, you know, any of those types of things. It sounds to me, based on number one, where the organization is right now. Number two, the kind of partnering you're doing with this RFP that getting you into a more significant and again, Amanda, more more structured approach to your IT presence is going to allow you to have more resilience. And you know, one of the things just FYI, here we are an earthquake and fire land here in Southern Cal we've had a lot of our customers who are impacted by the fires recently that are going we need fail safe. We need to know that if something goes awry, we've got another kind of standby or warm server ready at the moment, you know, that has current data on it, so that if we need to throw a switch, something goes down, the main server goes down, any sort of problem happens, we've got something that's less than an hour old, or something like that, that's up in the cloud that can also be toggled in place. So I think there's a larger conversation potentially about just again, the growing up of Les and some of the systems and support that you're going to need to meet some of your clients needs. I think there's, there's going to be a conversation I probably want to have this conversation with Bonnie about about some things that we can help advise on, and some of these things we can help you with, and some of these things we can either recommend other people or or give you some insights into. But it's going to make sure that you guys are more, more 24/7, more more downtime resistant, and all of those types of things. Okay, thank you.
+
+Unknown Speaker  17:26  
+So that's my thoughts on the scope of works. I on the scope of work. I don't see much problems with a lot of the the rest of it. As far as a technical point of view, it seems that a good chunk of this is really more on you guys, and is less of a, you know, technical coding type thing. It's, it's more
+
+Unknown Speaker  17:48  
+Does, does your experience and your staff can handle, you know, what they're requesting. So that's that's outside of our purview.
+
+Unknown Speaker  17:58  
+I don't see any problems with the reporting requirements that they have, which is a huge whole section.
+
+Unknown Speaker  18:06  
+You know, we could absolutely be able to prepare those reports in a timely manner. Have the system doing that for you,
+
+Unknown Speaker  18:14  
+and, of course, whatever we already have in place. So those are kind of my thoughts on what definitely needs to be done, and then what could be done to meet these requirements at different levels,
+
+Unknown Speaker  18:28  
+and the answer to
+
+Unknown Speaker  18:31  
+to how quick this has to be in place will really dictate those recommendations from us.
+
+Unknown Speaker  18:39  
+Okay,
+
+Unknown Speaker  18:40  
+do you have any questions that you had as far as what, what capabilities we already have, or you know that we can build quickly and
+
+Unknown Speaker  18:51  
+to meet the scope I do not, as I did, most of everything that I had questions on or knew that we needed to hone in on or is in the outline you know that you've already dived into Thank you, by the way, but it don't know. I just haven't been able to check with Joe and Ashley if they have any additional questions. So I just want to have anything additional that I might have missed, that you want to ask here.
+
+Unknown Speaker  19:15  
+I think, from my perspective, the biggest question I have, and it was something that we're talking about in regards to geo fencing, as opposed to Geo tracking and the native app, would we have the ability to have both of those options? Yes, yes. Who would Okay. Okay. That was the biggest thing that stood out to us, at least when it came, you know, with this RFP, and as far as their requirements were concerned, I think that's probably the biggest piece that we had a question on, just because everything else we were hoping, at least from your guys's perspective, when we had these questions sent to you, that you guys would be able to flesh it out for us, write what you could, just because of this such a tight timeline, and then from there, if we were to go ahead and be awarded that.
+
+Unknown Speaker  20:00  
+Yeah, then we were going to be able to go ahead and move forward and kind of just plug the holes where we needed them, at least from a minimal perspective off the bat, and then kind of flush it out down the road as well. That that works for us. That's a that's a great plan, um, if you could, or you Amanda, whoever, break apart the pieces of this scope of work and that you need, you need verbiage from us, that you need direct technical answers from us.
+
+Unknown Speaker  20:33  
+Because all of this obviously, is not technical,
+
+Unknown Speaker  20:37  
+necessarily technical. It's a lot of it is just, is staffing and you know what you can provide company wise.
+
+Unknown Speaker  20:46  
+But if you guys could kind of send me which points in this scope of work you would like us to directly answer for you, so that you've, you've got the,
+
+Unknown Speaker  20:59  
+you know, you've got the technical verbiage to pass on to them as far as what what can be provided. That's that's fine. I'm happy to help with that. Okay, so we started here with this and this outline, but now you've given us some additional information. So Joe, you and I need to, we need to round table this and figure out what we can write and what we want to ask specifically from them. So just let me know what your schedule is, and we will, we'll work through that together. Yeah, absolutely. Well, well, Phil, is the questions that were sent to you from Amanda were directly from the RFP itself. And so those questions were directly from Bonnie, where she she wanted your guys's expertise on. So what you see there is, are the questions that you want to answer from you guys, as far as you guys could take it at least, and that's where I think the initial starting point was with those questions.
+
+Unknown Speaker  21:49  
+Maybe I'm missing because I'm seeing
+
+Unknown Speaker  21:56  
+method of approach,
+
+Unknown Speaker  21:59  
+because I was seeing more their their instructions on what they want and the scope of work. I'm not seeing anything that looks like it was prepared by you guys.
+
+Unknown Speaker  22:14  
+Meaning, no, I'm sorry. So unless you're talking about your email itself, we
+
+Unknown Speaker  22:20  
+went through the 17 areas, right? We watched. She walked through them in depth, and then had me pull out the areas in which she felt that there would be the most technical language. So
+
+Unknown Speaker  22:31  
+if it Yep, I'm hearing you two differently, like I I'm here. No, no, that's fine. We've gone through and we've worked through most of this, and this is what we can do. These are the structural capabilities. This is what we can meet at this level, but if we need to go higher. So I guess we just need to know that what week Joe and I can sit down and go through what we think we can but this is specifically what these are the questions that Bonnie highlighted that she felt the most technical. So I guess we need to Okay, need your assistance with that. That's fine. I will. I've looked through them some. That's, it's it's fine. I can look through them, and I will probably, in truth for most of them, send you two answers. So I will say, you know, this is what you can say to them. But for for Les is years only. This is the real, the answer of the real capability we currently have, and this is the capability we would probably want to look to
+
+Unknown Speaker  23:34  
+to make or move forward with, so that, you know, you can see, you know, this is what you want to pass to Arizona, you know, Department of Education. But for Les, this is the real answer, you know, with all of the caveats and such that we're probably not going to pass on to Department of Education, I appreciate that. Thank you. Yeah, that's probably the best approach. Here's the client facing, sparkly, yes, we can do it. Here's the recipe card for how that's going to get done and what some of the you know, what are some of the positives? What are some of the pros and cons and pitfalls and things that we have to be that things that are included with, with providing the level of of
+
+Unknown Speaker  24:18  
+compliance that they need?
+
+Unknown Speaker  24:21  
+Okay?
+
+Unknown Speaker  24:23  
+And when do you guys think I know this
+
+Unknown Speaker  24:30  
+next question?
+
+Unknown Speaker  24:32  
+Um, I would be
+
+Unknown Speaker  24:35  
+definitely pushing aside some stuff, but I might might be able to get you that by the end of the week. Does that sound acceptable? Yeah, yes, yes, yeah. So,
+
+Unknown Speaker  24:50  
+okay, yeah, I can, I can. I can work on that and try to get you, like I said, dual answers on most of those questions. Yeah.
+
+Unknown Speaker  25:01  
+Yeah, and for just to kind of make an overarching statement, also, folks, you know, customer comes to us with a problem. There's generally three or four ways of skinning in a cat, right? Oh, we can do this super fast and kind of cheap, and it'll work, and it'll be reasonable or no, we can do the gold plated version, and it's going to come, you know, it's going to take longer, cost more, but be full featured, and so on and so forth. I think the art you know, once we know more about the scope and what are the items that you know, where are those levels of of degradation, or what are those levels of compliance that we need to hit? It's a moving target for us. So, you know, if a client says, I need everything by tomorrow, we go, great. We're going to give you something very simple, and it'll be there in the morning. And if somebody says, Hey, we've got, you know, we can start in October. We have a lot of these things to go through. We can really sit down and put our arms around it with you and work towards here's a couple of different options, and which one is going to be the most acceptable. And we'll, we'll spell out, you know, the pros and the cons. This one will be more expensive to maintain, but we can deliver it faster. This one is going to look fantastic. It's not going to be as full featured, you know, those types of things. And you know that from working with Brian and Jake on this already, but we want to make sure that we're standing next to you, helping you helping you make those decisions, because there probably are several outcomes or deliverables that we can provide, and it's really going to be what's going to be best for the timeline for the client, for your needs,
+
+Unknown Speaker  26:35  
+absolutely we understand, and I think for this, we're just baffled by The timeline that they're requesting it, that it is I know that I believe that there's a request, Joe, correct me if I'm wrong, that we're trying to put in a request right to see if they can extend that. Did we have any success with that? Or do we have any direction if that's going to be a go? As of right now, we at least yesterday, we were told there was an extension, but we just haven't had a chance to confirm it yet. Confirm it yet from their end, formally, at least. But that's what we're looking at. We're supposed to have one, we just haven't got that actual K from their end yet, so that we're kind of in limbo at this point. So you're moving with the premise that there, you know, until you have confirmation, you're moving forward with the understanding there is no extension yet, exactly. Yeah, Dave, have we ever seen an RFP where we were like, Wow, what a reasonable time, what a generous amount
+
+Unknown Speaker  27:34  
+of time. Thank you. It's not, I'm so I've worked here 12 years. I've never seen one with a reasonable date. I was at Apple before that same deal, it was always like, hey, we just need, like, an easy 300 pages of documentation by, I don't know, Monday, could we do Monday? And it's like, okay, well, you know, it's just crazy. So it's not just you guys, but we'll do everything we can to support, yeah, yeah. That the other thing, the more time you know, it's funny when you if you if you come to us and say, Hey, we need this app, you know, fully working, and eight months from now, we've got lots of time to make it great. In that period of time. In that same vein, you ask us a quick question and go give us some language that we can use on this if that window of time to provide you language is short, it's going to be, you know, short and crisp and to the point our response in to the RFP, if you get any extension, the other thing you can reach for is, hey, ACD, I want to make this sound nice and flowery and impactful and punchy. We're pretty good at that, but, but we need a little more time, you know, so Brian and I could possibly work on this together and really punch it up and give you some really fantastic language. It's going to make your responses look really impressive. We can't do that if we're rushing towards, you know, a really quick deadline, but we can make you look even better if we've got a little bit of time to work with you on that. Absolutely, we'll relay that to Bonnie. Can follow as you guys work on this piece for the end of the week. Yes, yeah, I will for now. That is my that is my target is by the end of the week to hand that over to you.
+
+Unknown Speaker  29:11  
+So sorry, we're consuming your life.
+
+Unknown Speaker  29:15  
+No problem. That's okay.
+
+Unknown Speaker  29:18  
+There can be worse people consuming our lives. Yeah, I mostly work with you guys anyway. So the when I say I've got to push other work aside. I mean work for you. So, okay,
+
+Unknown Speaker  29:31  
+demanding right now, and we just need for asking a lot, so it's okay, all righty,
+
+Unknown Speaker  29:38  
+anything else we need on this subject before we move on to Ashley and her never ending list. Nothing on my end, but Joe, is there anything else we might have missed? I'm looking through my list. I think, I think everything's covered as right now. I think the end of the week is a good goal to set, and hopefully we do get that extension, you know, or at least get that confirmed. But as of right now, yeah, we're running off the 26
+
+Unknown Speaker  30:00  
+Haven't so alrighty, sounds like a plan. Alrighty. Ash,
+
+Unknown Speaker  30:06  
+Miss Ashley, how are you doing? Beautiful day. Good. Thank you. Good.
+
+Unknown Speaker  30:13  
+Share my screen, and by the way, I think I'm going to step out here,
+
+Unknown Speaker  30:20  
+always a resource for anybody and everybody. Amanda, if you would reach out to just let Bonnie know, I'll probably be reaching out to her in the coming days. I want to just make sure she knows she has our support and be able to offer some specific resources and some of the things that are being thrust at your feet right now. So I'll probably reach out to her in the coming days. I will, will, and I will let her know a song.
+
+Unknown Speaker  30:43  
+It's pleasure meeting you sir. You too. Thank you guys. Bye.
+
+Unknown Speaker  30:50  
+Okay. Michelley, what we got? Alright? So I'll start with agency.
+
+Unknown Speaker  30:56  
+So I was trying to,
+
+Unknown Speaker  30:59  
+you know, test some of the reports that Jake was showing last time.
+
+Unknown Speaker  31:03  
+Jake, how do you get it to email it to yours? How does it know where to email it? It's gonna base it on the so if you go to like your you see your name, Ashley there in the top right. Yeah. Click there and go to Account Settings. Do?
+
+Unknown Speaker  31:23  
+Yes, so there that email. Okay, so I wasn't getting any of these, any of my the reports that I request. I've noticed that it takes a while to get to me. Brian. I don't know if that's like a queue timing setting or not, but I also have sort of been questioning that, because I'll be like, well, it's not coming, and then two hours later, all of a sudden, I see it. Oh, wow, yeah, it shouldn't be that. It's, it's, it's running on a 15 minute cycle. So it shouldn't be anything like that. I'll, uh, I will look at that. I was able to get them what the other day when we showed them to you, I was able to get three out of four that I requested. So I was looking into what was happening on that fourth I I did end up getting all mine. It's just that it took a while for them all. Yeah, well, it definitely shouldn't take anywhere near that time. Like I said, it's running on a 15 minute window, so even if you got it as soon as the last one finished, you know you shouldn't have to wait more than 1516 minutes, because it's got to process it, you know. So I'll look at that agency reports.
+
+Unknown Speaker  32:32  
+Yeah, I want to say I was working on it maybe 1111, 30, so it's been a while, and I was like, Maybe I'm just doing something wrong, or my email is not in there, right? So I just wanted to double check on that.
+
+Unknown Speaker  32:44  
+Let's see, oh, releasing jobs. So I noticed in I'll
+
+Unknown Speaker  32:51  
+start with jobs. So like jobs
+
+Unknown Speaker  32:54  
+that seemed good. I, you know, I couldn't release a job that has someone on it,
+
+Unknown Speaker  33:00  
+but I didn't see it on the unstaffed ones anymore.
+
+Unknown Speaker  33:04  
+Oh, okay. Usually it was that that really that drop down, that that yellow one, yeah, and the one in the drop down are not connected yet. So the So, the the logic that powers the one on the drop down is not yet powering the one on the yellow button, because I'm not certain we have the drop down logic done yet, and I don't want to migrate that logic over until you're happy with it. So you know what I mean, it'd be helpful. Like,
+
+Unknown Speaker  33:34  
+it would be helpful if we could make and I would need your help on this, just because you know the system better than me. But like, however many permutations there are, like, here's four jobs that can be that should be able to be released with different rule sets, right? And then here's four that should not be able to be released with different tools or different logic sets. And if we could measure against those. That would be helpful, because I just don't know all of the scenarios. I can make you an action tree. Yeah, that would be awesome, because I'm kind of like I thought I had it all covered, but you keep bringing up new stuff, and that's fine. You should, you should. It's not a problem. I just, I just, I don't know all the situations. You know what I mean?
+
+Unknown Speaker  34:22  
+Okay, yes, I gotcha, I can make you an action treat for that. Jake, so that would be very helpful. Thank you.
+
+Unknown Speaker  34:47  
+I Sorry, my mouse is freaking out. That's okay.
+
+Unknown Speaker  34:54  
+These looks good.
+
+Unknown Speaker  34:59  
+Just talk.
+
+Unknown Speaker  35:00  
+About that, but not billable, but nothing totally changed on that one. I just keep testing
+
+Unknown Speaker  35:07  
+it.
+
+Unknown Speaker  35:16  
+Instead.
+
+Unknown Speaker  35:19  
+Might be it for agency, just the release button,
+
+Unknown Speaker  35:26  
+yeah, and reports and and if we're hoping to go live with this next week or soon after, with what's in dev, Jake, it's it's about time to turn back on that calendar and
+
+Unknown Speaker  35:42  
+get that running.
+
+Unknown Speaker  35:45  
+Okay,
+
+Unknown Speaker  35:47  
+so much has changed here that what I'd like to do is be absolutely like I think we could go live before the calendars live, and just in Alicia and have the calendar be an update that comes later. I think that would be fine. I'm not gonna. Obviously, I don't make that decision. You guys do, but it would be helpful if we were like, hey, the jobs list and the filtering is done, we're very happy with how it works. Then I can go, Great. Now I can make sure the calendar is okay, because, because when, when the rule sets keep keep changing, and it's not a problem that they're changing, it's just when they keep changing, I have to try to keep up with both of those code bases, and it's very, very challenging. So, so if we could get that the list done and and confidently shipped, that would help me out a lot.
+
+Unknown Speaker  36:43  
+Joe, what are your thoughts on that? On
+
+Unknown Speaker  36:47  
+pushing calendar
+
+Unknown Speaker  36:49  
+out a little bit, or pushing the whole thing out a little bit? For calling it live,
+
+Unknown Speaker  37:00  
+you're muted, Joe, if you're talking,
+
+Unknown Speaker  37:07  
+or Joe's just not here, okie dokie,
+
+Unknown Speaker  37:12  
+yeah, I, I agree that's that makes sense. Yeah. I'm not trying to, like, pour water on it. I just Yeah. So if we could get, if we could get that kind of you know decision or thoughts on that from from your side,
+
+Unknown Speaker  37:30  
+that would, that would be great.
+
+Unknown Speaker  37:34  
+Okay,
+
+Unknown Speaker  37:37  
+I don't personally see a problem with it. I'll double check with Joe, and we can get back with you, but great. Thank you. Yeah,
+
+Unknown Speaker  37:45  
+it's okay to push updates, you know, like, hey, even better. Now there's a calendar. Like, that's all right,
+
+Unknown Speaker  37:52  
+as long as they can get their work done. You know
+
+Unknown Speaker  37:59  
+that is it for the agency those work that I found. I guess I'll let you know if I ever get those reports, though,
+
+Unknown Speaker  38:09  
+let's see.
+
+Unknown Speaker  38:12  
+Oh, this is the mileage. The mileage still isn't recording, right? I don't know if we've had a chance to work on that or not. Yeah, I looked at it and I wasn't able to figure out a problem, necessarily. I did see some instances it was working. In some it wasn't, and I haven't been able to figure it out.
+
+Unknown Speaker  38:31  
+Haven't had too much time to put into it, but it's
+
+Unknown Speaker  38:39  
+still on my list. Okay, we've switched to prod on Monday yesterday, and we have not heard any, yeah, we haven't heard a little bit yesterday. It's been, seems like it's been fine, yes, aside from that, you know, hour, hour and a half with the app was doing something. I don't know exactly what happened. It was a server issue on AWS side. It wasn't even, we didn't change. We literally changed nothing.
+
+Unknown Speaker  39:06  
+We just waited, I mean, I got in touch with the platform, I was talking with them that it was on their radar, and so that, you know, it was an AWS thing, and as soon as it worked itself out, we were good, perfect. Yeah, everything else has been working, like all of the settings and when officers can see things when you know they can't, when they should they shouldn't. I've been testing them as well. I haven't gotten any any negative feedbacks. So that's positive. Yeah, news is good. News,
+
+Unknown Speaker  39:35  
+yes, making life a little bit easier, at least on the sky billing side. That's really good.
+
+Unknown Speaker  39:43  
+This is good.
+
+Unknown Speaker  39:47  
+Oh, I don't so I had a job in my and I know I brought this up, I just wanted to
+
+Unknown Speaker  39:53  
+clarify one more time. So if I have a job for today, and I clock in before it.
+
+Unknown Speaker  40:00  
+Be in. You know, it would be in my four o'clock any beat in upcoming and today's jobs, the once I clocked in, they it moved into active. But today it now it's an active and upcoming. So when I clocked in, I don't know if, Yeah, huge deal. I just thought it was, I don't remember that. Yeah, I think so you're saying when you're clocked in, you're also saying it in upcoming, yeah, exactly. I think we could probably just easily filter that out.
+
+Unknown Speaker  40:33  
+Brian,
+
+Unknown Speaker  40:35  
+the script that comes in that gives you the filter type of either, like today, you know, pass upcoming for the
+
+Unknown Speaker  40:47  
+for active, well, no for upcoming, anything upcoming, filter out the is active, yeah, yeah. And that should do it. And then if you want,
+
+Unknown Speaker  41:02  
+if you don't want today's jobs on upcoming just filter out the current date as well.
+
+Unknown Speaker  41:10  
+That should all be addressable in, like, a simple file maker, script change, yeah, yep. I got it cool.
+
+Unknown Speaker  41:19  
+The only other thing I noticed, and
+
+Unknown Speaker  41:22  
+so, like, if, if I make a note on a job, like, accidentally, like, click in there, but I don't type anything. Is there a way to get out of that note section without it saying, without it sending us a notification that someone
+
+Unknown Speaker  41:37  
+made it, made
+
+Unknown Speaker  41:40  
+it out in there?
+
+Unknown Speaker  41:41  
+Yes.
+
+Unknown Speaker  41:45  
+No, okay. I mean, yeah, there is. It's a
+
+Unknown Speaker  41:52  
+little tricky, because you have to go, what was it before, and what is it now? And if it's the same as it was before, then don't and if it's different, then do it?
+
+Unknown Speaker  42:04  
+Do you want us? I can, I'm happy to. Do you want to, like, see how much of a problem it is for a
+
+Unknown Speaker  42:12  
+little while, and then if it's, if it's happening all the time? Like, Sure, let's do it. You know, Jake, we could at least quickly say if it's if the note is empty, then don't send. That's not a problem. That's not a problem. Yeah, that we can do for sure, looking to see if there was a change at all. Yeah, that might be a little more in depth, but if it was empty, they touch in there, and then they touch somewhere else. Not sending a notification, should be a lot easier to Yeah, no, that's, that's definitely true.
+
+Unknown Speaker  42:46  
+That would work, actually, because that's what was confusing people, they're like, says he entered notes, but I don't see anything, so they thought it wasn't working. But then I, you know, found out why. Yep, yep, okay, that's it. I'm
+
+Unknown Speaker  43:03  
+actually going to try to make that change right now and just see,
+
+Unknown Speaker  43:11  
+Hey, Brian. I wanted to in scheduler. I wanted to see something. So I added, for some reason, this officer didn't have a site on his
+
+Unknown Speaker  43:20  
+profile. So I added the site, and then this is what the mob log said that I did. It says week total, book, hour, 8.5
+
+Unknown Speaker  43:31  
+it
+
+Unknown Speaker  43:32  
+didn't say anything about the site. Is that seems strange to you? Um, yeah, that's could be a little strange.
+
+Unknown Speaker  43:45  
+Was that earlier today you did that this was yesterday. Okay,
+
+Unknown Speaker  43:53  
+you might see some oddness on the mod log I have been working on, as we discussed before, flattening the JSON. So,
+
+Unknown Speaker  44:04  
+you know when, like, especially an agency, when you change a setting, you see all the officer settings in that JSON, you know, new and old value, because it's a hierarchy. So I'm flattening that out all to one level, so there's no hierarchy, and you should see less of that. But basically, the first time a change comes through, it may look like you changed everything because because of what the new JSON looks like. So for that one change, but I was doing that today, not yesterday. So yeah, this is the one where you can see, I made the change yesterday, and all I did, honestly, was at Arizona, and this popped up, and I was like, that's, I didn't do that at all. I don't even know. Week total book, hour 8.5 like, I don't even know where that came from. Okay,
+
+Unknown Speaker  44:59  
+right?
+
+Unknown Speaker  45:00  
+Right, yeah, I can. I can look at that. Well, you can also see that the modification was made by
+
+Unknown Speaker  45:06  
+Oh, one was made by you, and the next one was made by better forms. Okay, he must have done more to his account after I changed the site, yeah, but, uh, yeah, I just thought I'd point it out. I don't know where it pulled that from. All I did was put a site in there. Okay,
+
+Unknown Speaker  45:23  
+let's see.
+
+Unknown Speaker  45:26  
+I don't a long time ago, we had talked about this, and I had told you no, but I'm just curious how difficult was it, or would it be to
+
+Unknown Speaker  45:36  
+eliminate the dashes from like officers, remember how you were saying that you could go through and, you know, take out the format. You know what I mean? It's just because sometimes we'll type in a phone number, and I have to do it twice, because I don't know if the original person put it in with dashes or no dashes. I don't know how hard that was. I don't remember what you said it's was it a lot? It's not the worst. Basically, what I would probably do is program it to go through and remove anything that's not a number
+
+Unknown Speaker  46:15  
+out of it. So it'll still show you formatted, but in the background it won't be formatted, which is really what we want moving forward,
+
+Unknown Speaker  46:25  
+it's
+
+Unknown Speaker  46:28  
+officers. What do we got? 12,000 officers? You're talking a couple hours.
+
+Unknown Speaker  46:36  
+Okay.
+
+Unknown Speaker  46:38  
+What about just Arizona that? Or is that what you were quoting? No, no, I'm doing everything. But because, I mean, realistically, it's going to take me a little bit of time to prepare the code, and then I'm going to hit a button and sit back and the computer is going to do it. So once I get there doing,
+
+Unknown Speaker  47:00  
+you know, doing 10,000 versus 12 or 13,000 really isn't much difference.
+
+Unknown Speaker  47:08  
+Okay, oh, I get, I get what you're saying. Okay, I just wanted to check because it's, it's not an issue, but it is very time consuming, especially if you're trying to go quick and search someone up. Yep, it becomes an issue when you're trying to do fines, and yes, could become an issue when they
+
+Unknown Speaker  47:29  
+if we add any type of, I mean, looking at some of the scopes of things that we're looking at, especially if we get into this school stuff, they're going to want a button on their app. The school will to just hit a button and call, you know, the officer's number, you know, they show up for their shift or something like that, and having the automated phone work properly on the mobile app, it's not going to want all that formatting,
+
+Unknown Speaker  47:59  
+okay, when we get there, it'll become more of an issue than it even is now. Oh, okay, so might be worth it. Do that actually just a quick, real time follow up. I It should, if it's empty, it should not save those notes, but perfect. But if you get a chance, just take a look at it. And you know, let's, let's see if that's true or not. I think it is, but I'm not testing it because I don't have anything to test with. No problem. I will. I'll test that soon. Thank you. You're welcome.
+
+Unknown Speaker  48:36  
+See
+
+Unknown Speaker  48:41  
+bulk.
+
+Unknown Speaker  48:43  
+So I don't know if you remember we were talking about if I did, like a bulk assign.
+
+Unknown Speaker  48:52  
+That's a great example if I did bulk assign, though it doesn't okay. Let me start over if I have a series of jobs and I have it on hold,
+
+Unknown Speaker  49:02  
+and then I go here, and I bulk assign all of them. It doesn't flip that switch to take them off hold like it would if I individually put an officer's name on there. Yeah, is there a did we find a fix for that? I'm only thinking about it just for, you know, in the future when agency, you know, when they start using it, it's not, they're not going to show up on
+
+Unknown Speaker  49:27  
+their the site.
+
+Unknown Speaker  49:30  
+Let me take a note. I have no idea. I'll look at it
+
+Unknown Speaker  49:35  
+and see
+
+Unknown Speaker  49:37  
+one second I'm still noting the phone thing. Oh, sorry, i.
+
+Unknown Speaker  50:03  
+We know when i You want me to move on. Yep, one more second. Okay,
+
+Unknown Speaker  50:09  
+five or five. I'm going to have to jump off because I have a two o'clock but you guys, I will read the recording on this week. We'll listen to the recording from point forward to get caught up. Or if the team wants to send me any notes on just this section, would be great. Thank you guys for today, sure. I'll talk to you soon. Okay, thank you. Bye.
+
+Unknown Speaker  50:30  
+Okay, now I'm ready. Ashley, okay, so yeah, bulk hold. Let's see bulk emails. This isn't a huge thing, but something I did notice, and I added, I believe, to a hello card, yep, um, the no last name. I'd never noticed that before, but it only pulled their first name. Bulk emails from where, here. Oh, sorry. So like I went here, here, imagine I had more here, and I just did a bulk email. Yeah,
+
+Unknown Speaker  51:17  
+do
+
+Unknown Speaker  51:22  
+Are you ready one second? Okay, I just didn't. I don't want to, like, move too fast, but I also don't want to make you wait for me. You're good. You're good. I'll let you know if I'm nothing. All right, then go ahead. Sort of the Mod Block on the location job, location detail this area, is there a way for it to pick up on the contact and phobia change?
+
+Unknown Speaker  51:48  
+Um, sure, we can add that if it's not on there,
+
+Unknown Speaker  51:52  
+there was something else in mod log that just didn't take great notes. So I don't know what I yeah, maybe I put it somewhere else.
+
+Unknown Speaker  52:01  
+I Oh, this question. Oh, my gosh, okay, I'm gonna try to explain this as best as I can.
+
+Unknown Speaker  52:13  
+So on the you sound super confident. It's just, I mean, it makes sense, but I'm afraid I'm gonna say it in a confusing manner. So on the dashboard, for example, the site is set to All which shows us all sites, right? That shows us Texas. It shows us Arizona, everything, but when?
+
+Unknown Speaker  52:38  
+But do you remember that job that I had that was in Utah, and I wanted to assign an agency, and that agency I had under psych all, yes,
+
+Unknown Speaker  52:50  
+so wait a week
+
+Unknown Speaker  52:54  
+for the site meeting. All,
+
+Unknown Speaker  52:56  
+see, it's confusing
+
+Unknown Speaker  52:59  
+only because you know, we were talking about because this, this particular person, this Adam Hannah. He works nationwide. Sometimes we use him for places that are hard to fill. So I couldn't put him under, you know,
+
+Unknown Speaker  53:13  
+I guess I could make 50 agencies with his name on it, but that seems like a lot.
+
+Unknown Speaker  53:20  
+But you know, when I was doing that job in Utah, like I I
+
+Unknown Speaker  53:26  
+wanted to assign him as the agency, because he's the one doing it, not Utah, PD, or whatever the city was. I don't remember it right now, but I couldn't put him on it unless I changed that job site to all, or Yes to all? Yeah,
+
+Unknown Speaker  53:46  
+I would suggest maybe,
+
+Unknown Speaker  53:52  
+since we're talking about this person as really an agency,
+
+Unknown Speaker  53:57  
+maybe make one agency and one site
+
+Unknown Speaker  54:03  
+for him,
+
+Unknown Speaker  54:07  
+oh, and put the, okay, yeah, and and make that, make the job location, that site that is, you know, his, his name, or whatever you know. And then the agency be him, also for the job, and assign the job location to him in those both ways, both of those ways,
+
+Unknown Speaker  54:26  
+because, I mean, yes, that job is in Utah, but there's really no reason that the site has to be Utah. You know, the site for the job location, it doesn't have to be Utah. It as long as the address is correct. That site really doesn't mean much.
+
+Unknown Speaker  54:50  
+It is more,
+
+Unknown Speaker  54:53  
+yeah, that's, that's my recommendation. You know, he has a company name or something that you could use.
+
+Unknown Speaker  55:00  
+Use. I would make an agency and a site for him,
+
+Unknown Speaker  55:05  
+and then you make that job location, the site and the agency him. When you make jobs for him,
+
+Unknown Speaker  55:14  
+does that sound like that'll get you where you need to
+
+Unknown Speaker  55:18  
+be. It does right now. I'll let you know. I'll give it a shot and see I can. I never anticipated that being a problem anyway. So this is all I'm trying to, you know, figure out ways around.
+
+Unknown Speaker  55:31  
+Yeah, I did small details like that on, I don't think we planned on a police department being represented in multiple states, you know, yes, right? We're talking about so, but I would say that's, that's what you should do, make the site and the agency. And the only agency that's under that site will be his agency, you know,
+
+Unknown Speaker  55:55  
+yeah, we just have quite a few. We have a few examples of
+
+Unknown Speaker  56:02  
+partnering vendors that we use from time to time.
+
+Unknown Speaker  56:06  
+And maybe that's maybe that's something that we can handle better, if, again, if we move forward on this school thing, and you guys get that contract,
+
+Unknown Speaker  56:19  
+as I was talking about before, we're going to have to do some different type of agency stuff to
+
+Unknown Speaker  56:27  
+to perform what the Department of Education wants to make sure that they could see just their stuff, but it's going to be in multiple counties and dealing With multiple agencies and such. So,
+
+Unknown Speaker  56:40  
+you know,
+
+Unknown Speaker  56:42  
+maybe it will be building a new structure that will help with this partnering vendor type thing. But until then, I would say, make a site and an agency for that partnering vendor,
+
+Unknown Speaker  56:57  
+if they're working in multiple sites, you know, multiple states. Okay, so when we filter on the dashboard and like, when, right, sir, whoever is filtering some reports and they hit all, that does truly mean everything correct. But this, if this was all, this just means anything under, under all, yeah, any, anything that has a site period, okay,
+
+Unknown Speaker  57:26  
+okay, It kind of,
+
+Unknown Speaker  57:35  
+I sent that to you already. I
+
+Unknown Speaker  57:53  
+They're not letting me click between screens. I so I do think we still need a zoom, but I don't know. I don't know if this is something I can like plan ahead, just because it doesn't happen
+
+Unknown Speaker  58:04  
+all the time on command, just on certain people's computers. But one thing I did notice that Christine and Stacy have in common when they run into that issue where they're not able to click out, you know, like, this screen is just stuck in front. It it has to every time they've ran into it, they're doing something in here and then pulling up.
+
+Unknown Speaker  58:28  
+So I picked an unstapped one, but you know, it's the officer name, yeah, and it's always in the past. I don't know if that means anything to you, but I can tell you that anytime they've ran into that, they've gone this route,
+
+Unknown Speaker  58:43  
+okay? And then I can try to look at that.
+
+Unknown Speaker  58:48  
+I mean, or so those isn't Stacy, the one that we found out had an older version of FileMaker, yes, and that's fixed now. Okay, Jeff did something that, hopefully that Well, this was yesterday. Was when she showed me her screen was not letting her go back and forth.
+
+Unknown Speaker  59:07  
+And last week, I think
+
+Unknown Speaker  59:11  
+Joe, I think it was last week, Jeff fixed Stacy's
+
+Unknown Speaker  59:16  
+FileMaker version. Yeah, he was able to update it on his end. And that was, yeah, that was probably midweek, now, last week or so. So
+
+Unknown Speaker  59:24  
+I don't know how much, I don't know how much advance, I guess is what I was going to ask, do you need for that Zoom, for that particular issue? I mean, I don't necessarily need advanced notice if I'm not doing anything else. You know, when you call me and go, Hey, it's frozen, you want to look at it. Okay. If I'm not doing something else, you know, that's an emergency, I can, I can jump on the call and we can look at it.
+
+Unknown Speaker  59:49  
+Otherwise, I can just kind of mess around again on my my Windows machine here, because I haven't seen it happen in Matt on a Mac. So I.
+
+Unknown Speaker  1:00:00  
+Click I and I cannot recreate it. I have tried so many times,
+
+Unknown Speaker  1:00:05  
+but collapsing dashboard, I can do that on command so that I would like to set up something so you can see what's going on on my computer
+
+Unknown Speaker  1:00:14  
+soon. Awesome. Maybe I don't know, for free this week. I know we're kind of running out of time. And I don't believe anything I put in these purple colors I didn't see on Trello.
+
+Unknown Speaker  1:00:28  
+So maybe this is in there, and I just didn't have the right keywords, though, that's it. It very well may not. I've had the same problem. I swear I've seen this in here, and then I find it. Yeah,
+
+Unknown Speaker  1:00:42  
+it very well may not be. I, I tend to put things in Trello. I tend to put tasks in Trello for Jake. And I to do, not necessarily, problems if I don't know, you know, if I don't have what the solution is going to be, I may not put the card in there. The card is supposed to represent work that we're doing. And, you know, necessarily, finding the
+
+Unknown Speaker  1:01:07  
+solution to a problem isn't always something that I put in a card until I find the solution.
+
+Unknown Speaker  1:01:14  
+Okay, yeah, that makes sense. I just know that you had said that if it was in Trello before the, you know, trial date ends that, you know, it's acceptable. Okay, I'll, uh, you're right, and I'll, I'll definitely make sure, if we don't figure that out soon, that I'll put that in there before the 90 day tech support is up to make sure that that particular issue is covered.
+
+Unknown Speaker  1:01:36  
+Nice, um, I guess for meeting this week, I
+
+Unknown Speaker  1:01:40  
+man, I might be able to, but I'm under pressure now to work, oh yeah, answers and stuff for Amanda by the end of the week. So I'm not sure that's okay. Yeah, no, to have to do really any of this stuff this week that may take, okay, my time. Okay, that makes that makes sense. I know that is definitely a priority. So I don't want to get in the way of that.
+
+Unknown Speaker  1:02:05  
+Thanks. Oh, this is weird. I Okay. This this weird tell site job from like, 2024 October, 2024 so all I was honestly doing was I was trying to bulk a sign on previous dates. But I've, I've also seen it, if I'm like,
+
+Unknown Speaker  1:02:24  
+adding an officer in here,
+
+Unknown Speaker  1:02:27  
+and this, like this tell site, job pops up, and it is completely unrelated to anything I've been doing. I've was under different customers, obviously different years, but this is the same job. I don't know if you remember a very, very long time ago when under I believe it was customers, and then we'd go to the job assignments, and there was a list, and it was all that tell site, job, yeah, it's that same job. I don't know
+
+Unknown Speaker  1:02:54  
+how it's getting mixed up and what I'm doing or what we're doing, because I've seen it happen to Christine once.
+
+Unknown Speaker  1:03:02  
+But thought I
+
+Unknown Speaker  1:03:04  
+see your thoughts on that.
+
+Unknown Speaker  1:03:08  
+Okay,
+
+Unknown Speaker  1:03:12  
+yeah, if I can figure out exactly what
+
+Unknown Speaker  1:03:17  
+you know causes that breakdown or or
+
+Unknown Speaker  1:03:20  
+what we're doing when it happens.
+
+Unknown Speaker  1:03:24  
+So you're when you say it happens. If you're doing, you know, say, assigning an officer. Is it
+
+Unknown Speaker  1:03:32  
+coming from the officer select screen and it's ending up on the reoccurring job screen? No, it. If when it happens, then it would be like a thing, and this isn't gonna let me do it.
+
+Unknown Speaker  1:03:45  
+So I'd like put in the officer name, pick it,
+
+Unknown Speaker  1:03:53  
+and right before I hit close, that's where that tell site job would show up. And I don't know how I know Christine, so right before you hit close, it goes to the reoccurring job screen. Because that's what I have says, I see a screenshot of,
+
+Unknown Speaker  1:04:07  
+is the reoccurring job screen? Yes. But this record does it in, in the it probably is cable. I'm trying to figure out which, which we're in when it goes,
+
+Unknown Speaker  1:04:20  
+yeah. So I've had it happen this way. But what you're seeing right here, what I was actually trying to test was I was in here,
+
+Unknown Speaker  1:04:29  
+here,
+
+Unknown Speaker  1:04:35  
+I was trying to bulk, assign a pass,
+
+Unknown Speaker  1:04:39  
+pass job. Okay, that's, that's when it pops.
+
+Unknown Speaker  1:04:45  
+But again, you're coming from this screen, so Okay,
+
+Unknown Speaker  1:04:50  
+yeah, that's where no appropriate, because it doesn't allow you to bulk assign jobs that are earlier than today's date, but you can go back and put them on.
+
+Unknown Speaker  1:05:00  
+And correct, yes, yes. Wanted it because I had bulk Watch, watch, it work, but it wasn't one,
+
+Unknown Speaker  1:05:08  
+yeah, and
+
+Unknown Speaker  1:05:10  
+there's that tell site job, you see that? Yeah, yeah, I don't know. I maybe it does have something to do with me,
+
+Unknown Speaker  1:05:17  
+like triggering something that I wasn't supposed to do, right? So bulk assigning a
+
+Unknown Speaker  1:05:23  
+Past Due job, and then it,
+
+Unknown Speaker  1:05:26  
+I don't know, just a thought, maybe it's that's triggering it. I see at least the process that it's, it's happening in. So I can, I can look at it, because once I try to do the bulk assign, then I can't go back through and individually assign.
+
+Unknown Speaker  1:05:41  
+And I don't, don't know why,
+
+Unknown Speaker  1:05:49  
+like this one I would be able to, I don't know.
+
+Unknown Speaker  1:05:52  
+We don't do that a lot, but there was times it didn't let me do that one.
+
+Unknown Speaker  1:06:02  
+We had someone. We accidentally forgot to put in a job, and then we got filled for it. So we did have to go back and add it in and assign the correct officer, or ODM, or whatever it was.
+
+Unknown Speaker  1:06:16  
+Do you know? Why is it?
+
+Unknown Speaker  1:06:19  
+Because I tried to do it the wrong way first?
+
+Unknown Speaker  1:06:26  
+I'm not 100% sure, but I'll look at it and one way or the other, it just shouldn't
+
+Unknown Speaker  1:06:33  
+it shouldn't do that. Even if you did something wrong, it should tell you you did something wrong, not just drop you in a random area. That's not correct. Okay?
+
+Unknown Speaker  1:06:49  
+Respondents, I'll clock out early. That does have a cello card
+
+Unknown Speaker  1:06:55  
+via helper, I don't know if that needs to be in we do.
+
+Unknown Speaker  1:07:01  
+We do? We need to do this one the B of hope, or the helping them get all of its passwords
+
+Unknown Speaker  1:07:08  
+before the
+
+Unknown Speaker  1:07:10  
+expert, no, July 2.
+
+Unknown Speaker  1:07:16  
+July 2, yeah, that would be,
+
+Unknown Speaker  1:07:20  
+that would be preferable.
+
+Unknown Speaker  1:07:24  
+Oh, this last but not least.
+
+Unknown Speaker  1:07:27  
+Okay, this was very weird. So this
+
+Unknown Speaker  1:07:31  
+Jericho
+
+Unknown Speaker  1:07:33  
+volley, I don't know,
+
+Unknown Speaker  1:07:36  
+so I had
+
+Unknown Speaker  1:07:40  
+you look to see if there was something in the background that background that needed to be, you know, erased because he was stuck in invited status. So what I ended up doing was trying to, you
+
+Unknown Speaker  1:07:51  
+know, send the invite, but send it as client, right? So I could get the token and then do it myself, and then just give him the password for him to change. But it every time I did it, and only for him, because I've done it with I did it today for Roxanne, something and and it worked fine, but I keep getting for him, there's an error sending the invite
+
+Unknown Speaker  1:08:13  
+just when I did client.
+
+Unknown Speaker  1:08:16  
+I don't know if you want to see it, or if you've ever seen that, because I haven't. That might be,
+
+Unknown Speaker  1:08:24  
+yeah, let's, let's find this officer and look that sounds like a invalid email address. It doesn't like that email address.az.gov,
+
+Unknown Speaker  1:08:37  
+and we're sure there's no spaces in there, around the at the end or between the dots, and
+
+Unknown Speaker  1:08:45  
+I see,
+
+Unknown Speaker  1:09:00  
+no
+
+Unknown Speaker  1:09:01  
+I
+
+Unknown Speaker  1:09:05  
+do
+
+Unknown Speaker  1:09:06  
+you want to see it? Or should I check? I mean, I could call the officer. Screenshot there,
+
+Unknown Speaker  1:09:12  
+but it looks like will talk is spelled wrong, at least in one of these. I don't know which ones, so maybe it is a bad email.
+
+Unknown Speaker  1:09:22  
+Yeah, if that email address is bad, then it'll kick it. Okay. Well, okay, it just will Cox have 1l or two, because it looks like in his email address, it's got, or is that L, I L, I can't tell, but that's definitely not W, I, L, C, O, X, yeah, no, I just saw that,
+
+Unknown Speaker  1:09:44  
+guessing this is real. I I'll give an officer call, because that would explain, that would explain a lot, because it's I'd never gotten this. There was an error sending the invite before. I thought that was weird.
+
+Unknown Speaker  1:09:59  
+So.
+
+Unknown Speaker  1:10:00  
+I will keep trying on this one, and if it's still a problem, I'll let you know. All right. All right, thank you. And that is all
+
+Unknown Speaker  1:10:09  
+Oh, this is, I added this to Trello too. The What do you call
+
+Unknown Speaker  1:10:15  
+it? The service agreement trigger, where it's a different color, just adding that filter
+
+Unknown Speaker  1:10:20  
+so it's alpha, but also hopefully
+
+Unknown Speaker  1:10:25  
+the sending, yeah, if you went to that screen,
+
+Unknown Speaker  1:10:29  
+when you
+
+Unknown Speaker  1:10:32  
+so on this screen in general, you can just go to List View,
+
+Unknown Speaker  1:10:37  
+yeah. So if you click on customer name, it will sort by the customer alphabetically from,
+
+Unknown Speaker  1:10:46  
+you know, ascending, oh, you hold
+
+Unknown Speaker  1:10:49  
+it's always been this. If you shift and click on it, it will do it descending, and that'll work on the header in any list view.
+
+Unknown Speaker  1:10:57  
+Never seen. I never noticed this part is this now? Yeah, that was what you requested last week. I just dropped on there, the creation date, okay, time steps, but yes, any of the way, address, phone, email, status, whatever. If you it will sort ascending. If you shift and click, it will sort descending alphabetically. Yes. And then this,
+
+Unknown Speaker  1:11:24  
+by clicking on created, it will sort them by the creation date or shift click it will Descending Sort by.
+
+Unknown Speaker  1:11:33  
+Oh, cool, thank you. But make sure you click on the no service agreement button first before you do the sort, or it will undo your sort when it does the, you know, the find the report. Gotcha, that makes sense. Thank you.
+
+Unknown Speaker  1:11:47  
+No problem. And yeah, pretty much all the list views have that if you see an underline, if you see that at the top is underlined, that means it's sortable when you click on it. Oh yeah, no, I knew you could do that, but I didn't know that. You know, without having this creation date, that that's what I wanted, that's perfect. Thank you. Click for ascending and shift. Click for descending. Perfect.
+
+Unknown Speaker  1:12:13  
+That's all
+
+Unknown Speaker  1:12:15  
+alrighty.
+
+Unknown Speaker  1:12:18  
+Mr. Joe, do we have anything else that we need. No, I think we're good to go as far as the fixes and giving us a heads up on what we're looking at as far as this. RFP goes. So I think we're ready for Thursday. Brian,
+
+Unknown Speaker  1:12:32  
+okay, yeah, we'll be ready for Thursday. I don't know how much I'm going to have to show his updates because, no, that's understandable completely, because this is what we've been up to.
+
+Unknown Speaker  1:12:44  
+That's that RFP that was dropped yesterday, right? Just a little, just something little, just a little. It's not a big deal, and that's probably going to take a huge chunk of the rest of my week. So I don't see, I don't see us having much to show off.
+
+Unknown Speaker  1:13:01  
+I know Jake is working on stuff for you guys, but he's probably working through Trello cards and doing little fixes, not correct stuff. That's nice to show off, you know.
+
+Unknown Speaker  1:13:13  
+So that's, that's kind of where we're at with that. Sounds like we're doing good on the officer app being deployed yesterday. You know, the all the new code and development features. So we want to keep an eye on that and make sure that it's continuing to go great,
+
+Unknown Speaker  1:13:29  
+Joe, you didn't answer. I guess you had stepped away, but we were looking at that at the agency app
+
+Unknown Speaker  1:13:38  
+Jake had suggested,
+
+Unknown Speaker  1:13:41  
+if we could push off the calendar
+
+Unknown Speaker  1:13:47  
+for now, just for a little bit, because he really has to do things twice when you guys make any type of changes on the way that Job List works, or the way the Action buttons on that job list, work and such. He's got to do it for the list, and then he's got to do it for the calendar. So he's had the calendar turned off for a while on the development environment. Okay, but we were thinking, just because so much has been changing with the list. So it basically the the ask was, would you please be okay,
+
+Unknown Speaker  1:14:23  
+please,
+
+Unknown Speaker  1:14:26  
+if we, if we saved the calendar until we're like, the list and the filtering is like, good to go, we are ready. And I mean, we, we can continue to fold things in two at a time, but it's really using up a lot of time for you guys doing it that way.
+
+Unknown Speaker  1:14:47  
+And it would just be more efficient if we, if we could, if we could hold until everyone is like, yes, the list is good to go. It works exactly the way that we want it to. We're releasing jobs properly. We're.
+
+Unknown Speaker  1:15:00  
+Able to assign officers properly. Everything works. Then it's like, Oh, great. Well, let's just move that functionality over to the calendar. It's, it's when we it's when we continue to have it's not like changes, it's just things we're finding. You know what? I mean, one, one thing at a time is, okay? It's just every week there's new stuff, you know, so full to be able to to tackle it all at once. So the bottom line question is, if we still want to go live with what's in development of of agency app next week, and we want to go live with that next week, can we go live without the calendar and then couple weeks, a month, whatever down the line, once we have everything wrapped up, and he can fold it into the calendar. We just push that as an update. Yeah, yeah, I don't. I don't see that being an issue, honestly, from our standpoint. And plus, if it's more efficient, and it's going to make things a little more timely, and getting all that salient information going, and then it makes more sense that way, for sure. Yeah, it will. It will? I agree? Yeah. Just go ahead and run with that. Then, boys. Hey Brian, yes, I'm sorry. I know I told you I was done, but Laura just sent me an email from that Wilcox officer, and it does have two L's. So is there anything else I should try, assuming that if I find out that that's the right email address, because we got an email from him,
+
+Unknown Speaker  1:16:24  
+from him, from his iPhone. So I think that's the right email. Well, first I would probably change the agency name for Wilcox, if it's sir,
+
+Unknown Speaker  1:16:32  
+yeah, yes, yes.
+
+Unknown Speaker  1:16:35  
+So that would be my first stop. But I don't think that'll change this process necessarily. Let me do early. Let
+
+Unknown Speaker  1:16:43  
+me, let me look real quick at this person's record.
+
+Unknown Speaker  1:16:47  
+Yeah, okay, it is W, I, L, L,
+
+Unknown Speaker  1:16:53  
+God, I'm going blind in my old age. Yeah. We definitely
+
+Unknown Speaker  1:17:00  
+want to make that something, make make the agency name correct, and I'll just in general, I'll go look. I've got a note to go look at his record and see if I can get a valid invite working with this. Okay, thank you. I don't think Jake. Is there anything in the in the better forms validation, that would have a problem with an email address that.az.gov's
+
+Unknown Speaker  1:17:28  
+so it's got multiple Not that I'm aware of. If it's a valid email, it's a valid email, yeah, I I would think so also, but I didn't know if it had something like, you know, it was looking for the three letters after a dot, you know, no, no, mean or something like it sees that as a proper domain. No, sir, not to my knowledge, I didn't think so. Okay, I'll, I can just look at that, Ashley, that's but yes, I would definitely get the agency spelled, right? I just fixed it. Thank you. Then,
+
+Unknown Speaker  1:17:59  
+sorry. Now I'm done.
+
+Unknown Speaker  1:18:02  
+Okey, dokey. Well, if we don't have anything else, we can wrap up today and we'll talk, is it Thursday? This week? We'll talk Thursday. Yeah, Thursday, it is, fellas, we appreciate it. Thank you guys. Alright. Everybody. Have a great day. You too. Alrighty. Bye. Bye.
+
+Transcribed by https://otter.ai

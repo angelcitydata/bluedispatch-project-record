@@ -1,0 +1,1687 @@
+Unknown Speaker  0:00  
+For
+
+Unknown Speaker  0:03  
+so we are, we are ramping up to be able to support you guys in the way that you need. It's just we answer to a boss, and He expects us to spread our time across multiple projects. So we are, we're working on it. No, this is great, and this is kind of what I thought was going to happen. There's a lot that we're asking of you, obviously by us outlining the business requirements for the second module. So I was, I was curious if that was a direction that you guys had that capacity to do, so and I'm glad that you guys you do. So this would be really, really great. So on that note, I'd like to hand it over to you guys if you want to bring up the document and then kind of walk us through your questions, and so we can start answering them. Unless you have a different format that you would like. It's very eager to hear what you think that's that's fine. Um, yeah, I've, I've actually got my own document I've been preparing speaking with Jake on a couple thoughts and questions and such, and I'll just we can look at,
+
+Unknown Speaker  1:02  
+okay? Because I know, but two weeks ago that you had just mentioned that you wanted to break down the scope in the manageable phases. You wanted a preliminary assessment of the MVP, and then we were going to kind of look at a proposed timeline for development and implementation. So if it's not something that we can get all today. If anyone has a hard stop at noon, just let us know ahead of time. And if we have to break this up, or if you need to follow up with any notes or anything, let it let us know. So whatever works best for you, because I know this is an extra meeting this week, so it's a lot more
+
+Unknown Speaker  1:34  
+as well. So and we want to be respectful of that, it's fine, and we'll probably get through the first two of those items fairly easily coming up with a timeline. I think we're going to need more discovery. We're going to need the answers to some of my questions, and then I'm going to have to, you know, process that the answers that I get before I can start to talk timelines.
+
+Unknown Speaker  2:02  
+Fair as for the phases you guys were pretty close in, what I see would be the phases, I think that's down here near the end of yours. I'll
+
+Unknown Speaker  2:19  
+try to find it. But basically, here we go, yeah, phase one, we're looking at core functionality. So we're looking at being able to create job requests, view, you know, view jobs, view their statuses.
+
+Unknown Speaker  2:36  
+Have the basic communications worked out between the client and you guys and such,
+
+Unknown Speaker  2:44  
+being able to review requests, publish the request as jobs ready for officers to take, and that kind of stuff.
+
+Unknown Speaker  2:54  
+For second phase, I would want to start looking at much more advanced features, like a lot of the more advanced mapping stuff that's being requested again, job, job templates, some of the more advanced alerts that have to do functionally, not really just, you know, hey, they book something, send an email. Once it gets much more complex than that on the notifications it might be pushed. As we go through each individual notification, notification, we can kind of decide where we want that to fit in phase one or phase two,
+
+Unknown Speaker  3:31  
+and any other of those more advanced features that's basically not included in phase one and then phase three would all would pretty much all be about payments, payment processing
+
+Unknown Speaker  3:43  
+between QuickBooks and filemaker and the website, and allowing them to be able to pay invoices, see invoices, download invoices,
+
+Unknown Speaker  3:53  
+and for the officers on the officer app to be able to see payments that have been paid out to them, so the money that they're making.
+
+Unknown Speaker  4:03  
+So that would be phase three is, like said, basically about money, payment, stuff in all directions.
+
+Unknown Speaker  4:12  
+I document here, as far as phase one, like I said, was mostly about collecting thoughts on a couple of things of what we wanted to put in there, and then questions on how we foresee that working.
+
+Unknown Speaker  4:25  
+First thing I have is somewhere in this document was a request that this works well on desktop and mobile. That is absolutely something we can do
+
+Unknown Speaker  4:39  
+just just to let you know that is, it's not necessarily two different pages for each item, you know, for each page, but it does take a reworking of each of each screen to make it presentable on mobile. Currently, the the template that we're using for.
+
+Unknown Speaker  5:00  
+Or agency, which is what we want to use for the customer. Portal is not set up to be viewed very well on a phone. We can do that. But just to let you know that is, that is a bigger time thing to
+
+Unknown Speaker  5:14  
+to I'd say, Would you say it's safe Jake, to say each page, if we want it desktop and mobile is like one and a half times. Some, some might be, some will likely be less. I mean, the, you know, I didn't have agency specifically set up for mobile, but I do a lot of converting desktop to mobile anyway, so it's not, like a crazy thing. It's just, it's not agency out of the box is not set up for mobile. Yeah, crazy thing to do. No, no, no, no. There's just some things that are in the pages that don't respect mobile screen sizes, and it'll just be, I mean, a lot of those things will be removing for customer anyway, so it's really just about, like, making sure that things wrap properly and that buttons are the right size, you know, that kind of stuff. It's, it's nothing insane, just, you know, it's just not rolled in, in, you know, in the box. Yeah, I think it's super important, because we have a number of Foreman out there who schedule work. Also, they're not going to be a computer all the time. They might, yeah, I totally agree, yeah. Just until they get home, get on their computer to do that. I absolutely think that this is the right
+
+Unknown Speaker  6:32  
+time. I mean, we started mobile up in officer we did desktop, you know, and with the in the officer app with the expectation that, basically, no one was going to use it on the computer. Although it's usable, we did the agency with the expectation that it would be desktop. This is one of those ones where it's like, it really should be usable on both, and it should feel at home on both. So that's that's my plan, for sure. So we'll get agency over mobile as
+
+Unknown Speaker  7:02  
+well. That's not what Brian's got here. We we could, but this is, this is more, you know, cop basically copying the repository and reworking some of the structure for the customer app. But it is doable to get agency to mobile, although that was not part of the original scope.
+
+Unknown Speaker  7:26  
+So the second thing because, also to let you know this first section of my of my document, I've got labeled as just overarching tech and support stuff, so just kind of bigger thoughts. So yeah, the just letting you know that having it for desktop and mobile is definitely something we can do and something we're happy to do, but it's, it's more time than just doing it one or the other. You know, to get for both. I want to just make sure that expectation is set.
+
+Unknown Speaker  7:54  
+I think, with that said, I'm sure there's going to be, there's going to be multiple conversations like this, based as we continue to go through with the different
+
+Unknown Speaker  8:02  
+criteria that we want. So maybe it's a side by side of this is what we're asking for. This is the expectation and the hours. This is the extra, etc, right? So that we know as we go through and make those decisions, okay, this is going to extend the project three months if we take this route and this X amount of money, so we can make that educated decision together as a team. So I think that that's that's fine, that they'll just help us understand what that looks like. So you're in control of that timeline. We go this, it's gonna take this long. We go here, it's here, or maybe more to Second, make it to the next phase. So I think that's great, and this is a perfect example of that. We won't do this, but if we only did desktop, it would be this. So exactly. Okay,
+
+Unknown Speaker  8:46  
+the next bullet point item I have is kind of a big question mark, but I'm not sure when is the best time to do this, but at some point, as you know, Amanda had pointed out before, was questioning why we didn't have a development environment for the FileMaker side, and that was for speed mostly.
+
+Unknown Speaker  9:10  
+But we definitely want to think of that at some point,
+
+Unknown Speaker  9:15  
+Joe and I and Jeff and whoever can work on the timing on that. But at some point, we very well should want a development environment.
+
+Unknown Speaker  9:26  
+We're making more and more changes as we're creating this new stuff. We're changing things, we're creating stuff. And I don't want to create new problems in your production system. You know, you'd rather create those in development, figure it out, and then, you know, move over a correct version with those issues solved. So we don't want to cause problems in your in your production, in your flowing business, and the way to do that is to have a development environment. So we can discuss the specifics of that at some point. But I, I.
+
+Unknown Speaker  10:00  
+Do think it's worth just throwing it out there
+
+Unknown Speaker  10:03  
+that we definitely recommend moving in that direction at some point here,
+
+Unknown Speaker  10:08  
+and part of that is going to be we have to spin up a development environment to use, and then we also have to come up with a standardized process for migrating the code and migrating from dev environment to production environment, because FileMaker is wrapped with the UI
+
+Unknown Speaker  10:30  
+and the actual data in one file, it's not quite as easy as promoting code on the website, so it's a little bit more of a process, and we'd Have to get that together to make sure we can do it smoothly.
+
+Unknown Speaker  10:46  
+We do have the basic login screen and basic authentication, although I did have a couple of questions here on that senior document, sorry, Brian, are you looking at a different screen and just showing us the main one. Okay, okay, I am. This is what I'm looking at on the on another screen
+
+Unknown Speaker  11:09  
+for us, or anything so we can see what you're uh, it's, it's, it's kind of flowing thoughts right now. It's not a prepared document. This is what I was using, like said, to collect my thoughts and ask my questions. So I'll be consciousness, yeah? Kind of a stream of consciousness of what we've got here. We can see your thoughts, yeah? So you know, of course, you're going to have a login screen and authentication, but how authentication is going to work? There seem to be some question over whether a client will have one login. Or a client being a company will have several logins for several members of that company.
+
+Unknown Speaker  11:51  
+Do you have one login? Can multiple people log in at one time? Yes, but they would be using the same username and password to log in, and they would have this if you do one login. It's a little simpler, but you can't give them different privileges. So you can't say, you know, only the owner of the company can you know, do this and this like, say, only you know, the top person or two can make an emergency job,
+
+Unknown Speaker  12:21  
+because it's all under one login. So everybody at that company that has that login would be able to do everything that that company is allowed to do. We can't separate bridges. Can that company have different criteria than, say, another company? Yes, okay, yeah, one login
+
+Unknown Speaker  12:55  
+is fine. There was something I saw in your document about
+
+Unknown Speaker  12:59  
+a separate entry point for agency.
+
+Unknown Speaker  13:04  
+Was that a an agency, meaning a police department, agency signing into the customer app.
+
+Unknown Speaker  13:18  
+What was that under that was,
+
+Unknown Speaker  13:22  
+yeah, I kind of put it all in a different order, but
+
+Unknown Speaker  13:27  
+the word
+
+Unknown Speaker  13:30  
+under 1.2
+
+Unknown Speaker  13:33  
+is where it's first.
+
+Unknown Speaker  13:36  
+Talks,
+
+Unknown Speaker  13:40  
+yeah, right here. Yeah, two distinct portal entry points, one for blue dispatch, slash les customers, and another for agency specific branded portals.
+
+Unknown Speaker  13:54  
+I think that's for like
+
+Unknown Speaker  13:58  
+Kingman like words the Kingman, like, if, if Kingman, or someone goes to Kingman and needs off duty, they go to the link on their website that goes to our, okay, yeah,
+
+Unknown Speaker  14:15  
+yeah, with that, With the Kingman police badge on it,
+
+Unknown Speaker  14:21  
+yes, yeah, all right, well, we'll get to that. What that scenario I do have that
+
+Unknown Speaker  14:28  
+no
+
+Unknown Speaker  14:31  
+entry point
+
+Unknown Speaker  14:33  
+or agency.
+
+Unknown Speaker  14:38  
+Okay,
+
+Unknown Speaker  14:41  
+and then there was request we want the ability for, well, I guess this one we don't, because this was kind of contingent on your answer to the login question. So because if they had more than
+
+Unknown Speaker  14:56  
+one, more than one person at the customer's company that can log.
+
+Unknown Speaker  15:00  
+In under different logins with different privileges, then you would want the ability for them to
+
+Unknown Speaker  15:05  
+to be able to stop and start Access for Members, you know, under their company. But since we're only going to have one password per customer, you know, one login per customer, this is not needed. So someone's fire, they just change the password.
+
+Unknown Speaker  15:21  
+Okay? So that was just kind of some overarching thoughts there, and now we're on to creating jobs and requests. So I've just kind of noted here, the customer is going to need to be able to create a new job location,
+
+Unknown Speaker  15:36  
+and that way they can keep locations so they can easily, you know, create a request a new job for a same location that they've previously selected, and they'll be able to seek to view, you know, jobs under specific location if they have multiple jobs at the same location as we spoke about before. I know this probably won't be helpful for like, no barricades and road crews, but for, you know, a festival that happens at the same fairgrounds every year. Or, you know, some company that has that owns a few Dave and Busters that need off duty officers, they can keep their locations and easily request jobs for that location and track what jobs have gone to that location and see it in that manner.
+
+Unknown Speaker  16:20  
+So they will need to do that.
+
+Unknown Speaker  16:24  
+And that did raise my question about here, can a client
+
+Unknown Speaker  16:30  
+request a non billable job? Is that something that a customer is going to do? No, no, okay, I didn't think so, but I wanted to ask, yeah.
+
+Unknown Speaker  16:42  
+Okay, so they can create a location, and then they can request a job at the location that they've created or selected if they've already created
+
+Unknown Speaker  16:53  
+it. This is a job request, not necessarily a job, because it doesn't go out to the officers yet. It's going to go to a new request section that we've got to build in FileMaker so that you can look and filter through, you know, the requests and decide what you're going to do if you're going to deny or approve or publish, you know, however you're going to handle it. But it gives that barrier that you guys need so that your staff can can process these requests before they go out for officers to be able to see and book.
+
+Unknown Speaker  17:25  
+I did have a question. It'd be great if somebody could help me out with the validation points for a job request. What field you know, you sent me the picture of what you thought the job request should kind of look like, you know, what, what data you need. So I need to know which of those points of data are required.
+
+Unknown Speaker  17:50  
+If any of those points of data are not just required, but they're required to be, you know, one of a couple items on a list. You know, you know they have to choose traffic or security. They can't choose, you know, I don't know
+
+Unknown Speaker  18:07  
+air border control, because that's just not something we do. So whatever the validation points for that job request are what data has to be in there is required in order for a request to go through valid So,
+
+Unknown Speaker  18:23  
+okay, can I back up quick second
+
+Unknown Speaker  18:27  
+when we are talking about putting the job in and that's, that's, it's, it doesn't go live right? Then eventually, at some point there, we are going to have certain clients that are going to have that privilege to just go ahead and
+
+Unknown Speaker  18:43  
+that job, of course, that's right here. It's just a couple points down.
+
+Unknown Speaker  18:49  
+Okay, sorry, no worries.
+
+Unknown Speaker  18:53  
+Okay, so, yeah, there is a criteria. I mean, there's stuff that has to, definitely has to be put number seven, 3.3 point two,
+
+Unknown Speaker  19:03  
+yeah, I did see you had some of it in here,
+
+Unknown Speaker  19:07  
+but I didn't know if
+
+Unknown Speaker  19:10  
+you know, like said, is traffic box needed? Well, if it's not needed, then do they have to enter no or can they leave it blank? It has to be either traffic or security
+
+Unknown Speaker  19:24  
+for the traffic box,
+
+Unknown Speaker  19:27  
+that that's gonna be a check off.
+
+Unknown Speaker  19:30  
+I think we'll make some check marks, like, but I don't, yeah, so it's so it can be blank. Blank means, no, I don't, you don't have to have a key, but it can be blank. Yeah, that's the kind of stuff I might need to know. Just make sure you know,
+
+Unknown Speaker  19:50  
+I see you kind of listed most of what the form should have on it, but I don't see here necessarily what is required. I.
+
+Unknown Speaker  20:00  
+I see, and that's, that's what I need. I need to know what is required, so we know the the parameters for accepting or just telling them, you know, you need to fill out this and this before you can successfully put in this job request. So we can stop them right there. And your staff doesn't have to go through all these requests going, No, they didn't fill out everything required. Reject, reject. It'll just tell them right there on the page as they're filling it out, you know, they can click it and it'll probably highlight, you know, a field or two and say, Hey, no, we you require something here before you can submit it. So I just need to know what those parameters are.
+
+Unknown Speaker  20:38  
+So the next is,
+
+Unknown Speaker  20:41  
+so the ability to select a job location
+
+Unknown Speaker  20:44  
+or create a reoccurring job creation, or create as a new reoccurring job will have the ability to select a date range or specified dates. So this is when you're creating a new job request. When they are a new job request. This necessarily doesn't happen on the the
+
+Unknown Speaker  21:05  
+other entry point you're talking about, if they go to the agency's website and fill out a job request there, we don't have they're not signing in, so we don't know who the customer is. We don't have all this information to pull from. But if they're in the client app and they want to, they go into the agency and create it. Oh, I see what you're saying. Yeah, if they're, if they're using that, you know, I'm going to Phoenix PDS website clicking on a link to request a job. Okay, I don't know who you are there, you know, we don't you're you haven't logged into anything. We don't know who you are, so we can't pull a lot of information. But if you go into your into the customer app or the customer website, and you sign in, then we know what your job locations are that you've used before, and we know all your information so,
+
+Unknown Speaker  21:51  
+so in that scenario, they're going to be able to select one of the job locations they've ever they've created previously, or quickly create A new job location right there in the request area.
+
+Unknown Speaker  22:06  
+And we we will have,
+
+Unknown Speaker  22:09  
+it's, it's down in another section, but we are going to have, when you're creating a new job location, as you start to type in an address, it's going to kind of give you a couple options, kind of like Google Maps. You know, as you start to type, it's like, do you mean this address or this address? And then as you type it, you can get closer, and you can click on the one you want, and that will validate the address also to make sure that it'll show up in Maps correctly, and it's a correct address, right? And Ashley had a question. So the, if you go to the agency one, civil Hello, city of Kingman. If I put in, I'm the client, and I, I just wanted to request a Kingman, you know, officer, it doesn't bring you to the same page with the same login credentials. No, because it won't happen.
+
+Unknown Speaker  22:53  
+Yeah, because, because, if they're a lot, if they're a department, if they're an agency, they can create jobs theirs Exactly. It's
+
+Unknown Speaker  23:02  
+requesting. And then in the backside, you probably set them up anyway, like a new account.
+
+Unknown Speaker  23:16  
+That's what's that's what's
+
+Unknown Speaker  23:19  
+exactly that we keep that same process. And then once that information comes through, that data, through, that data, create account for this New Testament. Yeah,
+
+Unknown Speaker  23:28  
+exactly. Because, if it's a one off,
+
+Unknown Speaker  23:32  
+okay, sorry about that, no problem. So they'll be able to select or create a job load, new job location really quick there while they're making their request. And they'll also be able to choose a date for the request a range of dates, so Monday through Friday, or they can just specify dates, like I'm just going to click on Thursday and Friday this week, and Thursday and Friday and Saturday next week. So those are the kind of three date options. You either select one date, you select a range of dates, or you just you select specific dates, however many you want.
+
+Unknown Speaker  24:07  
+Which did raise the question for me,
+
+Unknown Speaker  24:10  
+does the customer need the daily or weekly, etc type options if they can just select from a calendar?
+
+Unknown Speaker  24:20  
+Yeah.
+
+Unknown Speaker  24:25  
+Was that a yes? Yes, okay,
+
+Unknown Speaker  24:33  
+okie dokie, the next one, here's what you were talking about, a separate web form to create job requests via agency websites. So this would be again, you go to Phoenix, PD, you want to hire an off duty officer, you click on a link, it's going to pull up a job request form there on the web,
+
+Unknown Speaker  24:52  
+on their browser. Yes, we can put the name and the, you know, the logo or branding of the of.
+
+Unknown Speaker  25:00  
+The agency on that form, they'll fill out the form and and submit it as a job request.
+
+Unknown Speaker  25:10  
+Again,
+
+Unknown Speaker  25:12  
+I'll probably need
+
+Unknown Speaker  25:15  
+another list of validation, you know, what is required and such, because it's going to be a little bit different on this form than it is if it is if they're creating in there, because you can't require them to have made and verified a job location and stuff like that when they're just filling out this form from the website. Because, again, we don't know who it is. They haven't signed into our app. They're just blindly requesting a job.
+
+Unknown Speaker  25:40  
+We have that in place right now. So that's really easy to send over. Perfect. In
+
+Unknown Speaker  25:45  
+fact, you can go on our website and find it really easy too. Yeah, they can just move that because everything's already in line. Everything's already Yeah,
+
+Unknown Speaker  25:54  
+and then we have what you were talking about there, making the ability to make an emergency job based on the customer's privileges, whether they're allowed to or not, that publishes without les involvement. So that would be
+
+Unknown Speaker  26:10  
+and we'll make some type of switch in FileMaker so that you can designate what customers are and are not allowed to do that,
+
+Unknown Speaker  26:17  
+and when they do, they'll be able to publish it straight the officer can see it on the officer app and book it without les having to do anything, right?
+
+Unknown Speaker  26:31  
+So the next section I'm looking at is the process of scheduler, app and file maker, the additions for processing requests, because that's not in there right now,
+
+Unknown Speaker  26:43  
+and it's pretty basic. This is more just for again, my brain saying what we're going to need. We're going to need a list view, of course, of the job requests with all types of filters for customer, date range, status, all that kind of stuff. So you can easily go through it. It'll probably look similar to the job dashboard that you're currently using, but it shouldn't be nearly as in depth,
+
+Unknown Speaker  27:05  
+but that's that'll probably be what it looks like, and some type of detail view for the job request, so you can look at all the details and such, and that'll probably be where you can deny or publish, or, you know, any of the other things that you want to do, as far As what's going to happen with that request. Then we're going to want a easy process so that once you've looked at this request and you say, okay, everything I need is here, yes, we're going to say, Okay, for this, we want to be able to click one button and it go create the reoccurring job and create the job assignments
+
+Unknown Speaker  27:41  
+in, you know, in the system as it is now, for that request, so that you don't have to manually fill any of that out. Of course, we want to just hit one button and that request becomes a real reoccurring Job and Job assignments as needed, right?
+
+Unknown Speaker  27:58  
+And we want the ability to deny the request and notify the customer via email. Question mark. Email is the way that we would
+
+Unknown Speaker  28:08  
+notify a customer if it was denied or for or if it's accepted. Truthfully, you know, whatever the status change of the request is, is email what we're thinking, yeah, email and call phone call
+
+Unknown Speaker  28:24  
+that also
+
+Unknown Speaker  28:34  
+station level on that. So call email tags
+
+Unknown Speaker  28:39  
+so they shouldn't have to go look for a phone number either.
+
+Unknown Speaker  28:42  
+So
+
+Unknown Speaker  28:45  
+email is absolutely the simplest. SMS is something we can do. We don't need the SMS. We just need a phone
+
+Unknown Speaker  28:54  
+call, a
+
+Unknown Speaker  28:57  
+physical phone call and an email. Okay, that's perfect. Sounds great.
+
+Unknown Speaker  29:04  
+I did have, I did see somewhere. I'm not quite sure I probably should have, you know, put the
+
+Unknown Speaker  29:10  
+2.2 or whatever over here to for where we're looking at. But there was
+
+Unknown Speaker  29:17  
+request in here about
+
+Unknown Speaker  29:21  
+audit the system deciding whether or not a manual review by Les staff was required. And that was, that was kind of the line in your document. And I need more parameters on that. What is,
+
+Unknown Speaker  29:37  
+you know, what are the parameters to decide if it needs manual review or not
+
+Unknown Speaker  29:44  
+communications.
+
+Unknown Speaker  29:46  
+I was kind of under the assumption that everything was going to need manual review, unless it was an emergency job or non billable, you know, but we can't do those through customer portal. So I.
+
+Unknown Speaker  30:01  
+An emergency trials. Well, I mean, we're going to review them regardless, before we publish them anyway, right? So, yeah, that's my thought, right? Because it streamlines. It makes it faster anyway, just one time,
+
+Unknown Speaker  30:16  
+yep, trying
+
+Unknown Speaker  30:22  
+to find it. In in your document. I know I saw something about
+
+Unknown Speaker  30:27  
+three point 1.43
+
+Unknown Speaker  30:29  
+point 1.4
+
+Unknown Speaker  30:34  
+notifications for status changes.
+
+Unknown Speaker  30:38  
+No, I don't think that was it. There's one about, yeah,
+
+Unknown Speaker  30:44  
+okay, so if it is like I thought, which is just Yes, all of them need manual review, unless it's one of these emergency jobs that we're allowing them to create, then that's easy, and there's not a lot of process, as far as the coding is concerned, to do with that?
+
+Unknown Speaker  31:06  
+Yeah, notification, that's yes, we can definitely do that.
+
+Unknown Speaker  31:12  
+Okay, so that is, that is what we're talking about there. The right here, the scheduler modular for handling and processing requests.
+
+Unknown Speaker  31:24  
+Now we're looking at the job locations area on the app. On the web app,
+
+Unknown Speaker  31:31  
+we're going to have an area to view, basically a list view to see all of the job locations that that customer has done in the past. And they can look at them, click and view a detail of them,
+
+Unknown Speaker  31:45  
+and the,
+
+Unknown Speaker  31:47  
+of course, some type of basic filters for the job location list that will
+
+Unknown Speaker  31:53  
+you know so you can get through them and see them and find them easier. In case the customer has a lot of job locations,
+
+Unknown Speaker  32:00  
+each job location, when you look at the detail, have a list of jobs that have been worked for that location,
+
+Unknown Speaker  32:09  
+and some basic filters so they can look through that and they can see the jobs per location. It allows them to look at that really easily.
+
+Unknown Speaker  32:18  
+We're going to show have a quick map. You know, on the detail screen for the job location, there'll be a map with a pin on that job location.
+
+Unknown Speaker  32:26  
+I don't know if that has a ton of use, but it it looks nice. And we're doing maps all over the place anyway, so might as well have it there.
+
+Unknown Speaker  32:36  
+We will have a time zone look up dependent on the job location. So when they enter the address for the job location and create it, it's going to go look up the time zone. But I saw in there that you requested that they be able to manually change this time zone and select a different one if they don't agree with what was pulled. I guess.
+
+Unknown Speaker  32:59  
+So we can absolutely have that just a drop down of all the time zones for US territories, and they can change it, but it will look it up automatically at first, and then they can change it manually if they want to.
+
+Unknown Speaker  33:15  
+And then, of course, as I described earlier, a type ahead address entry and validation when you're creating the job location. As you type in the address, you'll be able to select properly formatted addresses. You know from Google that it'll have and select the address so that we make sure it's a nice, valid address or intersections do work. But as we've discussed before on previous mapping things, some job locations are just not going to validate very well, such as, you know, southern border Yuma, that's not a one specific location. It. Google Maps may not really know what to do with that, and it's not going to give you the best pin on the map, but
+
+Unknown Speaker  33:56  
+intersections, it can do no problem. And of course, at physical addresses, so they'll be able to type ahead on that, select their address, and it'll be validated as a proper address.
+
+Unknown Speaker  34:12  
+They do things like mile post markers.
+
+Unknown Speaker  34:15  
+Um, I believe it does. I believe it does. Do mile post markers, Google's Google Places,
+
+Unknown Speaker  34:24  
+because that is one point. The problem is, when it's not one point, you know,
+
+Unknown Speaker  34:30  
+it doesn't really, I know, the other thing that you guys are requesting that I'm not really sure how well the maps is going to work with, is, you know,
+
+Unknown Speaker  34:39  
+second street between broad and main, you know, which may be five blocks.
+
+Unknown Speaker  34:45  
+That's not a pin, you know. That's not a point. So we'll have to work out how close we can get to what you'd like on that
+
+Unknown Speaker  34:56  
+an address. Are they able to, as the client, move the pins?
+
+Unknown Speaker  35:00  
+To exactly where they know that they want to be for that shift.
+
+Unknown Speaker  35:04  
+Um,
+
+Unknown Speaker  35:06  
+I don't know, Jake,
+
+Unknown Speaker  35:09  
+I'd have to look into that. Yeah, we'll have to look into that. If they can move around the pin.
+
+Unknown Speaker  35:18  
+I don't know if it returns stuff. I know they can move a pin on the map, but I don't know what that returns or or
+
+Unknown Speaker  35:25  
+what we can do with that information, but we can definitely look
+
+Unknown Speaker  35:34  
+into it into if
+
+Unknown Speaker  35:37  
+slash
+
+Unknown Speaker  35:41  
+places pin.
+
+Unknown Speaker  35:48  
+Can show you an example of another system that does it.
+
+Unknown Speaker  35:52  
+Oh, I know what you're talking about. And I know,
+
+Unknown Speaker  35:56  
+I know it's done by some systems. I don't know. I just, well, I want Jake to look into it to say, if is it an easy enough thing that we can do, fairly easy, is it very complex? And we might want to push it to the more advanced feature section of phase two, I don't know. I just, I, Jake needs some time to look into that for us.
+
+Unknown Speaker  36:20  
+Yep. I mean, it shouldn't be horrible, but yeah, I just don't want to give a conclusive answer.
+
+Unknown Speaker  36:29  
+Um, all right, so that is the job locations. Then we have a job list view, or list area, you know, a list of reoccurring jobs, which they'll just see as jobs. I know some of this, the labeling is going to be different of what they see versus, you know, what we call it, or what we see in FileMaker, but it's going to be recurring jobs that expand into job assignments. So I would, you know, click on the job, and then I would see all of the assignments records open up to see if there, you know, there's officers assigned to each one or or us or specific day, so they can see that breakout and just kind of expand and contract that. And of course, we're going to want some basic filters by job, date, the status, the category, whether it's traffic or security, they can filter it by job location, and then filter it by whether or not it's been staffed. That's just some of the basic filters that I came up with.
+
+Unknown Speaker  37:30  
+If we want more, when we go ahead, we can, we can look at them
+
+Unknown Speaker  37:35  
+and then the jobs list field, or the jobs List Fields, what they would see. You know, for each job in the list, I was thinking the job, location, address, the job, date,
+
+Unknown Speaker  37:50  
+the job, time, start and end, time, the status of that job,
+
+Unknown Speaker  37:56  
+if there is an officer assigned, or if it's unstaffed, a PO number and at least a category icon, the little cone or the badge like we have in the officer app.
+
+Unknown Speaker  38:09  
+That might be pretty wide when we start talking mobile, so I don't know if all of that is going to fit on every row in a mobile view.
+
+Unknown Speaker  38:22  
+They
+
+Unknown Speaker  38:25  
+anything wrong here?
+
+Unknown Speaker  38:28  
+Yeah, that's good.
+
+Unknown Speaker  38:32  
+We want a calendar view for the jobs. This is yet another one that gets that gets a it gets a decent amount trickier when you start talking mobile. To get a good functioning calendar absolutely something we can do, but it it gets trickier.
+
+Unknown Speaker  38:51  
+So just let you know
+
+Unknown Speaker  38:54  
+we will do have a calendar view with the filtered jobs. So whatever filter they make on the list, you know for what jobs they see when they go to calendar view, that's the jobs they'll see.
+
+Unknown Speaker  39:04  
+Ability to open a job detail from the calendar view, ability to change the calendar view from day view to week view. I don't know if we need month view. That be up to you guys if we want month view also on the calendar
+
+Unknown Speaker  39:20  
+Was that a yes, no, oh, okay.
+
+Unknown Speaker  39:26  
+And just pointed out, Jake, would I think Jake is looking to use a third party calendar
+
+Unknown Speaker  39:35  
+code base called full calendar, I think is the one he chose to use.
+
+Unknown Speaker  39:41  
+So just to let you know, it'll be slightly different. It'll have more features, though. Yeah, it'll have more features because it comes with the third party setup. But in order to really make it blend in with the UI in the agency app, poor Jake wrote that calendar, kind of from scratch.
+
+Unknown Speaker  40:00  
+And I don't
+
+Unknown Speaker  40:01  
+think he wants to do that again. It's not about not wanting to. It's just about maintainability over time. I mean, yeah, if this is a customer facing application, we want to make sure that little things don't break a calendar. That's all we just wanted to ask. We already have a calendar that we're utilizing. What sets us apart to need a third party. One does ours not provide the current functionality. It
+
+Unknown Speaker  40:26  
+provides a lot of the functionality that, that's what I was just saying, the maintainability of something that we rolled ourselves, versus implementing a third party, which is free, by the way, it's not like it costs anything. It just helps us with maintaining it. There's gonna be a lot more people using this than there are the agency app, and it's customer facing, so it's a little it's better for mobile. The one right now is not rolled for mobile at all, okay, so redoing that one to also work for mobile would be a monumental task, leveraging something like full calendar. It's got a native mobile makes, makes. Make takes a lot less hours for us to get that implemented than trying to write it ourselves.
+
+Unknown Speaker  41:13  
+The next section is the recurring job details. So again, this would be the job detail for them.
+
+Unknown Speaker  41:19  
+Again, just off the top of my head, some of the jobs I know need to be included, or some of the fields that need to be included, or the the job number, which we are looking at
+
+Unknown Speaker  41:31  
+making in some type of numbering standard for you guys, as requested, a PO number, start and end date, number of officers needed for each date,
+
+Unknown Speaker  41:44  
+contact, the pay rate, the category, and those were just some of the fields I got. And then I did have a question, what pay rate does the client see?
+
+Unknown Speaker  41:55  
+And are is that something that's got to be dynamic,
+
+Unknown Speaker  42:00  
+kind of per customer or
+
+Unknown Speaker  42:04  
+type of job request.
+
+Unknown Speaker  42:08  
+Yeah, they do, and I know like
+
+Unknown Speaker  42:19  
+other
+
+Unknown Speaker  42:20  
+websites, know, like on the other websites with the other company, it does say, because they have their pay rates right there, this is what you're paying, and you have to agree to that payment on that website, on that now, for our current clients, do they do they see it on? Do they see it anywhere now, rather than other than, like, what they sign off on. I mean, we just
+
+Unknown Speaker  42:45  
+don't change it. I would say, just leave it like that. Let's not put a pay rate on there.
+
+Unknown Speaker  42:51  
+Okay?
+
+Unknown Speaker  42:58  
+Well, I asked the question, because I see stuff about like rate transparency, display estimated costs based on job requirements, hours, location, in a with a clear breakdown, rate variation, disclosures, rate acknowledgement. Yeah, they can't see the rate, then how are they going to acknowledge? That's
+
+Unknown Speaker  43:21  
+a tough one, because if they were green blindly, I get this unexpected rate, right? It's always been like that, yeah, right. The reason why this works is because, like, if I'm worried I am, I'm only on Mesa site, so I know what Mesa's rates going to be, and they don't have to, like, they don't have any, you know, but don't they have something on there that says, Oh, you could get a Gilbert job. That's going to be more. No, I'd have to sign up through the Gilbert website. It
+
+Unknown Speaker  43:47  
+makes it can't fill that. Then they have this Blue Cross city, or whatever you call it, right? They could throw it out there.
+
+Unknown Speaker  43:58  
+We don't, until we get all, we get the invoice. Okay, so that's the thing that, you know, the customers are going to
+
+Unknown Speaker  44:05  
+be so we can, we can put a basic rate in there. And I think that that's, yeah, it's 50, and we bill them 80, then they're going to be like, What is my customer portal? Say, $50 Right, right? And it'll read it. It says, this is a base rate of minimum, minimum billing rate, people can
+
+Unknown Speaker  44:24  
+always read or just put 50 minimum or 95 I just wouldn't give a number. Well, then how are we going to be able to like Bill it out to get this? How would you already know this is going to be an automation the
+
+Unknown Speaker  44:42  
+psycho Yeah. Phase three.
+
+Unknown Speaker  44:48  
+I mean, it's,
+
+Unknown Speaker  44:51  
+it's just very hard to automate that,
+
+Unknown Speaker  44:56  
+because we never know till we get the invoice right. But they still need to.
+
+Unknown Speaker  45:00  
+Know, Like, especially if it's a white person going into
+
+Unknown Speaker  45:05  
+a department
+
+Unknown Speaker  45:08  
+minimum, what if we put like, 50 to 110, like, actually give them the highest amount, like, the highest dollar amount, because then they know, say, like, when people see $50 or like, $50 Yeah, so 55 to like, $125
+
+Unknown Speaker  45:25  
+yeah?
+
+Unknown Speaker  45:27  
+Just
+
+Unknown Speaker  45:31  
+letting you know, or just have a note in there, since you will be billed at minimum, 95 to 120 $5 something, I just, unless you say this based on using agency, I know we're
+
+Unknown Speaker  45:50  
+gonna have to, like, do something there, because they gotta know they can't just blindly on, you know, I the one offs, the ones going to the department say, can they have to know it's all going to be automated, right? Or how does or that makes sense, because if I'm going and buying that as a one off, I don't even know what to get in charge.
+
+Unknown Speaker  46:09  
+So I
+
+Unknown Speaker  46:20  
+about.
+
+Unknown Speaker  46:22  
+So I just put it as online discussion.
+
+Unknown Speaker  46:27  
+We'll talk about that more offline and give you a little bit more. Yep, we go back and forth. Yeah, maybe to help us, you could tell us what our capacity, what can and can't we do? What? Like, how much transparency? If we give a scale, what does that look like? What? What can we do and can't because they don't have any ideas, yeah, thoughts, um,
+
+Unknown Speaker  46:54  
+it's okay. Do you need time to this is, I can absolutely give you, you know, what are the base rates most likely coming from? Are they by agency? Are they les wide,
+
+Unknown Speaker  47:10  
+you know, something like that. If they're by agency, then we can on the agency record in FileMaker. We can have, this is the base rate of this agency.
+
+Unknown Speaker  47:20  
+And it's, remember, it's, it's, of course, going to be two numbers, and we got to make sure we show them the right one, because it's going to be the base rate that the officer gets paid and the base rate that the customer is paying, which isn't the same number. So we would, we would want that set up if it's by agency, if it's by something more complex, then we'd have to discuss what those parameters are kind
+
+Unknown Speaker  47:42  
+of like, the beauty of it is, okay. So say it's Mesa and Mesa has one rate, and then say, well, we're not getting a filter me, so we got to go out to Gilbert see if we can get Gilbert to pull this job. Gilbert comes at $10 more, yeah. So that's kind of the things that we're like bouncing around here. Well, that might be an area where you have to have a notification process with your client and say, you know, hey, we can't get what you we can't get Mesa, which is what you requested. We can get Gilbert, but Gilbert is this price instead of this rate,
+
+Unknown Speaker  48:16  
+right?
+
+Unknown Speaker  48:18  
+And, you know, instead of the rate that we showed you on the website, it's going to be this other rate because of this, and you'd have to have some type of notification process, and, you know, allow them to say yay or nay, okay, and
+
+Unknown Speaker  48:30  
+you can figure that out on the backside,
+
+Unknown Speaker  48:32  
+yes,
+
+Unknown Speaker  48:35  
+yes, absolutely.
+
+Unknown Speaker  48:42  
+Alrighty.
+
+Unknown Speaker  48:45  
+Here, yeah,
+
+Unknown Speaker  48:55  
+go ahead. This one was another question here.
+
+Unknown Speaker  49:00  
+Do they need the or it kind of said that they may need the ability to add more job assignments to a job. So I've I requested a job for two officers, but now I need three officers. When I add that third officer, or I add another day
+
+Unknown Speaker  49:18  
+to a job that has already gone through the request process and been approved, you know, to be published for the officers and they want to now add another officer or another day. What are the rules behind that? Is it, are they actually making a new request for adding another officer? Or are you allowing them to just add another officer or add another day to a job that's, you know, that's already been approved.
+
+Unknown Speaker  49:47  
+So the question is, do we want to be notified again and reapprove it?
+
+Unknown Speaker  49:53  
+Yeah, do you want to be have to reapprove it
+
+Unknown Speaker  49:58  
+because they've made a change?
+
+Unknown Speaker  50:00  
+Is something that has already gone through the request
+
+Unknown Speaker  50:08  
+process because,
+
+Unknown Speaker  50:10  
+because I don't want to come back and say, Well, this is what you told me.
+
+Unknown Speaker  50:18  
+Because officers or delete,
+
+Unknown Speaker  50:21  
+is there a note in there or something that says
+
+Unknown Speaker  50:25  
+this job was added at this date time. That might be a good place where I can bring up what I was going to say, having the job IDs that are created when they you know, when it goes through file maker that we can see and they have record up to that way we know this job ID Yes, linked to that
+
+Unknown Speaker  50:47  
+by hitting like the reorder or make alterations, putting in that unique ID number,
+
+Unknown Speaker  50:57  
+whether that you know it could be like For the reoccurring job, but then each job assignment has its own
+
+Unknown Speaker  51:05  
+within that
+
+Unknown Speaker  51:07  
+then it could just be linked to that same reoccurring job, exactly. The problem is if, if it's already a reoccurring job, it's already posted and published for officers to see if I come and I've got a job that starts in an hour, and I want to add another officer right now, and I can just click a button and publish it immediately. That kind of takes you out of in again. Could cause problems. You know, I'm going to think that I can get an officer to book in the next hour.
+
+Unknown Speaker  51:40  
+I don't know. I that's what I'd like your opinions on that and kind of what the parameters would be if we're going to allow that, because I saw the request to allow that, to allow them to add a job assignment, either add an officer or add another day onto an existing approved job.
+
+Unknown Speaker  52:00  
+Do should still have to approve it,
+
+Unknown Speaker  52:05  
+but if it's the same day to add an officer,
+
+Unknown Speaker  52:11  
+I just
+
+Unknown Speaker  52:20  
+think
+
+Unknown Speaker  52:22  
+job. I mean, we could absolutely, instead of allowing them to necessarily do this, we can, you know, if you want to add they can,
+
+Unknown Speaker  52:35  
+they can call you guys, you know, have some type of note, hey, if you this has already been approved, this job is already up. You know, if it's today, they have to call you. If it's three days in the future, maybe you allow it, or maybe you make them call you no matter what, because the job's already been approved as is, and if you want to make changes to it, they got to call you
+
+Unknown Speaker  53:02  
+to they'll know that the rates as long as we're emailed on it. I mean, I think it should just go ahead. Should be able to have it's already been proved
+
+Unknown Speaker  53:13  
+okay, even on like same day, I can just add another officer for a job that's supposed to start in an hour,
+
+Unknown Speaker  53:21  
+we'll be notified anyway. So, yeah, she would get notified. That's correct. We can do that definitely,
+
+Unknown Speaker  53:28  
+I think. So yeah, just have us notified. But yeah, I think
+
+Unknown Speaker  53:33  
+they
+
+Unknown Speaker  53:35  
+should be able to do that. Okay, yeah, but it would be a different job assignment detail. So, and we can itemize those like, one can relate. Two don't have to be so I'm saying is, if it comes in same day, it's going to be a late fee on that. So,
+
+Unknown Speaker  53:57  
+so we definitely okay. So if same day
+
+Unknown Speaker  54:02  
+there's a fee, and we want to make sure we notify the user Correct. Well, it's not only it's not just same day, it depends on the agency. Some have 48 hour late,
+
+Unknown Speaker  54:14  
+late fees. Some have 72 it just kind of depends. But that'll be on the back end. And if you're requesting just, you know, an extra officer, that's a different job assignment detail, yep. And that one would be late, or whichever ones, you know, fall into that criteria.
+
+Unknown Speaker  54:29  
+I imagine in the settings side, an extra officer for that specific job goes into a different it's yeah, I'd be like, in the same reoccurring but a different job assignment detail. So it's yes,
+
+Unknown Speaker  54:44  
+yes. So
+
+Unknown Speaker  54:47  
+could I get you guys to kind of write down for me those parameters of when I need to
+
+Unknown Speaker  54:57  
+to show or to display to the.
+
+Unknown Speaker  55:00  
+User that you know this could have late charges or other charges involved because you know it's the same day or within 48 hours, you know whatever the rules are. I need to know what those rules are as to when I'm going to notify the user that, yes, we're going to allow you to do this, but it's going to cost more, or whatever, you know, whatever disclaimer you'd like to display?
+
+Unknown Speaker  55:26  
+Yes, we will capture that,
+
+Unknown Speaker  55:28  
+alrighty.
+
+Unknown Speaker  55:35  
+So I just want to be cognizant of the time we are at 1206, we're scheduled for an hour. Do you want to continue to go forward. Does everyone have the time to do so? Or what would you guys like to do?
+
+Unknown Speaker  55:46  
+I'm fine. If
+
+Unknown Speaker  55:50  
+you guys are still have availability. I have to drop off here in a minute. But if there's Brian, if you've got anything else I can weigh in on, let me know.
+
+Unknown Speaker  56:00  
+I will most of these questions are for them,
+
+Unknown Speaker  56:06  
+and depending on their answers, yeah, I'm going to need you to weigh in on stuff. Sure, yeah, of course we can have a follow up. Yeah, I'll follow up with you, Jake, Okay, sounds good.
+
+Unknown Speaker  56:17  
+Thank you. Thank you, sir.
+
+Unknown Speaker  56:21  
+Okay, then I've got a filtered list easily
+
+Unknown Speaker  56:26  
+to select a foreman
+
+Unknown Speaker  56:29  
+which is the primary contact, or create a new primary contact, slash foreman, right there in the recurring job area.
+
+Unknown Speaker  56:39  
+And and
+
+Unknown Speaker  56:42  
+I don't know how many of those we have. I don't know if we need a foreman area, you know, a screen for all of their foremans, you know, for them to have all their information in there. We can just kind of keep it in that drop down list for when they're selecting and create a new one. So I don't know how much work they really need to do on their list of foremans.
+
+Unknown Speaker  57:07  
+But in my head, I'm seeing, no, we shouldn't need a screen for their, you know, to list all their foremans, and they can edit them as needed, necessarily, but we could do that if we feel that it's it's needed, that'd be up to you guys. It's probably going to be a hard one to visualize before you start to see it.
+
+Unknown Speaker  57:28  
+But yes, that's just a point here.
+
+Unknown Speaker  57:31  
+And then, of course, we're going to track the we're going to try to definitely track the timestamp of who requested the job.
+
+Unknown Speaker  57:41  
+But as for who actually requested the job? That's not as cut and dry if we're going to have one login for the entire
+
+Unknown Speaker  57:57  
+Yeah, we can definitely have them type their own name, but there's nothing in there to stop them from typing Barney Rubble, you know,
+
+Unknown Speaker  58:09  
+so but, but we can definitely, you know, try to collect a name, and we will track that Name and definitely have
+
+Unknown Speaker  58:20  
+a timestamp. Then we have some just
+
+Unknown Speaker  58:26  
+multiple users on it, user names, so, so we have drop down so you can just click on their name.
+
+Unknown Speaker  58:35  
+No, if it's one login, it's one user. But then that's, that's all the system would know.
+
+Unknown Speaker  58:44  
+Yeah, it
+
+Unknown Speaker  58:46  
+does
+
+Unknown Speaker  58:49  
+kind of actually
+
+Unknown Speaker  58:51  
+exactly that person pick their name.
+
+Unknown Speaker  58:55  
+It's all right, they can type in
+
+Unknown Speaker  58:59  
+their name.
+
+Unknown Speaker  59:01  
+So some other job functions, request job changes. That was just kind of something in there. Real quick, I saw just request job changes. And I need more details on what that means, what we want there is this a
+
+Unknown Speaker  59:18  
+requesting changes to a job that's in request
+
+Unknown Speaker  59:23  
+status, or I've already approved,
+
+Unknown Speaker  59:28  
+maybe anything? Yeah, I would say most likely it's probably already been submitted. And then they're like, why need to change that? Yeah, times change, performance change. They cancel. They get all kinds of stuff. So they need to be able to go in. And
+
+Unknown Speaker  59:43  
+so do you want them to be able to go in and change that stuff and Les just be notified? Or do they have to, you know, fill out a form, send an email, whatever, to request those changes be made. Well,
+
+Unknown Speaker  59:59  
+it's already two.
+
+Unknown Speaker  1:00:00  
+Published, is it going to change? The published? Is it going to change?
+
+Unknown Speaker  1:00:05  
+Yeah, it would. And I'm not sure you necessarily want that, because, like you said, they're if they're changing the time on a job that an officer's already been booked on, the officer needs to be notified also, yeah, the officer needs to be notified. And maybe the officer is going to say, wait a minute, I can't do that anymore. You've changed the times on me. That doesn't work anymore.
+
+Unknown Speaker  1:00:24  
+Yeah,
+
+Unknown Speaker  1:00:29  
+so I'm sorry.
+
+Unknown Speaker  1:00:33  
+Like, if they needed, like, if the customer changed something, I think we would. We
+
+Unknown Speaker  1:00:40  
+should approve it, yeah, because then when we change it in file maker, the officer will get notified through email. So the thing, the thing that I'm trying to reduce is our workflow. So I think that they can, they can go ahead and make that change, but we need to get back up with an email that there was a Jake, there was like, when an officer makes an update to their profile, something needs to be flagged. So so that we know what's going on, we have to jump in and do something.
+
+Unknown Speaker  1:01:09  
+We can they make an edit. We get an email with Officer. Also get an email if there was a edit made to their job,
+
+Unknown Speaker  1:01:18  
+or do we need to approve it first?
+
+Unknown Speaker  1:01:22  
+Because if we us, because if we saw it and they didn't
+
+Unknown Speaker  1:01:29  
+like it, then they let us know, just like they do that the officer asked me notified as well. Should we notify them, or does it automatically notify the officer as well. Yes, we can do that via email.
+
+Unknown Speaker  1:01:45  
+Of course, you run the possibility of ending up with those really ugly scenarios where they change the time five minutes before the job starts, you know, and the officer's like, I'm already here, you know?
+
+Unknown Speaker  1:01:59  
+Yeah, drove all the way out here, and now you're trying to change the time, you know, sorry, yeah,
+
+Unknown Speaker  1:02:06  
+yeah. Well, we just need
+
+Unknown Speaker  1:02:09  
+to know what's going on. Yep, okay,
+
+Unknown Speaker  1:02:15  
+um, another kind of other job function is duplicating a recurring job for fast creation of similar jobs. So we can definitely have that just kind of duplicate and then change what they need, and then it'll be pushed in as a new request. But that just saves data entry time for your clients,
+
+Unknown Speaker  1:02:38  
+and then a quick function to create and assign new form and contacts,
+
+Unknown Speaker  1:02:45  
+right? And then I just had some basic notifications, email to customer for status changes on a job, and emails when on job, on request submission. And then yeah, the status so you know, if it's approved, denied, or whatever other status changes there may be that we want to look at this notification section, I'm sure is going to absolutely grow.
+
+Unknown Speaker  1:03:09  
+I more. Just wanted to make sure we're mostly talking about emails here at this point for phase one, is what I want to, you know, push out there most of our status updates. We're thinking email, if later, and other phases or other parts, we want to get more into
+
+Unknown Speaker  1:03:30  
+into notifications
+
+Unknown Speaker  1:03:33  
+that they can see on the website. You know, like a little bell at the top that you click and it shows your notifications that you haven't read. Kind of thing that you see on some websites, we can do something like that, but I wasn't quite seeing that for phase one, unless you know there's objections,
+
+Unknown Speaker  1:03:56  
+we would Have an officer review section that
+
+Unknown Speaker  1:04:01  
+that's actually kind of part of the job section. You know, you would look at your job, the officer is signed, and do your review. An officer review would just consist of a zero to five star rating and then an area to leave a comment
+
+Unknown Speaker  1:04:20  
+that sounds good to everybody, yeah,
+
+Unknown Speaker  1:04:25  
+and that does kind of go into I had a question somewhere.
+
+Unknown Speaker  1:04:30  
+I did have a question somewhere about
+
+Unknown Speaker  1:04:35  
+so
+
+Unknown Speaker  1:04:37  
+review,
+
+Unknown Speaker  1:04:39  
+is the officer going to see that review? I think, I think there's a place on the agency side that shows those reviews as well. Right, correct. We don't have anything currently on the officer app, or anything planned necessarily, to the offset where the officer can see those, but we could do that. And of course, you can see them in FileMaker on your end. Yeah.
+
+Unknown Speaker  1:05:00  
+No, we'll see. Okay,
+
+Unknown Speaker  1:05:04  
+but it did kind of come into the question I had on what customers see of the officer. So if an officer is assigned, does the customer see the officer's name when they're assigned? Is there any other info on the officer that they see or need to see their you know, a phone number and email address for the officer,
+
+Unknown Speaker  1:05:28  
+a badge number. You know, I don't know what your customers need to see as far as the officers concerned, but I would need to know what we want them to see.
+
+Unknown Speaker  1:05:37  
+Sounds like they only see the name and agency right
+
+Unknown Speaker  1:05:42  
+now and then.
+
+Unknown Speaker  1:05:51  
+Yeah, that's fine. That's I'm just tossing it out there to see you know what, what, what they may
+
+Unknown Speaker  1:06:01  
+need. Yes,
+
+Unknown Speaker  1:06:04  
+it's
+
+Unknown Speaker  1:06:06  
+just, like, we just public record. Is that right? An agency, they just
+
+Unknown Speaker  1:06:13  
+put,
+
+Unknown Speaker  1:06:17  
+did
+
+Unknown Speaker  1:06:18  
+they just put last name? Because, like, the first letter,
+
+Unknown Speaker  1:06:23  
+no, they don't put badge numbers because they don't use officers on all jobs. That's right, so
+
+Unknown Speaker  1:06:31  
+just do badge number
+
+Unknown Speaker  1:06:40  
+and agency each batch number and agency, agency, batch number and agency,
+
+Unknown Speaker  1:06:46  
+I'm good. Did somebody say no last name or not that? No,
+
+Unknown Speaker  1:06:54  
+yeah, last name is fine. I think
+
+Unknown Speaker  1:06:58  
+last name dash number agency, okay,
+
+Unknown Speaker  1:07:05  
+that works for me. Yeah, because they need something to do officer reviews, they need some point of reference, or they're not going to know who they're reviewing.
+
+Unknown Speaker  1:07:13  
+Do we have the ability to pull reports and track like the analytics on that? Yes and yes by rating, by the star rating, but probably not much as far as the comments concerned, because that's just text. You know, I don't there's not a lot of reporting other than just listing all the comments, you know, for an officer, or something like that, we could do. But if you want information gleaned out of the text in the comments, that's a lot deeper, and you start talking about AI integrations and and weird stuff like that.
+
+Unknown Speaker  1:07:48  
+But agencies, we're seeing patterns with agencies in the star levels. Correct, yes, information, yes, perfect.
+
+Unknown Speaker  1:07:58  
+All right. Next section is the mapping functions that we want for phase one.
+
+Unknown Speaker  1:08:07  
+Number one, does the will the customer need to see the GPS positions from the officer app that we're collecting?
+
+Unknown Speaker  1:08:17  
+Is it? Do they only see the clock in and clock out? Do they not see that? Do they see any of the ones in between? What GPS information does the client need to see, as far as an officer is concerned?
+
+Unknown Speaker  1:08:31  
+Or do they see none? I mean, that's also
+
+Unknown Speaker  1:08:35  
+you
+
+Unknown Speaker  1:08:40  
+are. I can hear
+
+Unknown Speaker  1:08:45  
+you guys talking, but I couldn't hear the exactly what you said there.
+
+Unknown Speaker  1:08:50  
+Well, it's because we were.
+
+Unknown Speaker  1:08:55  
+I think they want to clock in, clock out, yeah, but not allowing them to see their visibility consistently, right again. But is that, if there is a need for that information at a later date, are we able to go in and pull that for a respected agency, if it's needed? Yes, and the agency can see it. So, okay, okay, that's yeah for the client. The client needs it for some reason, yeah, yeah,
+
+Unknown Speaker  1:09:20  
+yeah. This is what the client needs to see the agency. We already know what they can see. But yeah, okay. So yes, yes, clock in and clock out
+
+Unknown Speaker  1:09:33  
+locations only, okay.
+
+Unknown Speaker  1:09:41  
+We will be using Google Maps Places API for the type ahead and validation of addresses. I just put that in here in the mapping section, but we've already kind of discussed that.
+
+Unknown Speaker  1:09:54  
+And then
+
+Unknown Speaker  1:09:58  
+there was a request for map.
+
+Unknown Speaker  1:10:00  
+You of all active jobs.
+
+Unknown Speaker  1:10:03  
+And kind of practically, I wanted to know what you thought, what you're thinking is in that request, and what you'd like to see,
+
+Unknown Speaker  1:10:13  
+like the custom this particular customer, any active jobs that they have. You want one map that shows all the pins of all their active jobs, and what is considered an active job. So I think where the discussion
+
+Unknown Speaker  1:10:29  
+is, we are thinking like in the future, that meaning this is phase two, with that we have, like a big screen up and we would be able to see at any given time, the active jobs on our screen here, within our agency, within our department, we could pop that up and we can see that and everything. Okay, so this is, this is not, this is not the customer app. This is you guys, right? I think,
+
+Unknown Speaker  1:10:57  
+no, I think,
+
+Unknown Speaker  1:10:59  
+I think that's right. Okay.
+
+Unknown Speaker  1:11:09  
+Okay, I didn't really see anything in your notes, but I know they've this kind of stuff has been thrown around before, so I wanted to get your thoughts on documents? Does a customer need to upload documents? Do they need to be able to see documents that officers upload?
+
+Unknown Speaker  1:11:29  
+If so?
+
+Unknown Speaker  1:11:32  
+Yeah, but now no, that would be a whole different thing. But I think that sometimes they do include maps and things that they need to upload
+
+Unknown Speaker  1:11:42  
+their client does
+
+Unknown Speaker  1:11:44  
+Okay, and who would see those? Is that? Does that? Yeah, uploading documents just for Les, or is that something that the officer or the agency might need to see
+
+Unknown Speaker  1:11:54  
+both, both
+
+Unknown Speaker  1:11:56  
+above, okay, so we'll have to have some selections over who sees what, documents and stuff,
+
+Unknown Speaker  1:12:09  
+All of the above here,
+
+Unknown Speaker  1:12:13  
+settings and selections
+
+Unknown Speaker  1:12:19  
+for
+
+Unknown Speaker  1:12:21  
+me. May see documents,
+
+Unknown Speaker  1:12:27  
+okay
+
+Unknown Speaker  1:12:30  
+and then, and no Same thing here, so
+
+Unknown Speaker  1:12:35  
+the customer, the customer never needs to see any documents that an officer uploads, like a HOA incident report. The
+
+Unknown Speaker  1:12:44  
+customer wouldn't want to see that, or you wouldn't want the customer to see that. There's an HOA report. They
+
+Unknown Speaker  1:12:53  
+do, I guess so in that
+
+Unknown Speaker  1:12:55  
+one incident, like
+
+Unknown Speaker  1:13:00  
+their driver's license or
+
+Unknown Speaker  1:13:03  
+something.
+
+Unknown Speaker  1:13:14  
+So I'm going to say yes, when appropriate, as selected by the
+
+Unknown Speaker  1:13:20  
+officer,
+
+Unknown Speaker  1:13:23  
+when they select what type of document it is they're uploading. So if they're, you know, uploading something to Les, we can label it something. And of course, the customer wouldn't be able to see that. But if it is a report, a customer viewing report, if they select that as the type of document when they upload, then the customer would be able to see it, and that's what we want.
+
+Unknown Speaker  1:13:47  
+Is that correct? I'm sorry, sounds right? Okay,
+
+Unknown Speaker  1:13:54  
+agency app editions. So these are now we've left the customer app, and these are a couple of things we want to add to the agency app that's already there, the ability to create jobs from on the agency app, which they currently can't do, but we're we want to add that. Will they only be adding non billable jobs? Or can agencies add billable jobs also? No, I think they're not billable. They're not billable, okay?
+
+Unknown Speaker  1:14:35  
+And
+
+Unknown Speaker  1:14:37  
+can, can an agency create a customer? Saying no,
+
+Unknown Speaker  1:14:49  
+well.
+
+Unknown Speaker  1:15:00  
+Yeah,
+
+Unknown Speaker  1:15:02  
+yeah, they would, because they because, if they're creating a job, they're, they could create a customer, but it might be like,
+
+Unknown Speaker  1:15:13  
+you know, the internal, yeah, church, school, something, a non built job, right?
+
+Unknown Speaker  1:15:20  
+Yeah, for now,
+
+Unknown Speaker  1:15:26  
+yes, but only non billable.
+
+Unknown Speaker  1:15:32  
+No customer account will be created
+
+Unknown Speaker  1:15:37  
+so they can create a customer so that they can assign their non billable job to it, but this customer will not have a login for the customer app, because it's not billable. Okay?
+
+Unknown Speaker  1:15:51  
+Once it becomes billable to us, we can do it that way, right? Exactly, yes.
+
+Unknown Speaker  1:15:57  
+And that kind of goes with the they can only create non billable jobs. So obviously they can't create customers that would have billable work that's used for internal overtime jobs. Or, Yeah,
+
+Unknown Speaker  1:16:12  
+I saw something in here just about agency specific rules needed. Like, okay, we have a lot of them that we built in already. I didn't know what else you were thinking of when you added that.
+
+Unknown Speaker  1:16:32  
+Agency. Yeah, some of the agency stuff here,
+
+Unknown Speaker  1:16:38  
+agency specific, rule implementation, I think that's kind of what my question was on,
+
+Unknown Speaker  1:16:45  
+is that just completely implementing the rules that we already have, all those agency settings that we already have, making sure that Those are implemented. Or are you talking
+
+Unknown Speaker  1:17:00  
+agency rules that affect the customer, you know, the specific rules they have for dealing with customers.
+
+Unknown Speaker  1:17:14  
+And this, I was thinking stuff like you said, some agencies, some police agencies, are like, we don't, you know, we don't allow them to go to bars or weddings.
+
+Unknown Speaker  1:17:29  
+So, you know, so we have to have that somewhere in the job request
+
+Unknown Speaker  1:17:36  
+if you want the system to point that out
+
+Unknown Speaker  1:17:41  
+on the
+
+Unknown Speaker  1:17:42  
+land, on the landing page, this is for the landing page for the department. I would think so, like, rules and regulations. We don't do bars, we don't do whatever. We don't do whatever
+
+Unknown Speaker  1:17:57  
+that that's just language inside. Like, like, on the office and like, if they're gonna, they're gonna order directly through the department. And they go on their site, they're gonna, they're gonna click on a button, and they're gonna get this information. It's just, it's just basically our, our language in there, the department's language in there, saying that, if you have a bar, don't, don't request a job. So I think that's what that means. Okay, so if they go into the customer app, they don't go through the agency's website. They go to your customer app because they've worked with you guys before. They're not going to see that necessarily, because they're not going through the agency's website, they're going straight to you guys.
+
+Unknown Speaker  1:18:40  
+And then, more to the point, if you more to the point, if you want it to programmatically stop them, then I need parameters. If it's more of a, you know, let them make the request, and then a human is going to say no, because it doesn't fit the, you know, the agency's rules, then
+
+Unknown Speaker  1:19:00  
+that's fine, that there's nothing I need to do programmatically, right? If they're going on the if they're going on the customer app, they already have approval to go on the customer app, so that's not needed. That's just for the people that are going on, who don't have a clue, who's never had an officer before, and they just need
+
+Unknown Speaker  1:19:20  
+somebody to come okay? So there's nothing really, programmatically we need to do here. Just No, I think, just know
+
+Unknown Speaker  1:19:28  
+that that page right
+
+Unknown Speaker  1:19:32  
+John agency side, I think that's going to be our I mean, we could, or we can give the ability for these departments to upload, like a PDF of their own policies and procedures to a point. Yeah, Rebecca's created a page for all this stuff also. So yeah, we'll get we'll deal with that. Okay,
+
+Unknown Speaker  1:19:52  
+okay, and then we have a agency approval requirements and workflow integration.
+
+Unknown Speaker  1:19:58  
+That's all.
+
+Unknown Speaker  1:20:00  
+Like it's not going to be on our side. I think that's all going to be on our side. Yeah, I think that's all our stuff. Okay, so I don't have to worry about that.
+
+Unknown Speaker  1:20:15  
+Does that make sense?
+
+Unknown Speaker  1:20:20  
+Then we'll have to get into we have a comprehensive user guide.
+
+Unknown Speaker  1:20:26  
+Is that,
+
+Unknown Speaker  1:20:29  
+in your, you know, in your heads, were you thinking this would be like, just a PDF,
+
+Unknown Speaker  1:20:35  
+videos, like an on in the app, you know, walk through of screens on, you know, for for a user guide,
+
+Unknown Speaker  1:20:49  
+we'll be responsible
+
+Unknown Speaker  1:20:52  
+for doing the video side, right? I mean, yeah, we can do it.
+
+Unknown Speaker  1:20:58  
+Video.
+
+Unknown Speaker  1:21:00  
+A
+
+Unknown Speaker  1:21:02  
+video, yeah, it should come out in the PDF, for sure, with, you know, diagrams, I guess. Okay, and is this, and this is something you'd like us to prepare, or you guys want to prepare on the back end,
+
+Unknown Speaker  1:21:21  
+we can do it ourselves. Okay?
+
+Unknown Speaker  1:21:28  
+Then a guided workflow for new users. Kind of two questions. When you say guided workflow for new users, do you mean les users, like as you get new staff, or are you talking customers that are coming onto the app,
+
+Unknown Speaker  1:21:44  
+internal for us when we have new people start,
+
+Unknown Speaker  1:21:50  
+so when we onboard, light shine,
+
+Unknown Speaker  1:21:55  
+and then again, would this be something you'd like from us, or you're going to do internally? I think if we create the comprehensive user guide, we'll easily be able to extract the workflow.
+
+Unknown Speaker  1:22:07  
+Okay, so les for both
+
+Unknown Speaker  1:22:10  
+alrighty
+
+Unknown Speaker  1:22:13  
+tool tips and explanatory text. So we tend to have some explanatory text, especially for like check boxes and such, we can add more as as you'd like. When we're going through tool tips, that's fine. We use tool tips. I just have to let you know tool tips do not function on mobile because, you know, it's you mouse over something, put your cursor over something, and it shows you a little tip about what that is. But that doesn't work on a mobile device because you touch it with your finger and it's going to do something, it's not going to show tool tips. So that's a that's a desktop feature. Tool Tips are,
+
+Unknown Speaker  1:22:53  
+that's
+
+Unknown Speaker  1:22:55  
+good contact information for direct assistance. Who is, Who Are they contacting? Who's that information? Is that les? Is information the agency's information? Is it dynamic? Somehow, it's les.
+
+Unknown Speaker  1:23:10  
+Okay.
+
+Unknown Speaker  1:23:18  
+All right, then my final SEC section here was just a couple other general questions that I had,
+
+Unknown Speaker  1:23:27  
+do we want? Because I didn't see it anywhere in here.
+
+Unknown Speaker  1:23:31  
+Currently, you guys have a web form that new officers that want to work with you guys fill out, and it just sends you an email, and Lori manually enters all of that. Would you be interested in a web form that, when they fill out it, you know, automatically goes into the system, creates a new officer and maybe has a status of
+
+Unknown Speaker  1:23:54  
+hasn't been approved, or, you know, whatever.
+
+Unknown Speaker  1:23:58  
+So I can push it to QuickBooks. That would be fabulous. So excited,
+
+Unknown Speaker  1:24:06  
+yes, that would be fabulous, all right?
+
+Unknown Speaker  1:24:13  
+And just just to back that up, we like that with the customer too,
+
+Unknown Speaker  1:24:17  
+for new customers, okay? I Qb,
+
+Unknown Speaker  1:24:23  
+same for new customers, okay,
+
+Unknown Speaker  1:24:30  
+oh yeah, here was my question about what the client needs to see about the officer, but we've already answered that question,
+
+Unknown Speaker  1:24:39  
+and then, yeah, do we want all notifications to be emailed? Do we want text this kind of stuff? So we're looking at for now, email.
+
+Unknown Speaker  1:24:49  
+We're now just email and then later, if we want to discuss some of the other options, we can do that.
+
+Unknown Speaker  1:24:59  
+Uh.
+
+Unknown Speaker  1:25:02  
+Uh, pull it over for new officers to sign up on. Oh, that's kind of this.
+
+Unknown Speaker  1:25:08  
+More for more of that, the answer was yes,
+
+Unknown Speaker  1:25:14  
+okay, and then my last one is
+
+Unknown Speaker  1:25:18  
+discussing the
+
+Unknown Speaker  1:25:20  
+at some point I'd like to have discussions on the speed and performance of the current web apps. We need to keep a good eye on this stuff. We do have plans at some point to
+
+Unknown Speaker  1:25:34  
+move move the server up to Amazon Web Services and that kind of stuff
+
+Unknown Speaker  1:25:43  
+that is not
+
+Unknown Speaker  1:25:46  
+that's not a cheap thing, but as you grow, you're definitely going to need it. So I want to kind of at little intervals as the as the amount of jobs that you get daily, grow. We want to continue to look at this and decide, you know, make a good plan of when we want to move up. It doesn't happen immediately. You know, it takes a little bit of time to move a server from where you have it there at your office, up to AWS and get all of that working properly and tested. So you we want to be ahead of it, but not too far ahead of it, because it is no light thing. As far as money is concerned, AWS is is not cheap, but you guys, if you continue to grow as as planned, you'll get there.
+
+Unknown Speaker  1:26:38  
+So I just want to make sure that we know we want to continue to to look at and discuss the speed and performance as we grow, and make sure we have a good plan to move up to AWS before things get too slow as as the growth happens.
+
+Unknown Speaker  1:26:55  
+Is there anything else we need to be doing in the background
+
+Unknown Speaker  1:26:59  
+for that? Anything specific, not necessarily.
+
+Unknown Speaker  1:27:04  
+The thing is, the current server you have,
+
+Unknown Speaker  1:27:11  
+as far as I can see,
+
+Unknown Speaker  1:27:13  
+it's it's handling what's going on right now, but there is spikes where it's pushing it.
+
+Unknown Speaker  1:27:22  
+I don't see many of those,
+
+Unknown Speaker  1:27:26  
+but there are some. You guys are going to be the best barometer, because you're always using you're always using it, and you're dealing with the officers and the agencies, the clients that are using it. So if this, because this is kind of in response to, I believe it said here, you wanted to make sure you had like, less than three second response times on the pages, load times and such.
+
+Unknown Speaker  1:27:50  
+So yeah, right here, page load times under three seconds, and support for current users, which, of course, we would have
+
+Unknown Speaker  1:27:59  
+so it as you start getting up towards that and you start seeing the longer load times,
+
+Unknown Speaker  1:28:06  
+you know, we just need to know so we can Joe and me and Jeff and whoever else we want to bring in on the structure side needs to be able to know that so we can make our plan of when to move to AWS. It'll probably take a few weeks, once we make that decision, to make that move.
+
+Unknown Speaker  1:28:27  
+Does that mean? Does it mean we have to go offline? Does it mean? No. I mean you'll probably have to go offline for, you know, an hour or something, when we but, but we have to spin up. We have to sign up for AWS. We have to spin up the server, configure the server, get it ready.
+
+Unknown Speaker  1:28:45  
+Test, you know, test it a bunch kind of load test it. Make sure that we're getting what we think we're getting out of it, and then, and then move all of the system over to there.
+
+Unknown Speaker  1:28:56  
+It'll probably take, actually, maybe a few hours, I'm talking under four hours of downtime, but it'll take a few weeks of prep
+
+Unknown Speaker  1:29:07  
+before the downtime to make sure that it goes as smooth as possible.
+
+Unknown Speaker  1:29:12  
+So normally I would, I would approach that with looking at the data to help me drive that decision. So is Who
+
+Unknown Speaker  1:29:20  
+is it your side? Is it our side? Joe, that pulls maybe from inception when we started back. What is it June of 2024, of what that looked like and where those spikes are, so that we can look at the totality of the data, and we can probably make
+
+Unknown Speaker  1:29:35  
+a really good, educated guess what that's going to look like once we implement the customer and how it's going to affect so I don't know how we pull that with the structure. Is that you guys, is that on our side? It can be either side. Jeff can pull out. I mean, Ryan sees it himself as well. Yeah, trying
+
+Unknown Speaker  1:29:55  
+to pull that stuff. Plus, we don't necessarily have nearly that much information.
+
+Unknown Speaker  1:30:00  
+Amanda, we didn't, you know, we've, we've got the first app going at like, the New Year
+
+Unknown Speaker  1:30:07  
+out for officers. And we did a change of we did a server change, I believe, right before then. So any any numbers from the old server don't really count. You know
+
+Unknown Speaker  1:30:22  
+where you're at right now is
+
+Unknown Speaker  1:30:26  
+power wise, on the server is, truthfully in the in the bare minimum range of what can run this. So I don't think it's going to be too much longer before we
+
+Unknown Speaker  1:30:39  
+because originally, we had discussed with Jeff, and I believe he was going to be installing a new physical machine just to run FileMaker for you guys. But then after we talked and we realized we were going to be going to AWS at some time, we were like, and let's not stop in the middle at this new server.
+
+Unknown Speaker  1:30:59  
+So that was going to buy us some time to transfer, you know, the
+
+Unknown Speaker  1:31:05  
+what's going on.
+
+Unknown Speaker  1:31:08  
+So what you have right now, like I said, is is kind of the bare minimum to run this. As far as power is concerned, you've got, I believe it was 22
+
+Unknown Speaker  1:31:19  
+gigs of RAM. We would definitely be suggesting something more in the 64 gigs of RAM area.
+
+Unknown Speaker  1:31:27  
+And then just the internet speed to your office, in and out of your office, where the machine lives, is going to be nothing compared to AWS. And these are just kind of the pinch points, the bottlenecks of speed when you're talking about a website, it's going to be the power of the server, the power and bandwidth of the internet, and then the coding and such, which we can control, and we can, you know, try to make as efficient as possible, but at some point that machine is just isn't going to be able to handle it. Period, I see, is there any way that you could provide us with a recommendation with these numbers, so that we can then internally, sit with our IT and and our leaders and we make that decision, because I think they just need to sit and see everything. If you can send that recommendation separately, and then we can have a conversation that 22 gigs and suggested to move at 64 and we are about to add a substantial module. Is worrisome, just a little bit. Yeah, yeah, it's, it's, it's a lot. I can try to give you some information I haven't seen,
+
+Unknown Speaker  1:32:36  
+I haven't seen a lot of the growth that we're expecting at some point here. You know, we're you guys seem to be doing about the same amount of jobs per day that you were doing back in January.
+
+Unknown Speaker  1:32:51  
+So it's hard for me to say this much growth equals, you know, this much needed power, because it's more of a just what you shared with us, so that we can talk to you guys, and then we can sit down and see what their perspective on it too. Absolutely okay. That
+
+Unknown Speaker  1:33:10  
+would be great. That
+
+Unknown Speaker  1:33:14  
+is the end of my document that answered a bunch of great questions that I needed
+
+Unknown Speaker  1:33:20  
+to kind of move forward
+
+Unknown Speaker  1:33:23  
+on getting my thoughts together and getting a real scope together for what we're going
+
+Unknown Speaker  1:33:30  
+to do. Okay, does anybody feel that there's something in your that was in your document that I missed as far as what you think should be in phase one?
+
+Unknown Speaker  1:33:41  
+So I haven't covered anything in phase two or three yet.
+
+Unknown Speaker  1:33:48  
+Too soon
+
+Unknown Speaker  1:33:50  
+to say, are you going to recap together? And so we have another opportunity to look at what's designated as the phase one. Absolutely, once I get the answers to these questions kind of processed out. I can send this document over to you guys
+
+Unknown Speaker  1:34:05  
+that I've been working looking at and working through right here. Okay,
+
+Unknown Speaker  1:34:09  
+so once I get my, once I get my answers, you know, kind of melted into this stuff,
+
+Unknown Speaker  1:34:16  
+I can send that over. Guys can look it over. Yes, so does file maker? It does have the ability to create job numbers that are, like, have a the same format, you know, by like, daytime. I don't, I don't know if we got into that specifically, yes, I just put, you know, ability to make job numbers or whatever. But yeah, yeah, we could. We can make it whatever we want. Okay,
+
+Unknown Speaker  1:34:47  
+and it does have every job does have an ID in the background, and you can see it in FileMaker, yes, yeah, it does, but we can make a pretty formatted number. Also, that's easier for customers.
+
+Unknown Speaker  1:35:00  
+To deal with. And, you know, and view
+
+Unknown Speaker  1:35:03  
+absolutely yes, so that it's functional. Yeah, right now we understand 2025,
+
+Unknown Speaker  1:35:09  
+job three, etc, etc.
+
+Unknown Speaker  1:35:12  
+Okay, yes, I would.
+
+Unknown Speaker  1:35:16  
+I would say file maker does not require this, but I would say the job number should be numbers,
+
+Unknown Speaker  1:35:24  
+so not the customer's name or anything like that in there. And that's for,
+
+Unknown Speaker  1:35:30  
+that's for file size. Really, text is a lot bigger than numbers.
+
+Unknown Speaker  1:35:37  
+So we want to,
+
+Unknown Speaker  1:35:39  
+yeah, we want to have the least text possible in some of this stuff, especially on, you know, something that we know has to be on every record, because is it a record identifier.
+
+Unknown Speaker  1:35:51  
+So whatever you come up with, it really should be numbers, all numbers. And I mean, it can have be numbers and underscores or something like that, but not text.
+
+Unknown Speaker  1:36:00  
+So you want us to create something that we want to recommend?
+
+Unknown Speaker  1:36:04  
+Yeah? That would be great. Yeah, you know, if you want year underscore, you know, or just date underscore, I don't know
+
+Unknown Speaker  1:36:15  
+the street address number or the time, you know that the job's supposed to start something like that,
+
+Unknown Speaker  1:36:21  
+whatever you you think is appropriate. Again, file maker will do text I just I recommend using numbers.
+
+Unknown Speaker  1:36:35  
+Well, we hope that this was useful and helpful to help guide through this next phase.
+
+Unknown Speaker  1:36:41  
+Module, yeah, yeah, we'll be good. We'll, I'll get my thoughts together on this so that I can give you this this document.
+
+Unknown Speaker  1:36:50  
+And I will be using this to start to
+
+Unknown Speaker  1:36:54  
+to start to prepare
+
+Unknown Speaker  1:36:57  
+a real scope of items that's, you know, a lot more broken down and technical than this, which I will then use that to roll into a proposal.
+
+Unknown Speaker  1:37:12  
+And about the time that we're getting the the
+
+Unknown Speaker  1:37:16  
+proposal prepared, Amanda is when I'll be able to start talking schedule and timing, I
+
+Unknown Speaker  1:37:23  
+figured because then you have the points to be able to put like in a Gantt, to be able to identify what those pieces will look like exactly. Yes.
+
+Unknown Speaker  1:37:31  
+Okay, so do you want to set something up in a couple of weeks to revisit this specifically so we keep them separate, or do you want to wait until you have your documentation ready, and then you'll alert us what works best for you. Um,
+
+Unknown Speaker  1:37:47  
+here's what works best for you. I would say I should be able to get you a a
+
+Unknown Speaker  1:37:53  
+processed, prettier version of this document,
+
+Unknown Speaker  1:37:58  
+yeah, by the end of next week.
+
+Unknown Speaker  1:38:02  
+And maybe if I have any more questions, I can just kind of add it or shoot them over via email. There shouldn't be, you know, as many questions as this.
+
+Unknown Speaker  1:38:15  
+Let's see, today's Monday, 19th, Monday. I'm just putting it
+
+Unknown Speaker  1:38:21  
+out there that you're promising on a holiday week. But
+
+Unknown Speaker  1:38:25  
+I'm sorry, what was that I said? I'm just putting it out there that you're promising that at the end of a holiday week or a week, yeah, yeah, that's why I'm bigger than at the end of next week. I remember that we have, I have Monday off. Yeah, we do not work Monday either.
+
+Unknown Speaker  1:38:42  
+Yes, so I'd have this. I can have this processed and prepared by the end of next week, and
+
+Unknown Speaker  1:38:52  
+then part of that could be when I think I'll have the full scope ready.
+
+Unknown Speaker  1:39:00  
+I could give you a date. When I pass you this document, I can give you a date that I think I'll have the scope ready. Okay, so I was just thinking maybe that, maybe we have our follow up meeting, maybe on June 2.
+
+Unknown Speaker  1:39:14  
+That's not too far.
+
+Unknown Speaker  1:39:18  
+We can come together and you can walk us through what you have, yeah, in between, but we have a designated date that we all know that we're focused towards. We can work on some of our action items that we owe you, some of the questions, with the recommendations, all of that. And then the second day that we come together and see where we're at. And can do that touch point. I agree
+
+Unknown Speaker  1:39:39  
+by that by that time, once you guys have gone through the action items that you guys have, and have had a day or two to go over what I'm going to be sending you, as far as this documents concerned, we should be able to tighten in on, you know, on a green of the scope of phase one.
+
+Unknown Speaker  1:40:00  
+At that next meeting, I think,
+
+Unknown Speaker  1:40:02  
+okay,
+
+Unknown Speaker  1:40:05  
+okay. Is the same time? Okay for you?
+
+Unknown Speaker  1:40:08  
+It is for me. Yes, you guys said it was over lunch. We just bring plenty. It makes time.
+
+Unknown Speaker  1:40:14  
+Are you okay for eating during the meeting? I'm just saying, That's fine with me. Okay, we might be. I'm just saying, okay, all right, no problem. Awesome. So I think that's wonderful. I think we made significant strides today. And, you know, we're really excited. Your questions are great, and it helps us kind of, you know, dig down deep and figure out exactly what we will we need to agree to for that goal, for the phase one.
+
+Unknown Speaker  1:40:38  
+I agree. Sounds great, awesome. Well, thank you so much for your time today.
+
+Unknown Speaker  1:40:43  
+Awesome. And I'll get a calendar invite sent out to everybody to block your calendar. So don't worry. Don't worry about that. I'll do it sounds great, and I will. I have been recording this, and I'll send that out
+
+Unknown Speaker  1:40:56  
+maybe tomorrow, maybe maybe later today, because I'm about done with my day. It's almost four here.
+
+Unknown Speaker  1:41:05  
+Amanda, I haven't been sending every time, but I do have the AI assistant taking a summary of these meetings. If you like that document. Also, I can send that to you. I think on days that I missed the meeting, please send it, because it helps. But she's really shaky. It is very inaccurate. Sometimes it's not great, it's not perfect. It does great for me to recap really quick on a whim if I need to help answer something, so maybe on days that I missed. Yeah, okay,
+
+Unknown Speaker  1:41:36  
+okay, perfect. Thank you so much. All right, everybody, have a have a great day, and I guess I'll talk to you tomorrow.
+
+Unknown Speaker  1:41:46  
+Bye.
+
+Transcribed by https://otter.ai

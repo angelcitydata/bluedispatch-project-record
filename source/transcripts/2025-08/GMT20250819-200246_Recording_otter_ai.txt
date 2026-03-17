@@ -1,0 +1,715 @@
+Speaker 1  0:00  
+To met to match the speed of down the hallway. Yeah, exactly. That's what
+
+Speaker 2  0:06  
+we're thinking about. And but it's gonna be nice to get that thing on because these constant issues of crashes and whatnot, I mean, oh yeah, at this point, we're over it, you know? We're like, hey, let's, let's get past this.
+
+Unknown Speaker  0:18  
+I agree, and I'm
+
+Speaker 1  0:21  
+and I'm slow to put too much time into figuring it out, because I know we're replacing that server, you know, moving everything to a new server, and I know a native app's coming down, which is going to be all new hurdles. So I'm just, I'm slow to put too much time into figuring out exactly what is going on with that server. It looks to me like it's just not, just not powerful enough. It's, it can't, yeah, what's going on right now? We're, we're trying to do too much. It's rolling it almost capacity, on its RAM, on its memory at all times, and that's never good.
+
+Speaker 2  1:03  
+And that makes sense. It's unbelievable at this point. But just for it to happen so constantly now it's almost, it's almost where we can predict it, where it's almost to the point where, like, oh, every couple of weeks something happened here,
+
+Speaker 1  1:15  
+yeah, and I've been trying to kind of keep up with that, because another part of it is, you of it is the system itself has gotten bigger, a lot bigger. So yeah, are bigger, a lot bigger, and you've only got 250 gigs on that server, and it's filling it up with backups. And it gets, it literally gets to the point where it's like, I can't save a backup because there's no disk space. And that's, jeez, yeah, that starts to cause problems, because your system can't grow. In other words, nobody can do anything, because without system growing the files, and it just needs, it needs a lot more space. Yeah.
+
+Speaker 2  2:03  
+I mean, it makes sense, and then I'm just happy from our end, once we get that moved over, I know we're going to use that server for a development side of things, yeah, but it won't be anything that we really have to think about or worry about anymore.
+
+Speaker 1  2:14  
+Exactly, it. It shouldn't be hit nearly as much and as hard, but more to the point, it's not production, so if it does go down, it just hurts our feelings, not
+
+Speaker 2  2:28  
+it's better than sitting there, like on a Friday and I'm like, Oh man, I know Brian and Jake and they're out. I'm going to try to reach out somehow, you know, yeah,
+
+Speaker 1  2:38  
+and sometimes it's the server going down. Sometimes it's FileMaker starts to shut stuff off because it doesn't have any disk space to do anything. So it starts shutting off features and connections, jeez, because it just it has no more space. So I go in there, I've delete backups from, you know, is older of the hourly, older of the nightly, older of the weekly and right? I think it was yesterday I turned down how many backups are kept at one given time. You know, you hate to do that. There was a reason why we save as many as we do, but, you know, in order to hopefully mitigate this stuff from happening again and again, I was like, well, let's cut down how many it's going to save. That shouldn't take it longer to fill back up, because it was still right. Like you said, in like, a week.
+
+Speaker 2  3:37  
+That's crazy. It's unbelievable, but at least, at least we have an answer ways, there's something on the horizon. So that's the good
+
+Unknown Speaker  3:43  
+news. Yes, I I'd
+
+Speaker 1  3:46  
+like to move it quick, but if, if we're waiting for the security team to do their meal, then we're waiting for that.
+
+Speaker 2  3:54  
+I know, and I know that's the only thing that's holding us back at this point. So I know we talked about that last week a little bit. So, all right, well, at least on that note, Ash, you, I mean, you're here, Brian, unless you want to present something to us before we get started.
+
+Speaker 1  4:10  
+Um, I don't think there's much we're trying to wrap up. There was a couple small things I waiting for Jake to get back on to help Jeremy wrap up on the new job stuff in the agency area, we were having a little bit of a problem with it working on two out of three browsers that we want to support. So, so we're looking into that, wrapping that up, and I am writing a test plan for the agency web app in as a whole, so we can get that, you know, another good go of testing on that and decide when we want to push that to live. But I have nothing to show you right now. The. It's just know that that's happening. Okay, Jake's back, so native app dev is going back into swing. Not that we've done nothing since him and Steve were gone, but not much. They're the two. They're the two big dogs that on that particular project, and they were gone together. So I did some some management, and some things that I could do in the background, I know of, but yeah, that's that should be going back again, starting to pick up to full steam again now, that is, if you do want to talk more on the server I have had, like said, I've had to cut down the amount of backups we're keeping. I had to pull to a backup of the scheduler UI file. Was that Sunday. I did that because it was, it was corrupted.
+
+Unknown Speaker  6:03  
+Yeah, I think it was Sunday,
+
+Speaker 1  6:06  
+so there was that moving or doing things on and off of that server is a pain in the butt, because, like I said, it's using all of its RAM and all of its power just to do what it does. So if you ask it to do something else, like I want to upload a backup file up to our FTP, it kind of laughs at you. It's like, yeah, that's, that's, that's not going to happen unless you want to turn off the FileMaker server. Oh, it'll happen. But, I mean, your files are the Les database, so the utility file in the background is like, six gigs. The mod log is about five gigs, and the helper file is about two and a half gigs. And trying to upload that to an FTP over a browser is going to take a long time anyway, but with the limited power it has left over, it's it's not impossible, but would probably take three or four hours, and I don't, I don't want to. So yes, that's it. That just makes the whole process of checking to see if things are corrupt, and do I want to move backups and how do I want to move them? It makes that whole process a lot more time consuming, because I can't really move around files easily.
+
+Unknown Speaker  7:22  
+But I that's what I have been looking at on there.
+
+Unknown Speaker  7:26  
+I don't know.
+
+Speaker 1  7:29  
+I don't see anything crazy. There's two pieces of security software running on your current server that kind of annoy me and take up a little over half a gig of memory at any given time, sure, which isn't a crazy amount, but I don't know what they're really up to. What those two applications are up to, I just know their security based software. That's a Cronus, and there's another one I don't
+
+Unknown Speaker  8:01  
+remember the other one's name off the top of my head.
+
+Unknown Speaker  8:06  
+So those aside
+
+Speaker 1  8:10  
+I stand behind, I think it's just it's running out of memory and it's running out of disk space, and that's what causes the problem. Okay, well,
+
+Speaker 2  8:21  
+at least we know, at least there's something, you know, correlation wise. Oh, yeah, yeah.
+
+Speaker 1  8:27  
+Every time that happens, it takes me forever to get logged in remotely to that server, and I open it up, and it's, you know, 97 98%
+
+Unknown Speaker  8:37  
+on the hard drive.
+
+Speaker 1  8:40  
+So that's a lot. Yeah, nothing's gonna run like that.
+
+Unknown Speaker  8:46  
+Okay, so that's what I've been working on.
+
+Speaker 1  8:50  
+And I do believe, since we last met, I've done a couple things on Ashley's list, but you know, we'll see.
+
+Unknown Speaker  8:56  
+Hi, Miss Ashley. Hi.
+
+Unknown Speaker  8:59  
+How are you? I'm frazzled. How are you?
+
+Unknown Speaker  9:07  
+I know we're all there.
+
+Unknown Speaker  9:14  
+Okay, frazzling, your day I can help with
+
+Speaker 3  9:19  
+I don't know I'm gonna. So I think I'm just gonna do a scheduler today. No, it's not, not because there's so many, but just because last week I didn't get to it at all much, and then I just this week's been a little bit different for me with people being sick and such. So let's see adding contacts. Oh, I was curious. And I don't know if I've just never noticed it or before, when you if I was going to change a fake and then, like, if I wanted to hit Tab, is there a way to hit tab? Have it go down to the customer name or no, because your screen I'm not Oh, shoot, yeah, I did think that.
+
+Unknown Speaker  10:11  
+Alrighty. Here we are.
+
+Unknown Speaker  10:16  
+There we go. You want to hit tab to go where
+
+Speaker 3  10:21  
+the I don't see this, why I don't think you can is because when I hit tab it, it kind of acts like enter, so, because it searches so there's that's why we can't hit Tab and have it just go down to customer name, right?
+
+Unknown Speaker  10:35  
+Um, it, it could do both.
+
+Speaker 1  10:42  
+For perform the fine, but still go to to the that next field I could probably get.
+
+Speaker 3  10:49  
+Yeah, okay. I mean, if it's too hard, it's okay. I don't know. I had never noticed that. I just noticed it. You know, when I started hit tab and then start typing, it's like, ding and like, okay, can't do that.
+
+Unknown Speaker  11:05  
+Oh, if that's easy, then that that was nice. It's not
+
+Speaker 3  11:09  
+super important, though. Functionality wise, just easy
+
+Speaker 1  11:15  
+on the contact selector, yes, yeah. I
+
+Speaker 3  11:31  
+Okay, did you still user privileges for specifically like users? Where are they able to add an officer?
+
+Unknown Speaker  11:45  
+Add an officer? Yes, yeah,
+
+Unknown Speaker  11:51  
+that can be changed. But yes, they are
+
+Speaker 3  11:53  
+just Yeah. I'm trying to think of a reason why they would need to be able to add an officer.
+
+Speaker 1  11:59  
+I think it was at the beginning, it was just, hey, we need we give them really open stuff. Is what I was, kind of select. Decided, while everybody gets in and gets working.
+
+Speaker 3  12:12  
+Well, honestly, up until last week, I didn't have a reason for them not to. But then I started seeing people, they were like adding, but obviously they can't add Qb, but so we have, like, first and last name, and then people are getting confused, thinking they were already in the system, but they weren't.
+
+Speaker 1  12:31  
+Strange things. Find who can and who can't, and I can make it happen. Okay, we have c basic. Oh, where are you? No, I still have you in the background. Yay. We have,
+
+Speaker 3  12:54  
+I'm thinking, just users the Yeah, that basic one.
+
+Speaker 1  12:59  
+We've got users, supervisor, Accounting Manager, those are our levels. Okay, I don't user would just be Sean and Christina or Christine, Jessica and Tyler, Jessica and Tyler.
+
+Speaker 3  13:21  
+Yeah, okay. I mean, and honestly, most of them, don't I it's just so I'm just trying to think if there's any benefit to having that, plus there for them. Lori, can you think of anything, or maybe a reason why it would be beneficial? Do Jill, can you? I don't want to be the only one that like chimes in on it. I just, no,
+
+Speaker 2  13:53  
+I think Laurie needs to. But let me, let me grab Laurie on that see if she's distracted.
+
+Speaker 1  13:58  
+Well, Lori's in accounting, so we're if we just take that ability away from users, it would not affect.
+
+Unknown Speaker  14:04  
+Lori, yes, yeah. I'm just
+
+Speaker 2  14:06  
+trying to make sure that there's, oh, that's a good point. That's right, it doesn't impact. Laurie, no,
+
+Speaker 3  14:11  
+but, I mean, I was just wondering if anyone can think of a reason why it would be beneficial.
+
+Unknown Speaker  14:19  
+I really can't think of anything. I
+
+Speaker 3  14:21  
+feel like it's just confusing. If they accidentally add an officer,
+
+Speaker 2  14:26  
+yeah, there's no reason for it, I think, yeah, I agree with you. Ash, it's a little confusing.
+
+Unknown Speaker  14:32  
+Okay, can you take away that
+
+Unknown Speaker  14:42  
+and same with delete a user.
+
+Speaker 3  14:47  
+Yes, please. I I mean, but that one is, I mean, I don't know that was in that's first time that I've seen it happen. So. I don't know if, if we what we should do with the delete button, but, I mean, thankfully, you were able to find it and put it back on there. But you know, when you're not here, I don't know, unless you can show me how you did that. I'm a little concerned about the delete button.
+
+Unknown Speaker  15:18  
+Yeah. I mean, we can try to,
+
+Speaker 1  15:23  
+I mean, we come on that make because users can't delete, right?
+
+Speaker 3  15:29  
+It's just like managers. And I think it's,
+
+Unknown Speaker  15:35  
+I don't know, I
+
+Speaker 1  15:36  
+don't know. Let me let me see. I users
+
+Speaker 1  15:51  
+can create, edit and delete in all tables.
+
+Unknown Speaker  15:55  
+Definitely, definitely don't want users to delete.
+
+Unknown Speaker  16:03  
+Okay, we will take ability
+
+Speaker 1  16:10  
+unless I'm doing it here at the script level. But let's see I am not so yeah, they can delete right now they can delete an officer. So do we just want to take that away from users, or because the person in question is not a user, the one who correct did it the other day?
+
+Speaker 2  16:35  
+What do you think? Joe, yeah, I think we do. I kind of think that we should kind of take that away at this point.
+
+Speaker 1  16:45  
+So that was the play and safe we could do user and manager level, if you'd like, okay, it's wise. That would be the user people that we listed earlier, plus Becky. She is. Becky is the only manager.
+
+Speaker 2  17:01  
+Yeah, I think it makes sense. Ashley and I were talking about this a little bit earlier. And I think at this point it is probably wise to remove that,
+
+Speaker 3  17:10  
+as long as someone is here that can do that, like, if it, if we really are trying to delete, you know, there are people that that can, and that way it's more of a,
+
+Unknown Speaker  17:22  
+not an accident, yeah, it's like a fail safe, if you will.
+
+Unknown Speaker  17:27  
+No worries, Okay, done.
+
+Unknown Speaker  17:32  
+Well, not done, but I've written down, yeah? Cool. I
+
+Speaker 3  17:44  
+um, oh, I had the question about this, about kind of explode the mod log. So let's say someone is creating a job, or no, they're like, this is already a reoccurring job, already in the system. They come here and they want to, like, add a second officer to the 30th and let's say it's not past tense. Let's say it's just like, you know, yeah, a normal thing. Does that show up if I hit this plus sign? Does that show up in a mod log anywhere?
+
+Speaker 1  18:17  
+I have no idea. I could look and see.
+
+Speaker 3  18:20  
+Can I do it on a pass, or I'll I can find a current one if you want.
+
+Speaker 1  18:25  
+No, no, no, you we can. We can find out without actually having to do it.
+
+Unknown Speaker  18:32  
+I was trying to research one.
+
+Speaker 1  18:34  
+Or at least, I can find out if it's supposed to let me okay one second, actually think about it, because it's creating a job. Create job assignment. Oh, where are you? Create job assignment?
+
+Unknown Speaker  19:00  
+It should.
+
+Unknown Speaker  19:20  
+It should.
+
+Speaker 3  19:36  
+Once again, it's been all day this coffee cup,
+
+Unknown Speaker  19:40  
+the Jabba cup. Oh, my goodness.
+
+Speaker 1  19:47  
+So she'd been slow today for you, huh? Yes, really been slow for me. Really, no, I was
+
+Unknown Speaker  19:54  
+hoping it was just because someone was working in there. But all day.
+
+Unknown Speaker  20:04  
+Goes to the wrong detail, but,
+
+Unknown Speaker  20:08  
+all right, so, but two,
+
+Speaker 1  20:12  
+no, I don't think it's going to go there. It's going to go okay, job assignment itself, because that's what you created.
+
+Speaker 3  20:19  
+Okay, interesting. So, like, I'm going to get back.
+
+Speaker 3  20:28  
+So would it look different than my other one? Because I added to it,
+
+Speaker 1  20:34  
+not necessarily. I mean, it'll have a different primary key, you know, different ID. I
+
+Speaker 1  20:48  
+as far as it's concerned, you created a new job assignment. It's the fact that it came from here. I don't think the mod log really knows or cares. Okay, all, uh, we can make it care, I guess. But it
+
+Speaker 3  21:03  
+was just, I don't remember the exact job that it was, but it was, we were trying to figure out how, you know, that second one appeared, and it just
+
+Speaker 1  21:14  
+go to that job. It should tell you who created it. Okay,
+
+Speaker 3  21:18  
+yeah, I'll try to do it in a maybe different times or something, so I can differentiate. If that does that make sense? Okay, I'll keep looking at it. I just wanted to know I was looking in the wrong spot, though. Just so you know, available the
+
+Speaker 3  21:45  
+Oh, you remember last call and I was in availability, and it it opened.
+
+Unknown Speaker  21:54  
+I'll see if it does it. I don't think it's going through it now,
+
+Speaker 1  21:59  
+yes, like that, or it or it opened it as a card.
+
+Speaker 3  22:02  
+Yeah, it opened up this. Yeah, this isn't as bad. But no, so it like the X isn't there? Nothing's there, but um, Wednesday and Thursday after that call, I was doing it like every single time. Um, it's slowed down since then. I put it on my list just to see if, if you knew what could cause that, or
+
+Speaker 1  22:25  
+probably if you, what I've noticed is lost your, you, if you lost your your main screen,
+
+Unknown Speaker  22:34  
+the UI, yeah, that's like this, yeah, Like,
+
+Speaker 1  22:37  
+if that screen had gotten closed to it.
+
+Speaker 3  22:44  
+Yeah, I was doing it so much on Wednesday and Thursday today, much, and I did notice that if I'm in it for a long time, like just in my UI, for a long period of time, it was more likely to do that.
+
+Speaker 1  23:01  
+But, yeah, I'm pretty sure what happened is, you close that screen so either through what you were doing, or you hit X on it, but that, that window right there, that main window got closed.
+
+Speaker 3  23:16  
+That's, I mean, that's, was my explanation to them as well, till Wednesday and Thursday happened, and then it started happening to me. And I don't use the X ever like I, just because I not used to using the X. But I'll keep, I'll keep trying to see if I could, oh, I'll keep trying to find a way to trigger it. If that makes sense. I You could
+
+Unknown Speaker  23:44  
+be if I talked about this before,
+
+Speaker 3  23:47  
+but how hard would it be to add a second contact search bar and get there
+
+Unknown Speaker  23:55  
+so like, like this only.
+
+Unknown Speaker  24:02  
+So secondary contact one.
+
+Speaker 3  24:04  
+There it is, yeah, like, for like, I would say like, 70% this, this works fine. It's when you're on those long ones that people get irritated. If it's it doesn't have to be very high on the list, because I know that there's a lot of things, and this is more of a convenience, but I was Just wondering if we could put one there.
+
+Unknown Speaker  24:28  
+Noting, Thanks,
+
+Unknown Speaker  24:45  
+Joe, that's on job location,
+
+Speaker 3  24:47  
+yes, yeah, I don't think deed, what's up? Ash, remember the AI Yahoo, AI mail thing? I probably shouldn't bring that up, right? Because it's there's nothing they can. Do About It?
+
+Speaker 2  25:00  
+Yeah, we can't do anything about it. Like, remember this, Brian, we ran into this a while ago where Yahoo was taking summaries of emails and kind of getting things incorrect. We ran into that issue again, but, like, I was a like, Ashley and I were discussing it. There's nothing what we can really do on our end in regards to that.
+
+Unknown Speaker  25:17  
+So, nope,
+
+Unknown Speaker  25:21  
+they did it wrong often. So
+
+Speaker 1  25:24  
+short of telling people stop using Yahoo your 98
+
+Speaker 2  25:30  
+it's good, but it's not perfect, right? We're still in the infancy stages of this stuff.
+
+Speaker 1  25:35  
+The opposite. It's just been around forever, and they're just terrible. I don't know why.
+
+Speaker 3  25:41  
+Yeah, oh, anything, we'll tell our place. You can add a secondary.
+
+Unknown Speaker  25:50  
+All right, well, then I will skip the AI.
+
+Speaker 3  25:55  
+Oh, did I talk about this last mass cancelation email not sending? We talked about that, right? Yep, okay, I have not
+
+Speaker 1  26:04  
+mine to work on when I realized the file was corrupt and it wouldn't let me into developer modes,
+
+Unknown Speaker  26:13  
+that's scary. I made life fun,
+
+Unknown Speaker  26:15  
+I bet, yeah.
+
+Speaker 3  26:22  
+Oh, any update on the when, like, if I change the address and it hitting refresh and it updating onto the app,
+
+Unknown Speaker  26:31  
+numb, no, that's honest.
+
+Speaker 3  26:39  
+Let's see. Oh, any update on the officer notes icon. It doesn't even have to say the officer's notes. But just like some sort of icon on the pay report, I know that you did on the one. I think it was job invoicing, possibly.
+
+Speaker 1  27:03  
+So I did it on one, and you want it on another one?
+
+Speaker 3  27:06  
+Yeah, that one was cool because it was interactive. But the pay report one does not have to be
+
+Unknown Speaker  27:12  
+if that's easier.
+
+Speaker 3  27:15  
+No, she just prints it so she's like, I don't doesn't matter if she can go in and out.
+
+Speaker 1  27:22  
+Oh, so you want it on the print screen, or just the, yeah, I think it's just on the dashboard. It's not on the like, oh, PDF,
+
+Speaker 3  27:32  
+yeah, I gotcha, yeah, for the pay report specifically, just on the print version.
+
+Unknown Speaker  27:51  
+Okie dokie do
+
+Speaker 3  28:08  
+I noticed this earlier, because this was working. I swear it was working.
+
+Unknown Speaker  28:18  
+I want to add a new officer.
+
+Unknown Speaker  28:22  
+The you had a cursor that was right here,
+
+Unknown Speaker  28:26  
+it went away.
+
+Unknown Speaker  28:28  
+It's rude. Well, no, I
+
+Unknown Speaker  28:30  
+was like, it worked last good.
+
+Speaker 3  29:00  
+Okay, still need to set up a time for you to look at when she does the pay report and how it's kind of creating a would you call that? Creating the wrong job information on the mod log, just specifically, Okay, another thing when so every time she runs the pay report, and I don't, I have a video, actually on my phone. If you really want to see it, I can send it to you, but she'll have, like, the pay report and then her, either her Outlook or QuickBooks open, and right after she runs the report, it literally flashes down here. Like, I don't know if you can see my icons, so like, it'll flash here, then go back and forth between flashing at this you are scheduler and then Outlook or QuickBooks, and then back and forth for like, no. 30 seconds that normal,
+
+Unknown Speaker  30:03  
+she needs to select the so it's trying to
+
+Speaker 1  30:08  
+open the client mail. It's trying to send an email, it sounds like so that's why it's flashing to Outlook, that it made a new message in Outlook,
+
+Unknown Speaker  30:20  
+if it's not properly making a new message in Outlook,
+
+Speaker 1  30:25  
+we can look at but often happens, finally, yeah, historically, do not play well together.
+
+Speaker 3  30:32  
+Interesting, yeah. So, I mean, as far as I know, she was just saving and running the pay report. So I don't know how that would trigger a message, but some I guess when you sit, when you watch her run the paper, you'll see it because it happens like every time she says, Okay, sorry, just send someone a link really quick. Do
+
+Unknown Speaker  31:12  
+apologize, no worries. I
+
+Speaker 1  31:27  
+Well, I'm always happy when I hear it's working, but this annoys me. That's actually much better than nothing's working. Brian, it's all on fire. You know, it's very close. Once we're at this level, I'm like, Oh, we're doing Great.
+
+Unknown Speaker  31:52  
+I know if I can do this soon, I
+
+Unknown Speaker  32:04  
+to know I talked about this one more time. I just
+
+Unknown Speaker  32:12  
+want to have to pick a big one.
+
+Speaker 3  32:21  
+Okay, so I'm looking up APS as a customer, and then I'm going to show you the contacts. Let's stop responding,
+
+Speaker 1  32:31  
+responding, just responding slowly, yeah,
+
+Unknown Speaker  32:35  
+earlier did this so long? It just kicked me out. Well,
+
+Unknown Speaker  32:39  
+that's always great.
+
+Unknown Speaker  32:41  
+It's been fun today.
+
+Unknown Speaker  32:44  
+My PR, internet, I don't know.
+
+Speaker 1  32:47  
+Well, I doubt it, because it's not leaving the building,
+
+Unknown Speaker  32:53  
+fair enough, okay, the
+
+Unknown Speaker  32:55  
+office, I just don't know.
+
+Speaker 3  32:57  
+No, I am, I am, so there's all these contacts, right? So if I wanted went to contact,
+
+Unknown Speaker  33:10  
+I think I might have figured it
+
+Unknown Speaker  33:15  
+out. I think I know what you're gonna say. No, you're gonna stop.
+
+Unknown Speaker  33:21  
+Okay, so you see how there's only three. Just
+
+Unknown Speaker  33:31  
+try to do All
+
+Unknown Speaker  33:41  
+right, moving on.
+
+Speaker 3  33:57  
+It for this week. We still solve that issue with the dashboard collapsing, but again, that's something that you wanted to be able to see happen on my computer, because you couldn't create it because you're on a Mac. I believe,
+
+Unknown Speaker  34:14  
+yes, I am, yeah,
+
+Speaker 3  34:17  
+so don't know what your week looks like.
+
+Unknown Speaker  34:26  
+That's a good question.
+
+Speaker 1  34:30  
+I'm pretty, pretty open. I don't seem to have a ton of meetings. I have a ton of work, but not a ton of meetings.
+
+Speaker 2  34:36  
+So, okay, there was something asked. You remember when we jumped on to the AWS version? Oh, and you saw that dashboard was completely different?
+
+Speaker 3  34:51  
+Yes, thank you. That's another I should have made an agenda. Yes, yes, yes. Have you gone on to? Have you gone on? The as the devs, AWS, of course. Okay, did you notice that? And this is supposed to be, where the dashboard has just like, it's like bare bones, not reflective of what we have. Is that, is that normal?
+
+Speaker 1  35:17  
+How do you mean not reflect, like, it's a backup from, I don't remember two months ago or something
+
+Speaker 3  35:26  
+that could make sense, because it was kind of just like, like,
+
+Speaker 1  35:31  
+going to be up to date, not even close. Okay, yeah, it's a month and a half full backup.
+
+Speaker 3  35:37  
+And that would exist. And then one of the while we're on that topic, I mean, so I was going through and just kind of testing to see how long things took. A lot of it was, you know, 20 seconds, 56 seconds. The only things that like refreshing bulk jobs. So like, let's say I changed the time, or added a POV or something that one took, like two minutes and 37 seconds, and then adding a new job that was bulk, that one took quite a bit of time. Other than that, everything else was under 56
+
+Speaker 1  36:19  
+still, a minute is a long time, unless you're really running some of those bulk processes. I, you know, yeah, that could happen, you know, the big reports, or, you know, I want to create, I'm creating a new job that's going to make 50 new job assignments that that could take a little bit. It still shouldn't be much more than a minute. But, yeah, it definitely can take time. Any of your nav, regular navigation, assigning an officer's finding something, you know that stuff is the stuff that shouldn't be taking anywhere near a minute.
+
+Speaker 3  36:53  
+Yeah, finding officers was point six, like that was pretty fast. Everything that was really the only thing was any, any sort of refreshing that I did took, like, a long time. But other than that, it seemed pretty
+
+Unknown Speaker  37:14  
+okay, comparable.
+
+Speaker 3  37:17  
+But I was gonna ask if there's anything else you would recommend me testing or maybe things that I just hadn't thought of yet?
+
+Unknown Speaker  37:27  
+No, not off the top of my head, really,
+
+Speaker 1  37:31  
+if there is pain points, we can look at some of those. Other than that, I just say the stuff that you normally do in scheduler, you know, want to see if, yeah, I want to see if it takes forever. And and I can mess with the configuration, and I can, I can mess with things on this server and try to squeeze some power. And then we can go look at the actual process. There's specific processes that are taking too long, we can go look at them and see if we can make them work a little more efficiently. Okay, yeah, cool, yeah.
+
+Speaker 3  38:11  
+So I'll just keep testing that that's a lot of the things I did were mostly all just like Job, location, reoccurring, bulk, of signing, emailing, just, you know, things that we do on a daily basis. But I'll keep doing that. It's hard because I got to be careful, because I am sort of, you know, sometimes I'll put in a job or something, but that is all dev so it does not reflect so I got to make sure I'm in the right one.
+
+Speaker 1  38:39  
+Scary. Yes, I usually suggest closing FileMaker completely. Yes, the other one,
+
+Speaker 3  38:47  
+I actually, I was not able to do have them both open, so no problem there. I just got to remember which one I'm in, because there's no way for me to tell that I saw, except for, you know, right here. The other one says something up here
+
+Unknown Speaker  39:05  
+to let me know that I'm going into a different one. But
+
+Speaker 1  39:08  
+yes, okay, it'll be whatever your process is to figure this out. I would get it down pat, especially you Ashley, because yes, we do move to the production, to the new server. We're still going to be using the old server for development, which means everything that we build, we're going to want you to test in the development environment, so you will still be going back and forth.
+
+Unknown Speaker  39:35  
+Yes, I will get a system. Don't worry.
+
+Speaker 3  39:40  
+I will. It'll be, it'll be good. I haven't messed up yet. I just was noticed how, you know, similar they look. And I was, oh, yeah, getting well, obviously, yeah, yeah, they don't want to accidentally put it in the wrong one. But other than that, I don't think, I think that. That's all I have today,
+
+Speaker 1  40:04  
+Okey dokey. Then I'm I want to, just like I said before, I don't know how well the system can take it. Maybe if I try in the wee hours of the morning, I want to take a newer backup and kind of refresh, what's the AWS to reflect, you know, any of the fixes and stuff I've been making for you in the past month, month and a half since, whenever I pulled that back up, I'm not making them in two places, obviously, right? So, yeah, we need to, I need to figure that out. How to get your current server to upload stuff that big without crashing your system.
+
+Unknown Speaker  40:50  
+Makes sense? That'd be nice.
+
+Speaker 1  40:55  
+Okay, is that what we have for the Ashley list
+
+Unknown Speaker  40:58  
+this week? Yes,
+
+Speaker 1  41:02  
+all righty as usual, I have taken my page and change of notes. I will try to work through them and get this stuff for you,
+
+Speaker 4  41:16  
+Ryan, but for me go. Do you have any updates on the timeline for the project?
+
+Speaker 1  41:19  
+Timeline? Back over, but I had sent one over, but fairly, but like, right before I went on vacation, maybe, but I can, I could find I
+
+Speaker 4  41:31  
+may have missed it. That would be great. I just may have missed it tons of emails. So yes, yes, please repush,
+
+Speaker 1  41:37  
+okay, I can. I can work on it, send that to you, and then, like I said, I am writing up a test plan for the agency web app, and I'll send that out when I get finished, we're ready to do that testing that will help drive truthfully where we land on those dates, as far as When we get to start testing and how long that testing takes, yeah, but I can send that out note. Send
+
+Speaker 1  42:30  
+and then also Miss Amanda, and I guess Laurie, I know Angela is working on invoicing or billing today. Okay, I should be getting that tomorrow, and we'll repair that, prepare that report again for you. Okay, document, and it will probably be sent with the invoice. I think Angie wanted to send that out. Oh, that's a great idea. So yep, that maybe tomorrow or Thursday at the latest, I don't know, because I haven't received them yet. So okay, perfect voices.
+
+Unknown Speaker  43:08  
+That sounds like a great plan, alrighty.
+
+Speaker 1  43:16  
+We have anything else we want to discuss. Look at Oh, I know I mentioned last week Joe I would talk to Jake when he got back. I have not been able to talk to him today, but I'll most likely talk to him tomorrow and see if he's going to be in a position to want to do another demo, maybe the end of next week. Oh, I don't know, considering, again, he was out last week, I know we've been doing a lot more background stuff than front end stuff, which is what's always better to show off as the front end stuff, right?
+
+Speaker 4  43:53  
+You can't have the front end without the back end. So we know.
+
+Speaker 1  43:57  
+So I don't know how much we really have to show, but I want to, I want to see if he's ready for one, because that would, that would be kind of nice. I think if we can, yeah, absolutely, actually, to show
+
+Speaker 2  44:11  
+Yeah, I agree with you. Brand, I think the only other thing I have is anything with gender sec, if there's any kind of hold up, I mean, let me know. Like I said, I can always light a fire into them, just to make sure that we're staying on them, because at this point, I know, I mean, the ball is kind of in their core at this point,
+
+Speaker 1  44:27  
+yeah, that's how I see it. Also okay they we if that stuff needs to be put on, we need it put on kind of ASAP, so that we can try to test and see if, if it's going to work for us. You know, if they're slowing anything down horribly or causing problems security stuff can do that. It's out there blocking stuff. It's bound to block stuff you don't want it to block sometimes.
+
+Speaker 2  44:58  
+Right, right, absolutely. Okay, let's. I know the last email was, I believe was from Jasmine, right? And they were trying to get in touch with Steve. Was that correct? I know Steve still out.
+
+Speaker 1  45:08  
+Yeah, trying to get a meeting with Steve, but that's to go over how he set up the servers for her to be able to support them in the future. I don't know that would stop them from doing whatever they want to do, as far as security on the instance that
+
+Unknown Speaker  45:26  
+that file maker is going to be hosted on,
+
+Speaker 1  45:30  
+maybe I'm not seeing something, but it shouldn't slow them down. That's as long as she can use Microsoft Remote Desktop. She's got a Microsoft server that she'll connect to, right? So they're AWS, you know, all the AWS configuration and all that kind of stuff is is taken out, is finished. You know, she can learn about that to be able to support it, but that doesn't change what she should be able to do as far as security on the operating system. That's there. I'm sure she knows her way around windows.
+
+Speaker 2  46:01  
+Yeah, okay, all right, at least we know from our standpoint where we're looking at so I can, if need, be, like I said, I'll reach out to Tom and see what's going on on their end and kind of let them know at this point we're kind of waiting on them to install whatever they need to install so we can test that.
+
+Speaker 1  46:16  
+Yep, okay, and give me one second. I want to connect to that server real quick and just verify that I don't see any new software on there. I haven't received an email saying that they put any on there, but I haven't actually checked
+
+Speaker 2  46:33  
+Okay, and you've really been in touch more with jasmine, more so than Tom right,
+
+Speaker 1  46:38  
+really, yeah, I accept, you know, with your emails, his emails, you know, that kind of thread that the three of us are on, other than that? Yeah, I haven't, it's been, most it's been, I think we're dealing with, okay,
+
+Unknown Speaker  46:52  
+so let's see,
+
+Speaker 1  46:56  
+maybe Task Manager, see if I see anything weird.
+
+Unknown Speaker  47:01  
+Oh, no, apps running, I don't believe you, there we go,
+
+Speaker 1  47:08  
+anti malware, core service. I think that's kind of basic on Windows. I know the ones they were talking about was Lion Guard, and there was another one. Yeah, I
+
+Speaker 2  47:19  
+remember there was an email that you guys, I think it was you and Jasmine, and she presented three or four pieces of security software that you said, you know, explicitly, wasn't going to be great for file maker. And that was the last I think we heard from her in regards to that, right?
+
+Speaker 1  47:34  
+Yeah, I don't see anything on the processes of task manager that looks like anything they've put on.
+
+Speaker 2  47:43  
+Okay, all right, so what I'll do is I'll reach out to Tom as soon as we jump off of this call, and I'll rope you into it on purpose, Brian, and kind of let them know, like, Hey, we're kind of waiting on you guys because we want to get this moving.
+
+Speaker 1  47:53  
+Yeah, that'd be great. Okay, because that's, that's what's slowing me down from trying to push you guys ahead as far as that being your production server, but we got to know what they're going to do. We don't want to push you to to push that to your production server, and then they go in and start trying to lock things down, because that's right, just cause havoc, and your customers will see it.
+
+Speaker 2  48:17  
+Yeah, we don't want to. We want to avoid that if we can, absolutely okay, yeah, I'll do that soon as we jump off here, I'll reach out and make sure they're aware of it and see if they can't get something done this week in regards to getting that up and running. Because I know Bonnie's asking about AWS and those side of things, and we tell her, I mean, it's, it's ready to go. It's just a matter of Tom's team.
+
+Speaker 1  48:36  
+So, yeah, yeah, that's, that's kind of, that's kind of the holdup. I don't want to, I don't want to push or do any last configurations until that's in place, because most of my configurations are going to be in response to whatever security is put on.
+
+Speaker 2  48:53  
+Okay, yeah, I'll reach out to him soon as we're done here and we'll get that wrapped up.
+
+Speaker 1  48:58  
+Sounds great. Anybody else have anything before we wrap up
+
+Unknown Speaker  49:02  
+that's on my end?
+
+Speaker 1  49:07  
+Well, everybody have a great week. Ashley, if you want some time to do, as you know, Zoom call for any of that you just let me know when you're available and we'll work it out.
+
+Unknown Speaker  49:18  
+Okay, thank you already. Thank you, Brian.
+
+Speaker 2  49:22  
+Have a great day. Thanks, Brian. Bye.
+
+Transcribed by https://otter.ai

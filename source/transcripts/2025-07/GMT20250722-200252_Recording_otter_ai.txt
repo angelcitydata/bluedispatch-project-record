@@ -1,0 +1,1015 @@
+Unknown Speaker  0:00  
+Alright,
+
+Unknown Speaker  0:02  
+okay, perfect. Everybody I could record for is really here, but
+
+Unknown Speaker  0:07  
+it's good to have. Okay, alright, so yeah, we we kind of got to a point, and we were already talking last week, so we've gotten to a point where we have some stuff to show. As far as as UI and interactions. Are concerned and, and wanted to do that. Wanted to give you guys a quick demo of where we're at, what Jake's been working on and got prepared for now. And, and, yeah, get that. Get that kind of done before I leave for a week. I leave Friday, and I'm out all of next week. And I believe Jake, you said you have some vacation later in August, middle, middle of August, for, not for long, like three or four days. Okay, so nevertheless, yeah, we're both, we both got some off time coming up, and we wanted to make sure you guys got a nice demo before I took off, at least. So unless someone's got something urgent, I'll just turn it over to Jake and
+
+Unknown Speaker  1:09  
+and we can watch.
+
+Unknown Speaker  1:11  
+All right. All right. All right, Jake, sure.
+
+Unknown Speaker  1:16  
+So I've been working feverishly on this, getting a insane amount of progress. I think we started two and a half weeks ago, something like that. Three weeks ago, maybe, and
+
+Unknown Speaker  1:31  
+I have had really, really awesome support from our boss and my team
+
+Unknown Speaker  1:39  
+for me, basically to be able to tell everyone to go away
+
+Unknown Speaker  1:43  
+during that time, which means that I've been able to fully, kind of throw myself into this, which has been very helpful.
+
+Unknown Speaker  1:53  
+It's not done, obviously, but it's getting really pretty close. And
+
+Unknown Speaker  1:59  
+I just as a caveat here, the data you're looking at is not real. It is fake. There's still some stuff that has to happen with, I think Jeff and ginger, sec and some of those folks, so that we can get the API working. But the front end, my job is going swimmingly. So
+
+Unknown Speaker  2:18  
+here,
+
+Unknown Speaker  2:21  
+here it is.
+
+Unknown Speaker  2:25  
+We it's going to be pretty similar, with some key differences to what they have already
+
+Unknown Speaker  2:32  
+our tab bar at the bottom is pretty much the same. We've got home dashboard my jobs and account
+
+Unknown Speaker  2:39  
+home looks a little different. We did a
+
+Unknown Speaker  2:44  
+UX case study between the
+
+Unknown Speaker  2:48  
+previous card that's on the current mobile app job card and this one, this one scores right around 60% higher. It's clearer, it's easier to understand. And it's, it's, I think I forgot the term that the AI used. It's time to time to determine, I think so being able to read it quickly and figure out what's going on is way, way better.
+
+Unknown Speaker  3:12  
+So we have our home screen, and there the guys can book their jobs. So just like they do now, they can click the book job, except now they have to confirm that they booked it. So rather than just, you know, fire off an email and all that, now they get this nice little slide in that goes, Are you sure you want to book? You know, book now it changes color. Makes it really easy for them to not have any accidental clicks, I know that's been happening in the web app, and now that we're native, we can do cool stuff like this. So that is one key difference.
+
+Unknown Speaker  3:49  
+The other, I think, right off the bat, the other thing that's cool that this app supports is
+
+Unknown Speaker  3:55  
+light and dark mode on phones. So the goal with this application is to feel as native as possible, and native apps support light and dark mode on iOS and Android. In fact, I should probably pull up Android for you so that you can see it as well, because this works on both. And I'll do that right now. So what I'll do is I'll have Android run in light mode and iOS run in dark mode so you can see, Oh, I gotta refresh here.
+
+Unknown Speaker  4:28  
+Let Android catch up.
+
+Unknown Speaker  4:31  
+Yeah, there we go. Okay, so I'll put Android in light mode,
+
+Unknown Speaker  4:36  
+and there you go. So on your right is iOS, on your left is Android. You can see slight differences. You can see Android out of the gate uses Google Maps. IOS uses Apple Maps. So some nice little platform differences there. These are, this is a scrollable list, so the guys can, you know, scroll around and do whatever they need.
+
+Unknown Speaker  5:00  
+I'm going to just focus on iOS, because I'm biased, but the filters are much better in this version. So whereas right now, I think all they can do is filter by security or traffic. Wanted to expand that functionality for them. So down by where their thumbs are, you can see this nice filter button,
+
+Unknown Speaker  5:23  
+and when I click it, this sheet flies up from the bottom, and I can see that I'm up in my top right here, I'm looking at 22 total jobs. I can, of course, filter by security or traffic, and you can see we are actually filtering them. So I'm looking at 13 traffic jobs right now. If I want to, I can pull up just jobs that are on certain days. So if I just want to see jobs that are on Monday, Wednesday or Friday, I can do that. I can see that I've got six right now. And you can see on the filter button, I've applied two filters. I can also filter by pay range. So if I just want to see jobs at the top end of the pay scale. I can do that. You can see there's none here on Monday, Wednesday and Friday, but I bet you, yeah, there we go. I just enabled Thursday. Now I can see one. So they can open that up. They can really get kind of fine tuned on what they what they expect to be paid. The other really cool thing I'm going to turn off weekdays here is this start time and end time. So if, for example, they're like, Yeah, I've got a bunch of time
+
+Unknown Speaker  6:27  
+in the afternoon, from noon until whatever 8pm
+
+Unknown Speaker  6:32  
+they can do that. They can just click on the start time. And then you can see here, it starts at midnight. And you've got these three toggles at the bottom. If I tap the middle toggle, it goes right to noon. And if I want and that basically means show me anything that starts at noon or later. But I don't care when it ends. If I toggle on the end time, well now I can go. I want to see anything that runs between noon and six o'clock, for example. So if I put this away, you can see here I've got this job on. Let's see a Tuesday from noon to three. I've got this job from two to six. And if I open that up a little more and I said, Well, maybe I can work until, you know, 10 o'clock. Well, now I get more jobs because there's more that are in between that time window. So they focus is on officer, usability here, you know, being able to really find stuff that fits the windows that they have. So highlight, this is probably one of the bigger updates that we're going to have, is these, these filter sets. Ashley, this came from you. So props to you, because being able to clearly define what these guys might be interested in searching by was really, really helpful. So that is this screen we're going to support Pull to Refresh so it doesn't do anything now, because it's not connecting to a database, but if you were to pull down, you would see a little refreshing thing at the top, and then it would load any new information that's in there.
+
+Unknown Speaker  8:06  
+So that is the home screen,
+
+Unknown Speaker  8:11  
+sure.
+
+Unknown Speaker  8:13  
+So just, just a question, so on the total amount of the job, typically it's, that could be the case, you know, so you have, so you have, like, $780
+
+Unknown Speaker  8:24  
+on there, yep. And that's if it goes the whole time. So if it's a road construction job, that's probably not going to go the whole time, that's going to be so that's why we usually just put the hourly rate on there, right? Yep. And we are going to, yeah, we pointed, I pointed that out directly. Bonnie, when he showed things last week, it was like, you know, that's great, but I think we either need to see hourly or, truthfully, we could see all three, yeah. Or you can put a star next to it and say, you know, yeah, possibly, you know, whatever, the hourly rate, the bonus rate, you know, and then the total, if you work the whole job, you know, yeah, I have all the data here. It's just there's so much to work on that is just a label that I need to add. So, yeah, I agree with you. I think seeing all three is the way to go for these guys. So totally get it.
+
+Unknown Speaker  9:14  
+So that that's home. Any other questions on home?
+
+Unknown Speaker  9:19  
+Looks fabulous, awesome. So
+
+Unknown Speaker  9:24  
+dashboard, this is very cool as well, because we are in the native app world, things get more fun. We can actually see things animate, which is sort of nice, right? And what's really cool about these new charts is they look really similar to what you have right now, except we can see a total at the top, and then I can also tap on a time period, and then I get that time periods total. And what's really nice is that if I want to look at June, for example, and I want to scroll back in time, it stays focused on June.
+
+Unknown Speaker  10:00  
+So that I can go, what have I made in June the last, you know, few years, if I want to look at July, same thing. So it's, it's a this is really upgraded, I think, just usability wise, they're able to see a lot better insight into what they've been doing. The same works for mileage. So, you know, I can go through and I can look at everything that I've done throughout the year. I can focus on one month and go back in time and see you know what's changed there. And so that is your that's your dashboard. The cool thing about this dashboard is, now that we have these controls, we can really show if there's any other metrics that you think these guys might be interested in, we can show those metrics here. So it's it's it, the way that I've built it is highly modularized, which means these charts work for kind of anything, as long as it's over a given time period. So in this case, it's years and months, but it also works like by quarter or by day, or anything like that. So if there's any metrics or dashboard stuff we want to add in the future, adding it should be a breeze.
+
+Unknown Speaker  11:07  
+That is dashboard we're going to give, obviously, the ability to download this stuff.
+
+Unknown Speaker  11:13  
+I'm still looking into whether or not we can do that a little better than we do it now, right now, they just request it and it comes in through an email, and because we're native, I actually think we're going to be able to make that better. But, you know, that's kind of one of those things where, if it shipped the way that it works right now, for that, I think it's okay. So I'm focusing on other things right now, but, but, yeah, so that's, that's how this works. Dashboard. Any questions there?
+
+Unknown Speaker  11:43  
+That's beautiful, awesome.
+
+Unknown Speaker  11:46  
+My jobs is what I'm working on right now. So there's not a whole lot to report here. It's going to look similar to the home screen, except
+
+Unknown Speaker  11:56  
+anytime there's a today job, it's just right up in front and center, right at the top, so I could clock in right from here. If I want to look, jump down and look at what I'm doing this week, here it is, right. Here's my jobs for this week. If I want to look at next week, I can do that. So rather than messing around with all the jumping, you know, date to date or whatever, I think what we'll probably do after next week is just have, like, a show all, kind of a thing that goes to a list, but I'm working on this right now. So this is, this is under construction at the moment, but that that's my jobs, should be able to clock in, should be able to unbook right from here and then clock out, obviously. So that's, I think we're probably going to end up making a job detail screen where they can actually go to from here. So that'll probably be your next update. Is when I get this more fleshed out, but
+
+Unknown Speaker  12:48  
+that's what I'm working on now.
+
+Unknown Speaker  12:50  
+Your Android. There it is, I promise it works.
+
+Unknown Speaker  12:55  
+So then we've got account. And account is really straightforward. It's just, you know, my personal info, you know, here's my stuff, my work info, here's my badge number, my years of service. If you want it there, I put it there just for conversation. We can easily take it off.
+
+Unknown Speaker  13:17  
+Availability is very similar to what you have now. It's just You can toggle things on and more of like sort of a native app feel, and then we also give this version down at the bottom. This will make it very easy. If an officer is calling and says, I'm having a problem with the app, well now they can tell you what version they're on, and if we've shipped a new version since then, you can easily say you need to update your app. So that's why we have that there. And yeah, their rank on there, under that, yeah, it's right here, this rank right here. And it would probably, I missed that. It should probably be here under work info. But I don't think can they edit that in here? Or do you guys have to edit that? I don't remember. No, they can't edit their rank.
+
+Unknown Speaker  14:00  
+Okay, so
+
+Unknown Speaker  14:03  
+just show up here as a non editable field, I guess, but it does show underneath their name. And then I think if we can't, if we can't edit it, then I think it's, it's fine where it's at. Then, okay, yeah, I think so too. The other thing that's really nice is, and this is, I'm going to be working on this with Steve. Over the next week, we are going to be
+
+Unknown Speaker  14:27  
+starting to work on attaching images and stuff to jobs. And part of that is going to be, let me see Expo
+
+Unknown Speaker  14:37  
+photo library. Part of that's going to be choosing their like profile picture, and we're, we're going to let them go in. Where is it? Right here?
+
+Unknown Speaker  14:47  
+Just like this, be able to go in and pick from their photos. So you know, this is, this is what they'll see. It'll be updated to look like the new iOS, but they'll soon be able to go in if they're on a job.
+
+Unknown Speaker  15:00  
+Job, or if they're sitting on their profile, tap it and either take a picture right from there, or pick a picture from their library. So that's coming soon as well, and that is what I have so far. We did show the your demo of the GPS tracking for Bonnie, though, correct? Yes. Okay. I know we had shown them, but I didn't know if Bonnie, I'm pretty sure right. Bonnie, you're there, right
+
+Unknown Speaker  15:30  
+or not. Honestly, it
+
+Unknown Speaker  15:33  
+was the one where it followed you around, basically. So I think I might actually have a video of it somewhere. Just a second. I'll see if I can find it. Yeah, it would be live. Ben, is it live? Is it live? No, no, no, no. Oh, well, sort of it's on test flight. At the end of this week, I'm gonna get it into test flight for you guys. So anyone with an iPhone can actually use it. It's going to be static data, and nothing actually is going to like, booking a job won't work or anything like that. But you will be like, if I on my phone right now, I have it through test flight, which is Apple's pre App Store distribution thing. So basically, when you're testing an app and you're kind of ready for clients to check it out, you push it to test flight, and they get an update on, like via email that says, hey, there's a new version of blue dispatch ready for you to test and then you open up test flight and update the app, and it's right there on your phone. So that's what I yeah, what I said live I mean, is it, does it, oh, like you're live, or is it ping you every five minutes? The example was following you around.
+
+Unknown Speaker  16:49  
+It's so critical, because if you've got it, if you've got an officer in, like, in a school and there's a there's a threat and and it's only pinging him every five minutes, you're five minutes behind that. Officer, yeah, I agree. I agree. There's, there's, I want to show you, I thought I was pretty sure that we that you were there, but in case you weren't, I want to show you one of the Zoom recordings we can figure out. Maybe I know I have it and share it with you again. But yes, it did follow in real time. I want to say it was a couple pings a second. Here we go. Here we go. Okay, so here's a video. This is it's a, it's a different looking app because it was a different app, because it was a, it was a proof of concept. But
+
+Unknown Speaker  17:32  
+you're going to see me here in a second. You You can see my blue dot. This is my neighborhood. And I was on a little I got to ride a little motorcycle around the neighborhood to test this out. So you can see here,
+
+Unknown Speaker  17:48  
+I just press start tracking, and then you're going to watch
+
+Unknown Speaker  17:58  
+Jake on a slow motion me on a very slow, no, it's actually a big road, so there. But look at you actually get really where they are. So this polyline here, this is actually where they go. So and you can see how fast forward, but you can see it's tracking me all the way through my neighborhood
+
+Unknown Speaker  18:20  
+around here, and then basically I stop. That's where I stopped, right there. So you can see when I stop. I click the stop tracking button, and then I can zoom out, and I can actually tap the two, and I can see what time I started,
+
+Unknown Speaker  18:36  
+and I can see what time I stopped, and then I'm gonna push. Well, I don't in the in this video, but we're tracking every single time, every second. Basically,
+
+Unknown Speaker  18:48  
+we are getting a new location, and because we are native, it works a heck of a lot better than
+
+Unknown Speaker  18:58  
+than the web. So yes, to answer your question, it will be live. That's amazing. So is that something we can turn on or offers it on all the time? So the way that this app is going to work is going to be up to you guys.
+
+Unknown Speaker  19:13  
+You know, I would probably recommend
+
+Unknown Speaker  19:17  
+if they're going to use the app, then we need to have their location, and we only track it when they're clocked in, and that's it. Yeah, okay, and I think that's a reasonable expectation, sure. No.
+
+Unknown Speaker  19:31  
+So, so it, and the other thing that they'll have to and part of, part of the onboarding for the app, so when they actually download it for the first time, and this isn't working yet, but part of that is going to be sort of a walk through of like how the app works. And then at the end of the walkthrough, it's going to say, we do use your location, but only when you're clocked in. Enable location settings now, and they just click a button. And then, you know, if you've ever had an app like on your phone that requires.
+
+Unknown Speaker  20:00  
+US location, they get that little dialog they accept. And we don't actually let them move into the app until they accept it. Is how we can do it. And then if they ever turn it off, the app will just automatically detect that, and it will go back into a page automatically and say, Hey, you can't do that. We need to. We need to at least be able to access it, but we're not tracking you unless you're clocked in. Okay, yeah, okay, so that's, that's a training thing. Let everybody know that up front as well. Yep, yep, yep. So, yeah, that's what I
+
+Unknown Speaker  20:39  
+have today. So are we able to see that then, or is that going to the agency side so the agency can see that? Or who sees that? Well, because this is a new
+
+Unknown Speaker  20:50  
+app and library. We don't have it going anywhere yet. Brian and I are talking about how to share that information to FileMaker,
+
+Unknown Speaker  21:00  
+because it is a lot, it's a lot of data. I mean, it's every second, every officer, times every second, times every hour, that they work, right? So we're trying. I think what we're going to do is Steve is going to build a middleware component that sits on the new AWS server that you guys have, and it will have a MySQL database that can be as big or small as we want it to, and it takes up no room at all,
+
+Unknown Speaker  21:27  
+and it's just going to be full of location data
+
+Unknown Speaker  21:32  
+from various jobs and filemaker and or the client app can can say, hey, give me the location data for This one job, and it'll go do that, I think is the way that we're going to probably structure it. But there's still some kind of working out to do there. Yeah, that's how I see it, although it actually is tracking in real time and moving. Let's say on the agency app, you're probably going to have to hit refresh. Yeah, you will. You're not going to see that line move on on the
+
+Unknown Speaker  22:04  
+on the agency app, necessarily. It'll show the whole line and where they were refresh and get another up to the SEC, you know, pretty much up to the second. But it's, we're not, you're not gonna be able to sit there and watch it move like you just did in that video. That's only going to happen on the phone. Yep, that's right,
+
+Unknown Speaker  22:21  
+that's right. It's a
+
+Unknown Speaker  22:23  
+it's doable, but it would take a lot, a lot, a lot of time. Yeah, it's
+
+Unknown Speaker  22:29  
+in. The reason why you want to track it is just for reporting purposes. So if we have to go back and look at something, or in case there's Yeah, that's right, yeah, we have to have a way to go. Oh, where is this guidance? Let me find it and find it fast. And the other thing I want to work in here. I'm really glad you brought that up, because it jarred my memory. I think when they're clocked into a job, we need to have like, a suite of, like, safety buttons that are like, I'm in trouble, something's wrong, you know, and that can take their current location and send it somewhere, and we are able to, I think that's, that's kind of a cool differentiator for you guys in reviewing the
+
+Unknown Speaker  23:07  
+other kind of competitor apps, I didn't see that I could, I could have just missed it. I don't know. They also, they also have the radios they're they should have their radios, but, you know, maybe they don't, you know, some have to pick up the phone and dial 911, just like, That's right. Well, and if, if I know anything about cops, it is two is one and one is none. So if they can do it in two places, that is a good thing for them. So,
+
+Unknown Speaker  23:32  
+you know, I think, I think it'd be smart to do that. And because we're, we're in the phone, we can do it, sure.
+
+Unknown Speaker  23:41  
+So, yeah. Any other questions? That's a great idea. Jake, thanks. Yeah, I think on health and safety for officers, like, in future updates is a key thing for you guys, of like, this is not everything about health right now. So, yeah,
+
+Unknown Speaker  24:00  
+so I think, I think we're making, I mean, this is two and a half weeks of work. We are making insane progress over here. My I have to give it up to my team for leaving me alone and letting me work on this, because it, and it's, it's really been a labor of love the last couple of weeks, and I'm very happy to show it to you, and I can't wait to keep working on it. So that's beautiful, Jake, you're done a fabulous job. Thank you. Yes, good job. Thank you. Thank you. Do you, with that said, Do we have an estimation based on what the progress we're making of what, what you think like a timeline? I can't fully answer that question, because I'm only, I'm only building this part of it, and then I'll probably just be supporting Steve on the other part of it,
+
+Unknown Speaker  24:48  
+Steve is, is, because we're leaving the web app world, we have to interface directly with file maker, okay? And that's your back end. That's your data back end. Because we're leaving the web app world, we have.
+
+Unknown Speaker  25:00  
+To build middleware that is an API that goes between this app and your FileMaker system. That's what Steve's working on right now. I don't exactly know. I know he's pretty far along in the photos aspect of it, which will be a really key part, and it's kind of time consuming to do. So He's almost done with that, but we really need help from Ginger sec and from, oh no, I forgot his name,
+
+Unknown Speaker  25:26  
+Jeff. Thank you from Jeff, because we have to have Steve really wants, and I think this is wise. He really wants to have a dev FileMaker server that is not your live data that we can test this app with because we do not want to go blowing up live data. And in order to do that, I think Brian has some more information on that. But my part, in terms of my part, you can kind of see the progress I've made in the last couple weeks.
+
+Unknown Speaker  25:56  
+I plan to continue working as much as I have. And I mean, I'm probably, I don't know, three, three to four weeks maybe away from being done with this part. So that's pretty darn good
+
+Unknown Speaker  26:10  
+from a time development time perspective. That could change, but that's where I am right now. So when
+
+Unknown Speaker  26:18  
+do you need that server by? Like, last week, last week, yeah, we've been working
+
+Unknown Speaker  26:25  
+it seems that
+
+Unknown Speaker  26:28  
+they didn't have a lot of experience with AWS. And Steve has been kind of walking Jasmine through, setting up an instance and such.
+
+Unknown Speaker  26:37  
+Who didn't and who's Jasmine? Jasmine works for ginger. Suck is, yeah, works for ginger. Sec, I'm sorry, that's who. That's who Tom passed us over to and said that she was going to be running the AWS stuff. And she doesn't have a lot of experience. I don't think any of them do. I don't think any of them do. They said they were much more comfortable with Azure, but not
+
+Unknown Speaker  26:58  
+which is fine. I don't want it to seem like that. That's yeah. It's not like a bad thing. It's just, it's not a bad thing. What I'm saying is it's, it has kind of slowed things down. I was hoping we we'd have one, but we're still, we're still working with them to try to get that up as soon as possible. Once that's up, I plan on using that for dev and for our testing, including you guys, just to make sure the connections good, we feel good with with testing file maker on there before we make the actual switch. Making that your live server, and you're the one you have there at the office, the dev server. Okay, so we should not add another server at this point. We should wait. Oh yes, yes, we well. So we already have, we already have two. This was kind of going to be my part of the update once Jake finished.
+
+Unknown Speaker  27:53  
+So we already have two, a production and a dev server for the web server, API, stuff that Steve's doing that's to run the app, where those are both in Linux, and those are already up and running currently. So the third that we want is going to end up being the production server for your file maker system, basically replacing what you have at the office. That one is going to be a Windows machine, and that's the one we're waiting on, yeah, and we can't once we can, once we can get that tested out, and we know that you guys are going to be okay, because that's going to be where you connect with your file maker from your office. You're going to be connecting up to that AWS server. So we want to make sure that it's right for you. So that's the one we're waiting on is the AWS server correct. The AWS that's the third one. Is that the third talked about, okay, okay, yeah, once that's up, then basically we have a lot of work to do in the the middleware part of this, which is that web server, that's where you know, we need to go into your FileMaker system and create a whole bunch of layouts that have all the fields and the data that we need on there, and then that API middleware goes and gets the data from FileMaker and serves it to this app. And so until that FileMaker server's ready, we're just kind of, I mean, Steve has stuff to work on, but we're kind of, yeah, we're sort of working around the edges right now on that, because we, we don't have that connection. And what do you need from us further for that? Are you just
+
+Unknown Speaker  29:33  
+a follow up on that? Okay, yeah, I we, we need them to get it up.
+
+Unknown Speaker  29:39  
+We can do it. I originally suggested that, you know, Ginger sec, do it, because they're the ones that's going to be, you know, kind of responsible to support it forward, as I understand. So I wanted them to be part of setting it up and be comfortable with it, since they're the ones that are going to have to support
+
+Unknown Speaker  29:57  
+it. Has Steve completed his step that he needs to come.
+
+Unknown Speaker  30:00  
+Wait for it.
+
+Unknown Speaker  30:02  
+For his side, I believe he has most of the server stuff set up now, all your stuff developing on the server. No, I don't, yeah, the server is set up and it's working.
+
+Unknown Speaker  30:14  
+The the missing piece is that there's a bunch of code we need to write on that server that will go to the FileMaker system and go, Hey, give me all the information you have and then update in that information as well that work can't be done until we have a FileMaker server. That's not your production server to work on. Okay, so we need, okay, okay, so you've done everything you can do right now until we get that server, pretty much, yeah, yeah. I mean, I have stuff I can do here, but in the, in the in the actual server, there's, there's quite a lot of work to be done, and we're sort of in a standstill, okay, got it. I got it. And then I can tell you we have yet another developer, Jeremy Brown, that is working on getting new job creation process for those internal jobs running on the agency app. So I'm working pretty closely with Jeremy on this.
+
+Unknown Speaker  31:12  
+Let's see. Let's see if we can get in. Yeah, you can see this create job button here now, okay, and when I click that, I can actually start putting in job data, you know, kind of like this. And so this is what Jeremy is working on at the moment. And, yeah, there's, there's a lot of stuff going on for you guys over here. Yeah, we've got pulls in the fire here, yep,
+
+Unknown Speaker  31:39  
+when they create a job in here. Do we see it on our end in FileMaker? Yes, no. So it is going to be created on FileMaker. But according to Ashley, you guys really don't want to see it in FileMaker. The only reason it is is because, in order to show it on the website, it has to live somewhere, and that's good maker. So
+
+Unknown Speaker  31:57  
+turn off. Yeah, on the dashboard they can say, you know, hide the non billable jobs. Okay,
+
+Unknown Speaker  32:05  
+so that's they will exist, but they're marked as non billable. It's easy to not see them if you don't want to. And based off of Ashley's response last week, I had informed him, so we're not going to make new job location records or customer records or contact records or recurring job records in FileMaker based off of these internal jobs, they're just going to make job assignment records and not clutter your system up with a bunch of their stuff. Okay,
+
+Unknown Speaker  32:36  
+cool. So, so that is what
+
+Unknown Speaker  32:39  
+Brian, I just got a note from Steve. He said he is right now waiting on certs. So, and that for sure, is a Jeff thing, right? Yes, okay,
+
+Unknown Speaker  32:50  
+certs for blue dispatch, yeah. Essentially, what we want to do. You guys already have app dot blue dispatch.com which is the current officer app.
+
+Unknown Speaker  33:02  
+You also have agency dot blue dispatch.com and that is the production side of the agency app.
+
+Unknown Speaker  33:12  
+I think what we're going to do for the API server is have dev dot blue dispatch.com and pro dot blue dispatch.com obviously Dev is the dev environment. Pro is the production environment. And then Brian, we were, you were talking about having a FileMaker server. That's like, admin, dot blue, dispatch.com, I think is what you're file maker, yeah, something like that. That's we need help there, file maker. So, yeah, we need a couple new DNS names and SSL cert. We spoke with Jeff set Friday that we were on that call with. I think so is either Thursday or Friday. But, and, yeah, so I Steve. He says, if your domain is with GoDaddy, we can, we can do it, yeah, but Jeff, I think Jeff is sort of the keeper of the of the certs, and we don't, certainly don't want to under mine anything he's done there. So it would just be nice to to get that part out of the way. So, so you need, so you need the DNS and the certs, yeah, the DNS, yes, that's, that's correct, and SSL certs, yep. SL certs, okay,
+
+Unknown Speaker  34:23  
+all right, okay, and he should have everything he needs in an email. Bonnie, so if you just want to tell him, you know, I'm pretty sure the guy's emailed you with all the names of the stuff he should be able to find that. If he can't, he's welcome to email us and we can send it again. Okay, perfect. Do righty,
+
+Unknown Speaker  34:46  
+hey, anything else, Ashley, now's your time. Is there any more filters you want to throw anything
+
+Unknown Speaker  34:53  
+else in here? No, I mean, I was gonna date somehow at the top right? Yeah, I think I haven't quite worked.
+
+Unknown Speaker  35:00  
+Out how we want to do that. I mean, right now it's just going to show them everything
+
+Unknown Speaker  35:04  
+you know, and then they can. They can. I probably put it in here. I'm not exactly sure these filters are much more difficult to build. So I built those first,
+
+Unknown Speaker  35:13  
+if you book a job, if you go to if you hit book the job, and then you have to either down what happened now, what had just happened as soon as you hit that, yeah, hold for this officer to book it. No, no, that's just so picture like a dialog box up and says, Are you sure that's what this button does? So instead of doing the same one, they can take it before he gets it. Yeah. Well, sure, yeah, it just goes away. Yeah. Well, what would happen? It wouldn't go away. What would happen is he would press book now, and he would get a little notification that said, Sorry, someone already took this job. And then it would refresh the list and and that one would go away. But it would be really cool if it was like, live in it, but I don't. Maybe phase two, we can do that, but, but for now, yeah, basically it's just book and then book now and then, if, effectively, what would happen is this job would pop off this list, and it would go down to the next job, right? And then that job would show up in the My job section. Yeah, that was basically just, we got a lot of comments from Ashley and crew about, you know, officers are accidentally booking jobs by just touching that button so, and there's no way to undo it, unless you go over to my jobs, find the job and then unbook it. Yeah, yeah. The other thing that's happening that that would probably might be a role for the the app is that
+
+Unknown Speaker  36:34  
+if the job cancels, what we do is we typically cancel the officer on it because, you know, it's nice to hold him over. We don't want him going looking and grabbing a job from another company. We kind of want to hold him for our job. So we'll just tell the officer about it until we find them the new job. But I think that's going to be a problem. I think, I think if their job cancels for some reason, there's got to be some notification on the app. Well, the good news is, because you guys are on AWS, notifications are going to be really simple. So when, when a job we're going to probably want to come together as a team and talk about the whole notifications tree of this application, because I can already see like, 15 different notification possibilities, one of which for sure, is if a job gets canceled in FileMaker, the officer that that Job was assigned to would get a notification on his phone saying, hey, this job has been canceled, you know, or something like that,
+
+Unknown Speaker  37:37  
+you know. A similar one would be kind of what we talked about with the time box of, hey, you know you're supposed to work like today. Supposed to work from five to 6am and at 445 we would probably send a little notification going, Hey, your job is about to start that kind of a thing. So we, but we, we definitely want to have a kind of a pow wow on all the possibilities for notifications, because there's a lot. So okay,
+
+Unknown Speaker  38:08  
+all right, you get it
+
+Unknown Speaker  38:11  
+cool, and then what we could do is just have a canceled area where they could go and see anything that's been canceled, or we just leave it alone and we don't show it to them at all. We just it's gone, you know? But anything is doable,
+
+Unknown Speaker  38:23  
+perfect,
+
+Unknown Speaker  38:26  
+alrighty. Well, these were, these were our updates, yes, for
+
+Unknown Speaker  38:33  
+this, this
+
+Unknown Speaker  38:35  
+is what we've been working on. Like said, it's been this AWS, the web server. There's a lot of structure stuff that is really hard, if not impossible, to demo and make it look good. It's just a bunch of geeky background code. But yeah, that's what we've been doing. A lot of that is true. I do want to just pull this up, though,
+
+Unknown Speaker  38:58  
+and just be like, so this is what's going on.
+
+Unknown Speaker  39:03  
+Now,
+
+Unknown Speaker  39:08  
+there you go. So, oh, there's no jobs. Well, fine.
+
+Unknown Speaker  39:14  
+Well, I just wanted to kind of show the difference. Notice we've taken out favorites. We were still trying to come up with some ideas, but for now, it just doesn't seem useful, so we just left it out for now. Okay,
+
+Unknown Speaker  39:28  
+no,
+
+Unknown Speaker  39:31  
+that, and Brian's right, there's tons of stuff we could show you on the API that would put you to sleep. So
+
+Unknown Speaker  39:38  
+yeah, you just be staying at command line and, yep, insanely boring. Steve can talk about it for about eight and a half hours, and no one wants to listen to him talk about it, and he will if you let him.
+
+Unknown Speaker  39:50  
+Yeah,
+
+Unknown Speaker  39:55  
+any other questions?
+
+Unknown Speaker  39:58  
+I don't have any. I.
+
+Unknown Speaker  40:00  
+Yeah, I was just gonna say one of the other things that we had talked about, and I'm sure is still working on, but being able to sort or filter by location, you know, like West Side and East Side, closest and furthest from where you're currently at. Location wise, yes, ma'am,
+
+Unknown Speaker  40:19  
+yes. That is, that is in, in the works,
+
+Unknown Speaker  40:24  
+we will have to decide what constitutes west side versus East Side, though, so that it's kind of hard once you've grown out of the immediate area that you're already in, you know, if you start growing into other states and other places, you know, trying to, trying to go east side, west side, but is pretty difficult, because different areas kind of cut themselves up in different ways. But as for sorting, you know, from closest to where I am to farthest away from where I am, jobs and stuff that's definitely on our list, yep, and great
+
+Unknown Speaker  41:01  
+option. And Ashley, you also said like the pay, like, sort by pay, sort by day, obviously, start time, that kind of stuff that that's still on the table for you. Yes, yes. I think those are good. Sort by
+
+Unknown Speaker  41:16  
+Yeah, the pay at least per hour, definitely in times. Yeah, I thought all the other filters were there. That's the only one that we had talked about that I didn't see. But I'm sure you're working on the sorting. I haven't touched at all, but it is on my plate.
+
+Unknown Speaker  41:30  
+The filtering is way harder than sorting, just from programmatic standpoint. So that's that's coming. As soon as all the filters are totally
+
+Unknown Speaker  41:40  
+done, perfect.
+
+Unknown Speaker  41:43  
+Cool.
+
+Unknown Speaker  41:47  
+All right, well, if we don't have anything else,
+
+Unknown Speaker  41:52  
+nothing at my end, cool, yay. Yeah, Joe,
+
+Unknown Speaker  41:59  
+yeah, Brian, I know we still had to cover some, some fixed pricing on some stuff that we talked about earlier regarding, I'm, I'm, I'm here. I was gonna see other than that, I needed anything up before we wrapped this part of the meeting up. Okay,
+
+Unknown Speaker  42:18  
+so everybody's, everybody's okay, but he's good, all right,
+
+Unknown Speaker  42:23  
+I guess Joe, Bonnie and I are gonna continue our chat here. Bonnie,
+
+Unknown Speaker  42:31  
+do you want me to stay on or drop off? It's up to you. I can stay. I'm good. That's fine. Okay, Brian, do it would be helpful to have me. I don't believe so, I think I'm okay, okay, sounds good. I'll be here if you need me. Thanks, Jake, everything looks good, bud. Thank you. See you guys. Bye, bye.
+
+Unknown Speaker  43:05  
+Is
+
+Unknown Speaker  43:07  
+this our group for this conversation? Or, I think so. I think we're good. Becky wants to drop off. She can drop off.
+
+Unknown Speaker  43:14  
+She's listening. She might be on the phone. Yeah, Ash, if you if you want to pop off too, you know. I mean, it's up to you, but is Ashley still on there? Yeah, I shouldn't have down there either.
+
+Unknown Speaker  43:31  
+Okay, I guess we can continue on until I figure out this is a boring conversation. This is a boring conversation. Yeah, that's what I was talking about. I'm like, you know, we could show you a lot more stuff, but you would absolutely go bored out of your mind looking at this, right?
+
+Unknown Speaker  43:46  
+Absolutely. It is no fun at all. Some people enjoy it.
+
+Unknown Speaker  43:53  
+We do appreciate it time, all right. So, um, yeah, I just when I got your email, I was like, Well, this is, this is a hard email type conversation to have that would just be a lot going back and forth, and I usually find this is a little bit easier.
+
+Unknown Speaker  44:13  
+Where is let me get back up to your
+
+Unknown Speaker  44:17  
+email. All right, so, um,
+
+Unknown Speaker  44:20  
+so what is up here is we're looking for able to nail down a fixed price for the native app.
+
+Unknown Speaker  44:30  
+I'm not sure we can exactly at this point.
+
+Unknown Speaker  44:35  
+You know, we were, we were kind of given the pedal to the metal, full force, you know, forward and trying to hit an October deadline on it. So we didn't do a lot of planning and such like, like we did for the client app that we that, you know, has been kind of postponed for now, but that type of work is how we get together a.
+
+Unknown Speaker  45:00  
+Great proposal. Even
+
+Unknown Speaker  45:04  
+now we can definitely discuss what,
+
+Unknown Speaker  45:08  
+what we have done and
+
+Unknown Speaker  45:11  
+fairly well what we have left to do.
+
+Unknown Speaker  45:15  
+But at a point where I can, where I can go to my boss talking about a fixed bid. He's usually not too big on those we've been burned in the past.
+
+Unknown Speaker  45:29  
+And when he does, it's it becomes on us pretty hard to to take our time and come up with something
+
+Unknown Speaker  45:38  
+that's very exact. We got to know exactly what's going to be done. We've got to have an exact plan. And basically, my boss would always say, we can do we can do fast, cheap or good quality. We can do two of the three.
+
+Unknown Speaker  45:55  
+It gets really close to impossible to give all three. Something has to give
+
+Unknown Speaker  46:02  
+to work. So if you want, can you give like a projected estimate? We understand that things are coming to play, but just leaving it open ended could be a million dollars. Oh, no, no, yeah, and I don't see that at all, like I had discussed with Joe and such before, we were looking at pushing a burn rate of somewhere between 120 and 140 in the hours per week as we hit top end. Now, we have not hit that. I don't believe we have hit 120
+
+Unknown Speaker  46:34  
+a week yet, but we've come pretty close, although that is including the native app and the other stuff that we're still doing, see that's what, that's what I want separated. Yeah. So
+
+Unknown Speaker  46:48  
+I can tell you, I think Amanda is able to outline a proposal too, like she did for the client app. Would that help?
+
+Unknown Speaker  46:56  
+Well,
+
+Unknown Speaker  46:59  
+well, it's, less of a feature. I mean, yes, it would help, and we can sit down. The problem is, I've got to, I've got to pause a lot of development time in order to go through this with my guys and come up with exactly how long they'll think each piece will take
+
+Unknown Speaker  47:16  
+for a general number, like I was saying, even if we hit that 120
+
+Unknown Speaker  47:20  
+hours burn rate per week from now through the expected deadline in October,
+
+Unknown Speaker  47:30  
+the numbers looking somewhere around, around 275 275,000
+
+Unknown Speaker  47:38  
+do I think we will hit that? Truthfully, not even close. Like I said, we haven't been hitting the 120 yet, and we're going pretty hard right now.
+
+Unknown Speaker  47:50  
+As you know, I'm off next week, so that's time, you know, one developer's time. You're not going to be
+
+Unknown Speaker  47:56  
+you're not going to be billed for next week. You know, Jake takes some time off. Steve takes some time off. And in general, these are kind of a bell curve. We're kind of hitting the the peak
+
+Unknown Speaker  48:06  
+probably now, you know, last week, this week, and when I come back for probably another week or two, we'll be hitting it pretty close to 120
+
+Unknown Speaker  48:16  
+a week. But then it should die down from that. So, I mean, if I really had to guess, I feel left where we can go,
+
+Unknown Speaker  48:32  
+probably under 200 if I had really had to guess, off the top of my head,
+
+Unknown Speaker  48:40  
+okay, but I I really think we're hitting the peak, like I said right now, because I've got Jeremy working on the new, new job stuff for the agency app. And of course, that's not technically having to do with the native app at all, but it is something that you're seeing on your invoices, and he's going to be finishing that he should be finished with that pretty much when I come back, before I come back. So that part will drop off. You know, having that particular developer working, I believe he's been putting 15 to 20 hours into that. I don't know. So when you guys do your invoicing, are you able to separate this out? Because now I'm having my office separate this stuff out. Yes, I thought it should be, let me look on it, but I think it's all all mixed in, isn't it? Joe or Becca, the only thing it is mixed in. But I mean, it is itemized, so it's clear as to what what is, but they're not separate. And invoices, as far as you know, this invoice is AWS. This invoice is strictly native app, but, I mean, they are, they are labeled. They're just not individually placed into their own categories, I guess, per invoice. Yeah, let me find Yeah. Maybe the layout could be a little bit clearer, so that we know that this section is chunked out by each of them by native app, because we are going through them and.
+
+Unknown Speaker  50:00  
+And also ask that it be a little bit more detailed stuff. The word stuff isn't detailed and comprehensive in the invoice. So if we could just my recommendation to add just a little bit more so we understand or it triggers our memory as as to the conversations and we've gone over, yes, I'm one second I'm trying to pull up
+
+Unknown Speaker  50:23  
+last invoice there. That should be it.
+
+Unknown Speaker  50:29  
+I don't.
+
+Unknown Speaker  50:31  
+I don't get a lot of view into the
+
+Unknown Speaker  50:35  
+billing side, necessarily. Let's see. So we do have, I mean, it's not a separate invoice. But we do,
+
+Unknown Speaker  50:43  
+like at the invoice, the last invoice we had sent,
+
+Unknown Speaker  50:47  
+we do have section. It's
+
+Unknown Speaker  50:50  
+officer native app is the project it says at the top,
+
+Unknown Speaker  50:55  
+and everything under that until
+
+Unknown Speaker  50:58  
+next section. So technically it actually, it is. It's got a total it's got its own invoice number.
+
+Unknown Speaker  51:05  
+So the officer native app is invoice number 2191
+
+Unknown Speaker  51:11  
+Yeah. Like, like Joe mentioned, you guys are doing a good job in outlining them, but they're all still put together. So we have to, you know, sift through native app and in this section, and that's to maybe just completely separate, so that we have, like, a running maybe, maybe that might work out best, like, since native app is early, we just have one invoice that they continuously, maybe share and highlight those sections, and so it's a continuous runner, so we understand where we're at at any given time. So I might be able to limit, I'm just looking at this again because I'm being quite Yeah, I was going through them this morning too, or trying to go through them this morning. Yeah, let's see. Yes, we could, you know, I can talk to Angie about separating the invoices into separate PDF files. I think she just puts them in one to, yeah, we're just starting to have, like, like, you know, Steve's discovery time. We're starting to have more players working on them, so it's a little bit, you know, there's a lot more coming at us that we just want to make sure is aligning with our project timeline. So, yeah, if we can do that and just kind of separate them, I think that would be much easier. Sure. Yeah, I can.
+
+Unknown Speaker  52:21  
+I can run that by Angie. She's, she's our billing person, yeah,
+
+Unknown Speaker  52:29  
+so let's see.
+
+Unknown Speaker  52:32  
+I heard,
+
+Unknown Speaker  52:34  
+I heard something from Bonnie, but I didn't quite get it. No, like on the ongoing support, verbal, ongoing support, consulting, working on SSL cert expiring soon.
+
+Unknown Speaker  52:45  
+Yes, that's when you're was that last? Not? Was that last? No, it was weekend before, a couple weeks ago. Yeah, a couple weekends ago. The SSL expired over the weekend. I worked on the weekend and on Monday with Jeff. Yeah, and then and but then there's another
+
+Unknown Speaker  53:04  
+invoice back here, so I find it golly
+
+Unknown Speaker  53:14  
+under the let's see. Shoot this one.
+
+Unknown Speaker  53:21  
+Let's start this don't know I saw it someplace else. It just seems like they're they were all over the place. And I got like, how do we know?
+
+Unknown Speaker  53:30  
+Oh, yes, that was Jeremy Brown. Met with Brian about SSL stuff.
+
+Unknown Speaker  53:37  
+That's right. Yeah, he was, he was helping me. He was helping me. We were having
+
+Unknown Speaker  53:45  
+a specific issue that ended up being,
+
+Unknown Speaker  53:49  
+ended up being FM better form side of things was, truthfully the problem, but I had brought him on to
+
+Unknown Speaker  53:58  
+on to help me out. He He knows a
+
+Unknown Speaker  54:00  
+little bit more about F and better forms, because what had happened was the SSL was working on your file maker database, for file maker to connect to it, but it wasn't working for your web apps. So your web apps are still down, but your file maker was still up. And I called in Jeremy to help me. I can, I can ask him to be a little more specific on his entries, but that's what it was. I That's okay. I That's okay. I just didn't know if it fell into the right one or not. And then I don't know if I and again, I just quickly glimpsed at this through every as I'm, you know, working some other things on an invoice, two invoices on 21 909 and then 21 911 on 21 909 the agency web app. Can we just double check the warranty?
+
+Unknown Speaker  54:44  
+Is the agency web app warranties, I think is still active. I'm looking at the screen until 715
+
+Unknown Speaker  54:50  
+Right? Was till 17. So the work should be covered under the warranty. Am I getting the dates right? I just want to make we we had originally planned the eight year 90 days hasn't.
+
+Unknown Speaker  55:00  
+Started because we're not we never went live with agency okay? We're working on GPS stuff, and then that kind of pushed into starting on the native app stuff, and we're working on the
+
+Unknown Speaker  55:12  
+create job
+
+Unknown Speaker  55:15  
+within agency app. So we haven't gone live with agency app yet. You guys don't have really anybody using it, do you
+
+Unknown Speaker  55:26  
+know, not as a bright now. Brian, yeah, I didn't think that was, that was completely live. We never got to go ahead to push that live, because we keep either changing or adding features.
+
+Unknown Speaker  55:38  
+The big one that stalled things was, was the GPS, you know, and the kind of the native app was the way that eventually was pushed to cover that. But yes, this,
+
+Unknown Speaker  55:51  
+some of the stuff would be handled. I don't know why he put that under the agency app. Actually,
+
+Unknown Speaker  55:57  
+Jeremy did. I can talk to him, but the two Christina sarin ones would have been covered, you know, those would be problems.
+
+Unknown Speaker  56:06  
+Yeah, if we just double check that my chicken scratch there on that one and make sure that that's, you know, in the right location, that would be great. And then the other one, the large one, I just want, I'm going over that one again. That one's pretty big.
+
+Unknown Speaker  56:23  
+There's overlap there, right? I think. So I'm going to continue to look at that one. So I just want to make sure it's a continuation of our native app. On this one, there's probably some overlap. There's probably times when Jake and Steve are working at the same time on something, something where I'm in there.
+
+Unknown Speaker  56:44  
+I do know it did look like I was looking at it before that. The stuff having to do with
+
+Unknown Speaker  56:51  
+AWS,
+
+Unknown Speaker  56:54  
+most of it is related to the native app directly, but some of it is not as far as
+
+Unknown Speaker  57:02  
+as
+
+Unknown Speaker  57:03  
+any work that was put for talking about and getting ready for the for the FileMaker server, which you know the native app is going to use, but it's not technically, you know, 100% part of the native app development. It's its own thing. It's just getting your FileMaker setup push to production within AWS. And there
+
+Unknown Speaker  57:26  
+has been some meetings and conversations with with ginger sec, trying to help them get up to speed on AWS.
+
+Unknown Speaker  57:38  
+Okay, yeah, I, I so this, this is kind of proves our point that, I think with the volume and the complexity of the concurrent projects, we really probably do need to have running totals and have them separated to help us track those cumulative costs, because there's just so much, and it's just easier for us. You know, right now, what do we have? What native app, agency officer like, yeah, oh, yeah. It's a lot. I know. I'm trying to manage it,
+
+Unknown Speaker  58:12  
+I can tell you, and I can, I can put this into some type of,
+
+Unknown Speaker  58:18  
+some type of running total thing, I can tell you right now, I might be able to talk Angie into
+
+Unknown Speaker  58:25  
+removing the native app, as you know, its own invoice, instead of putting it in one file with the rest. But she's probably not going to. She'll laugh at me if I ask her about a running total. So I think I'm going to have to do that for you guys.
+
+Unknown Speaker  58:41  
+I can tell you right now you are at
+
+Unknown Speaker  58:46  
+315
+
+Unknown Speaker  58:49  
+hours on the native app. That is all in,
+
+Unknown Speaker  58:53  
+including what has been entered into our time so far, because the last invoice you got ended on the July 15. So there's another week that I'm looking at that you haven't gotten invoiced for, that does include discovery and the creation of the proof of concept for GPS that Jake did before he really got started.
+
+Unknown Speaker  59:20  
+But I can, I can put that into
+
+Unknown Speaker  59:23  
+a into like an Excel spreadsheet, and we can start adding together the invoices for you, if you'd like, and you can see a running total.
+
+Unknown Speaker  59:33  
+I think, unless money has any objections, I think definitely my concern is just we're growing in scope. It's complex. We need to have this so that's very clear and across the projects, so we can just look that at them and keep it going as we do our reviews to make sure we're all in alignment.
+
+Unknown Speaker  59:53  
+Yeah, so I was just a little concerned, because if we have like, 13 weeks of 120 hours, which we're going to hit or not hit.
+
+Unknown Speaker  1:00:00  
+That comes out to like $350,000
+
+Unknown Speaker  1:00:02  
+so I don't know,
+
+Unknown Speaker  1:00:06  
+yes, and already at 70,000 that was it. That was kind of the that
+
+Unknown Speaker  1:00:13  
+was the burn rate that was discussed originally. Like I said, we're we're not hitting even the low end of what we discussed, you know, could be the burn rate,
+
+Unknown Speaker  1:00:25  
+and I don't think we necessarily will. I think it's and I think it's going to come down so 350
+
+Unknown Speaker  1:00:32  
+No, I don't think it's going to hit anywhere near that,
+
+Unknown Speaker  1:00:36  
+because we said to to whatever it was earlier. Well, 275 was if we hit 100 and, you know, 120 hours for the next 11 weeks,
+
+Unknown Speaker  1:00:48  
+that's and, like I said, that's not going to happen. So that that is absolutely,
+
+Unknown Speaker  1:00:55  
+absolutely the high end of what what we discussed, you know, for a for a burn rate moving into that particular deadline.
+
+Unknown Speaker  1:01:04  
+Okay,
+
+Unknown Speaker  1:01:07  
+these things really are, like I said, really are Bell curved, you know, where we are hitting the peak, the the ones you see, the last invoice that you're looking at,
+
+Unknown Speaker  1:01:19  
+the next invoice,
+
+Unknown Speaker  1:01:22  
+actually shouldn't be as bad, because I'm going to be on vacation, and Jeremy should be wrapping up what he's doing while I'm gone,
+
+Unknown Speaker  1:01:31  
+and maybe one more invoice after that, where we'll be hitting 100
+
+Unknown Speaker  1:01:36  
+you know, ish hours, and after that, it should drop down, okay, down more to towards, more towards two full time people, so closer to 80 hours instead of closer to 120
+
+Unknown Speaker  1:01:49  
+while we towards the end.
+
+Unknown Speaker  1:01:53  
+Okay,
+
+Unknown Speaker  1:01:57  
+very good. Do you usually in something like this, when we're adding the we're extending the scope, provide another proposal like you have when I, when I onboarded the project early on, we had those different ones for each of the sections. Do you create another one for this? Or is there one created already there? There really has not we, you know, there's nothing we have to sign. In other words, that your time, I wish that's, that's the way we were going with the client, you know, preparing for the client app. And that's the way I'd love to do it. But realistically, there's no way we can hit an October deadline if we're okay, if we're, you know, if we're moving slowly, paced and measured like you probably want to, if you have all the time in the world. I don't think we can meet that. Now, you also got to remember, in order to meet that type of deadline, and Bonnie, this goes into the conversation, you know, we've been having as far as money and numbers is concerned,
+
+Unknown Speaker  1:02:55  
+in order to deliver in like, end of second, first or second week of October, which is what we're hoping, right? That means, truthfully, we need to be pretty much finished developing the beginning, or beginning to middle of September, because we need a couple weeks of testing, and more specifically, for Apple and Google to look at things. Okay? And during that time, it shouldn't be anywhere near this, you know, full three people, you know, four people going at it at all times. No, this is, you know, us putting it up there and kind of waiting and maybe picking it anything that they find as they're going through their approval process or we're going through our testing. But it shouldn't be, you know, like I said, bell curve, that's, that's kind of the lower end.
+
+Unknown Speaker  1:03:45  
+So we, I see no reason why we're going to run this hard straight into October.
+
+Unknown Speaker  1:03:53  
+We get right. We're going to try to finish this, you know, realistically, finish this up somewhere in the first two weeks of September to
+
+Unknown Speaker  1:04:01  
+to make sure that it can go through the approval process, and we can actually hit a deadline with something you can put in the Apple Store and hopefully Google Play. Though, I have been told by many people that expect, expect problems with Google Play, and usually just long time, time wait times for them to get back to you, not necessarily you know, them saying this is a problem, and this is a problem where Apple wouldn't but apparently Apple is just much more responsive than Google is.
+
+Unknown Speaker  1:04:35  
+But anyhow, that's our plan. Is to try to finish development and be in full testing within, like I said, the first week or two of September is what we're hoping for. Oh, wow, okay, okay, that sounds good.
+
+Unknown Speaker  1:04:53  
+Like Jake said, probably starting this Friday.
+
+Unknown Speaker  1:04:58  
+He wants to i.
+
+Unknown Speaker  1:05:00  
+Get a couple of you guys, Bonnie, if you'd like to pick, I would suggest maybe three or four tops of your people that you would like to be put on to this flight test that have
+
+Unknown Speaker  1:05:15  
+Apple phones, no androids for now. Apple, yep. Oh, so that leads rich out. Okay,
+
+Unknown Speaker  1:05:22  
+Rich is a good one, but he's an Android. Android is a little they don't really have this particular setup. In order to put test stuff on there, you have to actually install on the phone from a computer, like plugged in. I mean, it's it's ugly. We're going to try to figure out the best way we can to allow you guys to test that. But Apple has this test flight thing where, basically you just have an Apple ID and we say, Yeah, this person with this apple id let them download and test this particular app for us.
+
+Unknown Speaker  1:05:56  
+So I believe he said starting this Friday, but whether or not it's this Friday, he plans, once he starts every Friday to push a new version up there for you, for you guys to be able to continue to test and continue to see exactly where we are. So we'll start the testing well before we're finished this time, it's not going to be do most of the development, do a bunch of beta testing, fix things, and then go live like we've been doing, because with the native app, we need more lead time
+
+Unknown Speaker  1:06:27  
+because of, you know, having to deal with approvals.
+
+Unknown Speaker  1:06:34  
+Does that make make sense to everybody? Yep, I think Dante would be willing to do that.
+
+Unknown Speaker  1:06:42  
+Um, maybe, if you want, you know one kind of Officer, officer. But I would, I would definitely suggest, you know, I don't know Ashley, you know, maybe at least one or two of your people, you know, actual les employees, would be great.
+
+Unknown Speaker  1:06:58  
+Ashley's been wonderful with with testing stuff. So I always suggest her,
+
+Unknown Speaker  1:07:08  
+she has an iPhone. I think do what I think. Ashley has an iPhone. Ashley has an iPhone. Yeah, she does.
+
+Unknown Speaker  1:07:19  
+So that should be coming soon, the access for you guys to be able to start testing and messing around
+
+Unknown Speaker  1:07:25  
+with it. The truthfully, what may stop it from happening this Friday might actually be we really need that file maker server instance on AWS, up and going,
+
+Unknown Speaker  1:07:40  
+again. Sorry, we need the FileMaker instance on AWS up and running. I know he's saying, he's saying he was told ready for pen testing mid August. I'm like, No, you said two weeks because he said it'd be ready in two weeks. And how many weeks ago was that?
+
+Unknown Speaker  1:07:58  
+Three weeks ago? Two weeks ago?
+
+Unknown Speaker  1:08:02  
+Yeah, so I'm talking to Tom Hardy, oh, okay, yeah. And he's just saying it'll be ready by mid August. I'm like, you know,
+
+Unknown Speaker  1:08:13  
+he said two weeks. Was been two weeks, yeah. And actually, that was the when I originally talked to him, I was saying the FileMaker server needed to come first, and the web server could come a little later, but a little later came really fast, and Steve wanted to be part of spinning that up, and so he's done that. Yeah, I'm
+
+Unknown Speaker  1:08:42  
+if we can get that instance created and get me and Jake and Steve access, then I can put file maker server on there, put cover copies of your current system up there, and boom, we've got a dev environment that we can start testing and messing around on to decide when we're ready to make that prod that most likely will definitely now, wouldn't happen until I got back, but it could still be used to develop on
+
+Unknown Speaker  1:09:13  
+I'm having a conversation with him. And just to clarify again, Brian, just to reiterate it the 120 hour mark that's, that's full bore, something that, I mean, we're not going to anticipate hitting at all right now, I don't really necessarily anticipate hitting that. We haven't yet, since we started this project, right? And that's including other stuff, you know, agency, app and work I've been doing on schedule, or, you know, anything like that.
+
+Unknown Speaker  1:09:45  
+So yeah, I don't think we're going to hit that again. We might come pretty close, you know, a couple weeks. But no, I don't think we're going to go over that 120 Yeah, okay. I just wanted to make sure for clarification on our end. But okay, got it?
+
+Unknown Speaker  1:10:00  
+Yeah, that is, that is absolutely high end. I don't think we're going to go, Yeah, I don't think we're going to go over that. I don't know where I'd find the resources to go over that.
+
+Unknown Speaker  1:10:11  
+Because, I mean, you know, we always, we always act like, oh, three people, you know, 40 hours a week. Well, guess what? We have other things that we have to do, and you're not right. 40 hours at best, you're getting 3532
+
+Unknown Speaker  1:10:23  
+you know? Yeah, that makes sense. So you're not hitting 120
+
+Unknown Speaker  1:10:29  
+anytime soon. Yeah, that makes perfect sense. Thanks for that clarification again. Brian, no problem. Okay,
+
+Unknown Speaker  1:10:37  
+all right, I'll see what I can find out about this death, sir. Yeah, server,
+
+Unknown Speaker  1:10:44  
+because that's going to be your prod server eventually. But we need to, we need to get it up, and we're going to use it for development and for testing and everything. And then we're going to make a dance, you know, like I told Joe, at some point, we'll need some downtime to do a dance of repointing everything and moving everything, and then boom, that a that new AWS server we're waiting for will be your production file maker server. That will be the one that everybody at the office is connecting to to use scheduler. But for right now, it's we need it for development purposes, and after we make that big switch, the one that you currently have at your office now will be your dev server for file maker.
+
+Unknown Speaker  1:11:28  
+So that's so
+
+Unknown Speaker  1:11:30  
+it doesn't make sense to put another server in here right now to just take over the dev part, because put
+
+Unknown Speaker  1:11:39  
+a new server, where new new server for the dev, for the development side, while they sit there and wait on because they're wanting, they're wanting to do a pen test on it. Oh, geez, okay,
+
+Unknown Speaker  1:11:53  
+you know, if
+
+Unknown Speaker  1:12:00  
+I'll talk, I'll talk to my people, I don't know. Let me talk to Steve or something. He's definitely the best with AWS stuff.
+
+Unknown Speaker  1:12:10  
+You know, how long it would take them, and if it's worth
+
+Unknown Speaker  1:12:14  
+whipping up a, you know,
+
+Unknown Speaker  1:12:17  
+just whipping up
+
+Unknown Speaker  1:12:19  
+a AWS instance that we can use as a dev server until ginger SEC can, you know, do what they need to do to make sure that their setup is going to be secure to their likings? I don't
+
+Unknown Speaker  1:12:34  
+know how long they'll take it. I'd have to talk to Steve, I imagine, a few hours, but I'm not sure,
+
+Unknown Speaker  1:12:41  
+and
+
+Unknown Speaker  1:12:44  
+and it takes some some coordination, but we could do that,
+
+Unknown Speaker  1:12:50  
+if I actually, come to think of it,
+
+Unknown Speaker  1:12:54  
+If Jeff, or whoever has the
+
+Unknown Speaker  1:13:00  
+administration credentials for
+
+Unknown Speaker  1:13:03  
+godaddy.com
+
+Unknown Speaker  1:13:06  
+for your tax account, if we could get those credentials where we could make these DNS records and change these DNS records ourselves and generate These SSLs ourselves without having to go through Jeff. That might speed things up, because every time we switch, you know what machine is or what instance is going to be, Dev versus prod versus this, we have to go in. We have to call Jeff, or, you know, email Jeff and be like, hey. We need all of these changes on these DNS records and new SSLs maybe or maybe not, but we definitely need changes to these DNS records, and if we could do it ourselves, then we could move a lot faster on that stuff.
+
+Unknown Speaker  1:13:50  
+Okay,
+
+Unknown Speaker  1:13:54  
+okay, so that's a DSL, like I'm texting him too. DNS, DNS, DSL is
+
+Unknown Speaker  1:14:03  
+yes, okay, yeah. So basically a DNS means, you know, when you type into the computer app, dot blue dispatch.com,
+
+Unknown Speaker  1:14:12  
+the DNS record says, Okay, this name, you know, app, dot blue dispatch equals this computer or this server, and it knows where to point it. And if we want to change what servers app dot blue dispatch.com means, then we have to be able to get at those DNS records to change and repoint them to different areas. So that's what that is, and Jeff's been doing that for us,
+
+Unknown Speaker  1:14:36  
+but we could definitely do it quicker if we can do it ourselves. Yeah.
+
+Unknown Speaker  1:14:42  
+Okay, I just asked them a question. I'll see if I get an answer. Okay, no problem. I'll, uh, I'll discuss with
+
+Unknown Speaker  1:14:50  
+Jake and Steve real quickly and see what they think about the timing of us making a FileMaker server temporarily, uh, while ginger sec.
+
+Unknown Speaker  1:15:00  
+Prepares the real deal. That's fine. Yeah, so he's checking with Jasmine. I don't know why he's checking with jasmine, but he's in the middle of checking with Jasmine.
+
+Unknown Speaker  1:15:11  
+Yeah, like said, believe she's the one that he handed over all the stuff to. Yeah. Yeah.
+
+Unknown Speaker  1:15:23  
+Okay,
+
+Unknown Speaker  1:15:25  
+and that poor thing, Jasmine, she
+
+Unknown Speaker  1:15:28  
+she asked, you know, Steve, to help show her what he did to set up the web servers and stuff. And, man, we didn't even have cameras on, and I could see her eyes glazing over, because when that man talks, he just, yeah, he just drones and geeks. And I'm like, Whoa,
+
+Unknown Speaker  1:15:45  
+that's right. Sometimes that's what you get with with us geeky tech people.
+
+Unknown Speaker  1:15:52  
+Oh, I can only imagine
+
+Unknown Speaker  1:15:54  
+Jeff sometimes does that too. He just goes into all the details, like, I kind
+
+Unknown Speaker  1:16:00  
+of want to know you don't, you don't quite hear it, but I'm often in the background, in Slack, going, going, Jake, less detail. Jake, less tape, less tech, as he's talking to you guys, right? Okay, well, I'll get back to you. I'll get back to you and let you know what they all say. Okay, yeah, that sounds great. And we'll, try to move forward with that as fast as we can. And then you're gone all next week too. Then, right? Yes, I'm, I leave, I'm out Friday and all of next week. Okay, so then is so Joe, are we? Are we? There's there no meetings next week, or we have our Tuesday meeting. That's, that's what we usually have, but that's more for Ashley and our hot fixes and things like that, is that with Jake, because Brian's not going to be there, right? That would be with Jake, actually, yeah, yeah, I will. I've already said something to Jake, but I'll make sure he knows. Yeah, I definitely need him to join for that meeting. Okay, perfect.
+
+Unknown Speaker  1:16:56  
+Absolutely. You may end up getting a new
+
+Unknown Speaker  1:17:01  
+a new zoom invite Joe and everybody, because I'm the one that made, the one that we use. And if I'm, you know, if I'm not there, then it won't have a host to sign in. Right, right, yeah. So I'll reach out to Jake on that, and I can shoot it out to everybody. That'll be perfect. Yeah, awesome. And, yeah,
+
+Unknown Speaker  1:17:21  
+as long as I don't get murdered in the Caribbean, I'll be back the fourth.
+
+Unknown Speaker  1:17:30  
+My
+
+Unknown Speaker  1:17:33  
+father's been sending me stuff, and is all fruit. You see, they moved it to a level two travel thread, and, you know, Dominican Republic. And I was like, yes, it's at the same level as England and and Holland.
+
+Unknown Speaker  1:17:49  
+I'm not scared to be in either place.
+
+Unknown Speaker  1:17:54  
+So as far as we know that everything's ready for ginger sec, right? They're, they're just sitting on waiting for them. They should be, if they need any more information, they are. You know, they can get a hold of us. They know where we are. But I, I passed over the requested specs that we wanted for the server. And I know, like Tom said, he's, I don't, I don't know what the pin or whatever you said, pen test, pen track test. Yeah, he's doing on it.
+
+Unknown Speaker  1:18:24  
+He did say he wanted to do this type of test and that type of security test and stuff on and he's more than welcome to
+
+Unknown Speaker  1:18:31  
+Yeah, but yeah, I think I've done what I can do. I told him what we needed, as far as, you know, Ram and memory and power and access and everything. So
+
+Unknown Speaker  1:18:42  
+now, are you guys doing most of the building, or is who's doing most of the building of the
+
+Unknown Speaker  1:18:50  
+of the actual instance of for the file maker ginger SEC is Jasmine, I believe is her name,
+
+Unknown Speaker  1:18:57  
+the web servers, Steve did it and documented it very well and showed Jasmine exactly what he did so that, you know, she could support it. Basically, okay, so, and then as far as what goes on it, all that goes on the server. That's kind of when gender, sex steps out for file maker. It's going to be file maker server software. I'll install that. I'll configure that
+
+Unknown Speaker  1:19:23  
+for the web servers. Then it's what's called a LAMP stack. That is a Linux operating system, Apache, web server, my sequel, data, background and a PHP web when does when? When does that get done? He is doing that right now. He's got a good chunk of that done. He's on the M and the P now. He's got the L and the a completed, and the M and the P is what he's working on. But he's can't work, but so much more until he's got the FileMaker server. You know, we have file maker server up for him, because that's the next piece is to.
+
+Unknown Speaker  1:20:00  
+Take the API that's going to talk between the app and the file linker, background server,
+
+Unknown Speaker  1:20:05  
+but we need that server.
+
+Unknown Speaker  1:20:09  
+All right.
+
+Unknown Speaker  1:20:13  
+Okay, awesome. Thanks, Brian. We appreciate it. Yeah, hey, anytime I'm happy to help,
+
+Unknown Speaker  1:20:20  
+let me know if you need anything.
+
+Unknown Speaker  1:20:23  
+We don't have a meeting before I leave, so if I don't talk to everybody,
+
+Unknown Speaker  1:20:28  
+Alright, have a safe trip out there. Brian, yeah, have fun. Don't get don't get hijacked.
+
+Unknown Speaker  1:20:37  
+It's okay. I'm going further than you. So, ooh, where are you off to Greek islands? Oh, yeah, beautiful.
+
+Unknown Speaker  1:20:46  
+You enjoy that? Yeah,
+
+Unknown Speaker  1:20:53  
+talk to you and then
+
+Unknown Speaker  1:20:56  
+get out of out of Tom here. Okay, okay, sounds great. Talk
+
+Unknown Speaker  1:21:03  
+to you soon. Alrighty, bye, bye.
+
+Transcribed by https://otter.ai

@@ -1,0 +1,337 @@
+Speaker 1  0:00  
+This one, this one I might also bring up with Jake. I just wasn't sure, really, whose wheelhouse it would be more in. But ever since the like for like, the certificate issue, so it's been about two, two weeks ish, and it's not everyone. It's just some people so they're having issues. These are also officers that have, like already been established and been using the app and had no issues, but some of them are getting an error when they're trying to log in, and then when they try to reset their password, it says no email found I've gotten really good at fixing it, because I can go in on like my computer, go to app, dot, blue dispatch, calm, put in their email and send them the recovery link and and it works. I'm just curious if you have any ideas on why that would happen, because it's not everyone we were thinking maybe a, like a caching issue or or something. I'm not sure
+
+Speaker 2  1:06  
+it may be a deleting the app from their home screen and reinstalling it, type of thing that would help them.
+
+Speaker 1  1:15  
+I've had it work both ways, where some of them, honestly, once they reset their password, they can get in even with the same Yeah. At first it was, I was having them, you know, just start fresh and delete the the app and everything, yeah, yeah, yeah. But then one guy just did it, you know, without before I could send him that the install link, and it worked for him. So then I tried it with the next person, and it worked for them as well. So I don't know
+
+Speaker 2  1:45  
+that would be a Jake question When You Talk Tuesday, maybe, unless it becomes, you know, well,
+
+Speaker 1  1:51  
+it's a really, it's an easy fix. And I just have noticed it maybe about 1010, 11 and the last two weeks so, and that's just ones that reach out.
+
+Unknown Speaker  2:01  
+Yeah, the phone is is
+
+Speaker 2  2:05  
+caching the link that it goes to, but when you redo the password, it's probably clearing that cash and and making a new one. Yes, that's kind of what we were thinking. Yeah, because it was so it's probably having a problem validating the cert with the old information that it has cached. Yeah. So yeah, Jake's probably going to tell you the same thing. So deleting the thing off your home screen and reinstalling it will work for sure.
+
+Speaker 1  2:36  
+So that's so do that before I even try to reset the passwords,
+
+Unknown Speaker  2:42  
+just delete and reinstall.
+
+Speaker 2  2:44  
+In truth, it's more whatever you think the officers find easier.
+
+Speaker 1  2:49  
+Yeah, depends, but most of them, if they've already saved it to their home screen, then they've been through it before and it's not an issue, yeah?
+
+Speaker 2  2:59  
+But so yeah, whichever you
+
+Unknown Speaker  3:04  
+take a case by case.
+
+Unknown Speaker  3:05  
+Yeah, that's, that's, that's
+
+Speaker 2  3:08  
+whatever you think will be better for you know, I don't know to save face and whatever's easier for them.
+
+Speaker 1  3:14  
+Okay, Oh, perfect. I'll bring it up, but I just wanted your advice. So that's good. The next one also, I just found another. I'll comes over this with Jake as well. But you know the broadband Solomon one, and then when you put the east and west, or whatever it was, it took you to the right place. I found one where I put in the north and east, and then I also put in the zip code, like all three variations, and it still was pulling up that. SM, so I wasn't sure if that is because I thought that that was something we fixed.
+
+Speaker 2  3:55  
+Um, let me, let me ask. I know we, yeah, did, but I'm not sure if that was done on production. Yes, I was gonna ask that only done on dev, and we have not pushed, okay, okay, we haven't done a push of DEV in a little while.
+
+Speaker 1  4:18  
+Yes, it's true. I Honestly, the only thing that I have found with Dev and the settings issues, which I don't even know if they're really issues, it's the agency settings for Phoenix in particular, and only POV, and honestly, you know, it's that's the only thing that I've found where whether it's clicked or not clicked, POV, you can see it regardless. Now, the problem with that, though, is that even though the majority of Phoenix officers do not have POV, some of them do. And that's what makes it kind of hard to to know if we should fix that, or if that's a problem or an issue. Other than that, though, every test that
+
+Speaker 2  5:09  
+POV is unlocked is unchecked for the agency settings officers can still see jobs that have POV selected,
+
+Unknown Speaker  5:17  
+yes, but Phoenix only.
+
+Speaker 1  5:20  
+But it and it just kind of stinks, though, because I wish that, you know, the officers that do have POV selected in their profile are would be able to see. That's why it's,
+
+Unknown Speaker  5:31  
+you know, yeah, well,
+
+Speaker 2  5:34  
+it's, it's an all in kind of thing. So if, if the agency has it unselected, even if the officer has it selected, they shouldn't see them. Yes, yeah, no, the agency, it should be selected. If it's allowed at an agency level, you know, if any of their officers are allowed to do that, then it should be selected there,
+
+Unknown Speaker  5:54  
+right? I would
+
+Speaker 1  5:56  
+just let you know that for Phoenix is the only one that I've found that that that you know, wasn't working, everything else seemed pretty spot on.
+
+Unknown Speaker  6:04  
+C POV is selected.
+
+Speaker 1  6:07  
+Oh well, this is Harvard, I'm sorry, sorry. And Phoenix, I kind of have been playing around with so but I've tried it. I tried it both ways. It's probably, yeah, it's selected right now. But I, you know, I turned it on and off, and right now I have it on because that, that was probably the last thing that I tested. But other than that, like I, I kind of feel like dev can be pushed out as long as that. SM, I'll bring up the address that I found, where North, South, the
+
+Unknown Speaker  6:41  
+current officer app, yes, yes.
+
+Speaker 1  6:46  
+It'll be nice to not have that error message pop up, because even though it doesn't actually affect anything, officers feel like it does. So they're like it didn't let me clock in, but it did actually, you know, like it just looked like it didn't to them. Okay. Other than that, the only few like tiny things that we've found
+
+Unknown Speaker  7:11  
+that are file maker availability.
+
+Speaker 1  7:16  
+So when you're in here and you go to like search. I'll show you Navarro. You want to fly filters like it takes all the no records found and it takes all the names away. But I'll show you
+
+Unknown Speaker  7:34  
+stupid I'm sorry.
+
+Speaker 2  7:40  
+Well, those are, it's not taking the names away necessarily. It's showing you, I know records, you have to have no names, okay?
+
+Speaker 1  7:48  
+But if I was trying to search for, let's say I was trying to search for a long show. Yeah, it does that. So I spelled it correctly. You can see her right there. Apply Filters, and it says no, records
+
+Unknown Speaker  8:06  
+availability, search
+
+Unknown Speaker  8:10  
+by Officer, look into that.
+
+Speaker 1  8:12  
+Yeah, other weird saying was with reports. And as far as I can tell, it's just this combo. Let me know if, if I'm moving too fast, yeah,
+
+Unknown Speaker  8:26  
+one second, yeah.
+
+Speaker 1  8:34  
+Search by Officer, okay, all right. So Marissa, apparently, so she'll do like the customer, job invoicing.
+
+Unknown Speaker  8:55  
+Set it up here a little bit.
+
+Speaker 1  9:01  
+So she'll run the report, because she'll have this one open, and then sometimes she'll open up another one. I'll show you real quick. So hold
+
+Unknown Speaker  9:09  
+on, before you get off of that screen, yes,
+
+Speaker 2  9:13  
+about three quarters of the way down there's a little Yeah, the little icon that looks like a paper with a note, yep, if you click on Yeah, it's the officer notes that you guys were asking.
+
+Speaker 1  9:23  
+Oh, thank you. Is that on?
+
+Speaker 2  9:26  
+No, I haven't written it in Trello, but
+
+Speaker 1  9:30  
+what about is it on the pay report too, or whichever be.
+
+Unknown Speaker  9:35  
+Okay, cool, the pay report, but yeah, it should be okay.
+
+Speaker 1  9:40  
+I will, that's awesome. I will let them know. They'll be excited that they don't have to, you know, search for it. Let's see. Okay, so she's on here, says customer, job, invoice, and that's good. All these are up here. And then she'll, sometimes, she'll have, apparently, two open. So she'll go to. The hours needed. I think so once she said she'll hit run, oh,
+
+Unknown Speaker  10:04  
+don't do that.
+
+Speaker 1  10:06  
+She does this, apparently, all the time, and this disappears, and then it oh, well, that's great. So for hers, it even changed the title.
+
+Speaker 2  10:15  
+It does because it's using a global variable to set the title stuff. So it's,
+
+Unknown Speaker  10:24  
+it's not that you're going to have to open at a time.
+
+Unknown Speaker  10:27  
+Okay, so
+
+Unknown Speaker  10:30  
+I'll let her know, but
+
+Speaker 1  10:35  
+I think she likes them both open, because, you know, she'll do two things at once, and she likes, not, you know, doing, like, the share, because it's interactive you can, you know, kind of like, yeah, get to whatever you need to do. Is that a possibility in the future to have to open, or what's
+
+Speaker 2  10:54  
+the yes, it's, it's just got to be tired, that it was not
+
+Speaker 1  10:58  
+okay. Yeah, I didn't know she did that.
+
+Unknown Speaker  11:00  
+It was news to me.
+
+Speaker 2  11:03  
+Yeah, there's probably a couple things that I have to change to make it work with multiple windows.
+
+Speaker 1  11:10  
+Yeah, don't know how dire it is. This is the first I've ever heard of it. So it may not be something she does all the time, I guess I'll find out, but I've never heard that that was an issue. So two days ago, one
+
+Unknown Speaker  11:30  
+second I note this
+
+Unknown Speaker  11:34  
+make able to move
+
+Speaker 2  11:39  
+to dashboard. Dashboards open.
+
+Unknown Speaker  11:49  
+Take time or title needs to work differently. I
+
+Unknown Speaker  12:05  
+to work different.
+
+Speaker 2  12:16  
+Do I have a go on that and how high is a priority. That's, that's not small. I mean, it's not huge, but it's not 15 minutes, either that's, that's probably a couple hours for me to get that to work. Or, okay, I will a couple is two, probably more, like four.
+
+Speaker 1  12:36  
+I will get some more insight on how important that is, and like, when, like, where it sets on the priority, because I this is completely news to me. And clearly, if it wasn't programmed like this, then we would have known about it, you think, you know, a long time ago, yeah, so I'll find out. And do you want me to email you or just wait till just think you know, like, let you know when you
+
+Unknown Speaker  13:03  
+get back from vacation.
+
+Speaker 2  13:04  
+Yeah, that's fine. You can, you can email me if you'd like. I probably won't touch it. Tomorrow's my last day, so and I'm going to be spending a good amount of tomorrow, truthfully, getting all of my co workers prepped to deal with any emergencies that happen with any of my clients while I'm gone, so I'm not going to be doing a lot of developing tomorrow.
+
+Unknown Speaker  13:26  
+Gotcha. No problem.
+
+Speaker 2  13:29  
+I also wanted to circle back a couple weeks ago, we were discussing, there's my note on that.
+
+Unknown Speaker  13:42  
+I'll officer, yeah,
+
+Speaker 2  13:44  
+officer, like denote as a supervisor and assign officers to their supervisor.
+
+Unknown Speaker  13:52  
+I have not gotten because
+
+Speaker 1  13:54  
+there's yeah, I've not gotten a complete, clear answer on that's why I wanted you to hold off. Didn't want you to, you know, put time into something that, because I had kind of two different,
+
+Speaker 1  14:11  
+different ideas from different people, so I wanted to get a clear vision before I had you work on it. And I still actually don't know, but I've been thinking about it.
+
+Speaker 2  14:21  
+Yeah, no, I just, I, I actually write everything down, or put little circles beside them and mark off as I get them done. So any circles that don't have a mark in them, I, you know, it irritates me. I go back and I'm like, Okay,
+
+Unknown Speaker  14:36  
+I'll try to get that I do the same or cross it off as I'm not going to do it.
+
+Speaker 1  14:43  
+They took too long. No problem, I will. I'll try to figure that out. It is still on my list. Too good.
+
+Speaker 2  14:50  
+Yes, we both have many page lists going. We do. Yeah, I had to switch to a new I filled up a five subject notebook and had to buy a new one. Oh, my God.
+
+Speaker 1  15:00  
+Gosh, I started handwriting. Now the computer is just better for me, because I can, like, copy and
+
+Unknown Speaker  15:05  
+paste, but I get it.
+
+Speaker 1  15:09  
+The only other thing I wanted to show you, which not high priority. Just thought it was weird. Remember when we were talking about when she runs that pay report and I comes myself?
+
+Speaker 2  15:21  
+Yes, I need to. I was looking at that yesterday, some I need. The problem is I need to run that set payroll date script, okay? And I don't want to run it on stuff that's, you know, not ready to be run on or whatever. So what I need probably, is for Lori, or somebody over there to say, okay, you know, search for this date range or something, and, you know, run that report, and then you're okay to, you know, set pay date on all of them that you find or something, and so I can do it for them once, okay, and got it through the process and actually see it happen myself. I think I know what what's happening, but I need to see to make sure before I figure out how I'm going to work around that.
+
+Unknown Speaker  16:18  
+No problem.
+
+Speaker 1  16:19  
+So imagine it'll be after you get back from your vacation. So we'll just follow up when you get back.
+
+Speaker 2  16:25  
+Unless she says something to me today in the next, you know, two, two and a half hours, she
+
+Speaker 1  16:30  
+already ran it, so I'm guessing it wouldn't be, yeah, maybe two and a half. But it's, as far as I can see, it doesn't affect anything. Because if I were to make a like, a note in here, it does switch back, which I also find strange.
+
+Speaker 2  16:45  
+But what it's what? So it gets the value, the new and the old value based off of a differential of what came before it. But if it's working wrong, when it goes to say, what is the modification before it for this job or this assignment, whatever, then you're going to get a problem. It's going to think everything changed, because it's looking at a different one from a totally different record. I have a feeling that's what I'm doing, is called a replace so it's finding all of the records that I'm going to, you know, set the date for, and then it's just doing it in one big go. And I have a feeling it's not triggering and running the triggering and running the entire modification logging for each record, necessarily so it ends up on a different record and thinking that it's comparing to a different job than it actually is.
+
+Unknown Speaker  17:45  
+But again, I need to see how that happens.
+
+Unknown Speaker  17:47  
+So, yeah, okay, to fix it. Cool.
+
+Speaker 1  17:52  
+Well, that is interesting, actually, okay. I think that's all that I had.
+
+Speaker 2  17:59  
+Sometimes we were actually brought into this a decent amount of stuff with file maker. Sometimes file maker is too fast for file maker, so it's, you know, you're telling it to loop through. You're like, for every record you you know, in this list, go to that record and do this process and then go to the next record. Well, sometimes it doesn't finish that damn process before it goes to the next record. It's running faster than itself, and you actually have to build in a pause to say, Okay, give this time to finish what it's doing before you go to the next iterations. It's very odd, but it does seem to happen, especially when you're calling, although, in this case, we're not calling any outside like plugin or an API or something like that, yeah, just usually when this type of stuff happens, but, but that modification log stuff does have to run, and it's not being necessarily scripted the way I'm doing it now. So, but I can, I can talk geeky, or I can just tell you, I can handle it. I just need to see exactly what.
+
+Unknown Speaker  19:07  
+Yeah, I honestly think it's extremely interesting,
+
+Unknown Speaker  19:10  
+so I don't mind it. But
+
+Speaker 1  19:13  
+okay, well, I don't, I don't have anything else. I'll try to get back to you on the supervisor, and then we'll set a good time for you to run the pay date for them.
+
+Speaker 2  19:25  
+And also get me a priority on the multiple dashboards.
+
+Speaker 1  19:30  
+Yes, I'll do that too. It's on my list. So I
+
+Speaker 2  19:34  
+mean, I've, I'm going to be giving you guys some time as far as fixing some things that is on my very long list
+
+Unknown Speaker  19:43  
+today and some tomorrow,
+
+Speaker 2  19:47  
+but most of it's going to be project management stuff, and I wouldn't expect much to happen before I get back. As far as this stuff's concerned. Okay, no problem. If you have any you know, more urgent problems, of course, you. Jake. You can tell Jake on Tuesday, or just tell Jake, you know, whenever, if it's a really urgent problem, but he's going to be the guy looking after you while I'm going,
+
+Speaker 1  20:11  
+that was my next question. Was it? You know, hopefully nothing happens, but heaven forbid something does happen, is Jake? Jake is who we reach out to.
+
+Speaker 2  20:18  
+Jake is who you reach out to. Now I've, I've tried to help you guys, when I can, on a weekend or a night, I can't say, Jake will do the same. He's, he's not required to. So got it. He's, he's, he's a nine to five guy, and that's, that's supposedly what I am. I'm just nice.
+
+Unknown Speaker  20:40  
+No, nice.
+
+Speaker 2  20:44  
+No problem. Just, just want to make sure, you know, I've tried to answer with you guys, if you have, you know, some malfunction on a Saturday, Jake, very well may not, I am physically back in not this Friday, but next Friday night. So not this weekend coming up, but the next weekend after, technically I'm home. Okay, of course, I'm not working again until that Monday, but I technically will be home this next weekend, not the one coming up, but the weekend after I get back that Friday, the first in the middle of the night. So, oh, okay,
+
+Speaker 1  21:25  
+hopefully nothing like you know, we just had something happen. So hopefully we have a few weeks too. Yeah, hopefully, because something else
+
+Speaker 2  21:33  
+it sucks. Neither usually I get one of my parents to give me a ride, but they're both really old, drive at night, and my Yeah, flight leaves at six o'clock in the morning, so they can't drive me, you know, get me there three, four o'clock in the morning that I need to be there. And then the flight gets back on the first at midnight, so they can't come pick me up in the middle of the night. I'm like, terrible.
+
+Speaker 1  21:57  
+Long term parking is not cheap, yes, not not fun, alrighty, sorry, alright.
+
+Unknown Speaker  22:05  
+Well, thank you so much for taking the time. You're
+
+Speaker 2  22:07  
+very welcome. Yeah, if you have anything else, we'll, we'll wrap this up, and I'll, I'll look into what I have to look into, and you look into what you have to look into, and we'll
+
+Speaker 1  22:19  
+move perfect. Sounds good. All right, all right, thank you.
+
+Unknown Speaker  22:23  
+Yes, ma'am, bye, bye.
+
+Transcribed by https://otter.ai

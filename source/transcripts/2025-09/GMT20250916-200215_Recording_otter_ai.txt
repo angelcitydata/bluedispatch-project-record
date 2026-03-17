@@ -1,0 +1,580 @@
+Speaker 1  0:00  
+So all right, I want to start today, making sure we know what everybody knows, what the plan is. So we've we talked yesterday in some length, and Bonnie gave the green light from your guys side and ginger sex side. So we are planning to make switches and servers and such for you guys to be down tomorrow morning
+
+Unknown Speaker  0:32  
+and make these switches again.
+
+Speaker 1  0:35  
+The plan is to have you back online by 6am your time probably be off somewhere between two to three hours. So either from, you know, from somewhere after three to,
+
+Unknown Speaker  0:53  
+I think, hold on. Let me count again I gotta do. I was
+
+Speaker 1  1:01  
+planning on starting somewhere around seven my time, so four and finishing up by six. So that's two hours. Okay, down four, yes. So the first hour is going to be me doing all the file maker stuff. The second hour is going to be all the DNS repointing and FM better forms, sites, repointing and then testing it all. And I did hear back, Ashley, we did finally hear back from FM better forms. They are going to have somebody available for us before 6am to do that piece. If it needs to be done, I can say we found out in the last couple of weeks that they introduced a new Oh, I'm sorry I see a chat coming through. They introduced a or they did a new update about two weeks ago, and apparently that update introduced a new bug, and they're not clearing session tables automatically. When which makes it which makes it have a problem, connect with file maker when file maker has been restarted. So when we've had problems and we've restarted your FileMaker server, that's why your FileMaker scheduler system came back up, but the officer app didn't. And we've, you know, we finally figured out that's what was happening, and they have a workaround for it, but they don't technically have a fix for it yet to make it work automatically again. So they are working on that, but we know how to we know what the workaround is, which is basically they go in and clear out your session records and some table in their system, and then it works again. So I'm not quite prepared, because I don't plan on necessarily restarting the AWS server after we make this move. But still, just in case, we are going to be taking down the server software, not the machine, you know, not restarting machine, but taking down the FileMaker server software, and moving new files up and everything. I don't know if that'll trigger this problem again, but just in case, they will be prepared. So that is the complete plan. And then I got emailed 1520 minutes ago from Jasmine at ginger sec, asking about FileMaker versioning and such, and Bonnie would like to meet and discuss with ginger SEC me, and I'm assuming, Joe, you're on that email. I saw that. So that call will be after we do this. Change is this so am I to take this email as hold off on what I plan on doing tomorrow, or am I continuing with our plan?
+
+Speaker 2  3:57  
+Um, you know what? Let me, since we're on the call, let me put myself on mute. I'm going to call Bonnie and see exactly what she wants to do with that. So give me a second. No problem,
+
+Speaker 1  4:10  
+Ashley. I'll go ahead and tell you, because you'd probably be the person that'd be in the front of this. So after 6am your time tomorrow morning, when you guys come in tomorrow, if we do go forward with the switch and everything, you got to make sure that all of your people are going to the when they open file maker, they have to add, if they don't already have that AWS host, which is admin, Okay, file maker.com So that'll be your production after tomorrow morning, if we go ahead, that's so I plan on putting so the when you open your scheduler system, first thing that drops you on is the site detail screen. That just happens to be the first screen that I plan on putting a big red like Dev. Mode. It's going to say dev mode on that screen, big letters.
+
+Speaker 3  5:03  
+If they log into the normal way,
+
+Speaker 1  5:06  
+yeah, if they log into the what's now the normal way, what you're logging into now, because that's going to be the development version, and we don't want you guys working on that. Yeah, you'll be testing on that for us. You know, when we do something new, but that's, that's not where you do your you know, your normal daily things
+
+Speaker 3  5:22  
+when they if I have them, get to the dev or admin dot FileMaker. Are they gonna have? Are we gonna have to go to hosts every time and then pick which one? Or is there a way to favorite it? We can talk about it later if you want.
+
+Speaker 1  5:36  
+Yeah, you can add it. You add it to your favorites. That's how you do. You open up hosts and then that plus near the top left, you click that, you add it there, and then boom, it's on your favorites. And once you've connected to it, it'll be in your recents also true.
+
+Unknown Speaker  5:53  
+So yeah, it'll be in both places.
+
+Speaker 2  5:58  
+I just talked to Bonnie Brian, yeah, we're still, we're still, we're still scheduled to go ahead and move everything over tomorrow.
+
+Speaker 1  6:03  
+Okay, good. So I will, that's our schedule, and I will let my team know, and we will be doing that tomorrow morning.
+
+Unknown Speaker  6:13  
+All right, that
+
+Speaker 1  6:16  
+is really the only update I have after talking yesterday, because it's not like it's been forever, we're moving forward and flinging things around. Oh, I did. I was actually just before I came to this call on the phone with Jeremy, who is the person who did all the mapping stuff on your agency website. And after we do our move tomorrow, I will have him start fairly shortly, probably by the end of the week, start developing that mapping, all that mapping feature, into FileMaker. So, so that work will get started. He can get that in there, that way. Of course, we get that tested, blah, blah, blah, moved up to your production. And then from then on, when you're scheduling jobs, you know, Ashley and her team is scheduling jobs. They're going to be using that map instead of just typing in an address, because we're we definitely need coordinates, lat and long for the native app once we get there, once we get that live. So I want to get that into place. Already talked to him and made him clear a little bit of room on his plate for that. Okay, I would say you're you're updated, unless you have any thoughts or questions on that or something I missed outside of Ashley time,
+
+Speaker 2  7:41  
+I wouldn't. Oh, go ahead. No, you go first. I was gonna say, from my end, I think we're good. I think it covers all our bases for for tomorrow, and I think we're ready.
+
+Unknown Speaker  7:50  
+Sweet and Miss Ashley,
+
+Speaker 3  7:53  
+I was gonna say, so one of the one thing, so in case anything does go wrong, Bonnie was asking me if I should print out, like, the schedules, you know, like our scheduler, there's a it's there a backup, like, just in case something happens.
+
+Speaker 1  8:08  
+Yes, our backup plan is, we don't delete anything. We're going to keep it on the side for a good while. And if stuff falls apart, then we go back to what's been working, or mostly working, which is put everything back on your your current server, and point everything back to it. So in levels of risk, I would say, having access to file maker and you guys be able to do what you do, is very low risk of there being a problem with that the titles and as now as for the web stuffs, specifically the officer web app, I don't think it's a high risk, but it is higher because there's just more moving parts and more people involved. But as far as you guys being able to sign into FileMaker tomorrow and do your thing. That's that's very, very low risk. I'd say less than 1%
+
+Unknown Speaker  9:08  
+you know that happening,
+
+Speaker 1  9:11  
+so I think you'll be good there. And you know, again, yes, I don't, I'm not deleting any of your data, any of your backups. You know, all that stuff will be set aside and be ready in case. You know, everything catches on fire.
+
+Unknown Speaker  9:26  
+Absolutely, okay, perfect. Thank you.
+
+Speaker 1  9:32  
+Um, we don't have anything else in the update department. We're ready to hand it over to Miss Ashley,
+
+Unknown Speaker  9:43  
+awesome. Okay, so the the
+
+Speaker 3  9:50  
+mod log for AWS, it is in UTC, yep. Is there going to be an easier way to convert? I'm just curious. Is because I understand why it does. I'm just curious if there is a workaround. It's like art at the bottom of the screen, you know, it says 112 or whatever time it actually is, but the mod log is all in in the
+
+Unknown Speaker  10:15  
+YouTube, yeah.
+
+Speaker 3  10:21  
+I mean, right now I'm, I'm usually the one that is doing it, but,
+
+Speaker 1  10:28  
+I mean, I maybe could
+
+Unknown Speaker  10:34  
+doing it is not
+
+Speaker 1  10:37  
+the easiest thing in the world. It's not the hardest, necessarily. But problem is, I mean, it's, it's just a minus, however many hours I believe you guys are either going to be seven or eight, depending most people, if you weren't in Arizona, it would be easy. I would just tell you it's minus this, because for East Coast, it is always minus five, because it does daylight savings, just like North Carolina does. But since Arizona doesn't, it changes and doing a way that that it'll change automatically without someone having to tell it, you know, when we drop the clock back or drop the clock forward, what you guys don't but without having to manually do that, it's not the easiest, and I'd hate to, I'd hate to like because there are services API's that'll give you that number, and they're cheap, but they cost money. And I just this is way too simple of a thing to tell you how many hours behind UTC you are to pay any money for it. I refuse to try to pay any money just to see if you're seven or eight, which is the two that you would be okay.
+
+Speaker 3  12:01  
+I mean, I will, we can see how it goes. I just, I know this is going to be something that's brought up to me.
+
+Speaker 1  12:08  
+Yeah, we can, we can revisit it again when we're when we're not so frazzled with the pedal on the metal and 15 different, you know, fires going okay, okay, it does in the end, it comes down to something that simple, are you minus seven or minus eight? Right? Now you're minus eight. Come November, you'll be minus seven, right?
+
+Speaker 3  12:31  
+Okay, I will put that down. We talked about transfer time. That's good. I will have everyone do the make sure that they have the admin, the host, the new host, so that they run into the right one. Are you going to email like info or anything?
+
+Speaker 1  12:52  
+Okay? I mean, I can email it'll probably be like you Joe, Bonnie, you know, but I'll send out an email to you guys knowing when it's done and tested and we officially feel it's up, it'll probably be pretty close to six. I want to do it before six. That's kind of the deadline I've set for myself, but I want to have as much time to test and muck around on it as possible before I give you guys the thumbs up. Gotcha.
+
+Speaker 3  13:21  
+Okay, oh, must. Oh, the agency for just a quick question for the GIS file, did they? Did he say if there was, like, a specific format, but he wants it in, I know that file, anything?
+
+Speaker 1  13:37  
+He's never worked with files, so he doesn't know,
+
+Unknown Speaker  13:43  
+okay, just get what I can get. Yeah,
+
+Speaker 1  13:45  
+get what you can get, and he'll learn based off of what example you handed him. And then that'll probably end up being the format we require.
+
+Speaker 3  13:53  
+All right, that makes sense. I mean, I like, I found some online for the bigger departments like Peoria and Glendale. But as for smaller ones, like Florence, that one, I would need him to get because it was not readily available for me online. So I was just curious if you had a reference.
+
+Speaker 1  14:17  
+No, not at this point. It's, it's sort of something new we'll be learning.
+
+Unknown Speaker  14:22  
+Okay, the next thing
+
+Unknown Speaker  14:27  
+this one is for the client.
+
+Speaker 3  14:35  
+The client like landing page. They were wondering if we are able to
+
+Unknown Speaker  14:43  
+client land, you mean on the agency app?
+
+Speaker 3  14:45  
+Yes, yeah, just like that login Well, it's more like that login page where you put in your username and password, password.
+
+Speaker 2  14:58  
+Hey, Brian and Ashley, sorry and. In fact, but just quickly here, Tom just sent me an email. He's trying to do a scan on the server, but it's showing offline, and he wants to know if it's able to be scanned.
+
+Unknown Speaker  15:14  
+Don't know what that means, but let me yeah,
+
+Speaker 1  15:21  
+maybe not. I told him, if he's doing what I think he's doing, I asked him kindly not to do that on a file maker server.
+
+Speaker 2  15:33  
+It looks like he just sent you that email. Gosh, probably seven minutes ago. It looks like he just came through.
+
+Speaker 1  15:40  
+We're trying to do another scan of the server. It's showing offline. Well, it's not offline because I can get to your FileMaker system on there.
+
+Unknown Speaker  15:55  
+Yeah, I'll,
+
+Speaker 1  15:59  
+if you'd like, I can send an email going, No, it's there. But that's about all I could say me, because, yeah, I just got your FileMaker system on AWS right here. It's there. So, yeah, sure I can. I can send that email over. I don't know. It seemed to be up for me. I'm going to double check by actually, actually attaching, you know, with Microsoft remote desktop, so I can actually see the server, not just something that I know is there.
+
+Unknown Speaker  16:36  
+Okay, that's about the best I can do.
+
+Speaker 2  16:39  
+Okay, yeah, I don't, I don't know what he's talking about, but at
+
+Unknown Speaker  16:44  
+least you got your basis coffin on your end.
+
+Speaker 1  16:46  
+Yeah, it's there, and it's, it's running. So I don't know what he's scanning, but if I go in there, in the first thing in the morning, and file makers closed and files are corrupt. I'm I'm going to abort this change and be like, Yeah, that's what happens when you security scan an open Run socket.
+
+Unknown Speaker  17:14  
+So we'll see. Okay,
+
+Unknown Speaker  17:19  
+okay, I'm sorry. Miss Ashley, so the
+
+Speaker 3  17:20  
+login No, you're good, yeah, here I found it. So this is the one that we created, kind of for the client side, and I realized that. But is there any way to make the agency login page look more similar to this, like coloring font
+
+Unknown Speaker  17:47  
+this, what do you call that? Sorry,
+
+Speaker 1  17:51  
+I would have to ask Jake. I know I think the login screen is not something that we have complete control over. It's reforms we can just kind of pass it a logo and a name, but I don't know if we have control to you know, change the background and change the font of it and all that kind of stuff. I can talk to Jake if you want to send me a screenshot or some way to access
+
+Unknown Speaker  18:27  
+okay? I can do that
+
+Speaker 1  18:28  
+that screen, yeah. I mean, just a screenshot would be fine, or save it to PDF, if it's Canva or something, would be fine. But I can, I can show it to Jake. I don't think we have that much control over the login screen. I really don't, but I'll verify that.
+
+Speaker 3  18:46  
+Okay, I was just told. Someone just asked me, this is not regarding this. Sorry. She was like asking me if there's any reason why our system would be going extremely slow right now, I thought maybe I don't know if it's related to what you guys were just talking about with the offline but or the scan.
+
+Speaker 1  19:08  
+No, no, that's the AWS server that we're talking about there. So that's not your coincidence. Yeah, coincidence. I don't know a lot of people using it right now.
+
+Unknown Speaker  19:19  
+Time. Okay,
+
+Speaker 1  19:26  
+you know, one of the, one of the many reasons why we need this over on the AWS server, it just, it just has so much more power,
+
+Speaker 3  19:35  
+yeah, the last few days, Well, yesterday was probably the worst I've ever seen. It like we weren't. We were hardly able to do anything.
+
+Unknown Speaker  19:45  
+But they saw, I'll take a screenshot of this
+
+Speaker 1  19:48  
+coming from the other side of the country, and there's this fastest, faster for me, because I'm on it right now, and I was just doing a search, and I could do it in. Their search here, it's not that bad at all.
+
+Speaker 1  20:10  
+Boom. I mean, I just searched for an officer, but I could open the dashboard, I bet you. I mean, yours is still loading.
+
+Speaker 3  20:19  
+This is how the studio, at least right, like leading up to when I emailed you, before you restarted it, it was like this, but for every screen, so putting in jobs, even just like moving from one day to the next on the 16th to the 17th, it was good. So still,
+
+Unknown Speaker  20:40  
+okay, so, yeah, mine's
+
+Speaker 1  20:44  
+Okay, yeah, doing that, opening up the dashboard has taken a little longer than I would like, Yeah, I've
+
+Speaker 3  20:52  
+been just trying to put in a job right now. It's just not behaving.
+
+Unknown Speaker  20:58  
+Landing Page, okay, so I'll send that over to you
+
+Unknown Speaker  21:02  
+on the scheduler, not Oh, well, this could be fun.
+
+Unknown Speaker  21:11  
+Assigning contact.
+
+Speaker 3  21:15  
+We talked about rooms could take a while if every click is going to take a minute assigning contact. So I don't know if we talked about this or if it's on your list, but having the cursor automatically be here used to but now it's gone. Now it doesn't, yeah, I don't know. I don't know when that happened, and I know for a fact that that was fixed. Do looks like it's, oh, I don't know if they're connected, but on this job assignment detail page, but then also,
+
+Speaker 3  21:57  
+nope, job location detail page and job assignment page. Are those two linked? Or would you have to do those separately?
+
+Unknown Speaker  22:03  
+Sorry, the which page and the which page, this
+
+Speaker 3  22:05  
+page, the job location detail and then the job assignment,
+
+Speaker 1  22:12  
+job location detail in that What about them? You want to be able to navigate between them?
+
+Unknown Speaker  22:18  
+No, no, the cursor.
+
+Speaker 3  22:20  
+Oh, showing, I don't know if you fix one page, are they linked? Or do you have to fix them on, oh, the
+
+Unknown Speaker  22:30  
+opening, the contact thing that's,
+
+Speaker 1  22:35  
+I don't think they're linked. No, okay. It takes you to the same screen, but it comes from two different places in two different coatings. So I would have to do that in two different places. Perfect.
+
+Speaker 3  22:46  
+Okay, so both places would need the cursor. Yes, I know we talked about the secondary contact, not as pressing, but just having a way to remove it if need be.
+
+Speaker 1  22:58  
+Yep, yeah, I've got all this on my list that I would love, love, love
+
+Speaker 3  23:03  
+to get I know, I know, love to next one is also an oldie, but a goodie. The mask has cancelation email.
+
+Unknown Speaker  23:12  
+I thought I'd gotten that one fixed. It looks
+
+Speaker 3  23:15  
+like it's it looks like it's 14. It looks like it, you know, kind of flashes like it's going through all of the four assignments, or however many there are, but it just never comes through on the email
+
+Speaker 1  23:30  
+right? Put some air trapping in there, maybe, and see where the What the heck. Maybe it's not sending out like the sntps that you actually email outgoing is having an issue, I don't know,
+
+Speaker 3  23:44  
+yeah, because that was, I mean, it looked like it was working and it canceled correctly and everything. It was literally just the emails coming through, like I didn't get them, and info didn't get them. So you're probably right. Okay, correspondence, it's the same, just that last one, I think it's what? Clock out early. Yeah, clock out early isn't getting email or no recorded. It's getting email. It's not getting recorded on the correspondence. Page, mod, law, cancelation codes. I cannot remember if we went over this or not. I kind of feel like no, but just that's something you remember
+
+Unknown Speaker  24:33  
+one second. I'm not even
+
+Unknown Speaker  24:35  
+Yeah, no, take your time. Try to pull one up.
+
+Speaker 1  24:41  
+Another clock out one, but I thought that was another one I touched. But I know I don't it all starts to blur. Yeah, I know, if it's not on Trello, I probably didn't get to it, but I'll note it again to make sure my list is running over. I don't know, four pages or so or.
+
+Unknown Speaker  25:00  
+Know, I understand. Well,
+
+Speaker 3  25:05  
+maybe I can explain this one. So when we cancel it, so like, if it's a c5 or c1 or whatever cancelation code might be, is there a way to track that specific like, the number in the mod log right now it just says, you know, canceled,
+
+Unknown Speaker  25:26  
+trying to show you it's
+
+Speaker 3  25:33  
+just hard to know if someone changed it, what it was initially canceled from to it doesn't come up a lot. There was just one instance, I think it was either last week or maybe the week before, where we were trying to figure out when it switched from a c4 to receive five or vice versa. And I realized that it just says canceled. Doesn't say what, like, what it was canceled as
+
+Unknown Speaker  26:05  
+see Oh,
+
+Speaker 3  26:12  
+on the officer page, there's a box, a check box, that's called a watch button, or officer on watch, or something along those lines. Does that do anything?
+
+Speaker 1  26:28  
+I have absolutely no idea. When I we were originally looking at the system, you asked about it, and I said, I don't know. It's on your old layout, your old system.
+
+Speaker 3  26:38  
+So, yeah, in the old system, like, if we would have clicked that box and on the dashboard, like right here, it would be a different color. So we knew to watch out for that officer. But they had asked me if that one did anything and and I don't think it does on this system, as far as I know, I kind of tried to test
+
+Speaker 1  26:59  
+it do anything. Okay, I was, I was never really told what that button did.
+
+Unknown Speaker  27:06  
+Yeah, just
+
+Speaker 1  27:07  
+was there on the old screen. So I put it on this one that is absolutely as far as I went
+
+Speaker 3  27:13  
+find out what they want to do. I know that it kind of colored it for us, just to let us know to watch for this person. But, oh, man,
+
+Unknown Speaker  27:30  
+okay,
+
+Speaker 4  27:41  
+you didn't do the
+
+Speaker 3  28:00  
+next one I was going to show you, it's on the Reports page. So it was Lori was trying to pull the officer job worked report, and she only wanted Casa grand. But when you click Casa Grande as the So,
+
+Unknown Speaker  28:23  
+that's kind of beers I was
+
+Speaker 3  28:32  
+trying to see if it changed from canceled. All I did was cancel it, change the cancel code and my mod log turned out like this. That weird.
+
+Unknown Speaker  28:47  
+Open it again.
+
+Unknown Speaker  28:56  
+That looks like I clocked in and clocked out. I
+
+Speaker 1  29:03  
+They didn't change, though, yeah, changed between those two.
+
+Speaker 3  29:08  
+The ID is different. I just
+
+Speaker 3  29:17  
+want to make sure that that one wasn't in correspondence to the cancel code, which I don't think, I don't think it is because the one that I was specifically looking at was either c4 or c5
+
+Speaker 1  29:29  
+that is confirmed is that check box on the job.
+
+Unknown Speaker  29:32  
+Sorry, I meant this one. Sorry, sorry, oh,
+
+Unknown Speaker  29:36  
+it just says canceled. But if it could say
+
+Speaker 3  29:41  
+what it canceled too, yeah, if it can't, yeah, okay,
+
+Unknown Speaker  29:45  
+yeah, I've got that down. Cancel reason.
+
+Speaker 3  29:49  
+I don't know why it all I did was change it from a c1 to c2 for this one. I don't know why it came out like that. That's bizarre. I.
+
+Speaker 1  30:00  
+It, yeah. No, the ID is the same. Everything's the same. Well, this is
+
+Unknown Speaker  30:07  
+255, to 2560,
+
+Speaker 1  30:10  
+Jake, I can't see that with my terrible eyes. You're good, okay. I wonder, wonder what that ID is. I thought that was the primary key of the job assignment that shouldn't change ever, right?
+
+Speaker 4  30:25  
+That's bizarre, okay, yeah, there's
+
+Unknown Speaker  30:48  
+Oh, yeah, report, Sorry So she,
+
+Unknown Speaker  31:01  
+oh, I'll say that. Arizona. I
+
+Unknown Speaker  31:28  
+Yes, sorry, good.
+
+Speaker 3  31:33  
+Okay, so all she did was hit Casa grand, and then it clicks Avondale. Now, when you run the report, Avondale does not show up. But I just thought I would. I don't know why it it automatically clicks Avondale for you, and you can't, like unclick it. I did Avondale. I didn't do anything. It doesn't click any other ones. I think it's literally just, if I click Casa Grande. Does Avondale also get clicked?
+
+Speaker 3  32:08  
+I don't. It worked it like, Functionality wise, like when you hit Run Report. It only pulled me up Casa grand. But just wanted to point it out. I did not test any other ones yet. So I don't know if there's any other ones that do that, but I
+
+Unknown Speaker  32:23  
+don't know if there was a quicker way besides just trial and error.
+
+Speaker 1  32:29  
+No, I think I know what it is. I'll edit so. Casa Grande is its primary key. ID is 19. Evan Dale is nine. I think it's not taking the numbers as a whole. It's taking them as individual digits and deciding if it's selected. So when you select nine, it shows 19, you know, it thinks 19 is also and if you can find which one is 29 I bet you it's also check, you know,
+
+Unknown Speaker  33:05  
+so I can, I can fix that, though,
+
+Speaker 3  33:09  
+like this Agency idea right here, yes, you said 29 Yes.
+
+Unknown Speaker  33:22  
+I That's why, because
+
+Speaker 1  33:25  
+there isn't a 29 but 39 basically, anything that ends at a nine might, might do it also, but I'll look at it and fix that. I think I know
+
+Speaker 3  33:36  
+what to do. This one is probably going to be a one off. Let me let me know. Oh, Yeah, no, I'll find My job. Yeah.
+
+Speaker 1  34:14  
+Obtained I took it on day the big house thought that was jail.
+
+Unknown Speaker  34:39  
+But I'm ready. Noting I'm done
+
+Speaker 1  34:44  
+today, it has been me too, not a lot. I'm sure you're ready to be done.
+
+Speaker 3  34:51  
+You are. You are almost there. I am. I am not. Yeah.
+
+Speaker 1  35:00  
+Then I get to go watch my daughter play volleyball.
+
+Speaker 2  35:03  
+Aw, so that'd be a nice way to unwind. Brian, yeah,
+
+Speaker 1  35:11  
+bored out of my mind trying to act like I I'm paying.
+
+Unknown Speaker  35:17  
+Oh, my God, are you
+
+Unknown Speaker  35:24  
+this one? Okay, so he put in a job for the 11th.
+
+Speaker 3  35:30  
+Gets this one? No, of course, it's not that one. Sis one. And anyways, so he put it in and it wasn't coming up on the dashboard, which I was thought was weird, but then it, it had an officer assigned to it, and that officer was Jake cannon, and he's, he's someone we've used, we used to use says, like a, like a third party, he'd help us schedule. But you could see that there was an officer here. So when I clicked it, that's how I found out it was Jake cannon. But then there was other weird things. There was, it had, it was like the wrong year. There was a lot of weird things on here. It was can't see it, but it was already can't. There was a lot of weird things on there. So I know it's probably a one off, but see like it says lane closure from core media, like it was, I don't know. It's almost like it pulled some stuff from a different job in the past, years ago. I don't know how to show you what I saw when he's scheduled it?
+
+Speaker 1  36:43  
+Yeah, I don't either, although I do find it odd that the mod log showed a bunch from me back in, yeah, I believe is when I put the mod log in.
+
+Speaker 3  36:53  
+Yeah, this is who it brought up. It was like, already assigned to him, which I thought was strange, yeah, so I just had him cancel it and we put it in because there was, if
+
+Speaker 1  37:07  
+you get me, you get me another example that you don't have to immediately fix, so I can see it Okay, track it down.
+
+Speaker 3  37:16  
+What if we immediately fix, not fix it, but read, if we just didn't cancel it? Do you think that would have maybe given you enough to go on?
+
+Unknown Speaker  37:25  
+Or would you need to see just that as
+
+Speaker 1  37:28  
+long as, as long as canceling it doesn't clear out all the other stuff? You know, it
+
+Speaker 3  37:32  
+kind of canceling it looked like it did, because I got to see way more during but I'll put it on my I'll leave it there for if it happens again, because it did happen once before with us, that one's still on here too, but it it was just a weird it was weird. It was almost the same thing, but I'll bring it up again if I see it again. Okie dokie, put availability really quick.
+
+Unknown Speaker  38:06  
+I know we had fixed this because I know you fix this
+
+Speaker 3  38:10  
+two things with availability one, so when I pull it up, just pull it up, then it goes straight to this week. It's not auto or alphabetized. However, if I scroll a week forward and then scroll back, they're all auto alphabetized. But it used to be when you when you fix it before like it. As you pulled it up, it was Alpha. But also, if I search
+
+Unknown Speaker  38:46  
+it, gets
+
+Speaker 3  38:54  
+rid of the names again. I know you had fixed that previously.
+
+Speaker 1  38:59  
+Well that there is no way to fix that. That's,
+
+Speaker 3  39:01  
+oh, well, we you had done it to where, like, if I typed in someone's name, it would just pull them up. It would just pull Hunter up.
+
+Speaker 1  39:08  
+Well, it found nobody. That's why it's showing that no records found it found nobody that met that required.
+
+Speaker 3  39:17  
+So, like, you're saying, I needed to be way more specific, like Hunter Casey. I can't just type in one name because you had fixed it at some point you I was able to just type in Alonzo or or Bryant, and it would just pull up Alex Bryant teams as
+
+Unknown Speaker  39:41  
+it should. Yeah,
+
+Speaker 3  39:43  
+I don't remember. I don't know what you did, but there was something we did. Look at
+
+Unknown Speaker  39:47  
+it again, okay.
+
+Speaker 3  39:52  
+Oh, yeah, so it's just the alpha, and it's almost like, as soon as you go a week forward and then back, it does make everything Alpha. Ties, but just not the initial pull up, if that makes sense,
+
+Speaker 1  40:04  
+yeah, yeah, that's good. It's a different script. It's a different sorry.
+
+Unknown Speaker  40:13  
+Let me know when you're ready.
+
+Unknown Speaker  40:15  
+Yep. One second, she just
+
+Unknown Speaker  40:23  
+public good.
+
+Speaker 3  40:42  
+Yeah, okay, okay. The only other thing I wanted to touch on, so I know you were one of the things you're going to be doing is having when we're putting in jobs for scheduler, doing the Latin launch and pinning it on the map. I just wanted to make sure you're that this was still doable. So, like, if we pin it right, so like, Wigwam and Indian School, we put that in there because that's how we if I wanted to, like, look, look up the order on an email or anything like that. There's a way
+
+Speaker 1  41:14  
+after location name up. Well, okay, re it's actually going to be a recurring job location name. I mean, I don't know what we'll label it, job, name, whatever, but something that shows up instead of necessarily the address, yes, okay, that's a that's a concern,
+
+Unknown Speaker  41:34  
+that that was just one thing.
+
+Speaker 1  41:35  
+Truthfully, you're not going to be able to get it as exact as you think when you Yeah, on a marker onto an intersection or something, the chance of it coming up with exactly that, that naming, that you think it's going to be named. Yes, I don't know if you've noticed on agency, but it tends to when you drop a marker on an intersection, it and if you type ahead and ends up selecting it from the list. It almost always pulls up like east or west or north or south, for like which direction you would be heading if you hit the intersection in a certain way. I don't know why. I mean it's going to be both directions would be hitting that intersection, but it always seems to add an east or west to it, like it's picking the side of the road. So, yeah, yeah, that'll you'd like something that you can name to be there. And that's fine, perfect. It's absolutely planning in the planning.
+
+Speaker 3  42:36  
+Good, good. Um, I think that's all that I had. So I'll send you the picture to see if there's anything we can do for the agency sign in page,
+
+Speaker 1  42:51  
+and then, yeah, I really don't think there is, but I'm more than happy to ask, okay, perfect.
+
+Unknown Speaker  43:02  
+No, I think that's all I have.
+
+Unknown Speaker  43:05  
+Alrighty, then
+
+Speaker 1  43:10  
+Joe, Amanda, anybody have anything else they'd like to
+
+Unknown Speaker  43:14  
+point out, discuss, comment, question,
+
+Speaker 2  43:17  
+I think nothing on my end. Brian, I think we're good to go for tomorrow, other than this weird email that Tom sent in regards to scanning, I don't know if we can figure out what's going on there, but other than that, I think we're ready. All right,
+
+Speaker 1  43:31  
+yeah, I just opened up our inside knowledge base so I can get the password and everything I'm going to sign on. And as long as I can sign on to that server, like I think I can, I'm just going to be emailing them back, going, No, it's there. That's fair. Yeah, that's fair.
+
+Unknown Speaker  43:45  
+Absolutely no, no, tell you it's there. Here it is, you know.
+
+Speaker 1  43:49  
+So we'll see other than that. Yeah, I'll be, we'll be rolling tomorrow morning, and when you guys get in anytime after six, like I said, you'll want to use admin, dot blue dispatch.com to connect to scheduler, and you can test your web apps and such also. Okay, and remember once, once we do this, change tomorrow, everything that is considered production will be on AWS, meaning that's where you'll connect the scheduler and do your work there. That is where the officer app should go. That should be the the information that the officer web app is pulling from is the AWS server. And then the dev URL for the officer web apps will be pointed at what's currently, you know, your server in house. And then the same thing with agency, agency, dot blue dispatch.com will be looking at the AWS server, because that's going to be your production data, and then the other the dev URL will be pointed at your in house server. Okay, so everything's going to be pointed at something different, and hopefully everybody just. Not too confused. Officers shouldn't notice anything. You know, see your clients, your officers, and if you have any agencies using that agency app with the acceptance, with the exception of it being down, you know, in the morning, while we do change once it comes back up, they shouldn't see anything different. And they shouldn't notice that the data they're getting is from a different server. You know, it's not going to look any different to look any different
+
+Unknown Speaker  45:24  
+to them. Okay, awesome, alrighty.
+
+Speaker 1  45:28  
+Well, if that's all we got, everybody have a great day. And I don't know if we'll talk tomorrow, but I'll at least be sending out emails when we're done and such, and hopefully it's smooth. And then I did accept that phone call. Joe, I don't know if you're going to be on with Bonnie and ginger sex, so if you're, we'll make
+
+Speaker 2  45:48  
+it three days in a row. Brian, yay. All right, we'll see ya.
+
+Unknown Speaker  45:52  
+All right. Bye, everybody. Bye, bye. See.
+
+Transcribed by https://otter.ai

@@ -1,0 +1,142 @@
+Unknown Speaker  0:04  
+There we go. Recording started, perfect.
+
+Speaker 1  0:08  
+Okay, yeah, well, based off of the new approach that we're trying to take this, this call is not necessarily going to be about Ashley's fixes. It's going to be, I think, more about what you know, Brian and Jake, both of you guys have either worked on or things that you guys have already completed or fixed already from Tuesday's call, and we can jump on the GPS side of things as well. I got that document earlier, Brian, and we're reviewing it. We haven't sent it over to Bonnie or talked to her about it yet, okay, but I just want to, I was just curious if you guys had anything else that you wanted to add to that since we're on the call, or anything else that we could feed her to help her make her decision.
+
+Speaker 2  0:48  
+Um, not really. I think it was fairly comprehensive, unless you know we're definitely prepared to ask any or answer any questions. If you know there was something you need clarification on or or just didn't see on there, you know, that you'd have questions about, we'd be help, happy to help you out, answering any questions you may have. But other than that, I think it, I think it was fairly comprehensive on, you know, on where we're at and how we got here, and kind of what our options are,
+
+Speaker 1  1:18  
+yeah, yeah, absolutely. So. So in reviewing it, and the time that I've had the chance to do it, I know you guys gave us, I think it's three different options. And obviously you guys are leaning towards the native app. That's the one that makes the most sense out
+
+Speaker 2  1:32  
+of all of it, right? Yes, if, really, if, if GPS is kind of a, you know, if GPS working properly and tracking everything in between clocking in and clocking out, is a, you know, a top tier, tier feature, if it's a deal breaker, you know, then yes, that's kind of where we would lean, truthfully. Otherwise, I would say, Leave how we have it, and I want to, want to leave it how we have it, and then grow into the need for the native app later,
+
+Unknown Speaker  2:12  
+you know, is kind of really the other option, the
+
+Speaker 2  2:16  
+the other options that were put in, there were ways we can make it work, but that was really mostly to give you multiple options. You know, realistically, it's right. We don't like half assing things. So you we can leave it how it is and say that that, you know, that particular feature working in the way you'd like it to isn't something that's, you know, a deal breaker for now, or, Yes, it is a deal breaker and go for the native app is really the the best recommendations.
+
+Speaker 1  2:47  
+Okay, okay, yeah. And looking into it from, from our perspective, our plan here, we talked it over a little after the call on Tuesday, is, you know, to push over the development side once those, once those issues have been addressed as far as the current officer app, and kind of have that hold us over while working in tandem to get the native app working, that that's at least the idea of what we're looking at right now, yep, but that's the only thing I can think of that would, that would make the most sense, especially down the road, is having that native app, but at least something that's going to give us peace of mind is Knowing that we still have the officer app to use. And, like I said, hold us over and at least, you know, keep everybody using a app, you know. And yes, wait for the for the native to roll around, I think, at this point.
+
+Speaker 2  3:35  
+And plus, we can, you can kind of add into that, as you speak with with Bonnie, that pushing over the stuff that's currently in dev in the officer app will run GPS how it runs on there, which is still clock in and clock out, we'd have GPS positioning and maybe some in between, if they happen to be looking at it when it tries To make the call. But more to the point that is the that is the code that is going to make the agency app really work, meaning the agency settings and stuff actually controlling what jobs the officer sees on their list. So instead of it being hard coded like it was before, so actually allowing them to mess with the settings on what they want their officers to be able to see and take and knock so that that piece is in the dev and would be there. So it should make it should soften the blow, I guess, of moving forward with that for a temporary stopgap.
+
+Speaker 1  4:37  
+Yeah, absolutely. I think it will. And I think you know, talking about the development side of things. I don't know if you guys had a chance to at least start digging into some of those fixes that Ash already made, or if you guys got where you guys are looking at,
+
+Speaker 3  4:51  
+I think you the way you classified it is right. Start digging in is, is where we're at.
+
+Speaker 1  4:58  
+Okay, we'll make. Know, to that my end.
+
+Speaker 2  5:01  
+Yeah, I can't speak for Jake. I think all of the things that I've worked on, or at least that I've worked on, to the point that I'm ready for someone to test it, I have created the Trello cards and assigned to Ashley for testing some of them. She's already, you know, kind of past others. I will still waiting for the testing. But that doesn't mean that's all I have.
+
+Unknown Speaker  5:28  
+It's just the only things that are ready.
+
+Unknown Speaker  5:32  
+I do want to say,
+
+Speaker 2  5:35  
+maybe, maybe show it was hard to type it all out. So I wanted to be able to talk it through with Ashley, the the correspondence records and the filters, let me see if I can find the ones I had down here that didn't quite work here there. So the canceled, you know, you didn't see anything when you tried to filter by the correspondence by canceled that is fixed the early clock out is is done. When they clock out less than their their clock in and clock out time equals less than four hours. So that is when that message goes out, the notification, when they are clocking out more than an hour. You know past the past the plan time that does not have a notification behind it, so that's not making a record. And then the hours needed is not necessarily making a correspondence record when you send out. So if you send out one at a time from that report, it does make a correspondence record. But if you send out in bulk currently, it's not making a correspondence record. I wanted to ask if we really wanted to do that. Right now, that process is going to work fast. You know, if you want to send out an email to, you know, 30 people, or whatever, however many people are on that report. It does it in in one push, and file maker handles the fact that it's multiple emails going out, but we have to loop through and create records if we want to have it show up on the correspondence. And we can do that, but that's going to severely slow down that process. So I wanted to make sure you guys had a say in how important that was, that you see the hours needed emails in the correspondence, because it's really going to make that process take longer.
+
+Speaker 4  7:56  
+Yeah, that would definitely be something I'd want to ask Marissa as I mean, I don't typically look at those, so I don't really feel like I can answer that for her. I don't know if she ever goes back and reference it's, you know, like, uses that in any way. I don't know if it's necessarily needed, but I can ask her and get back to you, unless Lori knows off the top of her head of how important that is.
+
+Speaker 5  8:24  
+I don't believe it's important, but I'll verify with Marissa. I don't think we ever really go back and look at that, but let me verify with Marissa.
+
+Speaker 2  8:35  
+Okay, and then the last thing on that I did add, so if you're sending any type of email out where it brings up little email template screen and you can fill out what you know, write what you want, and then hit send. You'll notice near the top I've added a Type drop down so you can pick what type of correspondence it is when you're sending kind of those manual emails, and that's how they'll show up on the correspondence listing for you.
+
+Unknown Speaker  9:05  
+That's cool. Okay,
+
+Unknown Speaker  9:07  
+I'll pick that. I'll test that. That's interesting.
+
+Speaker 2  9:12  
+Yeah, so that should work most, if not all places. I mean, it'll definitely work. You can definitely select a type anywhere, but I'm not 100% sure. Everywhere you use it, it's going to attach it properly to say the officer, if you're I mean, if you're sending an email to like the customer, about an officer, it doesn't know what officer it's about so it can't attach it to the officer. You understand, yes, so, but any, any other place that should, you know, a job or something, it should attach it to the officer. It should know what officer goes to, and then you can pick the type so that it'll show up in your filtering.
+
+Unknown Speaker  9:58  
+Okay, awesome. I'll test that. Thank you.
+
+Speaker 2  10:00  
+You are very welcome, and I can make a card for that tomorrow, if you'd like just a quick card. It was just, it was really hard to try to type out, I get you. It was much easier to just talk it through. Yeah, I don't Yeah, like said everything else I think is covered in Trello cards already that I've done,
+
+Unknown Speaker  10:26  
+Jake, have you done any? Have you been able to finish just
+
+Speaker 3  10:29  
+putting pieces together? No, no, finishing just putting pieces together? Soon together.
+
+Speaker 2  10:33  
+Okay, so Jake's been able to dig back in. And he's got a he's got a strong list on Trello to work through. So I know he'll be busy and and I'm sure we'll, we'll update you through Trello as those move forward.
+
+Speaker 1  10:52  
+Okay, great. I think for me, the question I have in regards to the development side, I know you guys can't really ballpark it with these fixes that we still have to have, but we're hoping to probably get this rolled out, gosh, probably within the next couple of weeks, at the latest, at least make that transition over. Do you think that's
+
+Speaker 2  11:08  
+feasible? What do you mean this the
+
+Unknown Speaker  11:12  
+development side of the app, the fixes that are associated with it,
+
+Speaker 2  11:18  
+most of let me we'd have to look through Jake's list here. I'd need Jake to kind of look through most of them seem like they're not, you know, huge things that should take a lot of time.
+
+Speaker 3  11:32  
+But, yeah, I think so. I mean, that's a good question, but, you know, it looked to me, yes, it looks like that should be doable, but I obviously need you guys to, I mean, we said, like, we can't totally give an estimate, so just make sure, like, it'll be done two Fridays from now. I don't, I don't know for sure, but, yeah, relatively doable.
+
+Speaker 1  11:56  
+Okay, good, yeah, like I said, it'll kind of help us soften the blow as well when we do present it to Bonnie, saying, hey, you know the development side is on its way over to production side, while you're looking this over, reviewing it, and kind of just making that decision which route she wants to take with that. So it'll kind of help us on our end, sure,
+
+Speaker 2  12:13  
+and yeah, and it'll also help you get really get into the beta of the agency because I know you've had some agency officers in there looking at the agency stuff, right? But until we get the development stuff moved over in in the officer app, they can't really test the agency settings, which is a big part of the agency app. So I know the, as far as the I can say, as far as the reports are concerned, you know, making the screen and such is, is on Jake's plate, but the file maker portion, which is most of it realistically, Jeremy is working on that, and I should be getting an update from him By the end of the week. So tomorrow I'll tag him if he hasn't sent me anything to make sure I get an update on that.
+
+Speaker 1  13:09  
+Okay, great. Now, as far as you know what, Ashley, you might be able to answer this. I think we have the out of area that might that should start working as soon as we get dev over. Right? Yes, for what I remember, I was trying to
+
+Speaker 3  13:21  
+remember that. Yeah, that's, that's what's in live and testing right now.
+
+Speaker 1  13:26  
+Yeah, okay, perfect, because that's what Daniel it's something that our schedulers were asking about. I know it's something that's pretty salient at the top of their list, at least in regards to what
+
+Speaker 2  13:33  
+kind of part of the agency setting stuff is the area. Yeah, so that is sitting in dev, and as long as we get approval that it's working for you in dev, then yes, that would be, definitely be part of it when we move over.
+
+Speaker 1  14:06  
+Okay, as far as anything else, Ash, is there anything that you feel from Tuesday's call that has carried over here that is pretty important for us to make sure we keep as a high priority list for as far as hot fixes?
+
+Speaker 4  14:21  
+No, I definitely you nailed it with the dev stuff, knowing where we're at on that everything else would just be me repeating myself. So as long as they've got them in Trello cards, we should be good.
+
+Speaker 1  14:34  
+Okay, yeah, well, I think fellas, that's all we really have from our end, simple, short and sweet, and we just wait for the Trello card side of things, and we can go from there.
+
+Speaker 2  14:45  
+I love it. Yes, we'll, we'll continue to, you know, move forward on the fixes and things and such. And I'm continuing to move forward on on a prepping scope for the client stuff. Of the client app and, and we'll just keep marching.
+
+Speaker 1  15:05  
+Okay, great. Well, thanks, fellas. We appreciate it, and we'll give you our feedback as soon as we we have a chance to sit Bonnie down and go over everything and our options and and see where it goes.
+
+Speaker 3  15:15  
+Yeah, and if you guys have questions about the options, to just grab us. You know it's like a lot to kind of, it's a drinking from a fire hose a little bit. So if
+
+Speaker 2  15:26  
+you for sure, I tried my best to make sure it wasn't too techie, but, but this is some really technical stuff that we're talking so I couldn't lean in terms it, but so much because it really is technical things. So absolutely, if you guys have questions or thoughts, let us know. We'll be happy to try to shedding the light we can.
+
+Speaker 1  15:50  
+Yeah, absolutely, fellas, and we appreciate that. Like I said, I'm sure we will have some questions, but at least once we get the ball rolling with Bonnie and see what she comes up with, we'll, we'll reach back out. Alright, awesome. All right, guys, thanks and have a good weekend. Yep, talk to
+
+Speaker 2  16:05  
+you on Tuesday, bye, bye, bye.
+
+Transcribed by https://otter.ai

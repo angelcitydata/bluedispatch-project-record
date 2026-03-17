@@ -1,0 +1,529 @@
+Unknown Speaker  0:03  
+Happy Friday. Everybody? Happy Friday?
+
+Speaker 1  0:07  
+Yeah, I think we got everybody on board. Let me see if I'm missing anybody. Yeah, think we're Yeah, I think we're all here. Great, perfect. So as we sent you guys the agenda, obviously, earlier, I think what we'll do today, at least, is have Jake and Brian, you guys have been working a lot on the Trello cards, so we've been keeping an eye on that, and wanted to see if you guys could present us with whatever you guys have been working on, and a little more and a little more, I guess you could say cohesive manner, as opposed to just looking at the Trello cards. And then from there, we can jump right into the native app. That's what we got Bonnie on, because she has a ton of questions about it. And so that's where we're going to be heading. That's our path for you today.
+
+Speaker 2  0:50  
+Great to hear. I think Jake had informed me earlier in the week he's got a hard stop at, I guess, two o'clock your time?
+
+Speaker 3  1:00  
+Yeah, again, I'm meeting with the boss at two,
+
+Speaker 2  1:04  
+Alrighty, so, yeah, let's, let's try to forge ahead and see much we can get before he's got to leave. Jake, you want to start on the updates? Yeah, I have a lot. You've done more of the flashy stuff.
+
+Speaker 3  1:19  
+Yeah, let me I'm trying to sorry. It's, it's, it's helpful when I can go back in my activity in Trello, just because it reminds me all the stuff that I've done. So give me just a second.
+
+Unknown Speaker  1:34  
+Yeah, and you can
+
+Unknown Speaker  1:36  
+share with us too, if it helps, so we can
+
+Speaker 3  1:37  
+see too. I don't Sure. Yeah, I can do that. I'm a visual
+
+Speaker 4  1:42  
+sorry. I appreciate it.
+
+Unknown Speaker  1:45  
+Okay, so I,
+
+Speaker 3  1:48  
+I even like did this earlier to test it, but I forgot what I did. There was an act. Oh, activity.
+
+Speaker 4  1:56  
+Yes, I use the activity. I love that. That's how I can keep up with you guys. When I'm out for so long, off in other projects, and they come back and like, that's exactly what
+
+Speaker 3  2:05  
+I do. Yeah, see this? Okay, here we go. All right, I'm just gonna I showed you guys some updates the other day, but Bonnie hasn't seen them, so we have a bunch of stuff in the officer app that is cleaned up and improved. Let me see here, blue dispatch dot better. All right, let me do this and do do this. Okay? So we now have, oh, look at that. I requested an unbooking so that now works. Unbook request is now working the way that it should we also does that everybody's familiar with what I'm talking about, right?
+
+Unknown Speaker  3:09  
+Yeah, I believe so. I think everybody is aware
+
+Unknown Speaker  3:11  
+it worked for me too. Okay, cool.
+
+Speaker 3  3:15  
+And the maps now work. So when you click a map in here, it will load the right map. Let's see there it is. You can also now filter past jobs by month, so you're able to go like I want to go to April. I don't think I have anything in April, but I do in February. So I'm going to go back to February. There you go. So they can, they can. It should be a smaller data set. It should make those 408, errors, you know, it should lessen those. They can get back to the current month just by clicking the star button. I also added this officer notes area. This will show up in FileMaker,
+
+Unknown Speaker  4:08  
+and so those are getting synced now,
+
+Unknown Speaker  4:11  
+back and forth. You can see there it saved to FileMaker. Let's see,
+
+Speaker 5  4:18  
+oh, you know what? I didn't see that. I see there's that email us button, that email, Les,
+
+Speaker 3  4:23  
+yeah, that's new. Thank you. That what that does is that opens up an email in the user's default email app, kind of like this, and it drops in, you know, a subject that just says question regarding job ID, and then it drops in the job ID, and then just Hello, I have a question regarding the following job and it gives you just basic job information, ID, customer, date, Officer and location that can really include whatever you want from the data that. Just felt like a good place to start. So that now and that is only available to them in their I think, like active and past jobs. So I don't know that upcoming jobs has it? Let me just double check. Oh yeah, I put it in upcoming to it's not on home. So on the home, they can't just email about any job that they haven't taken yet. They have to book it, and then they can email, if that makes sense to you, great. If you think they should be able to email you about every job regardless of whether or not they've booked it, let me know. But you can see here, this job has I've requested an unbooking this job right here. I have not, but I'm going to, so I'll just go ahead and say, unbook the job. And you can see the button changes to request processing there. And now your request has been processed. So you can see these first two. They say request processing, and the rest of them all say unbook job.
+
+Unknown Speaker  6:07  
+Ashley, are we getting notification on those then
+
+Speaker 6  6:11  
+yes on the request, yeah, I tested that that that does work, and it comes through on email.
+
+Unknown Speaker  6:16  
+Okay, awesome. Um,
+
+Speaker 3  6:21  
+I am trying to think, oh yeah, sorting jobs. So the jobs now, gosh, I gotta get to my internet is being really brutal right now. Maybe there are none, okay, well, there's no jobs right now. So, but they do sort now ascending, meaning the earliest date is at the top and the latest date is at the bottom. And then they sub sort by time, ascending. So for example, if there were two jobs today and one started at 6am and one started at 10am and then there was more jobs tomorrow. What the way that it would sort would be today's jobs first, and it would sort 6am first, and then 10am second, and then it would move on to the next day. So I'm not exactly sure what it was doing before, but that's how it works now. So that that's an update, let me see here. Oh no, I don't want that. I want this. All right, a lot of stuff today on agency, so
+
+Unknown Speaker  7:42  
+let's go there.
+
+Unknown Speaker  7:54  
+Make sure I'm all up to date. Okay, cool
+
+Speaker 3  8:01  
+over on the jobs area. Now you'll notice that in this actions panel, before there was a release job everywhere. Now there's some logic on the release job if, for example, there's an officer who has been placed on the job, the agency can't release the job because there's someone on it. There's a couple other pieces of logic in there that were laid out in a Trello card somewhere that I don't remember, but that doesn't show up everywhere. Now, I also a big update is this quick view right here. So Ashley had mentioned that it's kind of annoying, like, for example, I'm going to put a date range on here of seven through 22 of this month. Okay, fine, whatever. Let's say I had added some filters, you know, officers, whatever. And I had a group of jobs that I was looking at. Well, Ashley mentioned that when you click into a job and you go to the job detail, when you click back, it resets everything. So like all your filters, don't, you know, you basically have to do all your filtering again. So what we did was give you this little quick view. And what that does is pulls open just a modal card. It has all the major job information on it. Ashley, I was able to get the map in there for you without taxing the page too much. So I thought that would be a welcomed addition. So I went ahead and did it. I don't know if there's any other information you need down here. Again, it's not really supposed to be the entire job, every single detail about the job, but the major stuff is all here. Let's see what else. Oh, okay, so. Uh, the officer assignment, that button goes away when a job has been completed. So there was a it wasn't necessarily a bug, but as I was going through and cleaning things up earlier in the week, I noticed that that that technically would have allowed an agency to take an officer off. I mean, you know, change an officer on a job that was already done, which should not be allowed. So I pulled that out in the event that there's there, the completion flag is set. So that was an update. There's also this new button here, and we're going to get into reports here in a minute, but there's this new button called job report, and that is just a quick way for you to get an Excel document of exactly what it is that you're looking at on this screen. So let's say you added some crazy filters and, you know, some weird date range, and you just wanted to, like, take a snapshot of exactly where you're at. You would click that button and it's going to go run that report for you. You can see here looks like you're trying to report for 103 jobs. We're working on this feature. There's some stuff that Ryan and filemaker team need to do on the back end to actually make these reports work so that they get emailed to people, but all the data that they need has been provided for them. There's also a when I click Actions here, there's a single job report too. It took almost no time to add this in here, and I figured, well, you know, if you want to be able to get a report for a whole bunch of jobs. That also makes sense to be able to just download one as well. So this is the same deal. It passes file maker all the data that it needs for which job in you know, they're talking about, or they're looking at, and they can get an Excel spreadsheet of all the data for that job. So that's the Jobs page. The major updates there. I'm going to go to officers next. Let's see. There was a guy I was working with. I think it was Andres here. I'm going to go to his officer page. You notice he doesn't have any jobs in here for the month of May, but there's this new report button on the right side here. And if I go to a period of time where he does have jobs like this, he's got eight he's worked 40 hours in that time, the report button lights up, and you can click it, and that will do the officer report for those jobs that they're looking at. Again, there's no Excel spreadsheets getting sent right now, but all the data Brian is there for you. So however you want to do that, Excel spreadsheet is fine by me. The big area is going to be this new reports area. So this is kind of a long time coming. I have asked for a list of different reports that can be run right now. I have two, but easy for me to add more. I have officer over hours and a jobs report, mostly just to kind of start filling out this left side so that I could give you guys a demo for officers over hours. I can select one officer so, you know, let's just say Joseph. I can select a date range. I can select whether or not I want to see billable only or not billable or all. And then I just click Generate Report, and Brian, here's your JSON.
+
+Speaker 2  13:47  
+Yep, just and to let you guys know you can, you can come up with what we call, I know we call it billable and non billable, because that's what makes sense for you guys in in FileMaker, but that verbiage may not make sense or be what you want for the agency to see. I don't know if you know internal or external job. You know whatever type of verbiage you want, you just let us know and we'll we'll change that, right?
+
+Speaker 5  14:18  
+That's good. That's good to know, because they really don't care if it's billable or not. But, yeah, I know.
+
+Speaker 2  14:23  
+I just that's what we call it in file maker.
+
+Unknown Speaker  14:26  
+So whatever, yeah, whatever you want there is fine.
+
+Speaker 5  14:28  
+They don't. They don't. Yeah, if it's non billable or internal, I think internal is good for the non billable name, the billable could probably
+
+Unknown Speaker  14:39  
+they don't. So internal and external?
+
+Unknown Speaker  14:43  
+Well, internal for theirs, and I
+
+Speaker 5  14:47  
+don't know what call the other one, because the billable in external, let's see their internal jobs. External. I might call it external for now, unless we. Come up with another word for it, les
+
+Speaker 2  15:03  
+jobs, because it's important to have them be able to select that, especially for the over hours report, because we need to know whether, when we're deciding if they've booked too many hours, are we including that? You know that internal, non billable stuff as part of those hours or
+
+Speaker 5  15:18  
+not, their internal hours are on duty hours. So that has nothing to do with their over their overage, exactly.
+
+Speaker 2  15:25  
+So that's, that's why we give them the option here.
+
+Unknown Speaker  15:29  
+Okay. So, yeah, Jake, I just wanted to,
+
+Speaker 3  15:33  
+no, just please put what you want in these buttons, in
+
+Speaker 5  15:37  
+the duty off duty. I don't know, like once on duty, once off duty, I would, I would assume, right?
+
+Speaker 3  15:44  
+Yeah, Brian, if you could just put those in the card,
+
+Speaker 5  15:46  
+they're off duty. That's interesting, because if they're churches and stuff, then they would be off duty.
+
+Unknown Speaker  15:53  
+Yeah, that's why,
+
+Speaker 2  15:56  
+that's why I've kind of thought internal, external might be better, but I don't know. I figured that's up to you guys, what to call that stuff. I know in the background, it's billable versus not billable, but I knew that meant nothing to them.
+
+Unknown Speaker  16:09  
+So internal, off duty, on duty,
+
+Unknown Speaker  16:14  
+there should be three,
+
+Unknown Speaker  16:16  
+I don't know, Ashley, can you think about that one?
+
+Unknown Speaker  16:19  
+Yeah, absolutely. Just
+
+Unknown Speaker  16:25  
+let me know when I only
+
+Speaker 5  16:26  
+allowed so many, so many hours off duty. Some of that may be on duty or internal. I don't know what the what
+
+Unknown Speaker  16:42  
+do you think, Ashley,
+
+Speaker 6  16:46  
+so for billable? I mean, this is just for Les correct. So that was kind of thinking les. But the not billable, are they going to be putting in their on duties, schedule in here, like at churches and SROs, like those are those considered off duty. For them,
+
+Speaker 5  17:07  
+off duty unless, unless they decided they wanted to add their open positions. They're on duty open positions because everybody's so severely understaffed. Yeah, I don't know if they want to do that or not. At some point I know that the I know that the other companies do that or have that feature, yeah.
+
+Speaker 2  17:26  
+If, if you want to add another option, now that's that's going to take some working because right now, everything is billable or not billable. If there's a third option, then
+
+Speaker 3  17:38  
+we'd have to discuss that, yeah, and define what it means.
+
+Speaker 2  17:41  
+Yeah, if you just want to change the label, that's easy. But if we want to, actually, you know, make a different type of status of what a job can be, then, yeah, that's we'll have to discuss that. And there's some more work behind that, yep.
+
+Speaker 3  17:55  
+But the mechanisms there we can this button can be, you know, four or five, whatever, however met two, it doesn't really matter. It's just which ones are we focusing on, which ones are we leaving out? You know, that kind of a thing. So however you guys want to do that is cool with me. The like I said this, this report restricts them to one officer only at a time
+
+Speaker 2  18:21  
+or or everybody in their agency, yeah, they
+
+Speaker 3  18:24  
+don't have to put an officer. They can. They can. You can see here, when I hover over Joseph it, you can either just click him again or press Enter. And so that then, if I generate that, you're going to see Brian that. Well, what it should do is take out the ID and everything so that that is the officer over hours jobs report, you can have more than one officer on. So if I just did, oh, that's not Brian, there we go. I can have more than one. I can say for the month of May. And I only want to see billable stuff, and I generate that, Brian, there you go. It gives you, gives you an array for for that. So those are the two that I, you know, that I have right now. I figured this is pretty I mean, search by Officer, search by date range. There might be a couple other things, but, you know, just choose a report on the left hand side, choose your search criteria and generate the report
+
+Unknown Speaker  19:31  
+jobs. That's a great idea. I think
+
+Speaker 3  19:37  
+that would be pretty easy to identify. Obviously you wouldn't need to pick an officer there. So we would just hide this picker, the officer picker, but they could just click unfilled jobs, and then it would be the date range, like, I just want to see all my unfilled jobs in May. They could do that. You know, I don't know that we would need the billable toggle there, but that's a good idea,
+
+Speaker 5  19:59  
+unless they're. Searching specifically for, like, their church or something, or their something, that they their schools or whatever. Right schools in there. They want to see what they don't have
+
+Speaker 2  20:10  
+covered, and they can see that stuff on the jobs page. So remember, this is something that's going to be sent to them as an Excel spreadsheet.
+
+Speaker 5  20:17  
+So it's sporadic, instead of searching through every day, going, okay, which ones do I not have filled? Which ones do I not have filled? They can put it on a spreadsheet. Yeah, yeah, okay,
+
+Speaker 3  20:29  
+and I don't know, Brian, does it email like to whoever the person is who's logged in? Is that how that works? Correct? Yes. Okay, cool, yeah. So yeah, the way that it would work is they would go in here, they would run the report, and then whatever, five minutes later, they'd have an Excel spreadsheet in their inbox.
+
+Speaker 2  20:47  
+Yeah, Bonnie, I do have this. Both of these two reports are prepared in FileMaker. We were planning on connecting the web and filemaker stuff today, but I ended up not being able to work today. I had something else, so I was off all day, but it just to let you know it is there. So it's, you know, Monday or Tuesday, Jake and I can easily get together, do the connecting part and and be able to show you it completely working.
+
+Unknown Speaker  21:16  
+Okay, yep, I'm looking back here,
+
+Speaker 5  21:22  
+be able to see on an open jobs report, would they able to be able to bring up one specific job, or whatever it is, and then see all the open spots on it?
+
+Unknown Speaker  21:32  
+Will it be searchable that way?
+
+Speaker 2  21:35  
+Well, they can kind of do that in the jobs area. Yeah, I don't know if that's a report. You know necessarily that's that's looking through your jobs. Yeah, they can. They can search for a job, and we can, I don't think we have the job ID as a filter yet on the jobs, but we can put that in there when we get around to creating it, because I know one of the requests for the customer app is having a job number that makes some type of sense be generated, you know, like maybe date and underscore something, you know, some, something like that, that creates a job number that easily makes sense to people. So once we have that created, we can add that as a filter to the Jobs page here on on the agency side. Right now, it's just an internal ID that's just a bunch of numbers, and probably wouldn't help but, but once we get to making a a job number that makes some sense to somebody, then, yeah,
+
+Speaker 3  22:48  
+those are the agency app updates for now. If you guys can think of other reports that you want, Bonnie, I think unfilled jobs is a good one. I think that's probably one we should write down and do. But if there's other, if there's other reports you can think of for us to run similarly to what you're seeing here, just let us know, and we can add them to the list on the left. Okay, cool.
+
+Speaker 2  23:21  
+Alrighty. I don't know if I have much to visually show. I've worked on a few things as they've come through on Trello, but Ashley's been able to see them, you know, on Trello, and their kind of background things that we're making sure are working for her. So as far as flashy update stuff to show, I don't think I really have anything. Okay.
+
+Speaker 1  23:50  
+Well, then on that note, I think we can, we can jump right into the discussion regarding the native app. I know the document that you prepared for us Brian was something that we sent over to Bonnie. We did some research on it, on our on our end as well. And so that's why we got Bonnie on the call. So I know she has a few questions regarding it. Sure.
+
+Unknown Speaker  24:09  
+Shoot. So, um,
+
+Speaker 5  24:15  
+so is it? Is it like a in our research, we found, like, there's a tier, there's like, a regular app, a medium size app, or we can make this really Gargantua app, you know, is that how you were tiered? Also, now that I'm looking at different documents, and I don't have them in front of
+
+Speaker 3  24:33  
+me, but that's, that's kind of subjective, you know, the but I guess functionally true, you know, there are, I would say, in the world of applications that are on the App Store, the Les app, if we were to take exactly the functionality that it has today, you know, in the PWA, and migrate it to a to a native application. And it's not a small app, but it's not, it's by no means a gargantuan app. It's, I would say it's more in the like small to medium. It does interface with a back end database. You know, it does. It does need to be able to handle geolocation. It does need to do some things offline, but it's not like a gigantic app. I wouldn't say so.
+
+Speaker 5  25:30  
+I was so and you said geolocation that that was a question I had real quick on the difference between geo tracking and geofencing, they're obviously two different, right? Yes, they are. Yes. Does the current web app that we have now do geofencing?
+
+Speaker 3  25:49  
+No, so it does not. Geofencing would be like a hey, when they enter this area, when they are, when their phone, when, basically when their phone detects that its position is within a specified radius from a given location, then it needs to perform some action, whether it's a notification or something similar, kind of like I go to the gym at the bottom of our hill here, and like when I pull into the parking lot, I get a little notification that shows up that's like, hey, you know, here's your membership card to scan. That's considered geo fencing. The Geo tracking is more, hey, we're going to log exactly where you are at a given moment and take some action on that in the application. Does that? Does that make sense? Yeah, totally.
+
+Speaker 5  26:44  
+I assume if it was available on the App or not, or in the web app.
+
+Speaker 3  26:49  
+So, I mean, sort of it, you know, like we have it working now, except it doesn't really work when you put the app away, you know. And that's a privacy thing, but it so right now you would call what we're doing currently, the geo tracking, not the geo fencing,
+
+Unknown Speaker  27:10  
+interesting, okay, um,
+
+Speaker 5  27:14  
+and so, so what? What we're using now will actually, when the officers log in, it, it logs them in at that location, and then when they log out, it logs them out at that location. But we have nothing in between. Am I correct?
+
+Speaker 2  27:30  
+Kind of correct? Yes, yeah, kind of it. It does track the point when they clock in and when they clock out, and the in between actually will work as long as they have their phone open and that app in the foreground, okay, but as soon as they put it in the background, they open another app do other things then, no, it wouldn't be tracking the in between. That's That's kind of the problem we ran into Okay, with this update that both Google and Apple, yeah, put,
+
+Speaker 5  28:02  
+yeah, gosh, you know, it would be nice, because when they leave, they're not clocking out, you know. And it would be nice to go back and look and go, Okay, well, what time was that that they left be when they went, you know?
+
+Unknown Speaker  28:16  
+I agree, yeah, it definitely makes a lot of
+
+Unknown Speaker  28:18  
+sense. Yes, yes, yes, yes.
+
+Speaker 5  28:22  
+So the other thing is, so for a small to medium app, and you build it as a small to medium app, is that expandable later on, if needed? Yeah.
+
+Speaker 3  28:35  
+I mean the Yes, yes, it is. And the other benefit that you have is that you have a working if, I mean, call it a prototype, it's not really a prototype, because it's actually being used. But being able to look back and forth and go, Okay, here's all the features that are needed. Getting that up to speed is, I would say Brian, like, I mean, you can correct me if you feel differently, but it really reduces the amount of time that it takes to build it, yeah, because you're not like and that's kind of why I put it in the small to medium category, because there's so much information that we already have. We already know pretty much everything that it needs to do to get it up to scope with where it is now. And it's we're not theorizing on that, okay?
+
+Speaker 5  29:22  
+And even though this is not like, on like, the like, we don't have to have this right now, because we have this other thing in place. Like, we really need the customer side done. Like, we don't want to. We do want this done, but we need the customer side done. And so your expert opinion is, do we hold off and just wait on this right now, or like, if it's, if it's like, how, like, how long would it take you to build this at this app?
+
+Unknown Speaker  29:56  
+That's a smart question.
+
+Speaker 2  29:58  
+Yeah, we it's a great question. Question. I mean, we were off the hip looking at six months ish,
+
+Speaker 5  30:07  
+and that, to me, seems like a long time, if we already have every most of the components. So we already know that. But I'm not in a hurry for it, so I'm not expecting, like, in 30 days, or anything like that.
+
+Speaker 3  30:19  
+It could be last Bonnie to be on it, like, it might be, it's, it's just, we don't, I don't want, we don't want to be like, Yeah, it'll take us a month, and then have it blow past a month and, you know, it the reality is, we do have a pretty tight feature set. You're right. We have a lot that we already that, you know, we can't necessarily reuse the code because it's in a different environment. But we already have, like, it's not just pictures, it's a working application. It's very easy to explain to other developers what's going on, because they can pick it up and use it for themselves and then emulate all of that. You know, in the new environment. Is it six months of work? Could it be? Yeah, is it it? The answer to that really depends on how much we're able to allocate to that particular project. At it at, you know, throughout the course of the development, we also could take things in phase, not phases, but in steps, where we get the API layer built and the back end built that interfaces with the database, and then the front end just snaps on to that, you know. So could we work on both the client side and that app at the same time? Sort of part of the time, right? Yeah, and it's
+
+Speaker 2  31:38  
+slow down both projects. If we're doing both at the same time, it kind of slows down the the overall length of both projects if we're trying yes same time. Plus, I wanted to throw in there Bonnie, part of the how long this takes for a native app is completely out of our hands, really, because it has to do with how long Apple and Google are going to take to approve it or or deal with, you know, if we go back and forth with them, how much access we can have to them to try,
+
+Speaker 3  32:09  
+yeah, and that store. That doesn't have to be super long, but I do want to call something out, because it's important. We are requesting background tracking of user locations, and for good reason, Apple and Google are they want a lot of information about why you're doing that, and they have to be satisfied with your explanation. And if, and it's kind of a black box, when you submit these applications, you do the best you can at explaining what you think they're going to want to know. And then you might catch an app reviewer on a good day, and they're like, yeah, it looks good. You might catch somebody who's going through the middle of a divorce and in a very bad mood, and they might go, No, I need more information, and they don't really tell you what more information they need. Now, my experience in getting things to the App Store is that you always receive some level of pushback when you don't. It's a it's a very good day, but it's not, I haven't seen ongoing like for months. You know, them not approving things. So usually you can get things relative worked out relatively quickly,
+
+Speaker 5  33:27  
+okay, yeah, cuz I in the past, it's been like, one thing after another, after another, after another, you know, it's just like, and then we take them up to three weeks to answer you, and
+
+Speaker 3  33:35  
+it's like, sometimes it can, yeah, I mean, that's it. It's hard for us to tell you exactly how long it'll take, like Brian said, because we have no control over them, right? And so all we can do is do the best job that we know how to do when we submit the application. Now I will say I've worked on, I worked on an application in July in August of last year that got published to the app store within two weeks, you know, and but there were issues, and we got those issues resolved in a matter of days. It wasn't a big deal that application, though, doesn't do background location tracking, so, you know, I would want to make sure that we really Button, Button up our description of why we're why, why we want that, why we're telling apple that we're using the location API to track people all the time, you know, and we'd really want to be like, we are not tracking them all the time. It is literally only when they are clocked into a job. It's, it's for, you know, the purpose of payment on that job, it's to verify employment metrics like that kind of stuff. You know, we would just want to really have a good proposal ready, right?
+
+Speaker 5  34:55  
+Sorry, I'm thinking about three things, how that works, and three different things so that. So that. So I'm trying to, like,
+
+Unknown Speaker  35:02  
+that's fine. It's a lot, yeah,
+
+Unknown Speaker  35:04  
+um, okay, so, um,
+
+Speaker 5  35:09  
+so we don't want to, like, you know, when you're building the customer app and, and, or the customer portal, or whatever you want to call it the customer side, you know, and there's portions that that that intertwine with what the native app, or, I guess, with the current app, actually, yeah, and you're having to write it three times.
+
+Speaker 3  35:35  
+Well, not three times twice, right? Because we already wrote it. And it's not like we're going to be able to go into the current app and do copy paste, right like that doesn't exist, but in terms of if, as a developer, there's levels of specificity when you're starting a project that can either shorten or lengthen the amount of time that that that project takes. And I would say that the level of specificity that we have on what the definition of done is for this project is extremely good, because we have, we have something that works. We can literally show and like, this is how it's supposed to look, and here's the branding, and here's the colors, and here, you know what I mean. We have a lot of that stuff out of the way, you know. And there are developers who we can put on this who do just back end, just API work, and then just front end work. And so that means that Brian and I could work feasibly on the client side, and we could put those developers on the native app. Now, when we get to the front end, that stuff goes across my desk, right? So when the front end comes, I would probably have Jamie Brian, Jamie, or Jeremy, or someone help with that, and but I still have to approve it, right? So, so I don't want it to seem like it'll slow us down massively, but Brian and I won't be the only ones working on it, which means more meetings, right? That we got to, we got to do code push reviews. We got to do there's, there's some things that we want to button up just to make sure that it gets shipped properly, but it is possible for us to work on both at the same time. Brian is not wrong that it will likely move slightly slower if we do it that way, but it's not impossible.
+
+Speaker 5  37:33  
+And is it, does it slow down the process later on, or does it make you feel like no will work? Okay? No. Worry about that. As long as when you're in the middle of building it, you've got in the back your mind, okay, we're going to build this other app that's going to be going, you know,
+
+Speaker 3  37:48  
+of course, yeah, yes, yeah. Is it going
+
+Speaker 5  37:52  
+to be built in phases? Do you are you able to put together a timeline? Are you able to put about a number of hours and a cost estimate to it.
+
+Speaker 3  38:02  
+Yeah, that would be something that we would do if you when you go, yes, we want to go ahead and continue exploring this. Brian and I go, Okay, let's meet with probably Steve and Jamie and Jeremy. And we go, guys, here's the definition of Done. We have all of the screens and the functionality outlined. The way that I would break it down would be, what is it going to take for the back end syncing, Brian, you know, to make sure databases stay reconciled. What is it going to take for the API layer, which is, you know, we get that built in with the PWA, because we're using better forms, which integrates with FileMaker out of the box. With this product, it would, we would be writing our own API, which is fine. We've done a lot of that in Laravel, which is a PHP flavor, and that, but that, that is an extra step that has to happen. So we would outline that, right, how long is that going to take? And then how long is the front end going to take, and then testing, so we can provide you with something that would give you a better timeline. We just wanted to be sure, as we're kind of talking about shipping, you know, setting sail, into that, into those waters that you Yeah, that's what the way you want to go. That's, that's all,
+
+Speaker 2  39:22  
+yes, as far as I felt, is with not as much whether we want to do it ever, but whether we want to do it in any type of short order, is how much of a game stopper is the GPS tracking that we can't do on the PWA, yep. Because if it's kind of, if, you know, if it's like, a, oh, that's a nice to have feature, but really, it's not going to, you know, stop us from selling this or using it, then you can put that kind of on the back burner and make sure we focus on the customer port. And getting all of that stuff, all the payment stuff that we want to do along with the customers app, get that all up and going, and then come back to this, if it is kind of a deal breaker, if it is, you know, a game changer, for the the GPS to work in the background and work completely as we wanted to, then we want to push the native app forward, and we might want to talk about, do we with the customer portal stuff? Do we want to do all three planned phases before we start on the native app? Or do we want to do, say phase one and then do the native app and then come back and do the other two phase, you know, something like that. We'd have to have those conversations. But if the GPS tracking the way it works right now, on the custom on the officer app right now, if that's, you know, good enough. If that's your minimal viable product and that's working for you, then by all means, it's easy to push a native app development further down the road.
+
+Speaker 5  40:59  
+Mm, hmm. And that's kind of the what I'm thinking,
+
+Speaker 5  41:08  
+I mean, because it, because it does log their location, when they, when they now, the only, the only thing that that that's that's weird is, like, if an officer shows up and then he leaves, he doesn't, yeah, for sure, and when he clocks out, he's at home, or when he or he or he can leave and go do something, then come back and is that gonna happen? Possibly, yeah,
+
+Speaker 3  41:33  
+I can see it. I know. I can tell you,
+
+Unknown Speaker  41:36  
+get away with it. They'll do it to know. They don't have to know that.
+
+Speaker 3  41:41  
+They don't either they don't. That's a very good point,
+
+Speaker 2  41:45  
+unless their supervisor, who has access to the agency side, you know, tells them GPS tracking in between, clock in and clock out. There's no way they would know. It doesn't tell them that in the app,
+
+Speaker 3  41:56  
+no, all it does is give them a little flag that's like your location is being tracked, that may be enough for them to be like, Oh, okay, well, I'm gonna stay here, you know. And so, you know, my personal feeling is, I think you will likely, if this thing goes the way that we think it can go, and the way that you guys think it can go. I think ultimately you'll probably want to go with something a little more native anyway. But I don't think, I don't know that you need to do it right now. I you know, I think, you know, we love money, and it's like, if you were like, whatever, just do it. It's like, okay, well, we'll figure it out. But I think we're rolling pretty hard on the agency side, you know? I think we can get into the client side and make that really good, and then we can focus on the native app when it's time, you know, I think you're right. They don't need to know, and they won't. They'll have no idea that they're not being tracked when the the app gets put away into the background. So that's my opinion on it, but you're the boss, so,
+
+Unknown Speaker  43:04  
+all right. Um,
+
+Speaker 5  43:07  
+okay, so that, so, so I, so, I, you know, I do, we do? We need to get to the customer thing. We've got to get that done. That's super, super, super, super important. Oh, yeah. And, you know, I'm just trying to Yeah, but not super. I don't know how far along we are in that process. If we have
+
+Speaker 2  43:35  
+Yeah, we may meet on that again Monday. I have a, you know, a good, strong first draft of the scope that I'll be sending out at the end of this meeting for us to discuss on, you know, you guys to look over before we discuss Monday. It'll take me, you know, once we've got the scope approved, you know, if you guys think that that that's the complete scope, and we don't want to add a bunch more, then I can turn that into a proposal, which will take me a little while, you know, a week or so, probably, to get that together. And you know, that will have numbers and hours and everything on it. And we can, and I can start to put together a schedule, you know, start to talk about resources and get together a schedule. We could absolutely be started, you know, things go right? We don't want to add a bunch of stuff, you know, we could be started in the next couple weeks,
+
+Speaker 5  44:30  
+yeah, and I think that's a good time frame. And you know what? And there's going to be unforeseen stuff that come up and go, I'm sure, yeah, know that already. But for the most part, I'm hoping that we captured the most of it.
+
+Unknown Speaker  44:45  
+Yeah, you did scope
+
+Unknown Speaker  44:47  
+for phase one job. And
+
+Speaker 2  44:49  
+remember, we're planning for three phases on the customer app, so and we're only looking at the scope for phase one. Yeah.
+
+Speaker 5  44:58  
+Do you have any idea how long. That those three phases are going to be like, it like and for example, is phase one going to be a usable
+
+Unknown Speaker  45:07  
+part? Yes, yeah, oh, for sure.
+
+Speaker 2  45:09  
+So the way, the way we basically broke out the phases, is phase one is going to get you a minimal viable product, basically, of the customer portal, where they can create jobs, track, create job requests, track jobs, you know, do all the stuff that the customer needs to do. Realistically, the second phase is, is kind of the biggest variable, because it's just other bigger features that you guys asked for in that document that we didn't think were appropriate for the first run. For the first phase, you know, some, some pretty big and big asks that you, that you guys had, so we'll look at at what that's going to take. And then the third phase is all about money. It's all about payments and Okay, okay, and stuff. So voices, accepting payments, getting everything moved into QuickBooks, being able to show on the officer app the payments that they've received, as far as the officers are concerned. So that's
+
+Speaker 5  46:10  
+have you guys? Have you guys done any integration with QuickBooks Enterprise desktop versions? Or have you done mostly everything that's been online?
+
+Speaker 2  46:18  
+Oh no, I've done them with the enterprise and, okay, we've done some so far for Lori already. Yeah, there's definitely more we can do.
+
+Speaker 5  46:27  
+Yeah, it's just in the past, we've tried to do this integration with it, and it's just, oh my gosh,
+
+Unknown Speaker  46:32  
+online is far and away. Easier. Online
+
+Speaker 5  46:36  
+easier and yeah, but the enterprise, you know, if you know the different the different features enterprise works perfectly for us, and it would have
+
+Speaker 2  46:44  
+been through crazy. Problem is enterprise lives on a computer right at your place, so it's not necessarily accessible easily from outside sources, which is good for security and privacy, but sucks when you need it to be able to, you know, deal without
+
+Speaker 5  47:03  
+QB needs to step up and and they need to put it on online or something. They need to figure that out. I don't know what.
+
+Speaker 2  47:09  
+Well, basically, anything that QuickBooks Online does not do that the enterprise version does is inventory stuff, which you guys
+
+Speaker 5  47:20  
+don't, it doesn't unless they really, I don't know Lori, you might want to research that, but I think there's a bunch more stuff it doesn't do for us.
+
+Speaker 2  47:27  
+I believe Lori had said the big problem she had before was that they couldn't accept such big files to migrate. You guys had, you know, way too many customers, officers and such. But I'm pretty sure that has changed. I've done a couple online integrations for some big companies that have, you know, couple 100,000 customers. And you know,
+
+Speaker 5  47:52  
+Chloe, are you with us? Or do you tune out? So I'll have her check it again to see if they've upgraded anything more. But last I heard, which wasn't that long ago that it still didn't do some things that we really need it to do.
+
+Speaker 2  48:04  
+Sorry. I mean, we they say we can look into that at some point, if you'd like. It's not that we can't do integrations with enterprise of desktop. We absolutely can. It just means that there's a stop at FileMaker along the way. Basically everything comes in and out of FileMaker, and filemaker pushes and pulls from QuickBooks as needed, and pushes and pulls up to the web apps and such that we're making for you so and and that's a lot of times that's great because you think you want something to go directly into QuickBooks, you know, from your site or something. But in reality, you usually want a person to look at it before it actually hits your accounting, you know, software,
+
+Speaker 5  48:51  
+right, which is what we've got.
+
+Speaker 2  48:54  
+Yeah, everybody thinks they want automation until they get it. Person needs to look at this at some point
+
+Speaker 3  49:02  
+when it comes to Financials. Yeah, it's tricky.
+
+Speaker 5  49:07  
+Okay, um, I don't know. Did I hit everything? Guys? I Joe, did I leave anything out? I know I talked with you extensively about stuff. Did I miss anything?
+
+Speaker 1  49:18  
+You know what? No, actually, I think you've covered everything, at least for the questions. I think the biggest thing was timeline and what we wanted to make a priority. So it really comes down to us deciding how we want to, how we want to split that, if we want to do, you know, a 5050, type of situation, or if we make the priority still customer module put more percentage towards that as far as workforce goes, and kind of putting the native app a little bit on the back burner, but, you know, still making that a priority as well down the road, right? And I don't know it's
+
+Speaker 2  49:50  
+that's absolutely what I would recommend Joe and Bonnie, truthfully, like I said, Unless this what the GPS tracking that's happening? Now is absolutely, you know, a no go, a problem. Unless that's the case, then I would make the customer portal absolutely my priority. Yeah.
+
+Speaker 1  50:13  
+And I think what it was too is, you know, we have a little a little bit of hesitation regarding native apps, just because there's plenty of times were, oh yeah, some, some of the bills that we had even on Test Flight were, I mean, we're just chaos, even that was getting kicked back to us constantly, and so that kind of left a little bit of a sour taste, you know?
+
+Speaker 3  50:33  
+Yeah, it does. And there are some things you can do to mitigate that, but it at the end of the day, you're basically sending Apple an email going, Hey, can I please put this or and,
+
+Unknown Speaker  50:44  
+yeah, yeah,
+
+Speaker 2  50:47  
+that's Apple and Google. These are two totally different companies that we have to deal with, yeah, and you think very different experiences with, right?
+
+Speaker 3  50:56  
+You think like, based on how everything is like, you would think that Google would be easier. It's not like they're, they're, they're not very forgiving on things. You know, Apple's kind of known to be not, but Google's almost as bad. So, yeah, you know. And that's good, like, they should do that, you know, it otherwise you get a ton of garbage on the store. But, you know, and there's also we can look into alternative deployment strategies where we don't actually deploy to, like the consumer app store. There's an enterprise app store that's got some different rules, but then maybe more relaxed in some regards, because there's, like, they check your Dun and Bradstreet number. There's a bunch of stuff that goes on there, but it's still an app store, right? So there's still review process.
+
+Speaker 5  51:49  
+So, so there's two different app stores. I didn't realize that, like the consumer app store, because these the enterprise, I mean, because this is going strictly to officers, that's right, officers. So the Enterprise store versus the consumer store. That makes sense to me, kind of, but I still don't know the difference consumer store. Eventually, if we have off duty on, you know, Uber off duty, or something like that, that's when the customer side would come in, right?
+
+Speaker 2  52:14  
+Not necessarily. It the enterprise tech, the Enterprise store, technically, is you make a store for your enterprise. You're a huge company, like GE, and you have a bunch of apps for your company that your employees use. That's really what the Enterprise store is. Technically, it is going out to the public at all.
+
+Unknown Speaker  52:36  
+Okay, yeah,
+
+Speaker 3  52:37  
+it's public in that it can be downloaded without, like, getting it, to load it onto the device, but it still requires, you still have to distribute it using, like, mobile device management, which I don't know if you guys want to get into, because these are just 1090 nines, right? So it's not like you're going to be using a MDM suite on random officers cell phones, you know, it likely would need to go to consumer and, you know, and there's some research. We more research we can do into that, but I would think it would go to consumer and then it's just, you know, officers download it right from the app store, like they do anything else.
+
+Speaker 5  53:18  
+Okay, yeah, that sounds right. Okay. All right,
+
+Unknown Speaker  53:24  
+I understand I'm good, then cool, awesome.
+
+Speaker 1  53:29  
+And I think the last piece we have is, Ashley wanted to follow up
+
+Unknown Speaker  53:34  
+on, well, Ash, go ahead, take the reins.
+
+Speaker 6  53:37  
+Okay, I'll, I'll make this quick. First of all, Jake, do you know if you're going to be on on
+
+Unknown Speaker  53:44  
+Tuesday? Let me look okay.
+
+Speaker 3  53:48  
+Is that That's at the 1pm your time?
+
+Unknown Speaker  53:52  
+Yes, yes, I will be okay.
+
+Speaker 6  53:56  
+I was going to say because on my live version. If you guys still have that. If you need to resend, let me know. But I put this, like, deep purple, and that's just stuff we need to finish up before we push that. Dev, can you version?
+
+Speaker 3  54:10  
+I'm sorry to ask you to do that, but I have, like, 4 million emails and hard to find. No, you're fine. Flag it, yeah.
+
+Speaker 6  54:18  
+Okay, perfect. Because some of these I was going to bring up, but they're, they're more of a above so, but they are the dev side at Skype this like deep purple, but I'll resend that to you. Thank you.
+
+Speaker 3  54:32  
+Yeah, no problem. All right, sorry to make you keep resending it, but not
+
+Speaker 6  54:37  
+a problem at all. Okay, other than that, I mean, that's basically, I just wanted to, you know, make sure I identified the priority one so we can get the dev side pushed out.
+
+Unknown Speaker  54:49  
+Okay, it's all the deep purple stuff, yes.
+
+Speaker 6  54:52  
+And some of them, like, you'll see yellow, like this one I haven't talked to you guys about, because it's more. I don't know if it's a bug or not, but it's something. That I wanted to bring up, but it does have to
+
+Speaker 3  55:03  
+do with Dev. Yeah, yeah, okay, sure, that's about it. Okey, dokey. Now you said deep purple, and I'm just like thinking of Hades
+
+Unknown Speaker  55:19  
+Smoke on the Water. English,
+
+Speaker 2  55:27  
+yep. Okie dokie, does anybody have any other thoughts, questions, items,
+
+Speaker 2  55:42  
+we can wrap this one up under the hour mark, then, yeah, nice. Well, everybody have a great weekend. Like I said. I'm going to send out this draft of the client portal scope shortly, and then we will, you know, SEE ALL YOU Monday for that discussion,
+
+Unknown Speaker  56:03  
+that I'll be at that one as well.
+
+Speaker 5  56:05  
+Awesome, awesome, very cool. All right, thank you guys.
+
+Speaker 3  56:11  
+I will, in three minutes, I will tell
+
+Unknown Speaker  56:16  
+him, thank you guys. Bye.
+
+Transcribed by https://otter.ai

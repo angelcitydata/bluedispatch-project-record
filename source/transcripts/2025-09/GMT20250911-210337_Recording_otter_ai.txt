@@ -1,0 +1,967 @@
+Unknown Speaker  0:00  
+Yeah,
+
+Unknown Speaker  0:02  
+there you go. So I was going to say that, yeah, that is not just the only customer. So Bill to customer, we want to show charges to and then shipment information,
+
+Unknown Speaker  0:15  
+the shipper or Consignee,
+
+Unknown Speaker  0:18  
+or even the controlling party customer.
+
+Unknown Speaker  0:24  
+They're going to G, they're going to be only
+
+Unknown Speaker  0:29  
+shipment information, unless they are also the bill to party. So
+
+Unknown Speaker  0:36  
+Okay, now that's, yeah, that's kind of going to be the next set of questions is kind of a who sees what type of thing this is more for,
+
+Unknown Speaker  0:48  
+for logging in, and what actual shipment records they're going to see on that initial list view, you know what they have access to. So it depends on their participation level. If they participate as the bill to they'll get some information related to the billing and things like that. If they're on the consignee, they will see a number of things about the shipment, but not necessarily the billing information. And if they participate in both, well, then they get the activities from both. Okay, so is the login? Maybe this is a great place to start. Is the login a the company or the contact? It's a contact or a user, yeah, so a contact in the system can have access to multiple companies, shipments, potentially. Yes, rough. Okay. Well, are we but, but they still have to be. They're going to be a contact related to one of the companies that's on the shipment. In some context, in some context, yeah, I was going to say that the
+
+Unknown Speaker  1:55  
+contacts are not necessarily going to have access to all the companies that they're attached to, because there aren't going to be that many. I mean, as far as I can tell, there are going to be no contacts going to be attached to multiple companies. It's this contact is under this company, and that's it, that company. Now that company can perform billing, or they can be the shipper or the consignee, or one or multiple of those, but
+
+Unknown Speaker  2:29  
+it's not going to overlap. The only overlap will be like, well, in our current system now, we can set up a
+
+Unknown Speaker  2:40  
+user to access an account, but also affiliate that user to multiple other accounts.
+
+Unknown Speaker  2:49  
+Well, I should say that set up that login to access multiple other accounts, but those are all internal, really, and only because,
+
+Unknown Speaker  3:02  
+and only, we only do that, really, only with a customer when they have branch offices which are under a parent company. And that's just the way our system works.
+
+Unknown Speaker  3:17  
+Okay
+
+Unknown Speaker  3:22  
+with so we are. We're building this in FM better forms. And as far as FM better forms are concerned, one account is one email address. So if they technically have multiple accounts, they have to be under
+
+Unknown Speaker  3:36  
+different email address. When you say account you're talking about
+
+Unknown Speaker  3:42  
+login to the website. Okay, so one person, one you know, contact, could have multiple accounts, but they would have to be different email addresses associated, you know, with each account, or we wouldn't be able to affiliate them with different companies, different organizations.
+
+Unknown Speaker  4:04  
+On the FileMaker side, like of you're suggesting, like a one to many account, can see multiple like parent and child companies. So we got a the headquarters in the mainland, and we have a login for that, and that person is doing all the billing for across the board. And then there's also the branch offices that I might need to put a person under the branch office, but they can only see the branch office.
+
+Unknown Speaker  4:35  
+They won't be able to see anything else that's attached to the parent, or even the parent itself. When you say branch office, I'm not sure what you mean. Only say branch office. We have accounts where we have the the
+
+Unknown Speaker  4:49  
+main company is on the mainland, and they do a lot of the billing for the ocean, but maybe
+
+Unknown Speaker  4:59  
+the the.
+
+Unknown Speaker  5:00  
+Branch offices on the islands take care of the delivery invoicing. So they are separated, but they're connected, so the branch office person that's logged in there will want to see the billing across the board. They're going to see the mainland billing as well as the delivery billing on the island, but the person at the branch office will only see what they can see there for that. I think you said branch office on the first part of that, but, but essentially, right? The user at a at a corporate office, if you will, will have visibility to everything, even the child companies that are related to them. But the but the people who only exist on the child company can only see that child companies stuff.
+
+Unknown Speaker  5:49  
+I mean, take, take ABC stores
+
+Unknown Speaker  5:53  
+like 711 Yeah, yeah, each, each store has their own billing, and they control, the store manager can see what's for their store only, not anybody other, not any of the other stores, but the headquarters will always see all the stores.
+
+Unknown Speaker  6:12  
+And so programmatically, Chris walk with me here, what I'm hearing is the contact that signs in. If they are, they can only be assigned to one company. If that company record is flagged as parent company, they get to see everything for that company and anything that's assigned to the child companies of that parent. Yep. Okay,
+
+Unknown Speaker  6:41  
+but if the contact is assigned to a company record that is not a parent company, they can only see that specific company, none of the other child's or the parent Correct, correct.
+
+Unknown Speaker  6:56  
+Okay, that's easy enough at that point,
+
+Unknown Speaker  7:03  
+the bigger thing for me now is all
+
+Unknown Speaker  7:08  
+right, if I sign in, I need to, I'm going to go ahead and share my
+
+Unknown Speaker  7:15  
+really large screen here.
+
+Unknown Speaker  7:19  
+You know programmatically, I have to say. What does that mean as far as which shipments I get to see, I've got to point, you know, directly. So if I'm this Julia dewinski company right here, in this slot, I'm going to be showing you every shipment that has the company you signed in for right here, yep. Not here, not here, not here, just here.
+
+Unknown Speaker  7:49  
+Well, if
+
+Unknown Speaker  7:51  
+it same, one might be, might exist in several spots, yeah. But if it only exists in the billing company or the consignee correct, then they won't see it correct.
+
+Unknown Speaker  8:05  
+Well, no, no, no, they have if they exist on the billing company or the consignee, they will see that as well. So customer, built, company and Consignee, if, if, if someone logs in and they're in any of those three fields, they should be able to see the order.
+
+Unknown Speaker  8:24  
+Well, there's four of them, right? So there's the customer, the bill to the shipper, and the Johnson signee, the customer and the billing. So if they're, if the company I'm signing into is in any of those four,
+
+Unknown Speaker  8:38  
+then it's allowed, then it's allowed to view the shipments related to that view, right? Billing company gets to see the charges, right? And how are the other Go ahead. I'm I'm assuming also that I'm looking at
+
+Unknown Speaker  8:53  
+customer accounts that that are the billing. Bill to account is, you know, the bill to party here, and the shipper is also another account. And if it's and if I have one account for ABC stores, and it appears in the shipper and the bill to those are both valid, but they're all pointing to one account,
+
+Unknown Speaker  9:20  
+right? Right, that's my assumption. So I'm just want to make sure that that's clarified, right? Yeah, I'm correct, right?
+
+Unknown Speaker  9:30  
+I think, yes, I'm I think. So I know there are addresses. I'm not really, I don't really care about the addresses. It's more the account level for the company. So the way I've seen it, you know, programmatically here, if ABC store 123,
+
+Unknown Speaker  9:48  
+is the shipping company, right, but ABC store headquarters is the billing company. If I sign in and I'm assigned to ABC store 123,
+
+Unknown Speaker  10:00  
+E
+
+Unknown Speaker  10:01  
+I can see it because it's shipping, but I wouldn't be able to see into any of the billing information in the invoices. Correct, correct, correct. Yeah, okay. And if I'm signing as ABC store,
+
+Unknown Speaker  10:14  
+you know, a corporate, or whatever, headquarters, because that's the billing. Even though that's not technically the company for the shipping. I can still see it because it's a child of mine. Yeah, if there's a relationship between those two companies, yes, yeah, okay,
+
+Unknown Speaker  10:32  
+same with consignee and same with just customer here, yep. Okay,
+
+Unknown Speaker  10:40  
+that's
+
+Unknown Speaker  10:43  
+that's, that's, that is that let me
+
+Unknown Speaker  10:47  
+contact is user company. Actually, I'll take better notes on these later. I just want to take really quick
+
+Unknown Speaker  10:56  
+company of user,
+
+Unknown Speaker  11:00  
+any of four.
+
+Unknown Speaker  11:04  
+All right, I'll watch the recording and make much better notes on this, but
+
+Unknown Speaker  11:10  
+so that's who gets to see shipments.
+
+Unknown Speaker  11:16  
+And this is far from done. But just let you see, in general, this is the starts of your list screen here. We've got a couple filters, and this is what they would see.
+
+Unknown Speaker  11:29  
+We're talking about what determines what can be seen on this list here, right? And Chris and I discussed, and these were kind of the date fields and the general fields that he said we'd want to see here on this list view, there will be a detail view for each of these that'll have a whole lot more information. But as far as the list view,
+
+Unknown Speaker  11:52  
+I wanted to know, does this work for you? To see if I can zoom in a little bit, I know I've got a huge screen. So we've got the order number, which is, we're going to change that label to ship number,
+
+Unknown Speaker  12:03  
+the scheduled ship date,
+
+Unknown Speaker  12:08  
+the pickup date, which is
+
+Unknown Speaker  12:12  
+this one right here,
+
+Unknown Speaker  12:16  
+and The date delivered,
+
+Unknown Speaker  12:19  
+which is the actual delivery date,
+
+Unknown Speaker  12:24  
+a status, which we're going to be discussing here. That's another question. I've got the origin and the destination
+
+Unknown Speaker  12:31  
+for that shipment.
+
+Unknown Speaker  12:34  
+Does that sound good? We want to add one, take one away, change one of the dates.
+
+Unknown Speaker  12:42  
+Date picked up. Not all shipments will be picked up, so probably date on hand will be better
+
+Unknown Speaker  12:51  
+or both. Dale, well,
+
+Unknown Speaker  12:56  
+the confusion will be my shipments are always doc delivered. Why do I have a pickup date? Sure.
+
+Unknown Speaker  13:03  
+Okay, so that's so that date on hand. I didn't actually know what that meant. That meant the date that it's in your hands, correct? Yeah. But that also, that also is our driver's hands that are picking it up. So, yeah, it's, it's kind of the same thing when we go pick something up. Now becomes on hand in our driver's hands, moving it to us. But still, in that case, I don't think we need both. I think replacing date picked up with date on hand, yeah, that way is that the customer can interpret it as, oh, that's when I got it picked up. Oh, that's when I got it delivered. Yeah, but it's either or it's it was one of those two, right? And the scheduled, I don't know why it says scheduled ship date. That should say scheduled Pickup Date, because that's really this date right here. But kind of like the same problem with the on hand. Some, yeah, some customers never have a pickup. So,
+
+Unknown Speaker  13:57  
+yeah, I would, I would drop that. Okay, so on hand date is probably key. The delivery date is good.
+
+Unknown Speaker  14:07  
+The
+
+Unknown Speaker  14:09  
+so the date on hand is that set when we physically pick it up, when we physically have it in our hands,
+
+Unknown Speaker  14:18  
+present. It's not
+
+Unknown Speaker  14:22  
+the thought, yeah, this will be right, there's a set of status triggers that may control when some of those get set. Yeah, I off the top of my head. I don't know. I don't think it's been implemented yet. Okay, so my point being, they're not going to see a date until it's it's in your guy's hands.
+
+Unknown Speaker  14:48  
+Yes, so they wouldn't see a date when it's scheduled or anything like that to be picked up, right? Okay, that could be under the details if they have,
+
+Unknown Speaker  14:58  
+okay. Do.
+
+Unknown Speaker  15:00  
+In the detailed section. We might want that on the Yeah, on the list view. Could we get more information on the list? Yeah, yeah. I mean, especially if you're going to be removing this, yeah, we've got, we've got some space. What else would you like to see here?
+
+Unknown Speaker  15:16  
+Probably the customers tracking information. So tracking numbers,
+
+Unknown Speaker  15:25  
+the shippers, I don't know what you guys are calling it.
+
+Unknown Speaker  15:31  
+Actually, I've got all this information. Number, yeah, so I was kind of like, I don't remember what it's called. So, I mean, I've got a container number, a seal number,
+
+Unknown Speaker  15:43  
+booking number.
+
+Unknown Speaker  15:47  
+I don't see tracking necessarily. I mean, we're going to have barcodes like per item, but,
+
+Unknown Speaker  15:58  
+yeah, anything you'd like that you see here on this screen, I can display
+
+Unknown Speaker  16:07  
+it the shipper and consonant names you have. I think you have
+
+Unknown Speaker  16:13  
+our terminal names right, origin and destination terminals, Los Angeles and Honolulu. Yes, we need, actually, the name of the companies.
+
+Unknown Speaker  16:25  
+I mean, the origin and destination is great for the customer, but they also want to see who,
+
+Unknown Speaker  16:31  
+who out of LA they we picked it up from or, or it was delivered from, or so that's, that's shipping company, yeah, the shipper. Also want to see the consignee? Yes,
+
+Unknown Speaker  16:45  
+okay, I don't know if
+
+Unknown Speaker  16:47  
+you got to be careful with names on on a list view. I mean, that's great. That's fine on the detail view, but on the list view. I mean, you know these here, Julia doin, skies, company, that's a pretty long name to have on a list view. And yeah, you want two of them that's that's
+
+Unknown Speaker  17:03  
+going to take up most of it by itself on the list view. Can we do?
+
+Unknown Speaker  17:09  
+Can we limit the size of the field so if they needed to, they can click into it and scroll to the left to or scroll to the right to see more, or they can go see the full name, or go to the detail view. They don't need to see the full name. They just need the like, oh, it's Julia, okay, I know which company that is, or I don't need to see the company part of the the name.
+
+Unknown Speaker  17:36  
+You could double the height of the row and put additional information on like, have each row, two rows of text, right? It's not as nice looking. Yeah, I wouldn't want to do that. Just limit the size of the field so they can only see the first, I don't know first, yeah, 10 or 15, but whatever,
+
+Unknown Speaker  17:58  
+you know. But we could truncate it when it's displaying and then, but if you hover your mouse over it, or if you're on like an iPad or something like that, you tap it, and it just gives you, like a little pop up with the full name. Well, the
+
+Unknown Speaker  18:13  
+we can do the hover over, and it shows on,
+
+Unknown Speaker  18:19  
+and it shows as a, basically a tool tip, right? Do that on here, as far as on an iPad or something, the problem is this whole row is going to, if you click or on an iPad, touch anywhere on this row, it's going to go to the detail view. Gotcha. Okay, so, but, but hovering, though, we could do a hover before, yeah, we could do a house if you're on a desktop, if you're on a computer, or run an iPad with a mouse, yeah, yeah, I guess, yeah. I don't even know if that works, does it? I mean, yeah, you can do a mouse on an iPad now, yeah, I didn't realize that that's cool. I knew you could do a mouse, but you can hover over items and see tool tips, because you'll see the you'll see the mouse pointer. Yeah, I've never tested it, but you'll see the mouse pointer, and you move it around without clicking things. We will, we will test that. Yeah, I don't know.
+
+Unknown Speaker  19:10  
+It'd be interesting to know. Yeah. Okay, so the,
+
+Unknown Speaker  19:14  
+we are going to change, pick up to
+
+Unknown Speaker  19:20  
+on hand. We are going to get rid of
+
+Unknown Speaker  19:25  
+scheduled,
+
+Unknown Speaker  19:29  
+but we need to add reference numbers. It's not at the shipment, is it?
+
+Unknown Speaker  19:35  
+Chris, no, our reference numbers at the order level relationship. Well, there is a Yeah, yeah, number. Here's what I'm Oh, well, that's not the number. He means. If you click on the arrow to go to the order,
+
+Unknown Speaker  19:52  
+you will see a portal on the right hand side says customer reference number, where there's a PO just below, below.
+
+Unknown Speaker  20:00  
+Right there, po and a reference, and it could be more than two.
+
+Unknown Speaker  20:09  
+Yeah, we really just need the reference number, and we don't, if there's multiple, you can truncate it and again, limit the field size. We don't need to see all of them. They just need to be able to look at it part of the number, or, you know, 15 characters across, and that's it. So you don't care about PO number, just reference number at at the list view, yeah, but in the details, obviously, then we'd have, yeah,
+
+Unknown Speaker  20:37  
+we have to make a special relationships, but we can make that happen.
+
+Unknown Speaker  20:43  
+You know, the other thing too, is the customers,
+
+Unknown Speaker  20:47  
+they like to search by the reference number. So list view is great, but if they're looking for a particular shipment, they're going to use their number, not our number, to search for it.
+
+Unknown Speaker  21:01  
+So how would we, I mean, we're seeing a list view, is there? Well, we're gonna have a search, yeah, okay, we're gonna have a search, but it's definitely going to be a search
+
+Unknown Speaker  21:13  
+for things that you see here.
+
+Unknown Speaker  21:16  
+We
+
+Unknown Speaker  21:19  
+if we add the reference field, yeah, and reference numbers, multiple reference numbers. Will they be able to search for all the reference numbers? I mean, they're going to be
+
+Unknown Speaker  21:31  
+God. We've got,
+
+Unknown Speaker  21:33  
+unfortunately, we've got a couple customers that are just they have
+
+Unknown Speaker  21:38  
+dozens of reference numbers for a shipment, a single shipment,
+
+Unknown Speaker  21:43  
+and they, they like searching by the reference numbers, because it could be
+
+Unknown Speaker  21:47  
+across multiple shipments sometimes,
+
+Unknown Speaker  21:52  
+um,
+
+Unknown Speaker  21:54  
+so and research on them. Yes. The problem is, you may search for 12345,
+
+Unknown Speaker  21:59  
+but what comes up is 54321, because you're just not seeing the 12345, which is one of the reference numbers, you know. So you wouldn't see it on the list, because there's more than one, and you're right, right one? I get that, yeah. So I'd be the listing the first one, and then that might be the fifth, the fifth reference number on that shipment. So it's not really shown, it's only showing the first one, yeah, but at least they'll have that list narrowed down to these are the ones that have that reference number for and then they can drill down into the detail to see it.
+
+Unknown Speaker  22:36  
+Okay,
+
+Unknown Speaker  22:40  
+so you put some kind of asterisk or something on the reference number field to show that there's multiple in it? Maybe a little note or something,
+
+Unknown Speaker  22:49  
+little icon, a little plus, little plus symbol or something, yeah, and then like, and then like, a little text element above or below that, to indicate that there's multiple reference numbers embedded in there,
+
+Unknown Speaker  23:06  
+or three dots. Yeah. I mean just putting one next to, you know, putting one next to the label, or something like that, just to let people know that this could have more than one, is is easy.
+
+Unknown Speaker  23:19  
+Actually deciding does this have more than one and allowing you to accordion and see multiple right here on this screen? I'm not saying so just, just to let them know that that's a part of it. It's a possibility. Yeah, yes, that's easy. Yeah. I'm not trying to expand the functionality to show all the references in this view. I just, I just want them to like they're gonna do their search, and it's okay, all these order numbers, you know? Oh, yeah, reference number. Well, hey, I'm not, I don't see that reference number in this list. What the hell's going on there? And then if we add something to say, Oh, this order has multiple reference numbers, then that can kind of dismiss some of that. For most people,
+
+Unknown Speaker  23:56  
+there'll be some that will want to see a wonderful Yeah, I don't know, yeah. Click on detail view and you can see them all. They might, they might still question it, but we're going to end up killing telling them, Look, it tells you that is, you have to go to the Details to see it. It's yeah, once
+
+Unknown Speaker  24:12  
+we train them how to view that, then, then that, as long as they're they're clear that. Hey, you know, if I do a search for a reference number and these five shipments show up. I'm guaranteed that these five shipments have that reference number in it, even though I don't see it on the list view, the detailed view will show it, yeah. So that's, that's perfect. That's more than enough that then we have now. So right, exactly
+
+Unknown Speaker  24:41  
+kind of mark
+
+Unknown Speaker  24:46  
+to show
+
+Unknown Speaker  24:51  
+multiple
+
+Unknown Speaker  24:54  
+reference numbers exist for this shipment. So.
+
+Unknown Speaker  25:00  
+Okay,
+
+Unknown Speaker  25:03  
+and
+
+Unknown Speaker  25:06  
+All right, so I'm seeing
+
+Unknown Speaker  25:10  
+no more scheduled ship date. We're going to have the shipment number,
+
+Unknown Speaker  25:16  
+the reference number,
+
+Unknown Speaker  25:19  
+the
+
+Unknown Speaker  25:21  
+date on hand,
+
+Unknown Speaker  25:24  
+the date delivered,
+
+Unknown Speaker  25:27  
+a consignee name
+
+Unknown Speaker  25:30  
+and a shipper name,
+
+Unknown Speaker  25:34  
+an origin and a destination, and then and a status. That's what we're going to have on the list. View. Does that sound like everything? Yeah, okay,
+
+Unknown Speaker  25:46  
+alrighty, then
+
+Unknown Speaker  25:48  
+and Dale, are we okay with the order of that as it's appearing there, or do we want to shuffle that a little bit?
+
+Unknown Speaker  25:56  
+Yeah, I planned on, at least in my head, I see again, taking away the scheduled ship date, putting the order being ship number, reference number, date on hand, date delivered, status, Consignee, name, shipy, shipping name, or shipper, name, origin, and Then destination.
+
+Unknown Speaker  26:19  
+I think that's good for now in that sequence, yeah, in that sequence, okay, all right, fair enough. Um, okay, and then we want to be able to
+
+Unknown Speaker  26:31  
+search based off of any of those, or filter based off of any of those, yeah, yeah, okay,
+
+Unknown Speaker  26:39  
+uh, all right. Well, then that, then I want to ask about the top, because I was not quite right. All is going to be all for the amount of time, or whatever filters you've selected. That's easy. And then right here I had, I had thought scheduled, you know, I want to see shipments that I've scheduled, but they haven't actually started shipping yet. They haven't been picked up. You know, it's just something that I've scheduled with you guys, but it doesn't sound like that's going to be a thing, since they don't see the planned, the scheduled pickup date.
+
+Unknown Speaker  27:11  
+So what might be another high level filter that you feel would go good here,
+
+Unknown Speaker  27:21  
+because I've got, like I said, all scheduled in transit, and we have to define what in transit means here in a minute, and then already delivered. Think about one of your larger clients that may have 100 shipments listed here, and what, how they would want to filter it? Yeah. Yeah.
+
+Unknown Speaker  27:52  
+Do we break and transit down into you know, two types of things could be
+
+Unknown Speaker  28:00  
+or Well, the statuses will help define that. Yeah, yeah. The in transit,
+
+Unknown Speaker  28:07  
+the all covers everything, the date range, if we need all if, if the customer is going to be able to look at this portal and run reports, 120
+
+Unknown Speaker  28:19  
+days is limiting for them,
+
+Unknown Speaker  28:24  
+when we when they're doing a report for all they're gonna want, like last year's, this year's, year to date, so it won't be how far back, and we can let them go. I don't know. I mean, we could have a separate report function, maybe that just they can set a date for date range and then run the report they need and get that information, rather than mess with this part of it. I would agree that's the way I would go. Is to have a report section that way we can do the type of process where, basically, they request a report. FileMaker in the background, generates it, exports it, you know, to Excel or PDF, whatever we're gonna do, and then emails it to them, instead of having to show it here,
+
+Unknown Speaker  29:13  
+you know, if you have to show, you know, 15, 20,000 shit, yeah, we
+
+Unknown Speaker  29:20  
+work the websites gonna take, yeah, we, I didn't think that would be good here. I just knew that they would want, they, we have that functionality where they could run a report now and set the date range, yeah,
+
+Unknown Speaker  29:33  
+this is, like, this is live view. So, yeah, this is kind of more of a, yeah, live view, where they, you know, 120 days is, is very long, a lot for live view but,
+
+Unknown Speaker  29:46  
+but that shows them delivered freight too. So that that's good, I'm not sure what else we need, other than the all in transit or delivered,
+
+Unknown Speaker  29:56  
+okay, being picked up or scheduling a.
+
+Unknown Speaker  30:00  
+Something for a pickup, that would be great, but we don't have
+
+Unknown Speaker  30:06  
+a pickup of scheduled date on here, so
+
+Unknown Speaker  30:12  
+yeah, I mean, it's something we have in the shipment, but yeah, but then not all shipments are picked up, so do we show it and then just leave it blank if it's the shipments been dropped off, rather than
+
+Unknown Speaker  30:29  
+because if you if you were going to have a button for pickup scheduling, then the detail the list would actually change you would add in the
+
+Unknown Speaker  30:44  
+date you have scheduled, like currently, the way we have it
+
+Unknown Speaker  30:52  
+is where's I'm looking at my do here. So all is, of course, all within the filtered range.
+
+Unknown Speaker  31:02  
+Scheduled is it has a pickup scheduled date here, but it does not have a date pickup or a quantity on hand date.
+
+Unknown Speaker  31:12  
+That's what we consider scheduled. Currently, that's how it's done. The in transit is we do have a on hand or pickup date, but we do not have a delivered date,
+
+Unknown Speaker  31:29  
+so we just consider it in transit from the time it's on hand until we've got a date delivered.
+
+Unknown Speaker  31:37  
+Then once it's delivered, we go, it goes here,
+
+Unknown Speaker  31:41  
+so that we probably, we probably want to be careful between on hand and being interpreted as in transit,
+
+Unknown Speaker  31:49  
+because we might have it on hand and be holding it and it's not really moving yet,
+
+Unknown Speaker  31:55  
+right? Dale,
+
+Unknown Speaker  31:57  
+true,
+
+Unknown Speaker  31:59  
+okay, so is that on hand? What we want to make this one has means we're just it's in our warehouse, right? Yeah? Well, it's in our hands. It could in our hands, yeah, with our truck someplace. Yeah, we're in control of it, yeah. So is that what we want to change this schedule to is like, you know, on hand, but not yet. In train, in transit yet?
+
+Unknown Speaker  32:21  
+Well, in transit is, is, what's what? Okay, so what is, what is considered in transit when we put it on a vessel, because not all shipments are going on a vessel either. So yeah, like I said, for for us, for now, it was all based off of these dates, right? Like it's, it's, neither it's, it's, has been picked up, but hasn't been delivered yet. So pretty much every status in between delivered and
+
+Unknown Speaker  32:49  
+yes, in transit, yeah. And if, again, if you don't work wording in training, or do we change that to just a I know you have a large list of statuses, some of which are mainly for internal operations,
+
+Unknown Speaker  33:05  
+but if you have a smaller subset of statuses that make sense to the customer,
+
+Unknown Speaker  33:11  
+like,
+
+Unknown Speaker  33:13  
+you know, whatever those are, well, the the delivered button is Great because it's everything that's just delivered. So now I've got a list of everything that's not in transit. It's actually finished. It's delivered. Anything in transit should be between the on hand and the delivered on hand being it's in our control.
+
+Unknown Speaker  33:38  
+I think the scheduled probably, we should probably change it to
+
+Unknown Speaker  33:44  
+a pickup,
+
+Unknown Speaker  33:47  
+pickup schedule or
+
+Unknown Speaker  33:50  
+pickup scheduled. Scheduled is, is fine, I guess, scheduled for pickup maybe okay. And then that view would like I said the list view would need to include the date picked up schedule and
+
+Unknown Speaker  34:08  
+the actual date picked up
+
+Unknown Speaker  34:13  
+only happens Once we actually have it in our hands.
+
+Unknown Speaker  34:20  
+Just
+
+Unknown Speaker  34:22  
+thinking. Outside our outside drivers or outside carriers.
+
+Unknown Speaker  34:42  
+Yeah, the scheduled should be
+
+Unknown Speaker  34:45  
+what is scheduled, but hasn't been picked up yet. Yep, that's, that's what we got, although I'm using this date picked up, but I should be using this date on hand as the when it finishes the scheduled and starts into the intranet.
+
+Unknown Speaker  35:00  
+Finds it,
+
+Unknown Speaker  35:01  
+yeah, okay, see, that's pretty close to what I got. And if you'd like, we can change this label to scheduled for pickup, or, you know, whatever you'd like I would Yeah, schedule for pickup. Okay, it's a little more clear, because everybody will look at that, what's scheduled for? What? Yep, yep.
+
+Unknown Speaker  35:22  
+Schedule. Scheduled change to scheduled for pickup.
+
+Unknown Speaker  35:28  
+All right, make the status
+
+Unknown Speaker  35:33  
+in transit and the status showing that it's out for delivery
+
+Unknown Speaker  35:39  
+will suffice on the delivery side of it or the destination side of it, so we don't need a separate one for that. Yeah, so those are the that's the big stuff up there. But when we get to talking status right here, that's where we can get a little more
+
+Unknown Speaker  35:54  
+granular, a little more granular, and that's absolutely the next question is, what are our statuses? Because obviously, there's, we don't want the customer to see all of these possibilities. No,
+
+Unknown Speaker  36:11  
+on that list we, we sent a list and said some of these were visible to the web, and some not, right?
+
+Unknown Speaker  36:19  
+I don't know. Did you? I didn't see that. Chris,
+
+Unknown Speaker  36:24  
+yeah, it's a lot of statuses don't make sense for internal DHX
+
+Unknown Speaker  36:30  
+uses, but
+
+Unknown Speaker  36:33  
+not, not on this dashboard.
+
+Unknown Speaker  36:42  
+I mean, we can show it.
+
+Unknown Speaker  36:45  
+I thought we had a Dale, didn't we have a column for what was I thought we did? I think we did too. I'm looking for what was said. You're talking about a
+
+Unknown Speaker  36:56  
+Excel, a sub status,
+
+Unknown Speaker  37:00  
+not a status, but like for every given status, what are things that we'd want a customer to see or not see?
+
+Unknown Speaker  37:11  
+Yes, some statuses are internal, and the customers don't care,
+
+Unknown Speaker  37:16  
+and we don't want them to know some of those statuses either. So obviously, yeah, yeah,
+
+Unknown Speaker  37:22  
+but they're like,
+
+Unknown Speaker  37:25  
+there's a few No, we didn't. We didn't do. I'm looking at the gear shipment transit status that we sent and
+
+Unknown Speaker  37:34  
+we did not. We have a Required column, which is things that are expected to be done, but not what should or should not be visible to the customer. So we should, we should come back and edit that and say which statuses would be able to be for you, yeah, and which statuses should be, you know, shown or hidden. And if there's any other,
+
+Unknown Speaker  37:58  
+there's any other requirements around it, you know, like, if it's this status and it, you know, this date has shown, you know, has a date in it, then that means the status is this. You know that that kind of stuff would be fine.
+
+Unknown Speaker  38:12  
+So if we have
+
+Unknown Speaker  38:14  
+a list of 10 statuses, and a few of them are marked do not show the customer
+
+Unknown Speaker  38:23  
+what status is going to show on the portal. Right
+
+Unknown Speaker  38:28  
+equivalent for each of those. I mean, ideally it should be the statuses are running in order so it'll write the last status shown should be shown on the portal, even though it advances to the next status, and it's not supposed to be shown, right? Those needs to show the old last status for the customer. We just need a like a translation table or a field in the value list of customer facing. This should display as this. Yeah, okay,
+
+Unknown Speaker  39:03  
+yeah.
+
+Unknown Speaker  39:05  
+And then we can do that,
+
+Unknown Speaker  39:08  
+and we can talk
+
+Unknown Speaker  39:10  
+color codes after after that, because that part of the
+
+Unknown Speaker  39:15  
+design, UI design that we had for this is, you know, statuses may have a different color. It'll say the status and kind of a colored bubble around it, so that they can really quickly see
+
+Unknown Speaker  39:27  
+the status by color. It draws their eyes to it.
+
+Unknown Speaker  39:34  
+Every status may not have its own color, if it's you know, 10, 1015, possible statuses that the customer sees. It may be, you know, if it's one of these three statuses, it's green, if it's one of these couple statuses, it's yellow, you know, kind of thing we should never go more for customers. Never grow more than, like, three colors. Like, yeah, it's in progress. It's complete. Maybe green for in transit, right? Yeah, yeah. Some.
+
+Unknown Speaker  40:00  
+Like that, I agree. Yeah, you don't. You don't want to crap one of the colors that they have to memorize and figure out what they mean,
+
+Unknown Speaker  40:07  
+just three, maybe four is all you want.
+
+Unknown Speaker  40:11  
+Yeah? So we'll take that ship and transit status and whether it's visible to the customer or not, and which categories it should go into on the website.
+
+Unknown Speaker  40:23  
+Great.
+
+Unknown Speaker  40:26  
+So can someone make a Trello card for me for that?
+
+Unknown Speaker  40:33  
+Yeah, I can make it for you. Thank you
+
+Unknown Speaker  40:42  
+all. Right, so that, I think mostly covers my questions on the list view
+
+Unknown Speaker  40:52  
+we haven't gotten around to, but the detail view is going to be next.
+
+Unknown Speaker  40:58  
+But I did want to point out just real quick. This all test data, but this list of items here is from FileMaker. It's calling it live, so we do have the connection done, and it's pulling data already. So nice.
+
+Unknown Speaker  41:16  
+All right, then
+
+Unknown Speaker  41:20  
+fairly
+
+Unknown Speaker  41:22  
+quickly, we may need to get you guys to prepare for us a list of exactly what you would like to be shown on the detail view. But quickly, I can ask a couple like larger questions on that.
+
+Unknown Speaker  41:41  
+I guess my first one would be on the detail view. Are they seeing any of these line items for the shipment?
+
+Unknown Speaker  41:52  
+If so, to my understanding, it's, it's possibly a yes, they see some. No, they don't see others.
+
+Unknown Speaker  42:00  
+They would see, yes, they would see.
+
+Unknown Speaker  42:05  
+They would see the commodity and
+
+Unknown Speaker  42:09  
+the total weight, total volume.
+
+Unknown Speaker  42:13  
+Don't need to see the detail of the dimensions or
+
+Unknown Speaker  42:19  
+so,
+
+Unknown Speaker  42:22  
+detail
+
+Unknown Speaker  42:24  
+on the quantity, so yeah, yes, commodity,
+
+Unknown Speaker  42:31  
+yes. Commodity, yes,
+
+Unknown Speaker  42:34  
+weight, quad, yes, volume and quantity here. Volume,
+
+Unknown Speaker  42:42  
+okay.
+
+Unknown Speaker  42:45  
+Unit,
+
+Unknown Speaker  42:47  
+the shipping unit, yeah, yeah, well, yeah, cuz so it's 100 pounds so that, yeah, so the weight unit and the volume unit, as well as the shipping unit for the commodity, okay, and the shipping unit, so there's crates right here for this again, So that's part of the quantity units, I guess.
+
+Unknown Speaker  43:22  
+And
+
+Unknown Speaker  43:24  
+let's start with a couple I had questions. Do they need or want to see load type or delivery type?
+
+Unknown Speaker  43:37  
+Yes, load type.
+
+Unknown Speaker  43:42  
+Delivery type it looks like delivery type is just commercial or residential.
+
+Unknown Speaker  43:49  
+No, not that
+
+Unknown Speaker  43:53  
+the office. I'm not I'm assuming that's which of your offices are handling it.
+
+Unknown Speaker  44:00  
+That should be like the origin and destination.
+
+Unknown Speaker  44:04  
+Those are the same.
+
+Unknown Speaker  44:07  
+Okay, I don't know why it's on there then
+
+Unknown Speaker  44:11  
+declared or insured value.
+
+Unknown Speaker  44:19  
+Do they need to see those, is this, both for the the bill to party, as well as the shipper and constantly that do not have anything to do with Bill Two,
+
+Unknown Speaker  44:31  
+I could be, I can absolutely make it. Let's, I mean, if the if the detail view is also showing invoice lines then, or is that going to be separated? No, that's that should be separate. Okay, so then that's probably, although they'll probably have a just a button on the order detail that says, you know, go look at all invoices that are related to this shipment. Yeah.
+
+Unknown Speaker  44:59  
+But it.
+
+Unknown Speaker  45:00  
+Shouldn't show any invoice information necessarily on there, okay, yeah, but the declared and the insured value, I'm sorry, the insured amount, so yes, those should be on the order, detail, yeah.
+
+Unknown Speaker  45:18  
+Value, insured, shared.
+
+Unknown Speaker  45:23  
+Okay,
+
+Unknown Speaker  45:27  
+I'm ready for invoice that's definitely internal. We're going to get a list to decide what status they see
+
+Unknown Speaker  45:35  
+based off of whatever needs to be done. How about this? Like the actual shipping information, the carrier, the vessel?
+
+Unknown Speaker  45:45  
+Carrier, yes, vessel, void, yes, origin, yes, destination, yes. I
+
+Unknown Speaker  45:51  
+don't know what the office has been.
+
+Unknown Speaker  45:54  
+Not sure what that is, and if the origin of destination are here.
+
+Unknown Speaker  45:59  
+Container number, yes.
+
+Unknown Speaker  46:07  
+Commodity, OA, don't
+
+Unknown Speaker  46:10  
+know what that is.
+
+Unknown Speaker  46:12  
+Seal number, do they need that? No, no, nothing else. Okay, booking number, I don't know what that means. No, that's not no and a rip. What does that say? My name is your refrigerator. Oh, I guess maybe that's the temperature setting. I guess I can't change it so I don't know, but yeah, it says refrige,
+
+Unknown Speaker  46:40  
+the shipper and consignee information,
+
+Unknown Speaker  46:45  
+at least the company name, and then
+
+Unknown Speaker  46:49  
+part of the address,
+
+Unknown Speaker  46:52  
+like, we say Park, like just,
+
+Unknown Speaker  46:56  
+just The address, not city, state or zip, just that'll work.
+
+Unknown Speaker  47:05  
+Okay, well, actually, in the detail view, we have more space. Yeah, we've got plenty of space. Actually put the full address so all four of these, company name, contact name, phone number and address for all four of these,
+
+Unknown Speaker  47:21  
+I Yeah, okay,
+
+Unknown Speaker  47:26  
+which dates do they need to see the
+
+Unknown Speaker  47:32  
+I'll make it A little bigger. Hopefully that helps
+
+Unknown Speaker  47:38  
+the pickup date.
+
+Unknown Speaker  47:42  
+Well, let's see if this is also including pickup scheduling. So
+
+Unknown Speaker  47:54  
+I would say almost all of them, actually.
+
+Unknown Speaker  48:02  
+Yeah, all
+
+Unknown Speaker  48:04  
+of them, including created,
+
+Unknown Speaker  48:08  
+yeah, when this record, yeah, it doesn't, it doesn't matter. They can see that or not. It's, I don't think they're, they're gonna carry it, actually. So probably not. You could probably drop that one. Okay, so all except created
+
+Unknown Speaker  48:30  
+dokey.
+
+Unknown Speaker  48:39  
+Yeah, we don't have this set up yet in here, it looks like we're in progress building that the pickup and delivery
+
+Unknown Speaker  48:48  
+trips, but that the dates should go here once they're scheduled in the by dispatch. Correct? Chris, yep. So can we have the transit history show? Oh, sorry, just skipped over it. No worries.
+
+Unknown Speaker  49:05  
+So but for the pickup and delivery, we're going to be showing the date that's scheduled, when it's picked by dispatch. We don't need any more information on that. They don't need to know either driver's name or something. Do they No, nope, nope.
+
+Unknown Speaker  49:20  
+And the transit history.
+
+Unknown Speaker  49:23  
+Um,
+
+Unknown Speaker  49:26  
+I guess we could, I mean, it'd probably be a button that, you know, opens a little screen that they can scroll through and shows the history.
+
+Unknown Speaker  49:34  
+We could do that if we're collecting it here, we can show it there. Yeah, yeah. And this will be one that's affected by what's visible to them and not visible to them. Again, we have that now, so that's kind of
+
+Unknown Speaker  49:46  
+it's always showing.
+
+Unknown Speaker  49:54  
+Do they need to see any of the pictures and such that are taken by your drivers and all that kind of stuff?
+
+Unknown Speaker  50:00  
+Of
+
+Unknown Speaker  50:02  
+they do, and some things will we need a way to indicate. Well, one of the things, some picture types are going to be visible or not visible, yeah. But I want to say Dale, when I talk with
+
+Unknown Speaker  50:15  
+David Bartel that he was just like, let him see everything. I don't know. Do we have limitations now? Yeah, we do, yeah, that's what I thought. We don't have show them everything, because sometimes there's way too much,
+
+Unknown Speaker  50:28  
+right?
+
+Unknown Speaker  50:31  
+Yeah, the customer wants to see the pod and maybe the bol. That's it. Well, those are documents rather than pictures, right? So, well, the documents being in the bol the incoming shippers, documents that were scanned in, right? But we're talking about pictures. So I'm thinking actual pictures of freight or other things, whereas a okay picture or a scanned image of a document should be loaded over in the document side of things. Okay, yeah, okay. So yeah, pictures being the freight, yeah, pictures of the freight, yes.
+
+Unknown Speaker  51:04  
+Like there's no limitation on pictures of freight, right? No, not really, no, okay, so we just Yeah, show everything. Yes, okay.
+
+Unknown Speaker  51:13  
+And documents get more particular about who can see what kind of documents, yeah. And that's usually a little different too, because documents is going to be less viewing and more downloading. Sure, is probably how we're going to do that.
+
+Unknown Speaker  51:29  
+If they, if they clicked it, would it open a view of it, or like, download and view or you just, like, you could just download it and you get what it's what it's going to do is basically, you're going to click on it. It's probably going to open a new tab and show the document from Google Storage, and then they can download it from there, if it's a PB, okay, that would be perfect there. That's fine, yeah, yeah, that's fine because, because Google Storage is where we're going to be holding it, not file maker. So file maker just holds the URL, the link to it, right? Kind
+
+Unknown Speaker  52:00  
+of same with the pictures, actually, but we can pictures. I think we can feed into the website, possibly without having to, you know, go to a new tab, right? Maybe just thumbnails or something, I don't, yeah, are we going to be keeping a thumbnail and and a picture, or is it just going to generate a thumbnail?
+
+Unknown Speaker  52:21  
+Or is it visible? We're currently not going to keep a thumbnail that.
+
+Unknown Speaker  52:27  
+That's something we have done in the past, but that's normally done.
+
+Unknown Speaker  52:33  
+We've done that with s3 stuff. I don't I don't know if we've ever done it with Google Storage, because we have a web server in between when we use s3
+
+Unknown Speaker  52:42  
+so referencing the pictures is just going to have some generic, you know, JPEG or whatever, right? Whatever file, yeah, yeah, yeah. It's just going to kind of show it. Maybe we don't have to click carousel or something.
+
+Unknown Speaker  52:56  
+We could start with that, and we could always improve it later
+
+Unknown Speaker  53:00  
+documents, and then,
+
+Unknown Speaker  53:03  
+is any part of the notes going to be need to or is this all internal stuff? See, I think it's all internal. But Dale, what do you
+
+Unknown Speaker  53:13  
+Yeah, I would keep that all internal. No, no to the website. I mean, later down the line, we might designate a particular note that we want to throw out there now and then. We can cross that bridge when we get to it. We don't have it now. Not a, not a MVP component, right? We don't have it now. So it's not MVP,
+
+Unknown Speaker  53:31  
+okay? Well, that gives me a lot to work with. I'm sure that'll,
+
+Unknown Speaker  53:37  
+that'll keep us going for need more. Just ask. Oh, I'm sure I will. I am 100%
+
+Unknown Speaker  53:45  
+sure that's going to happen. We haven't even started talking invoicing and such yet. So, you know, looking at invoices. So that'll be all these conversations again for invoices, but, but this gives me a lot of what I need to know. You know what's going to be on the detail screen and what designates these tiles at the top, what we need to filter by what shows here. That gives me a whole lot to work with
+
+Unknown Speaker  54:10  
+and to pass to our guys. Great.
+
+Unknown Speaker  54:14  
+Yeah, that's that's mostly what I had the the whole who sees what login stuff was really my biggest question, and that's going to take me a little bit a little bit to work through anyway, sure to actually program that.
+
+Unknown Speaker  54:30  
+Yeah, we're getting up on the hour. Do you guys have any questions or anything for me?
+
+Unknown Speaker  54:37  
+I'm good at the moment. All right, yeah, no question, yeah. Kind of need to see the next round of implementation, yeah. And then we have some homework from this. So, yeah, beautiful, I'll, once I get that, you know, the status mapping for from you guys, we will build that in and, and you'll be able to see that here, you know, on the status.
+
+Unknown Speaker  55:00  
+This list here, and of course, it'll be on the detail view also.
+
+Unknown Speaker  55:05  
+So alright, that that answered all my questions. Thank you very, very much. Guys, absolutely. Chris, anything else we good?
+
+Unknown Speaker  55:16  
+He left. Chris. He cut off his camera and muted, I don't know if he had a yeah and his and his, yeah, he's muted his mic so So yeah, we're gonna, we're gonna think we're done. Yeah, I agree. All right. Thank you very, very much, gentlemen. Yep, thank you. Thank you. All right. You guys have a great one. Bye.
+
+Transcribed by https://otter.ai

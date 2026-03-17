@@ -1,0 +1,709 @@
+Unknown Speaker  0:00  
+Yep, thank you. Okay.
+
+Speaker 1  0:05  
+Well, I think what we'll do then, at least for now, is, if you have anything to present to us, Brian, any kind of follow up that we've you've been working on since last week before we get started with Ashley stuff, because I know she's going to have to tweak some stuff around. So we can focus on fixes that you can work with
+
+Speaker 2  0:21  
+that I can help with no, I don't really have much that is showable. I have been working through questions and documentation for our follow up meeting Monday on the customer app. I have been working on the or the reports from agency app. So I've got two of those working, but I need to be able to snag Jake's time to get them, to get the screen happening on the web app, on the website, to call this, but I have all the process that needs to happen in FileMaker for at least the officer jobs and the over officer over hours, although currently I have it only doing like the current week.
+
+Unknown Speaker  1:16  
+So I am going to be expanding that to handle
+
+Speaker 2  1:23  
+more intervals, but right now on the web, on the web app, week is all you can choose anyway, for your you know, your max hours interval. Oh, right, right. So then, so that's all I have on the report side to run a report on that. I don't have the other options, because we haven't done that on the web side either. So I've got that prepared in FileMaker to test. I just need, I need Jake to do his side on the web part to call it. So this is going to, they're going to basically request a report. It's going to make a record in a queue that your server is going to be checking. I was thinking every 10 minutes, but we could make it a little shorter interval if you want, and it will find any requests that came in since the last time it ran, generate the reports and email them out. Okay? And those will be Excel spreadsheets that it's sending out. Okay? I'm sure once I once we get the full test done, and I can send you a copy of what you're going to get, you might want to add a column or two, you know, of what's on the report, which is fine. I tried to grab the most obvious pieces of information, but if you need more, I can add pretty quick and easy.
+
+Unknown Speaker  2:47  
+I did wonder
+
+Speaker 2  2:50  
+how we want to handle so since, like I said, it's a request for a report that's making a record in our queue. Okay, now in a situation, when the queue runs so it tries to generate the report, but say it doesn't find any jobs or any officers, or any whatever that match the criteria of the request for the, you know, for the report. What do we do? Do we send the requesting officer an email saying, you know, hey, there was nothing that matched, you know, that matched your criteria. Nobody's over hours for two months down the road from now, because we haven't signed up jobs yet. You know, whatever, whatever the scenario that happens that it can't run the report because it can't find what's being requested,
+
+Unknown Speaker  3:43  
+is kind of the question.
+
+Speaker 1  3:46  
+I think the email would be fantastic, since they're going to anticipate that anyway of getting a report of some kind anyway. So even if they don't have something, at least they will get some kind of notification.
+
+Speaker 2  3:56  
+Yep, okay, we will do email notification on I
+
+Speaker 3  4:00  
+ask you so when they they run the report, doesn't the screen immediately pop up and say there's no data available to fetch your results.
+
+Speaker 2  4:09  
+No, because it's not doing the report when they click the button, it's basically created a request.
+
+Speaker 3  4:19  
+Is that an option that we chose instead of generating on demand,
+
+Speaker 2  4:24  
+not necessarily, it wasn't necessarily an option that is the easiest way to get a Excel document out of FileMaker. The problem is file FileMaker cannot export like Excel or CSV or anything like that from a data API call. It can only be done from the server or a client. So the data API is what's coming from there from the website. It's creating a record that runs through a queue. Now we can that cue can run more often, like I said, I was throwing out like every 10 minutes, but we could do it a little more often than that. If we want to do it every five minutes, I could even probably do it even every three minutes.
+
+Speaker 3  5:16  
+So it's not, it's so it just helped me understand. So sorry, guys. So the queue, so it has to go in and look for it, and then whatever sitting in that in that queue, it then runs it. But what if we only have one person run a report, and six hours, is it still going to be pinging, and is that working against us? Is that sluggish? Is that costing us money, rather than it just sending a trigger when it's like when, when it knows that there's been a request. So, for instance, in the solution, the most recent solution, I use, if I want to extract, if I want the parameters for the data, I put the parameters in for the report. I hit the extraction. It sends me an email to a dedicated inbox that we've, you know, we have designated so it's not going to individual people. It goes there, it takes just a couple seconds, and then the report pops up. If there's nothing in that report, it says, no data found, if there is data in that report, well, then, right, then I, then I aggregate it, but I just like, I don't understand that piece of the time and pinging every 10 minutes.
+
+Speaker 2  6:17  
+So you're getting a you're getting an Excel spreadsheet on a Dropbox. Now we're not. We weren't using a Dropbox solution. This was a lot easier and faster solution to not have to integrate with Dropbox and all that kind of stuff.
+
+Speaker 3  6:38  
+It's going to an email. I don't know if it's a Dropbox. I just going to our regular email.
+
+Speaker 2  6:45  
+So the it's attached, the Excel document is attached to your email, correct? Okay, yeah, it extends.
+
+Speaker 3  6:53  
+And so if we want, we have the option to, I mean, and I don't know FileMaker that well, but we can have it Excel, we can have it PDF, we can have it CSV, we can have it whatever we want. But the standard that we have it set is the Excel so they pull it, they put in the request, the parameters. It immediately sends it to a designated email. So, like, it's because we don't want, we only want executive staff to have the data right, and if from there out, we can push it out. So it's regulated with user access, but it just, it's a, yeah, it's an email that goes straight to info at Les dot. You know, I'm throwing that up, and then it gets but I know that it sounds like we want it to go to each of the officers if they pull it. That's understandable. And, you know, in the next module,
+
+Speaker 2  7:35  
+yeah, the officer that requests it. And, like I said, so a Data API call is how you are, is how you are making requests from a web app, from a website to file maker as a data source. Using that method, file maker does not allow us to program will not, will not export to Excel or anything else. So we can't save files out of the system, basically through a Data API call.
+
+Speaker 3  8:15  
+And that was our only option. But that's what our options are with our system.
+
+Speaker 2  8:19  
+Yes, that's pretty much the options with the system. I mean, if we think about it long and hard, and we really want to put a lot of time and such into it, there may be a faster response method, but I'm not sure. I can't think of one off the top of my head, it would probably involve some type of third party plugin and maybe an online API service.
+
+Speaker 3  8:47  
+I was just curious on the backflow. So if our, if our team and Joe is comfortable with that, and it's every 10 minutes, I mean, it doesn't seem like a long time, unless they need a report right away for something. I don't I don't know if there'd be a priority there, but it's just curious. I'm never I used to understand that process well
+
+Speaker 2  9:03  
+for number one, and realistically, they should be able to grab most of this information right there on the website, correct. They could just only see it on the website. So this is only for if they need it in Excel. If they need it that fast, they can find it on the website. Okay?
+
+Speaker 3  9:22  
+Okay, sorry to interrupt guys. I just, I'm trying to understand the process. I've never normally it's just an immediate the reports generate, and then it sends wherever you have directed it behind the scenes.
+
+Speaker 2  9:33  
+It may seem immediate, but I imagine their system is most likely doing something fairly similar in the background, making some type of queue and running through it, maybe they have it run every minute. You know, I don't know, on the background, we're we're not running with a lot of power on the server, so 10 minutes, maybe that is too long. Like I said, we can do a shorter interval. We can keep shortening it until it we. Feel comfortable. We find the sweet spot between, okay, between. We get it to them fast, but we don't, you know, step on our toes with other processes.
+
+Speaker 3  10:10  
+Sure. Okay, thank you for that. No, I'll defer to Joe, because he'll, he'll know the time frames on that. Thank you.
+
+Speaker 2  10:18  
+Okie dokie, so yeah, we will, we will send out. I'll come up with some blank template type of email for what goes out if there was an error. And for some reason, you know, it couldn't find any records to match what they're asking for. And I'll make sure I shoot it to you, Joe, to get your, you know, your yay or nay on the format of the email, or, you know, if you want me to add something to it,
+
+Speaker 1  10:50  
+yeah, absolutely. Brian, I think that's perfect.
+
+Speaker 2  10:53  
+Um, I think that is. Oh. And some stuff I've put on Trello nationally has been looking at and testing. You know, a couple of items from both our last call and the call you had while I was on vacation with Jake, at least the things that I can do
+
+Unknown Speaker  11:13  
+so items are ready to test?
+
+Speaker 1  11:16  
+Yeah, I think Ashley got to some of them a little bit ago, but I know she's working through them as well, because you're definitely getting some updates for us on there. Okay, so I think, from from our view, Ash, I think we're ready for you to take over and run with your list. Thank you.
+
+Speaker 4  11:39  
+Okay, these ones are I'm going to bring up with Jake.
+
+Unknown Speaker  11:49  
+Okay, this one, you can see something from the backside.
+
+Unknown Speaker  11:53  
+Brian, okay, so put in a job. Sorry.
+
+Speaker 4  12:09  
+All right, I put in this job and hit some I want to make sure this is the right one. It is okay. So I put in this job, I hit submit, and immediately it has a Texas officer on it, and it's, it's already canceled. I'm like, What is going on? I could awesome, but you can see, when it was canceled, it's like, 2020, by Gus, like, I don't know. So I ended up, obviously putting in the job again, and I didn't have that happen, but I was hoping maybe you could explain how that glitch, like my concern, other than the fact that it's a glitch, but that not I don't know how if everyone checks the job assignments, you know what I mean? Like that. I know I do. I always go here and make sure that what I did, what I wanted to happen, happened. But any idea what triggers
+
+Speaker 2  13:09  
+that, trying to open up Dashboard right now and go through what you just said. What is? Was that date? The 11th? Yes, Sunday. APS.
+
+Speaker 4  13:35  
+Weird. The other weird thing is, like, all of the information up here looks, you know, accurate and outfit, obviously, this job didn't exist then,
+
+Unknown Speaker  13:45  
+and that Texas officer, don't know where he came from,
+
+Unknown Speaker  13:50  
+probably came from Texas. Good assumption. All right,
+
+Unknown Speaker  13:56  
+I'm getting there. All right.
+
+Unknown Speaker  14:00  
+First one, it looked like,
+
+Speaker 4  14:03  
+yeah, it was top one. All right,
+
+Speaker 2  14:06  
+let's see what we find in the background. Real quick here, let's go to job assignment, the back data, actually,
+
+Unknown Speaker  14:21  
+while we get the recurring job. First,
+
+Speaker 2  14:24  
+recurring job. You are
+
+Unknown Speaker  14:33  
+recurring job ID that
+
+Unknown Speaker  14:37  
+let's find you here. Okay?
+
+Unknown Speaker  14:47  
+Hit submit,
+
+Speaker 2  14:52  
+which runs this submit, submit, submit and return. Jobs submit, okay,
+
+Speaker 2  15:15  
+and we picked once for that one. Create a new record. I'm
+
+Unknown Speaker  15:50  
+that is interesting.
+
+Unknown Speaker  15:53  
+Looks like me. Created
+
+Unknown Speaker  15:58  
+the job a while ago,
+
+Speaker 2  16:02  
+and then Ashley did the last edit instead of it creating that's
+
+Speaker 4  16:12  
+and just so, you know, I like this was a brand new job from the plus side
+
+Speaker 2  16:17  
+job locate. It was a brand new job location, yes, yeah, let's see this,
+
+Unknown Speaker  16:30  
+the recurring job assignments. There's only one of those,
+
+Unknown Speaker  16:47  
+sure how I got that officer? Id,
+
+Unknown Speaker  16:56  
+I'm sure how that could happen.
+
+Speaker 2  17:10  
+That might need to be an investigation.
+
+Speaker 4  17:17  
+I mean, it doesn't happen often. That's a maybe the second time I've seen something strange like that happened the other time was a long time ago. I just, like I said, If I wouldn't have double checked, I don't know, we may have, you know, not noticed until it was too late, and I just couldn't explain it. So I was curious. That's interesting. What is i?
+
+Unknown Speaker  18:06  
+So see, it's like it doesn't
+
+Unknown Speaker  18:11  
+have an officer name in it,
+
+Unknown Speaker  18:18  
+but it does okay.
+
+Unknown Speaker  18:26  
+Let me write down this
+
+Unknown Speaker  18:31  
+recurring job number or
+
+Speaker 2  18:37  
+street job number. Oh, no, I'm just trying to grab and move the window on your screen.
+
+Speaker 4  18:47  
+Yeah, it's weird, like you can see my creation was five, nine, and the creation that was canceled, quote, unquote, was created 320, 2019, weird. Yeah.
+
+Unknown Speaker  19:02  
+Well, that date is a selected date.
+
+Speaker 2  19:08  
+This one, no, the the actual, the cancel date you were discussing from 2019
+
+Unknown Speaker  19:13  
+that date is someone selects,
+
+Unknown Speaker  19:17  
+yeah, no. I mean, right here. I don't know who did it. Where's mine? Oh, god, Oh,
+
+Unknown Speaker  19:26  
+was that my date?
+
+Unknown Speaker  19:28  
+Right here, 2018
+
+Speaker 4  19:30  
+the creation, like when I pulled up the canceled right here, creation 320 2019 at 830 but then when it was canceled, was in 2020, so I don't there's just a bunch of different dates that don't quite make sense.
+
+Unknown Speaker  19:48  
+It feels like
+
+Unknown Speaker  19:53  
+like something that I will look into.
+
+Speaker 4  19:55  
+Okay, perfect, and I move on. On. Are you done branding that down?
+
+Unknown Speaker  20:02  
+No, give me a second here. I
+
+Unknown Speaker  20:39  
+76857, 6857, okay, okay,
+
+Speaker 4  20:48  
+okay, next one. So I got an email, and I know I I had tested this earlier through Trello, but Willie Jackson made edits to his profile. We got a message. So I went here, checked out his mod log, and it says that he changed his address. I don't know if that's I'm reading that wrong, but
+
+Speaker 2  21:12  
+no, he changed something in that subsection. It could have been anything that can change.
+
+Speaker 4  21:21  
+It would only be days off, badge number, phone number, those are the only three things that I know of that you can change, but it doesn't. So she would have to just go through and make see what's different.
+
+Speaker 2  21:35  
+Essentially, yeah, it should. You should be able to tell what's different from the old value versus the new value, but it didn't have an old value. Oh, because it just, it just started on that record. You know, that was the beginning of its mod log.
+
+Speaker 4  21:52  
+Yeah, it's interesting, though, because when I was testing it earlier, and I, you know what I changed, it didn't like it told me exactly what I changed, not necessarily what it was before. However, I could tell that I changed my badge number on this times I changed my, you know, like I unclicked or clicked POV, like I didn't have to go through and check all the all the things. So I was curious why his it kind of did that.
+
+Speaker 2  22:19  
+Yeah, it's, it's the, it's the nesting system of the JSON, if it shows everything above it. So if it's more than one level down, then it will show every level above it. So badge number is at a top level. So you don't, you don't have to see anything else, right?
+
+Speaker 4  22:39  
+I don't, I don't, I get to, I get what you're saying. I just, I've changed. I changed my phone number, and it showed me the change in my phone number, but his was just like, started with address and listed everything in there. I just thought that was interesting,
+
+Speaker 2  22:53  
+because that did change from the previous record, which is nothing, because that was the first mod log record. So everything changed, as far as the mod log is concerned. That's why it's showing you everything.
+
+Unknown Speaker  23:07  
+Does that make sense? Yeah,
+
+Speaker 4  23:11  
+okay, so then his next change should be more,
+
+Speaker 2  23:14  
+yes, exactly. And you should see less and less of that as you go along, because normally, the first record in the mod log is going to be the creation gotcha, anything that was already there before I put the mod log in, you know, you're getting the first log record. Gotcha, everything has changed from, you know, nothingness, to the first record.
+
+Unknown Speaker  23:40  
+Okay, got it. Officer job, work.
+
+Speaker 4  23:48  
+We were trying to email it, and when you click email after share, it doesn't do anything. Do
+
+Unknown Speaker  24:01  
+it. What are we supposed to see? So, like, if I hit email, that's all it does.
+
+Speaker 4  24:15  
+And I don't know, I imagined it would have like a pop up or something, am I do? Are we doing something wrong?
+
+Unknown Speaker  24:23  
+Is that not what it means second, no, I
+
+Unknown Speaker  24:34  
+don't know you were doing it right. I watched you. I
+
+Speaker 2  24:43  
+I'm not messing with this type of stuff, so I don't know why it worked before, and then all of a
+
+Unknown Speaker  24:48  
+sudden, not. No,
+
+Speaker 2  24:52  
+let's see what we run here. We run print option button, yeah. An email
+
+Unknown Speaker  25:03  
+which closes that screen.
+
+Unknown Speaker  25:17  
+It worked flawless for me, really.
+
+Speaker 4  25:21  
+So, okay, what
+
+Speaker 2  25:29  
+are your thoughts? Okay, yeah, I don't know one second.
+
+Speaker 2  25:41  
+Oh sure, Josh report,
+
+Speaker 2  25:54  
+okay, although I should probably close the actual report or not close the other one until I'm done.
+
+Unknown Speaker  26:02  
+We'll see how I want to do that.
+
+Unknown Speaker  26:13  
+I would have to
+
+Speaker 2  26:17  
+at a different time. We do a screen share where I can take control of your screen. Sign in as me so we have full access. I have a feeling it, it very well could be having trouble. File maker has notoriously had trouble dealing with Outlook. Okay, so that would be one of those things that it's working correctly on mine because I'm using a Mac and and not working there, and I've on your computer specifically for one reason or the other. Yeah, is that happening for everybody on that report
+
+Speaker 4  26:55  
+so far, just me and Lori, I think we're the only ones that have tried using email, because most of the stuff they're we're using is, you know, the Excel or one
+
+Unknown Speaker  27:04  
+of the other share options,
+
+Speaker 2  27:07  
+but we can look at it when we get a chance. But for for short term, you can just hit the PDF button, it'll generate right and then you can make an email. I know it's a few extra clicks, but we can. And then when we get a chance, we can look and see
+
+Speaker 4  27:24  
+what's going on. Okay, gotcha, yeah, that's what we ended up doing. I just wanted to let you know that it didn't do anything. Okay, let's see. Oh, okay. So this next one I have been trying so hard to recreate personally, but it's happening a lot to Christine, and it's I've had it happen once to me, but I've been trying to recreate it different, steps, different. I don't know everything, and I just can't do it. But I wanted to show you another video. I don't know it's something we did. We went over last time. This is a quick video, though, so don't worry, it's not like the last one. And if you listen closely, though, you can hear that ding like,
+
+Speaker 2  28:15  
+oh, just more of the thing freezing, the window freezing. Oh, that's the picture.
+
+Speaker 4  28:20  
+Sorry, yeah, but, and it won't let her close anything, and she's constantly,
+
+Unknown Speaker  28:31  
+I didn't hear anything, but,
+
+Speaker 4  28:40  
+so she's like, trying to click minimize right now, and I can't hear it on here. I can hear it on my phone, but it's like, ding, ding. Like something is in the background. It's not letting her minimize this UI screen. And here's the next picture I had her, you know, just like, look at all of her screens like this. I don't know it's just it's frustrating because she's having to log out, like, multiple times throughout the day, and then, you know, start over again. And it seems like once it's triggered, it's more likely to happen. Seems like
+
+Speaker 2  29:25  
+there. We've got to figure out where that's happening, what series of clicks or buttons is making that happen. I did see in that picture? What were those? I only saw one file maker screen, I think not
+
+Speaker 4  29:46  
+that one, yeah, hold on. Oh, gosh, this one, it
+
+Speaker 4  29:55  
+looks like. Just got a UI, a dashboard, and
+
+Unknown Speaker  30:05  
+so we've got officer detail,
+
+Speaker 2  30:08  
+Officer we've got two officer details. That's definitely a problem. We shouldn't have two. That main screen should always have one. No more,
+
+Speaker 4  30:21  
+yeah, and I mean, I've, she's, she's shown me when it's when she just has, like, after she's immediately logged out, logged back in. She only has one UI, one dashboard, and it still does it to her. I try. I've even tried testing it where I had to open I can't, I can't get it, but it's got to be a sequence of something that's triggering it. I just don't know what, and I don't know how to how to help.
+
+Unknown Speaker  30:47  
+I'm not sure,
+
+Unknown Speaker  30:50  
+I'm not sure how I can help without the sequence happy.
+
+Speaker 2  30:54  
+I mean, I can absolutely spend time clicking around, you know, but I don't, I don't form the job, so I don't know exactly, you know, what series of things are being done, how repetitious they're being done.
+
+Speaker 4  31:13  
+What's, you know, a lot of times, yeah, when it happens to her, she's filtering, so she's like, going back in time and, you know, going to a day back in time and then clicking an officer's name to pull up their profile. I don't I tried doing that as well. So shall I go back and call officers that I've worked on this day, and
+
+Unknown Speaker  31:39  
+then she'll just, like, continuously do that.
+
+Speaker 4  31:44  
+And I guess it happened to Tyler today, where he he said he was doing a like, a range, a date range, and then he used a customer filter for Ned spin, and that triggered it for him somehow. But he had been logged in for a few hours already. So I don't know if it was, you know that, or if it was something that he had done previously, like I'm just not sure.
+
+Unknown Speaker  32:18  
+I keep thinking on it, but I don't,
+
+Speaker 2  32:22  
+I don't know. I can't get that to happen to me. Not
+
+Unknown Speaker  32:27  
+on command.
+
+Speaker 2  32:29  
+I I do a lot different things than you guys do in the system. You know, I'm not going to be doing the same series of button clicks that you guys might do as I navigate around to do my development, but
+
+Speaker 2  32:47  
+train, I want to help you, but I'm, I'm afraid, if you know, if I don't figure it out, how much time you know, yeah, waste trying to figure it out When I'm kind of feeling around in the dark.
+
+Speaker 4  33:02  
+Okay, I will, I'll keep trying. I'll keep trying to recreate it, and I'll let you know if I get anywhere. See, oh, remember about the confirmed checkbox, and I had brought it up that it wasn't, you know, on some of them, it wasn't coming up automatically. I tried to recreate that also, like on Christine's screen, it'll be unchecked mine. I pulled it up and it was there. So I don't know, but what they were doing to get the check back is literally clicking, like, right here, where the check mark would have been and then it would show up.
+
+Speaker 2  33:43  
+Yeah, that's a that's a refreshing of the window is what or refreshing of a record by clicking on it? Yeah, the only, the only other way is to, like I, is do something to refresh this dashboard window, like apply filters, you know, for whatever, regenerate the screen. Click on the record. We've you've got to do something to force the refresh. Otherwise, I have to go to everything that could end up on the screen and tell it to do a refresh of the screen, which is going to make all types of navigation and doing stuff around the dashboard take longer if it's got a redraw and re, you know, sort and calculate and Everything this entire screen every time you do something, gotcha.
+
+Speaker 4  34:43  
+Okay, next thing. Oh, we were curious. So when you're adding an officer from the dashboard, either clicking, as I just did, can you have the cursor just auto populate here so you don't have to click? You Sorry, what? Yes, oh, I think said no. I was like, alrighty. I don't know if it's the same area, but also, when you click here, do
+
+Speaker 4  35:40  
+ready? Yes, okay, any were you able to look into the agency detail or agency Maricopa? PD, and there's the settings. How it got erased. Yet I can still see,
+
+Speaker 2  35:55  
+not, not much. No, I haven't put much into that. I did look a little bit to see if I could figure out how they got cleared, but I didn't really find anything, any smoking guns, and I have it on my list to look at the the scripting to figure out why you're still seeing jobs when they're all unchecked. That's on my list.
+
+Unknown Speaker  36:23  
+Thank you. Twice.
+
+Speaker 4  36:36  
+Oh, the customer, job, invoicing, report, sorry to go out of order. When we were running the reports, you know, there's the see, you can include canceled jobs, right? Yeah, well, without clicking that, we're still getting all canceled jobs.
+
+Unknown Speaker  37:01  
+I don't know,
+
+Speaker 4  37:06  
+still getting all the canceled. It did seem like, let me look Oh, and the c5 button, at least for for this report, wasn't working either.
+
+Unknown Speaker  37:24  
+So what do you mean?
+
+Speaker 4  37:27  
+So like, if I excluded C fives, run report, I would still see C fives. I specifically did a Q at one earlier, so maybe I should have done the exact same thing. I
+
+Speaker 4  37:55  
+board, all right, maybe I'll do the same I did a bit board. I But either way, this one for sure, including see or including the cancels like I'm not clicking it and I'm still seeing cancel jobs in the earth.
+
+Unknown Speaker  38:27  
+Blockchain?
+
+Unknown Speaker  38:36  
+Are you?
+
+Unknown Speaker  38:48  
+Wonder what I did Boston.
+
+Unknown Speaker  38:57  
+There c5 I knew there was one.
+
+Speaker 4  39:02  
+I Okay, so by hitting exclude c5 I still am seeing that this is
+
+Unknown Speaker  39:21  
+on customer invoicing.
+
+Speaker 4  39:23  
+It is customer job invoicing report.
+
+Unknown Speaker  39:37  
+I don't know why, because that was,
+
+Speaker 2  39:44  
+I thought that was a request for the officer. Jobs, work to report,
+
+Unknown Speaker  39:52  
+okay, so that one,
+
+Speaker 4  39:55  
+the seat does explode. C5, only work for uh. Yeah, hold on, trying to think of which one Lori
+
+Unknown Speaker  40:05  
+should work on the so that
+
+Unknown Speaker  40:07  
+doesn't work for all reports that button,
+
+Unknown Speaker  40:10  
+not currently, okay,
+
+Speaker 2  40:14  
+but if it's not that report, let me look you're not supposed to be able to click on it, okay?
+
+Speaker 4  40:19  
+Because, I mean, you are right. I did ask for it for a different report, but I just assumed, since I could see it right here, that it would, you know, work on whatever I chose.
+
+Speaker 2  40:32  
+No, it's it should be hiding on the invoicing. That's the problem. It's not, if you would like me to yes, those buttons up for the customer invoicing report. I can Okay.
+
+Speaker 4  40:46  
+Can you also add an exclude c4 I guess when she sends it to cue
+
+Unknown Speaker  40:54  
+it, she doesn't need to include those.
+
+Speaker 2  40:59  
+So we want a second checkbox for exclude c5
+
+Unknown Speaker  41:04  
+for which reports
+
+Speaker 4  41:08  
+for Customer Job invoicing. She wants to be able to exclude C fives and C fours. Lori, is there any other ones that you need to exclude?
+
+Unknown Speaker  41:20  
+The cue it Laurie, or are you there?
+
+Unknown Speaker  41:30  
+Let me go. Let me go, check on more.
+
+Unknown Speaker  41:39  
+Just those two, yeah, okay, yeah, just
+
+Speaker 4  41:43  
+It's okay, yeah. So she wants to be able to exclude C fours and C fives from Customer Job invoicing.
+
+Unknown Speaker  41:52  
+Customer Job invoicing,
+
+Speaker 4  41:54  
+yes, but, oh yeah, but only when, when these are clicked, because, yes, they use that for other things.
+
+Unknown Speaker  42:00  
+Okay? And what about the
+
+Unknown Speaker  42:04  
+worked officer jobs worked
+
+Speaker 4  42:06  
+That one is just excluding the C fives. Oh,
+
+Unknown Speaker  42:40  
+let me know when You're ready. Do
+
+Unknown Speaker  43:03  
+So I'm
+
+Unknown Speaker  43:26  
+oops,
+
+Speaker 4  43:46  
+Okey, dokey, okay, oh, any word or any ideas about the dashboard collapsing?
+
+Speaker 2  43:57  
+Fix was it collapse? What is it? What I sent you, like having this conversation,
+
+Speaker 4  44:07  
+it's when I sent you the instructions on how to make your dashboard turn into a UI. It's, I call it collapsing. I don't know what the exact term is, but like
+
+Unknown Speaker  44:20  
+that ring, Does that ring a bell at all?
+
+Speaker 2  44:23  
+Or no? Yes, I remember. Oh, okay. I remember you sent me an email with steps. Yeah, don't think I have gotten to it. It is on my list, on one of these pages. I'm just
+
+Speaker 4  44:35  
+wondering if that would if that's once that's fixed, if that'll help the being able to click back and forth, if that has anything to do with it, possibly not, but it's just something I thought about.
+
+Speaker 4  44:54  
+This one. I wrote Brian needs to look at if I've already talked about it, I apologize for saying it again, but for the dev app, if I have so like, I worked a job earlier today, I have my four hours in or whatever the job was. Can I Can I have the ability to see other jobs
+
+Unknown Speaker  45:21  
+for that day, since I already have hours in.
+
+Speaker 2  45:26  
+Yeah, I looked at that for a little bit, and I'm not sure how we're going to pull that one off. Because, of course, you can't see them. Because there was a request that once an officer has out, you know, a job booked for a day, they can't see other jobs for that day right now, we want to kind of change and caveat that, and I didn't come up with a quick solution in my head on how to make that happen, looking at the code, because We're not when we're doing that search, we're not going record to record and doing, you know, an if statement, you know, seeing related stuff, and going, well, if this, we're going to include it kind of, sometimes, yeah, okay, I Do doable, but I'm not sure yet. I don't, I don't see an easy way. I'll have to look at that deeper.
+
+Speaker 4  46:28  
+Okay, yeah, I was just thinking, if there's hours like in this box, then that opens up, you know, their ability to be able to see
+
+Unknown Speaker  46:37  
+jobs again, yeah,
+
+Speaker 2  46:39  
+programmatically, it's not as easy to just on days that
+
+Unknown Speaker  46:45  
+that I am,
+
+Speaker 2  46:48  
+that I am excluding, because I'm telling it to exclude when it has a day in there, but then I'm telling it something different, and you can't, yeah, You can't always do multiple types of things at once, at least not easily. I will, I will continue to try to figure it out. I'm sure I can. I just don't see an easy way to Do it right now.
+
+Speaker 4  47:13  
+Okay, see,
+
+Unknown Speaker  47:28  
+sorry.
+
+Speaker 4  47:37  
+I Oh, you already kind of saw this. I saw you respond to Jake, turning on and off access, yeah, if I do it, you know, on vibe manually, on clicking the button, it does work. It's just, if I change it to inactive, you can kind of brute force your way back through. And I know that there was something that we changed for it to look for when we were trying to get the other way to worse. So it's Yeah, yeah.
+
+Unknown Speaker  48:14  
+I guess I'll wait till Yeah.
+
+Speaker 2  48:15  
+I'm going to need to wait for Jake to log to kind of weigh in on that one, because all I know is, when you switch to inactive, it's clearing that checkbox that says, you know, allow login. That's that's kind of all file makers doing.
+
+Unknown Speaker  48:30  
+So it might be on his end. I'll have him look okay.
+
+Unknown Speaker  48:40  
+Them. I think that's pretty much it
+
+Speaker 4  48:46  
+for you. I think today, that's all I have.
+
+Unknown Speaker  48:53  
+That's like an hour. I'm sorry,
+
+Unknown Speaker  48:55  
+sounds great. Short list.
+
+Speaker 2  49:01  
+Okie dokie, Joe, we have anything else for today. Are you on mute? Sorry, he had it. He had to step away for a second. No problem. I'm okay. Then if, Ashley, if you have nothing else, Amanda, do you have something or Becca, I
+
+Speaker 3  49:27  
+was just looking at the agenda, and did we hit everything that we wanted to do today? And I know Rich, you had mentioned sharing some of the scrolling behavior that's on the agenda today. Did we get all of that answered.
+
+Unknown Speaker  49:42  
+Well, I think the last time that we had talked, it was
+
+Speaker 5  49:46  
+Jake decided to just keep it where it is until we figure out what we want to do with it. I think that was the solution to it. Okay, yeah, it was a refresh. So I. The time you scroll to the very bottom of it, and you try to scroll back up to like, let's say that you want to go back up one it refreshes, goes all the way back to the top again. But, I mean, I think that was something that we just decided last week we would leave alone until we decided if we would just wanted to delete that out, or what it was Brian might be able to,
+
+Speaker 2  50:20  
+yeah, the it's, it's the requested pull down to refresh the list, you know, refresh the screen. The jobs list functionality. Sometimes it's inadvertently being triggered when they're actually just trying to scroll up the list.
+
+Speaker 1  50:42  
+Yeah, and just to talk about that specifically, right now, rich, we're testing it out with some officers, getting some feedback on it to determine if we're going to go ahead and take that off or not. But as of right now, it seems pretty over, overwhelmingly positive that people want, so we're going to keep testing it before we decide on that. But as of right now, we're definitely going to keep it in place. Keep it in
+
+Speaker 5  51:04  
+place, okay, meaning overwhelmingly that they're okay with scrolling near the bottom and then it refreshes or overwhelming.
+
+Speaker 1  51:10  
+Well, no, they're not. They're they're not running into that issue. So it seems to be sporadic. I guess it's a couple here and there, but, but, but nothing, nothing to the point where it's it's becoming an issue for everybody.
+
+Speaker 2  51:21  
+It has to do with how much of your screen you swipe on when you're doing that. You know, going back to the top of the list, it's, yeah, it's so yeah, you're gonna get different feedback because, you know, different people have different size phones and different sized fingers, and just in general, swipe in smaller and larger motions.
+
+Speaker 5  51:42  
+So, yeah, I mean, it does it on my phone. No matter how I do it, it just, I could, I could barely inch that thing up, and it just automatically goes to refresh. So it could just be my Android phone, the way that it is. And I
+
+Speaker 2  51:53  
+was just gonna ask if you were Android, I know we get a lot more testing on iPhones, yeah.
+
+Speaker 5  51:59  
+So, I mean, it may just be my phone. So no words now,
+
+Speaker 3  52:08  
+Joe, did we address everything on the agenda you wanted to hit today?
+
+Speaker 1  52:12  
+I think we did. I think the majority of the things that we do have that are outstanding are things that Jake kind of has to get and some coverage on in regards to that. So I think we're good to go for right now, Brian, until our next one on Friday.
+
+Speaker 2  52:27  
+All right, yeah, hopefully Jake will have something to discuss Friday.
+
+Unknown Speaker  52:36  
+I'm not sure. I do know.
+
+Speaker 2  52:40  
+I I kind of got called aside and by the boss, and we've been using Jake too much, and he's got a couple of deadlines he was running against. So he working on that stuff. And I think I'm going to be getting him back for a little bit more time here in the next couple days. So hopefully Friday, he'll have, we'll have something from him. Most likely, he will at least be on the meeting to be able to, you know, discuss anything you want to discuss with him. Oh, I'm sorry. Go ahead. No, that's it. That's what I'm saying.
+
+Speaker 3  53:15  
+I'm sorry. Joe, go ahead. You were gonna say something. No, go ahead. Amanda, I was just gonna clarify, using him too much in terms of multiple projects, and that means there'll be less for us. Or I just want to make sure I heard that correctly,
+
+Speaker 2  53:28  
+yeah, kind of originally, our our plan and our flow has been in the range of 15 to 20 hours of me and 15 to 20 hours of Jake. And the last couple months, we've been getting closer to, you know, 3540 a week of Jake. And you know, almost the same for me. And it's, it's just caused, caused some other projects, for other clients to, you know, to get a little further behind, and we need to get those wrapped up and start to move back towards that 15 to 20 hours a week from each of us that we can that we can offer. Les, does that make sense?
+
+Speaker 3  54:16  
+Yeah, it makes sense. I just I don't understand only the initial I only have the initial documents that you provided. I think I'm not privy to the specific hours that were dedicated and expectations around that, so that that's okay. Thank you for sharing that. I'll, I'll chat with Bonnie Becca the team, and just, just so they can fill me in contextually.
+
+Speaker 2  54:37  
+Yeah, I believe that was fairly verbal, but that's kind of what we had, you know, what we had, kind of offered that we could offer months ago and and we've been putting in more, which is fine, you know, we're happy to, I just gotta pull back to to that for a little bit. And if you know, if Jake and I can, you. We can get back, get our heads above water on the other ones, then we can go back above 20 hours a week from each of us. You know, we can ramp it back up. Most likely we want to do this now so that we can ramp up how much time we can get from Jake's, especially when we start developing on the customer web app. We can push that out faster, if we can get other stuff out of the way now and make sure that we can use him as much as humanly possible when we get kicking on that. Yes.
+
+Speaker 3  55:30  
+Okay, so that was kind of where my question was leading, is that we have a major app that's next, the next phase that's coming, and what does that look like? And maybe, yeah, but our expectations, or what expectations, yes, of what you guys can provide. But okay, yeah, let me, let me chat with the team and see and just so I can understand a little bit more. And thank you. I think you appreciate you letting us know that
+
+Speaker 2  55:53  
+ahead of time. Yeah, we're happy to try to as much as we can, but usually for, usually for a client that it's, it's about 15 to 20 hours a week is, is usually what we can offer. You know, officially,
+
+Unknown Speaker  56:09  
+if we have time, we're always happy to put more in,
+
+Speaker 2  56:14  
+but, but that's officially what I can offer, especially at Jake's time right now, sadly, he is our web developer and the other people on the team can't necessarily do what he can do, so we're always fighting for him. Me and the me and the other project managers are always fighting for his time.
+
+Unknown Speaker  56:36  
+Thank you for that. I appreciate it.
+
+Speaker 3  56:41  
+So it looks like our next meeting that is on Friday, the 16th at one is that correct?
+
+Speaker 2  56:46  
+One year time? That's correct. Okay,
+
+Speaker 3  56:49  
+perfect. Anyone else have anything good of the order?
+
+Speaker 3  56:58  
+All righty, okay, thank you guys. Thank you awesome.
+
+Unknown Speaker  57:02  
+Thanks. Brian. All right, everybody. All right, bye, bye.
+
+Transcribed by https://otter.ai

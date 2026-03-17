@@ -1,0 +1,292 @@
+Unknown Speaker  0:00  
+Okay, good. I can hit record now it is,
+
+Unknown Speaker  0:08  
+yeah. So when we're talking about the app versus the agency portal, is that, am I right in the language on that? Yeah, so you got it. We're talking about agency portals, and we're not gonna talk about customer portal, broker portal and just outside users, however that that comes about. But I wanna going forward. I really wanna get a fixed, a fixed cost plan. So I think I was little bit blindsided by, or I felt like I was blindsided by the cost of the native app.
+
+Unknown Speaker  0:39  
+We I just got totals on it, like the other day, and I'm like, wait a second. I thought this was only going to be so much. And I know that you spent a considerable amount of time in the beginning figuring out what it was going to look like, how much, how long it was going to take you to build it. And, you know, whatever it was. And by those calculations, what we got, we kind of figured how much it should be. And I will ask Joe, I said, Well, this is really expensive for us,
+
+Unknown Speaker  1:03  
+you know. And then he went ahead and he did some research on what apps would cost. And we were somewhere in between, like, like, I figured it was going to be, like, a couple $100,000 like, just off the top of my head. And then, knowing, you know, like, for room for error, you know, 10 to 20% over that. Whatever Joe did some research, he came up with anywhere from 150 to 300,000
+
+Unknown Speaker  1:23  
+so when, when we were checking totals yesterday, we were over $400,000
+
+Unknown Speaker  1:28  
+and I know, like through the process, we had talked about
+
+Unknown Speaker  1:32  
+how, Oh, we're ahead of schedule. We're ahead of budget, you know,
+
+Unknown Speaker  1:37  
+under budget and things like that. So I so I just felt like I was a little bit blindsided the other day when I saw this amount, and I'm like, going, oh my gosh, we never got a fixed cost. I don't I have no idea that this was going to cost me $400,000
+
+Unknown Speaker  1:52  
+I probably may have delayed it. I don't know. I may have, I have no idea, and I still don't think we're done with that. I mean, that's just the last billing so, so going forward into
+
+Unknown Speaker  2:04  
+into, like, the the new portals that we're going to build, can I get fixed costs on this stuff? Because I have no idea how to budget it. And I, like, when it's just open ended, you know, the sky's the limit here, and I'm not the sky. So
+
+Unknown Speaker  2:22  
+we're crunching right now. Right now. It's really tough because, and I think it looking back at where all the costs have gone, it's been, you know, in this app, and
+
+Unknown Speaker  2:33  
+it's a strain, it's a lot of money. No doubt it is way more than what I ever imagined like if somebody told me I was going to spend $500,000
+
+Unknown Speaker  2:41  
+on this whole entire project. I would have said, Okay, probably okay, I can see that. But we're into, we're almost into 900,000
+
+Unknown Speaker  2:49  
+now, you know, last year, this year, and we're still not done. And so I really need to know what I'm you know what? What's left? I don't think it's going to be a lot. I think that everything's already built. It's just,
+
+Unknown Speaker  3:03  
+you know, just manipulating the information. And mostly, mostly, I would think.
+
+Unknown Speaker  3:10  
+But if I can, if I can get that and expect that, I would be really, really helpful. Yeah, first and foremost, we don't, we don't like surprises for any of our customers, so I don't, I don't like the fact that you're not you know you're getting blindsided. When I hear the word blindsided, that's not good.
+
+Unknown Speaker  3:31  
+Brian came back yesterday with an email saying, Oh, well, we expected 400 some odd to $600,000
+
+Unknown Speaker  3:38  
+I would definitely have said, No, we're not doing that. So just to let you know where I was or where I am on, that got it? Yeah? Any, any, anytime we have these kinds of revelations, Bonnie, with any of our customers, you know the best, the best thing that we can do is shorten the communication cycle. So the last thing in the world I want to do is go, Oh, it's a year later. And there were all these surprises last year, right? So one of the things that I would maybe recommend is, you know, maybe we do a quarterly check in just to go, Hey, how are things? Where are we at? How's the budget looking? What are the functionalities? Where's the business going? So to do a quarterly business review with you, number one, make sure that we don't, we don't run for long periods without a gut check on all sides, right
+
+Unknown Speaker  4:24  
+with respect to the fixed bid and so forth. I think we've talked about that. And guess what? We do that with many of our customers. So a lot of the work that we do, whether it's Hey, it's going to be X to Y or you want this down to the penny, we can do either of those, the challenge gets in that one of the one of the challenges we've had, I think, specifically with your organization, is pace has been really, has been really a driver for you, you know. So we've had, we need to get this thing to market ASAP, and so forth. So we've been in order to do a really detailed.
+
+Unknown Speaker  5:00  
+Scope of work and get everything nailed down. That takes time. And so the great part about doing that, there's less surprises down the road. The bad part about it is sometimes it takes weeks or months before we can actually get started, because we want to make sure everybody's authorized and approved and agrees with everything on both sides. So it's our it's our job. We have some of our customers we've been working with for years that go, Hey, I need to know that this is going to be between x and y. And we go, Yep, we're in good shape, and we can get you there other customers. It's down to the penny, and other customers are hand to mouth. Hey, we need this now, and let's just do it so we're happy to work in whatever level of accountability or scrutiny you want, but I just want you to understand, you know, part of, part of this last year, I think, was the sprint to get to market on a number of these things in a real timely fashion. And so we were, you know, throwing coal on the fire to do that. And I think, you know, we've done a reasonably good job on that, but, yeah, we're happy to work with you on at whatever level of detail you want, so that you guys can really manage the financials we don't, you know, our goal is not, our goal is to stand with you for the next, you know, 1015, years, not to wring you dry and then walk away leaving you with empty pockets and a half finished agenda. Right? We want to make sure that we're meeting your needs, whether it's functionally or fiscally. So let us know how we need to help you get there and we can accommodate. Okay, all right, cool. So I think moving forward, we
+
+Unknown Speaker  6:35  
+are looking at right now, I know that there's going to be a bid coming out, or RFP coming out for Maricopa County Sheriff's Office, which is the largest county in Arizona and one of the largest counties in the United States. And they are with our competitor, ODM currently, and they are getting rid of them. You know, thankfully, I've been supporting this new sheriff for a number of years, and he finally got in, and he knows that it's a problem. He knows it was pre administration, and they want to get rid of it. It's all but it's government stuff. So it's like it takes forever. They have to build a team over there, and what they're looking for is an so the officers have an application and a program that they can have full access to so that is basically the agency app or the agency portal. They have that I don't have and and I don't have any competitor out there that has what we have, obviously,
+
+Unknown Speaker  7:32  
+and we're, we are working with one company, one broker competitor right now, hopefully, kind of to be our guinea pig, to become one of our first brokers. And so that's what we want to build, the broker app.
+
+Unknown Speaker  7:49  
+The RFP probably won't be out when. I think they wanted to get it out by June 31 so I'm hoping not back and and awarded, but hopefully it's out by the end of June. So we have time. So that's good. It's not like tomorrow. So do you think any idea what's going on it at all? Like, Well, yeah. Like, any way we could prepare, you know, before June, or is it a complete black box? You have no idea what they're going to put
+
+Unknown Speaker  8:18  
+in there, in the RP, yeah, in the RP, um, I think we've got it all covered.
+
+Unknown Speaker  8:23  
+Oh, great, okay, I don't think there's going to be anything, because they're pretty transparent with us, letting us know exactly what they want, awesome. So we're not going to be blindsided by anything. I think we're just going to go ahead and present what we build to them, because I think that we are the experts in this field, and I think that we have the supreme program that that there is nobody in this country, I think has, so I'm very confident in that. Thank you very much, you guys and
+
+Unknown Speaker  8:53  
+and I think that when we build the broker app, it's going to be, it's going to be exactly what anybody else you know, because we know we were the experts in this field. So I think, what, what? I think we have it down before what they need. We understand exactly what they need and what they want already, and then, and then after that. Or in addition to that, we want to build the customer side too. That's super critical also, you know, because I've been telling our customers about this forever, and they want to get on it so bad. It'll just make everything streamlined so much easier. You know, they can just go on and put their stuff in and it's there instead of calling us, email, this email, that better, that better, you know, yep, yep. Like, it's just going to help life
+
+Unknown Speaker  9:34  
+and everybody. It's going to help everybody out. It would getting it hailing an Uber. If you had to email the company every time to get a car wouldn't exactly well. So I think, you know, we've heard you say multiple times that that's kind of your goal here, is to be the Uber of this industry. And exactly, I think you're positioned pretty well to do that. I mean, you know, so we have a lot of those working pieces, and that's how we're thinking about it, too. Yeah.
+
+Unknown Speaker  10:00  
+So we are a lot of what Dave kind of went through in the in the deck, which I'll send you. It's got a bit more information on the one I'll send you, so you can read through it. But we've made a number of decisions throughout this process that that support that vision, and we won't have to go backwards and go, Well, it can't be that big because we didn't build it like this. We just said, Nope, we're going to build it right. We're going to build it right. We're going to do it right the first time, and we're going to make sure that this supports the ongoing vision. So we're, we're with you on that. I mean, Dave, anything there, I think that's exactly where we are too. Yeah, well, and especially, you know, the the
+
+Unknown Speaker  10:34  
+I'm a small business owner like Bonnie, I have to watch the budget, and I also have agenda items that I want to move forward and so forth. So the the tricky part is not throw everything into the shopping cart all at once. To me, the real art in us working together is going to be, let's look, you know, we have to look at two or three things. Number one, what are the business drivers? You know? Oh my gosh. We have x need. We've got to get this to market. We've got a client or an account that's going to be viable, that's going to pad our bottom line, or whatever. So what are the business drivers? And then, you know, we get into, what are the cost drivers? Like? Well, oh, if we have to build that, that's going to be really expensive. Is there something else we can do in the interim? So I always want to look at the three fold thing is, what are the business drivers, what are the cost drivers? And then also, what are the time drivers, right? So there's, there's times when you go, gee, this thing is really going to be inexpensive, and it's going to have a high impact, and we can deliver it very quickly. Those are the ones that we want to, you know, put it to the top of the list, right? Some of the other agenda items might be more long term vision, and so we need to move on them. But we want to,
+
+Unknown Speaker  11:51  
+we want to build other things in the interim that are going to lend themselves to that long term vision, right? So that's the part where I think if we get a really good sense of the apps and desires from a business standpoint. From Bonnie, oh, I need to do this app over here. I want to be able to release this sometime. I want to do this. If we get a sense of those and the priority of them, then we can also help tell her this one little bit more costly, this one, if we build it after we build this other one, it's going to be more effective, more efficient, and save money. So you know what I mean, Bonnie, where we want to play, we want to play 3d chess with you, but we got to know where you're going so that we can go, oh, this is the cheap, easy one. This is the more difficult, but it becomes easier if we build this first, that kind of stuff. Yeah, it's important that we, and I don't know, Joe, what your thoughts are on this, but think we need to go towards the broker first. I want to get that customer one done, so bad, but I think we got to go to the broker one first and just get that going, because we are starting to pick up depart agencies, and we do want to be broker friendly for those, if possible. So I think, I think we might want to work that and get that in the works first, then the customer. But the other thing that we're looking at is, and where Amanda and Ramon is right now is they're on their way to Austin, Texas to do a presentation for the elite program for the state of Texas. So it's Texas Police Chiefs Association who runs the a leap, which is the accreditation for each agency in the state of Texas, there are 200
+
+Unknown Speaker  13:24  
+or 2020 800 I think 2800
+
+Unknown Speaker  13:27  
+police agencies in the state of Texas. It's huge. And they're meeting with the board of directors this evening at dinner. We sponsored it, and I think they have 15 minutes of talk time, but they're having a problem placing their assessors. So once, once a an agency applies and goes through all the modules that they have to go through. It's quite lengthy. It may take two years to get through a complete certification, but they have to have assessors come out. You know, a lot of it can be done online, whatever, but they have to go out and physically inspect and do a number of different things that I don't know if it's a day one to three day process, once they're out there, they have, I think, roughly 300
+
+Unknown Speaker  14:09  
+assessors that they're having major difficulty trying to get those guys on us, you know, scheduled and, and, and
+
+Unknown Speaker  14:18  
+Ellis. Chief Ellis. He was the one who contacted he actually, my husband was sitting at the bar in Denver, and my
+
+Unknown Speaker  14:28  
+husband comes
+
+Unknown Speaker  14:30  
+to me, goes, Hey, you need to talk to this guy. I'm like, okay, hey, I think I know this organization, whatever. And then they actually come to our booth and have a conversation with Amanda, and I'm talking to another chief, you know, wrapped up in something else, and I still don't get a chance to talk to him, so I finally met him on a zoom call when we got back. But
+
+Unknown Speaker  14:49  
+they are in front of the executive board of about 60 chiefs for the state of Texas tonight, pitching blue dispatch. What blue dispatch?
+
+Unknown Speaker  15:00  
+Does. But on the backside of it, Amanda's coming in and giving the technical aspect of what it will do, or what it can do, or its possibility to do for the their elite program, and scheduling their assessors. So we're really excited about getting that going, too. Yeah. Well,
+
+Unknown Speaker  15:18  
+that could happen like tomorrow, like, I feel like, when you guys, it's so funny, because we have conferences in our, you know, in our industry too. And sometimes you go and you're like, Well, that was nice, you know, I don't know how much work will come out of it, but it was nice to see people and blah blah. I feel like every time you guys go somewhere, you're like, oh, there's 500 new people that are like, hey, we want to do this and this and this with you. So that's, that's awesome to see. It's just kind of, it's notable every every it seems like every time you come back, we hear like, oh, there's this great you know, guy that we met, and we kind of are looking at doing this with him. And so you're about the railroad company. Then, IACP, so what is it, you BNSF. BNSF railroad, right? Yeah, just because he because that chief is having problems getting officers scheduled throughout, you know, the railroad, you know, mainly, and Tennessee, they're having some major issues. And then they're building this huge place here in Arizona, just not far from here. But he's having major problems trying to get officers and scheduling officers and keeping them engaged and getting them paid, you know, just all that stuff. It's like, oh yeah, had nothing to do with an agency. But here we can just pick up BNSF, possibly, you know, we'll work on that they have the contract. So I just, you know, you don't know what's going to come out of what I mean, there we got IACP, we got BNSF and and PPCA, or whatever it's called. She says, so, yeah. Tpca, so it's really exciting acronyms, yeah. I mean, the the So, and exactly that. Bonnie, what you're saying. One of the things I want to point out, first and foremost, you guys are going live with the native app. Number one, it's going to get used by a lot of people in a relatively short period of time. We're going to get feedback. We're going to get feedback. We're going to get, you know, minor bugs or little adjustments, plus you also have agenda items that you're going to want to, you know, enhance and improve on that. So that's going to require a nice little trickle of attention as we move forward. And then you've got sort of these, that's sort of a maintenance plan with some nice add ons and improvements over time, right? But then there are definitely improvements that we need. But I know that we had to push through and get stuff done in order to get it out. Yeah, everybody, everybody does V, v2 v3 releases, and then major releases, you know, a couple of years down the road or whatever. But that more importantly, we want to get it in the hands, get it using, make sure it's presenting you well in a public forum, right? You go to the app stores and it's like, people see this, they read it, they start reviewing it. So we want to make sure that we're responsive on that front, to keep your brand and the usability of that really well these other agenda items. So this is the part where, if you say, oh my gosh, Texas move to the forefront. What I want to be cautious of is that we don't go, Hey, Brian and Jake are working with your team, and we're putting together the broker app and then all and so we're we're spending, you know, days or weeks putting together the blueprints for that so that we can tell you here's everything it's going to do, how long it's going to take, and what it's going to cost. I don't want to do that if all of a sudden we're going, well, hit the pause button. We're jumping into Texas right now. So that's the part where, again, we can be very responsive, but harder to pinpoint exact costs and timelines. But if the company is coming to us with a lot of trajectories that are that are all of a sudden, important. We have to pivot with you in that respect. So it's harder to do that real concrete planning. On that front, we are fine working in either of those two venues, very slow and methodical against a speck of work, or in a very agile fashion. Oh, Bonnie and Joe came up with five new agenda items this week, and let's get on those so we can work in either of those two avenues, but, but we want to make sure that we're paying attention to the cost for you right now, right? Yeah. And the other thing, you know, the other question I have is, you know, on the
+
+Unknown Speaker  19:17  
+it's almost like this program or the system or the usage that we're we'll be selling, like, especially at this elite event that we're attending tonight, you know, Amanda's asked me, Well, how do we price this? I'm like, I have no idea, you know, so, right? I go out there and I'm researching it, because I really have no idea. I have no expertise in this whatsoever. Nobody here does, yeah, and, you know, we don't know how to do that well. So we don't even, we don't, we don't, wouldn't even know how to, how to sell it, like I don't have no idea. Yeah, well, and, and anytime you get those meetings, we'll be talking to you, or we're going to set up a pilot program. You can, you can defer some of those. You know, anytime you're releasing a product, and we've released products before, I the very first thing I ever built.
+
+Unknown Speaker  20:00  
+Built in software. 20 plus years ago, Bonnie was a product, and you know, you got to throw the at a certain point in time. Is it a value proposition? Do you look at the competition, if there is any, do you just throw a dart on the wall and say, This is what I need to make it's hard, but if you have those kinds of conversations, come to us, this is something that you and I could work on, a sidebar too, if you need but more importantly, don't answer that question initially until because what you don't want to do is price yourself from consideration by going too high or price yourself too low and blow your toes off.
+
+Unknown Speaker  20:34  
+You painted yourself into a corner. That's not viable, right? So give yourself time, and you can always talk about, hey, we're going to do this pilot program. We'd love to have you guys involved in that. So maybe for the first six months, it's going to be a reduced rate, and then later we'll go to full rate. You know, you can give yourself some of those tricks to kind of give yourself leeway that to set the price that it needs to be, after you dabbled a little bit and learned a little bit more about what their needs are and what the costs are going to be to you. So we should know that, you know, probably tomorrow what? Yeah, I can't help you with that tomorrow. Yeah, right, yeah, but, but you can hit the pause button. Hey, you know what we're working on that we're going to have some ideas for you in the coming weeks. We'd love to meet with you and talk, you know, so you can pivot. You don't have to give them a concrete number on that, but, but let them know you're very interested in working with them and and bringing them along as, maybe, as a partner organization, etc, etc. There's all sorts of little talking points you can use to kind of part to delay that fixed number coming out of your mouth, and then it's irretrievable, right?
+
+Unknown Speaker  21:42  
+I like that partner organization. I wrote that down,
+
+Unknown Speaker  21:46  
+yeah, tonight. It's pretty good at this stuff. Yeah. I mean, that's Bonnie, you and I talk on occasion. But man, oh, man, girl, you're an entrepreneur. I love, I love, I love how fast you guys are moving, and the kinds of opportunities you just are a shark. You're out there, and you pay attention to the things that are out there that you could leverage and that you're just my kind of people. So let me know when you're thinking on stuff. It sounds like you've got, you know, other friends, you've got a husband that's looking out for you, etc, but don't feel like you can't tap me on the shoulder and go, Hey, business wise. This isn't about technology business wise. We're thinking about X, Y and Z. I've worked with, I've worked with two, two to 3000 businesses over the years. I know a lot of real smart captains of industry have written down a lot of notes. I'd love to hear your challenges and help you. I think through some of them, if you need perfect
+
+Unknown Speaker  22:40  
+okay, this goes more towards that last slide where it was like, you know, we're every relationship that we kind of start. It's always, you know, it's, it's vendor client, right? You know, we're building stuff that you pay for. But over time, what we get really good at is that partnership where we kind of shift from a vendor mindset into like, hey, now we're, we feel like we're partners in this with you. Here's what we're seeing. Here's what we're noticing. Because we noticing. Because we see parts of your business that you don't see every day, and you see tons of parts that we don't see. So we exactly kind of like responsibly, you know, the recommendations we're seeing things under the under the hood. Jake, building some things that are reusable. Brian, leveraging technologies in multiple areas. Meanwhile, Bonnie's at the bar, hooking new clients, right? We don't see that. And if we communicate on these fronts and go, Hey, here's some things that we're thinking about, we can, you know, one at one
+
+Unknown Speaker  23:33  
+of the, one of the quotes that a friend of mine gave me a long time ago, he said, if you have, if you're driving across the country, and you have a really good map and a really good navigator. You don't have to hit the brakes very often, right? You know when the curves are coming, you know when the ice patches are there? Same deal. If we know where you're going with your business, move in step with you and get out in front of you. You know, us building this app that's going to be easy to add additional spokes to it is already because we go, oh yeah, they have brokers, they have clients, they have officers. Let's make sure you can reuse the code. That's because we've already been privy to some of those thoughts that have
+
+Unknown Speaker  24:12  
+made their way onto our into our ears. If you do that with us on a regular basis, we're going to be even more efficient at going, Bonnie, don't do that yet. Let's finish this first, because we're almost done, and you're going to be able to reuse that, you know, or things like that. So we can be a little bit more insightful for you if we meet maybe a bit more frequently, and again, tap me on the shoulder. I've got a phone, I've got an email. I'll be happy to spend time with you if you've got some challenges coming.
+
+Unknown Speaker  24:38  
+Fabulous,
+
+Unknown Speaker  24:42  
+fabulous. Fabulous. Okay, so where do we go from here?
+
+Unknown Speaker  24:46  
+Great question
+
+Unknown Speaker  24:48  
+I would I would start again. I think Brian's got logistical notes, depending if Jake and I and Brian have all sat down together and kind of said, if she wants to do this.
+
+Unknown Speaker  25:00  
+This might make more sense later. More importantly, I don't want to pollute your brain. I don't want to pollute your brain with logistical and technical stuff on our front I want to hear here are the business drivers that we want to focus on this year, you know. And I'm going to tell you number one before you get excited about anything you know, in Texas or via a railroad. I want to say number one, let's get a nice, successful landing. Let's stick the landing on the officer native app, right? Let's make sure that lands hard and good and strong, and we support it in this initial, you know, opening salvo. But after that, I would say, Bonnie, what's number two? What's number three? What's number four, what do you see on your agenda? And then once we see where you want to go, we can go That's expensive. You may want to do that later, or this is easy, like the black one, we can come in with the technical, operational and some of the financial impacts of where you want to go. And that way you may can, maybe can make some minor course adjustments once you hear from us on the logistics of where you want to go, right? But first tell us where you want to go. Get us a little bullet point list of these are the five things that I see, or the 10 things that I see for 2026 and we can help you shape that. Oh, definitely, I definitely want to, you know, I think the biggest, the heaviest one is going to be the customer portal, and even possible the outside user port. I think those are going to be, well, they're still different, but I think the customer portal is going to be the heaviest one. I thought. I think maybe the broker portal might be the first place to go, because we need to get that up and ready and going and being able to market that, along with
+
+Unknown Speaker  26:39  
+with our brokers, plus, you know, with the agency. So the agencies are happy. They're they can use the other brokers too, or the other brokers have access to all this and, you know, so that they but the it keeps the agency in one amp, you know, and one portal, so that they can see it all. So I think that's probably the most important, that probably, I'm hoping that it's going to be the easiest, maybe, maybe not. I don't even know. Honestly, Joe, I don't know if you have any thoughts on that. Well, I do agree. I think the trajectory that we're taking right now and our goals, or at least our immediate goals, really encompasses the brokers. I think we should be focusing on that, and client maybe after but I think at least initially, that the broker side should be our focal point, in tandem with obviously updating and make making small tweaks to the native app itself, because we want, kind of them to work synergistically, the native app, agency, broker side, so logically from our perspective, at least, It seems like the broker side is next. I like what Joe just said about, you know, in hand, in hand, synergistically, these two things belong in the same realm. I like the thought process behind that as well. Yeah, they do. It's just that they're all so similar. So I think it's like,
+
+Unknown Speaker  27:59  
+yeah, just might be, you know, just seemingly to do that first, and then we can easily transition into the next one. So what might be, and again, all of this is predisposed on, you don't get a midnight call from Texas tonight going, Hey,
+
+Unknown Speaker  28:18  
+right. So us starting on those two things. Number one, we're going to support the officer app. Number two, let's, let's, let's tie in, let's, let's focus on getting, you know, the agency, broker app. Let's see if we can get that, you know, planned. We're going to need that anyway, regardless of what happens with railroads or Texas, right? We're going to need that anyway. So setting up a set of blueprints for that gives us a little bit of time to focus on this is, this is something we're going to need. Whether we need it right now or in a couple of months from now, we've still got it in a drawer that we can pull out those plans and get moving on it when, when Bonnie says, go right. So if we get started on the planning phase of the broker app and sustain and maintain and tweak and polish the officer app. That gives you time to make some business, making decisions on Oh, after that, this Texas thing is warming up, right? Or the railroad things needs our attention, or some other new agenda so we don't have to move on anything super fast, other than just really getting a plan together and supporting what's going to be released. And then you get to go, yeah, none of those other things have panned out right now. Let's get on the broker app, and now we pull it out of the drawer and we get started on it right and if something else new comes abroad, then we get focused on the design of that, get your numbers for that, and we pull the broker app out later, whenever that dust settles on any new agenda items.
+
+Unknown Speaker  29:49  
+Okay,
+
+Unknown Speaker  29:51  
+does that work for you? It does. Hey, Joe, do you know just, just what little you know about
+
+Unknown Speaker  29:59  
+the to.
+
+Unknown Speaker  30:00  
+PCA and and a league program. Are we able to handle that now, with what we got from what it sounds like and from what they've kind of conveyed to us, it's almost like we would be
+
+Unknown Speaker  30:13  
+white labeling or copying our actual scheduling system, as opposed to an agency app or anything like that. So to give you guys some context, Brian, Jake and Dave, it's almost as if we would be almost duplicating our actual file maker for them to utilize, as opposed to any kind of agency app or anything like that. Well, that's that That, to me, is is too much. So um, version that would
+
+Unknown Speaker  30:41  
+be the only thing I can think of, as far as how they don't need, I mean, they don't need what we've got. They don't they definitely don't need a scheduling system, like what we've got. I mean, ours is huge, but it's, it's basically like, they'll have 300 people.
+
+Unknown Speaker  30:56  
+It's almost like that they're, they're on, they're like an agency. They're their own jobs
+
+Unknown Speaker  31:05  
+for them. Yeah, we would handle, we would handle the billing for that too. But I don't know how to, I just don't know how to price it, if it's per user, per department, agency. I don't know how to have to figure that out
+
+Unknown Speaker  31:16  
+somehow. So that's why, because, because they're meeting tonight. I mean, it's something that they need. I mean, they're having a problem with it now. It's a need. It's a definitely need right now.
+
+Unknown Speaker  31:28  
+You know, when I Googled it, and I think that they there, they are a 501, c3, or something like that. They are a charitable organization. They're bringing in about 1.5 million a year. So I did, I did check out their financials a little bit.
+
+Unknown Speaker  31:44  
+Yeah, I don't know. Hopefully we can finagle a way to get it going, or be able
+
+Unknown Speaker  31:51  
+to, I know, you know where I'm going, Joe, right? Yeah, no, yeah, I get it. I get it just, it's just a matter of trying to nail down the logistics of it all and try to really understand what they're what they're looking for. Yeah, if we treated them like an agency, and their their assessors are officers, and we had just had assessors as a
+
+Unknown Speaker  32:08  
+I don't know, maybe it's a long tweak here or there, that probably a lot of reusable stuff that we already have. And it could be its own siloed thing, you know, and we could figure way to break that off. We may have to build some pieces of it that are supposed are specific to them. But, you know, if there's a built in customer base, you know, it would be a shame to kind of just like, let that wither. You know, it seems, seems smart to kind of go after that. Yeah,
+
+Unknown Speaker  32:38  
+okay, yeah. We're, yeah. I think, I think it's just gonna be passive income, yeah, maybe,
+
+Unknown Speaker  32:45  
+alrighty. So basically, we are in the, we're gonna be in the planning phase, Yep, yeah. Again, if I want you to feel comfortable to call us back, you know, hey, it's two days later. Austin was incredibly fruitful. We need X, Y and Z. Let's talk about, you know, or the customer app. Really, I'm getting pressure. I need to move that to the forefront. We want to be able to be nimble with you. I think us putting together plans and then just putting them in the file cabinet and going, Okay, right now, I need a first let's pull it out. Let's get on it. But you already know, if we, if we get started on that, on that type of stuff, you can at least get a sense of I've already got a plan. I already know what the budget is. I know how long it's going to be. That's going to help you make decisions on new things as well. Bonnie, when you know, hey, we've got a quiet period. Let's go ahead and pull that customer app out right now and get that done before, you know, quarter three, year, whatever. So I think us doing the planning, number one, helps everybody solidify what you're going to get. And number two, what are the costs? And then you guys have got, then you've got the the flexibility of pivoting, because you can just grab whichever, whichever stack of items you want to get focused on them. You can pull them forward and go from there,
+
+Unknown Speaker  34:03  
+and then Jake and Brian to you guys. So you know that we're looking at the broker portal, the customer portal, and user like, in like, with everything that you have and you have built, Which one, which one do you see going forward first, or which was the more bulkier one? Like, I kind of know, but I kind of don't know really so well. Moving forward, it kind of depends on, you know, what you want, what your what your was, are the one that we'd want to move forward with first,
+
+Unknown Speaker  34:34  
+you know, if this broker thing is something that you need to try to get to market as quick as possible, then that's absolutely something we'd want to look into
+
+Unknown Speaker  34:44  
+moving forward on that. I do agree that the agency app is probably the area we'd want to work on for that
+
+Unknown Speaker  34:53  
+we want to stay away from making, you know, a whole nother system or app, you know, to cover that and.
+
+Unknown Speaker  35:00  
+Necessarily, if we have something that's, you know, 80% there, 75 80% there. So,
+
+Unknown Speaker  35:08  
+so that's where I would go with that. And as far as what's bulkier and not, it kind of depends. That is, that's web development that's on building on to an app, web app that where they already have, which means that's, you know, a little bit of lighter work, depending on what it ends up being that we need. But necessarily, that's probably some lighter work we want to go through the kind of wish list for new features and updates for the officer native app, and see what the priorities are there. And some of those, I kind of quickly made a list of things, of features and stuff I've heard you guys over the past year or so, you know, say that you would like to see on there. And some of them are, you know, aren't that big and probably wouldn't take that long or that much effort. Some of them are, you know, fairly, fairly large, and have a large model, a lot larger effort behind them. So we'd want to see, you know what, what do we really want, and what are the priorities, so that we know you know when to work on them.
+
+Unknown Speaker  36:19  
+Yeah, Brian's got a list of Officer native app like, likely
+
+Unknown Speaker  36:27  
+add ons, you know, some tweaks, adjustments, features that we know you guys have had in your in your pipeline of future, you know, enhancements and so forth. So I think he's got stuff there that he can speak to whenever you guys are ready to go into that realm. My, my, my wish is to step back and go.
+
+Unknown Speaker  36:47  
+We want to do broker. You know, we want to do that. So if we're on that track right now, that's where, you know, Brian and Jake can sit with you and kind of really cherry pick, what do we already have? What's the and the other thing too. Bonnie, you always hear us do this. What you're doing with your office or native app. You're getting it to market. It's out in place. We want it to be reliable, and we certainly want you don't want to come out with 500 features in a brand new app. You want to come out with 100 features. So then you can go, hey, guess what? It's been updated. You want to be able to trumpet each update cycle to show that your company is moving and advancing and future forward. You don't want to release everything all at once. You want to keep that nice trickle of new features so the officers who are using it are like, Oh my god, this is so cool. They've got these new features that allow it to do X, Y and Z. So me, that's the attention of what a really good company is doing these days in the technology world, right? That makes, I don't want to stagger right, like, yeah, there's good there's a lot of updates that are going to say, like, minor enhancements and bug fixes or blah, blah, blah. But if we can try to kind of roll things out, major updates out, so that those updates can stand independently, and we can go, that was the one point 5.8 update where we did this, and it's we can specifically call something out rather than go, we have like, 10 new features, and we're going to release them all at once, if we can trickle those features a little bit. That usually helps with user engagement. It also kind of gives users more time to sort of buy into the workflow that we're building for them. There's, there's a lot of good reasons to do that. So I think, I think if we're just smart about identifying the the features we'd like to see in 2026, in the office or app, and then we go, all right, well, let's make a roadmap for those, and let's, let's use, let's, let's be smart about when we release what does that make sense? And also stagger back and forth between your target audience. Because as I look through this, this wish list for the officer app, and things that you're talking about for brokering, the brokerage and agency stuff, let's you know, we're going to put out a feature that is going to help the officer the next time, we're going to put out a feature that's going to help the administration right back to the officer that you know, start going after, know who you're targeting, and stagger so that you keep everybody engaged and you're not just that's a really great point. Brian stuff to officers, and then next year we're going to agency. No, no, no.
+
+Unknown Speaker  39:22  
+Yep, I like that. Yeah. I'd rather have a baseball team where all of my lineup gets singles every single time, instead of occasionally a home run. You know what I mean? It's more predictable to go, Oh, we're going to get something good every couple of months, or whatever. This app continues to get better and faster and better features. I think that's way more enticing. And again, as your competitors look at you, as your as your clients look at you, they're like, Oh, my God, this customer is on ever stop moving. Man, yeah, we're on a constant innovation cycle here. Yep, agreed,
+
+Unknown Speaker  39:56  
+yep.
+
+Unknown Speaker  40:01  
+I'm writing.
+
+Unknown Speaker  40:04  
+Yeah, I hate, I hate to tell you this Bonnie, but most of if you're not, if you're not getting it, most of what we are here to do is go, Holy cow. Look at where we've been, and it's been great. Number two, the Bonnie has got to be a bit more cost conscious moving forward, and we got to be a little bit more planned, and we got to work a little closer with you to make sure that everybody's clear on especially on the financial and the role app. But more importantly, where does Bonnie want to go? And Bonnie's got a lot of really great ideas, and we can help you put those in the right order, or give you some enhancements, or take your ideas and explode them a bit. But mostly we want to know where you want to go, so I think you getting your list together, sitting down and going through that with us, that's when we go. Great. Logistically, here's what ACD can do to help you or hear some adjustments or some suggestions. But we want this to be driven from your business mind, not from our Hey, what would ACD like to do? Oh my gosh, we'd love to build another X, Y or Z for you. I don't want to build anything. I don't want to take your money if it's not helping you. Move the needle, right, right, right. It's more fun for us. Honestly,
+
+Unknown Speaker  41:21  
+we can build whatever, but if we can see the results and we know that we're aligned on, like, Okay, this is what Bonnie's goal is, and here's how we're meeting it, and we did it in this really cool way with this technology over here. Like, that's way more exciting for us than just building whatever.
+
+Unknown Speaker  41:38  
+Jake's all over our internal Slack channel at work going, Oh my God, look at the app. It's out. Everybody. Go to the app website, download it, give it five star. I mean, you know what? I mean, we've got skin in this game. We really want to see this succeed, but, but first and foremost, tell us where you're where you're thinking about going, and then we'll help you accelerate to get there,
+
+Unknown Speaker  41:58  
+right? Okay, all
+
+Unknown Speaker  42:02  
+right. Fabulous, awesome, good, good meeting. Thank you for your time.
+
+Unknown Speaker  42:09  
+You know, hopefully I do think to address your, you know, to address your point about the fixed costs going forward, we absolutely can work like that. We just need to take a little more time up front to do it. So I think anything going forward, we just go, Hey, we don't want to surprise you, yeah, because we don't, you know. So let's do a proper round of discovery. Let's get mock ups done. Let's do wire framing. Let's do user testing, like that kind of stuff, user discovery, user stories, all that stuff helps us build the best thing possible. It also helps us tell you exactly what you know we think it's going to cost. So I think, I think if we approach each of these sort of chunks, these milestones like that, we're going to have, obviously, we can make successful products together. The stuff we're making is awesome, but we don't want you to be surprised. So if we can, if we could do that in, you know, in all these phases going forward, I think me and Brian can help really lay out what the next year or two or five or 15 you know are going to look like for you guys, because we want that too.
+
+Unknown Speaker  43:05  
+Yep, yep. Feel it awesome, great.
+
+Unknown Speaker  43:12  
+This has been great guys. Thank you. Let us know when you're ready to talk on any of these friends. Bonnie, you've got my email, you've got my phone. Ring me if you, if you got some things you want to talk to perfect
+
+Unknown Speaker  43:26  
+guys. Oh, wait, hey, you guys golf badly. Yeah,
+
+Unknown Speaker  43:31  
+we have a golf tournament. Our Foundation has a golf tournament February 13, here in Chandler, Arizona. And if you want to come out and go, let us know, send me, send me the information on that, Bonnie, I might be able to come out. Okay, awesome. That would be fabulous. You should look into here. I'm actually looking out the window of my office, and I can see the green on a golf course right next to my neighborhood.
+
+Unknown Speaker  43:56  
+I see there's a green. There's greenery outside of my office too, but it's got cows in it. I think
+
+Unknown Speaker  44:02  
+we could probably hit golf balls at the cows, but I don't think that they
+
+Unknown Speaker  44:08  
+would. No, I see, I see old guys in bad clothes hitting golf balls.
+
+Unknown Speaker  44:17  
+Alrighty. Thank you guys.
+
+Unknown Speaker  44:22  
+Take care. Bye.
+
+Transcribed by https://otter.ai

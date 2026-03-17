@@ -1,0 +1,598 @@
+Speaker 1  0:00  
+I know you're okay. Yep, I was gonna ask if we could record so Bonnie can see that. And I don't know, Becca's here just yet, she had an appointment this morning, so she'll be jumping on okay. Okay, perfect. I'm got it. Oh, there you are. Yay. Okay, all right, let's see. So Brian, well, is Jake coming? See? I just can't see my there it is. Okay. I can't see my Jake
+
+Unknown Speaker  0:23  
+is sneaking in, like always, ah,
+
+Speaker 1  0:25  
+there it is, yep, all right. Well, would you guys,
+
+Unknown Speaker  0:29  
+Whoa, yeah, that's rich. Might have to put himself on mute. Rich. Do you want to mute? Ah,
+
+Speaker 1  0:45  
+is that better? I muted mine right away, just in case. Much better. Okay, okay, got it. Okay, perfect. So let's see, are you guys taking notes using let me see it says it's popping
+
+Speaker 2  0:59  
+up and say this is, yeah, the AI is taking. So all
+
+Speaker 1  1:03  
+right, are you guys gonna send those out? Then you'll save me a lot of time doing I can. Yeah, totally. Send them over. That'll be very helpful.
+
+Unknown Speaker  1:10  
+I don't know how accurate or good, yeah, yeah. Let's see how
+
+Speaker 1  1:15  
+accurate it is. That might help us all kind of make sure. Yeah, perfect. Yeah. Send those when you're done, too. All right. So do you all want to share your screen so that we can walk through and go over any questions you have, and we'll just kick
+
+Speaker 2  1:27  
+off sure I haven't had the most time to look over it? Oh, we realized that, yeah, no worries. Spend a little time, but not much.
+
+Speaker 1  1:35  
+Yeah, no worries. But okay, perfect. So essentially, what we wanted to do is it sounded like in the past. We came on together. We had a discovery session together. But what we wanted to do is be more cognizant of time, right, and kind of try to put together what our vision is for what this is going to look like. So I don't know if we nailed it right. I'm I'm still don't speak the language 100% and I'm learning, and we make a lot of changes, and we pivot, pivot. But we want to what the attempt was to put it all together and have those requirements outlined, so you could kind of get a feel of what we want and where we want to take this and what that scope looks like. We're also doing this so that we can look at once. We get a time to review. We want to set a timeline around this, what you guys think is feasible, and start working into that timeline. I think that that will just help us a little bit more hit our deadlines and what we are, you know what? What we're missing or not missing on both sides of the house. So this is our first attempt. So go easy on me. Yes, the whole entire team did a great job. We've come together a couple times now, all together, and everybody's given feedback, and we've worked very diligently on this to help prepare something to make it a little bit easier for you guys as well. So I welcome feedback as we transition into our next module and work on the broker piece and whatnot. If there's a different approach that you like, or we can tweak this a little bit more to help you. That's what we're here to make this partnership super optimal. So I'll go ahead and stop there, and I would like to know kind of what your guys's feedback is. So far.
+
+Speaker 2  3:08  
+I don't particularly have much so far. I'm still taking it in like so I didn't have but so much of a chance. But to scroll through, I would have to kind of go through in pieces to get my questions together, but
+
+Unknown Speaker  3:28  
+I think, do you know we're going to have
+
+Speaker 3  3:30  
+some I'm in the same boat. I've been on I've been on meetings up until 2pm which is when we started this meeting. So I downloaded the document, but I've not been able to review it. Yeah, yeah.
+
+Speaker 1  3:42  
+Okay, that's fair. We can do you like. So tell us what you would like. Would you like us to walk you through kind of how we've outlined it? Yeah, that'd be great. Okay, all right, perfect. So as you guys can see, this is our we kick off with our executive summary. We're trying to showcase exactly what we want, what we like from our current system, and what we would like to see from our current system. We and then that obviously will be a discussion once you guys get through there, what is going to be the actual scope, what will be iterations for an enhancement later on, moving on. So I broke it down. So what I did is I went to some of my prior projects and just pulled a very generic outline. I don't know what you all use. That's why, early on, I was asking if you could please send me a template and let me know so that I could speak more of your language and your framework of how you guys do your processes. But we didn't. We weren't able to kind of, you guys have your own internal mechanism, so I just did the basic of what we use in government. So again, executive summary, purpose, what is this module meant to do? What is it exactly that we want it to do? And then moving down to 1.2 what does that scope look like, which is incredibly important, right? So this is where we'll come back and together as the partnership to see what can. Be done in this first iteration, and what do these how these items fit in a timeline, and how we look at that timeline is that six months that it's going to we potentially think for all of these items? Is it a year that we think it's going to take? So we want to come together of what's in our scope. These are what we want, right? So I've always been trained that we ask for the universe, and then we can scale it back. So that's exactly what we what I encourage the team to do is tell me exactly what it is that you want, the integration pieces, the self service vision that we're hoping to have with us, the way we want it to look overall, visually in so much that Becca was also able. And as you continue to scroll down there, it's not until where did I put it? Section 2.3 but Becca has provided some layout options, so right there. If you click on that, let me make sure it works for you. It says current form fields it should open. I made the link in Canva. Oh, it doesn't let you Okay. So what I'll do is I'll just send it to you guys separately. I made it so that it was accessible to the public, but it might just be internal public, so we'll have that, and I can maybe pull it up here in a second. But that's the visuals that we wanted to provide a layout. Bonnie recommended that we do that so and Becca that we do that so we could kind of show you guys and visualize exactly what we're thinking of how this will work as well. We've also actually gave us great feedback as we've gone through here, from the existing process that was in place, things that they that they saw in the officer app, that we felt like that. Once those are finalized, we'll be able to capitalize on that and what that looks like here in this so a lot of the framework should be the same, but also a little bit unique, right and different, and then going down that is just a very generic so that visual aid there that you had there going back up the request, Process Flow. I'm a process flow person, so I just needed to outline kind of what it current existently look like, and then see where some of our pain points were internally, and as we walk through that right manual entry error prone, no client visibility, time consuming, manual updates, multiple entry points, all of which we want to build upon so that we're able to make this a bit more efficient and streamlined. Yeah, makes sense. That's great. Perfect, perfect. So we're trying here learning so learning from what we've kind of gone through with our officer app, right? And kind of what makes sense was doesn't. And then, of course, going down a little bit more, where you 2.1 I'm looking at my paper here on the side, sorry. Requirements, definition, functionality, requirements, user settings, just basic things, right? We want the creation of the counts, the roles defined. These are all things that we've we've already had exposure to early on in the officer app, but also knowing that we need it here as well that password reset different color scheme for the customer, because people sometimes are very visual going to log in and access very, very unique the color coding, forgive me, that is for us internally. So these were a lot of last minute additions or changes that we wanted before we got to meet with you guys, to kind of show we were trying to make this to the best final version that we possibly could. So don't worry too much. This is more for internal our folks in house will know that the purple is what I just the most recent of what we added before we showed to you. Then scrolling down all login portal access, very self explanatory, job request administration. So I'm sure that once you guys get a chance to review all of that, you might have some questions here again, Ashley and Ashley, feel free to share if you would like provided a lot of really good feedback based on the experiences that we're having with Officer app, right? So a lot of lessons learned, best practices, and we're integrating them here into the request administration. Is there anything Ashley, that you wanted to add here regarding 3.1 point two?
+
+Unknown Speaker  8:51  
+So other than
+
+Speaker 4  8:54  
+you're saying officer app that, but also the agency side?
+
+Unknown Speaker  8:57  
+Oh, that's right. Sorry, yes, please do. Yes,
+
+Unknown Speaker  9:03  
+and then I do Mike.
+
+Unknown Speaker  9:06  
+I have the the what Becca
+
+Speaker 4  9:09  
+put together before I made edits to it. And, yeah, I know she has probably the final draft, but I can, if you guys needed, just wanted to see that
+
+Speaker 1  9:19  
+I do Ashley. And are you on your form that I sent you? Is it denying your access as well to what Becca had?
+
+Speaker 4  9:25  
+I haven't honestly tried through that. I can try that. Yeah, she sent it to me separately, and then I printed it out, and then we will edit so this is before the edits are made, but
+
+Speaker 1  9:34  
+I guess. But if you can go to the form via email I got it, let me know. Okay, perfect, because then I can see I change
+
+Speaker 5  9:40  
+permissions, I'll send it to you guys in a PDF too.
+
+Speaker 1  9:44  
+Sorry about that, guys, that's all right. Oh, I also dropped it in our teams channel. So for our in house team, it's in the it's in the module in our teams channel. I stuck it in there. But go ahead, Ashley, if you want to share real quick, the process flow. Yeah.
+
+Speaker 4  10:02  
+And just so, you know, I was able to click on that link and it, it did, uh, it opened.
+
+Speaker 1  10:07  
+Oh, well, you can share that. Just share that. Yeah, yeah, perfect, good. So we just you guys, sorry, Jake and Brian, you're the only ones tonight, the ones that need it. So I apologize.
+
+Unknown Speaker  10:19  
+Is now a good time. Yes, please. Okay. This is
+
+Speaker 4  10:28  
+there we go. Beautiful. This is Yeah, so this is before we made edits on it. But this was
+
+Unknown Speaker  10:34  
+no, I Oh, yeah, go
+
+Speaker 4  10:39  
+ahead. So client portal, this would be like the sign on page. I don't know if Becca wants to go through this, or if, if you know, as you can see, like it looks a lot like the Yeah, yeah.
+
+Unknown Speaker  10:53  
+This would have been the dashboard.
+
+Speaker 4  10:58  
+See, Oh, good. This is, this is the after the updates, because these are some of the things we talked about. So that's good. So a job ID number here. This is one of the things I wanted to ask about. I don't know if this is too premature or not, but at some point, having a job ID that is given to each job, but has more that, you know, follows a scheme. So like, date. Do you remember where it's held in here, the time
+
+Speaker 1  11:29  
+we have it captured? Yeah, you're Yeah, we have it captured that we asked for that. Yeah. So this is a good visual aid of that.
+
+Speaker 4  11:35  
+Yeah, yeah. So that, you know, here, how many jobs, how many officers, they've requested, and this would be the dashboard, so when they would click in, then they would be able to see the four separate requests. Let me know if
+
+Unknown Speaker  11:51  
+you have any questions about anything that's on here.
+
+Speaker 1  11:54  
+Just taking it all in here. Yeah, right now, actually, just go ahead and just give them the formal overview. We'll come back for details, but go ahead, you can go through the slides. Yeah, perfect.
+
+Speaker 6  12:09  
+Jake and Brian. What we're looking at is, honestly, we're just trying to keep everything uniform. We're trying to match agency side over to what the customer side is going to look like, essentially, yeah. And so keeping that uniform and and keeping it kind of where it's at now, we're hoping should streamline a lot of it's because a lot of it's just going to be a few tweaks here and there that are going to be obviously accustomed to, you know, to the customer side, as opposed to the agency. But so what we're trying to convey here those, as you can see, is we have some tweaks, but essentially it's going to look the same. Yeah.
+
+Unknown Speaker  12:40  
+I mean that, you know, in terms
+
+Speaker 3  12:43  
+of, like, visual elements and general, like workflow, if it's, if it's working for you in one place, then it should work for you in another place, you know. So that's right, that makes a lot of sense. And it'll also save on some, like, a ton of time, but, like, definitely a chunk of time for visual design.
+
+Speaker 6  13:00  
+Absolutely. Nice that we're aiming for. And I think, you know, presenting this visual aid is really going to be able to kind of narrow in what we're looking at, what we want, what we need. It's very helpful.
+
+Speaker 3  13:11  
+I don't have to, like, try to come up with this stuff for you.
+
+Speaker 6  13:14  
+It's not just a wall of text, right? So you get to actually visualize what we're
+
+Speaker 3  13:19  
+looking at. Very helpful. Actually, wish, I wish everybody gave us this. This is fantastic.
+
+Speaker 6  13:23  
+Yeah, I'm sure it helps. And so when Becca was going through it, that's what we kind of envisioned. Was really just kind of that matchmaking, you know, making it look exactly like a template from the agency side, but we're just customizing it to fit the needs of the customer, yeah. And when you and Brian go through this, and you guys actually dig in, you'll see, you know, a lot of the changes that are going to be specific to the customer side. And it's kind of self explanatory, obviously you guys are going to have questions, obviously you guys are going to want our input on things. But I think having this visual aid is really going to be able to set us up for success early on, given
+
+Speaker 3  13:56  
+no doubt, no pieces to it. Yeah, this is great.
+
+Speaker 4  14:00  
+All right, sorry about that, Ash, go ahead. No, no, you're fine. That's good. Yeah, I was just going through,
+
+Speaker 5  14:08  
+Ashley, yeah, yeah, on the reorder page. That's just that. That one I wanted to go over with you just to, I guess, just to see. I'm not sure exactly how to make that, or what to put on it, or if we like, just want to make it, like the dashboard and have a list of all the jobs, and just have, like, a Reorder button on the side, you know, or, and then, like, have them be able to edit the days and times that one, I just wasn't sure about. So that's, that's why it's blank. I wasn't sure how to make that one. And then I had a question where you wrote billing on the account settings, but we can get to that later.
+
+Unknown Speaker  14:42  
+Oh, perfect. Yeah, no problem. Okay,
+
+Speaker 4  14:47  
+see, I was trying to clicking here, just how the agency one is. When you click on here on the dashboard, it takes you at the jobs and the dashboards communicates, which is. What she has right here. This is where you can see all of the individual jobs
+
+Speaker 3  15:04  
+for like, is that a this is so this
+
+Speaker 4  15:09  
+45th and orangewood. This is four different positions, or four different orders. Technically, this is three, but you get what we're saying.
+
+Speaker 3  15:16  
+You're trying to say that when you click one of the rows. Yeah. So here that it like opens up and shows the multiple
+
+Speaker 4  15:26  
+Exactly, okay, so if I clicked here, wherever I would click, that's when it would open up on my jobs. That's how the agency side kind of works.
+
+Unknown Speaker  15:37  
+And each of those rows is now
+
+Speaker 4  15:40  
+different days or different shifts, if they wanted four officers,
+
+Unknown Speaker  15:43  
+okay, three bit. So it
+
+Speaker 3  15:53  
+kind of like takes you to the jobs area, and like filters by that
+
+Speaker 2  15:59  
+job, it's the same we're skipping one piece of the hierarchy, actually two pieces that they have in in FileMaker Jake. So they have a job location, they have recurring jobs under that, and then job assignments. And assignments is what we're currently working with everywhere. But they want to, you know, basically collapse the hierarchy into the recurring job, yeah, that makes work Yes,
+
+Speaker 3  16:26  
+exactly like you'll be seeing job assignments here as well, right? Because when someone like takes it like those, those right, there are job assignments.
+
+Unknown Speaker  16:37  
+Yes, correct. Yes, exactly, exactly, if
+
+Speaker 4  16:43  
+they wanted more information like the client, just to make sure that, you know, the contact is right, date, the times, if they wanted to pin it on a map. I know that, you know, a lot of times we can just type in the intersections, but it's nice to be able to have that pinning option if it's a mile post or somewhere that's, you know, not an obvious, yeah,
+
+Speaker 3  17:03  
+Section proposal about that that I have a lot of questions about, but okay, but we can just keep moving forward.
+
+Speaker 4  17:15  
+This would be the requested an officer page that would work directly with file maker, ideally, you know, so putting in this information would reflect on to there. So all we had to do was hit, you know, publish, at least at some point, review it, make sure it's good, and then put it on to the dashboard and out there for the officers. The me right here. This would be so like POS if they wanted to put it in. But making these, if they do not have a PO and they don't have a job number, they do have to click these that way.
+
+Speaker 3  17:55  
+Yeah, yeah. That may I have a question about the ordered by, actually, oh yes, yeah. So presumably, I guess my question is, how do you see logins working? Is there one login for the client, or can multiple people have logins at the client? Which would mean that, I don't know if we're keeping track of like client people in the system right now, but it would mean that we would need to add those people, and then they would need to be under that client. And then there would be the Logins would be tied to the people, not not the Well, they'd be tangentially, uh, related to the client itself, but they'd be logins for people, not necessarily, you know, for like, like, APS has one login, or does APS have 50 logins with different people? You know what I mean?
+
+Speaker 4  18:54  
+Yeah, I think initially I saw it as APS having one login that multiple people had access to, and then maybe them just typing,
+
+Speaker 3  19:03  
+yeah, we don't, if we do it that way, we we don't have a list of people who work there, you know.
+
+Unknown Speaker  19:11  
+Okay, yeah, say,
+
+Speaker 5  19:14  
+okay, so say 50 people did have the same login, it would be pretty easy to revoke
+
+Speaker 3  19:20  
+their right to, well, that's the thing, yeah. So like, fired or something, yep. From a security standpoint, it makes more sense to have it tied to people, because then you can turn off someone or whatever. It's definitely more work to do it that way. But you know that that that's if you're thinking about it from security standpoint, it's the best way to do it. If we did do it that way, then what we would we could do is we could pre fill that ordered by by, like whoever is currently logged in, and then they could change it, I guess. But that's why I was asked. Seen that question. It was because if we do have, like, an APS account, it's fine to do it that way. But that does mean that, like anyone at APS with that account information can go in and request jobs, and you don't really know who they could type, you know, big bird in, ordered by and you know, that's what you would see, correct.
+
+Speaker 4  20:22  
+The one, the one drawback I see on that is, you know, just especially like places like APS or SRP, where I work nights sometimes, and I don't talk to the same person hardly ever. So that would be a lot of I just work. It would be for SRP or APS to make sure that everyone has their own login. But maybe it's not that hard, and I'm overthinking it. I don't know.
+
+Speaker 3  20:42  
+I think the question would be like, how many people are actually requesting these jobs at those clients? If it is like hundreds? Well, yeah, that'd be, that'd be pretty intense, but, you know, it's just something to think about.
+
+Speaker 2  21:01  
+And then I have a question, I guess, looking at this and the way you were describing jobs, I saw in definitely, all of your competitors that you guys had me look at, they have job location at the customer level also, so they can have a job location. Basically it allows you to allows the customer to be able to see jobs they've had for that location. But more to the point, it makes it so that for clients that are going to be hiring officers for the same locations again and again. They can just select one of their locations, and they don't have to enter all the information again and again.
+
+Speaker 4  21:46  
+Yeah, that's why we were hoping to have those job ID numbers, ones that you know, that they would have that number on file for them and requesting it by that being able to search in the dashboard, pull that up and
+
+Speaker 2  22:01  
+then request so the job ID would be the job location ID,
+
+Unknown Speaker  22:06  
+yes, not the job,
+
+Speaker 2  22:11  
+not like the not the recurring job or the job assignment ID, It would be the job location ID,
+
+Speaker 4  22:21  
+yes, that or reoccurring job. Because, no, I think you're right, yeah, because they would have to create a new one if it's a different contractor. Yeah, yeah. So it's not necessarily just by address, by by their job, so that they create, does
+
+Unknown Speaker  22:40  
+that make sense?
+
+Unknown Speaker  22:42  
+Yeah, okay, we'll just, we'll have to
+
+Unknown Speaker  22:48  
+figure out a way.
+
+Unknown Speaker  22:51  
+That's why I was hoping, like if we did,
+
+Speaker 2  22:53  
+it's one of those. It's one of those things that probably would be helpful for some customers and definitely not for others. Others wouldn't care. You know, they're the ones that are just doing road work and probably never in the same location twice within a couple of years. Is different than someone who's, you know, I've got five Dave and Busters that I need security for. They're the same five locations. I hate having to find and enter that stuff every time I request a job,
+
+Unknown Speaker  23:19  
+they might want
+
+Unknown Speaker  23:21  
+a job location where they can track everything under that,
+
+Speaker 4  23:24  
+yeah, and I think that's where it would differ between requesting an officer and Then the reorder page, yeah,
+
+Unknown Speaker  23:39  
+just a thought, yeah, okay. Do you
+
+Speaker 4  23:47  
+have any questions about this? This is basically, I think, like the reoccurring job
+
+Unknown Speaker  23:52  
+area in file. Well, yeah,
+
+Speaker 2  23:55  
+well, I believe, truthfully, that's going to end up there, but it's going to have to stop by a new table or a new section. We're going to have to make four requests, because you don't want every request that comes through this website to be a real job until you guys have a chance to look
+
+Speaker 4  24:11  
+at it. Definitely, yeah, that's true, or you'll just get
+
+Speaker 2  24:15  
+a lot of trash. So you definitely don't want it making recurring jobs directly you're going to want to request section. So, yeah, this will feed the requests, and then the request, at a push of a button or something, can feed the recurrent jobs.
+
+Speaker 4  24:28  
+Yes, perfect. Okay, I just wanted to make sure you knew them, you know, so we didn't have to retype this in everywhere. Just kind of, okay, no, perfect. Oops. Skipped a page. Nope, didn't, and then just a confirmation. I think that's important, because once they hit yes, then they're responsible for, you know, pain and
+
+Unknown Speaker  24:51  
+all the billing side of it. And then
+
+Unknown Speaker  24:54  
+what's the difference between submit and publish? Nothing.
+
+Speaker 4  25:00  
+I don't think, Okay, well, you can just go ahead a little bit.
+
+Speaker 5  25:05  
+So when I was talking to Bonnie, there's some and I don't know if this is even doable, there's some clients where we would want them to submit them and come to us before they're actually published on our side in the officer app, but APs and SRP, I mean, sometimes they have emergencies. So if they needed to wake up at 2am because a storm, I don't know, blew down a pole or something, and they needed someone right away, then they would just be able to publish it immediately and it go out to everyone, rather than having to wait on us to approve it. But I don't know. I don't know if that's Well,
+
+Speaker 2  25:48  
+it's hard to say the user, the user, can only do it when, when it's an emergency, because how do you know what an emergency is? So basically, the button has to, you know, always be there or never be there. I can't, or I, or we have to have very specific instructions on when it disappears.
+
+Speaker 5  26:08  
+I think that's something that needs to be discussed further. To be honest,
+
+Unknown Speaker  26:13  
+maybe we base it off customer can we, well,
+
+Speaker 2  26:17  
+base it off of, you know, certain customers have that ability and certain don't.
+
+Speaker 3  26:20  
+Yes, I would also consider abstracting that behind some kind of an emergency code that is issued at the customer level. So you know, if there are 50 people who log into APS, I don't think all 50 people need to know the emergency code, or APS can designate who knows that emergency code? But that code gets filed with you guys. We keep it in the client, record somewhere in FileMaker, and then if, if somebody's trying to create an emergency job, they have to put the code in. And if they don't, then that's not they can't file an emergency job. If they do, then we know that. You know that they they had the code, something, something that abstracts, like another layer of security on top of that. Because I promise you, Brian's right, if, if they can just push the emergency button, they are going to push the emergency button every time.
+
+Unknown Speaker  27:14  
+That's what you just said. Makes sense. And I like that idea. Me too, yeah.
+
+Speaker 3  27:22  
+And then you can even, I mean, you know, there's different ways to do that. It can be client wide, so there's one code for the entire client, you know, there's, there's, you can issue it to you could have, you know, different people have security or emergency codes, different people don't you know. So it could be based on the person, but I do think abstracting it out is the right way to go.
+
+Speaker 2  27:50  
+We could even email a one time code to them, is when they click the button, and then only people with access to that email address can do it.
+
+Speaker 1  27:57  
+I was just thinking that like an authentication. Yeah, everyone's used to that.
+
+Speaker 3  28:02  
+That'd be great. That way. They could use a group email address, like you guys have, I don't know if it's like, we have info, we also have, like, sales, we have support, and those go to different people, and based on the group, you know, it's like, it's like, you know, request emergency, and then it's like, okay, we'll check, check the email, and they have to get so that that that puts the onus on them, your customer, to get the right people in the right Group, for sure,
+
+Unknown Speaker  28:35  
+me too, me too. Me too.
+
+Unknown Speaker  28:46  
+Next page, oh, this is
+
+Speaker 4  28:49  
+from, like, a how to how to order. Probably more for, like, the beginning, when they're getting used to it. Is that correct, just for them to be able to reference to make sure that they're ordering constantly.
+
+Speaker 5  29:01  
+Yeah, I tried to make, I wanted to make it as self explanatory as possible, but you always have those few people, so we'll make something and just, I don't know if we could just send it to you guys and you be able to link it on that page or something. Yep. Do and
+
+Unknown Speaker  29:27  
+the account settings, I
+
+Unknown Speaker  29:30  
+just seems pretty self explanatory, unless it's
+
+Unknown Speaker  29:36  
+new questions on this page,
+
+Speaker 5  29:38  
+Jake, that's the one where you said, billing, billing, yeah, were you just, like, wanting them to be able to I just had questions like, look at past invoices or upcoming invoices or what? What were you thinking
+
+Speaker 4  29:52  
+when you said billing, um, for this, like, at least for example, like ODM, when we're going through the account settings that. That's where this that's where this information is for us. So it's, it has, like, Lori's name, and, you know, it goes
+
+Unknown Speaker  30:09  
+to whatever the company's account,
+
+Speaker 4  30:12  
+you know, their billing side. It does not have to be that. If that's not what we want. I know that billings another area that they we wanted to put in here eventually. But it was just an idea,
+
+Unknown Speaker  30:23  
+okay, okay, well, we'll
+
+Unknown Speaker  30:27  
+talk about it. Yeah,
+
+Speaker 4  30:31  
+I guess this could also be like a, you know, who you call if you wanted to, you know, get a hold of someone in charge of this account, or for APS, like a reference person.
+
+Unknown Speaker  30:43  
+Okay, that's the last slide.
+
+Speaker 2  30:50  
+Excellent. I definitely have some questions about what you meant on or what we envision for branding. I even see color schemes and such being mentioned as far as branding
+
+Unknown Speaker  31:06  
+for different agencies or different customers.
+
+Speaker 2  31:11  
+Now, in your example there, I just saw their logo. They can upload a logo and it shows there on the top right. That's fine, of course, just little caveats, like you're letting them upload a logo. If it doesn't have a transparent background, then it's going to be an ugly white square with their logo. You know, just all stuff you get when you allow a user to upload something that's going to be shown on the interface.
+
+Speaker 5  31:35  
+So when I spoke to Bonnie about that, she wanted us to to to upload their logo, like how you see it here, and then if they want to change it or have an updated one, they can do it from there. But I think when before we give them the login, we'll already do that for them and have it look nice like that, and then hopefully they never touch it. But do you think we just shouldn't have that in general, and
+
+Speaker 2  32:02  
+that part's not you need them to that part's not too bad. You just got to know that they can, they can do something. It's not going to mess up anything. It's not going to change the way anything works. It just kills a little bit of the esthetic if they put something ridiculous there, you know, right? But the colors was more my thing when I heard, when I see a color scheme for branding that that throws up more flags, it's a lot more difficult to do, and you're really turning over the visual esthetic of your app to your clients.
+
+Unknown Speaker  32:42  
+Am I wrong there, Jake, or do you feel the same?
+
+Speaker 3  32:44  
+No, this, this stuff always really, really worries me.
+
+Unknown Speaker  32:50  
+It's silly that it does, but it's true.
+
+Speaker 5  32:53  
+I think it's fine to just keep it our color scheme.
+
+Speaker 3  32:57  
+But, yeah, I mean, we could offer
+
+Unknown Speaker  33:05  
+a color picker
+
+Speaker 3  33:08  
+once they're logged in, in their account settings. They could have like a, you know, but I would recommend, you know when, when you when you're releasing a product that's client facing, that is a product, and that product should be branded, and you allow changing of the brand, you are separating the it's, it's just not, it's, it's bad practice from like a product branding standpoint, because you are, you are lessening the importance of the of the product brand, is what you're doing. And I know that that's not the intention. It's like, well, you know, we want to be to make it personalized. There's other ways that we can make things personalized. You know what I mean, but, but changing. It's why you can't, like, change the background of Instagram. You know what I mean? Like, Instagram is Instagram?
+
+Speaker 2  34:03  
+Yeah, I was gonna use the example of, you know, most McDonald's are franchise, yeah, yeah, yeah. Like, not allowed to change the color
+
+Speaker 3  34:12  
+unless you're unless you're Sedona, in which case, McDonald's issued a very specific blue for that. But, but the point there is that McDonald's was in charge of the of the color value, that that blue became right, that they didn't just let the city do that. So, you know, I know this isn't like we're not releasing Instagram, but like, from a product branding standpoint, yeah, it's just not typically recommended.
+
+Unknown Speaker  34:37  
+I agree with you guys. Okay, do
+
+Unknown Speaker  34:45  
+okay, I'm sure I'll have,
+
+Speaker 3  34:48  
+oh, there's a tons of questions. Yeah, well, we
+
+Speaker 1  34:51  
+welcome them. We definitely welcome the questions. We just kind of wanted to put everything together, though, so you could kind of see where we're where we're coming from. What would you guys like? To do next? Would you like some time to look at this and schedule a separate meeting for this? Would you like us to I mean,
+
+Speaker 3  35:07  
+yeah, there's a few things right off the bat that I saw that I'm like, I kind of want to get out of the way before we even do that. Can Can you open that back up, Brian, and pull the Word document up again and then search for the word jurisdiction.
+
+Unknown Speaker  35:27  
+Note on that too, yeah,
+
+Unknown Speaker  35:30  
+I'm sure you know going, Yeah,
+
+Unknown Speaker  35:34  
+keep going. Keep going.
+
+Speaker 4  35:35  
+Yeah, it's like 3.1 point two. I think yeah, right there. That's a visualization. Yeah, that so
+
+Speaker 3  35:48  
+I have no idea how to do that. I'm going to be and here's, here's what I mean, unless that there, unless this is available somewhere as an API, the amount of data points that would have to be loaded into that map, meaning, like every single latitude and longitude range that falls within a jurisdictional boundary is, I can't even express how immense that data set is. It's probably trillions.
+
+Speaker 1  36:15  
+So I will share that this purple is pulled from the what ODM is doing from their manual. So this information are items that Bonnie was able to look at the ODM manual and see that she wanted, specifically that they already had. So I'm assuming that because ODM already has it, then the it's already available. So that's exactly where we pulled this from. So we can show you their manual, if you like, if you don't already have it. But this is a it, but this is exactly why it's here. We didn't just pull this out of the air. We pulled it from a process that they wanted, that they already have in place.
+
+Speaker 3  36:51  
+Yeah, I don't think you pulled it out of the air, but, but what I can tell you is that that they they must, either they're using I seriously doubt they wrote it themselves.
+
+Speaker 5  37:02  
+So if there's a shelf product, yeah,
+
+Speaker 3  37:05  
+okay, all right, well, that's good, if there is a shelf product that we can use and implement the into this. And that's great. I just wanted to, like, right up front, tell you that is very intense. That's like its own product. You know what I mean, just doing that, like showing them the jurisdictional boundaries.
+
+Speaker 1  37:27  
+So do you do? You guys need some time to then look at that. Do? Is there anything that you want from you?
+
+Speaker 3  37:32  
+Wants to share the manual, and if you know the what product? I don't know who said that, but somebody said it's that was, that was. Becca, okay, so Becca, if you know what they're using, then that would be great for us to
+
+Speaker 5  37:45  
+know that. I don't, but I will definitely try and find out.
+
+Speaker 2  37:48  
+Yeah. Okay, So Amanda, as far as your next step questions, what I would suggest and like to do is, yeah, give Jake and I some time to mull through this, okay, properly and get our thoughts collected on it. We'll probably have an initial group of very general questions. And yeah, I'd like to have another meeting on this to go through some of those questions. But more to the point, I'd like the goal of that meeting to kind of break apart what we feel is going to be phase one of this, which is phase four, I think,
+
+Speaker 1  38:28  
+right, we need to outline the scope and what, yes, the scope and time timeline, what we
+
+Speaker 2  38:32  
+really want to try, yeah, what we will really, realistically want to try, to get done immediately or as fast as we can, kind of thing to give us, to give us our MVP. We want our, you know, minimal viable product here of what we can deliver. Because this, this is a lot and, yeah, you're, you're talking a long time. If we really want to try to tackle all of this at once, oh yeah, break it into a couple pieces and see we can get,
+
+Speaker 1  38:59  
+yeah, we we understand. It's again, everything that we can think of that we want this product to look like, and then absolutely over and assess that
+
+Speaker 2  39:07  
+for us, we absolutely love the wish list, perfect.
+
+Speaker 1  39:11  
+Do you need you guys thinking a month or two or like, a week? Two weeks? Do you want to meet in two weeks on a Monday? Kind of keep this separate from the other meetings right now. What is it that you guys think the 12 we will be in travel mode, which is Monday? If we do a Monday Other than that, let us know what you recommend?
+
+Speaker 2  39:31  
+I don't, yeah, I don't think Monday would work for me either, but any other day next week would be fine for me. Jake. Do you think we need more than a week to
+
+Speaker 3  39:41  
+Well, what I can say is that we'll have plenty of questions in a week. I don't know if it'll be all of the questions, but we will have a ton. Oh yeah.
+
+Speaker 2  39:47  
+We're definitely not going to have a that's kind of why I want to, I want to, I want to scope down what we want to do first so that we could dig in and ask more detailed questions. Yeah, that's what I think. Detail. Questions about all of this. It's going to take the meeting is going to take a
+
+Speaker 1  40:03  
+month, right? And you're more than welcome to send a lot of those questions to us. You're more than welcome to make another version of this. And we can, you know, and we can utilize this. How about we just do the two week marker? We're working on a lot of other things, unless our team internally. Becca, Joe, Ashley, if you feel differently, the 19th we could meet again. Plan to meet, and just kind of walk through your preliminary assessment of what that MVP is and the scope and timeline, and break this out into two phases. If you think is the 19th, okay. How does everyone feel about that? That works. I'm good, yep. Okay, so the 19th, yeah, Monday. It's Monday, right? I'm just trying to think of Monday, yeah. Monday. The 19th,
+
+Speaker 3  40:40  
+yeah, the only thing I the only time I don't have is at 1pm my time. So that's an hour. So that would be, I guess, 10am to 11am Your time is when I'm not
+
+Unknown Speaker  40:51  
+available. 10 to when you're not,
+
+Unknown Speaker  40:54  
+yeah, I'm not. That's the only time right now. I
+
+Speaker 1  40:56  
+was all writing that down. So is 11 again? Is this time right now good for everybody? Yeah, it's fine. For me, that's that's good. Anyone else is good. 11am okay, so I'll go ahead and I'll set that up for us. Do you, Brian, do you want to do the Zoom again? Or do you want us to create that? Okay, so 11am on the 19th hour time, Arizona time, and then we'll just come revisit and look forward to hearing what you guys think about the phases, the questions, and if you get something early on, let me know. Let me know, and I can clarify anything with the team. And yeah, we can
+
+Speaker 3  41:28  
+go there. Okay, that sounds good to me. Sounds good to me.
+
+Unknown Speaker  41:32  
+Team. Any questions that you have,
+
+Speaker 5  41:34  
+I have a question just for all yes, people really quick, probably more so Ashley and Joe. But do you guys know what program roll call uses, like, what their shelf product is called?
+
+Speaker 6  41:47  
+Oh, I don't. Actually not for roll call. I know Olean is obviously custom
+
+Unknown Speaker  41:53  
+that they're apparently they're the same. So,
+
+Speaker 3  41:56  
+oh, no way. Well, that's good. That means that it's definitely a product that we can Yeah,
+
+Speaker 5  42:03  
+okay, I didn't know if you guys would know if you've seen it somewhere or something, but we'll, we'll find the name and let you guys know
+
+Speaker 3  42:10  
+one thing too. I just want to, like, be as transparent as possible in terms of size. Okay, so, so we've done two web apps together. Now, the officer in the agency this is bigger than either of them by, by, by a little bit, quite a bit. So I'm just letting you know. How is that?
+
+Unknown Speaker  42:34  
+Tell me how we come to that conclusion
+
+Unknown Speaker  42:38  
+there's more functionality. Yeah.
+
+Speaker 1  42:41  
+So we're building, we're building on functionality from the prior and we are just refining a lot, and yes, asking some of those items. So maybe that's great that we need on the 19th to show us what we already have, and then what we're asking for above and beyond that. We think that is going to be much larger. I guess we kind of see it more as we already have the infrastructure. It just needs to be duplicated, and then we're adding that scope piece on top
+
+Speaker 3  43:05  
+of it. A lot of this, a lot of this infrastructure exists only in FileMaker. Okay, so that is above and beyond all of that, anything that we are moving from FileMaker to the web, like people being able to schedule their own jobs and stuff, none of that happens on the web at all. Okay, yeah, so that anything that's related to that obvious payment processing,
+
+Speaker 1  43:28  
+I think we realize that. I think we just need to understand what is, again, that that phase one, and what is that phase two, or whatever, however we went to that implementation piece, so we can understand what we're asked, Where what the ask is from your end?
+
+Speaker 3  43:44  
+Sure, yeah, we'll do, I mean, the pretty clear line of demarcation is, like, creation of anything from the web is, is over. You know, that's outside of the scope of either the two apps we've already built. And then there, you know, the payment stuff, they and we can mark all this stuff for you. I just, I just don't want you to think, like, oh, this will just be, like, this little customer module, because it's not. Now, we are going to be able to use a lot of the infrastructure, for sure, but there is, there is quite a bit of extra stuff on here, just to be honest.
+
+Unknown Speaker  44:18  
+Yep, I agree.
+
+Unknown Speaker  44:20  
+State of the art. We want to state of the art process. Well,
+
+Speaker 3  44:23  
+it is, and, yeah, I mean, yeah, I just don't want, I just don't want to be like, Oh, this is no problem at all. Like it, and it's not, we can certainly build it. But I, you know, I just don't, I don't like walking into any project and trying to tell people it's, like, no big deal. You know what? I mean. So this is, this is, this is great. I think a lot of this makes you guys have clearly thought a lot about it, which is wonderful, helps us out a lot. There's a bunch of payment stuff that we probably need to go over. I have a payment platform I'm going to recommend because it's the easiest for us to work with. It's called stripe Amanda. I don't. Know if you've ever heard of it, but I would definitely dig into yourself. It provides its payment as a platform, or payment payment as a service kind of a thing for development. They do charge a small like 3% fee, but any merchant who's going to process a payment is going to charge a fee. And what it comes down to is like, yes, there are other payment platforms that charge a little bit less of a fee, but you have to consider how much work it's going to take for our team to integrate with those as as compared to something like Stripe, which just has like out of the box stuff for us. So there, there is, there is additional work on top of what we've already done, meaning, you know, creation of jobs and stuff by the clients, that's that's just standard stuff. But then there's also these integrations, you know, that are that are on top of what we've already done, too. So we'll do our best to kind of break everything down into, like, here's what's extra, you know, above and beyond what we've already built, that's not going to really benefit from any of what we've already built, because it's brand new. Does that make sense? If that it does,
+
+Speaker 1  46:05  
+it does, and that's what I think we need to see an outline so that we, we as a team, understand what that what that looks like. Yes, okay, it does cool. All right, so it looks like we all have some work to do and some deliverables, and we will regroup on this specific item on the 19th, at 11am
+
+Unknown Speaker  46:24  
+Alright, guys, any other questions?
+
+Unknown Speaker  46:27  
+I'm sure we will have tons
+
+Unknown Speaker  46:30  
+for right now before we go do
+
+Speaker 3  46:32  
+no no. Thank you. Thank you guys for doing so much of the legwork for us up front. You know you are going to save yourself some money by not having us have to tease all this stuff out of you. So that's good. That really helps a lot. I think
+
+Speaker 1  46:48  
+it was good for us to come together too and understand what we're asking. So it was a really, I think it's a really good exercise. Good these guys know exactly what they want. We just needed to get it on paper. So great. Yep, absolutely. All right. Well, thank you. I don't have anything else, anyone else.
+
+Speaker 3  47:05  
+I have one quick thing. It's not related to this. I just want to let you guys know the issue of officers seeing other officers stuff should be resolved. Wait and the brute force login thing and the disabling their access is all, Oh, really taken care of? Yeah, obviously,
+
+Speaker 6  47:25  
+we're testing it. We're gonna test to Jake. We're gonna hold that.
+
+Speaker 3  47:28  
+Please do. I've tested it. I haven't found any issue, but you know, if you do, it's fine. I can, I can fix it.
+
+Speaker 4  47:34  
+Is it by unclicking, or is it due to the status?
+
+Speaker 3  47:37  
+No, it's not the status I need for that. But you have to untoggle their little, yeah, the, you know, allow login. And in order to do that, you have to open up that. You have to actually open up the job, or, sorry, the officer account thing. So you can't do it from the list. You have to open a little card window and then click it from there. Got it? Okay? Yeah, I, the only reason I bring that up is because I sat for like, two minutes thinking that I wasn't hitting the button and Nope, it's just not available on the list.
+
+Unknown Speaker  48:09  
+Perfect. There you go. Thank you.
+
+Speaker 3  48:12  
+You're welcome. I'm also been looking into the GPS thing. I I, I'm gonna have a whole lot more for you on that soon, but just just letting you know I'm putting in the work we talked about on Friday.
+
+Unknown Speaker  48:26  
+Sweet cam, yep, we look forward to tomorrow. Thank you guys updates. We'll see you tomorrow. All right. Bye.
+
+Transcribed by https://otter.ai

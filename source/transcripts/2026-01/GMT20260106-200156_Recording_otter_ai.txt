@@ -1,0 +1,748 @@
+Unknown Speaker  0:00  
+Yeah,
+
+Unknown Speaker  0:02  
+alright, so I guess
+
+Unknown Speaker  0:07  
+biggest updates, I don't know how much you've, you know, been, I don't know, listening to recordings or looking at the notes from our prior meetings,
+
+Unknown Speaker  0:15  
+we've gotten a couple of updates, you know, pushed through the approval process, and are all you know live for our our soft opening live
+
+Unknown Speaker  0:26  
+yesterday, we pointed everything to, like the actual production servers, each one from you know, right down the line, from a native app that we downloaded from The store to the prod version of the Linux API server to the prod version of file maker, and kind of ran it through its paces.
+
+Unknown Speaker  0:49  
+Oh, there's Amanda. There she is. I was just gonna text her right now too. Sorry, guys, my laptop is acting so weird, so I have to do it on the main system. So I don't know what's up. I'm gonna have to reboot that Mac. Sorry I'm here, though,
+
+Unknown Speaker  1:04  
+awesome.
+
+Unknown Speaker  1:06  
+So, yeah, the biggest, you haven't missed much. Okay, okay, perfect. Biggest updates you were here on the meeting last week, so I was just talking about, you know, we've got, oh, updates pushed through, you know, all the way through to being live on the app stores, both of them, and yesterday, we pointed everything at the real production servers to get a good test.
+
+Unknown Speaker  1:31  
+We ran into a couple of hiccups, but they were small, and we're working on them, and that's why we test.
+
+Unknown Speaker  1:39  
+But the connection was fine, you know, we could connect, we could make records, we could Jake jobs and everything. It was just some of these very specific scenarios.
+
+Unknown Speaker  1:49  
+You know, there was some things we can do a little better. So we're going to do that,
+
+Unknown Speaker  1:55  
+working on that type of stuff. Now, we had Ashley on that meeting with us while we were doing that, testing for a chunk of it, a good chunk of it.
+
+Unknown Speaker  2:05  
+So, so yeah,
+
+Unknown Speaker  2:09  
+Ashley, I just turned off the
+
+Unknown Speaker  2:12  
+talking to the API for booking and unbooking from FileMaker for now, it was just turning off a script call it was weird. It was only affecting Christine's computer, though, that's the part I was, like, kind of confused about, yeah, that's weird. I didn't get that from your email, but it was kind of happening to everybody. She just happened to be the one that was happening to, you know that you were taking the screenshot from,
+
+Unknown Speaker  2:37  
+yes, oh yeah, no. It was just hers, unless, you know, the other two just didn't tell me about it, but
+
+Unknown Speaker  2:44  
+mine, I was trying to test it. I couldn't. Mine was not doing that to me, but hers was but as soon as you silenced it, hers did stop doing that? So, yeah, I turned off the script step. But if it wasn't doing it for everybody, just her, then that might be a different issue. And when we turn it back on, she might get the same issue again. You know, if the problem's not at the system level, if the problem's somewhere in her computer, or I don't know what else it could
+
+Unknown Speaker  3:13  
+be, maybe her, you know, some configuration on her computer. Is she running an older version of FileMaker?
+
+Unknown Speaker  3:21  
+If not, then
+
+Unknown Speaker  3:23  
+I don't know. It might be some type of disk permissions or network permissions
+
+Unknown Speaker  3:30  
+from her computer. I don't
+
+Unknown Speaker  3:33  
+I'm not sure. Let me look,
+
+Unknown Speaker  3:36  
+is she a different
+
+Unknown Speaker  3:38  
+Is she the only one in that user group she's in as far as security, no. I mean, there's other people in users. There's Tyler, Jessica, Shawn. And Jessica worked yesterday, but she didn't, she didn't mention anything to me. I can ask her, Sean is here today. He wasn't here yesterday. And then Tyler didn't mention anything either. Yeah, maybe see if the others mentioned, you know that they saw it, they just didn't say anything. Or if it didn't, you know if it just didn't happen for them? Okay, I'll check with them.
+
+Unknown Speaker  4:15  
+So since you turned it off, though, Sean wouldn't, wouldn't have experienced that either way, especially now, yeah, it's all SAS Tyler, Jessica.
+
+Unknown Speaker  4:27  
+So we have those small things to go over,
+
+Unknown Speaker  4:31  
+and we are doing that. We hope to do
+
+Unknown Speaker  4:35  
+that test again, the everything production test on Thursday, so that just gives us, you know, two days to do some stuff and try again.
+
+Unknown Speaker  4:49  
+But yes, that's that's where we fell on that.
+
+Unknown Speaker  4:53  
+I can tell you that pretty much all the functions I saw worked from the app.
+
+Unknown Speaker  5:00  
+Yeah, so there wasn't any, you know, we didn't have a problem clocking in or clocking out of a job, as long as we never closed the app.
+
+Unknown Speaker  5:09  
+We can, you know, we can see all the stuff in the Account section, their availability and email address, all that kind of stuff. We can see that we can change, that they can see the correct Jobs book jobs.
+
+Unknown Speaker  5:22  
+The dashboard was, you know, once you had jobs that you had worked, or mileage you had entered those you know, that was working.
+
+Unknown Speaker  5:29  
+So
+
+Unknown Speaker  5:32  
+the the issues aren't, you know, big and blaring
+
+Unknown Speaker  5:35  
+we're looking into into a couple specific thing. The biggest one is going to be again, dealing with when they close the app and they're not supposed to,
+
+Unknown Speaker  5:47  
+basically, when they're clocked into a job.
+
+Unknown Speaker  5:52  
+Yeah,
+
+Unknown Speaker  5:55  
+so if they like, let's say we clock in. I can test this. So maybe I should just wait, but for just to say, if I clock in, mod log records it, I force close, and it clocks me out. But does the mod log still say that I clocked in at 108? The mod log should still say that you clocked in, but it doesn't clock you out when you close, force close. The app. That's kind of a problem, and we don't necessarily want it to clock you out. It just kind of races the clock in, though, right
+
+Unknown Speaker  6:27  
+from what you see on the app, but it doesn't erase it on file maker, it's still there, okay, so I could theoretically look in the mod log and see,
+
+Unknown Speaker  6:37  
+what if that person had clocked in earlier, and you know, still, even the clock in field on the job is there if they clocked in,
+
+Unknown Speaker  6:47  
+have a clock out
+
+Unknown Speaker  6:50  
+if they Yeah, I get what you're saying. If they hit that circle, the refresh circle,
+
+Unknown Speaker  6:56  
+does that get mod logged?
+
+Unknown Speaker  6:59  
+No, not currently. Okay, it might unless we take it off of there, we might want to add that to the mod log, because it'll be really hard to trace back why someone's stuff disappeared.
+
+Unknown Speaker  7:10  
+Okay,
+
+Unknown Speaker  7:12  
+we can add that to the mod logs. You
+
+Unknown Speaker  7:27  
+fresh
+
+Unknown Speaker  7:35  
+pod log
+
+Unknown Speaker  7:39  
+okie dokie, kidoki,
+
+Unknown Speaker  7:43  
+that's pretty much what I have. As far as updates are concerned, I think
+
+Unknown Speaker  7:52  
+I am trying to get
+
+Unknown Speaker  7:56  
+most likely Steve to look over the the
+
+Unknown Speaker  8:01  
+list of proposed changes that ginger SEC has for the dev Linux server.
+
+Unknown Speaker  8:08  
+Jake is out sick today, and I don't know where Steve is to tell you truth.
+
+Unknown Speaker  8:15  
+Fair enough message them, and I want them to look at it, but I have not gotten much of response. I know why for Jake,
+
+Unknown Speaker  8:23  
+so I'm sure we'll get around to to that and getting an answer over to ginger sec, they just sent it last night. So I'm not
+
+Unknown Speaker  8:33  
+I'm not feeling horribly terrible if we don't get a response today,
+
+Unknown Speaker  8:42  
+anything else with server stuff, necessarily. We're just working through the plan. And you know, like I said, we'll do another round of the full prod testing on Thursday,
+
+Unknown Speaker  8:55  
+probably push another version
+
+Unknown Speaker  8:59  
+of the native app early next week, and then next Thursday is, is really the the big day. So that's the day we're going to need
+
+Unknown Speaker  9:11  
+that we're going to, you know, completely have everything pointed at production for real.
+
+Unknown Speaker  9:19  
+We need to a decision on, I think
+
+Unknown Speaker  9:22  
+actually we have a decision. We're just going to move or No, no, we never got a full one. Joe, I need a decision on whether or not we're going to be moving over the web accounts that are currently for the web app, if we're going to just, you know, make copies of all of those and allow them into the native app on Friday, next Friday, or if you don't want that, to automatically have it, if you want to make all the accounts again, no, yeah, we can automatically do that. That'd be great, because at least we know those folks are verified, right? So nothing of concern on our end. I guess you could say the only point of concern I may see.
+
+Unknown Speaker  10:00  
+Is, remember, we were using their email address last time, we're using their phone number this time. So we want to be sure that the phone number you have on their officer record is is current and is the phone number that they want. Yeah, and you know what? We're pretty good at updating that and keeping that updated from our end. So I'm assuming we were going to be pretty, pretty square with that, I would say. And if there are any issues, I'm sure, I mean, they'll get some stragglers. Maybe, I'm assuming we won't, but we've, if we do, we can, we can handle that on our end. They can call and give us an updated number. We can get it over. But I think anything automated make it easier or streamlined just helps everybody all together. No problems. Okay, yeah, I can. So that would happen next Thursday. Then all I have to do Friday to, you know, basically to switch from not live to live will be go through and
+
+Unknown Speaker  10:57  
+and flip on the allow login flag on all of those records that we wanted on. Great. That'd be perfect. Now, the same thing I have a question for you, Brian is the folks that are going to be pulling up their normal web app on Friday, could we have some kind of notification on there to say, hey, it's time to make that transition over to the native app? Know, some kind of herbage, at least a banner or something, just so they're aware, of course, sure we got to decide where we want that and how we want, you know,
+
+Unknown Speaker  11:29  
+do you want it something that you know kind of shoots in front of them, and they have to close this close it basically its own screen, that splash jumps in there, exactly like A pop up, basically, and you want it to happen every time they log in, until they get up, get off the button switch. Yeah, absolutely. I think we got to stay on them about it. Because I know, you know, some of these guys will try to try to wait it out as long as they can, but the sooner, the better that we can get everybody moved over and get them using it.
+
+Unknown Speaker  11:59  
+Gotcha. All that makes sense, and I can
+
+Unknown Speaker  12:03  
+do that. So,
+
+Unknown Speaker  12:07  
+yes,
+
+Unknown Speaker  12:11  
+copy, and I
+
+Unknown Speaker  12:22  
+think it's a good approach. Anyway, from our end is we're probably going to stagger on our end. Anybody that's using the web app currently will be aware of it on that Friday, so they can make that move. And our plan, at least from our end, is to kind of send out a large blast to all of our officers as well, just let them know, Hey, we've launched. It's time to go ahead and move over. So we kind of want to stagger that probably either midday Friday, or might even push it into Monday, just to see how the weekend goes with everything, before we move everybody over. So I think that's what we're looking at on our end here. Okay, so make the accounts, but go live. How am I going to know which ones to turn on? I would say anybody that, at least from your perspective, flag all of them to go ahead and turn on. If they log on, great.
+
+Unknown Speaker  13:09  
+It's more for our end, you know, you're going to notify Exactly? Yeah, they find their own way over, okay, but we're not going to exactly. We're going to press a certain amount at a time. Gotcha Exactly? Yeah, that's our plan. Basically stagger it. You know that first half of the Friday, we're assuming anybody using a web app will already move over, or they're in the process. We'll probably hit them that afternoon, and then again Monday, and just make sure we're getting everybody over.
+
+Unknown Speaker  13:39  
+Okay,
+
+Unknown Speaker  13:42  
+shoot. Choose.
+
+Unknown Speaker  13:47  
+Sorry I'm making some notes here.
+
+Unknown Speaker  14:02  
+And could you get me? I mean,
+
+Unknown Speaker  14:06  
+I know we're going to put a link to where they can go download the the
+
+Unknown Speaker  14:10  
+app, if you want that screen to say anything else, could you give me that verbiage? Yeah, absolutely. We'll keep it short and sweet. I mean, we want, obviously, too much for them to read. So we'll make it like a sentence or two or something. That's fine, yep,
+
+Unknown Speaker  14:26  
+all right.
+
+Unknown Speaker  14:29  
+Well, that's good. That's
+
+Unknown Speaker  14:32  
+That's our plan in a nutshell, bar running into something horribly unseen, foreseen, but I don't foresee running into anything unforeseen?
+
+Unknown Speaker  14:42  
+Yeah, good plan. I think we got a good plan in place.
+
+Unknown Speaker  14:46  
+Oh, I did want to point out actually, another one of the kind of issues we were having yesterday that we have to look into because it wasn't working 100% but we did add a
+
+Unknown Speaker  14:58  
+when you try to log into the.
+
+Unknown Speaker  15:00  
+App, if you try to log in with a bad phone number, or just you don't, you never get the code more than three times, then it'll lock you out for an hour.
+
+Unknown Speaker  15:13  
+And this is, this is just to stop somebody from making a robot that tries to sign in, you know, 100,000
+
+Unknown Speaker  15:21  
+times a minute with with fake data, because that's, that's style of service attack, and it sucks. So yeah, that's why, you know, most other services you see, have some, some version of that. You know, if you try wrong password a few times, it'll go and, you know, we're locking you out for a little while. So right now, it does it for an hour each time, and it'll show you a countdown of how many minutes and seconds you have left until you can try again. We may, in the future, think about, you know, the first time you do it, it's an hour. If you, you know, screw up again in the same day, then it's three hours, or, you know, something like that, right again, like you see on a lot of other apps and services. So but for right now, it just it stops you for an hour every time you sign in wrong three times, or try to sign in wrong three times in a day.
+
+Unknown Speaker  16:17  
+Um,
+
+Unknown Speaker  16:19  
+what else that's about it. Like I said, For updates, we're just chugging along with our little plan, and we're ready to go next Friday,
+
+Unknown Speaker  16:31  
+sweet bull, go live.
+
+Unknown Speaker  16:35  
+My wife and child leave for Peru The next day, so that next Saturday.
+
+Unknown Speaker  16:42  
+Other than that, I'll,
+
+Unknown Speaker  16:44  
+I'll try to be
+
+Unknown Speaker  16:47  
+generally around that weekend. Okay, after we go live, I do have to take him to the airport and such. But other than that,
+
+Unknown Speaker  16:56  
+I'm a pretty much hang around the house kind of guy you do? You think we should meet, like, maybe the 15th, next week or or keep Tuesday? Or, do you guys, what do you guys think
+
+Unknown Speaker  17:11  
+I was thinking our Tuesday meeting would have been fine, unless, Brian, unless you think we need to have another meeting to right before the launch itself?
+
+Unknown Speaker  17:21  
+If anything I would want to,
+
+Unknown Speaker  17:25  
+I mean, I would absolutely call or write if we had some problem Thursday, because that's really when all the setup is going to happen. Okay,
+
+Unknown Speaker  17:33  
+I half wouldn't mind being on a meeting Friday at the exact time that we decide to go live so we can just hit the button and and I'll celebrate this for a minute. I like that idea. Yeah, absolutely. What time? What time are you turning it off? Like, what time is that that's not free up to you guys. I can, you know, it literally,
+
+Unknown Speaker  17:57  
+unless something really goes wrong on Thursday, it'll take me, you know, under five minutes to change it from not live to live it.
+
+Unknown Speaker  18:06  
+So the other web app is that one, when you switch it, that one's going to stop working, not correct. No, it will continue to work. We're going to have a gap time for a while here. I'm assuming at least, you know, I'd like a month or so, you know, and everybody's over, but I doubt that's going to happen. It's probably going to be two, three months. Are we able to keep assessing, like the data and see who was all pushed over and we can just let the data drive it along? Yeah, because you'll, you'll be able to see
+
+Unknown Speaker  18:36  
+in the mod logs
+
+Unknown Speaker  18:39  
+the
+
+Unknown Speaker  18:40  
+creator and modified by will no longer be FM, better forms, it will be O, data user,
+
+Unknown Speaker  18:50  
+so data user, it came from the native app. If it's better forms, it either came from the agency website or the current officer web app.
+
+Unknown Speaker  19:01  
+Okay.
+
+Unknown Speaker  19:09  
+Righty,
+
+Unknown Speaker  19:11  
+right. So what time then on Friday? Does everyone jump on a
+
+Unknown Speaker  19:16  
+do we want to do it?
+
+Unknown Speaker  19:18  
+Yeah, I'm excited on that.
+
+Unknown Speaker  19:21  
+I don't know. You know, of course, considering the time difference, although it's not too bad right now, mornings are always better for me. But you know, if you wanted to do it at nine year time or 10 year time, I find that usually 10am or noon
+
+Unknown Speaker  19:41  
+or even one because of time. Because of time differences tend to be the times that apps go live, you know,
+
+Unknown Speaker  19:49  
+or or happen. They're start to happen. Maybe, maybe that 10am just because that morning rush, I know, we get a morning rush every day, and so my calm down.
+
+Unknown Speaker  20:00  
+And at that point, what do you think, Ash? I think 10 o'clock sounds right. I mean, we get influx. We get hit pretty hard in the morning. So that's why I'm trying to avoid juggling too much at once. Yeah, and I kind of want to keep it on the earlier side, in case anything does go wrong that way. We're here, and it's not just for the afternoon people to figure out. But the so the people that clock in Go, a lot of jobs are going to start, you know, six, 830 if they clock in at 830 they should clock out. Does it matter what app they're on if they clock out? Or does it well, you need to talk to each other. Need to clock in and out on the same app. Okay, I figured I just want to make sure, because I know that people are going to ask me that question a lot. That's going to be a big one, because we got to figure out one time most of those morning jobs would end, so I don't even want to name would work. I mean, most of them are probably going to end up. It's going to be between six and nine. They're all going to clock in, and then I just got to make sure that they know to clock out on the web app. What if we do one o'clock then? Because at least that gets rid of that morning rush. You know, I mean, people are already going to be clocked in at that point. So it's, it's kind of that same window of, I just got to make sure that I communicate to everyone that you know to clock out on the same app that you clocked in on, that should be okay? Yeah, I think 10 is good. Plus the time we go live doesn't necessarily mean the time that you send out the first batch of emails saying, hey, you know it's there. You can go get it, right? Yeah, you can do that whenever, however you want.
+
+Unknown Speaker  21:40  
+It just means they'll have access to something that,
+
+Unknown Speaker  21:43  
+truthfully, they can get the app right now, it's on the store, right? Nobody has it on an account,
+
+Unknown Speaker  21:49  
+so yeah, I would say 10 o'clock. Then we'll keep it at 10 o'clock Friday and Okay, we'll go from there. And that gets rid of that morning rush, at least on our end. Yep, and it still has a few hours of Jake and I being on regular time. Yeah, I think that's good all around Yeah. So you go with one. That's, oh, that's three our time. God Darn it. Why can't
+
+Unknown Speaker  22:14  
+California does quit changing
+
+Unknown Speaker  22:19  
+easier. It's yeah.
+
+Unknown Speaker  22:23  
+Well, somebody sent out the invite. Do we need?
+
+Unknown Speaker  22:28  
+Usually it's, it's about that time for Ashley's list. But
+
+Unknown Speaker  22:33  
+other than,
+
+Unknown Speaker  22:35  
+Oh yeah, of course, I just didn't know someone will send out the invite. I'm just blocking the calendar now. Oh,
+
+Unknown Speaker  22:41  
+I could send it out if you like, or you can send it out. Doesn't either way. Is fine, if you're if you can, I'm on the wrong computer, so
+
+Unknown Speaker  22:49  
+good, please, yep,
+
+Unknown Speaker  22:53  
+and thank you. And then yes, of course, Ashley, we are ready for you. Okay, I don't have as much as normal, because we
+
+Unknown Speaker  23:02  
+talked, you know, yesterday on the phone. So I got, you know, some of those out of the way. The few things that I do have was we talked about Christine's computer. The other weird thing she was having for just like a split, maybe an hour's time right before all of her,
+
+Unknown Speaker  23:22  
+you know, those messages started popping up for her, and she was having an issue clicking Save when pinning the maps. Yeah.
+
+Unknown Speaker  23:32  
+Well before it was Jessica and I fixed that. And then Christine, yesterday, hers was kind of flashing a lot, a lot of the coffee cup. It was giving her those messages, dropping the officers onto a job, and then taking them off. But then she was also trying to pin a location and click Save, and it wasn't letting her do it. So there was kind of a string of weird things that was going on with her computer,
+
+Unknown Speaker  24:00  
+which it sounds like she's really having a go at it. Well, she was working from home yesterday, and so when she got in today, it looks like the pins are working
+
+Unknown Speaker  24:12  
+and not as much flashing. But it kept it locked up a lot on her this morning, where she had to, you know, force clothes out of it, because it she couldn't switch between screens, and then she was obviously still getting that, that message that went away when you silenced it. Yeah, but I don't know if if any of those are connected, or if it's throwing any flags up for you, but
+
+Unknown Speaker  24:37  
+when I hear this is happening to a person, I just, I'm like, hey, you know that doesn't,
+
+Unknown Speaker  24:44  
+that usually doesn't lend itself to, you know, a coding issue or system issue.
+
+Unknown Speaker  24:50  
+Normally, if you know, if there's an issue, you all, everybody's going to have it if you do the same, you know, series of clicks
+
+Unknown Speaker  24:59  
+on different.
+
+Unknown Speaker  25:00  
+Computers, you should be getting the same issues.
+
+Unknown Speaker  25:03  
+I agree. It's it's definitely strange. Hers locks up a lot, and I know that's one of the things you wanted to actually see, just because it's almost impossible to recreate.
+
+Unknown Speaker  25:16  
+It is unless you're on that computer. But
+
+Unknown Speaker  25:21  
+I guess happening for her.
+
+Unknown Speaker  25:24  
+I got Jessica's maps fixed, though that was exciting, yay, I know.
+
+Unknown Speaker  25:31  
+Let's see. Oh, the weekly
+
+Unknown Speaker  25:37  
+share.
+
+Unknown Speaker  25:39  
+Okay, so when you're
+
+Unknown Speaker  25:44  
+once is good, daily is good. When I'm putting POV on, I should be more specific, those ones are good. But when I create a weekly job, that's the one where, if I initially do it, it does not show up on the dashboard
+
+Unknown Speaker  26:02  
+unless I literally hit Refresh All and then it pushes through. But when you initially do it hit submit, it does not transfer to the job assignment detail.
+
+Unknown Speaker  26:13  
+I know just weekly. We're really close. I bet it does the thing that was making that
+
+Unknown Speaker  26:22  
+you know, seemed to not work on the daily and the once was it was kind of actually working. It was actually the dashboard that was not showing that it was marked correctly
+
+Unknown Speaker  26:42  
+because even when I would go into like, yeah, all of them not showing it correctly, the some of the check boxes also, yeah, okay, I had found but let me,
+
+Unknown Speaker  26:55  
+I've got this Open. Let me look at the Submit real quick.
+
+Unknown Speaker  27:02  
+Submit,
+
+Unknown Speaker  27:05  
+weekly. See that's once
+
+Unknown Speaker  27:10  
+that's daily,
+
+Unknown Speaker  27:14  
+weekly.
+
+Unknown Speaker  27:21  
+Same probe,
+
+Unknown Speaker  27:32  
+stealing a place within that block.
+
+Unknown Speaker  27:37  
+Okay, that should be fixed. Sweet, this might be the same problem then, because it's and it well, maybe not, but this one so like the only part process that does not work is if you unclick and then you, you know, say yes to this, because you want to take it off of all of them.
+
+Unknown Speaker  28:01  
+It just does.
+
+Unknown Speaker  28:04  
+It does, so, like, it's like half,
+
+Unknown Speaker  28:07  
+but when you see I'm so sorry, don't cease.
+
+Unknown Speaker  28:14  
+It's okay. We can't see the weird face that people make. So,
+
+Unknown Speaker  28:21  
+so it's, it is, believe it or not, on hold. Like, I can't see it on the app or anything, but it doesn't look like it's on hold, you know, because the box is not checked.
+
+Unknown Speaker  28:31  
+Okay,
+
+Unknown Speaker  28:33  
+I don't know if that's an
+
+Unknown Speaker  28:36  
+tell site. I hate, I don't this is a mystery to me, but it's only when you do that. So like, if I were to have unclicked, it hit no and then refreshed all then it would unfold it completely. It's just kind of bizarre, because it doesn't look like it's on hold, but I assure you it is
+
+Unknown Speaker  28:54  
+okay. So let's see.
+
+Unknown Speaker  28:57  
+Excuse me, when I click on hold. It goes and runs recurring jobs, toggles,
+
+Unknown Speaker  29:18  
+old
+
+Unknown Speaker  29:37  
+rational item
+
+Unknown Speaker  29:41  
+you
+
+Unknown Speaker  29:58  
+Okay?
+
+Unknown Speaker  30:03  
+I will look at that.
+
+Unknown Speaker  30:11  
+No, I'm sorry I was mumbling to myself a little bit, but I will
+
+Unknown Speaker  30:15  
+okay.
+
+Unknown Speaker  30:18  
+So I know we did a lot of testing yesterday, and like you said that we found some, some small issues, and you guys were working on fixing those, but I didn't want to, like, just jump in and start testing too early, you know, because I don't know, you know when they've been completed or when to test to see if they're fixed or still an issue.
+
+Unknown Speaker  30:39  
+When do you think I should start, you know, begin testing again on the native app for, you know, those certain finds.
+
+Unknown Speaker  30:50  
+I would probably say,
+
+Unknown Speaker  30:57  
+Thursday. Okay.
+
+Unknown Speaker  31:02  
+I'm the only reason I'm a tiny bit hesitant is if there's any changes that need to be made at the app level. So far, everything we've changed or seen, we're pretty sure, is not at the actual app level, which means we don't have to push it back through approval.
+
+Unknown Speaker  31:22  
+But if we do find an issue that needs a change on there, then you wouldn't see that change until we push through approval again. That makes sense. Oh, yeah, it does make sense. Okay. So I think so far, any of the things we identified yesterday did not require a change on the app itself. We think, you know, hopefully not. If so that's fine, we'll make that change. And like I said, we plan to push
+
+Unknown Speaker  31:49  
+maybe Friday and Monday at the latest. Another update.
+
+Unknown Speaker  31:54  
+Okay,
+
+Unknown Speaker  31:57  
+okay, got it
+
+Unknown Speaker  32:02  
+so the rules for the refresh just really quick. So I noticed, you know, like, let me find one that's maybe him,
+
+Unknown Speaker  32:10  
+right? So he's clocked in, there it is.
+
+Unknown Speaker  32:14  
+And then does, does that disappear after someone has already clocked out? It should Yes. It disappears when the is work completed flag is set, which should happen when they clock out and or if that date, the paid payroll date is set, that's another reason it could be flipped on.
+
+Unknown Speaker  32:37  
+Okay, got it. I just wanted to make sure I knew the rules around it.
+
+Unknown Speaker  32:44  
+Oh, you already did that we were talking about that. I mean,
+
+Unknown Speaker  32:55  
+well, this might be a Joe thing. Maybe.
+
+Unknown Speaker  32:57  
+Let's see. Oh, did Jeremy say anything about the pins? Is that still, does he know why it's not showing on the app? Or
+
+Unknown Speaker  33:05  
+no, oh, I gotta. I did tell him about that yesterday, but I think I gotta poke him again. He's,
+
+Unknown Speaker  33:14  
+he's working on other projects, and I gotta,
+
+Unknown Speaker  33:17  
+sometimes, I gotta grab him and make him look at what I wanted to look at. Okay,
+
+Unknown Speaker  33:23  
+and then, so once the launch happens, and we, you know, go to the native app. When Lori, you know, is, or whoever is putting in a new officer, is it the exact same process as sending the the old invites? Obviously, you're sending the native one, and not the,
+
+Unknown Speaker  33:42  
+you know, the web app. But is there any difference in, well, does she even do that? Right? No, I'm not going to send them an email. You got to use their phone number, not their email address, you know, when you user wise? No, you go to that same area, you hit a plus to give them a new account, you select which one you want from a little drop down, drop down. Now, because we've got more than two, so I can't, I can't use a dialog window.
+
+Unknown Speaker  34:11  
+You just select it and then invite Kate's, but she does have to turn that on before they can get into the app. Twitter can access Yes, and you have to select that, you know, allow Login button. Now, if someone you know signs up to be an officer, but we haven't put them in yet and given them access, does it say anything to them like they get that login screen at the beginning there's a register now button which basically just allows them to quickly email you or call you,
+
+Unknown Speaker  34:44  
+okay, type to kind of register.
+
+Unknown Speaker  34:49  
+I'm just curious if they were gonna, you know, end up blocking themselves out because they think it's like automatic.
+
+Unknown Speaker  34:55  
+They might. I wonder if we should add that to, you
+
+Unknown Speaker  34:59  
+know.
+
+Unknown Speaker  35:00  
+Know the memo they get when they sign up
+
+Unknown Speaker  35:03  
+to wait only lock themselves out for an hour and
+
+Unknown Speaker  35:07  
+then keep trying. Yeah, hopefully they call you us
+
+Unknown Speaker  35:11  
+right now. There is no, there isn't an email that gets sent out when you create a new account, like there is for the web stuff. So any information that normally you would think they had based off of that email, you're going to have to send it an email when you get their request or something. Okay,
+
+Unknown Speaker  35:34  
+kind of a stupid question, maybe. But do the characters, like, you know, dashes, if someone, for some reason, has dashes in their
+
+Unknown Speaker  35:45  
+phone number, is that going to affect their login?
+
+Unknown Speaker  35:51  
+Yes, right now it is. It does strip all of that stuff out of the number when you create the the web account, so it'll strip everything that's not a number out of it. Oh, good, okay, but you guys, as users, do have the privilege to go to their website, account record and modify the phone number there, and if you do it there, then I can't help you. I mean, down, like holding me. I'm not
+
+Unknown Speaker  36:29  
+going to do it, but you mean here, like in here? Oh, I hope no one would do that.
+
+Unknown Speaker  36:36  
+I could. I can block one, but that makes it
+
+Unknown Speaker  36:41  
+I just, I don't think anyone gets a new number. It's easier to change it here than having to delete this account record, change the phone number up there and then make them a new invite. You know, yeah, no, I get that. But yes, you can't put dashes and such in there. Okay, okay,
+
+Unknown Speaker  37:02  
+um, I think, I think that's all I had, because most of what I honestly had was native based, and we kind of went through honestly, most of them yesterday. So
+
+Unknown Speaker  37:16  
+Well, I like when I'm ahead of the curve.
+
+Unknown Speaker  37:22  
+All right, if that's what we had. Thank you. Miss Ashley.
+
+Unknown Speaker  37:30  
+Joe, I would guess next things for me would be,
+
+Unknown Speaker  37:34  
+I don't know, like you weren't on the last what two weeks meetings? Yeah,
+
+Unknown Speaker  37:43  
+Tom's been pretty vocal about what he wants to get done, and we've got it looks like in a few areas, we might have opposing recommendations. So,
+
+Unknown Speaker  37:56  
+so Yeah, somebody has to be the great decider. That's you miss your Joe. Yeah, I think, like I was actually now, we're just talking about this earlier, and I feel whatever is going to, whatever is going to get us to the 16th and actually be able to launch it, is that, whatever that is what we're going to do. So I don't know if Tom can make it happen in that timeframe. If he can't. I mean, there's no way we can push it out any further than that. So, and Tom's aware of that, obviously, yeah. So I think, from our perspective, at least, whatever gets us to the 16th, if they can make it happen in that time, great, if they can't, unfortunately, we're going to have to hold off. But the 16th is, that's the answer. Go date. All right, yep, that's it. So
+
+Unknown Speaker  38:43  
+I guess we can see what, uh, what Tomson get done in that time frame. Yeah, still it's, it comes down to, I think he's declaring he's pretty much finished with the FileMaker server there.
+
+Unknown Speaker  38:57  
+But I'm still, you know, standing behind my recommendation, I would prefer that nothing is touched on that server for a good month before we suggest that as your actual prod server so.
+
+Unknown Speaker  39:15  
+So that's why I didn't feel like it would be ready for next week. Yeah, but, and that makes sense really soon after. Yeah, and I agree with you, like I said, I think from that perspective, at least, to keep everything congruent, you know, we just move forward like we have been. If there's a week or two delay from Tom's side, you know, whatever they got to get done, they can, they can wait. Honestly, I feel like I said, you know, the 16th is that day, and that's when we're going live. So beautiful,
+
+Unknown Speaker  39:47  
+alrighty. And then
+
+Unknown Speaker  39:51  
+I guess Lastly, it would just be, do we have any thoughts on what we'll be doing?
+
+Unknown Speaker  40:01  
+In the week after the 16th.
+
+Unknown Speaker  40:04  
+That's an interesting one, because Ashley and I were talking about this earlier as well. And we have a few ideas of what we want to get to, you know, such as the broker client side, but
+
+Unknown Speaker  40:15  
+I think we have so many versions of the app itself that we still need to release things on and add things to. We're not too sure on how you guys and your team want to handle that as regard to, is that going to be the priority still for you guys to make these new iterations, these new updates to the app, or are you guys going to split time in between that and, you know, let's say our client side? So we're not entirely sure, but that's, that's what we see, at least, is we definitely want this. We know the app is never going to be finished, in theory, but at the same time, we definitely want, you know the phases of the app, for us to really focus on that as well. So, okay, no, that's perfect. Yeah, that's great.
+
+Unknown Speaker  40:59  
+Can I chime in? And I think that's and also maybe perhaps you could tell us what your capacity could be. There are some things that we're looking at as Joe and Ashley just mentioned, but there's some other customizations too. So maybe you could tell us what that looks like for capacity, so that we can then chat that over internally as a I guess our executive team with Bonnie and see that will help us with that direction, too. Sure, it
+
+Unknown Speaker  41:29  
+in some ways depends on what we work on. So if we're just working on the app,
+
+Unknown Speaker  41:36  
+I'm looking at probably being able to offer
+
+Unknown Speaker  41:41  
+three the in the area of
+
+Unknown Speaker  41:47  
+up to 100 120 hours a week, you know, of course, or less. But that's, that's kind of the capacity I could offer. If we're doing the we're doing stuff on an app and on, you know, web stuff, then I could add another person on there, so up to another 40 hours a week.
+
+Unknown Speaker  42:11  
+Do you think you could send us like a kind of a high level it's subject to change, obviously, but that might Bonnie's very visual too. So I think that that might help her kind of see what that looks like, as we all have these discussions around that, and Ashley and Joe figure out what or deem what is most appropriate to launch forward. Yeah, I can. I can send you that stuff. Mostly, the only caveats I ever have on stuff like that is,
+
+Unknown Speaker  42:38  
+is kind of
+
+Unknown Speaker  42:40  
+is flow overall for us. So, yes, you know, if, if you say, you know, okay, you know, you call us and you're like, Okay, I need to kick up to that capacity. You know, next week, the next two weeks, I don't know if I can always do that. If I've spun some people down or basically let some people go off on some other projects, it's harder to get them back. You know, immediately, at a more, at a closer to full time, of course, basis. So if, you know, if we start talking about, you know, hey, yeah, we want to flip directly into, you
+
+Unknown Speaker  43:13  
+know,
+
+Unknown Speaker  43:14  
+new features and such for the app, that's fine. Then I don't let, especially Jake,
+
+Unknown Speaker  43:21  
+you know, go work on other projects, because I can keep him busy. So as long as is, we don't, it takes us time to spin up and it takes us time to spin down, so that that's basically comes to absolutely. So you need that, that that cushion time I got you,
+
+Unknown Speaker  43:38  
+yeah, right now we're spun up. So we don't need, yeah, spin up time, as long as we don't have a spin down time for you know, we're spun we're spun up and going now so we can just keep flowing.
+
+Unknown Speaker  43:51  
+If we have work in front of us,
+
+Unknown Speaker  43:54  
+okay, we'll have, I'll send that over to you.
+
+Unknown Speaker  43:59  
+Yeah, I'll send that over to you, kind of a just a quick overview of of the capacity we can offer here in the coming months or so. Perfect.
+
+Unknown Speaker  44:11  
+All right. Do
+
+Unknown Speaker  44:13  
+you have anything else? Mr. Joe, no, I think we're looking good on our end. Brian, I think we're, we're excited to get this thing rolling. And yeah, see it all finally come to fruition after a long road. Let me tell you a long, long road, we're getting exciting. Yeah, we're going to have ourselves a little zoom party. Yeah, we have to. I was thinking like that meeting, when you send it out, we might want to send it to Bonnie. She, this is a huge milestone. So she, if she's available, she might want to be on the call when it happens. I know it's anti climatic, but that's the call. And, you know, I mean, but it's definitely, it's a milestone. It's huge. I yeah, I've been part of a multitude of those. It's just fun. It's just fun to be a part. It's great. Yeah, you put put several months into something. It's nice to see.
+
+Unknown Speaker  45:00  
+Season, in our case, years, I mean, I mean not, maybe not with you guys, but a long time. This is huge milestone for Les. Like, this is significant, yeah, we're excited little emotional about it. Yeah, that's perfect. I love it. Alrighty, okay, guys, we will, we'll talk Tuesday, next Tuesday, if we don't talk later this week,
+
+Unknown Speaker  45:22  
+Ashley, I will put you on for when we do the testing again Thursday. Is it going to be about the same time? Or do you it's okay if you don't know, just curious. Yeah, I don't, I don't know.
+
+Unknown Speaker  45:35  
+It's when all of us get started.
+
+Unknown Speaker  45:38  
+Because Steve lives there so lives there in Arizona, although he's in Tennessee right now.
+
+Unknown Speaker  45:46  
+Yeah, Arizona, so, but I'll try to get a time out of them, maybe tomorrow, and let you know so that you can do some type of planning.
+
+Unknown Speaker  45:56  
+Sounds good? All right.
+
+Unknown Speaker  46:00  
+Well, everybody, have a great day, and you know, we'll talk later this week or next Tuesday, if not, awesome. Thanks, Brian, thank you. Thank you. Bye. Guys. Talk to you. Bye.
+
+Transcribed by https://otter.ai

@@ -1,0 +1,970 @@
+Unknown Speaker  0:03  
+All right,
+
+Unknown Speaker  0:05  
+yes, we will roll way we usually do. I'll start with some updates.
+
+Unknown Speaker  0:12  
+I've been making some smaller visual updates on the production, nothing very big. Mostly, I've been moving as much code as I can without impacting things from dev to production in the FileMaker side, getting ready for, you know, stuff the native app will need.
+
+Unknown Speaker  0:34  
+I'm going to be meeting with Ashley tomorrow. We're emailing each other back and forth, trying to confirm a time,
+
+Unknown Speaker  0:41  
+and we'll discuss
+
+Unknown Speaker  0:44  
+kind of what needs to happen, what I need to do to get certain things push to production. And
+
+Unknown Speaker  0:52  
+you know how that'll change the way users interact with it? In some ways,
+
+Unknown Speaker  0:59  
+I know a good the biggest examples are going to be the mapping again,
+
+Unknown Speaker  1:06  
+so that we for the native app, we have to have coordinates. They have to pick from the map. For the current web app, they're just using the typed in address. So we're going to have to deal with that overlap for probably a few months at least.
+
+Unknown Speaker  1:23  
+And then the same with the notifications and all the time zone stuff.
+
+Unknown Speaker  1:29  
+So I've moved some of that in there, but I haven't, you know, turned it on, I guess you could say,
+
+Unknown Speaker  1:34  
+and we'll need to do that and have a plan to
+
+Unknown Speaker  1:38  
+to have that turn on. And definitely both sides kind of watch it at least for a week, probably,
+
+Unknown Speaker  1:45  
+you know, to make sure it's things are going out on the proper time, all notifications and such. So I've been working on prepping that stuff. Also been working with Jake and Steve on couple little additions that we've been making on the native app side, and a lot of prepping for for submitting to Google, which we hope to do in the next few days, definitely by the end of the week. That's our that was our originally planned time to submit. I'm thinking more likely tomorrow, but we'll see awesome.
+
+Unknown Speaker  2:24  
+Have you done any, like, security testing on that static or dynamic testing?
+
+Unknown Speaker  2:32  
+Oh, it's security testing on what the app itself? Yeah. Well, it's, it's all in the background. So, you know, we It's all behind, you know, everything on AWS, all of its security set up,
+
+Unknown Speaker  2:47  
+all that API stuff is run on Linux using local calls, mostly except the call it has to make, to file maker, because it has to be HTTPS, which means it does have to go to the DNS.
+
+Unknown Speaker  3:01  
+But that is hitting the FileMaker server, which is, you know, secure, and it's run over everything's run over SSL when it has to make those calls, the local ones are local, you know, local land calls that it makes between itself and its other self
+
+Unknown Speaker  3:22  
+and land lambda calls and stuff like that.
+
+Unknown Speaker  3:27  
+Have you pushed us out to was it apple? Yes, we got an approval from Apple.
+
+Unknown Speaker  3:36  
+But we're moving forward. You know, we had another update we've sent, and we're arguing with them a little bit over the same stuff again. But, you know, we expect for that to for the new update to roll through approval here soon. Also it's, it's always a battle back and forth. And we're, we're just prepping for the same battle with Google.
+
+Unknown Speaker  3:59  
+They're just, they are what it really we've noticed more and more that it really just comes down to, like, what reviewer you get and what mood he or she is in that day. Yeah, it really is, because
+
+Unknown Speaker  4:14  
+this the exact same stuff. You know, one person approves, one person denies. You make zero changes and just resubmit it, and you can get approved for you just got denied, you know,
+
+Unknown Speaker  4:24  
+so it really just depends on what reviewer you hit.
+
+Unknown Speaker  4:29  
+So I, I assume we're going to run into some of the same stuff with Google,
+
+Unknown Speaker  4:35  
+but we're, like said, we're preparing, getting ready to submit to Google
+
+Unknown Speaker  4:40  
+and the the it. And the the rest of the app stuff is, you know, set on schedule currently,
+
+Unknown Speaker  4:48  
+you know, for a go live. I believe we said January 16, was it?
+
+Unknown Speaker  4:55  
+Yeah, that's, that's the plan day. Yes, yes, I was.
+
+Unknown Speaker  5:00  
+Look it up at my scheduling here. Yeah, so we're still on, we're still on a good path for that, definitely for Apple, it's a little bit, you know, less of a good percentage for Google, because we haven't made it through their process yet. But I don't see why not. That's still more than 30 days, even with, you know, even with Christmas week, most likely being a wash,
+
+Unknown Speaker  5:25  
+that's still plenty.
+
+Unknown Speaker  5:28  
+So that is where we are on that stuff. Is there anything else you need an update on there? Joe, you know,
+
+Unknown Speaker  5:35  
+I think that covers everything. Just to give you a heads up though, Brian, Ashley and I were talking, and we plan on meeting with the rest of the schedulers to discuss the mapping changes on the 17th so we know everybody will be in the office. Okay, so that's our plan. Ash, I don't know if you want to do it before or after our meeting that we have in office, but that's our plan, at least before we push that live, at least as far as the mapping.
+
+Unknown Speaker  5:59  
+Okay,
+
+Unknown Speaker  6:02  
+all right, that's good. And Ashley and I will go over what she needs to know to tell the staff on the 17th. We'll go over that tomorrow, and maybe we can move ahead with the notifications and
+
+Unknown Speaker  6:19  
+then, and then wait some for that to happen before we move ahead with the maps going full go in, in production
+
+Unknown Speaker  6:26  
+networks,
+
+Unknown Speaker  6:29  
+alrighty, that's all I got. Wonderful.
+
+Unknown Speaker  6:34  
+I was gonna say, go ahead. Sorry, go ahead. I was just about to see if you wanted me to hand it off to you before we go to Ashley. This is usually Ashley's a lot. Ashley,
+
+Unknown Speaker  6:47  
+okay,
+
+Unknown Speaker  6:50  
+I'll start. So
+
+Unknown Speaker  6:52  
+I'm going to start with the no reply issue. Did you see Jeff's response as to,
+
+Unknown Speaker  6:59  
+like, what it what actually did happen? Brian, well, I
+
+Unknown Speaker  7:05  
+I'm not sure if it basically cut off no reply sending
+
+Unknown Speaker  7:12  
+because of too many emails or because too many failed emails, because it wasn't a real email address,
+
+Unknown Speaker  7:20  
+if it was for too many failed email then you know, that's what it was. It's, that's what's going out for our testing site,
+
+Unknown Speaker  7:29  
+for our dev testing. But it doesn't have to send out those emails.
+
+Unknown Speaker  7:35  
+That's not, it's not necessarily part of our testing for this. So I cut that off on Dev. Dev is no longer sending notification emails,
+
+Unknown Speaker  7:45  
+so that's kind of what I can do to you know, kind of see that that doesn't happen again. But
+
+Unknown Speaker  7:53  
+that's all
+
+Unknown Speaker  7:55  
+okay. So can we switch it back from detail back to no reply? Yes, if you give me that, go ahead, I can do that probably later after this meeting, perfect. Thank you. Yeah. I don't know if it was failed or if it was just we hit. We had so many that Microsoft flagged it as spam, but that was definitely the issue. And it looked like it was like, it wasn't even like every 15 minutes, you know, it was like seconds. There was a lot of them. Well, what is it runs every certain amount of time, and if there's a lot to send, you know, it may not send every second or every minute, but it very well may be, you know, at the top of the hour, try to send 20 at one time, you know, within milliseconds of each other. Okay, it looked like it was just that your job starts in one hour. So I wasn't sure if you know if it was getting triggered. Remember, I don't know if you remember that one time when someone was stuck in a field and they didn't like get out of it, and it just kept triggering that same notification. Or if this is, if this is different,
+
+Unknown Speaker  9:03  
+I'm not sure if it was or not.
+
+Unknown Speaker  9:07  
+Yeah, I'm not sure on that. Okay, well, if you set it off on Deb, then we shouldn't have an issue, because it's production just sends real ones to real people. So we should be good, exactly, better than setting up your own denial of service attack.
+
+Unknown Speaker  9:23  
+And it, well, it's, it's, I thought more the spamming stuff was always on incoming, not as much on in on outgoing. And these were, I mean, I've, I've done the same thing, set up my own denial service attack on myself. But
+
+Unknown Speaker  9:37  
+we do have rules in place for outbound spam, and the reason for
+
+Unknown Speaker  9:47  
+it
+
+Unknown Speaker  9:49  
+is the the cyber attack that comes in through emotet and trick bot, where they compromise your address book,
+
+Unknown Speaker  9:57  
+and then they download your address book and they send out.
+
+Unknown Speaker  10:00  
+Emails from your email account to everybody.
+
+Unknown Speaker  10:04  
+So we do have an outbound spam filter, but once that's triggered, there's no more outbound email. It's like locked out for that email address. So when you guys said that
+
+Unknown Speaker  10:18  
+there was no emails going out, that was the first thing we checked, because that's usually what tripped and it wasn't. And then when I looked through the logs, it was very sporadic.
+
+Unknown Speaker  10:30  
+So I think in it's probably the
+
+Unknown Speaker  10:35  
+the Microsoft native stuff that they do for spam protection.
+
+Unknown Speaker  10:42  
+It wasn't anything that we did, or Jeff did, or anybody set up for configuration.
+
+Unknown Speaker  10:49  
+The only thing I could say to be, we need to be careful on that or Les, or whoever
+
+Unknown Speaker  10:54  
+is, you don't want to get put on a blacklist. Yeah,
+
+Unknown Speaker  11:01  
+absolute nightmare to get off of that blacklist, and then that will impact your entire domain, not just
+
+Unknown Speaker  11:10  
+that one email address, so like your entire domain will get flagged as a spam sender.
+
+Unknown Speaker  11:18  
+Okay, I don't
+
+Unknown Speaker  11:21  
+well. I mean,
+
+Unknown Speaker  11:24  
+I don't think currently we have that much traffic going out with these notifications, but we definitely,
+
+Unknown Speaker  11:33  
+you know, as things grow, we might be able to hit that at some point, maybe we have to look at a, you know, email campaign service,
+
+Unknown Speaker  11:44  
+if, if it gets that big, or we, yeah, I mean, that's, I mean, there's two different things. One is we can control for our outs about bound spam.
+
+Unknown Speaker  11:55  
+We can control how many emails hit that threshold. The other one that you know, might end up being put on a blacklist is, you know, again, it's controlled by DNS and stuff outside of our control.
+
+Unknown Speaker  12:11  
+I think that's not I think that's why a lot of companies use things like Constant Contact and email, because they're constantly changing the outbound email address.
+
+Unknown Speaker  12:26  
+That's,
+
+Unknown Speaker  12:28  
+you know, I guess that's, that's a discussion that can be had as to when we are hitting that threshold that we need to use a service. I don't, I don't know what that is. That's, you know, I don't know what that level would be, the we just
+
+Unknown Speaker  12:45  
+need
+
+Unknown Speaker  12:46  
+to be aware of. I don't think we're there yet. Yeah, we just need to be as long
+
+Unknown Speaker  12:52  
+as our legit emails going out and not so many bounce backs, yeah?
+
+Unknown Speaker  12:59  
+Like, if you go to MX toolbox, you could that's basically what everybody uses for email stuff.
+
+Unknown Speaker  13:08  
+Okay, yeah, I've, I've stopped the purposely fake ones going out. I mean, I won't say that there's, you know, never going to be a bad email address that they try to send out to ever. But as for, you know, it happening a lot. I shut that down
+
+Unknown Speaker  13:24  
+because that was all coming from dev, and we're not going to, obviously, not going to set things up like that in production.
+
+Unknown Speaker  13:33  
+So, yeah, I guess if we, if we do, decide we need to trim, we can trim when notifications go out, we do have a lot of paths and scenarios where notifications go out via email,
+
+Unknown Speaker  13:47  
+other than that, yeah, once it's grown to a point, yeah, you got to use Constant Contact or some other type of service like that, at some point. I agree with Tom, I don't think we're there yet, but he probably know more about where that limit is than me.
+
+Unknown Speaker  14:03  
+I did just check it in MX toolbox, and
+
+Unknown Speaker  14:07  
+you still got to get I think what's going to help also make sure all these emails are good is setting D mark. I've asked Jeff countless times to set that up, but
+
+Unknown Speaker  14:19  
+it's just email security
+
+Unknown Speaker  14:26  
+that'll help basically validate or certify those emails being sent out. We'll see if I can bring it up again. But
+
+Unknown Speaker  14:35  
+las az.com is not on any spam list as of right now.
+
+Unknown Speaker  14:41  
+It's on one for a timeout,
+
+Unknown Speaker  14:46  
+which is actually, I guess, in a way, great if we run into a problem. We run into it now, because soon, all of those notifications are going to be coming out of of
+
+Unknown Speaker  14:55  
+blue dispatch.com instead of L, E, S, a, z, so.
+
+Unknown Speaker  15:02  
+Yeah, we'll just need to make sure all the email settings are stuff are set up for there, but,
+
+Unknown Speaker  15:09  
+yeah, it looks like everything that's on here, it's only one
+
+Unknown Speaker  15:13  
+that's like a caution of timeout, but nothing's getting blocked yet.
+
+Unknown Speaker  15:19  
+So that's good,
+
+Unknown Speaker  15:22  
+alrighty,
+
+Unknown Speaker  15:24  
+okay. Miss Ashley,
+
+Unknown Speaker  15:27  
+okay. The next thing I was curious about so yesterday, specifically, was there something going on with the app? I noticed some things yesterday that I hadn't noticed in a while, or they were a new thing that I noticed the native app, Okay, what about it? Um, so, like the first thing I did. So when I was at work, I took a job, and I went to
+
+Unknown Speaker  15:52  
+clock in, and I looked at it, though, and it and I took a picture of it, because I thought it was strange. But I clocked in at work, and it showed me,
+
+Unknown Speaker  16:04  
+like the green dot was at my house, like, where I live, personally, and then the red dot was at work, and I'm like, How did it know that? First of all, but second of all, I wasn't even at my house. So that part was strange. And then the other thing I kept noticing, and this one, I've noticed a little bit, like, periodically, so I'll be in the app, and then I'll I'm not clocked in or anything that I force close it, and everything's good. But then I couldn't even tell you how long, maybe sometimes a few hours, sometimes the next day. But I'll get like, you know, like, right around the time, where it says the time, and it's like, just on your phone, and it'll be, you know, blue around it, as if, like, my phone is tracking me. And so I'll click on it, and it'll bring up the app. Is that normal? And it's, it's not like all the time either. It's happened. Yeah,
+
+Unknown Speaker  17:01  
+go ahead. It's part of the the background tracking that's turned on.
+
+Unknown Speaker  17:07  
+It's
+
+Unknown Speaker  17:09  
+it's the phone actually turning on the tracking for the app and telling the app where you happen to be. The app actually isn't requesting and doesn't send it back to our servers.
+
+Unknown Speaker  17:26  
+It is an oddity that I have also noticed,
+
+Unknown Speaker  17:31  
+but it's just kind of something that seems to be happening when you when you have background GPS turned on, which is kind of the highest level of, you know, Location Services, permissions you can have.
+
+Unknown Speaker  17:49  
+We have been working on that little thing at the top.
+
+Unknown Speaker  17:54  
+Apple calls it an island,
+
+Unknown Speaker  17:57  
+and we have been working on showing some information there in that island, mostly just, we want to do it when you're clocked in, actually show that timer of how long you've been clocked in there on the island, so you don't have to be in the actual app. But nevertheless, starting to talk to that island, I don't know if that is
+
+Unknown Speaker  18:16  
+doing something,
+
+Unknown Speaker  18:19  
+yeah, I don't know if that's doing something or not, that's seeing, making, causing what you're seeing. I can discuss again with Jake, but it has been noticed, or at least finally, and I've talked to him about it before, but
+
+Unknown Speaker  18:32  
+another person seeing it That's great. Yeah, it's something that I've noticed, just on and off, and I can't, there's no, I can't tell you why it, you know, sometimes all of a sudden, decides to show up there. So I thought I'd bring it up in case, well, a so I could get an explanation for it, because I'm sure if this is something that's not going away, they're going to ask me about it. Because they're, you know, it's, it kind of feels like a privacy thing.
+
+Unknown Speaker  19:00  
+And I don't. I'd I'd
+
+Unknown Speaker  19:03  
+have to try to figure out why that's happening, or probably Jake would not me
+
+Unknown Speaker  19:09  
+why that's happening, and see if it's something that we had any control over. There's a good amount of things that we don't like we discussed last time with Jake. You know, every once in a while, it's going to kind of pop up and force you to decide if you still want this app to have background GPS, you know, permissions. We can't stop it from asking you that every once in a while.
+
+Unknown Speaker  19:32  
+So I don't know about the thing the location services up in the island.
+
+Unknown Speaker  19:39  
+I do know
+
+Unknown Speaker  19:42  
+I haven't been able to do it because I'm not a Uber driver, but I know a guy that drives like Uber Eats and stuff like that, and if you have the Uber driver app on your phone, he said he sees that same type of thing, but it usually means notifications. So.
+
+Unknown Speaker  20:00  
+Turns on location services for the driver when it's basically if you if you actually are standing at an airport saying, I want an Uber driver,
+
+Unknown Speaker  20:09  
+even people that aren't logged technically logged into their Uber app as drivers. It goes out and collects their their location so it can tell you how many drivers are nearby, and then decide which ones that you want it to, you know, to see if they want to be your driver.
+
+Unknown Speaker  20:29  
+So we're not the only app that that kind of stuff happens with.
+
+Unknown Speaker  20:34  
+We just gotta figure out exactly what it means. Perfect. Yeah, at least that. Way I can at least explain,
+
+Unknown Speaker  20:43  
+you know, when, when that question gets brought up to me, if it's something that we don't have control over.
+
+Unknown Speaker  20:49  
+Okay, the next two I think I might save for our conversation tomorrow. It's really just
+
+Unknown Speaker  20:56  
+moving stuff from dev to production and what all, all the different things.
+
+Unknown Speaker  21:02  
+So I'll save that for tomorrow,
+
+Unknown Speaker  21:05  
+you know, in customers, and then you go to assets, and you can, like, put in the docusigns. Do you
+
+Unknown Speaker  21:13  
+want me to? Do you want to see what I do? Documents, the PDFs? Yeah, yep, yep. You can choose, you know, annual or perpetual. I'm curious if they choose annual, is there, is that just for viewing, or is there a notification feature tied to that at all right? Now it is just for viewing, okay, just for your viewing pleasure.
+
+Unknown Speaker  21:38  
+Okay?
+
+Unknown Speaker  21:41  
+All right,
+
+Unknown Speaker  21:43  
+um,
+
+Unknown Speaker  21:44  
+any news on or update on the release button on agency?
+
+Unknown Speaker  21:50  
+No.
+
+Unknown Speaker  21:53  
+Wish I had a more full
+
+Unknown Speaker  21:56  
+but nope,
+
+Unknown Speaker  21:58  
+I'll just keep it on the list, on a list. Yes, ma'am, okay.
+
+Unknown Speaker  22:04  
+The report this one I might want to just show you.
+
+Unknown Speaker  22:18  
+It has to do with one of The reports. I Yes,
+
+Unknown Speaker  22:23  
+are you? I'm
+
+Unknown Speaker  22:44  
+it's the officers jobs work.
+
+Unknown Speaker  22:49  
+So aside from, like, when I'm picking a site, so if I picked Arizona,
+
+Unknown Speaker  22:55  
+this, this will pull everything, like jobs worked. If I picked, I don't know ASU, like it would show me all of the jobs worked. But if I pick any other site that I know that there are jobs on,
+
+Unknown Speaker  23:12  
+it does not work. Is there?
+
+Unknown Speaker  23:16  
+Is that by design? Or how do I
+
+Unknown Speaker  23:22  
+how do we fix that? Trying to think this was on my list a few weeks ago, so I knew for sure that there was jobs there.
+
+Unknown Speaker  23:31  
+But is that by design? First of all, it is not okay. Give you that site,
+
+Unknown Speaker  23:42  
+Ohio. Ohio might should have something.
+
+Unknown Speaker  24:00  
+There's one today,
+
+Unknown Speaker  24:03  
+yeah, and, I mean, just so you can see less.
+
+Unknown Speaker  24:13  
+You know, I'm sorry.
+
+Unknown Speaker  24:19  
+You don't have to apologize for Ohio. I know they're terrible state, just
+
+Unknown Speaker  24:24  
+taking so long
+
+Unknown Speaker  24:26  
+apologize for them,
+
+Unknown Speaker  24:29  
+but you can see like the sites Ohio, like this should have pulled.
+
+Unknown Speaker  24:37  
+Can you click on like that top one? Say this one, yep, that's good.
+
+Unknown Speaker  24:44  
+Go to Job Simons, you've
+
+Unknown Speaker  24:47  
+got job Simons, yeah, and that's what report is that this is Officer job worked, okay, but can we see where they've worked any of these jobs? Because those, all those, I just.
+
+Unknown Speaker  25:00  
+All didn't have any didn't look like they were work. They didn't look like they had any officers assigned to them. Oh yeah, barely show you it's,
+
+Unknown Speaker  25:09  
+this is, this is the officer assigned because we get invoice so we don't put individual officers names on it.
+
+Unknown Speaker  25:16  
+All of them had grow hours worked.
+
+Unknown Speaker  25:22  
+Okay? Let me find one that do you
+
+Unknown Speaker  25:27  
+want me to go back a date range? Then
+
+Unknown Speaker  25:30  
+I just, I,
+
+Unknown Speaker  25:34  
+that is one of the requirements of the report is that they have hours, you know, let me go back to October. Then.
+
+Unknown Speaker  25:41  
+Just want to see if that's
+
+Unknown Speaker  26:01  
+okay. So that's so it's, that's why it's not pulling is because wherever, because I know I didn't do Ohio, I think we were doing Texas, I want to say, or possibly all.
+
+Unknown Speaker  26:15  
+So that's why I think it's
+
+Unknown Speaker  26:20  
+they didn't have hours work to set in, you know, if you don't, if they don't have hours worked there.
+
+Unknown Speaker  26:28  
+Okay, thank you.
+
+Unknown Speaker  26:32  
+Let's see.
+
+Unknown Speaker  26:36  
+Oh, these the plugins. So,
+
+Unknown Speaker  26:39  
+like, no, it's just so bizarre, because, like some computers, I'm able to get the plugin plug in to work, and some not, yes, why couldn't tell you, don't
+
+Unknown Speaker  26:54  
+I hate using plugins is unless I absolutely have to, you keep them zipped, right? I've tried both. Just curious. Well, I keep them, I pull out the zip, and I put it in the folder where it's gets installed into. I just know
+
+Unknown Speaker  27:14  
+how to get to that, and I just put it there. Yeah, I know how to plug in there.
+
+Unknown Speaker  27:19  
+I know how to get there. Like, I got it to work on Stacy's computer, not Lori's, not Jessica's, but I'm just curious, and it's the base elements that it's asking for. Yeah, yes.
+
+Unknown Speaker  27:31  
+I'm just wondering if you
+
+Unknown Speaker  27:36  
+have any suggestions, I suppose, because I didn't do them differently.
+
+Unknown Speaker  27:41  
+I uh,
+
+Unknown Speaker  27:46  
+well, I wish I did. I I
+
+Unknown Speaker  27:49  
+just have to kind of troubleshoot any problems I run into, one at a time.
+
+Unknown Speaker  27:55  
+You should just be able to put plugin in there. There's just, remember, always, there's at least two copies of plugin for every update, one that runs on max and run the one that runs on PCs. It's,
+
+Unknown Speaker  28:08  
+what is it? 60 M, FM, 64 something like that is the extension or
+
+Unknown Speaker  28:15  
+for Windows,
+
+Unknown Speaker  28:18  
+and it's FM plugin for Max. Um, I haven't tried any Macs yet. We all. All we have is Windows, yeah, if you go to the Settings area and the plugins
+
+Unknown Speaker  28:31  
+and say, you know, reveal the folder, I just put the plugin in there, the actual plugin file,
+
+Unknown Speaker  28:39  
+and that's
+
+Unknown Speaker  28:41  
+it. And then you have to restart file maker.
+
+Unknown Speaker  28:44  
+I can tell you if there is
+
+Unknown Speaker  28:49  
+OS level access problems, you know, to that folder for the user,
+
+Unknown Speaker  28:55  
+you know there's user access problems to that folder. They don't have read and write access to it, or something like that, that sometimes, you know, will die. It will mess it up if they don't have read, write access to the folder.
+
+Unknown Speaker  29:10  
+Sometimes, that's the issue. I don't
+
+Unknown Speaker  29:16  
+know what else I mean. It's a free plugin, so you don't have to worry about licensing being, you know, having too many seats or something like that. So,
+
+Unknown Speaker  29:24  
+okay, maybe if tomorrow's call goes quick, I could just show you on Jessica's computer. It's great what I'm going through. I'll try to figure it out on that. Yeah, just if you see something that maybe is the reason, I don't know, because I got it on Stacy's, and that's the part where I'm like, it's inconsistent for me, so it's crazy.
+
+Unknown Speaker  29:46  
+Did you get my email on officer Maya the merge?
+
+Unknown Speaker  29:51  
+I
+
+Unknown Speaker  29:53  
+Yeah, so we have two of his accounts, but one has the QB and the.
+
+Unknown Speaker  30:00  
+Other has his access to the agency,
+
+Unknown Speaker  30:03  
+and we were going to
+
+Unknown Speaker  30:06  
+put one into the other, and you had me just make sure that the top portion was what I wanted it
+
+Unknown Speaker  30:13  
+to be, this guy.
+
+Unknown Speaker  30:14  
+I think we just discussed that on a meeting. I don't remember an email, but I do remember the discussion. Yeah, I did. I sent you an email. I think it was right after that. I'll just resend it. You just wanted all the information. Oh, and you were going to make sure that you had one that was, yes, that was, you know, the gold standard, yep, okay, and you've done that. We have one that's the gold standard. Yeah, this is, this is the one that we want the QB in.
+
+Unknown Speaker  30:45  
+Oh, that one's harder to do it that direction. But okay, no, it's, I can make it doesn't. The only thing is, is that this one doesn't have if you do it the opposite way, will the will the sites follow? No.
+
+Unknown Speaker  31:01  
+All right. I mean, they can, but
+
+Unknown Speaker  31:05  
+which one has the most jobs? That's probably the hardest part to move this. This one, this one has, I think this is the only one with jobs to be honest. Yeah, he hasn't technically worked, okay, QBD matches old for merge only. Yeah, so because I, I made sure that this part matched. Is there a reason you want the new one because it's got the websites on it? That's the only reason. Yeah,
+
+Unknown Speaker  31:33  
+but however you want it to work? And honestly, if, like, if we can't, no, I can move the websites easier than I can do it jobs, the job assignments, those are harder to move, but they are very, very old, yeah,
+
+Unknown Speaker  31:48  
+still want them. They're harder to move than the websites are. So which, which way are you going to go? I'll just make sure that this one you just wanted, yeah, this one has the top two, will take long time, job assignments and qB. So let's move the web, the website logins over to this one.
+
+Unknown Speaker  32:08  
+And so,
+
+Unknown Speaker  32:10  
+yeah, this is the one I want to be the gold standard.
+
+Unknown Speaker  32:13  
+Okay, so you want, so this has to still match the QB, yeah. But it
+
+Unknown Speaker  32:18  
+doesn't matter as much because you already have a QB ID for this one. That's, that's true. That's true. That's, that's already with the name that it has.
+
+Unknown Speaker  32:27  
+Okay? So
+
+Unknown Speaker  32:29  
+if you want to make the other one inactive and make that one active and Steve Maya, you want them both active, he's probably not going it's probably not going to
+
+Unknown Speaker  32:41  
+be an issue. We don't assign La Paz to
+
+Unknown Speaker  32:46  
+jobs at this point right now. Oh, well, honestly, the I mean, the odds would be very small that it would mess anything up if we do it. You know, within the next few weeks. I just,
+
+Unknown Speaker  33:01  
+like I said, I would say make this one inactive and the other one active, so that he doesn't take any jobs on this. I mean, like you said, it's very unlikely, but just in case, and he doesn't have access to those web accounts, but I can move them anyway.
+
+Unknown Speaker  33:17  
+Okay,
+
+Unknown Speaker  33:20  
+I'll move those over to the other one, and then when I'm, you know, once I'm completely done, maybe I'll change his print as name on the one that we want to get rid of to, like, delete this Steve may or something like that. Okay, yeah, just let me know
+
+Unknown Speaker  33:39  
+what I need to do.
+
+Unknown Speaker  33:40  
+Okey, dokey. Dokie,
+
+Unknown Speaker  33:44  
+the last thing is kind of quick. So there's a lot of things that, obviously we can we can pull and we can search for, and we can do in FileMaker that aren't on reports, right? So if I wanted to, like, I don't know, pull up jobs that were worked in California, or something like I can do a search in FileMaker.
+
+Unknown Speaker  34:06  
+Is there a way I know, and I know that you don't like that export button on everyone's and I completely understand why. But is there a way that just I could have access to pulling those that that aren't on your general report list.
+
+Unknown Speaker  34:22  
+I could give you an export button on
+
+Unknown Speaker  34:26  
+any one of the link screen, the list screens, but if you're working, yeah, well, no, no, hey, I know what you mean. The list screens, yeah. After I do the church, the problem is
+
+Unknown Speaker  34:36  
+that's not going to give you reports of job assignments, because we don't have a job assignment list screen,
+
+Unknown Speaker  34:43  
+that dashboard is the closest thing we've got to that.
+
+Unknown Speaker  34:46  
+Can you find what you need in the dashboard? Or where would you initiate question? I'm trying to remember the exact scenario, because this was a few weeks ago as well, but I think it was the.
+
+Unknown Speaker  35:00  
+Be
+
+Unknown Speaker  35:06  
+like, for example, if I wanted to know all of the jobs that we ever did in California, like this does give me the list. That gives you a list of job locations, yes, but that what were you I would but I was thinking basically the job assignments and the reoccurring jobs is you don't have list views for those. Go, I get what you're saying. So for job locations, yeah, I can just put an export button on here, and, you know, more power to you. You can. I'll give you access to the export process, the file maker, one how to use it the best I can. I yeah, it's been a minute, but I used to do it for like, when we were doing, like, duplicate customers and duplicate officers and things. So I, I do, you know, remember that. And the problem is, you don't have recurring jobs list, and you don't have job assignments lists, so the exports you do would only be based off of job locations, okay? Or customers, or, you know, any of the main table
+
+Unknown Speaker  36:10  
+okay? If we do want to access to that, you know, if you want us to make you list views and stuff where you can work with those particular tables, that's fine.
+
+Unknown Speaker  36:21  
+We could do that. We can add it here to the dashboard. If this has all of the finding abilities you need and you just want to be able to export to Excel from this screen right here. We could do that.
+
+Unknown Speaker  36:36  
+I would definitely suggest anything like that to be locked down to admin users.
+
+Unknown Speaker  36:43  
+Yes, yeah, I and I completely agree,
+
+Unknown Speaker  36:48  
+okay, because I can't control what information they see or can export once I give you that you know, access to that export process. Yeah.
+
+Unknown Speaker  36:57  
+Okay, cool. So that would be good about that. Yeah, and get back to me. I'd like that to happen. We can discuss it, and of course, I could do it perfect. Thank you.
+
+Unknown Speaker  37:11  
+I think that's all that I have for today.
+
+Unknown Speaker  37:17  
+Hey, wonderful.
+
+Unknown Speaker  37:19  
+Are we gonna get, not quite our fastest meeting ever, but pretty darn close. Yeah, it's pretty nice. Actually. Does anybody else have anything they need to discuss? Throw out update,
+
+Unknown Speaker  37:32  
+not from my end, unless Tom does. Yeah, I just got a couple questions. I forgot one, so maybe just one
+
+Unknown Speaker  37:41  
+starts getting old. Oh no, I do have to now. Okay,
+
+Unknown Speaker  37:45  
+the
+
+Unknown Speaker  37:47  
+locations, the data, locations that Ashley was showing,
+
+Unknown Speaker  37:51  
+does it store that anywhere? And the reason I'm asking is,
+
+Unknown Speaker  37:57  
+you know, public records laws, if officers are using these mobile devices, I don't want them to become subject to a public records request
+
+Unknown Speaker  38:09  
+and be able to find data on where officers homes are, or GPS tracking of them. Okay, so location, as far as app, the native app is concerned, is only transmitted to us when they are clocked in. But you know, from the time they clock in to the time they clock out, that data is collected. It's collected, I believe, every 10 seconds, a time stamp and a coordinates of where the phone is. It is kept very securely in in AWS, under the on the Linux one of the Linux servers, it's saved as
+
+Unknown Speaker  38:49  
+a an encrypted text blob that is only accessed through the endpoint, currently saved for a little while and then pushed to Glacier for long term storage. As far as,
+
+Unknown Speaker  39:04  
+like, any type of Freedom of Information Act or anything it's not going to we don't collect any data when they're not clocked in. Is kind of the bottom line. There's,
+
+Unknown Speaker  39:15  
+like, no personal information on there, exactly nothing location data is collected when they log in. I mean, when they're clocked in. And how long do you guys store the data in cold storage?
+
+Unknown Speaker  39:28  
+Right now, we haven't decided that's that's going to be an las call, okay, how long they want to save that.
+
+Unknown Speaker  39:37  
+We do feel I mean, again,
+
+Unknown Speaker  39:42  
+we had discussed before, I know, with Joe and Amanda and such, that that may be something that the Department may want to ask for, you know, the those location records, and that's, you know, a legal matter we can for. We can, you know, produce it for them.
+
+Unknown Speaker  40:00  
+But again, that's only going to be location data from the time they clock in to the time they clock out. Period, okay, I know you collect zero otherwise, like when I was at Phoenix, their position was for the public record laws in Arizona, anything an officer generates a subject to public records laws,
+
+Unknown Speaker  40:23  
+and they have to retain it. The city has to retain that information for five years post termination of employment.
+
+Unknown Speaker  40:32  
+Oh, nice. So hypothetically, say an officer does 20 years, that data has to be restored, retained for 25 years.
+
+Unknown Speaker  40:41  
+Well, there you go then. So I don't, I don't know if, yeah, right now it's going to be forever, because we haven't, okay, we haven't decided on a on a time period, it's not big, and the long term, Glacier storage is very cheap, so
+
+Unknown Speaker  40:59  
+like text files, right? I'm sorry, it's all just stored in text files, right? Yes, encrypted text files, JSON files, that's nothing.
+
+Unknown Speaker  41:11  
+And then,
+
+Unknown Speaker  41:14  
+when do you anticipate? I mean, I'm not going to hold you to a date, but just a ballpark of
+
+Unknown Speaker  41:21  
+when the when we do the pen test.
+
+Unknown Speaker  41:26  
+I'm not sure what a pen test is on the server, on that new server we've been working on, on everything.
+
+Unknown Speaker  41:34  
+So one of the things that we've talked about at the very beginning was
+
+Unknown Speaker  41:40  
+doing a pen test on the app to have a, basically a
+
+Unknown Speaker  41:44  
+penetration tester or a white hat hacker come out and try to hack the system.
+
+Unknown Speaker  41:50  
+Oh,
+
+Unknown Speaker  41:54  
+no, that's something we could set up
+
+Unknown Speaker  41:58  
+right now. We it's, it's a time thing. I mean, we just, we're pushing so hard to get this out and live,
+
+Unknown Speaker  42:07  
+you know, after right now, right now, it'd be a waste of everybody's time and money, because it's not everything is set up yet for, yeah, I would say we need to. We want to go live. We want to find a time period, sometime after we go live, when we are going to decide to move from what is the current production server to the new server that is being that's, you know, being looked at and worked on, I think, still BY JASMINE and Michael. So I think we're going to go live with the server we're on, but we want to make plans to switch over production to that server at some point after Yeah, I think that's and I believe once we do that, that would be the time. Because
+
+Unknown Speaker  42:57  
+I don't know, I don't know how,
+
+Unknown Speaker  43:00  
+how much weight a pin tech puts on the system, or could put on the system if you set someone loose, you know, on it. So I don't know if we want to do that in a basically a copy of the system, you know,
+
+Unknown Speaker  43:13  
+basically using all of our dev servers and Dev pieces. They would do it on a live system. They do it on a live Yeah. So I mean, if they hit it with, if they do a pen test on it, your system crashes, that's going to be a finding, yeah, so, I mean, because it needs to be robust, obviously they're
+
+Unknown Speaker  43:32  
+not going to hit it with anything,
+
+Unknown Speaker  43:35  
+you know, super crazy,
+
+Unknown Speaker  43:39  
+you know, Trying to, basically trying to get in, you know, some back door or something I understand, I I'd just be worried is part of that day, like a denial of service attack or anything like that.
+
+Unknown Speaker  43:53  
+Those are, those are probably, those are typically, as part of it, yeah, we're not gonna, they're not gonna hit you, you know, super hard, but those are typical. All the pen tests I've been involved in, we blast it with a DDoS attack to see what the failure point is. We don't
+
+Unknown Speaker  44:11  
+want to, we're not. The goal isn't to crash the system, but it's to see what it can take before it starts having issues. I
+
+Unknown Speaker  44:20  
+wouldn't do that on production. That doesn't sound safe at all. Well, I mean, they do it off hours. They don't do it in the middle of the day.
+
+Unknown Speaker  44:29  
+Yeah, police really have off hours?
+
+Unknown Speaker  44:34  
+No. Well, I when I came so when I was in the police department, I was an officer, I didn't do any of this stuff. I'm talking like when I were cybersecurity in the industry, yeah, when I worked at
+
+Unknown Speaker  44:46  
+the banks and
+
+Unknown Speaker  44:48  
+Banner Health.
+
+Unknown Speaker  44:50  
+If that's something that everybody wants to do, we'll try our best to accommodate you when we can. Okay, I just didn't
+
+Unknown Speaker  44:59  
+know if.
+
+Unknown Speaker  45:00  
+I was, I know we've talked about at the beginning, and then we kind of got sidetracked and all this other stuff, but
+
+Unknown Speaker  45:08  
+cool, I guess that answers my questions.
+
+Unknown Speaker  45:12  
+All right, see, Joe, that's why I'm on here. I always bring the fun in here and scare the shit out of everything. Yeah, that's what you're doing. Tom you're like, let's bring everything down. Why not? What do you mean a Pinto
+
+Unknown Speaker  45:25  
+That, to me, that's what Dev is. That's why we've got a dev copy of every server and piece along the line, so that you can blow it up, nuke it. I don't care. Go after it. You know, if there's a mirror, if it's a mirrored image, I don't think it would be an issue, but we don't have a mirrored image. Is the problem.
+
+Unknown Speaker  45:42  
+And there, you know, there might be issues where, like, the dev environment test secure, but the production environment isn't secure.
+
+Unknown Speaker  45:53  
+But, I mean, these guys are. They're not.
+
+Unknown Speaker  45:56  
+They're not kitty script kitties. I mean, they, this is what they do for a living. So they're not going to bring shit down. If they do that's going to be an issue with the system.
+
+Unknown Speaker  46:08  
+Okey, dokey, yeah, we can. We'll, we come back to that. You know, we can come to that absolutely, I'm happy to help as much as I can.
+
+Unknown Speaker  46:20  
+Okay, cool. All right, Tom and Tom, you know what? Since we're on that topic, how long do you think something like that would take pen test? Why is that gonna take a few hours? Is that more of a day type of thing? Or what are we looking at?
+
+Unknown Speaker  46:31  
+It depends on what the engagement is. Yeah,
+
+Unknown Speaker  46:36  
+you know that's, I mean, if I was the boss of everything it would go with. What the industry is that we would engage the
+
+Unknown Speaker  46:45  
+security company for a three year contract,
+
+Unknown Speaker  46:51  
+and they would hit it. You'd probably take a week or two for the first major one. Well, let me, let me digress. So they will take a week or two to do the pen test. They're going to hit it with, you know, anything in the OWASP
+
+Unknown Speaker  47:09  
+Top 10,
+
+Unknown Speaker  47:11  
+see if there's any scripting issues, see if there's any vulnerabilities, see if there's any ports that are open that shouldn't be see if they can get compromised emails. I mean, there's whole there's a whole myriad of stuff that they look at,
+
+Unknown Speaker  47:25  
+stuff being encrypted. Is it encrypted in at rest and transit and at use, just all that stuff, they will produce a report of. These are the findings. And those findings are going to be ranked from critical to low,
+
+Unknown Speaker  47:40  
+and
+
+Unknown Speaker  47:42  
+then it's up to
+
+Unknown Speaker  47:44  
+Bonnie and Las, essentially, of what to do with those got it, and it's going to be same thing with the both web apps and the web
+
+Unknown Speaker  47:57  
+so. And then, if it's engaged for a year. Typically, what they'll do is they'll do, like, once a quarter, they'll do
+
+Unknown Speaker  48:04  
+a quote, unquote modified pen test, if you will,
+
+Unknown Speaker  48:08  
+just see how things are progressing.
+
+Unknown Speaker  48:11  
+And at the end of fixing everything, they'll do another pen test to make sure everything's gone. Got it? Okay? Okay. So it's kind of what we're doing now, where we hit it with a vulnerability scanner. So that's scanner. So that's typically what they do first, if they hit it with a vulnerability scanner, to find all the vulnerabilities, and then they'll try to exploit those vulnerabilities. Okay, at
+
+Unknown Speaker  48:33  
+least it gives us an idea of what we're looking at or what we can anticipate from our end. So yeah, we're that's what we're trying to do, and that's where we got a lot of those vulnerabilities before, and that's what they're working on right now.
+
+Unknown Speaker  48:45  
+I think I provided that list or something
+
+Unknown Speaker  48:49  
+where it basically scans the systems and identifies all the vulnerabilities and then
+
+Unknown Speaker  48:55  
+basically tells you how to fix it.
+
+Unknown Speaker  48:59  
+The pen testers are essentially auditors. They're
+
+Unknown Speaker  49:02  
+going to come in and, do you know, scan everything. Got it okay?
+
+Unknown Speaker  49:10  
+So, yeah, I didn't mean to scare everybody about it, if you
+
+Unknown Speaker  49:16  
+guys want to have fun, if you go to low orbit, Ion Cannon
+
+Unknown Speaker  49:22  
+and put in the Les the server for this. You could do your own DDoS attack.
+
+Unknown Speaker  49:29  
+There we go. Brian, prepare for that. We're all gonna
+
+Unknown Speaker  49:34  
+or you could do metasploit. You can, you can do, you can blast it really good with metasploit.
+
+Unknown Speaker  49:42  
+I took down a fortune five company with a metal sploit. Oh, man, and then you called them. Said, hey, I can fix that.
+
+Unknown Speaker  49:53  
+Yeah,
+
+Unknown Speaker  49:56  
+I think
+
+Unknown Speaker  49:58  
+that's it. Brian, anything?
+
+Unknown Speaker  50:00  
+Else you need from us? Absolutely not or I think we're good on mine.
+
+Unknown Speaker  50:04  
+Contact. Great. Thanks, guys, awesome. Thanks. We have a good one.
+
+Unknown Speaker  50:10  
+It's.
+
+Transcribed by https://otter.ai

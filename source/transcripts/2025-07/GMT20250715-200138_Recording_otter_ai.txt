@@ -1,0 +1,1180 @@
+Unknown Speaker  0:00  
+Get moving.
+
+Unknown Speaker  0:01  
+Alright, let's start recording. Um, did you before we, you know, turn over to Ashley or anything. Do we have
+
+Unknown Speaker  0:10  
+you have any questions or suggestions after this weekend's fun? No, you know what? I'm still recovering, to be honest with you, and I didn't do anything compared to what you guys were doing. So if I fill it, I know you guys are filling it. So I think, from my perspective, I think, I mean, it was just bad timing altogether, right? It happened on a weekend, or heading into a weekend First off, and I was relaying that to Bonnie, letting her know, like, you know, it was just tough circumstances given given that timeframe,
+
+Unknown Speaker  0:44  
+but I'm just glad it's backed up and running, and I'm glad that we found what the issue was. I think it would be a little more troublesome if we couldn't figure out what exactly occurred, and it just by whim, just worked again. But knowing what happened
+
+Unknown Speaker  1:00  
+makes, I guess, makes me feel better, at least knowing that, hey, if there is an issue again, this is one of the avenues we can take to try to rectify it. Yeah, it's, it was kind of like you said, kind of a compound thing happening. So first, the subscription on the SSL
+
+Unknown Speaker  1:18  
+expired. That's, somebody's got to, got to watch that and catch it before it expires. That's, that's kind of moving forward, yeah, absolutely. It shouldn't surprise us when it, you know, when it expires. So
+
+Unknown Speaker  1:33  
+it's, it's gotta be, it's gotta be watched, you know.
+
+Unknown Speaker  1:37  
+So that's, that's that part. And then
+
+Unknown Speaker  1:42  
+again, I don't think we'll have as much of an issue once we get over to AWS.
+
+Unknown Speaker  1:51  
+Number one. We have a support firm that's going to be watching that so they can keep an eye out. Hi guys,
+
+Unknown Speaker  2:00  
+Hi Amanda, hi, and it'll kind of be there, you know, on them to to watch and get those certs reissued and all that kind of stuff, exactly. But more to the point
+
+Unknown Speaker  2:11  
+your so AWS is on the blue dispatch domain, and your current FileMaker server is on the the old 10, seven les domain
+
+Unknown Speaker  2:23  
+and the new the blue dispatch domain has GoDaddy as its SSL cert provider,
+
+Unknown Speaker  2:31  
+which is just more standardized and
+
+Unknown Speaker  2:36  
+and everybody we deal with is going to
+
+Unknown Speaker  2:40  
+is going to be able to work with that a little better, because the second part of the problem ended up being FM better forms had not collected the new the new root key for santigo. Santigo, however, you say their name.
+
+Unknown Speaker  2:57  
+Who is a
+
+Unknown Speaker  2:59  
+just fine cert authority. You know, they're out of England. There's I, you know, I found them easily. They're trusted. There's nothing wrong with them, necessarily. But,
+
+Unknown Speaker  3:10  
+you know, they're not quite as popular as, say, GoDaddy or some of the other bigger ones here in the States, and that is why their better form system had not picked up their new root key. It's a it's an automated function that they said, you know, runs every once in a while to go scoop up those new ones.
+
+Unknown Speaker  3:30  
+And I guess again, it should be less of a problem with GoDaddy, because they're going to be dealing with that, you know, more regularly to keep that because, just like us, the certification authorities, every year have to reissue a new price, you know, a new root key and a new setup, a new cert for them.
+
+Unknown Speaker  3:56  
+Sure, sure, I didn't know any of this. I'm
+
+Unknown Speaker  3:59  
+I'm talking about, I understand this, but I only understand a little. We have no idea
+
+Unknown Speaker  4:07  
+Same here. I think for me, I mean, as far as SSLs go, that's all I use for. I go as far as when I build out a website, and I know I got to get that bad boy on there, but that's about it. Yeah, yeah. So we're the same. It's just not. That's just not our deal networking and such is not. It's not what we do. So yeah, I'm glad we were able to get it fixed. I'm glad they were able to do that late last night.
+
+Unknown Speaker  4:34  
+So that's that. And again, moving forward, it's just somebody needs to watch and make sure that they know before that SSL expires. Yeah, absolutely. Think that's the gameplay moving forward.
+
+Unknown Speaker  4:48  
+Because apparently, although you can buy five year, and I think even eight year,
+
+Unknown Speaker  4:54  
+you still have to reissue them at least once a year, it's free. You just have to go on there and hit.
+
+Unknown Speaker  5:00  
+Hit a button upload something, you know, and it reissues a new one, but it has to be done every year,
+
+Unknown Speaker  5:06  
+so that's okay. That is that
+
+Unknown Speaker  5:12  
+all right,
+
+Unknown Speaker  5:14  
+Joe, if you or Amanda, if you guys have something else to go over, we definitely can before
+
+Unknown Speaker  5:21  
+handing over to Ashley. I think, from my perspective, like I said, being so caught up with the
+
+Unknown Speaker  5:29  
+with the officer app, I don't really have anything else at this point. I think when we can jump on over to ash. Same here, same here. Okay, then, then I'll just say the quickest of updates. I do know that they've got the web server set up for the native app, and Steve is working forward on that nice
+
+Unknown Speaker  5:52  
+I do believe ginger SEC is still
+
+Unknown Speaker  5:55  
+messing with it, doing their security
+
+Unknown Speaker  5:59  
+audit or whatever they're doing, but it's up and running. So
+
+Unknown Speaker  6:04  
+awesome. That's good news. Do want to move on to getting an instance for file maker server, a Windows instance set up? So if we can get with Tom and see when that's going to happen?
+
+Unknown Speaker  6:20  
+Yeah, absolutely. I can get in touch with Tom and see when we can get you a timeframe on that, Brian, if anything, what I'll do is I'll rope you into an email chain with them, and we can go from there. Yeah, yeah. And again, I'm happy to meet with him or whatever, if he needs to meet with me again, as we as it's set up. And then I will be ready to of course, I need access, Jake and I will need access, and Steve and we'll get on there and get file maker server set up, get some copies of your system over there, and get Jeff involved to, you know, point DNS stuff at different places. And get you guys testy, because we want you to test some on a backup copy of the system, make sure you're good before we move your actual production over to there.
+
+Unknown Speaker  7:09  
+Okay, yeah, perfect. I'll get that. I'll get you guys roped in together right after this call. Alright, that sounds great, because if we can get this, if we can get you guys live before I leave at the end of next week for my vacation. That'd be great, if not,
+
+Unknown Speaker  7:26  
+as as we've done before. I would suggest waiting until I get back. If okay, I would definitely suggest not making the change while I'm on vacation
+
+Unknown Speaker  7:37  
+so we can do it before. That's great. If not we want to wait till I get back.
+
+Unknown Speaker  7:42  
+All right, that's all I got, I think, until Miss Ashley.
+
+Unknown Speaker  7:50  
+Okay, hey, so,
+
+Unknown Speaker  7:58  
+starting with agency, I know that. I'm not sure if how much you've gone over or Jake, how if you, if you heard anything about the last call,
+
+Unknown Speaker  8:10  
+not a ton. Okay, okay, so, basically, so I'm Glendale as a agency, and I've been Glendale for
+
+Unknown Speaker  8:20  
+kind of a while and I was trying to, I was having issues last week
+
+Unknown Speaker  8:28  
+where I tried edge, I tried Chrome, clearing my cookies, we started my computer. And every time I tried to, mainly what I was trying to do was assign myself to a job. And every time I tried to do that, it just 408,
+
+Unknown Speaker  8:43  
+out every time I had Joe try and at the time he was Maricopa GD, his worked,
+
+Unknown Speaker  8:51  
+but then I ended up changing him to Glendale, and his didn't, then his didn't work. So
+
+Unknown Speaker  8:59  
+I don't know if you've
+
+Unknown Speaker  9:02  
+I don't know if it has anything to do with being a different agency. I didn't just switch mine. So mine has been this for a while,
+
+Unknown Speaker  9:11  
+but
+
+Unknown Speaker  9:13  
+I should have refreshed. Can you switch mine to Glendale? Yeah.
+
+Unknown Speaker  9:20  
+It sounds to me like it might be Jake, the the amount of jobs that the agency has, yeah, very well could be
+
+Unknown Speaker  9:40  
+not saved,
+
+Unknown Speaker  9:42  
+yes,
+
+Unknown Speaker  9:44  
+yeah,
+
+Unknown Speaker  9:51  
+yeah, so just trying
+
+Unknown Speaker  9:57  
+to nice and slow today. Yeah.
+
+Unknown Speaker  10:00  
+I apologize. So hold on. I'm gonna do you mind if I share mine real quick? Yeah, go for it.
+
+Unknown Speaker  10:12  
+So I'm on Glendale,
+
+Unknown Speaker  10:15  
+and there are definitely a lot of jobs. Let's see.
+
+Unknown Speaker  10:25  
+Yeah, this is taking a very long time, but it works.
+
+Unknown Speaker  10:33  
+So walk me through how you would get, like a 408 error, yeah. Okay. So for example, if you click on unstaffed that way, you can just see my fake one that I have, and then try to staff it. So click on the red, pick me or whoever,
+
+Unknown Speaker  10:53  
+and then save. And then on my end, it just thinks thinks thinks thinks thinks thinks thinks, and then it correlates. And that's every time, and I was trying to do other things too, and it just
+
+Unknown Speaker  11:05  
+times out. So, yeah, definitely is timing out. Well, yeah, it's like, it's going to, I think, has everything to do with how many there are in here. Yeah, there it is.
+
+Unknown Speaker  11:16  
+Okay,
+
+Unknown Speaker  11:18  
+yeah, so, and that's been happening. What's weird, though, because, I mean, but it is staffed, but then hit Refresh job again, because mine weren't working,
+
+Unknown Speaker  11:30  
+yeah, but that's even if that, even if this fixes it, that's not acceptable. Oh, well, right, no, I know we need to fix that.
+
+Unknown Speaker  11:39  
+Yeah. There it is, unstaffed, yeah, okay, because it doesn't actually, it looks like it worked kind of, but then every time, it just keeps popping back,
+
+Unknown Speaker  11:48  
+and you do me a favor, because I have, yeah, you mean helping me with this, because I have been working on This over here. Okay, but can you there's another officer record that I want you to can you share your screen? Yeah.
+
+Unknown Speaker  12:11  
+Okay.
+
+Unknown Speaker  12:13  
+So look up, Chris. It's a the last name is Saran, S, A, R, a n, oh, I know.
+
+Unknown Speaker  12:25  
+And let's set her to
+
+Unknown Speaker  12:30  
+glendalia,
+
+Unknown Speaker  12:36  
+okay, and then let's leave that job alone so I can Okay test it, or if you could put more, make some more, that would be awesome. You don't have to do it right now, but that would be super great. Yeah.
+
+Unknown Speaker  12:57  
+As for
+
+Unknown Speaker  13:00  
+the reports
+
+Unknown Speaker  13:03  
+the over hours one That one looked fine. On staff looked good.
+
+Unknown Speaker  13:09  
+I
+
+Unknown Speaker  13:11  
+the only one that didn't reports one I just changed about 40 minutes ago. Oh, hopefully take the ID of the agency you're using into account better. Okay, that's what I was next thing I was going to say was, the only one that didn't work was this job support.
+
+Unknown Speaker  13:30  
+So I will retest that and let you know I am kind of curious, though, on
+
+Unknown Speaker  13:37  
+your
+
+Unknown Speaker  13:39  
+This one's still not functioning right?
+
+Unknown Speaker  13:42  
+Or is it supposed to do something?
+
+Unknown Speaker  13:46  
+It should do something
+
+Unknown Speaker  13:49  
+unless it's not doing anything, unless it's not sending it, oh, no, you know what? I think it just 408. On me. I think that's what my problem is. Now that I think about it,
+
+Unknown Speaker  14:02  
+it's think that was what my
+
+Unknown Speaker  14:12  
+issue was.
+
+Unknown Speaker  14:15  
+Yeah,
+
+Unknown Speaker  14:16  
+I'm not even seeing that call on BF helper, Jake. I Right.
+
+Unknown Speaker  14:28  
+Oh, got a support call. He said, okay,
+
+Unknown Speaker  14:32  
+yeah, yeah, we'll, we'll have to look at that. That's,
+
+Unknown Speaker  14:37  
+that's yes, that should be working. Okay, I can, should run a report based off the list of jobs you're looking at currently. So those 96 upcoming jobs that you're looking at that should be an export of those. Okay,
+
+Unknown Speaker  14:52  
+awesome.
+
+Unknown Speaker  14:55  
+It's been
+
+Unknown Speaker  14:59  
+i.
+
+Unknown Speaker  15:00  
+The only other thing on agency is just the refresh, not refresh,
+
+Unknown Speaker  15:04  
+release
+
+Unknown Speaker  15:07  
+buttons in certain areas. But it's been harder to test just because I keep borrowing timing out. But I didn't want to mess with it, because I wanted you to be able to, you know, see it, and I didn't want to just keep switching agencies, because I know that can affect things as well,
+
+Unknown Speaker  15:25  
+but that's it for our agency. Yeah, I don't know if it's all I made the
+
+Unknown Speaker  15:32  
+I made the flow chart of when to hide and when to show and put it in that
+
+Unknown Speaker  15:38  
+Jake may get around to it, or we may pass it to somebody else.
+
+Unknown Speaker  15:43  
+I actually meet tomorrow with Jeremy, who's been wrapping up a different project, and now he's going to help me maybe on some of these fixes, but specifically I'm having him work on creation of jobs on the agency app,
+
+Unknown Speaker  16:00  
+making those internal jobs? Which reminds me is, is that what we're going to call them for the as far as the user is concerned, internal jobs or we can't call them not billable. That doesn't make any sense to the user. I think internal unless Jake or not Jake, Joe, you can think of a better term, or Amanda. I think it's pretty straightforward. I think it's pretty simple. I think it's good as internal, okay,
+
+Unknown Speaker  16:28  
+okay, so, yeah, I'll have him working on that, probably starting tomorrow, and he can, you know, I might have him also look at some of these smaller issues and well, 401 or 408 is not a small issue, something that's got to be figured figured out.
+
+Unknown Speaker  16:48  
+But yeah, I'll have him work on this stuff for you.
+
+Unknown Speaker  16:51  
+Okay, thank you.
+
+Unknown Speaker  16:54  
+As for the app
+
+Unknown Speaker  16:57  
+the I pulled this
+
+Unknown Speaker  16:59  
+one up so you could maybe remember the Broadway and Solomon, yep. How did we get to a final conclusion on that one? Or was it still testing?
+
+Unknown Speaker  17:11  
+How it pulls up on some people's phone is when it's Google, it's seems to be fine. And then you guys had Apple can you? Can you try? Because I thought we got, I got that fixed. Okay, one of our,
+
+Unknown Speaker  17:26  
+one of our people, Christina, worked on that. Okay, I haven't we.
+
+Unknown Speaker  17:35  
+So it's, it's kind of two part. Number one, we, she dealt with a problem where it was it was adding SM, for some reason, the letters SM, if you watched really closely as it moved fast, it was adding that to the beginning of the address,
+
+Unknown Speaker  17:51  
+and that was making it just find some point on the road, the first road in the address.
+
+Unknown Speaker  17:58  
+The second part of this is it's just,
+
+Unknown Speaker  18:02  
+it just is you guys are going to have to use, like, you know, e, n, s, w, and
+
+Unknown Speaker  18:11  
+when that does exist on the address, yeah, it's well, it's hard to know, though, because, like, my phone, when I was testing it, mine was fine, like, it took me to Broadway and Solomon. I didn't need the S and E, so it was, it's hard for us to know, you know when we're gonna, yeah, those issues, and most people don't order it, I know when we get to the client side, still be able to, like, pin it on the map, and we'll know for sure. But it's hard to know how, if it's gonna pull up wrong,
+
+Unknown Speaker  18:41  
+you have a lot better chance of it pulling up correctly if you use, you know, East, you know, E and that kind of stuff, I can tell you that.
+
+Unknown Speaker  18:52  
+So, yeah, no, 100% it was pulling up. Sometimes wrong because I was pulling up the same address just over and over and over, just hitting the button again and again, and I was getting different responses. Sometimes it was working, sometimes it wasn't. But when I put when I changed it to E and S, because I saw on the map, that's what it was, then it worked 100% of the time.
+
+Unknown Speaker  19:15  
+So
+
+Unknown Speaker  19:17  
+I will give that my best sales pitch, but I, I'll try to do that. What about zip code that might be, I mean, zip code might help. It is, it is part of the string that's passed.
+
+Unknown Speaker  19:37  
+But the, yeah, the east and south and stuff definitely,
+
+Unknown Speaker  19:43  
+definitely gives you a lot better possibility, because it seems like it,
+
+Unknown Speaker  19:49  
+it seems like, if it doesn't understand, for some reason, it just kind of takes the first street
+
+Unknown Speaker  19:56  
+and somewhere on that street. So.
+
+Unknown Speaker  20:00  
+So it was always, because even when it was, you know, quote, unquote, wasn't working, it was always dropping me somewhere on Broadway,
+
+Unknown Speaker  20:07  
+yeah, so, but like I said it, I didn't have any problems once I gave it east and south,
+
+Unknown Speaker  20:17  
+okay, it works going much better.
+
+Unknown Speaker  20:23  
+Yeah, I mean, I bet, yeah. I just will. I'll see if I can get that going, and I'll have someone else retest it, because I my phone
+
+Unknown Speaker  20:35  
+works, so I'll have Joe maybe tested after they're off the call.
+
+Unknown Speaker  20:42  
+The
+
+Unknown Speaker  20:44  
+next thing, oh, okay, so I wanted to respond the whole pushing the debt, putting Deb into the production for the clocking in, clocking out, pending issues that kind of the error code.
+
+Unknown Speaker  21:01  
+So
+
+Unknown Speaker  21:03  
+is, do we know where we're at on that? Are we just waiting on us testing or,
+
+Unknown Speaker  21:10  
+um,
+
+Unknown Speaker  21:15  
+I have to, I
+
+Unknown Speaker  21:19  
+think that
+
+Unknown Speaker  21:21  
+fixed on the app in the dev version. It did. I think so too. I've been testing it, and I haven't had any issues, but I was just curious
+
+Unknown Speaker  21:33  
+in general. So we,
+
+Unknown Speaker  21:36  
+we, I don't want to say we can't, but we can't, very easily
+
+Unknown Speaker  21:42  
+push just a piece or just a feature, just a piece of code, from dev to prod. It's much easier and a much better practice to just push all of DEV to prod, which means, yeah, we would wait for you guys, not just for that feature, but do everything that you do on the dead version, give it your approval, and we will push it to prod that process only takes a couple minutes. Okay. With that being said, the only thing I've noticed so far that actually happens on both and I don't remember this being an issue
+
+Unknown Speaker  22:18  
+recently, so I just kind of wanted to show you, I don't know if you want to log into the app and watch it happen. It's a little hard to explain, but sorry, guys. Oh, it's okay. Hi. I didn't know you left. I had a support call that I had to take. Oh, gotcha. Okay, so I so right now, if you looked at your app, it would say, you know, 12 fake Street and comma, Peoria. Yeah, Arizona. And then right underneath that, it says Peoria again, so if I darn it, my dashboard collapse.
+
+Unknown Speaker  22:55  
+Sorry, I want to show you both both sides, because it does change on the dashboard, but it doesn't change fully
+
+Unknown Speaker  23:03  
+on the app, it'll say, like, if I change the city to Glendale, it'll say 12, fake Street, Palma, Glendale, and underneath it'll still say Peoria.
+
+Unknown Speaker  23:15  
+And the agency is not Peoria.
+
+Unknown Speaker  23:19  
+Yes,
+
+Unknown Speaker  23:21  
+you know what I mean. I'm looking at it 12, fake Street, Glendale, comma, Arizona. Under it, it says Peoria,
+
+Unknown Speaker  23:30  
+so
+
+Unknown Speaker  23:32  
+Jake, are we in the officer app or the agency app? Officer
+
+Unknown Speaker  23:38  
+on production or dev both? I'm looking at production, but I looked at both. Yeah, it's happening on both. So it looks like the it looks like you're taking the whole address, but then you're showing the city, yeah, probably, hold on. Let me get below it. It's on the jobs list, like the main screen, yes, yeah, home,
+
+Unknown Speaker  24:01  
+yeah. Because everything else. So like when I took the job, and then also when I got the emails, they those are fine. It's just right on that home screen. So,
+
+Unknown Speaker  24:11  
+yeah, it's looking at location city, Brian, yeah, we don't, we don't need that to show
+
+Unknown Speaker  24:20  
+at all
+
+Unknown Speaker  24:23  
+I would well, so what's happening there,
+
+Unknown Speaker  24:29  
+Ashley is before
+
+Unknown Speaker  24:33  
+a lot of your job locations had the entire address in the First field in street one field, and didn't have cities, so we were gleaning the city from the address and putting it in its own field, and that's what we've been showing so if you feel good that you know your job locations, have a city right there in city now, and.
+
+Unknown Speaker  25:00  
+And we've kind of, you know, gotten past the old data,
+
+Unknown Speaker  25:05  
+then we can not show that city anymore. It'll just show the address which should have the city included in the address
+
+Unknown Speaker  25:15  
+which it on production should now behind, okay, yeah, because I would like, do refresh all and then I actually ended up getting it to work when I went, like, into here and and, like, forcing it, refreshing it. And so I don't know, because that refreshes that city name.
+
+Unknown Speaker  25:34  
+Gotcha. I mean,
+
+Unknown Speaker  25:37  
+I don't know. I don't ever create jobs without putting the city in there. So I you would hope that no one else does either. We would hope,
+
+Unknown Speaker  25:47  
+in your old system, you didn't have a separate field for city. You just had one big area where you put in an address. So yeah, why we were pulling the city out and displaying it by itself? Because we needed for filtering and such. But now that you know we've gotten past that, and you know all the data we're working with now is set up like a proper address, we shouldn't need to see that anymore. Yeah, I don't. And even if someone ordered something, if it was from that long ago, we would probably, I don't think we would reuse it, so I feel like it probably, bc
+
+Unknown Speaker  26:24  
+we can remove that I already did
+
+Unknown Speaker  26:28  
+in
+
+Unknown Speaker  26:31  
+dev Perfect, all right? Because, honestly, that's the only thing that I've had issues with.
+
+Unknown Speaker  26:37  
+And I've been trying to test dev as much as possible just to get those pins you clocked in and out, and that error message to
+
+Unknown Speaker  26:46  
+because, you know, I get complaints about those, or not necessarily complaints, but it gets brought up a lot. So I, I was just wondering, that's the only thing I've seen that I've tested that
+
+Unknown Speaker  26:57  
+I feel like we might want to change before where they push dev into production.
+
+Unknown Speaker  27:03  
+So you guys, again, if you guys want to test out Dev and
+
+Unknown Speaker  27:08  
+give us the thumbs up.
+
+Unknown Speaker  27:11  
+It, like said, it only takes Jake a couple minutes to push dev to production the code. So we just, we just need a, we just need a thumbs up from you guys first on everything for dev, again, we're not pushing just one feature, right? So
+
+Unknown Speaker  27:28  
+can you think of anything else that I'm missing? I mean, I've clocked in and out, I've taken jobs, I've removed myself from jobs. I've, you know, I checked all the tabs. My mapping
+
+Unknown Speaker  27:41  
+is good, but yes, okay, I will the testing board, maybe, you know,
+
+Unknown Speaker  27:48  
+request mileage or pay report. Oh, that one's still, actually, I did not test it today
+
+Unknown Speaker  27:56  
+and I didn't yesterday. So okay, so that probably still needs to get fixed, but
+
+Unknown Speaker  28:03  
+I think that's on the FileMaker side. So
+
+Unknown Speaker  28:09  
+that fix, I mean, we can absolutely try to make that fix before we push but I don't think it's going to make a difference right now. As far as dev versus pride on the web app side, because the problem is on the FileMaker side.
+
+Unknown Speaker  28:25  
+Gotcha. Okay. I mean, I can keep testing. The only thing I haven't really done is testing random agencies, but everything else, setting wise, seems to be good that I've noticed.
+
+Unknown Speaker  28:39  
+Great.
+
+Unknown Speaker  28:41  
+That's
+
+Unknown Speaker  28:42  
+all I have for app.
+
+Unknown Speaker  28:48  
+Not
+
+Unknown Speaker  28:50  
+to scheduler
+
+Unknown Speaker  28:53  
+on Trello, can I re tag myself? Oh, yeah, okay, you can just tag yourself, and then that's the only way to do it. Okay, I just didn't want to, like, keep tagging myself. But sometimes I want to, like, bookmark it, or remember to go back to it. Yep. And I was just wondering if there's an easier way than just saying at Ashley again. But I can do so. This is a little longer way, but it's, it's more detailed. No, no, go, click on a card that you would like to, you know, bookmark or remember,
+
+Unknown Speaker  29:25  
+uh, okay,
+
+Unknown Speaker  29:27  
+just kind of find one,
+
+Unknown Speaker  29:31  
+and I'll just pick One that's fine.
+
+Unknown Speaker  29:35  
+And then, um,
+
+Unknown Speaker  29:41  
+wait a minute,
+
+Unknown Speaker  29:43  
+oh yeah. And then copy the URL at the top, oh
+
+Unknown Speaker  29:49  
+yeah, sorry. And just paste that into your little document, your never ending document, next to whatever that references. And then you can just copy and paste.
+
+Unknown Speaker  30:00  
+Click that link
+
+Unknown Speaker  30:02  
+back to this card, it'll browser and go to this card. Okay, that's actually not being good.
+
+Unknown Speaker  30:11  
+I might do that actually. But the way you can link it to your Yeah, that's yeah. Okay, cool.
+
+Unknown Speaker  30:21  
+We just talked about this. Oh, and there's this, okay, um,
+
+Unknown Speaker  30:29  
+so I don't, I don't know if you saw my email a few days ago. It was regarding a jobs that had happened,
+
+Unknown Speaker  30:37  
+and they were curious how the four hours got there. Do you remember that one at all? Yeah, yeah, the email, yeah.
+
+Unknown Speaker  30:46  
+What day was that the ninth?
+
+Unknown Speaker  30:49  
+I mean, I ended up finding out
+
+Unknown Speaker  30:52  
+fire.
+
+Unknown Speaker  30:56  
+Ended up finding out how it got there. But, I mean, it wasn't in the mod log that I saw at all.
+
+Unknown Speaker  31:04  
+But then as I started going through the mod log, I got even more confused, because,
+
+Unknown Speaker  31:11  
+like, for example, this is a Southwest barricades job, deer valley and Marriott drive.
+
+Unknown Speaker  31:18  
+But then this one
+
+Unknown Speaker  31:22  
+old values, good, new value, though, starts it's it's pulling a new value. It's Hayden and it's a Waddell job. Can't see right there.
+
+Unknown Speaker  31:36  
+It's a Waddell overnight job. That's like 100/92
+
+Unknown Speaker  31:39  
+and olive I don't know if you can see that,
+
+Unknown Speaker  31:45  
+but I saw the customer game. Okay, so yeah, because so I tried to first find out where these came from. I don't see it anywhere. I can see where he clocked in. But other than that, I couldn't tell that Becky had put in his four hours, which is essentially what a county wanted to know in the first place. So that's problem number one. Problem number two, though, is I also found another job where it pulled the same kind of thing, where it
+
+Unknown Speaker  32:16  
+it's almost like when she runs a payroll report,
+
+Unknown Speaker  32:21  
+is that
+
+Unknown Speaker  32:25  
+um,
+
+Unknown Speaker  32:28  
+it like switches. And I don't, I don't know if it's if it would cause a problem, because it does switch back. So once she makes any changes, it does switch back. But can you think of any reason why we do that. Watch, not at all.
+
+Unknown Speaker  32:47  
+Okay, so this is Miller and Durango,
+
+Unknown Speaker  32:50  
+and this one, stink safety is the customer name, and it's so it's in Tucson.
+
+Unknown Speaker  32:57  
+I mean, it just seems like every and it's always when that payroll report has been ran. So I feel like there's something,
+
+Unknown Speaker  33:06  
+something in there that's doing that,
+
+Unknown Speaker  33:11  
+that's weird. I don't know.
+
+Unknown Speaker  33:13  
+Not only do I not know what would change it, I'm more worried about what the hell changes it back? Oh, really don't know what it's it's weird, though, because all of a sudden she
+
+Unknown Speaker  33:25  
+she put in, she made, like, internal notes or something. And so in the old one, you could see where it was, quote, unquote, Hayden. And now all of a sudden, it's back to
+
+Unknown Speaker  33:38  
+its normal job.
+
+Unknown Speaker  33:41  
+It was this one, yeah. See now it's back to deer valley
+
+Unknown Speaker  33:46  
+in the new and the old is Hayden.
+
+Unknown Speaker  33:50  
+And all she did, I'm pretty sure she just put in, like, internal notes. She put in four hours, yeah, but I so I don't know. I don't know exactly what's going on or what wires are crossed, but it does end up going back, but it is confusing, no, for the person looking at it, that's not okay.
+
+Unknown Speaker  34:09  
+Okay, let's
+
+Unknown Speaker  34:12  
+look over mod log.
+
+Unknown Speaker  34:22  
+Let's see you over here. Wait a minute. I think, yes, please do
+
+Unknown Speaker  34:51  
+this.
+
+Unknown Speaker  35:06  
+Okay,
+
+Unknown Speaker  35:09  
+next one. I don't, I don't know if it's actually an issue or not, or maybe you can just steer me in the right direction really quick. So I was trying to see if, you know, because we had eliminated the the dashes and stuff from all the officers, so I wanted to see if it was done for the contacts. So what I was trying to do was like, search, you know, just like Southwest barricades as the customer, and have it bring it up. But, yeah,
+
+Unknown Speaker  35:46  
+oh, no way. Okay,
+
+Unknown Speaker  35:49  
+that's still not enough. Where are all the other southwest barricades, contacts? And I did like, I think I did APS or SRP, and there was only three of them. I was just curious, what am I
+
+Unknown Speaker  36:00  
+Well,
+
+Unknown Speaker  36:02  
+click on one of them or hit close. Yeah, either way.
+
+Unknown Speaker  36:07  
+All right, let's hit find the find button.
+
+Unknown Speaker  36:12  
+All right. Let's take the
+
+Unknown Speaker  36:15  
+pick the blank status at the top, yes, and now pick southwest barricades.
+
+Unknown Speaker  36:28  
+And do the search.
+
+Unknown Speaker  36:31  
+Oh, yeah, we got a lot more. Okay, and then
+
+Unknown Speaker  36:35  
+14 173 that's so a lot of them are not active. Is the problem? Or they don't have a status at all. Weird. I feel like I thought I did that.
+
+Unknown Speaker  36:49  
+Okay,
+
+Unknown Speaker  36:53  
+okay, maybe I didn't.
+
+Unknown Speaker  36:58  
+Oh, I also said, You
+
+Unknown Speaker  37:00  
+mess
+
+Unknown Speaker  37:07  
+gives me no amount of happiness to point out that you requested that the status be made active automatically when entering fine.
+
+Unknown Speaker  37:15  
+I but on every other aspect in here, like, that's what, that's what you want. Oh, I know, yeah, yeah, this is the only area that that's not so
+
+Unknown Speaker  37:26  
+let's I don't even know. I can't remember how I got to here. Somehow, there was a list I did get to that I could not get it to go alphabetized. But,
+
+Unknown Speaker  37:40  
+oh, I know. I think I know what it is. No, I
+
+Unknown Speaker  37:53  
+don't know
+
+Unknown Speaker  37:56  
+if you want to alphabetize that. Oh, well, I wanted to see. So what I wanted to do, essentially, what I wanted to do was just to be able to go through and, you know, see if, yeah, but I don't know, don't worry about, I was just gonna say, because you didn't want to alphabetize that list you were on, because you were looking at almost 12,000 records. It'll work. It'll take a little while. Yeah, I wanted, I was going to try to break it down by just like customer so I could see, because if I went into customer, you can see all of them down here, but you can't
+
+Unknown Speaker  38:30  
+easily, like, scroll through them.
+
+Unknown Speaker  38:36  
+Maybe let me look at something real quick. You
+
+Unknown Speaker  38:42  
+don't
+
+Unknown Speaker  38:46  
+want no active we don't need no rock control.
+
+Unknown Speaker  39:01  
+Yeah, so go back to detail. Oh, I will.
+
+Unknown Speaker  39:13  
+Detail, though, yeah, the the contact detail, okay,
+
+Unknown Speaker  39:21  
+yeah, my computer's just been
+
+Unknown Speaker  39:24  
+slow. I just clicked on SRP.
+
+Unknown Speaker  39:28  
+It's just been all day. This is what I was talking about, how I couldn't go like quickly through these to see how they were formatted. But you said go to contact, sure. All right, let's hit Find mode. So yep, let's take off the just active now in phone number one,
+
+Unknown Speaker  39:48  
+let's put equals and then the
+
+Unknown Speaker  39:52  
+shift nine so the starter parentheses,
+
+Unknown Speaker  39:58  
+yep, and hit Enter.
+
+Unknown Speaker  40:00  
+Or, yeah, click that. So that is 153
+
+Unknown Speaker  40:04  
+contacts it found with a phone number that has a parentheses in it.
+
+Unknown Speaker  40:09  
+Okay,
+
+Unknown Speaker  40:10  
+nice.
+
+Unknown Speaker  40:13  
+Well, thank you.
+
+Unknown Speaker  40:16  
+Eliminating that.
+
+Unknown Speaker  40:19  
+What else is there? Oh, that reports. It's not critical, but it is still just showing like, if I wanted to search by job count, by day and by month, and typed in southwest barricades when I when it actually runs the report, it still just says, like at the top customer name
+
+Unknown Speaker  40:38  
+on the dashboard that comes up, or are you talking about the printed PDF.
+
+Unknown Speaker  40:59  
+Gotcha, gosh,
+
+Unknown Speaker  41:07  
+this
+
+Unknown Speaker  41:10  
+second,
+
+Unknown Speaker  41:13  
+what customer name you put in southwest barricades? Yes,
+
+Unknown Speaker  41:27  
+hey,
+
+Unknown Speaker  41:30  
+she was working for me, but I was trying a different
+
+Unknown Speaker  41:33  
+company. Oh, you want to try a different company?
+
+Unknown Speaker  41:38  
+Well, that shouldn't be a
+
+Unknown Speaker  41:41  
+problem, you know, right? It's true.
+
+Unknown Speaker  41:49  
+Yeah, I think I usually try APS because it's so short to type. Well, mine still says customer names.
+
+Unknown Speaker  41:57  
+Okay, I'll look at it again. Okay.
+
+Unknown Speaker  42:01  
+Um, honestly, the other things that are on my list, or the the
+
+Unknown Speaker  42:07  
+mob log, I don't know if you were, I can't remember if you said you're gonna look into it or or not creating multiple ones when you're, yeah, it's not a super big problem, but it just makes it like, if you're actually trying to research mod logs, that you're like, like, yeah.
+
+Unknown Speaker  42:27  
+And then
+
+Unknown Speaker  42:29  
+I wasn't sure if, if we thought the other thing was, like, the bulk of signing and seeing that tell site job, but which I haven't seen in a few days. So that's nice. I don't know if, if you found what was causing that to pop up or not, or just coincidence that I just haven't seen it. I believe I did. I believe that was a navigation issue. Okay, I haven't seen it, but I've. I'll stay on the lookout, just in case. But, yeah, that's, I mean, that's really all I have. That's no ish
+
+Unknown Speaker  43:04  
+dokie. Dokie, all
+
+Unknown Speaker  43:11  
+right.
+
+Unknown Speaker  43:14  
+Do we have anything else there? Joe
+
+Unknown Speaker  43:20  
+from you know what? The only thing I guess I can add is I already shot an email to Tom, and I already wrote in you and Jake, so hopefully we hear from him pretty soon. But other than that, I think that's all we got, fellas,
+
+Unknown Speaker  43:33  
+alrighty, that sounds good,
+
+Unknown Speaker  43:39  
+Jake. Do you think you have any that you're going to have anything
+
+Unknown Speaker  43:45  
+that you would like to show off? Native applies before vacation? Yeah, actually, I was gonna ask a question right now, and okay, it's gonna be impossible for me not to show it off while I ask it.
+
+Unknown Speaker  44:00  
+So
+
+Unknown Speaker  44:02  
+so let's do that. Well,
+
+Unknown Speaker  44:06  
+I was going to say, I mean, if you're at a
+
+Unknown Speaker  44:08  
+at a I know you're not so far along, but if you're at a point that you'd like to show them something, an update before I go on vacation, I just want to make a meeting. Yeah, sure. I mean, they can see some stuff now and then we can show more whenever that is
+
+Unknown Speaker  44:24  
+okay. And Brian, how long will you be gone? I am gone for
+
+Unknown Speaker  44:30  
+week, a
+
+Unknown Speaker  44:32  
+little bit more because of weekends. So I leave on the my last day of working is the 24th
+
+Unknown Speaker  44:39  
+and then I come back to work on the fourth of August. Okay, that's not too bad. Good. Good for you.
+
+Unknown Speaker  44:51  
+Board anymore. Really nice resort.
+
+Unknown Speaker  44:55  
+How exciting we all need that. Oh, look at this. Yeah.
+
+Unknown Speaker  45:00  
+Yes, so let me open it on
+
+Unknown Speaker  45:03  
+Android as well. Oh, you're already showing off, Jake. What's going on? Jeez. Well,
+
+Unknown Speaker  45:11  
+I mean, it's, there's, there's still a lot more to do. I
+
+Unknown Speaker  45:20  
+one.
+
+Unknown Speaker  45:24  
+Yeah, we can show you really pretty stuff pretty fast, but if you wanted to actually work
+
+Unknown Speaker  45:30  
+the mock ups,
+
+Unknown Speaker  45:33  
+no, no kidding, all right, so you're looking at it on on two different device. Well, here, let me make you have parity. Here, there we go. So on the left is an Android, on the right is an iPhone.
+
+Unknown Speaker  45:46  
+That's wonderful. So when we get into the app, you can see
+
+Unknown Speaker  45:52  
+we're using Apple Maps and Google Maps, respectively, by the platform
+
+Unknown Speaker  45:58  
+and job cards are cleaned up. They're a lot easier to read now. I think ran ran these through usability testing versus what you have right now, and these are something like 60% more usable. So that's a good thing, but
+
+Unknown Speaker  46:15  
+that's not what I want to ask you about. Basically, Ashley, you had mentioned
+
+Unknown Speaker  46:21  
+that that sometimes people are booking jobs accidentally,
+
+Unknown Speaker  46:26  
+and so you're asking for some kind of a confirmation. So I went ahead and built in this cool little when you click, yeah, that's
+
+Unknown Speaker  46:34  
+nice, right? So so that that should help a lot, and that works, obviously in both places,
+
+Unknown Speaker  46:41  
+the dashboard is going to be so much cooler it does. It's not exactly what you have right now, but like this stuff is because we're in an app environment where it's just much easier to get down to the metal of the device and actually do things like animate stuff and whatever. So we're gonna be able to do mileage. We're gonna be able to do split things into quarters or months or weeks, or whatever they want. I'm just showing you how data can be split up here. And then, Ashley, I think you had said that it'd be really nice if you knew, like, how much this equaled. Well, now when you click it, it just says it right there. Oh, nice. So September is that, and January is that, and, you know? And then the cool thing too, is that, like, if I look at June, and you can tell it's June because it's bold here, and then also it shows right there. But if I look at June and then swipe back to different years, it stays on June, so I can look at all my Junes, right? Or, like, if I just want to check out July, I can do that and kind of just like compare things really quickly.
+
+Unknown Speaker  47:46  
+So that's going well in the Account section. Oh, it works on Android too.
+
+Unknown Speaker  47:55  
+I'm just, you can tell I have bias,
+
+Unknown Speaker  47:59  
+but so the account section is pretty straightforward. It's a little remapped, so it's a little more in line with what you'd expect on an app. You've got your personal info section, you know, where they can enter their personal info. They've got work info. They've got an availability grid right here that just lets them turn on days or off days or whatever.
+
+Unknown Speaker  48:21  
+This here will show them what version of the app they're on that I just have a sneaking suspicion that that will be very helpful
+
+Unknown Speaker  48:28  
+in your guys environment.
+
+Unknown Speaker  48:31  
+So my question for you right now is, I'm working on this, this home screen,
+
+Unknown Speaker  48:38  
+and I was working on some filters. And so the way that filters are going to work. Now, if you, if you can see this, this button, sort of in the bottom right hand corner, they should be able to just tap that, and then a filter section comes up. And this is an obvious one. So like all security or traffic, I'm trying to see if you guys have any other thoughts on what other filters you might want to use for the officers? So what they might be interested in seeing, I was toying around with like, the idea of like, I just want to see stuff between an like, an hour range of like. I just want to see like, four to eight hour jobs. I want to be able to see jobs with a certain pay, you know this, I just want to see stuff that's over $200 or like, you know, I was just trying to come up with different things for them to filter. And I wanted to see if you had any thoughts on any of that. Well, date would be my first one. Well, dates for sure. Yes, that will, that will happen, but that, I think, will probably handle a little differently. It'll probably be up here, yeah. But secondary filters, stuff like in this date range, just show me this. I just want to see security jobs, or I just want to see traffic jobs. Or, you know, can you think of any filters that they as for the as for the time part? You know, maybe they'd want to see, you know, how many hours is the.
+
+Unknown Speaker  50:00  
+Job. But I would think the actual, you know, ones that start between seven and nine at night, or, you know, basically I want to, I like, start time stuff, yeah, start time for sure, start time and pay. Pay is going to be a big one as well. There's guys that want to filter that big, yeah. And you can see here too. I This is now factoring in the base pay plus the bonus pay times the hours. So it actually it's a more useful thing than, like, Oh, it's $60 per hour. And then they have to go look at how many hours it is and do the math themselves. This just straight up tells them.
+
+Unknown Speaker  50:36  
+So that's, I think, a better again, ran it through a usability test, and this is a lot more clear and concise. So okay, so we're talking definitely category. We are talking start time. Do you care about end time or not? Yeah, I would say that that definitely would play a role in some officers. I think if they know they're having a tight schedule that day. Or they have something planned and they want to see what time it ends. I think that would definitely be something that would, uh, would those be two different controls to you? Like, I want to see stuff that starts between seven and nine and ends between two and three. Or would it be like the whole job is between this start time and this end time? Man, off the top of my head, I would think it
+
+Unknown Speaker  51:24  
+would be the start and end time all together, basically, with whatever fits that parameters. I think,
+
+Unknown Speaker  51:29  
+speaking from an officer's perspective, I just care about the start and end. So would that mean that you want two controls or one control, just one? That's all I would want, but that's, but that's starts before, or basically it's starts after, ends before, kind of thing, yeah. Okay,
+
+Unknown Speaker  51:50  
+cool.
+
+Unknown Speaker  51:52  
+Do you think so you can see here we're replacing some of those icons. So, Jake, what do you think about because that's a that's a great filter. But do you think you'll be okay handling over over night over 12 o'clock? So, yeah, I wanted to start after nine o'clock, but in, you know, before four o'clock, it's, you know what? Yeah, yeah, I know I've done
+
+Unknown Speaker  52:22  
+it before. Okay, just making sure it's a pain. It sucks. Em does it? But, yeah, it sucks. There'll be a whole utility function folder that'll figure all that out, but I can write that once, and then once I get it right, I never have to touch it again. And then it also has to convert it into military time it already is. Yeah, yeah, it already is. So the military time is the standard for the date and time library that we're using in here. So it really just takes a timestamp and formats it.
+
+Unknown Speaker  52:56  
+Okay? So let me see there was one other thing. Oh, do they care like I only want to see agency vehicle jobs, or like I only want to see plain clothes jobs? Or do they care about those things? Or are those just like, kind of nice indicators for them? Yeah? Indicators. Yeah, absolutely.
+
+Unknown Speaker  53:15  
+Other things that I had taken, some notes I had taken during a previous call that we had had, was like sorting from highest to lowest pain location, which might it sounds kind of difficult, like West side, east side kind of feel, yeah, I know we would probably have to indicate that on somewhere, on file maker, I would imagine. But that was something that was brought up, and then picking just certain days of the weeks, like filtering. I know you're talking searching, but west side might be, yeah, that's that might take a little more planning and business logic in the ground. But maybe he could do a, you know, like you're not like you normally see on these types of apps. He could definitely do, I think, a sort of from the closest address to my current position to the furthest address from my current position. Yeah, yeah, that's possible.
+
+Unknown Speaker  54:14  
+I really okay, hold on. I'm going to write all this down because I promise I'm going to forget it, least you're transparent about it. Well,
+
+Unknown Speaker  54:24  
+if you, if you have, if you can't tell there's a lot going on over here. So just a little bit, Jake, just a little bit. Okay, so I'm gonna say filters. We're gonna do.
+
+Unknown Speaker  54:36  
+Yeah, I can tell you, Joe, as he writes this for the past like two weeks. Anybody who has, anybody the company, who has called Jake or tried to tell him to go away is Jake. Jake says I'm working on les go away, literally. That is could not be truer. And the cool things that I've had full backing from Dave on it. So I just have got to keep my head down.
+
+Unknown Speaker  55:00  
+And freaking work, which has been awesome. So, yeah, you're zoned in. Man, I get it. I'm zoned in. So we're talking category, we're gonna say, starts after,
+
+Unknown Speaker  55:14  
+ends before,
+
+Unknown Speaker  55:17  
+and then we're talking about pay range, right? So, like between, I will use a between thing. They're never going to be like I, you know, $20
+
+Unknown Speaker  55:29  
+but we'll use a pay range.
+
+Unknown Speaker  55:32  
+We're going to say there was one other one that was really good.
+
+Unknown Speaker  55:37  
+Can you guys refresh me? I said sorted from highest to lowest paying days of certain days of the week,
+
+Unknown Speaker  55:46  
+sort by pay rate
+
+Unknown Speaker  55:51  
+days of week. Yeah, that's a multiple you would. You'd probably want to be able to, like, show me Mondays and Thursdays. Yeah. Yeah, exactly. Okay,
+
+Unknown Speaker  56:02  
+let's end location, location by location, which stored by location? Yeah, let's do this closest to furthest away from you,
+
+Unknown Speaker  56:11  
+location, closest to furthest and
+
+Unknown Speaker  56:17  
+then pay.
+
+Unknown Speaker  56:20  
+Pay rate is to lowest. Okay, anything else that you can imagine them? I don't think they're gonna search really.
+
+Unknown Speaker  56:31  
+I can't imagine that they use the search bar right now, but maybe they do. I don't know, you guys tell me. I mean,
+
+Unknown Speaker  56:37  
+since we're not showing the customer or anything, I mean, I don't know what they I guess they could search for an address, but, yeah. But like, Yeah, that's so easy to find anyway that, like, yeah, I just, I think where I noticed on here? Well, we are, we're not showing the customer's name on here, but we are current app. We are this Volkswagen, Chattanooga assembly plan, oh, okay, Erlanger health system. I actually told chat GBT to go get me like 10 real businesses from around my area and give me all
+
+Unknown Speaker  57:07  
+their real stuff. It gave me a whole bunch of random Chattanooga businesses. Okay, so is that something that they would want to search? Do they Yeah, like, tell us, Jake, definitely, yeah, they're big on that. So searching, it would be a search, yeah, yes. Search for
+
+Unknown Speaker  57:31  
+customers, yeah. I'm trying to think if there's anything else. Oh,
+
+Unknown Speaker  57:36  
+well, this isn't really a question. But the cool thing now, also about doing this native is that we are fully responsive to light or dark mode, so however they use their phone, that is how they it'll feel. Basically what I'm saying is it'll feel at home on their device. So like same with Android. There you go. So that's how it's going. It's going like crazy, but it's working really well. And we are, yes, this looks fantastic. Thanks. I'm excited too. We are working on the server as well. So this is all just front end stuff, but it's being done really well. So it looks, yeah, it looks great, Jake, it looks awesome. You know, I have a quick question for you, since that we're going so deep and especially with the dark and light mode. Do you think I know this is something we'll probably add on down the road, but I'm curious about widgets. I'm real big on widgets on my phone. Yeah, that's a that's a great question. I love that you asked that. The answer is, I have no earthly idea, but I will figure it out, and I so here's the thing. I have built a widget. I have built widgets, but I've always built them just for iOS and using the native iOS language, which is swift.
+
+Unknown Speaker  58:54  
+This is not necessarily developed in that because we're deploying to both platforms from one code base. So we're using React Native. There are, there are certainly packages and libraries that offer widget extensions for that code base, but I have never used one, and so I'm, I'm what I'd like to do. I love that idea, and I want to do it. What I'd like to do is get a little closer to finished here, and then maybe talk about what a widget would be, and do some deeper homework on like, how easy is it to bridge it from here? And I'm sure it is, and I know that we can do a watch app, and there's other things that we can do, but I just haven't done it in React Native yet, so it's all just kind of learning different languages and stuff. So it's fine.
+
+Unknown Speaker  59:38  
+And Joe, at least, in my personal opinion.
+
+Unknown Speaker  59:42  
+That sounds like a great, you know, V 1.5 v2
+
+Unknown Speaker  59:48  
+type of that gives us something to grow into. You know, we want to. You don't want to give them everything right off the bat, because then you look lazy and you're not doing anything after you after you give them this app. Well, also.
+
+Unknown Speaker  1:00:00  
+So it's hard to be able to tell what's going to be important enough to your users to pin it to their home screen before they actually use it exactly. So I love, I definitely would that would be so cool to do. So I would be super into that.
+
+Unknown Speaker  1:00:16  
+Let's just keep it on the roadmap, shall we? Yeah, absolutely. I have a question. So you know how it's like, it just lumps it. So 240 it does the math and everything for you. Is there a way, though, to see what that base and bonus pay? Oh, of course, necessarily separated. But you know, just in case it doesn't go the full time, yeah, yeah. In case it doesn't go the full like, so like, if it doesn't go from, you know, 830, to 1600 and it's, you know, just a six hour shift. That way they can, you know, calculate how much it's actually gonna break down to, uh, yeah, is that an indicator on there somewhere? Like, like, it's just, there's no start time or end time. It's just a six hour shift. Like, do we have that in the data? No, she just means, basically they don't finish the shift. For some reason they don't work the entire
+
+Unknown Speaker  1:01:09  
+shift. Yeah, they know it's like 85 an hour or whatever. Yeah, yeah, yeah, we can do that. I could just include it in this little it'll just say like 60 an hour, and then 240 is the total or something. I'll figure out a way to do that. Let me put that on here. Yeah, they might, because I know, I know, when we were doing the officer app, Bonnie was big on them being able to see the bonus by itself. So because we kind of tried to do this on the officer app, Jake and and it was kicked back. It just doesn't make it like most of the time. Yeah, I understand you're making people do math, and that's not usually a great experience,
+
+Unknown Speaker  1:01:52  
+even if we have to do, you know, even if we have to put the darn equation there, you know, 60 plus five times. You know, the amount of hours equals 240
+
+Unknown Speaker  1:02:05  
+you know, I don't know. I don't really, we would present that, but I just remember we tried this, you know, give them the entire amount as one number on the original officer app, and it was a kickback. Yeah, I would like, I'm so I'm totally obviously fine with putting it on there. I would push back a little bit on that actually being more useful than this, although Ashley's use case makes total sense, I definitely think the data should be on there, but I don't think one should be in lieu of the other. If that makes sense, from a from a making people do math live real time is never, never, best practice, ever. Now, if you have it on there and show the total, that makes more sense, but, but replacing this with just the hourly pay, I think is going to be, I just don't think it's as usable, to be honest, and I'll do whatever you tell me to do. But my opinion is it's not a deal. So even if we do show all three numbers, so we show the base hourly pay, hourly pay, and the total, if they work exactly the amount of hours that is, you know, being requested,
+
+Unknown Speaker  1:03:13  
+then we have to decide what the filter will be based off of
+
+Unknown Speaker  1:03:20  
+the sort, you know, you want it sorted by, by pay and you want, you know,
+
+Unknown Speaker  1:03:26  
+then we have, then we're going to have to decide how that filter and how that sort, is that going to be based off of the base, pay the bonus, pay the base, and the bonus pay together, or the total based off of ours, and, you know, the whole equation. Yeah, start I found that list of questions. Yeah. I'd say, let's pick the easiest thing to roll out at the beginning and then move on from there,
+
+Unknown Speaker  1:03:50  
+probably,
+
+Unknown Speaker  1:03:52  
+but, but all those, those are all good things.
+
+Unknown Speaker  1:03:56  
+Okay, I'm trying to think if there is anything else. And I don't think, oh, yeah, dashboard.
+
+Unknown Speaker  1:04:04  
+Obviously, you know what the dashboard normally looks like. It's their what they've earned and then what their mileage has been.
+
+Unknown Speaker  1:04:12  
+Is there any other data you can think of for them that would be helpful to see here? Yeah,
+
+Unknown Speaker  1:04:22  
+yes, have it written down somewhere? There was something, I feel like Laurie was talking to me about it, something that they could pull off of. Here was it, Laurie was are you? Was it jobs worst or still with us? Lori, there was something that Lee and Lori were talking about
+
+Unknown Speaker  1:04:43  
+and, oh, she just came off mute,
+
+Unknown Speaker  1:04:48  
+yeah.
+
+Unknown Speaker  1:04:49  
+I just didn't know if they could print their
+
+Unknown Speaker  1:04:54  
+get their earnings or whatever. I get that a lot like, what have I made so far this year?
+
+Unknown Speaker  1:05:00  
+I know they can get it on the app, but I know I don't know if they would want
+
+Unknown Speaker  1:05:06  
+to print it. To
+
+Unknown Speaker  1:05:09  
+print it, well, they can request, like an Excel spreadsheet, yeah, we can definitely get it to them. Okay, just
+
+Unknown Speaker  1:05:18  
+yeah, if you want to print it, yeah, that might be, you guys would have to come up with a format for what that report, you know, what that printout, I guess, or maybe they can, I guess, like I said, Export to Excel or something, I don't know. And is that the is that how much money they've made, or the jobs that they've worked? Is that what you're talking about? Which one, how much money? How much money? Okay, so that's kind of there, and we can, and we can really, at some point we're really going to be able to show them how much they've got paid. So this is kind of the, you know, hourly wage agreed upon times the hours they work, type of stuff. Yeah, that's right. But once we get invoicing and payments and stuff really built into all of this, then they'll be able to see, you know, how much money has actually been sent to their bank account, kind of thing in these reports.
+
+Unknown Speaker  1:06:13  
+Yeah,
+
+Unknown Speaker  1:06:15  
+I'm
+
+Unknown Speaker  1:06:17  
+assuming you guys, 1099, these, these officers, so they're like, you're not taking out taxes and stuff. You know, what they earn is what they get. They're all 1099, yeah, okay, that makes it a lot easier. But, yeah,
+
+Unknown Speaker  1:06:30  
+once we get all the payment stuff integrated in here, then they'll actually be able to see their actual pay, not just kind of what we paid them.
+
+Unknown Speaker  1:06:40  
+Yeah, this is just a lot of math. It's like all the jobs with their total hours times the pay times the and so I think definitely going in the future, there's probably an easier way for us to do that. Oh, looking at just the actual payments that have been issued. Yeah, yeah.
+
+Unknown Speaker  1:07:01  
+Okay, that's good to know.
+
+Unknown Speaker  1:07:06  
+Yeah, we could even put steps they've walked while on jobs, guys, if you want to do that,
+
+Unknown Speaker  1:07:16  
+no, it'll work with their phone. Yeah, yeah, oh, I know. It's just more accurate with the watch, I know, but yes, it does work on the phone. Yeah,
+
+Unknown Speaker  1:07:24  
+I'm, I'm joking, kind of, if you wanted to put it in, I'd be super down. Yeah. I mean, we could do, we could do a decent amount. I mean, we could have some type of, you know, circular light up graph that shows how many jobs they've done, you know, within a certain mile radius, you know, of their home base, or their house or, yeah, there's so much agency, whatever we want to be the center of, that
+
+Unknown Speaker  1:07:50  
+we can absolutely break up that kind of yearly stuff to say, you know, only stuff that's been out of my agency area, you know, stuff like that. That's definitely future stuff we could look at for this dashboard. But I think pretty much just the mileage and the whole stuff you have set up in that yearly, which really is monthly and yearly, you know, you can look at, yeah, it is, it is,
+
+Unknown Speaker  1:08:16  
+I think for launch, that's probably the best to go with. Those are the two we know are needed, and then, and then, like you said, you know, a lot of a lot of development is based off of feedback. We got to get this into there to see what they really want to know and what, what information is missing that they need. Yes, sir, I, I agree with me. We can guess, yeah, we can guess all day long. But in the end, we need that feedback.
+
+Unknown Speaker  1:08:43  
+Yeah, awesome. Well, I just wanted to thank you. That's super helpful. I'm going to send that to myself,
+
+Unknown Speaker  1:08:49  
+and I just wanted to give you guys a quick little little peek into what's going on, so that you know where my time is going, because it is definitely going there. Yeah, it looks awesome. It really does. Jake looks Yes, thanks, and I will send you, you know, a phishing email there Joe seeing when we have some availability, and maybe Wednesday or Thursday next week. If that works, we, you know, Jake can prepare and give a demo. Maybe we can find if you know, Bonnie or something has time,
+
+Unknown Speaker  1:09:23  
+if she wants to see, oh, yeah, absolutely, she'll definitely want to give you, actually give you guys an update for sure where he's at and what's going on before I leave. Okay. Alrighty, this has been informative. Thank you. Yeah. Thank you.
+
+Unknown Speaker  1:09:41  
+Alright, if nobody has anything else, we can wrap this up. Okay, awesome. Thank you guys. Thanks fellas, thank you guys. Bye.
+
+Transcribed by https://otter.ai

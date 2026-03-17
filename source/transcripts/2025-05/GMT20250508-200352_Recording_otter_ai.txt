@@ -1,0 +1,610 @@
+Unknown Speaker  0:00  
+Welcome back, Bunny.
+
+Speaker 1  0:07  
+Alright, I sent out the agenda a bit ago, a little later than usual, just because we're taking care of some other stuff. But I think Jake and Brian, if you guys have anything to present to us, first off, before we we dabble in with Ashley's list. I mean, I think that's a good start.
+
+Speaker 2  0:23  
+Sure, I don't think I really have anything that shows too well, necessarily. I've gone through a couple of small items on the ever growing Ashley list, and I spent time yesterday, going through the document in our conversations from Monday on, the next phase, and put some time into the into that, trying to dig through that Jake and I did yesterday. I don't know if I have like said much to show that's visual. That looks cool, Jake, have I believe you've been putting most your time into the GPS stuff. So, yeah, that's the show.
+
+Speaker 3  1:10  
+No, I don't what I can tell you is that I've tested the what I had, the changes I have rolled out, meaning the
+
+Unknown Speaker  1:21  
+officer seeing other officers, stuff,
+
+Speaker 3  1:26  
+the access, getting turned on and off, and the,
+
+Unknown Speaker  1:32  
+what was the other thing?
+
+Speaker 3  1:38  
+Oh, I was looking into the unbook Job button. That's what I was doing. And then the GPS is kind of a circus right now, to be honest, because this app is browser based, there is some rules that Apple and Google have in place. And this is newer. This is as of like, the last update to their operating systems, where you're not technically allowed to constantly ping for user location in a progressive web app, because it is technically the web because of battery issues. So that is why you are seeing when you clock in and clock out, you're seeing locations and not in between. If, if you are putting the app away, not quitting it, but like going to something else, you're not going to see pings right now, if you leave it open, you will see them, at least in my testing. So I'm looking into some ways we may be able to wrap the app inside of something that will help us do that. There are some other recommendations I can make, but I'm not quite ready to do that yet. So that's where I am.
+
+Speaker 1  2:56  
+Okay, the GPS that we've been testing at it's been a little wonky, but at least you're able to find something, some kind of issue that's occurring, you know, something at least. Yeah, the issue is 100%
+
+Unknown Speaker  3:09  
+if you like, go to your home screen
+
+Speaker 3  3:13  
+and do anything else, aside from leave the app open. It's not going to get your location. I have tested it. I did it probably 20 times, and that is, I got it at that so I don't know if you guys have tested and found different, but I could not find different. That's how that's how it was for me. So it's a bit of a challenge, for sure, gonna try and figure out what to do about it, but it is, if we'd like to, we can call Apple and Google and complain. But other than that, I will, I'll keep looking into that.
+
+Speaker 1  3:52  
+Okay, great, and just from the update side for that access when we not allow an officer in, that definitely is working, because Ashley and I were testing that this week, and we were trying to kind of brute our way through it, and it just wasn't, wasn't doing it. So that's a good thing.
+
+Speaker 3  4:06  
+Awesome. I'm glad that was an important one. Yeah, it
+
+Speaker 1  4:10  
+definitely was. So at least we got that up and running. That's looking good. I think from here, I think ash, you can jump on in and we can get started on your list of things that we got to knock out.
+
+Speaker 4  4:20  
+Okay, I mean, most of my stuff I went over on Tuesday was pretty much the whole call. So don't have a ton of new stuff, but I do have a few things. There's an officer seems last names to Nora and he sorry, yeah. So Ashley, sorry.
+
+Speaker 5  4:43  
+I have a quick question about the GPS thing, so I was just discussing it with the guys. So just questions. So how does ODM do it, like, are they paying Joe? Do you know, are they paying them every five minutes? Or, how does it ping them?
+
+Speaker 1  4:56  
+From my view, I'm not sure of how they're actually. Be doing it.
+
+Speaker 3  5:00  
+It may not be a web app, it may be a progressive web app, and if it's not, then native apps, yes, can do that, but native apps costs seven to 10 times as much as web apps do. So it's very, very expensive
+
+Speaker 5  5:15  
+to build, and we don't know if it's a web app or not. If it
+
+Speaker 3  5:19  
+is a web app there, there's probably either they've wrapped it in something like capacitor js, which is what I'm looking into, or I can't imagine in any other way they're doing it, because the browser is literally not allowed to do it. You know what?
+
+Speaker 1  5:33  
+I'm thinking. It's a native app, because you can actually download it from the App Store, and that's what it is.
+
+Speaker 2  5:38  
+And the and remember, he did mention at the beginning, this is this is a fairly recent change by both Apple and Google.
+
+Speaker 3  5:47  
+So it's Yeah, but even even if it wasn't, and it did change that, if their app was browser based, then it would have stopped working. Yeah. So my guess is it's native, which, you know, we can have the conversation about doing but it is incredibly expensive to write a native application. Oh, we just
+
+Unknown Speaker  6:07  
+did that. That's what we were doing with eight fold.
+
+Unknown Speaker  6:09  
+Yeah, that's exactly what we were doing. It
+
+Speaker 3  6:11  
+is part of what you were doing, yeah. I mean, there was a web back end for, like, the least it looked like to me, for, like, the desktop access, where you guys could go on and see all your stuff, and then my assumption is that they were going to write some kind of a native app. Now, when they do that, there's a few different ways to approach it. If you want it to be iOS and Android, you either have to write two different apps and maintain two different code bases, or write it in something like React Native or links or something similar that compiles to both. And it is, it is a whole new ball game when you're building something in that in that space so and then you have to have people who manage your connection to Apple and Google, because they will randomly, when you submit an update, not allow you to submit the update, and you can't update your app until you fix whatever vague thing they tell you to fix. And there's, it's which
+
+Speaker 5  7:06  
+is a problem, which was a problem that we had. But how does ODM do it? Right?
+
+Speaker 2  7:11  
+Well, they probably have a department. A lot of companies have a department that that's what they do. You know a department of people that that's their job, 40 hours a week is to keep up with what Apple and Google need. That's right, to keep up on their on their stores.
+
+Speaker 3  7:27  
+And it's not like you have to have somebody all day making sure this the app doesn't get taken off. But if you make updates and stuff, you have to resubmit it, like it's a brand new app to Apple, right, right? We that's what the problem was. Yeah, it's a pain. There are apps that do that, and almost every single time you push an update, you get rejected. It's just how it is. And I mean, I guess they have good reasons, but it's very annoying, for sure.
+
+Speaker 5  7:52  
+Oh, so going the web app is still a better option than doing the Yeah.
+
+Speaker 3  7:57  
+I mean, from a cost perspective, far, far, far better option, also from a code reusability perspective, far better option, also from a supportability perspective, much better option, because we are able to support it really quickly. That's why, like, when you guys have problems, a lot of times it'll be like, Oh, this is fixed. It wouldn't be like that in a native application, right? You can't just go fix it. You have to make a fix offline and then push an update and hopefully they approve it kind of a thing. It's a pain. It sucks.
+
+Speaker 5  8:30  
+Yeah, yeah. We know we ran into that, but it didn't seem like it was all that expensive. Like you're saying it's way, way, way expensive. It wasn't that expensive. I mean, we've got way more hours into this than we than we did with that one. So we forgot it, but we never got
+
+Unknown Speaker  8:47  
+it wasn't finished, but,
+
+Speaker 5  8:51  
+but it was it, I don't know, I don't even want to go back there, but it, no, it wasn't finished. I mean, we about the time, they were having so many problems with Apple and
+
+Unknown Speaker  9:04  
+and one thing after another.
+
+Speaker 3  9:06  
+Beth, yeah, yep, that is the that is the issue, and it is more it just, I mean, the nature of the beast is that it is more expensive.
+
+Speaker 5  9:15  
+So going back to our GPS, so is, are we going to be able to figure this out?
+
+Speaker 3  9:20  
+Or Yeah. I mean, one way or another, we will figure it out in it may not be, you know, the most seamless thing ever, but it will get figured out somehow. Okay, figure outable, yeah, yeah. You know, I'm worried there are, there are going to be different recommendations. I'll be able to make one of them. Like I said, is putting the app inside of a wrapper, like a capacitor, js, and that then turns it into, as far as the phone is concerned, more of an application than it is a web app. The other recommendation is like, you know, once every five or 10 minutes, we can send a push notification to the device, and they touch that notification. Location, and then that grabs their that grabs their location, which is, you know, that's, that's another way to do it. There's a few different ways to do it. It's just you can't natively in a web app. Go, hey, it'd be, I mean, the same concept applies, like if you opened a website in Safari or Chrome or whatever, and you had it in a tab on your phone somewhere, and if that website was constantly pinging your location and you didn't know which tab it was, well it's going to drain your battery. It's also a major concern. So that's why they do it. I get it, but it does kind of it sucks.
+
+Unknown Speaker  10:35  
+So, all right, sorry. Didn't mean to interrupt there. That's okay. No problem. Okay.
+
+Speaker 4  10:45  
+So de Nora, so he he has an Android, and for the most part, I've been able to get around any issue we have, getting people you know, into the app, having it saved a home screen, except for him. And then I'm wondering if you have any ideas, okay, so he gets to the part where he gets the Install screen, right where you're gonna hit the three the ellipses on the top hand corner. So he hits that, and this is the list he gets. The Share button. I hadn't pressed that, but that is more like if you wanted to text someone, email someone, it's not like the list where it does say Add to Home Screen. Have you ever seen this?
+
+Unknown Speaker  11:30  
+Is it the I know he's opening it in Google Chrome,
+
+Speaker 3  11:33  
+but we know for a fact it's chrome. Yes, he told
+
+Speaker 4  11:37  
+me it was Chrome. I mean, he wasn't here. It was just over the phone. I had him check to make sure that there was no updates needed in his Google Chrome, just to see if maybe it was an old version or something. But I honestly, everything I'm trying isn't working, so I was wondering if you've seen this.
+
+Speaker 3  11:58  
+Yeah, I've seen it, but the only time I've ever seen it is if somebody's opening it in another application that's like a chrome wrapper, like a Samsung browser, or, you know, some other kind of browser that they might call Chrome, like the user might call Chrome, but it's not actually Chrome.
+
+Unknown Speaker  12:16  
+That's the only time I've seen it. Brian, how about you?
+
+Speaker 2  12:19  
+I agree. I know I have Apple products, but what we've seen testing with you guys, and one of our co workers is a Android user, and we, we messed around with her phone, and yeah, that's that's what we saw was if she used the quote, unquote Samsung browser, which is Chrome,
+
+Speaker 3  12:40  
+yeah, and that's how they think about it, too. Like the users they, you know, they get their phone, and that is the browser that's installed by the company that created the phone. And so to them, they're like, Yeah, this is Chrome. This is my browser. But it's not, it's not actually Chrome. It's whatever that vendor that, you know, manufacturer installed. So that is the only time I've ever seen that happen.
+
+Speaker 4  13:05  
+Okay, so to get around this, what I have him do, download the actual Chrome. Yeah. How do I
+
+Speaker 3  13:13  
+Yeah, yeah, go to his App Store, Google Play, yeah, and download Chrome and do it in there. Now, if he goes to download and it's like you already have Chrome, well, that's a different issue. I It could be that he's on an old operating system where the share sheet is different, but I don't it doesn't look like it to me. It looks like it's relatively modern.
+
+Unknown Speaker  13:36  
+So yeah, that's how you would you would try that out.
+
+Unknown Speaker  13:40  
+Yes, I will continue trying.
+
+Unknown Speaker  13:45  
+Okay, the next thing,
+
+Speaker 4  13:48  
+this one's more for Brian, probably this is on the dashboard, and it's random, and I can tell you why. I can't figure out why it would do this sometimes and not others. It's regarding the confirmed check marks. I've seen this happen like while I've been working, but it happened to Christine today. Let me show you. You can see that she has it clicked confirmed on the daily job assignment, but not it's not showing up on the dashboard. She had to, I believe, unconfirm it, and then, you know, unclick it, and then re click confirmed. I've had this happen in the past, too, but I could never recreate it. So I don't know if, by seeing, you know, it's this, you
+
+Speaker 2  14:43  
+can sounds like if it's checked confirmed, it may not immediately show that checkbox on the dashboard behind it, because it's got to refresh that screen.
+
+Unknown Speaker  14:58  
+Usually it's pretty immediate, though.
+
+Speaker 4  15:04  
+Usually, like, when I click confirmed, because we, you know, go through and unconfirm and confirm things. A lot. I have seen it happen, but I can't create it, you know, because I don't know why it chooses to sometimes not work. But I wanted to throw it out there in case you knew,
+
+Speaker 2  15:25  
+example, that it doesn't work immediately, or it doesn't work ever, like if you go back to that job on the dashboard later, you know, an hour later, is it, or even a minute later, is it still gone? Or if you've closed the dashboard and reopened it, is it still gone for that job? I want to make sure. So if it's a refresh, some problem or some other type of problem, yeah, I get to,
+
+Speaker 4  15:53  
+I will try to have them document it better. We didn't, I don't believe she waited. I think it was just, you know, sorry, I'm clicking and clicking everything until it worked.
+
+Speaker 2  16:03  
+Well, yeah, yeah. If you're sitting on the phone or something with a client, you know, wait, I understand. But yeah, I can, I can look and see if I can help the refresh. But this, this dashboard screen, doesn't really change what it shows very much until, you you know, apply a new filter or close it and reopen it, or, you know, something that makes the screen refresh Okay.
+
+Unknown Speaker  16:38  
+Last night when I was working
+
+Speaker 4  16:42  
+on I only had two screens. I had my UI and my dashboard. Yep, I wasn't an agency that was in job location detail, and I don't know what exactly was happening, but I could not minimize my UI. The only thing I it would let me do is close it out, which is what I initially had to do because I wasn't able to, like, click back and forth. I did the,
+
+Unknown Speaker  17:06  
+you know, the tab to see all my screens are open.
+
+Speaker 4  17:10  
+It when I tab to that the dashboard, it still wouldn't let me it was like it was blocking.
+
+Speaker 3  17:16  
+It sounds like a modal window. Brian, to me, like she get got there in a mobile window, somehow card
+
+Speaker 2  17:23  
+a card window, or she would be able to see the difference, usually, like we were discussing before. Usually this happens when a custom dialog box is open and it's just hidden somewhere. You know, it ends up with a screen in front of it so you can't see it. That's why I was trying to show I don't do you offhand. Jake, know the keyboard shortcut to like, show all open windows. I know on the Mac it's, I just put my fingers on the trackpad. It's like, four fingers up. I don't control up arrow, does it.
+
+Speaker 3  18:01  
+I don't know about Windows. I'm the same way. I know I know how to do it on Mac, but I don't know windows. Let me see, is it, are you trying for all windows, or just file maker based
+
+Speaker 2  18:12  
+all windows? Is because I want to, I want to be able to see if there's a custom dialog box hidden behind, yeah, like the dashboard screen or something, and you don't, you can't see it.
+
+Speaker 3  18:24  
+What I'm seeing right now is you have to open Task View, and you do that by pressing Windows and tab.
+
+Unknown Speaker  18:32  
+That's what I was doing,
+
+Speaker 2  18:33  
+yeah, oh, it's, yeah, oh, there we go. That one looks a little better
+
+Unknown Speaker  18:37  
+than how'd you do that was, that,
+
+Speaker 4  18:39  
+was that, that's the windows tab, yeah. And then Alt Tab is the other one, which kind of shows me the same thing. I'm just able to, like, scroll through, yeah, but I still wasn't able to see any of the dialog screens. I wasn't sure
+
+Unknown Speaker  18:52  
+I have a so my so do the do the windows tab again.
+
+Speaker 3  18:56  
+Okay, see how there's two different FileMaker windows, like, one after the other. Yeah, were they? Was it one or 222?
+
+Unknown Speaker  19:06  
+The dashboard was separate from the UI. But
+
+Speaker 3  19:08  
+then when you clicked the UI, it, or, sorry, the dashboard, it just opened up
+
+Speaker 4  19:14  
+the if I wasn't able to click the dashboard, it, it the UI was, like, stuck on top of it, so I wasn't able to ever click onto the dashboards, and dashboard would come up, like, be on top, if that makes sense. It does.
+
+Speaker 2  19:27  
+Maybe, if you just, maybe, if she had just hit enter, like, maybe it's in a pause script. I can't imagine. I thought of that too.
+
+Speaker 4  19:35  
+The only reason why I didn't think that, honestly, was because my blue dispatch thing was here. It didn't look like it was in a script, yeah, because I was able to click here, and I just honestly had to exit the entire system, which, you know, it ended up working. But just thought it was
+
+Unknown Speaker  19:52  
+interesting. I tried to mess around. I've
+
+Speaker 2  19:57  
+I did actually, right before this. Meeting. I've got an application called parallels that allows me to run Windows on my Mac and and I'm getting it prepared to to do some testing, extra testing and such on there. So I'm going to test some of these things that you guys are seeing that I'm not, yeah, and we'll see if it's a Mac Windows thing, and if it is, you know, I can look into making that smoother for you.
+
+Speaker 4  20:29  
+Thank you. So the Maricopa, you know how the settings disappeared for some odd reason? Am I? Should I put them back on? I mean, I'm still seeing things. It's almost like they are set, but I can't see the check marks. I wasn't sure if you had a chance to look into that at all. If it's still, you know, pinging at my GPS when I clock in and clock out, it's still letting me see things on the app.
+
+Unknown Speaker  20:57  
+So it feels like this on the dev version.
+
+Speaker 4  21:01  
+Yes, yes. So, I mean, it feels like the settings are still clicked, but obviously they look like they're not. But I was just curious if you
+
+Speaker 2  21:09  
+I can check and see right now if they actually are in the background.
+
+Speaker 4  21:14  
+I mean, it feels like they are just because of what I'm able to still see and do, but I didn't want to change anything until you were able to look.
+
+Unknown Speaker  21:24  
+Let's see here.
+
+Speaker 2  21:29  
+I don't know why that would happen, especially just for one agency, but we could check.
+
+Speaker 4  21:34  
+And it's weird because it was last updated by better forms on 422, but I've been testing. I've been on Maricopa for a while.
+
+Speaker 2  21:44  
+Yeah, but it's, it's not going to show that the agency record was modified until, until you either make a change, like you start clicking those boxes that you're looking at, or you start changing those settings on the app for the agency. It's not going to do anything if you're, you know, booking jobs and favoring things or, you know, testing that kind of stuff, that doesn't edit the agency record, that agent that, oh, yeah, it's the jobs.
+
+Speaker 4  22:10  
+I just figured that, you know, when this occurred, you would think that that's when the modification record, not the mod log. But, you know, this would have been updated too. It wouldn't have, because I made the change.
+
+Speaker 2  22:23  
+The, oh, sorry, what, what? What was the question there?
+
+Speaker 4  22:28  
+I was just thinking like if, if anyone did make changes on here for in this area, this bottom would have updated.
+
+Speaker 2  22:38  
+Should have Yes, yeah. Um,
+
+Unknown Speaker  22:44  
+no, they are all turned off.
+
+Speaker 4  22:46  
+They are so how am I able to see things? That's that just is so strange. Well, that
+
+Speaker 2  22:51  
+might mean there's a, there's a bug in
+
+Speaker 3  22:55  
+the Yeah, that might mean we need to, that's
+
+Speaker 2  22:59  
+what we've been testing. Yeah, that stuff works. So let me I can look and see maybe there's some scenario, if you have none of them check it somehow circumvents everything I would. But if there is, I will code for that.
+
+Speaker 4  23:16  
+Okay, no worries. I'll leave it alone for now, I'm still trying to test the where the jobs go at 2359
+
+Unknown Speaker  23:28  
+I don't we were, I think we were going to bring
+
+Unknown Speaker  23:30  
+it up to Jake, yes, with
+
+Unknown Speaker  23:33  
+Yeah, quite sure how to do so, Jake, midnight, live.
+
+Speaker 2  23:39  
+So what's happening is they have a job that starts at, you know, they can't say it starts at 12, so they have it at 2359 but basically it starts at midnight. Yeah, and they've booked the job, so it's sitting on their today list. But then, you know, if they don't clock in before 12 o'clock. If they clock in, it goes away. It goes away. It's no longer on the today list, and they don't it's not active because they haven't clocked in.
+
+Unknown Speaker  24:11  
+Yeah, yeah, this is yeah.
+
+Speaker 3  24:17  
+All right. So, so they'll strip it all back to what the computer thinks. The computer's like. Well, it's that job is not today. So I'm not going to give it to you. This is a file maker scripting thing, Brian, if I believe that there's a script, a utility script, on the My in the my jobs area that is finding the jobs for that. And I believe the filter that it gets passed is a today. It's called today, and I'm 99% positive that it is literally just going in and today's date. And so if what you do is expand that out. Out to anything today minus one for that, but have a restriction on that to that is not complete, right? So anything today minus one that is not complete, plus and then dot, dot, dot through today. You know what I mean that's that's how you you would show that the web app is just showing what FileMaker returns, and filemaker is returning anything today. So it says 2359 it ain't show up. But that's how he'd fix that. That should be pretty straightforward. I would think.
+
+Unknown Speaker  25:42  
+Do maybe okay. I'm noting where
+
+Unknown Speaker  25:51  
+we want that change. I
+
+Unknown Speaker  26:04  
+I had to build an app that
+
+Speaker 3  26:08  
+let people do live time tracking, like in this system, we're really just setting timestamps, like I clocked in at this time. In this other system, there was literally a timer that was running, and getting that to work over midnight was the biggest pain ever. So I am, I feel you on these crossing the midnight line. That's so strange. Makes sense? Yeah, the computer's like, oh, that doesn't belong here, because it's not today. So
+
+Unknown Speaker  26:42  
+I let's see. Oh, are you ready one second? Oh, okay,
+
+Speaker 4  26:48  
+well, I can do Jake's first. I was curious on jobs, and then completed in the agency app. I should say first. Is there a way that we can have it to where it defaults to most recent first and then, just because I'm constantly and I imagine they've kind of that, if they want to go back to August, they definitely can. But for me, I was just, you know, more concerned with what happened this week, this month.
+
+Speaker 3  27:15  
+So you want it descending? Yes, please. Sure. Yeah. No problem.
+
+Speaker 4  27:35  
+So um, Brian, are you? You good? Yeah, I'm fine. I'm ready. Okay, I was curious what your morning looked like tomorrow to possibly jump on and help with marissa's I know she called me Wednesday morning and like she still, when she logged in, she had to still do the password, even though we had just done that, you know, on Tuesday. So I don't know what's going on
+
+Speaker 2  28:07  
+with hers. I'm good tomorrow.
+
+Unknown Speaker  28:12  
+Yeah, I don't have anything.
+
+Speaker 2  28:16  
+Let's see my morning. I've got, I've got something at 12 my time, so 9am your time for probably 30 minutes or so other than, okay,
+
+Speaker 4  28:28  
+okay, um, I will touch base with you in the morning and let you know what time she gets in. I'm not sure exactly what time she'll be in. All I know is she said she would be in perfect. I
+
+Speaker 2  28:47  
+office, Rich. Rich just a reminder that when we open the app and scroll through jobs and get to the button of the list or bottom of the list, sorry, and start to scroll back up, the app goes black and automatically returns to the top, yeah, assuming we're talking the officer app, correct,
+
+Unknown Speaker  29:15  
+Jake, I'm trying it right now. Okay, do
+
+Unknown Speaker  29:23  
+um, it is not doing that for me. Um, here,
+
+Speaker 3  29:39  
+so if I go all the way down or the officer app, oh, Officer app,
+
+Unknown Speaker  29:46  
+that's a good question.
+
+Speaker 2  29:50  
+Doesn't do that for me, but I only see three jobs this this week, so I mean, it's not much to scroll through.
+
+Unknown Speaker  29:57  
+Let me see if I have any more, because next week gives me
+
+Speaker 2  29:59  
+a lot more. To scroll through, and I'll scroll back up see that
+
+Unknown Speaker  30:05  
+I'm on my phone and I'm not seeing that.
+
+Speaker 6  30:10  
+Mine shows mine doesn't show three now, it shows five. And then if I go to next week, it shows obviously, a lot more. But as soon as I scroll to the very bottom, and I start to scroll back up. It automatically resets it to the very top.
+
+Speaker 2  30:29  
+Oh. It went black for me for a second, but it didn't go to the top. Let's see I'm at the bottom.
+
+Speaker 3  30:36  
+There is a pull to refresh. So I wonder if that's doing it,
+
+Unknown Speaker  30:43  
+yeah, maybe if you're strong, Oh,
+
+Speaker 3  30:46  
+see, okay, so it just did that role is really big, yeah, yeah, if I do a really big scroll it, it's gonna do that refresh, because you can pull to refresh the jobs. See what I'm doing, pulling down. So that's that for sure, I see, but I'm at the bottom here, and when I start just gently scrolling up, see, I scrolled too much there. I forced to refresh. But let me see, I'll go to next week.
+
+Speaker 6  31:15  
+So is that just part of when they hit the very bottom and they start to scroll back up? It's just an automatic review.
+
+Speaker 3  31:20  
+No, there's a, there's a listener on the screen that depending on how you scroll, okay, so, like, yeah, it's kind of depends on how long you hold your Yeah, how long you hold your finger, because you guys wanted it to when you pull down to refresh, and that's what's going on. So, so it is registering that you're pulling down, and then it goes back up to the top. So if you want, we could take out the pull down, but that, that is what's happening. I've been able to recreate it like three or four times
+
+Speaker 2  31:57  
+now, yeah, I can recreate it also it's, it's like, say how far of a swipe it's actual distance on your phone that you use your face, yeah. If it's short little scrolling pumps, then it's fine. But when you start doing longer ones, yeah,
+
+Speaker 3  32:12  
+I grab it from the refresh, yeah, when I grab it from the top and go down like, like this. Hold on, ready. See it's gonna do it, yeah?
+
+Speaker 6  32:25  
+And mine does it. If I just, like, scroll all the way the bottom and just barely start to scroll back up, it just goes black, refreshes, like that, goes to top, yeah? So I don't know if it's just an Android issue
+
+Unknown Speaker  32:36  
+or it might be, but it's really what
+
+Speaker 3  32:40  
+it is is we wrote in some code to make the web try to behave like, you know, an iPhone app. And that's, that's what it is. So if you want, I mean, like I said, if it's super distracting, we can disable the pull to refresh and just include a, you know, refresh button up here somewhere that you can just tap.
+
+Speaker 6  33:01  
+I would just, I, you know what? And personally, I mean, I just know there were a couple other guys are like, yeah, it's kind of annoying, annoying. But, I mean, I would just let if Ashley or Tyler or Becky or whomever, I mean, if they're not getting a lot of comments on it, then leave, it alone. I leave it okay.
+
+Speaker 3  33:22  
+Well, you guys let me know if, if, if it's decided that it's too annoying. This is the first we've heard about it, so I'm glad you brought this totally new brought it up. So if it's too annoying, it's really easy to take out that code, yeah.
+
+Speaker 2  33:38  
+Also, I can see because, like me, I have to, what I consider fairly drastically drag, you know, my finger across like three fourths of my screen. But I have a huge iPhone. Yeah, I have the biggest screen they make. If you've got a smaller screen, I can see how, you know, a long swipe would be a lot easier to do because you've got a lot less phone to swipe on. Yeah, yeah. It might be just
+
+Unknown Speaker  34:01  
+one of those things. Let me see,
+
+Speaker 2  34:06  
+I find where I have it, because I can actually Jake, I can actually I get the same thing on Facebook. I just opened up my Facebook native app, yeah, do a long scroll, then it refreshes the list. I'm looking at.
+
+Unknown Speaker  34:25  
+You see little load,
+
+Speaker 3  34:26  
+yeah, I mean, it is the list. It's for sure. Oh, this is the agency portal.
+
+Speaker 2  34:32  
+Do you got big manly men with little tiny phones? Yeah, they're gonna, they're gonna, those big phones are gonna swipe,
+
+Speaker 6  34:39  
+okay, I'll just talk at a TV screen, then we're good. There you go, yeah. See here's
+
+Speaker 3  34:46  
+Yeah. So it is listening
+
+Unknown Speaker  34:52  
+for the scroll
+
+Speaker 3  34:57  
+somewhere in here. I don't know. I can if you. Guys want me to disable it? I will just let me know,
+
+Unknown Speaker  35:03  
+got it. Thanks guys, sure.
+
+Unknown Speaker  35:10  
+Ashley, you want to re share your screen or
+
+Speaker 4  35:14  
+I was going through my list. I mean, the other things that are still on my list are mainly about the dev officer app and all that stuff I went over with Jake, not sure. I didn't see any of those in Trello. I wasn't sure if any of those were able to get fixed.
+
+Speaker 3  35:35  
+Yeah, that's what I was saying earlier. The stuff we talked about Friday, the a lot of it is fixed. There's a couple new things, like the past jobs filter is getting worked on and the unbooked job is getting worked on. But and then, obviously we talked about the GPS, but turning access for officers on and off is fixed, or is implemented. The officers not seeing other other jobs is fixed. The notes on the officer portal is almost done. And then Brian, I had, like, marked a whole bunch of stuff in red. I don't know if you've gotten to take a look at that yet or not, but
+
+Speaker 2  36:14  
+I look at the list, but there's not much that I've gotten around to. I think Jake, could you either send me a list of those items that you just mentioned so I can make the cards, or do you really want to? You're more than welcome to make the cards yourself.
+
+Speaker 3  36:32  
+I don't care if you want me to make the cards, I will. It's just you guys have, like, a format you like to make them in. So if you want me to, I will, or if not, I just sent them to you on Slack.
+
+Speaker 2  36:43  
+Sweet, yeah, I can, I can generate those cards and get them on your test list there.
+
+Speaker 4  36:48  
+Ashley, okay, thank you. Um, so with, like, the, okay, I can wait. I'll wait till Tuesday and just see, because, like, the, you know, the order of the jobs going in, you know, from most recent being sorted by the date versus the when it was created. I wanted to update you on that so, you know, you had asked me if it was just on the home screen or if it was in, oh, yeah, my upcoming area. And as far as I can tell, it's just on the home screen, my jobs in my upcoming were in, you know, by
+
+Speaker 3  37:29  
+date is and it's this, I forgot which way we wanted this to go. So, sending, yeah, okay, so on the actual jobs list. You want them in the descending order?
+
+Unknown Speaker  37:46  
+I thought it was ascending the jobs list. Yeah,
+
+Speaker 4  37:49  
+it's like eight, 910, yeah, yeah, that's how. All right, No, you're good. And I can't tell right now, because I don't think anything has a bonus on it, but the it adding the bonus onto the base and still showing the bonus.
+
+Speaker 3  38:04  
+Yeah, so that's in my note, my list, and Brian, good, there's Brian shorthand is like, the pay whatever.
+
+Speaker 2  38:16  
+Oh, I remember she showed me, yeah, it's the pay base, showing the combination of the two, and then the bonus pay is there and it's separating them properly. Yeah, yep, awesome.
+
+Speaker 4  38:28  
+I did a lot of the GPS testing, but you have been testing that also, so you're probably seeing the same thing I did.
+
+Unknown Speaker  38:38  
+I think the only other thing on here,
+
+Speaker 3  38:41  
+oh, hey, real quick, while we're while we're on this, Brian, while you're going in to
+
+Unknown Speaker  38:50  
+the FileMaker stuff,
+
+Speaker 3  38:54  
+the query where you get the filter jobs for agency, then the new data API query that You've got, I think you can include a sort by in that query. And if you just want to do the date worked ascending, that would pre sort everything we
+
+Speaker 2  39:14  
+we might need to test and discuss that, because it is, it does offer it, but it just, it's just like you use a script step for sort. It's really,
+
+Unknown Speaker  39:25  
+really, oh man, okay, well, then I better do it.
+
+Speaker 2  39:29  
+I've tried it. It's not, it's, it's not the the zippiest.
+
+Speaker 3  39:33  
+That is okay. I can, I can do that. What?
+
+Unknown Speaker  39:40  
+This, okay, that that's all i That's all I have.
+
+Unknown Speaker  39:47  
+Okay, um,
+
+Speaker 2  39:50  
+Amanda, could were you able to or could you get me the the canvas drawings that you showed? US Monday, if you can't get a link. I mean, I think Jake said you can download PDFs from that from Canvas,
+
+Unknown Speaker  40:09  
+and you could send me those PDFs.
+
+Unknown Speaker  40:12  
+Yeah, I think Becca has them on PDFs.
+
+Speaker 1  40:15  
+Yeah, she can just email it to directly as an attachment.
+
+Speaker 2  40:18  
+Yeah, that's fine, okay. Well, look over while I while I hack through this.
+
+Speaker 1  40:28  
+Yeah, absolutely, yeah. We'll have, we'll get in touch with Becca to have her forward him over to you guys, to both you and Jake, cool. So we'll get that covered.
+
+Unknown Speaker  40:37  
+Thanks. That'd be great.
+
+Speaker 1  40:39  
+Okay, anything else I think tomorrow, Brian, you're going to be in touch. To be in touch with Ashley so we can get Marissa up and running, correct. Okay, make a note there. And other than that, I think that's, that's all we got for the for the agenda this time around, until Tuesday.
+
+Unknown Speaker  40:55  
+Alrighty, sounds great.
+
+Unknown Speaker  40:58  
+I had a quick question the
+
+Speaker 3  41:02  
+the time stamp, if we sort Ashley by timestamp, which has the date and the time ascending, is that, that's okay, right? Like, so it'll, I think that's what we talked about, which is, like, you know, go by date and then by time,
+
+Unknown Speaker  41:16  
+yeah, yes, that's great. Which timestamp,
+
+Unknown Speaker  41:19  
+timestamp start,
+
+Unknown Speaker  41:22  
+there's a time stamp start. Yeah,
+
+Unknown Speaker  41:25  
+okay, yeah, that'll probably take it
+
+Unknown Speaker  41:32  
+should work.
+
+Speaker 2  41:35  
+I'm thinking time zones, Jake, I just want to make sure that that'll still
+
+Speaker 3  41:39  
+as long as the time stamps are in the right time zone. I think it would be okay.
+
+Speaker 2  41:45  
+Well, I don't, yeah, I don't, I don't think they, they are currently. I don't know where the time stamps coming from. It's, yeah, we can discuss the time stamping. I don't, I don't know where that's coming from. And I haven't put in the time zone stuff. I've got it working, but I haven't, you know, integrated it into things, okay? But we can, we can look at that. It's should, it should still be okay. I mean, even if it's, you know, eight, eight comes before 11, no matter what time zone that's in.
+
+Unknown Speaker  42:30  
+Okay? Anybody else have anything,
+
+Unknown Speaker  42:35  
+I don't think so. Anybody else,
+
+Speaker 1  42:40  
+okay, okay, looks like we're, we're going to be set for Tuesday. Then, fellas,
+
+Speaker 2  42:46  
+all right. Well, we will talk Tuesday, and we've, hopefully I can get through some more of the list. Okay, great.
+
+Speaker 5  43:01  
+Sounds good. Have a good rest of your week. You do? I'm going to try. It seems like it's
+
+Unknown Speaker  43:07  
+Monday to me. So yeah, that
+
+Unknown Speaker  43:10  
+happened to me a couple times today. I don't
+
+Unknown Speaker  43:11  
+even know what month it is, so you know.
+
+Unknown Speaker  43:16  
+All right, everybody, have a great week. Guys. All right. Thank you guys. All right. Bye.
+
+Transcribed by https://otter.ai

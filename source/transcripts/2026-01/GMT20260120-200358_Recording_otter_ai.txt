@@ -1,0 +1,913 @@
+Unknown Speaker  0:00  
+Yeah, welcome aboard Darren. Sorry, I started recording for us, for for Amanda and whoever else would like to hear. Okay, yeah, great, yeah, welcome aboard Darren. Like I said, I know we got a little bit of an introduction yesterday from Tom, but yeah, this is our weekly sprint meeting that we have, and we discuss everything blue dispatch and AWS. So you'll, you'll definitely get an earful here.
+
+Unknown Speaker  0:22  
+Yeah, I seem like there's a lot going on, and I've seen a lot of things that kind of
+
+Unknown Speaker  0:30  
+probably I wanted to, you know, understand a little bit more about and bring up as well.
+
+Unknown Speaker  0:36  
+Sure, sure. So I guess we'll go in our normal
+
+Unknown Speaker  0:43  
+me update, and then
+
+Unknown Speaker  0:46  
+Darren can get what he needs in. And then, of course, Ashley's forever growing list to wrap us up.
+
+Unknown Speaker  0:55  
+So updates, I guess all I have is, you know, yeah, we went live as planned Friday.
+
+Unknown Speaker  1:01  
+I did get
+
+Unknown Speaker  1:05  
+one kind of panic email. I believe her name was Christina or Christine this weekend. You know, Jessica. Down. Was it Jessica? Yeah,
+
+Unknown Speaker  1:17  
+yeah. It's, you know, blue dispatches down. I went and checked. It wasn't down. It's working fine for me. I emailed her that, and she emailed back, it's working. So I'm not quite sure what that was. I didn't see anything that suggested it was down for any amount of time me either. I checked too. And then we've, you know, we've gotten a couple
+
+Unknown Speaker  1:40  
+emails, kind of here and there from Joe yesterday, and then sent a one from Ashley today. You know, Officer not able to clock it, or log in or clock in, kind of thing that we can look at, kind of one at a time.
+
+Unknown Speaker  1:57  
+And I think that's mostly Ashley's list that we're happy to look at
+
+Unknown Speaker  2:01  
+when that comes up,
+
+Unknown Speaker  2:05  
+kind of
+
+Unknown Speaker  2:07  
+a higher level Joe, I sent you kind of what I could remember of the wish list I've heard for the native app. Oh, yes, yes. And Ashley and I were looking at that. Yeah, perfect, yeah. So if you like to go through that, and we can kind of discuss what we'd like to move forward on and kind of get some priorities on that that'd be great
+
+Unknown Speaker  2:31  
+leave that is really all the updates I have of what we have been doing since we just spoke Friday. It hasn't been a week like it usually is.
+
+Unknown Speaker  2:41  
+So that is, that's where we're at.
+
+Unknown Speaker  2:47  
+I can pass it over to the next section. Then, Darren, you said you had some questions or thoughts, or Yeah, and so, and, you know, this kind of just, it's the project program manager, cloud expert in me. So just kind of, you know,
+
+Unknown Speaker  3:05  
+speaking on what I see here. So just obviously, just trying to understand. And you know, it's my second day, but Tom was pinging me, I think he said he's trying to join, but so, yeah, I'm on right now. Hey, Tom,
+
+Unknown Speaker  3:18  
+go ahead. Tom.
+
+Unknown Speaker  3:20  
+No no. Sorry. Go ahead. I was hoping to be on earlier, but I did download the app on my phone.
+
+Unknown Speaker  3:26  
+So just trying to understand
+
+Unknown Speaker  3:30  
+from a
+
+Unknown Speaker  3:31  
+wearing my vulnerability hat here, so
+
+Unknown Speaker  3:36  
+I see that there's a lot of devices that are
+
+Unknown Speaker  3:42  
+unhealthy and a lot of vulnerabilities and stuff like that. I guess I'm just trying to understand, you know, and again, forgive me coming in, you know, the second day here, just trying to understand, like, what's the the long term plan for trying to address the
+
+Unknown Speaker  3:58  
+situation at hand with these vulnerabilities?
+
+Unknown Speaker  4:02  
+I vulnerabilities I we've had so far, the plan has been the ginger set team is
+
+Unknown Speaker  4:12  
+we, you know, we have the servers that both the Linux and the
+
+Unknown Speaker  4:19  
+and the file maker, Windows server that you know has been given access. And I believe gender SEC is going through, you know, making the configuration changes that you guys want on those we're ready to test them out. And once you know they're okay, make those the production servers for the system, and then probably make copies of those, you know, instance copies, and have that so that we can still have a, you know, prod and Dev.
+
+Unknown Speaker  4:52  
+So there's nothing currently in prod right now,
+
+Unknown Speaker  4:56  
+as far as ginger sex configuration.
+
+Unknown Speaker  5:00  
+Instance changes, no
+
+Unknown Speaker  5:02  
+now we, of course, put in all types of security and such as we,
+
+Unknown Speaker  5:08  
+as we deployed the instances, mostly using AWS is security and and using, you know, having only needed ports open and such like that to get much deeper in that conversation, actually, our, our AWS server person is not on this meeting, I would need, might be able to get him on though to go much deeper.
+
+Unknown Speaker  5:33  
+But yeah, that's, that's kind of at my level. That's the plan is, well, real quick on that.
+
+Unknown Speaker  5:42  
+So originally, part of the plan was to
+
+Unknown Speaker  5:46  
+have us
+
+Unknown Speaker  5:49  
+remove or address the vulnerabilities in the
+
+Unknown Speaker  5:52  
+Windows servers,
+
+Unknown Speaker  5:54  
+or Windows Server that was in the dev environment, and then once that's done to forklift the production server, or production server and put it in the dev environment, basically flip flopping the product, production and Dev,
+
+Unknown Speaker  6:11  
+that didn't happen. So the for the Windows anyways,
+
+Unknown Speaker  6:17  
+that's a completely vulnerable server. It hasn't been updated, hasn't had hardening done on it or anything, and we haven't even really delved into the AWS
+
+Unknown Speaker  6:29  
+side of in the Linux side,
+
+Unknown Speaker  6:34  
+because, I mean, there's ports and encryption in motion and all that stuff. That's one level of it, but there's also hardening of those servers, you know. And you know, we're trying to follow CIS Harding standards and the OWASP Top 20, so we
+
+Unknown Speaker  6:55  
+need to know when we're going to be able to start hammering that stuff out. Because, you know, I think I've been on, I don't know how many of these meetings I've been on,
+
+Unknown Speaker  7:03  
+but it's always an issue, and it's always kind of getting kicked down the road.
+
+Unknown Speaker  7:09  
+Yep, and if you know, if that, I believe it's named file maker Pro two, that one's ready, then you know, we we just need a couple more rounds of testing, I'm sure, and that one can be flipped to production,
+
+Unknown Speaker  7:29  
+I'd say next week, if, you know, at the fastest, if we would like to do that, that requires downtime,
+
+Unknown Speaker  7:39  
+so we'd have to, you know, work with, with Les on that. It's not a small amount of downtime either,
+
+Unknown Speaker  7:48  
+but that's, that's kind of been our plan
+
+Unknown Speaker  7:51  
+to get that, to get that moved in. And I'm, well, I mean, the plan, the plan changed.
+
+Unknown Speaker  8:01  
+Um, midstream. So the original plan was to do all this before it went into production,
+
+Unknown Speaker  8:09  
+and then it changed to No, no, we're going to put it into production, and
+
+Unknown Speaker  8:14  
+then after a week or so of it being in production, then we'll make the flip
+
+Unknown Speaker  8:19  
+what
+
+Unknown Speaker  8:23  
+is the, what is the testing that needs to be done? Do we have, like, a list or a checklist of testing that we can hammer through that Ashley and and my team, basically, we just need to
+
+Unknown Speaker  8:36  
+point versions, you know, Dev versions of the API and the native app itself to that server. Make sure there's a
+
+Unknown Speaker  8:48  
+decently new copy of FileMaker with it, such, with its code on there. And then go through some basic things, you know, open the app, make a job, book a job, you know, the type of administrative stuff that Ashley needs to be able to do from FileMaker, we want, we just want to test that we can still do everything that the system needs to do, and that any of the secure your configuration changes aren't stopping that. And we also the one of the reasons I,
+
+Unknown Speaker  9:19  
+you know, we pushed some
+
+Unknown Speaker  9:22  
+originally is, you know, for us, I like a good really, I'd like a good two months, but I'm okay with a month of no configuration changes happening on there. So on top of the testing that we need to do for connections and process, I want to make sure that all backups happen without corruption, and, you know, any type of stuff like that happen, okay? And you know we need, we do have,
+
+Unknown Speaker  9:51  
+you know, hourly, daily, weekly backups and such and stuff that happens monthly. So that's why I'd like at least a good month now we're.
+
+Unknown Speaker  10:00  
+Hitting that like we hit that month
+
+Unknown Speaker  10:03  
+last week. But of course, we're going live Friday. We couldn't make that switch on the same day. We're trying to go live. So that is why. Okay, well, the problem with the problem with wanting to wait for a month is there's patches that come out every month, Patch Tuesday comes out, there's application patches. So to say you want to make a wait a month without any changes, that's an unobtainable
+
+Unknown Speaker  10:34  
+goal that you have, because every month there's patches that come out, and your
+
+Unknown Speaker  10:40  
+protocol is to put those patches in immediately as they come out, no time for testing or making sure that those patches themselves are going to cause problems. We could test them. Yeah, absolutely. But I mean, if this is, if this thing is in Dev, I mean, we might as well just roll them out,
+
+Unknown Speaker  10:56  
+and that's and that's fine, but I, like I said, I need to do some testing that. That would be me testing them, you know, testing the patches, making sure everything still works after a pack, after
+
+Unknown Speaker  11:06  
+after a patch is done, okay? Well, for the Windows Server, we'll get it 100% ready by Friday, okay?
+
+Unknown Speaker  11:15  
+And then we need to come up with a data, do the cutover testing and all that. And then for the Linux and
+
+Unknown Speaker  11:23  
+AWS stuff, I mean, that's going to be, that's
+
+Unknown Speaker  11:27  
+going to be a pain in the ass, to be a blunt but
+
+Unknown Speaker  11:33  
+speak to that,
+
+Unknown Speaker  11:35  
+what was that Tom
+
+Unknown Speaker  11:37  
+no just to let it the AWS side of the house and some of the vulnerabilities, because you said you were digging around in there too. We talked about, yeah, we talked about that at top of the call. And I guess yeah, really just kind of, okay, yeah, we kind of covered everything. Just playing forward, is what it sounds like. But yeah, I mean, to your point, we definitely
+
+Unknown Speaker  11:54  
+should start testing,
+
+Unknown Speaker  11:58  
+even if there are some that are, like, you know, patches that are really old, just start testing them
+
+Unknown Speaker  12:04  
+in dev and then rolling them into prod. But I guess if you know, if we test something in dev, and
+
+Unknown Speaker  12:12  
+you know, because we may not get the same reaction in dev as we do in prod. So I guess if we
+
+Unknown Speaker  12:21  
+test something in dev, and it's fine. We roll it into production, and it backfires. And I guess we need to come
+
+Unknown Speaker  12:27  
+up with Plan B. And I don't know if we have a plan B, but we should probably do that so that we can figure out how to address, you know, these vulnerabilities, so that we can, you know, we don't have any further issues from the vulnerabilities.
+
+Unknown Speaker  12:45  
+Yeah, we just roll it back. Yeah, well, I mean, roll it back, but
+
+Unknown Speaker  12:51  
+have to figure out, like, what's next after rolling it back, right?
+
+Unknown Speaker  12:57  
+And we still don't have a dev
+
+Unknown Speaker  13:00  
+the only dev server we have, right is the Windows one.
+
+Unknown Speaker  13:04  
+We have. Currently have three Windows servers. There is the production, the dev and then the Pro two, which is the one you guys have been working on. So those are the three Windows servers we currently have. Yes, at some point we're going to only have two,
+
+Unknown Speaker  13:26  
+once we make this switch over. And you're, you know what you've made, the initial configurations and changes on becomes prod. We'll take, you know, a copy of that and and make it the new dev, and probably the current dev one will go away.
+
+Unknown Speaker  13:45  
+Okay, so let
+
+Unknown Speaker  13:49  
+which ones do we need to get ready by Friday?
+
+Unknown Speaker  13:52  
+File maker Pro two. That's the name, okay, for instance.
+
+Unknown Speaker  13:58  
+Then how many Linux servers do we have in dev? We have, well, there's, we have two Linux servers. There's a production and there's a dev. I believe Jasmine has been given access, and I don't know what, what type of changes she's been making are on the dev Linux server.
+
+Unknown Speaker  14:20  
+Okay,
+
+Unknown Speaker  14:32  
+so is this our only?
+
+Unknown Speaker  14:35  
+Is Tuesday, the regular touch base?
+
+Unknown Speaker  14:40  
+Yes, this is, well, I
+
+Unknown Speaker  14:43  
+was just wondering so if we have, you know, everything in place, I guess Tom by Friday,
+
+Unknown Speaker  14:50  
+then we just need to,
+
+Unknown Speaker  14:54  
+should we have, like a touch touch base on Friday, just to kind of let everybody you know.
+
+Unknown Speaker  15:00  
+See where things are that would be sure. Yeah, yeah, sure, I'm available Friday.
+
+Unknown Speaker  15:07  
+Yeah, earlier, whenever it's done, but just by Friday,
+
+Unknown Speaker  15:10  
+we'll have it 100%
+
+Unknown Speaker  15:13  
+and then,
+
+Unknown Speaker  15:17  
+not sure how much is going to take to get the Linux AWS site,
+
+Unknown Speaker  15:21  
+the testing we've done built up and out we've done a few times. You know, as changes have been made to that Windows Server, especially it takes us,
+
+Unknown Speaker  15:32  
+it usually takes us about an hour and a half to two hours to run through our full testing cycle. So it's not huge.
+
+Unknown Speaker  15:39  
+Okay?
+
+Unknown Speaker  15:48  
+So Darren, we should do
+
+Unknown Speaker  15:51  
+just the updates and all that. Or do you try to do the CIS hardening, get all that set up too? We should
+
+Unknown Speaker  15:59  
+probably do as much as we can, you know, from a testing perspective. So that way we can do it all at once, and if we run across anything, we can address it all then.
+
+Unknown Speaker  16:14  
+I mean, if, assuming that we're, you know, ready to do that by, you know, by Friday, or start doing that, I
+
+Unknown Speaker  16:23  
+Okay,
+
+Unknown Speaker  16:27  
+all right, well, we'll hammer it out, what,
+
+Unknown Speaker  16:32  
+and then all that. If all of that stuff works out fine, then we're going to need,
+
+Unknown Speaker  16:40  
+we're going to need a switch over, you know, downtime window from Les. Yeah, that shouldn't be a problem. We will arrange it where we know it's a slow time, and we'll, we'll adapt as we need,
+
+Unknown Speaker  16:55  
+alrighty, yeah, so we'll just, we'll need that window, and I'm going to,
+
+Unknown Speaker  17:02  
+I'm going to suggest
+
+Unknown Speaker  17:05  
+a
+
+Unknown Speaker  17:06  
+planned two hour window for that switch over. I don't necessarily it should take that long, but that makes me feel better if we have the extra time. Yeah, gives us a little wiggle room, but yeah, we will definitely adapt to it. When you guys are that far along, and you guys are ready to make that, that swap, I'll we'll plan, on our end
+
+Unknown Speaker  17:26  
+a good time make sure everything goes as planned. And no, this is, this is the the
+
+Unknown Speaker  17:32  
+Core Data Server we're talking about. So when I say downtime, I mean
+
+Unknown Speaker  17:38  
+the native app, the web app, the agency, website and your file maker, admin system, right? Okay,
+
+Unknown Speaker  17:50  
+all righty, yeah, probably better. Joe, like, say, like, once a month we have, like, a maintenance window. I mean, it's
+
+Unknown Speaker  17:58  
+pretty common, and that we just plan on any changes, be that during that maintenance window?
+
+Unknown Speaker  18:04  
+Yeah, we can. We can definitely arrange that. Like I said, it just comes down to when we'll we'll find that downtime, as far as on our side of things, when we know officers aren't taking jobs, or, you know, there's not a lot of movement from our perspective. So we have an idea of that already generalized idea, at least, but we'll nail it down so we can be exact.
+
+Unknown Speaker  18:24  
+Coolness,
+
+Unknown Speaker  18:27  
+alrighty,
+
+Unknown Speaker  18:30  
+alright. Well, that is that section. Sounds great. Miss Ashley. Welcome back to the calls in the mayhem. Thank you. I see your your agenda for today, you want to kind of walk through some of these items. Yeah, definitely. And, I mean,
+
+Unknown Speaker  18:54  
+yeah, so, I mean, some of them are just things that I've noticed. Other things I really want to look into, especially like the the one that I called you on yesterday,
+
+Unknown Speaker  19:08  
+like, I don't know that one's baffling to me.
+
+Unknown Speaker  19:13  
+Jake, yeah,
+
+Unknown Speaker  19:15  
+thought on that was, let's we're pretty sure it's some setting or something on his phone, but to we can 100% validate that by having somebody or having the app downloaded onto somebody else's phone, sign in with his phone number, he'll get the SMS code on his phone. You know, he can give that to you and go into the phone or go into the app as him on a different phone, and if you don't see the same problem, then that will 100% confirm that it is a phone issue. Yeah. The only other thing I can think of is especially if that phone is is
+
+Unknown Speaker  19:58  
+assigned to him like.
+
+Unknown Speaker  20:00  
+From the police department or something. Yeah, that they have MDM on it. That's some type of profile. Basically, you know, when you when you have control of the phone like that, and you know you're giving it to your staff and such, you can put what's called a profile on there. And that profile can do anything like, not let them view R rated material, not let them call anybody that's not on their contacts. Yes, it can say you're not allowed to give,
+
+Unknown Speaker  20:26  
+you know, photo or camera permissions to any new apps that are installed or something like that. What about the notification? Though, that part is weird. I mean, it can be configured. It depends on it, yeah, yeah. I mean, so here's another thing, though. So I was on his phone yesterday because he had came into the office and I checked like Facebook, right? And he's able to put, you know, his camera access on Facebook and notifications. Would that be different? Because, again, the profile can say you're not allowed to give access to newly downloaded apps, or it could have basically a white list of apps that you are allowed to give access to. And if it's white list, it won't
+
+Unknown Speaker  21:10  
+using, using these mobile management systems, you can really lock down stuff. And again, that's just a guess. I don't know if he has one on his phone. That's 99% of the time only going to happen if that phone was assigned to him by, you know, a company or his police department or, you know, something like that. If it's his phone that he bought from, you know, Verizon or whatever, it's not going to have that on there. No.
+
+Unknown Speaker  21:36  
+The best way for us to figure this out is if he can, if he logs in on someone else's phone and it works, then it's 100%
+
+Unknown Speaker  21:45  
+a phone issue. So could I, could I just like, put, can I do it from my phone? Yeah, with him. So you would log out, yeah, you know, you would coordinate with him. You would put in his phone number. He would obviously get the text message on his phone. Right then you would, you know, yeah, just see go from there. Yeah. You would want to do so, yeah. First you would want to log out. You would want to delete the app from the phone, reinstall it, because the permissions are already set on your phone,
+
+Unknown Speaker  22:18  
+and then go through that process.
+
+Unknown Speaker  22:21  
+Okay, just delete the app from my phone, log out first, yeah, yeah, Jake, it didn't even we she deleted the app, reinstalled it, and yeah, phone, camera and notification. Neither of those screens even showed up during the onboarding process. It
+
+Unknown Speaker  22:41  
+didn't even, yeah, is he kind of talking on the MDM side? Because we do
+
+Unknown Speaker  22:48  
+the same thing, like we have people that use their personal phones, but we have a work profile on it.
+
+Unknown Speaker  22:56  
+I mean that if he's if that's the case, then it's going to run into the same issue if he's trying to download it into the work profile, even though it's his personal phone.
+
+Unknown Speaker  23:10  
+Do you have like, two, two different profiles on your phone
+
+Unknown Speaker  23:15  
+if it's not a company owned phone, I mean,
+
+Unknown Speaker  23:17  
+it's just throwing stuff out there, that might be what the issue
+
+Unknown Speaker  23:22  
+yeah, that's, that's true. Yeah, that's, that's absolutely true. Yeah,
+
+Unknown Speaker  23:28  
+those are just the only ways we can figure that something's happening. It's definitely not a problem in the app or in the, you know, API or background of the system. It's definitely something on his phone, either, you know, a profile or,
+
+Unknown Speaker  23:44  
+or, I don't know, some type of actual, you know, error, broken piece inside the phone. I don't know,
+
+Unknown Speaker  23:52  
+but it's, it's definitely phone based, yeah, that specific phone. Otherwise we'd be seeing this on a lot of people's phones Absolutely, yeah. So if there is, like, two profiles, if there is a work profile, I don't know if he would know how to, you know, like, is there a way to know where you're downloading it from? Yeah, it's
+
+Unknown Speaker  24:16  
+made very clear which profile it's in.
+
+Unknown Speaker  24:21  
+But also sometimes, like I had it when I was with City of Phoenix, if I logged into the city email, I didn't, wasn't necessarily downloading their full profile, per se, but it did push controls out to my phone,
+
+Unknown Speaker  24:37  
+because I was accessing the city email on my personal phone, and they can restrict
+
+Unknown Speaker  24:45  
+certain things again, who knows what the configuration is on the back end? Yeah,
+
+Unknown Speaker  24:51  
+you know, or, I mean, it's, there's a million different,
+
+Unknown Speaker  24:55  
+you know, possibilities that it could be, yeah? Well, we know.
+
+Unknown Speaker  25:00  
+Know is that there's nothing about the application that would allow some people to see the notification screens and other people not
+
+Unknown Speaker  25:09  
+to. Yeah, we know that. So,
+
+Unknown Speaker  25:14  
+you know, my first, what I would do first is, like I said, just try it on some another phone. If it works, then okay, and well, we know now that it is a phone issue, and if it doesn't, well, that's I'm gonna, I would be,
+
+Unknown Speaker  25:33  
+I would be very concerned. I'm not concerned, but I'd be, I'd be super confused, given that no one else has seen this issue, so we've been testing it for months, and we've never seen anything like that, right? So and Ashley way he could at least see if there is a profile installed on his phone period go to Settings, then general,
+
+Unknown Speaker  25:58  
+then near the bottom, there's one that says VPN and device management.
+
+Unknown Speaker  26:05  
+If you touch there, it should list all configuration profiles that are installed on the phone.
+
+Unknown Speaker  26:12  
+Yep.
+
+Unknown Speaker  26:15  
+Okay, that's good. Okay, I'll start there.
+
+Unknown Speaker  26:22  
+Let's see.
+
+Unknown Speaker  26:28  
+We were seeing a network error. So Escobedo, he was
+
+Unknown Speaker  26:32  
+clocking in like, trying to just log in, actually, and he got this message. It eventually went away, but it still took multiple I'll share my screen. That'll help.
+
+Unknown Speaker  26:46  
+Yeah, that'd be great.
+
+Unknown Speaker  26:48  
+Sorry, you're good, good. I mean this, this feels obvious, but network error.
+
+Unknown Speaker  26:58  
+I have never seen it, but obviously it was probably where he is, and I have never heard of anyone else complaining about it. But you know, I was just, I wanted to at least see what your thoughts on,
+
+Unknown Speaker  27:11  
+Brian. Are you that typically, when we're getting messages like that,
+
+Unknown Speaker  27:18  
+and I'm brainstorming here, Brian, but usually that's something to do with the communication to FileMaker server. Is usually it nothing. I don't believe the API is throwing that specific error that looks like some of the other ones, where we're like, Where are these coming from? And then, sure enough, it's FileMaker. That's just my initial thought. It's possible. But normally FileMaker has network error, and
+
+Unknown Speaker  27:44  
+then usually has like, oh, data error, code under it, okay, so I mean, obviously,
+
+Unknown Speaker  27:53  
+can you zoom in on that picture? Yeah, top right of his screenshot,
+
+Unknown Speaker  28:01  
+it looks like his bars are fine. Oh, like, up here. Is that what you mean? Yeah, his bars look fine. So that's fine.
+
+Unknown Speaker  28:08  
+I'm sorry. Oh, what's that? Ultra Wide. That's what that is,
+
+Unknown Speaker  28:14  
+5g ultra wide. I've noticed, this is anecdotal. I've noticed as soon as my phone flips into 5g
+
+Unknown Speaker  28:21  
+my service sucks. I don't know. I know it's the newest one, but that's what I've noticed, is that anytime I see 5g it's nowhere near as good as when it's on, when I'm on LTE,
+
+Unknown Speaker  28:33  
+really, that could just be the exact opposite. No, that might be my location, LTE, because LTE has been trash.
+
+Unknown Speaker  28:43  
+For me, the best is actually it'll say 5g and a little plus symbol
+
+Unknown Speaker  28:49  
+is that, UW, I've never seen that. Who? What's the hold on. I'm going to try and get in. What day was this happening? Do you remember? Oh, this was today. Yeah, this was late. This was Well, that's good. That'll make it easier for me to find
+
+Unknown Speaker  29:03  
+I can tell you the time it was around.
+
+Unknown Speaker  29:10  
+Let me see I'm logging into our little air logging 1105 1105 our time. And what's his name? This is Ronald Escobedo.
+
+Unknown Speaker  29:21  
+Okay.
+
+Unknown Speaker  29:25  
+Timeout error.
+
+Unknown Speaker  29:28  
+I see timeout error, I see timeout error. I see timeout error. All three of his errors were timeout errors.
+
+Unknown Speaker  29:37  
+Interesting. Time out, where did it say? Where? Yeah, in the dashboard screen, fetch API, data method. So he's having trouble connecting to the server. So his is a service issue.
+
+Unknown Speaker  29:50  
+Okay, so this would be that's an issue with his phone connection. Yep,
+
+Unknown Speaker  29:57  
+that is where we're trying to basically.
+
+Unknown Speaker  30:00  
+Load configuration stuff from the API, and it's not able to reach it. That's what's going on there.
+
+Unknown Speaker  30:09  
+And let me see. I'm just going to do a little bit more digging.
+
+Unknown Speaker  30:13  
+I'm out there.
+
+Unknown Speaker  30:19  
+Yeah, he's not the only one. It's happened to, but he's, I think, one of the only people who's seeing seen it more than once. So whatever area he was in, possibly, was not great. It's hard to say exactly, but,
+
+Unknown Speaker  30:35  
+but, yeah, we're, that's, that's most certainly
+
+Unknown Speaker  30:40  
+a service issue.
+
+Unknown Speaker  30:44  
+Damn. Do you see how it said dev down here on his mine doesn't say Dev. Well, yes, that is weird. He should not his. Should not say Dev, yeah. How did that even Yeah? Well, that means
+
+Unknown Speaker  30:59  
+I'm like, was he a pilot tester? Did he test from No, not at all.
+
+Unknown Speaker  31:06  
+Okay, let me look at something here. I'd like hit that if he's just on it, he shouldn't still get that if he's just on it, no, he's he needs to update his app. I think it says one point 5.3 which is what mine says. But he
+
+Unknown Speaker  31:25  
+says, no one else has says that. Not Well, not that. I've noticed, to be really honest with you, I just saw that, and I logged out of mine to see if mine said that while you were talking. So I don't know, yep, when? So I I'm not sure how he has that version Me, either. He goes to the App Store and updates. Maybe there's an update waiting for him. I,
+
+Unknown Speaker  31:51  
+I can't, no, that doesn't make sense, because it's 153, so, yeah, yeah, I don't Is it possible that he was a that he tested on test flight?
+
+Unknown Speaker  32:01  
+No, no,
+
+Unknown Speaker  32:05  
+no, unless. Well, here's the thing I haven't I know, I bet I know why? Because, because that's part of what we're fetching in that API call. We're fetching what server this is supposed to go to. If it fails and there's a network error, it's gonna say Dev, that's probably what happened. Oh, good. Okay, so that's that's at least somewhat of an answer.
+
+Unknown Speaker  32:30  
+Okay, well, maybe next time I talk to him, I'll have him take a screenshot to see like because it did work. So this happened 15 minutes went by, ish, and then it worked for him. He didn't do anything different, as far as I'm aware. Yeah, sounds like he just has really bad connection. Yep, all right. Well, I just wanted to at least bring it up because it was, you know, just in case it was something more than I No, that's
+
+Unknown Speaker  32:58  
+you're doing exactly what you should see. Some of these tools in action right now, because we've been, like, theoretically testing them for so long, and it's like, Oh, I found his errors. Yep, it's a timeout error. So this is great. Um, let's see. There
+
+Unknown Speaker  33:15  
+was someone who yesterday, and I forgot to write down because I was
+
+Unknown Speaker  33:19  
+kind of bombarded with calls in the morning, but so someone was trying to clock in, and it said requires processing.
+
+Unknown Speaker  33:28  
+Um, it was like a that was the error message he was receiving. Um, I tried, like, taking him off the job and putting it back on, because that was honestly, Wait, was he trying to clock in or log in, clock in, clock in,
+
+Unknown Speaker  33:43  
+Brian, are you sending back any kind of error that says, that says required processing? No, absolutely, yeah, fires processing. I don't know. I will keep it on my list, right? Yeah, that's the only one I've seen that said that. And so just thought that was strange. Let's see,
+
+Unknown Speaker  34:07  
+oh, the and I know that it's okay if we I don't even know what happened after if there was an update on this. But you know, like when we're doing the invite,
+
+Unknown Speaker  34:18  
+yes, the request to have an email go out.
+
+Unknown Speaker  34:28  
+It's also, I believe,
+
+Unknown Speaker  34:31  
+Joe, did you send me like the verbiage that you guys would like on that I know in general, we're just sending them to the blue dispatch site
+
+Unknown Speaker  34:42  
+so that they can get the app. But
+
+Unknown Speaker  34:47  
+he's standing right behind me, so I don't think he's got his headphone in, but I will ask if he sent that, if he has that,
+
+Unknown Speaker  34:56  
+and if not, we'll send it over to you. Sounds great. Yes, I could do that.
+
+Unknown Speaker  35:00  
+Just kind of give you a button there to email out.
+
+Unknown Speaker  35:03  
+I think there is a button. It just doesn't work. Oh no, no. There's an invite button, but yeah, it doesn't really get right now there's a so when I hit the Email button, though, it says, Please select an officer.
+
+Unknown Speaker  35:17  
+Something about you need to select an officer if you're going to send an email. And I'm like, well, obviously it's for this guy, but okay, I'll look at that when I when I get some verbiage, I'll make that work. Send over verbiage. Got
+
+Unknown Speaker  35:37  
+it?
+
+Unknown Speaker  35:39  
+Okay? This one was kind of strange. So there's an officer, and he had taken, he'd taken a few jobs all week, and he saw them all in his my jobs area, but then the day of which was yesterday, that particular one wasn't in his like today section. He's the only one that I've seen that happen too. Just thought it was strange. I don't know if that makes sense. They'll see the job assigned to him. Maker, yeah, I was able to clock him in.
+
+Unknown Speaker  36:11  
+I just thought it was actually, wait, what did I do with that one? Because there was a lot yesterday. So basically, anyone who took something from like, if they took it on the 16th or before,
+
+Unknown Speaker  36:25  
+I've had to literally reassign them in order for them to clock in.
+
+Unknown Speaker  36:30  
+And I knew that that was a potential. I bet I know why Brian, those guys, I bet I know why it's possible those jobs aren't in the data, the API layer, database, yet. Well, yeah, that's what I supposedly did.
+
+Unknown Speaker  36:45  
+I believe it was Thursday, so it might have happened Friday, because, you know, the process took me a while
+
+Unknown Speaker  36:54  
+in a second.
+
+Unknown Speaker  36:56  
+So if they took something like the morning of the 16th,
+
+Unknown Speaker  37:00  
+it might have been an issue if they took it from like, the web app.
+
+Unknown Speaker  37:07  
+Yeah, it just seems like anyone I've had to do that with
+
+Unknown Speaker  37:12  
+took it at least on the 16th, yeah, and previous. So there was quite a few. There's been quite a few, but at least it's, it's an easy fix, so really, all I'm going and doing is just, like, clicking here, putting them right back on it, and it seems to, like, clear whatever, or put it in there. I don't know what it's doing exactly, but it's solving my problem. Okay,
+
+Unknown Speaker  37:38  
+trying to see if I clocked him in or what happened yesterday, but either way, I just thought it was, it was weird though for him, because he had seen it, though, on the app, so I don't feel like that was the issue, because he was seeing it on the new app, yeah. But then when Friday came, it was or Monday came, sorry, it was disappeared. For him. It was just kind of strange, but it's he was clearly still, you know, on it.
+
+Unknown Speaker  38:08  
+But I did kind of
+
+Unknown Speaker  38:12  
+think in some of the
+
+Unknown Speaker  38:15  
+problems that were being heaven on that I was just thinking that maybe one of the issues, maybe not for this person, but one of the issues may be they don't know to kind of swipe left on on, like the future ones, because, you know, it'll it'll say next week, and it's or this week, and it's got a it could have a couple jobs, and you have to swipe to go through them.
+
+Unknown Speaker  38:40  
+I have a feeling that some of that might be people going, you know, I can't see my learning, yeah, really, you just got to learn to swipe or clicking in so you can clock in that one that's been a struggle really,
+
+Unknown Speaker  38:56  
+click right where it's gray, yep. And then like, oh, there it is. And again, there it is. So I mean, we're getting, we're getting through. It's just just little, little things, yeah, but no issues, just training,
+
+Unknown Speaker  39:11  
+snacks. Really took the job. Oh, I don't even know
+
+Unknown Speaker  39:17  
+if I should bring this one up. It's kind of the same. So yesterday, Murray took a job and it wasn't showing on the app for him.
+
+Unknown Speaker  39:27  
+I don't know. At first I thought maybe it had something to do with when the job was put in, but I don't believe that was it, because there was, there's plenty of jobs that were put in before the 16th
+
+Unknown Speaker  39:39  
+that it was working for. So I'll just keep that one on the back burner too. If he took the job, he took it. Yeah, it says he took it today. I don't know when today was. It was yesterday. Okay? I came back yesterday. So most of my notes up on the app. I was, yeah, I would first say, you know, did you go.
+
+Unknown Speaker  40:00  
+To my jobs and pull down and refresh,
+
+Unknown Speaker  40:04  
+yeah. I mean, I'm that's, that's usually my first troubleshoot for people, or to, you know, to toggle to, like the home and then go back to my jobs that seems to
+
+Unknown Speaker  40:16  
+help, that doesn't even necessarily refresh, that doesn't always refresh. No, go to my jobs. Pull down until you see the little spinning thing at the top that lets you know it's refreshing. Yep.
+
+Unknown Speaker  40:29  
+Okay.
+
+Unknown Speaker  40:30  
+Switching back and forth is if, if they've literally never if, or if they're they're logging in for the first time that day, or whatever. If they haven't logged in yet, that's okay. Oh,
+
+Unknown Speaker  40:43  
+yeah, we've definitely been telling people to refresh a lot.
+
+Unknown Speaker  40:50  
+Let's see
+
+Unknown Speaker  40:52  
+this one. Okay, no email being so there's some officers that aren't so like they're taking a job on the app and
+
+Unknown Speaker  41:02  
+they're not getting that, that job assignment detail email. Now, one of them
+
+Unknown Speaker  41:10  
+was bubba.
+
+Unknown Speaker  41:12  
+Now this one's weird, though, because Bubba's not even getting them, because I figured, okay, so he's not getting notifications, like, maybe that's why he's not getting the email. But he Christine, was sending it through FileMaker, and he still wasn't getting it. So I don't know what that would tell you. Like his email side is either rejecting the delivery of the email, the email address we're sending to is wrong, or he is receiving them and they're sitting in his spam and he didn't go to spam and see it and get it. Yeah, I don't know. He works a couple in my spam.
+
+Unknown Speaker  41:49  
+When I first started with sending out the blue dispatch,
+
+Unknown Speaker  41:55  
+these are old ones. She tried to send them
+
+Unknown Speaker  41:59  
+either way,
+
+Unknown Speaker  42:01  
+our is correspondence. It's updated, right? So anything sent from the new app or being that it should be okay, cool.
+
+Unknown Speaker  42:11  
+And then she said there was a lot of people, but I just they didn't write down the names of the officers. I'm not sure who it is, so
+
+Unknown Speaker  42:19  
+I guess I'll just keep an eye out for that. I just wanted to bring it up in case it sparked anything with you guys.
+
+Unknown Speaker  42:28  
+Yeah, that's, that's the thing about sending these automated things through SMTP if, if there is on their end, their email, you know, denies it, you don't get that bounce back email like you would if you sent it from your email. You know that it was unable to be delivered, or something like that. We wouldn't know it doesn't come back because SMTP isn't is there's nowhere for it come back to it would go back to the no reply, if anything, but that set to not accept incoming emails by email, so we don't necessarily know if it wasn't delivered based off of something on their end.
+
+Unknown Speaker  43:11  
+Gotcha.
+
+Unknown Speaker  43:13  
+Okay, the other guy was Fowler, but I through some investigation, found out he was taking the
+
+Unknown Speaker  43:20  
+jobs through the old app, because it was better for them. So, yeah,
+
+Unknown Speaker  43:27  
+I know I was like, that's that one. Let's see, that's the Bubba thing. Oh, this. Okay, so you Okay? Someone calls me they can't clock in, right? So someone here clocks them in for them, and then they can't clock out themselves. That's that, yeah, from FileMaker does not clock them in. In the API side, we can roll that, we can maybe roll that functionality the best we can into the like rehydration stuff that we've been discussing. But for right now, you know, there's no way for us to initiate the process in FileMaker and have the app react to it, which is what it would need to do. So we
+
+Unknown Speaker  44:13  
+that might be something that we can try to roll into this rehydration thing. But for now, that's correct. If you lock, if you clock them in in file maker, you're gonna have to clock them out in FileMaker. Yeah, notice that you did that.
+
+Unknown Speaker  44:29  
+Yeah.
+
+Unknown Speaker  44:30  
+That was, that was mainly why I was bringing it up, was to see if that was a possibility for the future. Because that's been,
+
+Unknown Speaker  44:38  
+I think it's also because it's different from the web app where it did kind of talk to each other. So people here didn't, you know,
+
+Unknown Speaker  44:48  
+didn't realize that that was us not working in in this new native app. I mean,
+
+Unknown Speaker  44:54  
+it's not that it's not working. It's just not, not how it works. Yeah, the clock.
+
+Unknown Speaker  45:00  
+Out will work from FileMaker, if they like, clocked in on the app, and you clock them out from FileMaker, that will trigger the app, but it doesn't go the other way. Yeah, okay, that's good to know too. So it always calculate the hours.
+
+Unknown Speaker  45:21  
+Okay, I'll do this one quickly, but I think I figured it out. So there was two guys this morning, and they were all within the same, like hour,
+
+Unknown Speaker  45:32  
+and they were one guy had been using the app like all weekend, and then he tried to log in this morning, and it sent him to this page.
+
+Unknown Speaker  45:49  
+This, oh, no, he No,
+
+Unknown Speaker  45:54  
+right. Okay, so here's, here's what it was doing, though. So it was bringing him to where you would, where you should be able to enter your phone number, right? But that wasn't it was like grayed out, or it was like somehow doled, where he couldn't type his phone number in, so the only button that he could touch is register and that so he that he obviously clicked register, and this is where it sent him. But when I was looking at his account like he was active, and so was the other guy,
+
+Unknown Speaker  46:26  
+and they both had the same issue. They were both active. The other guy, this was his first time getting into the app, so he didn't, he didn't understand why he couldn't just enter his phone
+
+Unknown Speaker  46:38  
+number in. Now the one guy, the first guy, he ended up like restarting his phone, and that fixed his problem.
+
+Unknown Speaker  46:48  
+The next guy,
+
+Unknown Speaker  46:51  
+the second guy, I have been able to get a hold of him to try that troubleshoot. So I don't know if that works for all of them, or if it was just a weird fluke within that hour span, I don't know. I don't think that would be a fluke that has to do necessarily with the app or our system. That's if it is a fluke, it would be something with the OS, with the phone, and, like you said, most likely a restart of it is 90. I'm gonna just like, go, go out on a limb and say 85 to 90% of these kinds of issues are literally, just
+
+Unknown Speaker  47:27  
+restart your phone or it's one of the two. Yeah, we can't help you if the phone has something, yeah, yeah. Weird with the phone, it
+
+Unknown Speaker  47:37  
+is what it is. There's a bunch of different devices out there, and, you know, I don't know what to tell you. If it's blocking things from working, it's blocking things from working, and there's not much we can do about it, then, yeah, restarting the phone or something like that might be the best way. Okay, yeah, I completely understand that. I just want to bring them up in case it isn't an obvious, you know, if I think it's obvious, but you're like, Oh no, that could be this, then I it's good that you bring it
+
+Unknown Speaker  48:07  
+up. The next one, oh, this next one.
+
+Unknown Speaker  48:11  
+Photos. I don't know why, but that is the biggest complaint, is they do not like, well, not all of them, just a few,
+
+Unknown Speaker  48:22  
+like, do not want photos. Like, because, you know, it has to at least be unlimited access.
+
+Unknown Speaker  48:29  
+Is that? Is that a deal breaker? Like, do we have to have access to their photos for them to just clock into jobs? Or can they turn that on if they want to of it, you know, send a photo
+
+Unknown Speaker  48:42  
+at a time. Is that? Is that any negotiable? I mean, that would, well, I mean, it depends on what you think is negotiable. So sure
+
+Unknown Speaker  48:52  
+that that is a, that is an app change, that is not something that is that would be a resubmit, kind of a situation
+
+Unknown Speaker  49:01  
+we had had a full permissions conversation before we sent things to the store, like in December, and we had agreed that they don't have to
+
+Unknown Speaker  49:13  
+let photos let you know, give the phone even limited permission to get into the app, but in order to work, they have To have it. And that, that was what we were told, and that's why we put that in there. So, you know, if, if, if you guys want, based on the feedback of like, a couple people, you know, if you want to restructure how that that what those rules are, that's fine, we can do it. But I think we thought a lot about those permissions, and I would caution you from from bending to those whims, unless it's like an overwhelming number of people. Does that make sense? Yeah, yeah, definitely. Ashley, how many people have we had? Exactly,
+
+Unknown Speaker  49:53  
+Oh, God. I mean, well, okay, keep in mind. Do.
+
+Unknown Speaker  50:00  
+It let me think maybe more like and, I mean, I don't know, Joe, what do you think? Well, I mean, it's hard to put a number on it. In my opinion, I feel like we need a larger data set, though, before we can change anything. In my opinion, we definitely had people complain about it, no doubt about it. Like, I mean, I struggled with a guy Ashley and I both did for at least an hour because he just didn't trust it. And that's fine. That's okay. But what do they don't do? You would it be helpful
+
+Unknown Speaker  50:26  
+to for us to give you, like, a boilerplate response for that? Because this app, there's nothing we can do with photos unless they pick the like we don't have pick limited access, right? Yeah, access photos, unless you've selected that photo for us to have access. Yeah, right.
+
+Unknown Speaker  50:47  
+So here's the thing, though. I mean, that that would help in theory, but in practice, like today's example, nothing was going to change this guy's mind. He was so adamant about it, right? And you're gonna run into that. Yeah, you are gonna run into that. So in my opinion, we, I mean, at least from the initial, you know, from the launch to today, we've definitely got some complaints about it. It's not overwhelming. It's not something where it's, you know, predominantly that going on at the same time. I mean, we're definitely aware of it, so we're going to be tracking it for a while, and if we feel that we do have to change it. I think obviously we, we will make that process happen. And that's what I think, I think, in my opinion, at least ash, that I think we need a larger data set. We need more time on it to see what, what the pattern is.
+
+Unknown Speaker  51:32  
+That's my perspective. But it's something at least you guys are going to be aware of now that we're kind of are on the fence, at least initially, and that might back, we might back off from it. You know, over time, these guys might be okay with it. They might just get used to it. But this is something to throw out there. What's up? Tom, yeah, coming from that background, yeah. Why do you need access to my photos?
+
+Unknown Speaker  51:54  
+Because you need to be able to upload photos as part of the job when necessary, like, because it was a business logic thing that Bonnie wanted, really, yeah. I mean, that's what it was Tom at the end of the day, if there was an incident or something happened at an HOA or anything like that, we wanted to give them the ability to say, Hey, I'm taking a photo of this going on right now in real time, right? And so it was the officer, yeah. And so this was the reasoning behind it, and so,
+
+Unknown Speaker  52:22  
+speaking from
+
+Unknown Speaker  52:25  
+wearing the officer's hat and then, more importantly, wearing the police unions hat, I could see how some of these officers would be concerned that an app has access, quote, unquote access to their photos. Right? We understand that as well. And like I said Tom I mean, we struggled. There was a guy earlier, it was a good hour. We were trying to rack our brains around it. But you know what's funny is he was so adamant against it, but at the end of the call, he was like, well, just in case I do decide to do it, would you be able to help me? And so at the end of the day, we we basically convinced them anyway, but at least right now, I think we need a larger data set before we can make any decisions. But, I mean, there is some, some concern from their perspective. There's definitely, I wouldn't say it's, you know, 50 officers that are complaining about it, you know, it's not that number, you know, I would say maybe a dozen, if we had a ballpark it right now, yeah, yeah. I mean, that's that's definitely addressable. We can, we can take that out. It is a resubmit, which is fine.
+
+Unknown Speaker  53:30  
+But, you know, one thing
+
+Unknown Speaker  53:34  
+I like, again, I would just caution making structural changes like that, because, you know, some people are annoyed that I don't care really either way, but you're gonna end up changing your app a lot, if that's you know, if you're that responsive to that kind of thing, right? Which, again, we're the ones making the changes. I'm fine taking your money, but I don't, I don't want to, I don't want you guys to feel like you're in a never ending churn of like, well, this guy's pissed off that he has to have his location on it's like, well, there are some business logic decisions that you guys as an organization made. And you know there's, there's something to be said for listening to users and responding to them, and there's also something to be said for sticking to what you decided, because you know that we're not mistreating the data on their phone, and this is part of the deal. You know what I mean? Yeah? So exactly, again, don't care either way. We'll happy to program it however you want to. I would just that's more of like a future thing of there are just sometimes cranky people. That's, yeah, we're not gonna make everybody happy. Yeah, exactly, yeah.
+
+Unknown Speaker  54:43  
+That's where we're at with it. I mean, it's something that we're looking at right now. We're going to track it, continue to track it, and see where it comes from, but that's just something that we're throwing out there for right now as an idea. So, yeah, yeah. I definitely wasn't looking for any changes today. I just kind of wanted to see, like, how said it was.
+
+Unknown Speaker  55:00  
+If we decided to, if that was possible, what it was connected to, and just kind of get more information?
+
+Unknown Speaker  55:06  
+Yeah, that's a fair question. And, and again, if you guys want any kind of boilerplate that explains exactly what you know, how that works and and what might why they why they should use it, and how their their data is protected. We don't have access to anything they don't upload ever.
+
+Unknown Speaker  55:27  
+Then I can give you that,
+
+Unknown Speaker  55:30  
+yeah, from what we have on our on our blue dispatch privacy page, because I was reviewing that, and I was saying guys there, and it kind of explains it, you know, right, vaguely, and it kind of gives them an over an overview of what exactly the camera access is and all that good stuff. Yeah, but we give you more of a like customer support and blip for a phone call type thing, sure, sure. Yeah, healed it at the front line there. And there is a little message on the on the screen when they when they're prompted to give the permission. We do explain it pretty, pretty well. But sometimes people cause, they buzz through those onboarding things without, like reading for sure. So, you know, I do it all the time. I mean, sometimes I'm guilty. I'm guilty, yep, yep, okay, I'm sorry. I have a hard stop now. I do have something another meeting.
+
+Unknown Speaker  56:24  
+I only saw one more item there. Yeah, the one, the one for you, is this is, Oh, crap.
+
+Unknown Speaker  56:36  
+Users are still getting this when they're putting officers on a job and taking them off. Yeah, I just tried it. It did not give me that error, so I might it's only on. It's all, it's only, like, the user's permissions, so like, I don't get it back. He doesn't get it permission. Yeah, sorry, yeah,
+
+Unknown Speaker  56:54  
+something to look at. I can look at. Okay, yeah. And the last question I had was for Jake. So, ma'am, okay, well, I will, Jake, can I give this to you? I would assume I can
+
+Unknown Speaker  57:08  
+send it in an email. It's not like, it's not a big issue. What is it? No, so I know in the past, we had talked about, like, there's a log on for the native app, like, seeing that back end, like, who is,
+
+Unknown Speaker  57:22  
+yep, you know, like logging in, who's been in there. I was wondering if we could, if I was able to see that, because I know that, you know, eventually they're going to want, I'm going to want access to that. Yeah, we have it locked down to white listed IPs, okay, so only and for that to work, you have to have a static IP.
+
+Transcribed by https://otter.ai

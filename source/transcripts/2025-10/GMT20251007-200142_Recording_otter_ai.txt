@@ -1,0 +1,994 @@
+Unknown Speaker  0:04  
+Awesome right then.
+
+Unknown Speaker  0:07  
+Let's see, do I have much in the way of updates? I just sent out an email.
+
+Unknown Speaker  0:15  
+I believe Joe and Ashley are in. Are copied, but just in case, just sent one to to Jasmine.
+
+Unknown Speaker  0:27  
+We still don't have any type of connection to the new AWS instance that is
+
+Unknown Speaker  0:36  
+there, I guess, doing all of their security. Requested security changes to and we were supposed to test yesterday and today to go make that your production tomorrow
+
+Unknown Speaker  0:50  
+still don't have access to it, so we haven't tested. So that's not going to happen tomorrow. Is basically the gist of that email. Okay,
+
+Unknown Speaker  1:00  
+once they once they really do finish
+
+Unknown Speaker  1:05  
+and hand that over to us, where we can connect. Then we'll do the testing and come up with a another plan for another day to make that, that swap.
+
+Unknown Speaker  1:15  
+It shouldn't when we do it, it will require a little bit of downtime. But once it's back up, it should require nothing else on your guy's side, or any of your customer side, they'll be going to a new server, but nobody will know it.
+
+Unknown Speaker  1:31  
+So that plan has been postponed for now.
+
+Unknown Speaker  1:37  
+You should have gotten an email about a new
+
+Unknown Speaker  1:43  
+a new version of the native app that was up uploaded to test flight today. Believe
+
+Unknown Speaker  1:50  
+so feel free to continue to test and putt around on that.
+
+Unknown Speaker  1:55  
+Oh yes, yeah, we did see that come through. Brian and Nash and I have been testing it. It looks like we're running into the same exact issue. Still, we're working. We're booking the job, but it's crashing on us. So we sent some feedback, but I don't know how fast you guys see that? Yeah, yeah. No, we see it. I did see that feedback.
+
+Unknown Speaker  2:12  
+Yeah. She,
+
+Unknown Speaker  2:14  
+I'm sure Jake will will look at that. Okay, I I kind of pivoted him from what he was doing, and asked him to get on to
+
+Unknown Speaker  2:25  
+at least the very bare structure of the GPS tracking location stuff, so that
+
+Unknown Speaker  2:34  
+we can display that in the new way on the Agency app, so that that can be shown at this conference, convention, whatever we're calling it, in, what two weeks? Yeah, we're about two weeks out. So
+
+Unknown Speaker  2:51  
+I wanted to
+
+Unknown Speaker  2:54  
+be able to have the map on agency showing
+
+Unknown Speaker  2:59  
+location based off of the new place where locations is going to live up on s3 so I kind of pivoted Jake to really work on that and get at least what we would need to be able to demo that functionality in the agency app, to be able to view it on the agency web app,
+
+Unknown Speaker  3:20  
+because I was told that was kind of the the star of the show for this particular conference convention thing
+
+Unknown Speaker  3:27  
+was going to be the agency app. So I
+
+Unknown Speaker  3:30  
+Yeah, so that's might be why he's not going to get to a book job or something like that, necessarily as quick, okay? Because, like I said, I pointed him at that that seemed to be a little more of an urgent thing.
+
+Unknown Speaker  3:47  
+So it's part of the native app anyway, but I just kind of moved around the items in his list of priorities.
+
+Unknown Speaker  3:57  
+Yeah. I mean, that makes sense. Okay. Yeah, good. So I want that to be able to be there.
+
+Unknown Speaker  4:06  
+I thought that was more important because the web app is the more finished thing that we want to show off, number one and number two. I mean realistically showing them how to book an app even I mean, how to book an appointment, book a job. What are you going to do? Are you going to open up FileMaker and go, Oh, see your name's there, right? No, yeah, exactly. And I think, but not much to see, as far as that's concerned, for sure, yeah, going off to people, yeah.
+
+Unknown Speaker  4:37  
+But the location stuff is so I that is something we can show off a little more.
+
+Unknown Speaker  4:43  
+So I I told him, when it comes down to it, I would be happy with some just test, you know, false location data sitting on the s3
+
+Unknown Speaker  4:56  
+and the web app be able to read it and show it on a map. I.
+
+Unknown Speaker  5:00  
+Uh, I don't particularly care if it's real. I want you guys to be able to open up a job and see the map with the cool little blue line on it that shows where somebody was for that job. And, like we kind of spoke before, I don't see how it's not very easy to show off the location stuff anyway, unless a couple of these police captains want to get in the car with you and drive around, because if you're just walking around your little table there at the conference center, that line's not going to move. It's not enough movement. So we want to be able to show on the agency app, hey, as a captain, you know whatever, you can go in here. You can look up your guys. You can look at their jobs and see where they went, and watch them and see their movement. You know where they moved the night before, earlier that day, whatever.
+
+Unknown Speaker  5:49  
+So I'm trying to get that wrapped up and ready before you guys go to that conference in 10 days.
+
+Unknown Speaker  5:59  
+What else do we have? We've been doing some little stuff, as far as
+
+Unknown Speaker  6:06  
+wonderful Ashley's list. I've been working with other clients a lot, so I haven't gotten a lot done. But what I have, I've put on Trello, and she's looked at like I finally got the secondary contact selector up and running for her, and maybe a couple other small little things.
+
+Unknown Speaker  6:27  
+That's, that's what I have.
+
+Unknown Speaker  6:31  
+Okay, alright, pretty, pretty short and sweet Brian, that's good. Yeah, yeah, it's, we're rolling along on the native app. And I've, I've had to pull resources other places to so they're not
+
+Unknown Speaker  6:48  
+getting to other things necessarily.
+
+Unknown Speaker  6:53  
+But we don't seem to have a lot of
+
+Unknown Speaker  6:57  
+a lot of issues on the list anyway, for the agency app, or, really the officer web app. So I don't know what I would put them on anyway,
+
+Unknown Speaker  7:11  
+I do plan here rather soon, like I said, I'm going to be redoing the map on the agency app, the one that shows up on the job, detail view for the LOC to add the location stuff to it. And then I am also going to be putting that same person on the map that you have in scheduler, because right now you in dev, you can open it, you can put in an address, or click and drop a marker, but when you go back to that map, it doesn't show anything, and that's not okay. So I wanted to make sure we were okay with the functionality that it is providing before I went forward.
+
+Unknown Speaker  7:57  
+I'm not hearing any big complaints, except it's not pulling in when you put in an intersection, it's not pulling in the street address. It is pulling in the coordinates, which is what we really need. I
+
+Unknown Speaker  8:11  
+tried it yesterday, and it actually because I did what, like 59th and olive I think I did, and it, it did pin
+
+Unknown Speaker  8:20  
+better than I did before, so I don't know. I thought maybe you had fixed, fixed it, honestly. But did it pull in the street address and put it onto the job location record? Yeah, I think I've
+
+Unknown Speaker  8:32  
+logged in. That was a change I made yesterday, okay, or maybe Friday. It's all running together,
+
+Unknown Speaker  8:41  
+but that's not actually Google returning that Google's earn a street necessarily. It does return a full formatted address which has the intersection as part of it, but I have to parse it and just hope that they all come in formatted exactly the same, or I'll run into trouble. So that is a for now fix, and we'll see if that breaks.
+
+Unknown Speaker  9:10  
+But again, I can't stress enough, the important part is, we're getting coordinates from from that, and that's what we really are going to be using. So for all the mapping stuff, not the not the, you know, address as a human would read
+
+Unknown Speaker  9:26  
+it. So, yes, if we're okay with that, I'm still trying to find time for this person, but I will get them on
+
+Unknown Speaker  9:37  
+the rest of the functionality of that map in in scheduler
+
+Unknown Speaker  9:43  
+that should be coming soon, next week or two. When I say soon, that's what I mean.
+
+Unknown Speaker  9:49  
+Okay,
+
+Unknown Speaker  9:51  
+alrighty.
+
+Unknown Speaker  9:53  
+I think that's all I've got,
+
+Unknown Speaker  9:56  
+all right, Ash balls in your court now. Okay?
+
+Unknown Speaker  10:00  
+I'm just curious. So for Well, yes, I'll get there later.
+
+Unknown Speaker  10:05  
+Where? So when Jake that the native app that that we can see the information. Where is that information being stored? Where is it pulling from? Because it's not Dev, but that is Dev, the dev version that sits on, yeah, yeah, the dev version, which is on 10 seven les. So, like, when I log into
+
+Unknown Speaker  10:27  
+the old FileMaker, theoretically, like jobs I put in there should be on the native app.
+
+Unknown Speaker  10:34  
+Theoretically, depending on, you know, the setup, as long as it's something that should show up for you, it should theoretically show up, yes. Oh, but I'm not, technically me, right? I'm whoever,
+
+Unknown Speaker  10:48  
+um, I don't know who are you signing in as are you signing your phone number? Yes, I am. But hold on, when I go to like account, it's this Jordan, Jordan Reynolds or something.
+
+Unknown Speaker  11:01  
+Oh, yeah, it says that for everybody, right? So that's so this is for i me then, because, how am I seeing?
+
+Unknown Speaker  11:12  
+Hold on, let me look.
+
+Unknown Speaker  11:15  
+Okay, completely I can. I can ask Jake on that maybe you're seeing mine, because when I sign in, I see mine, but I know when Jake signs in, Jake sees mine also. So it just made me everybody's seeing me, yeah? Because when I, like, put in a job the other day, and I didn't see it on the native I saw it on the dev one, obviously, but so I was like, maybe it's being pulled from somewhere else, but he's working out of Dev.
+
+Unknown Speaker  11:43  
+Yes, that's, that's what these jobs are. But I
+
+Unknown Speaker  11:47  
+maybe everybody is me that that, because I know when Jake signs in for testing, it's showing stuff for me, and when I show in, sign in, it's showing stuff for me. When Steve signs in, it's showing stuff for me. So he may just have it hard coded to everybody as me for now,
+
+Unknown Speaker  12:03  
+if you're seeing, when you open up the jobs list, if you're seeing 4044,
+
+Unknown Speaker  12:10  
+West, yeah, Canyon
+
+Unknown Speaker  12:13  
+one and then one Cardinals drive for faking LLC, yeah, you're you're probably signed in as me. So if you want to see a job show up there, make it for Maricopa County.
+
+Unknown Speaker  12:28  
+Okay,
+
+Unknown Speaker  12:32  
+so then, I guess I don't need to, if that is true, then I don't need to say this. But I just wanted before, like IACP, I want to make sure that, you know, basically, like this week, the week of, and then maybe two weeks after, you know, haven't had enough jobs in there for the native app. But if it's Dev, I can put them in myself. So yes, it is Dev, you could put them in yourself. And yeah, and I just, I would say, we will preface, and I hope you guys preface when you're talking to these potential clients that you know, this is not live, this is not finished, right? So we're working as fast as we can to get it there, but it's not we're you're seeing a very early look at it.
+
+Unknown Speaker  13:22  
+So,
+
+Unknown Speaker  13:24  
+so yeah, that's, that's what it is. You're, you're more, you're more, showing off the general look of it. And then, of course, the agency app, which was what I was told, was going to be the star of the show, anyway. Oh,
+
+Unknown Speaker  13:44  
+um as Do you think that, like the that landing page, the login, the esthetics we had sent over, the hex code and
+
+Unknown Speaker  13:52  
+colors and font size and everything like that? Do you think that'll be done before the ICP?
+
+Unknown Speaker  14:00  
+Or, no doubt it,
+
+Unknown Speaker  14:03  
+after at some point are we going to be able to get access to, like, if we wanted to make updates, some changes to the appearance,
+
+Unknown Speaker  14:14  
+not saying tomorrow, but like no, is probably never,
+
+Unknown Speaker  14:20  
+not as long as you guys want the cheaper hosting option, which is hosting on our account,
+
+Unknown Speaker  14:30  
+which means that's we would have to give you our credentials to get in there, and you would be able to change in any of the apps that we've sold to any of our clients. The if you would like to be able to get in yourself, then
+
+Unknown Speaker  14:45  
+you guys, we would have to migrate this to your own better FM, better forms account, which does cost a little more than double,
+
+Unknown Speaker  14:56  
+gotcha.
+
+Unknown Speaker  14:58  
+And you'd have to know.
+
+Unknown Speaker  15:00  
+FM, better forms, JavaScript,
+
+Unknown Speaker  15:03  
+HTML, MySQL and PHP stacks.
+
+Unknown Speaker  15:14  
+So yes, we can, but not while it's on ours. We have to do it as long as it's on our host, our candidates and Brian, there's no way that we can maybe, because Bonnie's wanting to really push that change before IACP and I know it's another thing to add to your guys's list, but is there any way we can possibly get that done, at least just the esthetics of it, as close as we could to that example we sent you, because I know that's something that's important to her, from her, and she wants to display it to make it a little more modernized in her eyes, and that's the reason why she even suggested it. Honestly, do we want to?
+
+Unknown Speaker  15:50  
+Do we want to argue on if that's modernized or not? No, no, we don't. We're not. No, right, exactly. We're just gonna, we're just gonna give the boss,
+
+Unknown Speaker  16:01  
+um, let me look. I don't remember. I remember getting the like example and asking for, you know, actual font, name and
+
+Unknown Speaker  16:15  
+and hex for all the colors and such. And I don't remember receiving that. But let me Yeah, because we shot you over the hex codes for the colors and font wise, I mean,
+
+Unknown Speaker  16:27  
+that would have to be something that would we can get close to, or, honestly, at least something
+
+Unknown Speaker  16:35  
+somewhat similar to. It doesn't have to be exactly the same. Because that font, I couldn't find it. And I was trying to find that text file on it, but I couldn't find it.
+
+Unknown Speaker  16:44  
+Yeah, if it's it doesn't look like a standard font, a web ready font, which kind of means you you'd have trouble anyway. Basically, they would need it installed on their computer to see it anyway, if it's not right, if it's not a web compatible for it, Wow,
+
+Unknown Speaker  17:05  
+interesting. But I know it's something that's a priority for her, from her perspective, the the
+
+Unknown Speaker  17:11  
+look. I mean, I don't, I guess we don't expect it to look exactly the same, at least for right now. But something somewhat similar,
+
+Unknown Speaker  17:18  
+because I know that's one of the pieces that's pretty important to
+
+Unknown Speaker  17:25  
+her. Okay, I'm seeing the
+
+Unknown Speaker  17:29  
+screenshot, the visual,
+
+Unknown Speaker  17:31  
+if it doesn't have to be this second, but if you could
+
+Unknown Speaker  17:36  
+either resend or find, like, what date you emailed that to me? Yeah, let me see if I can track it down for you. We sent it out, I think that next day, or something like that, but I'll let me check in my emails and
+
+Unknown Speaker  17:50  
+see if I can't find it for you. Yeah, like I said, I see the agency visual concept,
+
+Unknown Speaker  17:58  
+but here there's no attachments or anything to it. Yeah, found it right here. I sent it to you and Jake right now. I'll just forward it over to you directly. What
+
+Unknown Speaker  18:10  
+was the date do you do? September 25,
+
+Unknown Speaker  18:15  
+1105.
+
+Unknown Speaker  18:18  
+I'm looking at stuff from Ashley. I won't find it if it came from you, that's true. Ashley is Ashley likes to send you. That's true. I'm sorry.
+
+Unknown Speaker  18:28  
+Okay, here we go, blues,
+
+Unknown Speaker  18:31  
+gray to white,
+
+Unknown Speaker  18:34  
+gray to black,
+
+Unknown Speaker  18:39  
+and you've attached all the graphic.
+
+Unknown Speaker  18:43  
+Yeah,
+
+Unknown Speaker  18:47  
+I'll bump that
+
+Unknown Speaker  18:49  
+up a little bit and see, see what I can do.
+
+Unknown Speaker  18:53  
+Yeah, I we appreciate that, Brian, about getting that pushed up in the priority list. The other thing, though, I'm pretty sure I mentioned it last time, but I'll go ahead and mention it again. There's not much I can do, as far as I see in the example you sent me, it had like, a specific logo from a specific agency your favorite
+
+Unknown Speaker  19:21  
+person, right? Right, yeah. So I don't know. And you know, it says hello city of
+
+Unknown Speaker  19:28  
+right now it's, it's one link. So basically, we don't know who they are until they sign in, right? Yeah. And we, we take that into account. And I think that's not the,
+
+Unknown Speaker  19:39  
+I guess, the most pertinent issue of all of them, I think it's just a matter of just the background, adding a huge BDE logo to it, things like that.
+
+Unknown Speaker  19:49  
+So
+
+Unknown Speaker  19:51  
+is
+
+Unknown Speaker  19:52  
+the wording we already have okay for that login page. I think so.
+
+Unknown Speaker  20:00  
+Yeah, I think that's fine itself. I think it's more just the actual esthetic, okay, background esthetic
+
+Unknown Speaker  20:08  
+and the
+
+Unknown Speaker  20:12  
+where Hold on, let me just go and see
+
+Unknown Speaker  20:18  
+dispatch. It's gonna say you already know, okay, yeah, we have Welcome to Blue dispatch agency portal. Please enter your credentials to log in. So we're saying that's fine.
+
+Unknown Speaker  20:30  
+We've got forget password right above the login.
+
+Unknown Speaker  20:36  
+I see it. You have it below. I mean, I guess we can the Terms of Use and service agreement. I don't believe we have
+
+Unknown Speaker  20:45  
+web pages
+
+Unknown Speaker  20:48  
+somewhere. Do we
+
+Unknown Speaker  20:50  
+have, you know, we don't have to add that in there. Honestly, Brian, at least those two sections as well. I think for the most part, it's just the login itself and the overall esthetic. But I think the little nuances we don't really have to worry about right now, especially with it being so close to the conference itself, that that kind of stuff we can kind of brush over for now. So the blue dispatch, the vertical there on the left side, and the lightning bolt BD in the background, with that to gray, type of gradient. I'll
+
+Unknown Speaker  21:27  
+look about that
+
+Unknown Speaker  21:29  
+because I see, like shadowing, and there's kind of a three dimensional on the login box that's kind of pushing it forward.
+
+Unknown Speaker  21:37  
+I'll see. I'm sure we can do that. I don't, I don't know, 100% but I'll talk to the guys and see, okay, at least as close as we can get it, honestly, even if it's not 100% the same, or at least as close as we can get that look to it. That's the That's the important thing. Okay, so we're going to leave the verbiage that we have above the login stuff,
+
+Unknown Speaker  22:05  
+the blue dispatch, the BD logo that we have already, is that okay to put in place of the shield that's there on your
+
+Unknown Speaker  22:19  
+Yeah, I think it's fine. You're talking about the shield of that department, correct, correct, yeah, I think that'd be fine. That shouldn't be a problem, all right. And then we don't have the little I so you can view your password as you type it, right? A huge security No, no, and I bet you ginger SEC wouldn't let you do that, even if you wanted
+
+Unknown Speaker  22:40  
+to. So that won't be there. Okay, that okay, all right, yeah, that's fine, okay, all right, I'll, I'll get someone on that and see, see what we can push. Awesome. We appreciate it.
+
+Unknown Speaker  23:00  
+I was,
+
+Unknown Speaker  23:04  
+we already talked about that.
+
+Unknown Speaker  23:10  
+Okay, so this isn't something that we need tomorrow, but it's something that we talked about a long time ago, but it's probably the biggest like,
+
+Unknown Speaker  23:20  
+I don't know if suggestions the right word or a complaint is also not the right word, but it's
+
+Unknown Speaker  23:27  
+Ahmed feedback. Yes. So the logic behind like so someone is scheduled from eight to six, eight to 1600 being able to see jobs that are, you know, 1600 to what
+
+Unknown Speaker  23:43  
+would it be like? 2359 or however it works, is that I know that it's not an easy thing. Obviously it's complicated, but I'm just wondering if that's something that we can rethink about. I know
+
+Unknown Speaker  23:58  
+it was kind of a wish list thing, and it still is, but it's definitely something that we hear about all the time. You know people that work day jobs, that are also looking for a night vice versa. Is that
+
+Unknown Speaker  24:11  
+something we can think about,
+
+Unknown Speaker  24:14  
+it's something we can think about by. It is
+
+Unknown Speaker  24:18  
+fairly complex, and I,
+
+Unknown Speaker  24:23  
+I think, number one, it's not worth going through the trouble for the officer, current officer web app that we play, oh, yeah, seen as soon as possible. No. And number two, if we do want to make that
+
+Unknown Speaker  24:38  
+a
+
+Unknown Speaker  24:39  
+priority for the initial release of the native app. You're going to push the release of the native app.
+
+Unknown Speaker  24:46  
+I mean, you know, it ain't going to be months, but it could very possibly be at least week or two
+
+Unknown Speaker  24:55  
+to work through that, considering your you.
+
+Unknown Speaker  25:00  
+You know, nobody can put 40 hours into one problem right now, right? Okay, but it's, it's, it's not a hard no or or anything. It's not a hard No. It's, you know, dude, do you really, really want it and do you really, really want it before it
+
+Unknown Speaker  25:17  
+is absolutely something, you know, we have a whole, we have a whole big list of stuff that we'd like to do after we go live. You know, there's things features we want to add or change some once we're live. But so far, the answer from you guys has been, no, we don't want to push go live for this feature, for this you know, as talked about them. So
+
+Unknown Speaker  25:41  
+I think this particular item would be on that list, you know, yeah, okay, can we do it absolutely? Do you want to push the release of the native app to get to it first? That's up to you guys.
+
+Unknown Speaker  25:55  
+I wouldn't suggest it. No, I don't necessarily think it needs to be in the initial release, but I definitely know that these suggestions or feedback is not going to stop until it's there.
+
+Unknown Speaker  26:07  
+That's that's good that
+
+Unknown Speaker  26:11  
+I believe we've briefly discussed it before. There's, yes, there's definitely something to be said about
+
+Unknown Speaker  26:18  
+putting out an app and then adding features later. Instead of adding them at the beginning, it really, you know, your your customers see that you're not, you didn't put out something and then abandon it, right?
+
+Unknown Speaker  26:35  
+Okay, yeah, no, they're still adding features. They're, you know, they're paying attention to our feedback, that kind of stuff that's good. Has Jake mentioned? The only thing I've seen really on the app that's not there, that that I that needs to be there, is the contact person. Even when you take the job, it's still not on any anywhere. Yeah, he's working. That's what he was working on when I tore him away and shot him over to locations. Is the job detail. Once you've taken the job, you see more details.
+
+Unknown Speaker  27:13  
+Okay, that was the screen and the stuff he was working on when I said, stop. I need you to look on work on location stuff. So
+
+Unknown Speaker  27:21  
+it's on it. See, Jasmine just emailed us.
+
+Unknown Speaker  27:34  
+Have a minute for a call?
+
+Unknown Speaker  27:38  
+I mean, I can make mine short, if, if if, if you want. I don't. I definitely don't want to postpone you being able to make changes. Or, sorry, nope, I was reading changes, but for you to be testing and, you know, postpone it too much. But that's,
+
+Unknown Speaker  27:54  
+that's, that's not our problem. I say we finish our meeting, and I'll, I'll message her, and hopefully I'll have a few minutes to talk to her. Okay?
+
+Unknown Speaker  28:06  
+My next thing was, how's the testing guys? But now I know
+
+Unknown Speaker  28:11  
+it's not, it's not going right. I haven't been able to connect to that system for over a week.
+
+Unknown Speaker  28:21  
+So you guys are, well, it was going to be you guys testing Monday and Tuesday, and then I was curious. So after you guys do your initial testing, and then you point it towards the production server, that's when I'm testing Correct. Or actually, you would probably test with us. Okay, that's what I wasn't. How do I well, when that happens,
+
+Unknown Speaker  28:42  
+how do I connect to that? What is that?
+
+Unknown Speaker  28:45  
+That just, I don't say, I'm not sure. Okay, no, it's normally, I would just give you the IP address
+
+Unknown Speaker  28:53  
+and you would add it for file maker. But with all the extra security they're putting on and what we're going to have to go through to log in, I'm not sure if you're going to be able to until we make it prod.
+
+Unknown Speaker  29:05  
+I don't know we this is what we have to test.
+
+Unknown Speaker  29:10  
+Make, okay, perfect. So you'll keep me updated. Just let me know, whatever you need I can do.
+
+Unknown Speaker  29:15  
+Just great. Just let me know, yeah, there's, I mean, there's not much testing that you need to do, because there's not going to be changes to the system. It's just everything's going to be pointed to a different server. So I just need to make sure everything can connect all the web apps, the native app, file maker, you know, I need to make sure everything can connect to that server properly,
+
+Unknown Speaker  29:40  
+and
+
+Unknown Speaker  29:41  
+really only one person needs to test that it's a work or it's not, it's not going to PA,
+
+Unknown Speaker  29:47  
+yeah, there's not a lot of leeway or gray area here. It's going to work or it's not
+
+Unknown Speaker  29:53  
+okay.
+
+Unknown Speaker  29:56  
+Oh, scheduler, this one.
+
+Unknown Speaker  30:00  
+And this is a weird, weird thing. Okay, so, you know, I had you faked up.
+
+Unknown Speaker  30:12  
+Share my screen.
+
+Unknown Speaker  30:21  
+Couldn't work.
+
+Unknown Speaker  30:30  
+Okay? So
+
+Unknown Speaker  30:33  
+when
+
+Unknown Speaker  30:35  
+we make changes, we put in a job, but we want to make changes and do the
+
+Unknown Speaker  30:45  
+Okay, like, let's say I wanted, I wonder if I should just do it. Maybe Jennings
+
+Unknown Speaker  30:54  
+trying to think so. It's basically the hold one. Let me see if it'll do it. Hold on.
+
+Unknown Speaker  31:01  
+Usually, it happens the other way, where we're creating a job, and we put it on hold,
+
+Unknown Speaker  31:07  
+and then
+
+Unknown Speaker  31:14  
+she goes back in and tries to unfold it.
+
+Unknown Speaker  31:18  
+Let's see if it works. If it does it this way?
+
+Unknown Speaker  31:22  
+Yeah, okay, did it so, okay, I'll wait.
+
+Unknown Speaker  31:27  
+You done. Okay, so you see here, it like half unfolds it so it looks right, so it's on hold, it looks like it right, yeah,
+
+Unknown Speaker  31:40  
+sorry, but it also doesn't look like it. And then when you open it up, it doesn't look like it's clicked however, you can't see it on the app. And when I click it, yeah, that's that's just refreshing your your dashboard screen. Um, it's stepping out. Sneak
+
+Unknown Speaker  32:03  
+if you just hit apply filters at the top,
+
+Unknown Speaker  32:09  
+because it wasn't
+
+Unknown Speaker  32:14  
+refreshing, that's
+
+Unknown Speaker  32:46  
+it,
+
+Unknown Speaker  32:48  
+yeah, like I said, Go, click, apply filters. Yeah,
+
+Unknown Speaker  32:59  
+it's not, it's not coming off. And when you open it, it looks like it's not on hold. It's definitely not on
+
+Unknown Speaker  33:06  
+when I put it on hold, like, for real,
+
+Unknown Speaker  33:11  
+like, it did it on, like, I have to, like, just turn gray. It just took it off hold. Well, I pressed this though
+
+Unknown Speaker  33:19  
+it's almost, it's like, it's like, it's half,
+
+Unknown Speaker  33:23  
+half, doing it maybe from here. I don't know what the right term is,
+
+Unknown Speaker  33:29  
+but it's the refreshing and the re running of that calc on that yeah dashboard, because it has to run so many conditional for all the coloring going on.
+
+Unknown Speaker  33:43  
+Yeah, but it's not, but it's you still can't see it on the app, though, when it's half like that, when this isn't clicked, but you can see, this is orange, this is gray. You can't see this job on on the app.
+
+Unknown Speaker  33:59  
+It's acting like it's on hold.
+
+Unknown Speaker  34:06  
+That's probably cashing too, because it does cash on the app,
+
+Unknown Speaker  34:13  
+I don't know. And then as soon as I go in and like, manually
+
+Unknown Speaker  34:17  
+do it this way, you know, like, put on hold, take it off old, then it shows up.
+
+Unknown Speaker  34:24  
+I can look into it, but I have a feeling this is just a some changes may take,
+
+Unknown Speaker  34:32  
+you know, a refresh, or at least some time to push through the system, you know, out to the apps and all that kind of stuff.
+
+Unknown Speaker  34:41  
+Because So Christine put one in for a full week. Yesterday is when we started noticing it happening. And it wasn't, I mean, it, it went almost half the day before we were like, Why aren't these filling? And that's when we found out that it was like,
+
+Unknown Speaker  34:57  
+quote, unquote, unfold. But not, not really.
+
+Unknown Speaker  35:00  
+I think it shouldn't have been kind of thing. So I and we had, I, you know, I constantly going in and out between
+
+Unknown Speaker  35:09  
+my scheduler, so it, you think it would have refreshed when I logged completely out and back in.
+
+Unknown Speaker  35:15  
+Yeah, I mean, I can, I can look, I don't know.
+
+Unknown Speaker  35:19  
+All I can do is look, see what I can figure out.
+
+Unknown Speaker  35:34  
+Mod bobs. So this next one, I don't know what it is, because, like for most of them
+
+Unknown Speaker  35:43  
+in here, this is creating. There was one job in particular. It was a Tallis McClintock and Elliot, and we were trying to figure out,
+
+Unknown Speaker  35:54  
+I don't know, something like, who wanted, who made changes or something, and nothing was captured in the mod log inside here. Do you know why some wouldn't be
+
+Unknown Speaker  36:06  
+I can show you you're looking at the reoccurring logs. So it would only be changes that happened there,
+
+Unknown Speaker  36:18  
+so any changes that happened at the job assignment level would not be shown on that log. I couldn't find the change we're looking for anywhere, and I checked anywhere. I just thought it was interesting that like that one in particular, it was like completely done. I
+
+Unknown Speaker  36:55  
+it
+
+Unknown Speaker  36:57  
+was this one, but so at first I thought that feature just wasn't working. But then I started looking at other ones, and they were there. So I was just curious.
+
+Unknown Speaker  37:08  
+Like, I don't know, interesting, because even Okay, so let's say, like, even if no changes were made by hitting submit, something should have been something should have been in here. I agree so, and I just don't, I can't pinpoint why. And of course, this was the one that we needed something about. And I couldn't answer anyone because I couldn't explain why. There were no odd loss
+
+Unknown Speaker  37:37  
+one second. Don't click anywhere. Well, i
+
+Unknown Speaker  37:41  
+i
+
+Unknown Speaker  37:52  
+Yeah. All right, now you can go on about your clicking this. I just
+
+Unknown Speaker  37:58  
+wanted to take a screenshot so I can know exactly what, which one we're talking about, since it's only this job, apparently, yeah, I don't know. Just, just strange. I don't know.
+
+Unknown Speaker  38:19  
+Okay,
+
+Unknown Speaker  38:21  
+oh, I was curious if we were anywhere on the notifications, the weird ones from last week, if I should keep testing, or if you got any any more fun
+
+Unknown Speaker  38:35  
+explanations. No,
+
+Unknown Speaker  38:38  
+okay,
+
+Unknown Speaker  38:39  
+um,
+
+Unknown Speaker  38:42  
+oh,
+
+Unknown Speaker  38:44  
+the next one, I feel like we've talked about before, and maybe I'm we're missing a step or not doing something right. But it's the jobs worked.
+
+Unknown Speaker  38:55  
+Officer, jobs worked. It
+
+Unknown Speaker  39:08  
+scared. She did Apache Junction.
+
+Unknown Speaker  39:13  
+How do we get she wanted to just email. It
+
+Unknown Speaker  39:17  
+was that
+
+Unknown Speaker  39:19  
+there a special way to make higher report, yeah,
+
+Unknown Speaker  39:24  
+click Share report right.
+
+Unknown Speaker  39:28  
+Email is one of the options there on the right, right, and that's what we clicked. But
+
+Unknown Speaker  39:34  
+now what? Oh, it
+
+Unknown Speaker  39:36  
+didn't do anything. Okay, good, yeah, because I was like, maybe there's something and a different way to do it. So, I mean, she did a roundabout way where she, like, saved it, I think, as a PDF, and then emailed it. But yeah, this isn't like, this is as far as we got
+
+Unknown Speaker  39:53  
+for that that might
+
+Unknown Speaker  39:56  
+be a problem that I.
+
+Unknown Speaker  40:00  
+Not easily fix without doing some crazy stuff. I I'll look into it. But we have had we've had many problems in the past. File maker does not like working with Outlook,
+
+Unknown Speaker  40:16  
+and it really just flat out will not work if
+
+Unknown Speaker  40:22  
+your email is
+
+Unknown Speaker  40:26  
+you only get to it using a browser like Gmail, or you go to Outlook on your browser, and you don't have the Outlook app on your computer, we have the icon, Joe, do you know if it's considered a browser that we're looking at, it feels like not that. I don't,
+
+Unknown Speaker  40:44  
+I don't know. I think maybe it
+
+Unknown Speaker  40:48  
+might be part of your Microsoft Office package.
+
+Unknown Speaker  40:54  
+Outlook would be, I see it, I think I see it on the bottom. Is that it? Or is that one? Yeah, this one? Yeah. So that, no, this is my outlook. Yeah. So, yeah, it's still, it's had a lot of problems working with Outlook in the past. I
+
+Unknown Speaker  41:10  
+I'll look at it, but it may be that. So basically, if it works for Joe and it works for me because we're on Macs and it doesn't work for Windows people, that we know that's the problem,
+
+Unknown Speaker  41:23  
+and the real way to get around that is to not send through your client, meaning we can send over SMTP, like we do all the notification stuff, but that means when you send that report, it wouldn't come from you, or it wouldn't come from Lori or whoever's doing it, it would come from, I don't know, no reply at Les, or info at Les, you know, something like that. Yeah.
+
+Unknown Speaker  41:48  
+The way we get it to come from whoever's using it is use your client, your email client
+
+Unknown Speaker  41:57  
+there. There is fixes to make it work with Outlook the app. The problem is they are,
+
+Unknown Speaker  42:07  
+they are registry changes and plugin pieces,
+
+Unknown Speaker  42:14  
+and every time Microsoft does an update to their OS, it seems to break that, and you have to reconfigure it. Okay, no worries. I mean, we can the PDF, I believe ended up working because it's a workaround.
+
+Unknown Speaker  42:31  
+Don't worry about it. I just mainly wanted to make sure that this wasn't something that I was just we were skipping a step, or like I was just sitting there waiting for something else to happen, like I couldn't even scroll through to pages two or three like that. Just was no unless your outlook and you see that there's an email message sitting there, you know, ready to be sent that has a PDF attached to it. Nope, agenda.
+
+Unknown Speaker  42:57  
+So
+
+Unknown Speaker  42:59  
+I said I can look but again, if it does work for me and it does work for Joe, then it's this long standing problem with Outlook. Okay, no worries.
+
+Unknown Speaker  43:13  
+Sounds good,
+
+Unknown Speaker  43:16  
+oldie, but a goodie, but I do keep getting reminded about this one
+
+Unknown Speaker  43:22  
+the so sorry, but the curse, oh, okay, hold on one second.
+
+Unknown Speaker  43:29  
+Okay, so the cursor on the on the primaries, not going in there, yes, okay.
+
+Unknown Speaker  43:38  
+And then the traffic thing I talked about last time, but yes, the cursor is apparently very important,
+
+Unknown Speaker  43:47  
+and I have the category coming up as blank when you make a new job in dev or here,
+
+Unknown Speaker  43:57  
+because I tested it earlier in Production and it didn't do it, but I didn't do it in depth from hitting that plus right there at the top, oh yeah, of course, I don't know another way to create a new job that there should
+
+Unknown Speaker  44:11  
+okay, then yes, I only did it in dev, okay,
+
+Unknown Speaker  44:17  
+think I put it up there
+
+Unknown Speaker  44:20  
+in Trello, but maybe I
+
+Unknown Speaker  44:22  
+didn't see it, but yeah, maybe I will skip.
+
+Unknown Speaker  44:30  
+Oh, the last thing is just this curious about the slack communication?
+
+Unknown Speaker  44:38  
+Is that still a possibility? Yes, I talked about how to get you on there and such with co workers, and we can do
+
+Unknown Speaker  44:51  
+it.
+
+Unknown Speaker  44:52  
+The bigger problem is I can't get you as a
+
+Unknown Speaker  44:58  
+guest on to H.
+
+Unknown Speaker  45:00  
+Channel, which means only direct communication, not channel communication is allowed for guests,
+
+Unknown Speaker  45:13  
+which, which makes it harder to get, to get you a channel where we're only talking les stuff. Oh, I get it. It means we can use Slack for any of us to contact you, or for you to contact us, but we can't put you on channels, which is what, what slack calls it, when you basically a subject that multiple people see, the same thing
+
+Unknown Speaker  45:38  
+that is not available for guests.
+
+Unknown Speaker  45:43  
+And I doubt the boss wants to pay for a seat. Yeah, I can look at
+
+Unknown Speaker  45:51  
+it a little more, and I can definitely get it on there so that you can use that to contact me.
+
+Unknown Speaker  46:01  
+If you know, if emails being too slow, I'm not responding fast enough on email, maybe slack gets to me faster.
+
+Unknown Speaker  46:10  
+And as far as getting you in contact with who's working on what that, that changes very fast.
+
+Unknown Speaker  46:19  
+I mean, other than Jake and Steve are pretty much always working on your guys stuff,
+
+Unknown Speaker  46:25  
+but the contractors work with their their flipping clients even faster than I am.
+
+Unknown Speaker  46:34  
+So the only way that would really work is is a channel, you know, so that we can say, Okay, this, whatever is being texted here has to do with Les
+
+Unknown Speaker  46:46  
+otherwise, our conversations are going to fly all over the place. They're not just going to be about you, they're going to be about a bunch of other clients, and we can't have that.
+
+Unknown Speaker  46:59  
+I can try to get you on some of our,
+
+Unknown Speaker  47:05  
+some of the phone calls I have with client, with our contractors, if you'd like. Although I find
+
+Unknown Speaker  47:13  
+when I talk to them, it tends to be,
+
+Unknown Speaker  47:18  
+hey, you got a minute right now? Yeah, sure. I'll whip up a zoo like you know, it's not we're going to meet Tuesday at four o'clock. Don't worry. Most of my life is is looked at here. So,
+
+Unknown Speaker  47:31  
+I mean, I'm glad to kind of add you on some of those,
+
+Unknown Speaker  47:34  
+some of those phone calls when we're having those discussions,
+
+Unknown Speaker  47:39  
+most of the fixes, especially as far as scheduler concerned, 99.9 of them are me. So if you'd like to talk to me about any of them, that's kind of what this meeting's about. But if you need more by all means,
+
+Unknown Speaker  47:56  
+you know, call me, email me. I can add you as a guest to slack if you want to quickly, instant message me,
+
+Unknown Speaker  48:06  
+yes, although I am going to have them working on stuff for you soon, like the mapping
+
+Unknown Speaker  48:13  
+and such. But those aren't those aren't fixes. Those are new features.
+
+Unknown Speaker  48:18  
+And if you'd like to be in on those phone calls, I can try my best. But like I said, we usually don't have a lot of notice. And we are
+
+Unknown Speaker  48:28  
+all of the contractors I'm currently using, other than Steve, are on the East Coast.
+
+Unknown Speaker  48:34  
+Okay, so it is very possible that we meet at eight, nine o'clock in the morning our time, which is five or six year time.
+
+Unknown Speaker  48:43  
+Gotcha, we have a decent amount of those, but in general, I can try to add you on, if you'd like you know, at least let you know that one's about to happen and give you a chance if you do happen to be available. Okay, that'd be nice. So
+
+Unknown Speaker  48:58  
+I was just
+
+Unknown Speaker  49:02  
+thinking of and I got it.
+
+Unknown Speaker  49:10  
+Okay. Well, it'll come to be eventually, but I think that's all that I had
+
+Unknown Speaker  49:17  
+for today.
+
+Unknown Speaker  49:21  
+Alrighty,
+
+Unknown Speaker  49:26  
+see, and this is exactly what I'm talking about. I've got one of the contractors messaging me. Hey, do you got a minute to talk about a different client right now?
+
+Unknown Speaker  49:38  
+Kind of how this stuff goes? And no, because I'm gonna get off with you guys and see if Jasmine loves to chat.
+
+Unknown Speaker  49:45  
+All right, well,
+
+Unknown Speaker  49:48  
+yeah, wonderful to chat with you folks.
+
+Unknown Speaker  49:53  
+Yeah, let me know if you have any extra feedback. Thought I've got my notes to push forward. I'm going to try to.
+
+Unknown Speaker  50:00  
+Push priority
+
+Unknown Speaker  50:02  
+for the RE skinning of the login page.
+
+Unknown Speaker  50:07  
+That's definitely one I can try to to get you in on that conversation. Ashley,
+
+Unknown Speaker  50:16  
+I don't know when it's going to happen, but I know who I want to use. I'm waiting for them to finish up a feature for a different client before I hand them this.
+
+Unknown Speaker  50:27  
+I was going to be handing them the
+
+Unknown Speaker  50:29  
+something different for a different client, but I can hand them this.
+
+Unknown Speaker  50:35  
+They are the top they are our top FM, better form stuff people,
+
+Unknown Speaker  50:41  
+in fact, one of them is,
+
+Unknown Speaker  50:44  
+or was their
+
+Unknown Speaker  50:46  
+head engineer at FM better forms, but he quit,
+
+Unknown Speaker  50:52  
+so he works with us now, nice, and he definitely knows his way around better forms, because He built most of it.
+
+Unknown Speaker  51:00  
+Wow, that's pretty cool. So yeah, we were lucky on that one.
+
+Unknown Speaker  51:06  
+It took us a while to get them because they live in Toronto, and it turns out hiring someone in a different country on 1099 work is a logistical pain in the butt
+
+Unknown Speaker  51:19  
+that luckily, our accounting staff had to deal with not me,
+
+Unknown Speaker  51:26  
+someone in another country.
+
+Unknown Speaker  51:30  
+So alrighty, yeah, I'll, I'll let you know, Ashley, and we'll be moving forward with everything as as usual. I
+
+Unknown Speaker  51:41  
+cool,
+
+Unknown Speaker  51:43  
+and if you like, I can send over or I will respond to that thread after I talk to Jasmine, if there's any insights from our discussion, unless you really want to be on that meeting that we're maybe about to have.
+
+Unknown Speaker  52:00  
+I mean, I don't, I don't care. I just hope you are able to get in.
+
+Unknown Speaker  52:05  
+Yeah? I just, I need to be able to get in, or we can't do squat, yeah.
+
+Unknown Speaker  52:10  
+But I'm more than happy to ask her to
+
+Unknown Speaker  52:14  
+to include you, or I don't know you're on that thread anyway. So when she sends me the link to the zoom or whatever we're going to use, you'll be able to see it anyway, and you can just jump on if you want. Okay, sounds good? Alrighty, alright. Well, everybody enjoy your day and we will talk soon. We got a lot of balls in the air, so I wouldn't be surprised if we didn't talk before next Tuesday.
+
+Unknown Speaker  52:38  
+Alrighty, Brian, we appreciate it like always. All right, you guys have a good one. Bye, bye.
+
+Transcribed by https://otter.ai

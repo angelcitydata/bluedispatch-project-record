@@ -1,0 +1,520 @@
+Speaker 1  0:03  
+Thank you. I see just a phone number on there. It's me.
+
+Speaker 2  0:07  
+Oh, can you hear me? Okay? It's me. I'm driving until I get back to my desk. I was at a working lunch, so until I get back to my desk, I need to listen in. Now, if that's okay. No, no, no problems.
+
+Speaker 3  0:19  
+Thank you. Yeah, I don't think Becca or Bonnie will be joining us. They might, but at least for now, I think this is everybody. I think we got a we got the full House,
+
+Speaker 1  0:31  
+alrighty, sounds great. So, yep, today is Friday, so it is update day, and we do have, we do have some update on today, some things to show. I know I've been working on a couple things. Jake's been working on a couple things. And we, and we were working on a couple things together the other day. So Jake, do you want to show off on the agency app side?
+
+Unknown Speaker  1:10  
+Sorry, yeah, muted, yeah. Totally.
+
+Unknown Speaker  1:18  
+Okay. So Brian
+
+Speaker 4  1:27  
+and I got reports up and running officially. So now when we come into the reports area and we want to identify an officer who might be over their limit, we can do one of these things that now will queue up in FileMaker a report request, and then that report request will get delivered to me or whoever is Really logged in via email, and that works. All these reports are dynamics. So if I want a full jobs report for one or more officers, I can do that. Or if I want to see all my unstaffed jobs for June, for example, that's easy for me to do, and it will show up after some time in in my, you know my email, so
+
+Speaker 1  2:30  
+yeah, the currently that that script is running through the queue every 15 minutes, so it'll look for any requests.
+
+Speaker 4  2:40  
+Oh, shoot, hold on. I wasn't even sharing my screen. I see it. You were you? Do you see this? Yeah, we see it. I'm sorry. I thought I wasn't. Yeah, so now basically, let me see if I have les.
+
+Unknown Speaker  3:01  
+Les is the no
+
+Unknown Speaker  3:03  
+reply, les az.com,
+
+Speaker 4  3:06  
+yeah, this. This is what I ran the other day. But here's, here's the CSV just or I guess it's an Excel document, but this is what it kind of looks like when you get that email. I should be receiving one sometime, and then very near future. I'm not exactly sure how long it'll take, but those are the three reports we have right now that also works from here. So if I go to jobs and I, let's just say I'm looking at six right now, and for some reason, I want to job report on those six, I can click this button and that's going to go and do exactly the same thing. So I'm going to get a bunch of emails with job reports here in a second. The other place I can do it is right from the officer. I can basically isolate. Let's see. Let's go like May to June, and I can run that report, and you'll see a success message telling the user that we've gone ahead and grabbed those 19, or whatever it is, and and it's going to deliver a report to my email.
+
+Unknown Speaker  4:19  
+So those are, like, the major updates, right? Brian,
+
+Unknown Speaker  4:22  
+that is the major ones.
+
+Speaker 1  4:25  
+We have a couple questions on those, or at least I do, if I can get you guys to test them. Right now, I'm still actually in the middle of testing the job report on the report screen
+
+Unknown Speaker  4:41  
+to get that completely wrapped up,
+
+Speaker 1  4:45  
+but we'd like you to test them. Any feedback, you know, make sure all the columns that you get are the ones you want. You know, you don't need any more information on those reports, I kind of guessed on what you. I wanted, what information you do want on those reports. So if you need more, please let me know. Also, if the naming of the file you know, you'd like something a little different, happy to do. And then finally, we need, I need a couple email templates. So I think right now it just says, you know, like, here's a report you asked for, or something, you know, very, very simple, but what the email that the report is attached to says, I'd like for you guys to come up with what that's going to say, what the, what the email itself in the body would say. And same with if they request, you know, the the they request, a date range, they're requesting an officer and such, if it sends and then, when the system intends to run the report, it doesn't find any jobs. It doesn't find any records that, you know, work with that, especially for like the officer over, you know, over time, they very well may find that the officer picked or no officers within that date range, you know, have gone over. So what do we want to do in that instance? The website is going to just say, you know, hey, the report has been requested, if it finds nothing to match their request, I'm assuming we'd want to send an email anyway, with nothing attached to it that says, you know, we didn't find anything. But again, I'd like a template of kind of what you'd like that to say when, when nothing is found to match the criteria they're requesting for their report. Does that make sense?
+
+Speaker 3  6:44  
+Yeah, absolutely. We can put our minds together and put those couple of templates together for you.
+
+Speaker 1  6:49  
+Brian, that'd be great, yeah, because we want to make sure they get something. Because, you know, even if they don't find any records to report on, they need something, or they're going to think it just didn't work and try right again. And that's that's never good. So we need to get them something if nothing is found. And Jake, if you want to show again your your screen. We did. We also did. I don't know everything you did, but I know we also did some of the making sure that they can't release jobs if it's, yeah, yeah. There's a lot of billable and that kind of little stuff. Yeah.
+
+Speaker 4  7:29  
+There's some stuff that's kind of hard to demo just
+
+Speaker 1  7:33  
+because it's type of job, yeah,
+
+Speaker 4  7:35  
+but like, for example, so this job right here, I'm I'm not able to release it. There is an officer on there. So if I go to you, notice I'm not able to take the officer off. See the the red here, I am allowed, however, to switch the officer, so I can save that, and that's gonna pop in here in a second, depending. Yeah, there it is. So I can't take Brian off, but I can switch him, so I'll switch it back to me save it. This is Ashley. I think you were having some trouble with this earlier. What I also am able to do is request to remove the officer. You can see that button right here. I don't exactly remember the parameters for when that button shows up, but it doesn't show up all the time. Brian, do you remember?
+
+Speaker 1  8:39  
+Well, if there is no officer on it, that button doesn't show up.
+
+Speaker 4  8:42  
+Yeah, that's true. So if there is no officer, obviously it's not. And I think it's something about billable too. There's, there's, there's some rules in there, yes.
+
+Speaker 1  8:51  
+Also for non billable jobs, you know, their internal jobs, they can remove an officer, not just change the officer. They and they don't need that button because they can just remove them.
+
+Speaker 4  9:04  
+Yeah, that's right. Let me see if I can find one that, yeah, oh, there. I requested to remove that. Something went wrong. That's probably my fault here, all right, so let's go here. Yeah, I don't know which one I one of them I was able to remove. I don't remember the logic like which one it was, but Brian gave me a whole logic tree for which ones you should be allowed to remove officers from, and which ones you should not.
+
+Speaker 1  9:34  
+Yeah, basically you're only allowed to remove them from internal jobs, internal jobs, non billable jobs, and you have to request otherwise. Let's see, trying to see the All right, give me one second here. Doo doo doo doo doo doo now, Jake, the one for you. Two at your address in Tennessee on the 13th is now not billable, so you should be able to just remove yourself off of that one.
+
+Unknown Speaker  10:08  
+Let me refresh the jobs. Yeah,
+
+Unknown Speaker  10:17  
+there you go. Yep.
+
+Speaker 4  10:19  
+Let's see how I just I clicked I clicked off. So basically I opened up the officer assignment, I found the name with the check next to it, and I just clicked it. And that takes the officer off. And now when you assign that, it's going to say unstaffed, and
+
+Speaker 1  10:35  
+it's says that in FileMaker. Also, I'm looking at the dashboard. So since that one's a non billable job, they are able to remove officers from that.
+
+Speaker 4  10:45  
+Thank you. That's it's hard to remember all the logic here. So you're helping me out quite a bit. Of course.
+
+Speaker 1  10:52  
+I don't know if there was much more. Did you? Were you able to work on anything else?
+
+Speaker 4  10:58  
+Yeah, but not like demo worthy stuff. It's like behind the scenes, behind the scenes,
+
+Unknown Speaker  11:04  
+cleaning up and such. Yeah, yep.
+
+Unknown Speaker  11:09  
+Sorry. Did I hear
+
+Speaker 5  11:10  
+oh, kinda I was curious. Can you take yourself off of that non doable, really quick one more times. Wanted to see something and then go, once it unassigned, you go into it like, view full job or, yeah, full job today, yeah. So do you see why it says other agency right there, yeah. And then the release job, that part. I don't know if you saw those from the other meeting. Or, Oh,
+
+Unknown Speaker  11:37  
+so this guy,
+
+Speaker 1  11:39  
+yeah, release an internal job. So we need,
+
+Speaker 4  11:42  
+yeah, so it needs the same I need that because it's sometimes confusing to know which screen we're talking about. So Brian, can you just write that like on officer detail, you know, use same release job logic on release release Job button and then other agency. I'm not exactly sure this is probably just rendering, because there's no officer assignment on it. So yeah, that makes that makes sense to me.
+
+Speaker 1  12:10  
+Want to look at that record and see, because it should be clearing the agency, officer, agency ID,
+
+Unknown Speaker  12:22  
+let me see, clear the officer. But
+
+Speaker 4  12:25  
+yeah, there is no officer here. It's just a blank object.
+
+Speaker 1  12:28  
+No, no. Remember, we had the other field for the agency of the officer assigned, and that's what we were using to show other agency,
+
+Speaker 4  12:37  
+yeah, but that was inside the officer. Oh, it is, yeah. Oh, well, then I don't know why that other agency show so probably because it's just one extra tertiary case in the law, in the in the code. It's, it's not a huge I'm sure it's not a big deal.
+
+Unknown Speaker  12:52  
+Okay, job, detail,
+
+Speaker 1  12:56  
+hide, release, job.
+
+Speaker 5  13:00  
+And then it says schedule too, which is kind of for the status,
+
+Unknown Speaker  13:09  
+right? So then in the FileMaker script, you'd want to
+
+Speaker 4  13:13  
+flip that status. I try not to mess with the FileMaker data, where I when, I don't know,
+
+Speaker 1  13:19  
+I don't think I'm setting that. I don't think that's a status, a field that's being set in FileMaker. Oh, that's scheduled.
+
+Unknown Speaker  13:31  
+Yeah. It says scheduled right here, yeah.
+
+Unknown Speaker  13:33  
+I don't think you're getting that from file maker. Well, I
+
+Unknown Speaker  13:46  
+There it is. That is okay. I don't know that one Okay,
+
+Unknown Speaker  13:53  
+still around when
+
+Unknown Speaker  13:57  
+Officer assigned
+
+Unknown Speaker  14:02  
+or job is not billable,
+
+Unknown Speaker  14:09  
+taking notes here,
+
+Speaker 1  14:18  
+same screen. Check, why? Check?
+
+Unknown Speaker  14:23  
+Why showing other agency
+
+Unknown Speaker  14:32  
+wrong time.
+
+Speaker 4  14:35  
+Have you guys thought of any other additional reports you might want to see here we put on staff jobs in but far as I can remember, there was a few others you were thinking about.
+
+Speaker 3  14:44  
+I don't think we have anything set in stone. I think what we have right now, for what you have at least on there, should be sufficient, but it just really a matter of just getting feedback from the guys and trying to see what else they're looking for. Okay? But at least as of now, they got three to work with. I'm sure we'll probably end up adding a couple more. But as of right now, it's just it's kind of up in there to at least get more concrete feedback.
+
+Speaker 4  15:10  
+Yeah, I haven't gotten those yet, Brian, but I'm sure it's because the script hasn't run on the server for the Q,
+
+Speaker 1  15:20  
+yeah, maybe you know, I didn't, I didn't check the schedule stuff after the server was restarted again last night for some reason. Oh, and I brought it back up this morning, but I'm not sure if I really checked over the automated scripts, server side scripts, yeah,
+
+Speaker 3  15:43  
+and about that, Brian, I got in touch with Jeff, and it did turn out to be another one of those auto updates that he's, he's telling me he's fixed at this time, fingers crossed, but I'm gonna check in with him. He's, he's out there checking but that's what he says. Hopefully he can get that rectified so we don't run into that again,
+
+Unknown Speaker  16:01  
+yeah, yeah. It's not your friend.
+
+Speaker 1  16:04  
+No, it is not, not on a server. It is not,
+
+Unknown Speaker  16:09  
+um, okie dokie,
+
+Speaker 1  16:13  
+I think that's mostly what we had, was the report stuff. And then, you know, the small things that I've already shown in Trello that we've been working on. I believe Ashley has been testing, and I've seen, you know, a couple of her marking, you know, approved on a few things. Look see if I see anything else. I looked at the mileage report, and I haven't quite figured out what's wrong with that yet. I will get back to that that is still on my list, as few as, yeah, also with a few other things. So that's mostly what we have to show as far as updating on that's concerned. I did want to come back to a few things. I talked to Jake, and he was fine. And with Monday morning, we can push the officer dead.
+
+Speaker 4  17:15  
+Oh yeah, that was the other big thing. Yeah, we, we tested all that. So deploying to the development to a production environment was pretty darn smooth, right?
+
+Speaker 1  17:26  
+Brian, it was, and it's not going to require them to, you know, delete the the app off their phone and re, you know, redo it. Nice. We tested that to make sure, but as long as we have you know, you guys approval, and nobody thinks, you know you guys think you've we've tested it enough. We're ready to push that Monday morning. And then, of course, if we go through next week and we're liking it, we're not seeing, you know, crazy problems or anything, we're ready to go live with agency the next week.
+
+Unknown Speaker  18:05  
+Yes, sir.
+
+Speaker 1  18:06  
+So that's the plan, if the stars align and it all goes great.
+
+Speaker 3  18:11  
+Yeah, awesome. I'm just, I'm glad, from my perspective, that we don't have to have these guys reinstall it again. So that's a big, big plus on our end.
+
+Speaker 4  18:18  
+Yeah, that was a big thing for us too. We were like, you know, it's like, not the end of the world, but it's definitely not like a goal, exactly.
+
+Speaker 1  18:29  
+So, yeah, so that's we tested that the other day and made sure. And, yeah, they shouldn't have to. It worked fine. We pushed it. I tested, you know, without reinstalling my phone on my phone or anything, and it was working great. So awesome. I think we are ready for that Monday. That does mean, you know, also, hope you guys have all the agencies at least, that you're working with you know that are working on the officer app that their settings are set. Yeah, so because it's that's going to start mattering when we push Monday, so everybody, all the agency, has to have their settings set up. So there was that. What else did I have? Did you guys have time to think what word we want to use for the new app? Is it, are they going to be customers, or are they going to be clients? Or did you come up with a different word? I
+
+Speaker 3  19:40  
+don't think it's actually something that we've covered exactly or talked about. Okay, we'll probably have to around. We'll come back around to that one.
+
+Unknown Speaker  19:48  
+No worries.
+
+Speaker 1  19:50  
+Yeah, I've been working forward on the proposal and everything, and I'm like, I noticed, even as I'm writing, I'm like, sometimes I'm using one word, sometimes. Times I'm using the other and that's
+
+Speaker 3  20:01  
+right, I think it sounds better as client from my perspective, but I think we'll get a consensus on it.
+
+Unknown Speaker  20:07  
+Okay, that sounds good to me.
+
+Speaker 1  20:14  
+Jake, do you have anything else you no need to bring up? No, I don't either. I'll, I'll check on that server process, but you guys should be feel free to test out the report some that we just showed you. Make sure again, make sure you're seeing what you think you're going to see. And then the columns are the columns that you need, that you think that report needs. That would be great so we can make sure that is up and running properly.
+
+Unknown Speaker  20:52  
+Yeah, I'm going to, actually,
+
+Speaker 1  20:55  
+as soon as we finish on this meeting, go onto your server and make sure that the server side scripts are running after the restart last night.
+
+Unknown Speaker  21:05  
+I have not checked that,
+
+Unknown Speaker  21:08  
+Joe, do you have anything else?
+
+Speaker 3  21:11  
+No, not, not from my end, I think, think we've covered our basis so far. I think the major thing was getting this development side live for for next week. So we're pretty excited about that, and to get that moving. Ash, do you have anything else
+
+Speaker 5  21:25  
+to add? Yeah, sorry. So I kind of wanted to, this is a little bit of an update. Do you remember how last week, like, my jobs weren't showing for that particular day in my past tab on the app for dev? Yeah, okay, so eventually they showed up the next day. But like, I tested it today, and it's doing the same thing. I was curious if, if there was an update on that, or if that is how it's supposed to be. Just so you can be prepared to tell that. I think
+
+Speaker 1  21:54  
+technically, that might be how it's how it's let me go check the code. It might be how it's coded. I think it's considering the past, you know, yesterday, or behind, whether you've finished working it or not. Let me check the code real quick.
+
+Unknown Speaker  22:18  
+My jobs.
+
+Speaker 1  22:33  
+No, it's not that it's it's just the date range and then whether or not it's complete,
+
+Unknown Speaker  22:41  
+that's all I'm requesting.
+
+Unknown Speaker  22:44  
+Yeah, yeah,
+
+Speaker 5  22:47  
+I don't know, because it's working in production, it shows up right away in dev.
+
+Unknown Speaker  22:52  
+It took a day. None of my jobs today are showing it's
+
+Unknown Speaker  22:58  
+weird because it's calling the same code. Yep.
+
+Speaker 1  23:15  
+Yeah, I can, I can look at it, but I really have no idea if it's working in one area, not the other, because in the background, it's that's the exact same code between the two.
+
+Speaker 5  23:28  
+Are you seeing yours? Jake, I know you had a job. I thought I saw you on today.
+
+Unknown Speaker  23:32  
+Yeah, let me here,
+
+Unknown Speaker  23:35  
+but I think she'd have to complete it, but
+
+Speaker 5  23:38  
+that's true, I would, but that's okay, and clock you out,
+
+Speaker 1  23:41  
+and you still wouldn't see it, because that job that you have today, I made non billable and non billable stuff doesn't show up on the officer app. Oh, sure, okay, give me a second to make it to make it billable again, Jake, before you sure, then you can log in and, I mean, clock in and clock out or whatever, and see if we can get it to show on the dev side of the app.
+
+Unknown Speaker  24:09  
+Okay. Oh, it, it completely.
+
+Unknown Speaker  24:14  
+I have a a
+
+Speaker 4  24:16  
+job, but that was for yesterday, so the job today isn't, isn't here right now, but that's, I think, because it's the non billable or whatever. I'm not exactly sure.
+
+Unknown Speaker  24:28  
+Oh yeah, I've got the non billable hidden. Hold on.
+
+Unknown Speaker  24:32  
+Show those.
+
+Speaker 1  24:36  
+Yeah, there it is. It's back. I am going to boom, all right, it's billable. Now you'll probably have to refresh or whatever, but you should be able to see it. And it's also it says it's unstaffed, so,
+
+Speaker 4  24:54  
+oh, yeah, oh, I see it's going to be in my jobs, my main jobs list, yeah.
+
+Unknown Speaker  25:00  
+Here. Okay, so here it is. Look it
+
+Speaker 4  25:08  
+okay, go to my jobs, and then it's right here. I'll clock in
+
+Unknown Speaker  25:16  
+right here are some
+
+Speaker 4  25:20  
+very relevant and important notes and I drove 10 miles, okay,
+
+Unknown Speaker  25:30  
+um, should I clock out?
+
+Unknown Speaker  25:34  
+Yeah, that's yeah. All you need to to make
+
+Unknown Speaker  25:37  
+it completed. Okay,
+
+Unknown Speaker  25:42  
+so if I go to past,
+
+Unknown Speaker  25:46  
+yeah, yeah, I don't
+
+Speaker 5  25:50  
+remember. It used to being like that. That's why I was That's why I brought it up last week or on Tuesday. Last week, sorry, Tuesday.
+
+Unknown Speaker  25:58  
+It's first time I've noticed it.
+
+Unknown Speaker  26:01  
+Yeah, I even
+
+Speaker 5  26:03  
+my canceled ones weren't going in there, like ones that were c4 or c5
+
+Unknown Speaker  26:08  
+so it is completed.
+
+Speaker 1  26:13  
+You know, I see the is, the is work completed flag.
+
+Unknown Speaker  26:17  
+So let's do the
+
+Speaker 1  26:27  
+the is cancel. Show is one which is perfect.
+
+Speaker 4  26:34  
+Well, let's look at the script. Let's just go like this. So
+
+Speaker 1  26:56  
+should also get an email saying that you clocked out early, also because
+
+Unknown Speaker  27:01  
+get filtered job.
+
+Unknown Speaker  27:04  
+I did get that email that he clocked out early.
+
+Speaker 4  27:11  
+So this is filtering by past, okay, so let's see i
+
+Speaker 4  27:24  
+at filter jobs, it's going to get the officer from the account. That's fine, no error.
+
+Unknown Speaker  27:30  
+And then let's just do this. Okay?
+
+Speaker 4  27:35  
+Filter, boom, boom, boom. So
+
+Speaker 4  27:45  
+past date, stop, yeah. So six one through 612 because it really should only show through today. Oh, that's why. Yeah, that's why. Okay, well, that's good. That's good. Okay, great, so let's do this. Then I bet you we can fix this right now,
+
+Unknown Speaker  28:07  
+past date, stop.
+
+Unknown Speaker  28:16  
+Month offset.
+
+Unknown Speaker  28:18  
+Yeah, you have current date minus one.
+
+Speaker 4  28:22  
+Oh, that's if it's zero, otherwise get current date minus one interesting
+
+Unknown Speaker  28:35  
+let's do this.
+
+Unknown Speaker  28:51  
+State stop is still the 12th
+
+Speaker 4  28:56  
+so Whoa. Why didn't it save? You see that, right? Brian, yeah, okay, so hold on.
+
+Unknown Speaker  29:06  
+Just make sure.
+
+Unknown Speaker  29:12  
+Where is it? It's
+
+Unknown Speaker  29:17  
+in my job. Yeah,
+
+Unknown Speaker  29:21  
+yeah, it didn't save that's cool,
+
+Speaker 4  29:25  
+all right, so now let's just go back to the web and just go upcoming. That's fine past, boom, okay, cool.
+
+Speaker 1  29:46  
+So basically, with it was what I thought. It's not it was starting it yesterday. Yep, for past
+
+Speaker 5  29:53  
+my that's my last job. Now is only a one on the list, and it's Friday the sixth. That's weird.
+
+Unknown Speaker  30:07  
+Well, get out of here.
+
+Speaker 5  30:10  
+Sorry for bringing this up. I just, since we're going live with Deb, I just didn't know if,
+
+Speaker 4  30:17  
+well, let's look so I'm trying to get I'm okay. So, boom, boom, boom, boom, okay, make sure
+
+Speaker 5  30:26  
+that's good. I just, I just, like, logged out, log back in. Yeah, I'm good. Now I don't know what happened. All right, thank you for fixing that.
+
+Unknown Speaker  30:34  
+Sure that was an easy one.
+
+Unknown Speaker  30:40  
+That's all I had Cool.
+
+Unknown Speaker  30:45  
+All right, then, um,
+
+Speaker 1  30:48  
+if you guys do we know who works Monday morning,
+
+Speaker 5  30:57  
+like what time or like, who opens or who?
+
+Speaker 1  31:01  
+Because it'll probably be like, five, 530 year time am when we actually make the change. But I just want to make sure, if you know somebody on this call, isn't there first thing on Monday morning that whoever is is is, yeah, is, you know, kind of looped in that we're going to be making this push in case we get calls from officers or something.
+
+Speaker 3  31:24  
+Oh, yeah, well, we'll have at least somebody on by six at the latest, so we'll definitely give them heads up.
+
+Unknown Speaker  31:32  
+Great,
+
+Unknown Speaker  31:33  
+perfect. Alrighty,
+
+Speaker 1  31:38  
+I think that's all I have, that's what we had to show off. Anything else I've done in scheduler has been, you know, smaller based off of Ashley's feedback, and is in Trello for her to test. So nothing really to show off.
+
+Unknown Speaker  31:59  
+If nobody else has anything else we can
+
+Unknown Speaker  32:03  
+we can wrap up nice and quick today.
+
+Speaker 3  32:06  
+Nice, yeah, I think that's it, guys. I don't think there's anything else unless Lori Amanda, anybody else has anything? I think we're good to go nothing
+
+Speaker 6  32:13  
+on my end, just a happy Friday the 13th, and enjoy your weekend. Yay.
+
+Speaker 1  32:21  
+Yes, you enjoy your weekend also, and we'll be back at it if everything goes right and again, the stars aligned, and we won't even have to speak to you Monday. We'll see you Tuesday. But yes, fingers crossed. Yeah, if there is something you know, after the push on Monday morning, both Jake and I will be working one day.
+
+Speaker 6  32:42  
+Okay, well, thank you for that. You'll send the recording and the campaign when you get a chance. That would be perfect. I think I lost them in the elevator, so
+
+Speaker 1  32:50  
+no problem. It may be tomorrow morning, or it may be tonight. If I get back to my computer, it usually takes it 510 minutes to process and I finish my day, usually, after this meeting,
+
+Speaker 6  33:01  
+I got you perfect. Sounds wonderful. Thank you for that. Alrighty.
+
+Speaker 1  33:05  
+Well, everybody have a great weekend. Thank you. You too, thanks. Alice, thanks. All right. Bye.
+
+Transcribed by https://otter.ai

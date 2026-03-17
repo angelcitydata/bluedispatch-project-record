@@ -1,0 +1,865 @@
+Unknown Speaker  0:00  
+Something
+
+Unknown Speaker  0:02  
+we go,
+
+Unknown Speaker  0:04  
+all right.
+
+Unknown Speaker  0:06  
+Well, this was a nice, important meeting for just all of us and everybody to miss. That's awesome.
+
+Unknown Speaker  0:15  
+No, no, it's, it's all right, we're just, just means we move along with the plan and everybody's last chance to, you know, throw in a wrinkle or change something, is they're out here for it. So,
+
+Unknown Speaker  0:28  
+okay, so we're in, yeah, we're in the home stretch, still looking good, even with me being out of commission yesterday and most of today, I've kind of been in and out,
+
+Unknown Speaker  0:44  
+because I probably wouldn't work today if this wasn't, you know, go live week and I just can't afford to take another day off.
+
+Unknown Speaker  0:53  
+So
+
+Unknown Speaker  0:55  
+I did quickly look over
+
+Unknown Speaker  0:58  
+the agenda that you sent out those items,
+
+Unknown Speaker  1:02  
+they
+
+Unknown Speaker  1:04  
+probably made no sense, because I I've been so busy today that I mean, they make sense to me, but like looking at them, I don't know if you would know exactly what they were. Some of them, maybe we'll, we'll go through my updates and such, real quick, and then we'll discuss what we need to there.
+
+Unknown Speaker  1:22  
+So updates we if you go to
+
+Unknown Speaker  1:28  
+like on your phone, if you go to Blue dispatch.com
+
+Unknown Speaker  1:33  
+you know, the marketing page that we built for you guys, the get App button now works. It'll open up the app store on your Apple phone. It'll open up Google Play on an Android so you got you have both links working? Oh, cool, I believe. So Jake said they were both working. I only have an Apple phone, so
+
+Unknown Speaker  1:56  
+I'll give triple check the Android. But he said it was working on both and he has the Android phone, so it should.
+
+Unknown Speaker  2:09  
+So that's up. I know he's working on the kind of
+
+Unknown Speaker  2:14  
+splash page that we're going to have come up on the current officer web app starting Friday. That's basically saying whatever Joe sent me to say. I think it was just one quick sentence like, you know, check out the new, check out our new blue dispatch app at your, you know, on the Apple App Store or Google Play.
+
+Unknown Speaker  2:36  
+So that will show up every time they log in
+
+Unknown Speaker  2:40  
+on the web app until they switch over,
+
+Unknown Speaker  2:46  
+um, so that that will be in place and ready for Friday, when we'll turn it on.
+
+Unknown Speaker  2:57  
+What else have we been playing with? Mostly some last minute testing.
+
+Unknown Speaker  3:04  
+So the we did get, I don't know if you saw we did get another version pushed one point 5.3
+
+Unknown Speaker  3:12  
+pushed and approved over the weekend.
+
+Unknown Speaker  3:17  
+So that's in and ready
+
+Unknown Speaker  3:20  
+that had a couple of little fixes based off of our, you know, testing and changes last week,
+
+Unknown Speaker  3:29  
+Jeremy stops sending me stuff I can't talk to you right now.
+
+Unknown Speaker  3:34  
+So the plan
+
+Unknown Speaker  3:37  
+is,
+
+Unknown Speaker  3:40  
+so on dev, I am going to probably tomorrow,
+
+Unknown Speaker  3:45  
+flip the email notifications to come out of info at Blue dispatch com.
+
+Unknown Speaker  3:52  
+Okay,
+
+Unknown Speaker  3:54  
+I will make that change in prod on Thursday.
+
+Unknown Speaker  3:59  
+So Thursday is going to be the really busy day, and you're more than welcome to like, be on with us as much as you'd like. We're probably going to be on a zoom for a good amount of the day.
+
+Unknown Speaker  4:11  
+So we're going to
+
+Unknown Speaker  4:13  
+clear out and prep the Linux database system. We're going to, you
+
+Unknown Speaker  4:21  
+know, migrate all of the web accounts for the officers to
+
+Unknown Speaker  4:27  
+to the native app accounts in FileMaker.
+
+Unknown Speaker  4:31  
+But I'm not going to flip that allow login switch until Friday. So that's going to be the actual go live
+
+Unknown Speaker  4:39  
+when we make when we flip that switch.
+
+Unknown Speaker  4:43  
+I'm also probably Thursday going to
+
+Unknown Speaker  4:49  
+after we've reset and cleared the database stuff on the API side, I'm going to
+
+Unknown Speaker  4:58  
+run through.
+
+Unknown Speaker  5:01  
+All the jobs moving forward that are not,
+
+Unknown Speaker  5:05  
+obviously not needed on the app, like ODM, you know, ones that are assigned to Officer ODM, something. Oh, okay, yeah, who knows I'm going to go through
+
+Unknown Speaker  5:17  
+and run the process that preps it on the API side like it was, you know, booked with the with the native app. That way those jobs will appear on the native app as soon as they log in on Friday.
+
+Unknown Speaker  5:35  
+And we're going to
+
+Unknown Speaker  5:37  
+run through series of tests on Thursday make sure all the emails notifications are going out when we do things basically the same type of stuff we did twice last week. We're going to run through it one more time
+
+Unknown Speaker  5:52  
+Thursday,
+
+Unknown Speaker  5:55  
+and then once we get all the sign offs and we're all happy,
+
+Unknown Speaker  5:59  
+then that'll be the end of Thursday, and it will sit like that. And then Friday, whatever time we had, I believe it's 10 o'clock, your time. 10am your time. We'll jump on our little meeting there. Zoom meeting. I will flip all the allow login check boxes to on for the officer accounts, and they will be live. You guys, of course, will more than welcome, you know, to send out an email blast or anything you'd like, you know, like that, to let your officers know that it's online. If you'd like to send it out to certain ones, that's fine, you know, to try to keep it from everybody going on to it at one time. Yeah, yeah. We were a little hesitant on doing that, only because, you know, we're heading into a weekend, so yeah, and you know that would, that could potentially be a lot for the weekend person. But, yeah,
+
+Unknown Speaker  6:59  
+yep. So that's kind of the plan. And once we do that, it will be live. There's no more clearing of, you know, databases or anything like that.
+
+Unknown Speaker  7:12  
+You know, everything will be live and going.
+
+Unknown Speaker  7:16  
+We can run a couple more tests, if you'd like, if you have a couple officers in mind that that work sometime Friday, and you want to call them and say, you know, hey, you mind downloading the app, and, you know, logging in with this when you log in this evening or afternoon, whatever, since after 10am your time,
+
+Unknown Speaker  7:37  
+and then we will
+
+Unknown Speaker  7:41  
+probably brace for,
+
+Unknown Speaker  7:45  
+for the inevitable calls of officers who clocked in on the web app and they saw the native app, sign up, you know, go download it and think that they can clock out on that.
+
+Unknown Speaker  7:59  
+Yes, which and, but yeah, our advice would be just
+
+Unknown Speaker  8:04  
+our advice, yeah, for sure, would be just to clock out like normal on the web app and then your next shift. Yeah, yeah. Then your next shift, you can switch over to the native app. That's fine. Whatever one you clock in on is the one you got to clock out on.
+
+Unknown Speaker  8:20  
+And of course, as we've discussed, both web app and native app will be running together for however long we want. You know what? If they do it on both like so, for example, they clock in on the web app and then they download the native app and don't check with us first or anything, and then they just clock in on that one as well. Is that going to mess anything up, or can I just clear it?
+
+Unknown Speaker  8:46  
+Yeah, that would definitely mess things up. And you would have to, you would have to clear it,
+
+Unknown Speaker  8:53  
+the native side, right? Yeah, yeah. You would have to
+
+Unknown Speaker  8:58  
+clear it and set the clock. You set the hours. You know the clock in and clock out time is probably just not going to
+
+Unknown Speaker  9:06  
+be right if you do that clear out, because then, you know, you click the clock in button, the clock in button that you click on, file maker does not clock them in on the native app.
+
+Unknown Speaker  9:17  
+It just puts a timestamp in there
+
+Unknown Speaker  9:22  
+and so if you do that and then they clock out, it's never it's not going to calculate, nope, whatever, no, because they don't. If they don't clock in on the native app, then it doesn't know that they're clocked in. Just because you clicked clock in on the FileMaker. It's not going to clock them in on the app. The clock out will, but not the clock in, right? So, like, if I, let's say someone is having issues with their their app, and I, you know, go to job assignment detail, and I clock them in through file maker, and then at the end of their shift, at like, three o'clock.
+
+Unknown Speaker  10:00  
+They clock out,
+
+Unknown Speaker  10:02  
+they can't clock out, nope, yeah, that button won't be there.
+
+Unknown Speaker  10:07  
+That's gonna be fun.
+
+Unknown Speaker  10:10  
+Okay, that can that might be something we can look at in the future some but, yeah, cuz right now, I mean, if they clock in or don't clock in and we clock them in on the, you know, file maker, and they clock out. It does calculate. It's wrong, obviously, because it's like, down to the minute. So if they are even one minute late, it, you know, takes off that, yeah, time. But,
+
+Unknown Speaker  10:38  
+okay, yeah. The thing is, it's, it's mostly comes down to that counter, that clock that runs on the native app that shows them how long they've been clocked in.
+
+Unknown Speaker  10:51  
+So the clock in
+
+Unknown Speaker  10:54  
+state is tracked on the app and doesn't necessarily go back to FileMaker. It just tells FileMaker what time they clocked in, but the state of them being clocked in is housed right there on the app on their phone.
+
+Unknown Speaker  11:08  
+So while we're talking about that, you remember yesterday this, I don't know if this is the same or if this is different,
+
+Unknown Speaker  11:17  
+let's say yes, it had to win today. Come on. Do
+
+Unknown Speaker  11:30  
+so this guy, he was having troubles clocking in. This is when I emailed you, and she had clocked him in here, like clicking this, but it didn't give a time, right? Yeah. I so fixed that, yeah, but so he went in and clocked out, and it gave him like 15, 15.25 hours or something, yeah, because it didn't have a time on the clock in so it like, basically starts at midnight. Interesting, because so will it do things. It won't do things like that, because the clock out button won't even exist for them, correct.
+
+Unknown Speaker  12:07  
+But the clock, The clock in button here in FileMaker, is fixed. It that that was an issue when I made the change. It was
+
+Unknown Speaker  12:18  
+weird. It was just him, though, because, like these people, they clocked in, like, right around the same time that we did it, and they were fine, yeah, but they did it from the app or from the web app. They did you
+
+Unknown Speaker  12:30  
+file maker. The problem was that that button in file maker, when I did all the changing for the UTC stuff and offsets and everything i i created a bug.
+
+Unknown Speaker  12:42  
+Okay, gotcha
+
+Unknown Speaker  12:47  
+Sorry for interrupting you. No, no. So yeah, and that's,
+
+Unknown Speaker  12:54  
+you know, we can, we can look in the in the future about improving that, you know, clocking in and clocking out from different areas, meaning mostly the file maker versus the app. But for right now, it's, it's contained in the app. And the reason we've,
+
+Unknown Speaker  13:13  
+we kind of did it that way, is to,
+
+Unknown Speaker  13:18  
+is to allow that if the phone goes offline, it doesn't mess things up.
+
+Unknown Speaker  13:28  
+So like I said, It's all contained on the phone. When they clock in, it tells FileMaker they clocked in at this time, but then it tracks everything on the phone and doesn't send it until they clock out.
+
+Unknown Speaker  13:42  
+So that allows them to, basically to go on and offline. You know, if they drive somewhere that doesn't have a cell signal, it's not going to break things.
+
+Unknown Speaker  14:00  
+Let me think, I think that's all I have. As far as updates, Thursday is going to be, is going to be a fairly action packed day, I think getting all of this prepped and basically, I mean, realistically, we're going online Thursday with everything. It's just not opened up to the officers until Friday,
+
+Unknown Speaker  14:24  
+but everything else is going to be, you know, other than that, it's going to be opened up, and everything's going to be how it's going to be live on Thursday. And that'll give us a chance to run, you know, run another set of tests
+
+Unknown Speaker  14:40  
+right before, right before we open it up to the officers on Friday. Oh, you, oh, we are okay. Yes, Thursday. We're going to run through. Oh Thursday. Yeah, sorry. I thought you meant Friday as well. No,
+
+Unknown Speaker  14:52  
+no, I don't think so.
+
+Unknown Speaker  14:56  
+We are just going to, we're
+
+Unknown Speaker  14:59  
+going to do it.
+
+Unknown Speaker  15:00  
+Thursday, and nothing should change between
+
+Unknown Speaker  15:04  
+Thursday and Friday. And if something, if we do absolutely find something, I'm 99.999%
+
+Unknown Speaker  15:14  
+certain it's going to be on the file maker side, maybe the API side, which is all things we can change without having to resubmit to Apple and Google,
+
+Unknown Speaker  15:30  
+but that will be our last set of testing before go live.
+
+Unknown Speaker  15:34  
+When we go live, of course, I work the rest of my day, Friday, Saturday. I you know, I don't tend to work on weekends, but if there really is an emergency, I do have to take my wife and kid to the airport Saturday.
+
+Unknown Speaker  15:52  
+Other than that, I should be around the weekend. If there really is an emergency, I can take a call and see if I can help. I don't really plan on going anywhere else except taking them to the airport,
+
+Unknown Speaker  16:08  
+which is
+
+Unknown Speaker  16:10  
+airports 4550 minutes from here. Of course, I gotta walk them in and everything, but it's the whole round trip will probably be two and a half hours
+
+Unknown Speaker  16:21  
+that I will not be around here other than that. I plan on coming home.
+
+Unknown Speaker  16:27  
+I don't plan on being anywhere really, Saturday or Sunday other than that.
+
+Unknown Speaker  16:34  
+And as I
+
+Unknown Speaker  16:36  
+talked with Joe this morning, barring some emergent, you know, big emergencies happening this weekend. We start the 90 day free tech support Monday. That'll kind of give you two free days, you know, over the weekend. I don't, I don't like starting that over the weekend when we're technically not available for you. So
+
+Unknown Speaker  16:57  
+we'll start that Monday,
+
+Unknown Speaker  17:00  
+just now, does that include, like, the updates that are, you know, because, like, we obviously push this out as quickly as we could, and so some of the features were,
+
+Unknown Speaker  17:13  
+are being held, you know, for, like, the round two or whatever, however you want to word that, no, that is not included in the tech support. Those are new features or plan changes to current features. That's that's not included. It's
+
+Unknown Speaker  17:30  
+It's issues, it's problems, you know, we're happy to look at and fix for you under that 90 day tech support. Okay?
+
+Unknown Speaker  17:47  
+That
+
+Unknown Speaker  17:49  
+I think that's pretty much what I got, that's that's what we're rolling with the next few days. I know the last problem I have on my plate to fix is an odd one that's kind of hard to recreate, but I do know how, and I do know how to fix it. I will be doing that tomorrow, and we will absolutely test that scenario, not just we'll test it tomorrow on dev, and we'll test it as part of our testing on Thursday, when everything's on prod and
+
+Unknown Speaker  18:23  
+but it has to do with
+
+Unknown Speaker  18:26  
+if you lock it,
+
+Unknown Speaker  18:29  
+if you want, if they are clocked in on the native app, and you clock them out on file maker, and they don't close the app, they can get back into the job and the
+
+Unknown Speaker  18:43  
+and the app will tell them that they can clock in,
+
+Unknown Speaker  18:49  
+and they can touch that button, and it'll tell them, Eric, you didn't clock in. You know, you can't clock in because this has already been clocked out. But it's actually telling it's actually clocking in on file maker and changing that clock in time, which is wrong. So I'm, I'm going to be fixing that on the FileMaker side tomorrow, last known issue.
+
+Unknown Speaker  19:15  
+Okay,
+
+Unknown Speaker  19:18  
+okay,
+
+Unknown Speaker  19:19  
+but I figure most of, most of the time, if, if you guys are clicking the clock out on file maker, then they're not actively sitting in the app, they're probably doing it because they closed the app completely and then they're calling you or something like, you know, some other reason it's they're usually not sitting in the app, which is why it's, you know, an odd scenario that shouldn't happen too often anyway, but we're going to
+
+Unknown Speaker  19:47  
+fix it anyway.
+
+Unknown Speaker  19:50  
+Okay,
+
+Unknown Speaker  19:52  
+cool, alrighty,
+
+Unknown Speaker  19:55  
+okay, so let's see on your
+
+Unknown Speaker  19:58  
+here.
+
+Unknown Speaker  20:00  
+Let me
+
+Unknown Speaker  20:01  
+the ones I can quickly speak to new officers. Sign up, invite email with hyperlinks. Ah, yes. So, yeah,
+
+Unknown Speaker  20:14  
+okay. So for example, like Lori, let's say I'm new and Lori just put this in here. We were wondering, so I'm not going to do it, but, you know, you click here and you allow invite, and you send it, you know, to the native app. You know, it currently doesn't give you anything. We were wondering if we would be able to
+
+Unknown Speaker  20:36  
+have it send an email, but that, in that email, it's, you know, shows the the two links, like, if you have an iPhone, click here and it brings you to your Apple Store or Google store.
+
+Unknown Speaker  20:51  
+I can talk to Jake.
+
+Unknown Speaker  20:55  
+The way I know we can do it easily
+
+Unknown Speaker  20:59  
+is send an email that has a link to Blue dispatch.com
+
+Unknown Speaker  21:04  
+and that has the get app link. Okay, I know we can do it that way. We may be able to do it the other way. I got to talk to Jake. Okay, that's
+
+Unknown Speaker  21:20  
+Jake.
+
+Unknown Speaker  21:26  
+Let's see need to test notifications and removal button now that emails work. Yes, like I said, I'm going to be
+
+Unknown Speaker  21:35  
+pointing, you know, email stuff to come out of info at Blue dispatch com tomorrow in dev, and then, yes, we can run a couple tests on that
+
+Unknown Speaker  21:47  
+perfect. I wasn't sure that you're I didn't know you're going to bring that up, so I wanted to make sure that I put that on there for myself and for you know, everyone,
+
+Unknown Speaker  21:58  
+everyone you
+
+Unknown Speaker  22:01  
+because I just, that's one thing I've not tested. I've not, you know, like, taken the job and gotten the notifications, obviously, any of them, and I haven't tried to remove myself from a job. And even if I did, like, I
+
+Unknown Speaker  22:16  
+wouldn't have gotten the email. So,
+
+Unknown Speaker  22:20  
+so Thursday, right? Did get a couple of emails for jobs that I booked while we were doing testing. You did. I didn't get the like you booked this, you know, the job detail. One, but I did get the you have a job that's you have a job tomorrow, one, and the you've got one that starts in an hour. I did too, but I wasn't sure if, because I get so many of those, I was like, I wasn't sure if maybe that was, you know, on the production, or if that was just somewhere else I had signed up for a job. So okay, that's good to know. So Thursday, you said Thursday, we're doing Tuesday. Still not working on prod. Oh, yeah, I want to show you that. Okay, so Well, that's because as soon as we finished that phone call where we were testing, we repointed the app back to Dev.
+
+Unknown Speaker  23:14  
+So anything. Oh, so that code is not touching prod right now, and it hasn't been since whatever Thursday, I think, is when we or was it Friday that we did that testing Friday,
+
+Unknown Speaker  23:28  
+so we only had it pointed to prod for those like two hours or whatever, while we were testing it on that call. Okay, so once we, once you know, you redirect everything, then that those buttons will work again, exactly, and we will completely test that Thursday when we do the run through,
+
+Unknown Speaker  23:57  
+okay,
+
+Unknown Speaker  24:01  
+correct. Ironically, like two people were trying to update availabilities for Tuesday and Thursday and like, it's so weird. It's not working. I was like, it's not that weird, actually, but
+
+Unknown Speaker  24:16  
+I just didn't realize that it, you know,
+
+Unknown Speaker  24:20  
+it makes sense now, but I didn't want to say anything until I knew, yeah. We pointed it back in. We didn't want to leave. I mean, even though, technically, you know, random people don't have an account and can't get into the app, we still didn't want
+
+Unknown Speaker  24:37  
+anybody doing testing as such on the native app to have it pointing at your production. Yeah.
+
+Unknown Speaker  24:44  
+No, that that makes sense,
+
+Unknown Speaker  24:47  
+makes sense. And when they brought it up to me, I was like, Yeah, but which does mean Thursday I'm going to need you to get every.
+
+Unknown Speaker  25:00  
+Buddy there to not touch the native app Thursday, Thursday night or Friday morning before we go live. I don't think anyone but me
+
+Unknown Speaker  25:12  
+will touch the native app, and I won't do it. Don't worry. Yeah, well, you may, because you're going to, but you're going to be on the call with us, so it's kind of control right now. Don't go rogue and do it myself. Yeah, don't do it yourself. And you know, other people there in Les shouldn't be bouncing around doing random things, going, Whoo. This app is cool. You know, that's not it. I won't and I'll pass it along. But so far, we're, we're good,
+
+Unknown Speaker  25:42  
+yeah, I think I've only given accounts to you and Joe, maybe, yeah, but I think it's really just you and Joe, oh, and Amanda,
+
+Unknown Speaker  25:53  
+Yep, yeah, I think that's it too. Maybe back, I don't know, but either way, I think we're, we'll be good,
+
+Unknown Speaker  26:01  
+but I'll let him know right
+
+Unknown Speaker  26:04  
+then.
+
+Unknown Speaker  26:06  
+I
+
+Unknown Speaker  26:08  
+did see Amanda. Said she would be out, was it tomorrow and Thursday? But she Yeah, being back Friday, she will be on the call Friday. Okay, I don't I Yeah, so she, she will, because I think she, she definitely knows about it.
+
+Unknown Speaker  26:25  
+Yeah, she got it. They're out of town doing something
+
+Unknown Speaker  26:28  
+awesome, yeah, um,
+
+Unknown Speaker  26:32  
+let's see. Oh, so, so, through some strange
+
+Unknown Speaker  26:40  
+it was actually an easy fix. Should have been an easy fix for the email. It was just a connector thing. It was kind of through Jeff and Tom's stuff back and forth. I'm like, I understood, I understood that about as much as you did, yeah, but then I actually talked to Jeff, and he was like, I don't know why I didn't see it the very first day that you brought this up, because it was, it was literally just a connector
+
+Unknown Speaker  27:08  
+issue, basically, yeah, it's silly. It should have been six right away. But through that, I also was like, Hey, did you get my email? You know that Brian needs the the SMTP credentials for no reply. And he goes, I didn't make a no reply. And I was like, Okay, well, we need that. So
+
+Unknown Speaker  27:32  
+did you get those credentials? Though I did. I saw the email. Okay, so then I started thinking, I wonder which ones he actually created,
+
+Unknown Speaker  27:44  
+you know, because I didn't realize. Obviously, I didn't, I didn't create them, so I didn't know. He didn't make a no reply. So we I go, you know, just out of curiosity, which, what? What emails did you create for blue dispatch? And he, it's obviously you. Jake, Steve, no reply now, info, that's it, though. So my question to you is
+
+Unknown Speaker  28:08  
+like, what about detail? What about is there other ones that
+
+Unknown Speaker  28:14  
+that we is, truthfully,
+
+Unknown Speaker  28:17  
+a business, not a technical decision, but didn't you, didn't you say, though, that that's why we created these in the first place. And it had to be from Blue dispatch if it came out of the app.
+
+Unknown Speaker  28:30  
+I I recommend that technically, it doesn't have to, but
+
+Unknown Speaker  28:37  
+it, it'd be odd. I would think, as a user, if I started getting messages from L, E, S, a z.com,
+
+Unknown Speaker  28:45  
+especially as you guys expand more and more outside of Arizona,
+
+Unknown Speaker  28:51  
+you know, I
+
+Unknown Speaker  28:53  
+I would think I wouldn't know what the heck. L, E, S, A z means
+
+Unknown Speaker  28:58  
+blue dispatch is what I'm dealing with as an officer, as a user, you know, yeah, but that is absolutely an opinion of mine, and a technical necessity, I would recommend it. So the only things that have to come out of blue dispatch is is some specific notifications because of
+
+Unknown Speaker  29:24  
+and the no reply will absolutely be that. But that just has to do with Apple and Google saying that they want the website we point them to, which is blue dispatch com, to be the domain that notifications come from.
+
+Unknown Speaker  29:39  
+Okay?
+
+Unknown Speaker  29:41  
+So, like the you know how Marissa sends, like,
+
+Unknown Speaker  29:45  
+hours missing hours, yep, and whatever else she sends, she sends that through detail. So is that one, is that email still gonna be okay to send through file maker as, L, E, S, A, Z,
+
+Unknown Speaker  29:59  
+technically, yes.
+
+Unknown Speaker  30:00  
+Yes, again, that's a that's a business decision, and I would recommend you have a detail from at Blue dispatch, or whatever at Blue dispatch, but that's, again, that's my opinion, and that's not a technical requirement.
+
+Unknown Speaker  30:17  
+Okay, okay, that's what I wanted to know, because at this point, we do not have one. So I wanted to make sure that before we go live, like, if we needed one, that I had him create one,
+
+Unknown Speaker  30:28  
+you would just have him create it. Let me know, and I'll go into file maker and make sure that those emails, you know, from like the reporting section and such, go out through the new detail at Blue dispatch, or whatever at Blue dispatch, it happens to be, but again, that is, that is not a technical requirement. That's a
+
+Unknown Speaker  30:48  
+that's a suggestion.
+
+Unknown Speaker  30:51  
+Okay,
+
+Unknown Speaker  30:56  
+perfect.
+
+Unknown Speaker  31:00  
+Let's see
+
+Unknown Speaker  31:04  
+over that. Okay, this one, this the maps being blank. So although I can't recreate this because it is random,
+
+Unknown Speaker  31:14  
+here's like a picture of
+
+Unknown Speaker  31:20  
+and this happens to everyone's too. Oh, on screen,
+
+Unknown Speaker  31:25  
+yeah, I haven't been able to recreate it. And I even opened my like,
+
+Unknown Speaker  31:34  
+so like, I have seen this Now, normally,
+
+Unknown Speaker  31:39  
+I don't know, I don't know what causes this, to be honest with you, but I have seen it. I just can't recreate it
+
+Unknown Speaker  31:49  
+every time. You know, but sometimes I'll just open it up and I'm like, do it when I'm doing a bunch of other things, and then come back to that screen, because it has to run a Load Script to load that map. And if you go to a bunch of other places and you come back there, it may not necessarily run that load map scripting.
+
+Unknown Speaker  32:13  
+So
+
+Unknown Speaker  32:15  
+if you end up with that blank area, if you just close that screen and reopen it, it should load, yeah, okay. And
+
+Unknown Speaker  32:25  
+if it doesn't, if it doesn't, then we, we have a problem. Yeah, I'm, I'm actually more concerned about like, pin not dropping in the right place, or something like that, than I am just that blank missing, okay?
+
+Unknown Speaker  32:40  
+Catch,
+
+Unknown Speaker  32:42  
+okay,
+
+Unknown Speaker  32:45  
+any word or update on the maps, pinning.
+
+Unknown Speaker  32:48  
+No, like I said, I I kind of need to,
+
+Unknown Speaker  32:53  
+I need to see it. I can't, I can't read it. I can't make it. Oh, no, no, I'm sorry. Let me be more clear when people clock in and out,
+
+Unknown Speaker  33:04  
+the maps pinning on the map. Oh, you're not seeing them.
+
+Unknown Speaker  33:10  
+No,
+
+Unknown Speaker  33:13  
+not on, you know, the web app or
+
+Unknown Speaker  33:18  
+native
+
+Unknown Speaker  33:19  
+think of another one I can show you. I
+
+Unknown Speaker  33:23  
+checked that one, I thought,
+
+Unknown Speaker  33:26  
+but the the map so, like, I think it was
+
+Unknown Speaker  33:31  
+sometime last week the these ones stopped pinning as well, and I just kind of checked it up to, Oh, you guys are working on it, because I know that, you know, I keep bringing it up. And so I figured maybe Jeremy was
+
+Unknown Speaker  33:43  
+testing something or and I also was like, we're gonna go live in, you know, a few days. Like, why would they spend time, you know, fixing this pin. But at the same time, I it wasn't working on the needle map either, so I wasn't sure it is.
+
+Unknown Speaker  34:03  
+Maybe it's looking at,
+
+Unknown Speaker  34:08  
+I'm trying to remember what it looks at. There's something that it used, some value that it uses to decide whether or not
+
+Unknown Speaker  34:15  
+it's from the native app or the web app,
+
+Unknown Speaker  34:21  
+and if it's thinking that it's from, say, the native app, but it was really from the web web app, it's going to be looking for the location data in the wrong place.
+
+Unknown Speaker  34:34  
+Okay? I mean, I'm not as concerned about these ones yet right now, because once we go live, it'll be a little bit
+
+Unknown Speaker  34:42  
+irrelevant anyways, correct? Yeah, yeah. Did he find out, though, why it wasn't pinning on the native?
+
+Unknown Speaker  34:52  
+No, I don't remember.
+
+Unknown Speaker  34:56  
+I have to talk to him. I don't remember. I.
+
+Unknown Speaker  35:00  
+That necessarily being an issue that it wasn't showing the location stuff I can, oh, yeah, no, yeah, it's, it's never pinned, at least since I've been testing, it is never pinned for when I clock in or out, for, you know, on anyone's, as far as I saw in dev,
+
+Unknown Speaker  35:21  
+in, yeah, for the native app
+
+Unknown Speaker  35:26  
+on the native app on dev,
+
+Unknown Speaker  35:31  
+yes, part of it could be, every time I say we're gonna, like, clear the database on the API side that's clearing out all that location data also, yeah, this is like, right away, though. This is like, you clock in, you clock out, and then you look and there's no pins. And I remember you're saying that you had to. I don't remember exactly what you said, something about poking Jeremy or getting him to do it, but that's
+
+Unknown Speaker  35:59  
+definitely going to be something that accounting is
+
+Unknown Speaker  36:05  
+going to get on me on four,
+
+Unknown Speaker  36:07  
+but
+
+Unknown Speaker  36:10  
+let's see
+
+Unknown Speaker  36:13  
+sign up. Oh yeah, now I was able to figure out. Show you
+
+Unknown Speaker  36:20  
+okay. So you see this? Yes, I know why it does it, and I can do it on command now, every time. So maybe I should show you on a
+
+Unknown Speaker  36:32  
+I'll show you a big one. And I don't, I don't understand why it does it, but I can just tell you it does I
+
+Unknown Speaker  37:00  
+I'm
+
+Unknown Speaker  37:08  
+gonna pick for my drop down.
+
+Unknown Speaker  37:10  
+I'm gonna pin it. Oh, of course, it didn't
+
+Unknown Speaker  37:15  
+work. You mean, it did work, and that's the problem. No, no, no. But like, so
+
+Unknown Speaker  37:25  
+dang it, I'm gonna have to So anyways, yesterday, I tested it like over and over and over again, but if I put
+
+Unknown Speaker  37:35  
+a period in here, so Right, like when I was in here and Scottsdale Road period, and McCullough's. And
+
+Unknown Speaker  37:44  
+then it would just, it would come up, like this one.
+
+Unknown Speaker  37:53  
+I fixed this one, so that's not but you see how it says Tempe.
+
+Unknown Speaker  38:00  
+So it was just, it would like, under street one, it would just say, surprise, Tempe Avondale Chandler, like, it didn't matter if I put that period in there, it would come up like this.
+
+Unknown Speaker  38:14  
+Now this go ahead, but if you but you're putting in a period, but you're still picking clicking from the drop down list. Yes, yep,
+
+Unknown Speaker  38:26  
+it's interesting. Yeah.
+
+Unknown Speaker  38:29  
+At first we thought it was a copy paste thing, because that's what she was doing. But all of her copy and paste had that period, and then I was just typing them in, because I don't usually copy and paste. And
+
+Unknown Speaker  38:42  
+it was doing it for me every single time
+
+Unknown Speaker  38:46  
+I'll I'll ask about that. It might be
+
+Unknown Speaker  38:50  
+a programmatic command thing, yeah, and that is a command plus here on this screen, particularly once we go live, I plan on changing what shows there on that column for job location to the job name, because that's what they see on
+
+Unknown Speaker  39:14  
+the app.
+
+Unknown Speaker  39:17  
+So they don't treat one or city or state they see job name
+
+Unknown Speaker  39:23  
+right on the F so that's what you guys want to see on the dashboard
+
+Unknown Speaker  39:28  
+eventually. Okay, so if we, if we like, type it in here, or, let's say, if someone leaves it blank, and they just go straight to here and pin it, and it starts here and down, but nothing's in job name, nothing will show on the app, correct?
+
+Unknown Speaker  39:47  
+Gonna be fun. There's a lot of them that
+
+Unknown Speaker  39:52  
+that steps not,
+
+Unknown Speaker  39:54  
+of course, I can't find one, but there's a lot of them that don't have those
+
+Unknown Speaker  39:59  
+four.
+
+Unknown Speaker  40:02  
+To my mother.
+
+Unknown Speaker  40:06  
+Okay, so I need to tell them, just type it in. How you want it here, click here, type it in, pick from your drop down, yeah, okay, okay, got
+
+Unknown Speaker  40:17  
+it.
+
+Unknown Speaker  40:22  
+And you are, is it like that now, or is that? Is it going to be like that? It's going to be like that. I haven't done it yet, because this is what you see on the current officer web app.
+
+Unknown Speaker  40:35  
+So for your job right now, you need to see this, but come Friday, you should need to really see that very often.
+
+Unknown Speaker  40:43  
+And then, so if they don't type it in on job name, once you've changed it, then it, it'll just be blank on the dashboard, yep. And that's how they'll know that, yeah, indicator. Oh, wait a minute, I need to go to this one and put something in the job name. And then after they do that, after they've created that job. Do they have? They have to refresh all,
+
+Unknown Speaker  41:03  
+um, because that's why I ended up this one was super annoying because I they, technically they so they put it in and it said Tempe, and they added,
+
+Unknown Speaker  41:17  
+sorry, owner in my ear.
+
+Unknown Speaker  41:22  
+They added it this one and on the dashboard, no matter how many times they did refresh all or anything or repent it correctly, this was not updating. So I ended up having to just cancel that one and literally make a new
+
+Unknown Speaker  41:40  
+recurring job for the 12 I think I'm just going to be showing the related job there, because that's what's being shown to the app.
+
+Unknown Speaker  41:48  
+But which is the what's which ones are related to? Which is that the job location?
+
+Unknown Speaker  41:55  
+Yeah, which means, okay, change the name, the job name. You shouldn't have to refresh it down to the related job assignments.
+
+Unknown Speaker  42:05  
+Okay, it would automatically change, yep, okay, that would be nice, okay,
+
+Unknown Speaker  42:12  
+um, new officer sign up. Talked about that, Jeff. Talked
+
+Unknown Speaker  42:20  
+about man's napkins.
+
+Unknown Speaker  42:25  
+Okay, I think that's all that I had.
+
+Unknown Speaker  42:31  
+Okay, yeah, I will.
+
+Unknown Speaker  42:36  
+I'll try to talk to Jeremy. He was actually trying to get me into a Zoom meeting about another project right now, but I'll see about,
+
+Unknown Speaker  42:47  
+excuse me,
+
+Unknown Speaker  42:48  
+about
+
+Unknown Speaker  42:50  
+talking to him tomorrow and see if we can look at some of that location stuff real quick.
+
+Unknown Speaker  42:57  
+So, but when you say pins, you you really mean you're talking about the route, the location data of the actual clocked in officer, not the job location, pin Correct, yes, yes, yes, yep, because I remember you saying that it was registering like you could see on the back end. And I don't know if you called it a token, or what you called it, but it was capturing it, but it just wasn't displaying on the job assignment, detail, math. Okay, I will.
+
+Unknown Speaker  43:27  
+I will discuss that with Jeremy and maybe Steve, if I need to bring him in on it, and we'll look at that tomorrow. Cool. Sounds good. All
+
+Unknown Speaker  43:38  
+right, that's what you got. That's what I got.
+
+Unknown Speaker  43:43  
+Okay, so let's,
+
+Unknown Speaker  43:48  
+I'll, I'm sure I'll email you or something with whatever I work on tomorrow, letting you know what's being done. We have a call tomorrow, right?
+
+Unknown Speaker  43:57  
+Yes,
+
+Unknown Speaker  43:58  
+yes, but that's not, that's different. Cool. I know. Yeah, I recall we shouldn't be going through technical things. No,
+
+Unknown Speaker  44:07  
+I gotcha.
+
+Unknown Speaker  44:09  
+But nevertheless, you'll, you'll see some emails from me as I work on getting the email stuff switched over to Blue dispatch. And I'll talk to Jeremy about the mapping thing. I might try to talk to him so that, because he likes to work in the evenings a lot, maybe because he is on the east coast, he's in Florida. But I'll, I'll,
+
+Unknown Speaker  44:29  
+I'll see if I can get him on that. Maybe he'll look at that this evening, and then again tomorrow, we'll try to work that out.
+
+Unknown Speaker  44:37  
+And then Thursday, I'll
+
+Unknown Speaker  44:41  
+when we decide what time we're going to, you know, start doing all of that stuff. I'll let you in on the Zoom, and we can go through all the testing and all the the final prep to go live.
+
+Unknown Speaker  44:53  
+Sounds good,
+
+Unknown Speaker  44:55  
+alrighty.
+
+Unknown Speaker  44:57  
+Well, if that's what we got, that's what we.
+
+Unknown Speaker  45:00  
+Up. Thank you very much and
+
+Unknown Speaker  45:03  
+and we'll talk tomorrow. Perfect. Thank you. All right. You have a great day. Ashley, you too. Alrighty, bye, bye. You.
+
+Transcribed by https://otter.ai

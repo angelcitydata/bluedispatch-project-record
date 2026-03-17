@@ -1,0 +1,379 @@
+Unknown Speaker  0:00  
+Record and all right. Well, hello,
+
+Speaker 1  0:07  
+welcome back to another week of the fun. I do have some updates. So number one, I messaged back. I emailed back Jasmine today. I haven't gotten a response. So the new AWS instance, you know, we had up and running kind of the way we want it. Ginger sec, I know, made all the changes that they wanted to make, and we couldn't connect to it at all anymore. So then she got me, she got me attached so I can connect with RDP, which is remote desktop, into it, and see that, see it as a desktop, do what I need to do there that's up and running. But if you're not a developer, if you're not us, you can't attach to it in any way. So file makers still can't attach to it, like I can't open this the system we have there here on my computer, I can't ping it, which is a very basic way you just see if a server is there and on, I keep the web apps can't connect to it. So nothing can connect to it except a remote desk and administration and remote desktop connection. So it is, it is very secure, I imagine, but nothing can talk to it. So, yeah, waiting for that. I know we had hoped to go live with that server last Wednesday, but I couldn't connect to it at all. I got the RDP, I believe, Thursday, running, and I can't connect with any other way. So I got with Steve, and we made a new DNS just for that server, just for the time being. In fact, it's called testing dot blue dispatch.com so I've tried to ping it and connect to it via file maker or a browser, both at the IP address and the DNS name, and I cannot. That's what I passed on to Jasmine. And we'll see. I think I passed that along Friday, and then I just touched base again today to see if there was any movement. So that is where we are with that particular deal going on. Then what is next? Share my large screen here.
+
+Unknown Speaker  2:42  
+We do have this prepared.
+
+Unknown Speaker  2:46  
+Yeah, I saw that.
+
+Speaker 1  2:48  
+So that is up, and that's what it looks like. Please feel free to give any feedback before we push that to the production version of agency. I think they got, they got really close, yeah, to what you put over, yeah, again, we couldn't match that font. That's, that's not a web ready font. But other than that, I think it, it looks pretty close. And I know this is in the center, instead of more over towards the right, but that's kind of where it is. I can ask if we can move that if it's a really big deal, but usually centered the screen is where you'd have a login anyway.
+
+Speaker 2  3:35  
+Okay, yeah, no, I've been watching it since yesterday, through all the changes. I just was curious. So I got to kind of see the evolution of that
+
+Unknown Speaker  3:45  
+I showed Becca this morning.
+
+Speaker 2  3:48  
+And really, it looks good, like the only thing that she said was making that blue dispatch, maybe a little bit bigger, but
+
+Unknown Speaker  3:58  
+this one, or yes, the
+
+Speaker 2  4:01  
+ear, yeah. But otherwise, it looks really good. It's super close, I think. And, and then when, when can they push it,
+
+Speaker 1  4:12  
+yeah, plus the size. I mean, I know it looks good, depends on, you know, I bet, let me move it over here real quick. Yeah, it looks a lot bigger on, like my laptop screen. I guess it kind of depends on the size of your monitor also,
+
+Unknown Speaker  4:27  
+definitely, yeah.
+
+Speaker 2  4:31  
+So it looks really good. It's, it's very, very close, perfect what we had. So I do think it'll look they can push it so I can test it before IACP.
+
+Speaker 1  4:43  
+Oh, absolutely, yeah, it takes, it only takes a few minutes to push dev to prod. I just want to make sure that that's we've got it here. Yeah. All right. So yeah, I'm working to. The what I was talking about is I've got Jake working feverishly on but then once he finishes what him and Steve are doing, I have to pass it on to Jeremy to actually do, and that is getting the new mapping stuff to look to work on this map here. I do not know if that'll be ready. We're really pushing it, and Jake hasn't, hasn't passed it to me, so I can't pass it to Jeremy yet, and I don't know how long it's going to take him to do that. Okay, it's it's close. It's not impossible yet. But if I don't get Jeremy started on it sometime tomorrow, it's, I'm gonna call it as there's no way we'll be finished by the end of the week, because the heat needs good two days, and you need some time to look at it before we push it to prod and you show it to people in public. Yeah.
+
+Speaker 2  5:59  
+I mean, it's, still the production, still has, like, the maps and the pins that that work, right? So it's,
+
+Speaker 1  6:06  
+it'll show that, yeah, you just got to be able to find a job that has them. The problem is, you know, the problem is, since the current web app isn't collecting very well,
+
+Unknown Speaker  6:16  
+Oh, I get what you mean. Well, I mean
+
+Speaker 1  6:19  
+a job that has one that has, you know, lines on it.
+
+Speaker 2  6:22  
+I mean, I can always, you know, clock in for them, and they can just pick my job safe if it comes down to that, because I know mine pins accurately. So that's good to know though.
+
+Unknown Speaker  6:36  
+Yeah, yeah, I don't,
+
+Speaker 1  6:39  
+yeah, we're not going to, in fact, I'll make sure that we push to production to make before we start making map changes, that it's not a broken state. When you get out there, you know, that portion, it'll, it'll either be ready or it won't. It won't be, you know, under construction, gotcha, alrighty. So that is where we are with that. And I kind of already gave you the update on the native app where I said I'm pushing on location stuff right now. I was trying to have that ready for you before the weekend. Yeah, I don't, I don't know if that's going to happen. We will see the then he'll be going back to the my jobs. The other thing is, he's waiting for me. I didn't want to distract him, but he is waiting for me for a document that runs through the opt in and opt out processes so that he can, he can create the website page, and I can create the stuff that I need to and file maker to run that. Most of it's already there, as far as file maker is concerned. But he does have to make a new web page and have the functionality do something if they opt in or out, and we have to get it connected, or the ability to get it connected to the sign up the officer sign up page that you already have, basically giving you guys a URL. So that should be coming fairly shortly after the location stuff he's doing is done,
+
+Unknown Speaker  8:17  
+but that is what is left on this.
+
+Speaker 1  8:20  
+And then, of course, whatever it takes to get it through approval with Apple and Google. That's my looking at notes. That's pretty much my updates. Anything else you would have seen on Trello?
+
+Unknown Speaker  8:40  
+Okay, yeah,
+
+Speaker 2  8:41  
+I saw some I didn't see him necessarily on Trello, but I did see like the cursors were working again and in contacts and
+
+Speaker 1  8:48  
+things like that. Yeah, I think I just did that so fast I didn't bother making a card. Cool so you want to bring up the list and take it away?
+
+Unknown Speaker  9:02  
+Yeah, all right.
+
+Speaker 2  9:09  
+Really quick, I was going through my list, and I just wanted to make sure, because I think it is, it
+
+Speaker 2  9:21  
+was a while ago in reoccurring jobs. Do you remember how it would say it was pulling from QB instead of first and last? Can you confirm that that's been changed? I want to say yes, because it doesn't have like for what right here? Oh, the names like it was pulling from Qb, and we wanted it to be like first and last, just to stay consistent with everything. I want to say that it was changed only because I don't see any of you know, sometimes there would be, like, badge numbers or other things that are in the QB line. But I just wanted to make sure that that I was right.
+
+Speaker 1  9:57  
+It is Officer Name, Last, first kept.
+
+Speaker 2  10:00  
+Least what I thought, Okay, I just wanted to make sure before I took it off. Next one, this one's weird, okay, you say that? Well, because it like i It's hard to explain, and it kind of came out of nowhere. And we get to one a good example.
+
+Unknown Speaker  10:41  
+Sorry, wait a long day.
+
+Speaker 2  10:46  
+Okay, so, okay, so this job, for example, 830 to 230 so it's capturing, I okay? So basically, if they're clocking in or out in the morning hours like I don't midnight through, I want to say it's somewhere around 930 it's capturing right here. But if they are clocking in or out. And it's like, after 930 to I don't know what time it turns back on, but it's, it's not, you know, time stamping it now, I can find it the timestamp in the mod log. But other than that, I can't explain. I know that there's like a time where it stops recording, and I want to say it's around between 930 on,
+
+Unknown Speaker  11:51  
+but, yeah,
+
+Speaker 1  11:53  
+that's fine. Told you. It was weird, are they? And so they're clocking in being the app for this to happen, correct?
+
+Speaker 2  12:01  
+Yeah. So right. I can try on a Yeah,
+
+Unknown Speaker  12:07  
+but yes, that is right. It's through through the app, and it
+
+Speaker 2  12:13  
+is recording in the mod log. It's just not recording right there. Just strange, yeah.
+
+Speaker 2  12:31  
+See, okay. So it is also if I push this button too, I
+
+Unknown Speaker  12:43  
+so it's through the app and through the
+
+Speaker 2  12:47  
+dashboard UI. I don't know what you want to call it.
+
+Unknown Speaker  13:09  
+How do you think that is any ideas?
+
+Speaker 1  13:12  
+Nope, I'm taking notes, and I'll try to figure it out. I do wonder if it's doing it in dev, also, because I've have been making a lot of time changes time, stuff changes that I haven't pushed to production yet.
+
+Unknown Speaker  13:30  
+I could try, if you want. Most
+
+Speaker 1  13:32  
+of that had to do with notifications, though, not clocking, but I might have messed with it.
+
+Speaker 2  13:38  
+No, no, yeah. This happened at some point on, like on Friday? Want to say Friday afternoon? Yeah, I actually think it might have been, it might have been midday, so maybe later in the day for you,
+
+Speaker 1  13:57  
+awesome, I will. I'll see what I can figure out there.
+
+Speaker 2  14:01  
+Okay, any update on, I don't know what you want to call it. I was calling it a half hold, but it's, it's basically when you're but no, it is okay. Do
+
+Speaker 2  14:23  
+um, the the UTC, so that is that all fixed on dev and you're just waiting to push it to production. Or is there anything you're still working on?
+
+Speaker 1  14:37  
+I might be. I think I'm working on one notification, but mostly I would like you to test a bunch of stuff, yeah, and before I move it to production, I think is where I'm at,
+
+Speaker 2  14:50  
+okay, I mean, I've tried a lot of things and just trying
+
+Speaker 1  14:57  
+to the problem with. How to test it properly is the Dev is sitting on a computer that is not using UTC time. Oh, interesting. It's sitting in your office and it's using Arizona time. Oh, so,
+
+Speaker 2  15:17  
+so, how do you test that? Then? Because I was like, Oh yeah, it seems to be working, but, yeah, that's moving the terror downstairs like I would be, huh?
+
+Speaker 1  15:23  
+Yeah, it's interesting to try to test properly. I've got a couple ways that I've built in, but it's still, yeah, it's interesting.
+
+Speaker 2  15:34  
+I Is there anything I should look for, or what are the
+
+Speaker 1  15:38  
+that the times are come out I'm really looking at, I mean, I guess the clock in, clock out is a good example, the mod log, that the mod log and the the Create and deletion, or create modification that's shown at the bottom right of Most screens, that all of that modification records, and those records are showing in your time, they probably are on dev, because my cheat, because it's getting it from the system, the problem is, once we go up to prod, is my fork still going to work? It's because it's trying to figure out which it's getting before it does something. So we'll see on those. But mostly I'm looking at the all the different notifications, the you've got a job in an hour. You've got a job tomorrow. The job started, but you haven't clocked in yet. Those type of notifications make sure that they go at the correct time. You hate to have one that says your job starts. In an hour, and you're like, No, it doesn't. It starts in eight, you know? Yeah. So those are, those are the big ones that I'm that I've been working on trying to get those because just getting the time when you do a mod log or something is a lot more simple than the notifications when you're trying to compare times, because the time that I get when I ask the server what time it is is UTC but then the notification needs to be sent out based off of whatever time the officer is in and I've I'm obviously making it so that they can be in more than one time zone than just Arizona, so they've been working okay for me here on the East Coast, at East Coast time if but it's not just where I am, it's where the job is, and the job location needs to Have a time zone set on it
+
+Unknown Speaker  17:42  
+for the notifications to work correctly,
+
+Speaker 2  17:44  
+and all the new ones would, since we've in the lawns and
+
+Speaker 1  17:49  
+last, that's correct. It's right there on the same screen in depth. That's another feature we haven't pushed to prod yet, because we're Yeah, sure that that's that's wonderful before we do it. Yeah, it,
+
+Speaker 1  18:14  
+and that is number two on Jeremy's list, after the location stuff on the agency app is to go back to the mapping. Because he did that the mapping and file maker, I need him to go back in there and do more features to that, also including when you open it back up and you've already selected, you know, a location, it'll show that location on the map, instead of just going back to default. And maybe did you, I'll have to look through my stuff. Did you ever end up sending me one of those geo files that would have
+
+Unknown Speaker  18:55  
+the the borders for an agency? Oh,
+
+Speaker 2  18:57  
+no, I can. I have, there's different ways that they have it stored the GIS thing, like this one,
+
+Unknown Speaker  19:06  
+yes, send me two or three.
+
+Speaker 2  19:09  
+Oh, that's three, like, where it's literally just a Yeah, and it's like, pages of just basically their border. So I have that, but then I can also, because I I'm not sure, but I don't know if they all are stored or collected the same way, like the bigger agencies and the smaller ones. So I can try to see if I can get a few as samples. Yeah, maybe they're all the same and they just, you know,
+
+Speaker 1  19:35  
+they probably will be in the end. It's just a bunch of it's just a bunch of coordinates. And then you draw a straight line between them. There's a lot of coordinates, because none of them are, you know, yeah, notice that it's not just a square, it's some crazy drawn you know thing, yes, yeah. That's, yeah. Okay, so get you so that is, that's good. That is second on Jeremy's list, after the map. And stuff for agency app that we're trying to push as fast as we can is to get back to file maker and work on some more features for that mapping, and we can have that really ready for your production. I'm a little slow to move it to production, because when you select on there, like the new native app is going to be using coordinates, but your current one is still using an address. So when you select through the map, an address and it's not showing the best thing because you clicked and put a marker on an intersection or something, and the address it returns isn't the best, you guys are going to have to hand change that. Oh, okay, for at least for now, once we get the native app, that won't be a thing anymore. But you know if what it brings from the map when you click and drop a marker or select something from the list. Again, I don't think it'll be a problem for address addresses, but for intersections, stuff like that. Yeah, you might want to change it to what's going to work better for your officers to see as far as the address is concerned,
+
+Speaker 2  21:16  
+I get you manually pin it, yeah.
+
+Unknown Speaker  21:19  
+I just think that'll
+
+Unknown Speaker  21:21  
+that'll open up potential problems,
+
+Speaker 1  21:26  
+you know, in the crossover between between the new app and the old one, since we're still running, okay,
+
+Unknown Speaker  21:34  
+okay, I understand.
+
+Speaker 2  21:39  
+Let's see, oh, this one the, it's probably on your list, but just the no default on traffic, and then must have a selection before completion on the job.
+
+Speaker 1  21:50  
+Detail, yes, I it is on my list. Okay, at
+
+Speaker 2  21:59  
+some point we still need to probably fix Sean's password, but when we do that, I was hoping I don't have a anyone to try. But I just feel like everyone that I've added to the process, I know it's set up to work, but I just, I feel like everyone we do has that same problem with the I think it was better forms. I want to say,
+
+Unknown Speaker  22:22  
+oh, better forms file I
+
+Speaker 2  22:24  
+feel like it just everyone I've tried to set up, you've had to do something to
+
+Speaker 1  22:30  
+and so I just, oh, as far as internal users access in FileMaker,
+
+Speaker 2  22:37  
+yeah, so like, when he was resetting his passwords, like all four. It only did, like, I think three out of four, okay, and there was one that it just wouldn't do, yeah,
+
+Speaker 1  22:47  
+if it's not the better form that would, that would make sense. I don't know if, yeah, that would make sense, if it would be that one, because not everybody has access to that one. So that is, that is a thing, if his if his thing doesn't have access to it his user group, then it probably wouldn't let him change the password, and he wouldn't be able to do anything that has to do with the with the website,
+
+Unknown Speaker  23:26  
+with website logins and stuff.
+
+Speaker 2  23:30  
+Okay, I'm trying to remember if, if, when we first reset our passwords, of if the Oh no, it would have had to have been, I was trying to think because, like, I don't remember this problem with like, Christine, and she's also a user, but I don't remember her saying that she couldn't reset it four different times. I don't know if that makes sense.
+
+Speaker 1  23:54  
+I do not know. Let me check something here in the BF helper file. I Yeah, Sean does not have a record in the BF helper file. Does not have a right doesn't have a user there at all. Christine is that?
+
+Speaker 2  24:12  
+Yeah, and they're both users, like, when it comes to, you know, the different credentials and levels and stuff. So I'm just curious why his didn't do that in a first day.
+
+Speaker 1  24:24  
+Because he doesn't have a user when he he tried to reset the password, but it there's no user to reset a password for in that file.
+
+Unknown Speaker  24:33  
+Why? Oh, I don't know.
+
+Unknown Speaker  24:37  
+Maybe because I never created it, or maybe
+
+Speaker 2  24:41  
+so by me, like, going into, when I went into like settings and staff, and I, like, created it. And did user like, is there a like, just by me going through the process of adding it, it should have just, you know, created it, right?
+
+Speaker 1  25:00  
+Maybe the other three Yes. On BF helper, I'm I'd have to look at that. Okay.
+
+Speaker 2  25:08  
+I don't have a new employee to, like, try it on, but I just feel like every time we I added a new one. So I remember same thing happened with Kara, and then you had to do something to it, and then the same thing happened to Sean, and those are the last two, most recent ones that I did that had issues.
+
+Speaker 1  25:26  
+So okay, I will look into that. Okay,
+
+Speaker 2  25:34  
+okay, let me know that way if we do need to. I mean, it hasn't seemed to cause him problems, but I was just thinking about for future employees. Yeah, you know, if I would run into it, although
+
+Speaker 1  25:47  
+said, I mean, I'd have to go looking deep in the permissions, but I could have swore we did have a specific groups that we wanted to have access to doing the web. Right?
+
+Speaker 2  26:03  
+And web users don't, users don't, usually users, they don't, like Christine, for example, like she can't delete, or actually just delete, I think, okay, the web app access. So you're saying, though, that
+
+Speaker 1  26:21  
+I'm saying maybe that Christine got access, not that Sean can't.
+
+Unknown Speaker  26:26  
+Okay. No, that's okay.
+
+Speaker 1  26:30  
+Okay, okay, noting and looking cool.
+
+Speaker 2  26:41  
+Um, okay, next one. This one's not urgent, but it's just something that I run into every once in a while, and it's not a refreshing because I waited a few days till I keep trying it
+
+Unknown Speaker  26:58  
+because I was thinking maybe it was that.
+
+Unknown Speaker  27:06  
+I'm impatient. Bye, bye. It.
+
+Speaker 2  27:35  
+So you see this, the modification like this one in particular. So this set of recurring jobs modification gets cut off, and then this one does but and the thing that also is irritating was, oh, it's not on that one. Hold on.
+
+Speaker 2  28:05  
+Oh, it's there. Okay. But anyways, I was just curious if, if you know why that happens. I was thinking that by like, logging out or waiting a few days, that it would come back. No, no,
+
+Speaker 1  28:14  
+it's there. If you can, you grab the bottom right hand corner of that window and make it bigger.
+
+Unknown Speaker  28:20  
+I don't think I can. I've never
+
+Speaker 2  28:24  
+been able to adjust these ones. Okay, I know, but you're saying it, yeah, because I mean, and it's not on all of them, and I can't recreate it. I don't know what causes it.
+
+Speaker 1  28:34  
+No, no, I've seen it. I've definitely seen it, but I can tell you, I can tell you it's there, so it's it's a problem with displaying, not the WHO modified it disappearing. It's there. It's just for some reason not showing, right? I can maybe make some buffer space or something to help it show, but it shouldn't. I'm it's got plenty of room. I don't know why.
+
+Speaker 2  29:04  
+It's not all the time. It's just, and I don't know if anyone else, because
+
+Speaker 1  29:07  
+it has to just, it has to do with the window sizing, and it actually has some to do with your screen, what you're looking at it on different size screens, and stuff may show it or not show it so it's not your fault, but I can guarantee you, it's there. The information is not gone. If that's your bigger worry,
+
+Unknown Speaker  29:33  
+no, but finding out, you know,
+
+Speaker 1  29:35  
+like, yeah, it is, is great. That would be awesome. Let's do that.
+
+Unknown Speaker  29:41  
+Yes. And then,
+
+Speaker 2  29:45  
+I don't know if we can do this now or not, but the last thing that I had was just the dashboard collapsing. And I know that you have to be on my computer, or in my computer rather, to recreate it, because it doesn't do it on Mac. Yeah, but I was wondering when would be a good time to do that.
+
+Speaker 1  30:04  
+I'm, I'm usually pretty open. You just you let me know. I've, I've got a where is this month. I have a 10am tomorrow morning that'll probably last about an hour. I'm available other than that, if you'd like to look at it tomorrow.
+
+Unknown Speaker  30:25  
+Okay, tomorrow's good for me, but
+
+Unknown Speaker  30:29  
+good 10am your time on my time.
+
+Speaker 1  30:32  
+I'm sorry, 10am my time, so 7am your time. I have a meeting that'll probably
+
+Speaker 2  30:36  
+last about an hour. Don't worry, that was not the time I would pick. Yeah. Oh, come on. I mean, I could, but All right, so maybe 1130
+
+Unknown Speaker  30:50  
+1130 your time. 230 my time, okay.
+
+Speaker 2  30:53  
+Oh, is that too late? No, no, no, no,
+
+Speaker 1  30:56  
+I usually I work till about five my time, unless I've got some, some reason to work longer. It's never less. I can tell you that.
+
+Unknown Speaker  31:09  
+Okay, cool. Um,
+
+Speaker 2  31:14  
+I think that's it. Everything else is probably that I could possibly say right now is going to be, I
+
+Unknown Speaker  31:20  
+imagine on your list,
+
+Speaker 1  31:24  
+my list, and the ever growing list, yeah, yeah, actually, it's got, no, it has gotten shorter. And, like, I believe I said before, it's when you actually say, you know, this one's really weird to me. That's That's good things I like to hear because that, that tells me that it's not major problem stopping people from doing their job. It's, it's, you know, this is annoying. Yeah, that, I mean, those are the things I'd rather be I'd rather be fixing, because that tells me things are working.
+
+Speaker 2  31:54  
+Yeah, that's true, and I can tell that it's still capturing their time, and it's not affecting anything else, but it's just not chilling in that one area. All right, I'll thanks.
+
+Unknown Speaker  32:08  
+Yeah, that's all I have for today, alrighty.
+
+Speaker 1  32:12  
+Well, I can't turn things back over to Joe to see if he's got anything. So Amanda, was there anything else? Question, comment, thought, nope, we covered it all Thank you. Sounds great. All right. Well, everybody, have a great day. And Ashley, we will talk tomorrow. I'll send out that zoom at some point, probably very early in the morning, for you. Sounds good.
+
+Speaker 2  32:38  
+Alrighty, thanks, you guys. Ashley, let me give me anything, I will thanks. Thank you. Bye, bye.
+
+Transcribed by https://otter.ai

@@ -1,0 +1,859 @@
+Speaker 1  0:00  
+Being said, it's just us three. Oh, us two. Yeah, twice, yeah.
+
+Speaker 2  0:08  
+I was just gonna say it's really just Ashley and and you at this point, Brian, I just kind of hang out in the background.
+
+Speaker 1  0:15  
+Not a problem. I did get word from Jake. He will not be meeting at the meeting either. He is actually, they're doing a interview for another developer. We're still working hard to get more help.
+
+Speaker 2  0:30  
+Oh, wow, okay, okay, well, that's always a good thing. Always a good thing. If you're if you're growing, that's always good.
+
+Unknown Speaker  0:35  
+Yeah, we, we need it. In fact, we,
+
+Speaker 1  0:40  
+we just lost another person last week. Oh, no, she, she, she just quit become being full time. She, she wanted to go as a subcontractor and have time to do her other things in life. She didn't like being a full time employee. Okay, fair enough, I'm like, must be nice to have that kind of freedom, Yeah,
+
+Speaker 2  1:04  
+seriously, right, when you can make that kind of decision, just
+
+Speaker 1  1:07  
+it is wonderful. I'd like to do that too. Where do I sign up? Exactly, have somebody take care of me and my job just be fun money.
+
+Unknown Speaker  1:15  
+Yeah? Exactly. That'd be super nice.
+
+Unknown Speaker  1:20  
+All right, new reality. How are we doing? Miss Ashley,
+
+Unknown Speaker  1:26  
+good. How are you not?
+
+Speaker 1  1:28  
+Too bad, just working along, trying those I can tell you. I'm trying to get the Agency report stuff running. I did some tests this morning, and I have it running on file maker, and I'm meeting with Jake tomorrow to to get that connection and add what needs to be added to the website of that but that's that's where I am with that particular task. Okay,
+
+Speaker 3  2:02  
+um, okay, for agency. I mean, the ones that I really have are I, I've brought them up, but Jake wasn't. I don't know if they should be told to Jake, or if he already knows about them. Just the No, we went over him last time, the release button and then the non billable.
+
+Speaker 1  2:24  
+Non billable being able to unbook the non billable.
+
+Speaker 3  2:28  
+No, so not billable. So when I put it in, I still see the release button, and then I it also, I don't know if you remember, but it says other agency, which is kind of funny, because it it it only shows in the one agency so and it's staffed anyways. But that's nothing new
+
+Speaker 1  2:51  
+his tasks, okay, I will add that to his to his task list. Do I know you found it up and we had it written down, but Right, if it's here, I can hold his feet to the fire.
+
+Speaker 3  3:09  
+Okay, and then so for I was looking on agency and release jobs. I guess I'm curious. I know that on one of the Trello cards, he like put the logic behind when release button should be there and not. I'm just curious, can it only show if a job is unstaffed? I'm curious why we wouldn't want a release button for a job that's like today and there's an officer on it. I mean, the agency can't take the job off hold or not, yeah, UN staff it, but they can hit the release button. So it's kind of, I don't understand,
+
+Speaker 1  3:51  
+well, the release button, yeah, just releases it to other areas. But yeah, that doesn't really matter if there's already an officer on it from their agency. Yes. I maybe I can, I can ask. I'm sure it's possible. Awesome.
+
+Speaker 3  4:13  
+That's pretty much all I had for agency. Those three things, do you want me to start on app or you I don't want to move too fast. Okay, second I release
+
+Unknown Speaker  4:34  
+option officer son, okie, dokie, all right, now you can move on.
+
+Speaker 3  4:52  
+So let's see app, oh, I don't so this was not a problem yesterday. It's just a problem today. So I call. Clocked in, or I had a job, clocked in, clocked out. It didn't go to my past jobs tab. Did the same thing. I took another one, and I like canceled. It still didn't show up in my past job. So I don't really know why, or what's changed between yesterday and today, or if he was just working on it. I mean, they're in production, but they're not in dev, and I know we're only testing out of Dev, but I wanted to see if it was even in production and it was
+
+Speaker 1  5:27  
+your they're not in your past jobs. And you did clock out through the app?
+
+Speaker 3  5:32  
+I did clock out through the app. I clock out time
+
+Unknown Speaker  5:35  
+in FileMaker.
+
+Unknown Speaker  5:37  
+Yeah, I can show you if you want. No, no, I
+
+Unknown Speaker  5:39  
+believe you. I'm just making sure,
+
+Speaker 3  5:41  
+yeah, no. And I mean, I, like, refreshed, I logged out, force closed at the works, and I just anything from today, I couldn't, it won't show up anywhere. Well, like, obviously it showed up in my today and active. But once I clocked out, it was just gone.
+
+Speaker 1  6:00  
+Okay, could you, like, send me, especially if you have more than
+
+Unknown Speaker  6:13  
+one, like the the date and the
+
+Speaker 1  6:17  
+customer, maybe, or the date and the address?
+
+Speaker 3  6:20  
+Yeah, it's just everything from today, everything from yesterday is good, but, yeah, I can send you those. I think it's like two, three or four. So I tried different variety of things, and I thought maybe something will show but I don't know.
+
+Speaker 1  6:36  
+I bet you they show up tomorrow. And for some reason, I mean, I mean, I was doing a lot of testing the past. You know, it has to be the day before, before it shows up in the past. But it's not like that production, and we don't want it like that so
+
+Unknown Speaker  6:48  
+well, yesterday, when I was doing them, they were pretty
+
+Speaker 3  6:52  
+immediate, because I was testing like officer notes, like, what happened if I did officer notes after I'd already completed the job? So, and they were showing up yesterday, so it's literally just a today thing. I don't know why, but I guess I'll let you know if they show up tomorrow.
+
+Speaker 1  7:08  
+Yeah, like I said, if you could send me the dates, yeah, like the address or something, so I can identify those jobs and look at it in the background, that'd be great. Do
+
+Speaker 3  7:34  
+Oh app. This is an app doing that might Jake might know more about, but I was just testing the the
+
+Speaker 3  7:46  
+mileage, like the report that Excel file that you get, yep, and it was kind of strange. I don't know how to Oh, I know how to show you. I not.
+
+Unknown Speaker  8:04  
+Did you get something emailed to you? I
+
+Speaker 3  8:06  
+did. I did. But that's what was kind of strange about it. So for just so you know, in the app, when I'm looking at it, I should have 320 in April, but on this spreadsheet, you can see I have 320 in January and then October, which October hasn't happened yet so, but it should be in April. So I think it's just maybe putting it in the wrong Excel spot, maybe, oh, also, there was no total. And then the jobs worked, one everything was accurate. So it was just a mileage. I just thought I'd bring that up. Hey,
+
+Unknown Speaker  9:06  
+it kind of weird, because we haven't touched that in a while,
+
+Speaker 3  9:13  
+yeah, and I tested it once before, a long while ago, and it did work.
+
+Unknown Speaker  9:18  
+So maybe it was, I don't know.
+
+Speaker 1  9:23  
+I can see it in the queue. You're not the only one. Officers are requesting that report here. Okay, yeah, so it's, it's being used so, yeah, okay.
+
+Speaker 3  9:41  
+Oh, I wanted to update you on this. So for the you know, seeing jobs after their job has ended, okay, so it works every time I've tested it. If I have a clock in, a clock out, like in the times or it's canceled, and I've tried almost all cancel codes. Yes, and that works. I mean, honestly, the only time it doesn't work is if someone went in and just put like four here. That doesn't work.
+
+Speaker 1  10:08  
+Yeah, it neither needs a clock in and clock out time or the be set from the payroll process that Laurie does or Lori's team does. So that's the other way for a job to be marked as complete,
+
+Speaker 3  10:24  
+yeah, or canceled, that did work, also Yes, canceled, also yes, yeah. Okay, well, I just wanted to give you an update on that. I'm trying to think of other ways, but I I really can't think of anything else, any other way a job ends. Like, I mean, you know, so especially just for like that same day,
+
+Speaker 3  10:53  
+it was one person who saw another profile. I'd have to ask Tyler who it was. I know that for the most part, it has been completely fixed. Just had one person that we know of could have that happen. Just wanted to bring it up. Do not have the name. I'd have to ask Tyler on that. But,
+
+Unknown Speaker  11:21  
+oh, the officer notes.
+
+Speaker 3  11:25  
+Okay, so I don't know if you can explain this or not, but I made some notes. It wasn't Yeah, so this one worked for the mod log,
+
+Unknown Speaker  11:42  
+but I don't know why. Which one
+
+Unknown Speaker  11:47  
+didn't six? Oh, yesterday's
+
+Unknown Speaker  12:03  
+okay. So four, hold on.
+
+Speaker 1  12:17  
+Cheers so officer notes on one of them. Oh, right here, yep,
+
+Speaker 3  12:23  
+but it doesn't have it like the other one, where the other one had it, like, right here. Do you see it? It was like, right at the top, yeah. I just don't
+
+Speaker 1  12:32  
+see it in this call that was changed this one. It looks like, it looks like multiple things were changed in the same call.
+
+Speaker 3  12:47  
+And I can't see any further down on this maps like really interfering.
+
+Speaker 1  12:52  
+Yeah, can't make a popover go over top of a map or over top of a web viewer, which is what that map is.
+
+Unknown Speaker  13:00  
+And I know on, oh, go ahead.
+
+Unknown Speaker  13:04  
+I don't know. I was
+
+Speaker 1  13:07  
+thinking of trying now that we've got a separate field from the from the web JSON that's tracking for mod log. Maybe, maybe I should take some time and flatten that out, especially for the job assignments and reoccurring jobs, which means you, when you make one change, you shouldn't see nearly as much stuff. It's doing that because it's it's a hierarchy, and if you change something down in the hierarchy, say, third level down. It's going to show you everything about, okay, if I flatten it out so that it's just there's no hierarchy, it's just one level, just a list of fields and their values, then you should only see what changed that way. Should see this whole hierarchy. That's, that's something that diff is doing. But I can, I can look into that, that, of course, if I do that, it will only change it going forward. It's not going to change anything that's already
+
+Speaker 3  14:14  
+in there. Oh, yeah, I get that. Okay,
+
+Unknown Speaker  14:20  
+so that's all for F
+
+Unknown Speaker  14:25  
+let's see,
+
+Unknown Speaker  14:28  
+while we're on the subject of mod logs,
+
+Speaker 3  14:32  
+this is something I just don't Oh, for. Well, I'll say one thing. You know, how an agency, we can, like, hover over it. You taught me that little trick where you hover over and you get to see the whole thing. Yep, that doesn't work on the job assignment details. Is there any way to switch that?
+
+Unknown Speaker  14:50  
+That's not okay.
+
+Speaker 1  14:53  
+Let's see. Let's make that happen right now. That's very quick. Yeah. Do you
+
+Unknown Speaker  15:02  
+feel like that might help with my map problem too?
+
+Unknown Speaker  15:06  
+Like the map blocking it? Yeah,
+
+Speaker 2  15:10  
+and this falls right in hand with Stacy. What you found out about Stacy's version of file maker ash? Yeah, I think Sean's too. Or is it just Stacey? Just Stacy?
+
+Speaker 3  15:24  
+Just Stacy, so far, I mean, I've checked, so I've checked Tyler's Stacy, Sean's mine, obviously.
+
+Speaker 1  15:32  
+Now open one of the job assignments again, and you should see the tool tip that shows you the whole thing, like you do on agency?
+
+Unknown Speaker  15:41  
+Yeah, there it is. And that tells me,
+
+Speaker 3  15:47  
+yes, okay, thank you. I
+
+Speaker 3  16:08  
+Okay, this one I can't explain on, I need your help on this. Okay, so mob, Doc, six, five.
+
+Unknown Speaker  16:22  
+You like Amanda snuck on.
+
+Unknown Speaker  16:27  
+Thanks, guys, sorry. My meeting ended. Okay. So so don't even know how
+
+Speaker 3  16:36  
+to explain that to you, but I'm gonna give it my best shot so as you can so, like this job has never changed combs and gentle. It's always said that it's always been Pinel, but for some odd reason, right here on six, five, like it went from 108 which is Pinal, my AJP, electric, you know, blah, blah, blah. But new value is 103 which is a Peoria agency ID. It went to the Nesbitt job 12 hours. But here's the thing, though, is like it looks like it did that, but it didn't actually do that, at least on dashboards view like it never looked like it said that. But then today, Tyler and I'm, like, watching as it's, you know, going on. And all he changed was the cancel. So he changed it from a c5 to a c1 and then he just took out the hours. But when he did that, you can see that it went from this 103 back to 108 so it like, went it like, quote, unquote, switched from the Peoria to the Pinal job, but it didn't like on we couldn't see anything different, but obviously on the back end, it did. It. Does that make sense?
+
+Speaker 1  17:55  
+Something happened? Yeah, yeah. Again. Could you add that to the list of dates and address or whatever you give me, you send me so that I can see, I can go look, see if I can figure something out,
+
+Unknown Speaker  18:12  
+whatever happened. It feels Marissa did it
+
+Speaker 3  18:15  
+No, but she said she didn't. And I mean looking at it, though, like because I looked at it
+
+Speaker 1  18:21  
+today, see those changes show up? Yeah, in your dashboard or anything? But, yeah, I don't, I'm not sure. I can, I can look there is some more information that's tracked in the background.
+
+Speaker 3  18:33  
+Okay, just, you know that day, does that job does exist on this day? Yeah? So I don't know. I don't know if something got crossed. I'm not sure, but I'll send that to you as well. Now, I guess why we are on mod logs. So I went through and I checked my, you know, my version of file maker, which is this, Stacey's is this, and hers was last updated in like 2022, I don't remember the month in the day, but the year. So it's very old. And like this symbol down here doesn't Yes, it's the old one. So 19, yeah, yeah. What now
+
+Speaker 1  19:15  
+that's gotta be updated to the new version. We, we updated all of you guys, yeah, or I did the mod stuff earlier in the year. I guess they see I can't do that. That's, I don't know if Jeff does that, or
+
+Unknown Speaker  19:33  
+is that Jeff, Joe,
+
+Speaker 2  19:35  
+you know what I think it would be. Let me, let me jot down a note here, and I'll get in touch with Jeff after the call and see if I can't have him do a run an update, you know, after hours or something, to see if we can't get
+
+Speaker 1  19:46  
+that it's going to be, it's not really an update. He's got to install the new version.
+
+Speaker 2  19:51  
+Yeah, I remember we did this. Gosh, we did this a while ago. So I did it.
+
+Speaker 1  19:54  
+I think we did it in January. Maybe think you're right. I think
+
+Speaker 2  19:58  
+you're right, because it was something that. We we talked about, we planned it, and everything went smooth, but maybe somehow Stacy might have been out something, something might have, might have happened. I mean,
+
+Speaker 1  20:10  
+without that this, the whole mod log process is not going to work at all, and some of the officer app stuff may work weird if she tries to do it on her computer, but that usually doesn't happen. I know it's coming from the web, and your server is updated, and that's the big thing for the web stuff. But yeah, the mod log, and I'd have to look into it if we used any features anywhere else other than mod log, that would require a new version, but I may have because, you know, we thought everybody was updated, so I started using new features.
+
+Speaker 2  20:48  
+Yeah, okay. I'll get in touch with Jeff after the call and see if we can get that squared away.
+
+Speaker 1  20:53  
+Okie dokie, yeah, that'll she'll be able to see things correctly if she gets that updated. Yeah.
+
+Speaker 3  21:04  
+Okay, so this one, okay, so we have what we call, like partnering vendors. So these are, you know, people that kind of coordinate off duty also, but in different states. And there's some of them you know that work in, you know, Utah and California and Florida and New York. So we would, we're putting on, like an agency, right? When we're making a job, they're, they're not honest, actually an agency, but, but they sort of are, because it's their job, like they're scheduling it, that it's their people that they're putting on there. So we, what we did was we, like, made agencies for some of these, like, off duty. I don't partnering vendors, is what we actually call them, but for this job, like, in particular, so oops into the wrong things. Cool. Um, we tried the jobs in Utah, but the agency, quote, unquote, I mean, we put under all because they can work everywhere. You can't do that. So, so when we tried to find, you know, that agency, it's only looking for these. It's only pulling from the site that you put the job location. I guess my question is, is there any easy way around that? Because I don't want to add, like, you know, this partnering vendor to all individual 50 states. No.
+
+Speaker 1  22:41  
+But the the site that you pick has a lot more to do with the agency that yes, you put on there, not necessarily the address of the job. So you don't have to pick Utah just because the job is in Utah. You can pick whatever site that you know, the agency you want to pick is under,
+
+Unknown Speaker  23:07  
+okay, that's, that might be the best I could do. Okay?
+
+Speaker 3  23:14  
+I That makes sense. And I honestly, I figured that's what you were gonna say. I was just thinking maybe there was something I didn't know, or if we could just, like,
+
+Speaker 1  23:23  
+open that up, making a roaming partner, you know, module, you know, whole part of the system for this,
+
+Speaker 3  23:35  
+yeah, because we have quite a few of, you know, we have multiple ones to do all over the place. So, so we just have to pick all for our site. Is that going to mess up anything that you can think of down the line? If we pick all instead of Utah,
+
+Unknown Speaker  23:59  
+I'd have to look around.
+
+Unknown Speaker  24:04  
+It'll definitely make
+
+Speaker 1  24:09  
+it'll make any type of reporting based off of site, you know, pretty close to impossible. Yeah, you know any place where you're using filters by site that makes that a pain.
+
+Unknown Speaker  24:28  
+I don't know if programmatically,
+
+Speaker 1  24:32  
+I think the job listings, job listings, I'm trying to remember when they do this though they're doing the scheduling so the officers on your app aren't seeing these jobs because somebody else is scheduling them.
+
+Speaker 3  24:53  
+Or are true those two No, I mean, at this point, no, they're not, because we don't even. Have these partnering vendors able to
+
+Speaker 1  25:03  
+officers are assigned to those agencies so they wouldn't see them necessarily.
+
+Speaker 3  25:08  
+Yeah, typically, they invoice so we Yeah.
+
+Speaker 1  25:12  
+The only other thing I can think of that might be an oddity is so when you select that a job is open to out of area, exactly, out of area within the same site. So, so doing the whole out of area process on one of these vendor things may do nothing that nobody may be able to see it because there's no, you know all is basically no site attached to it. Oh, actually no. The other way, everybody who has all would see it if you released it to out of area.
+
+Unknown Speaker  25:56  
+So every,
+
+Speaker 1  25:59  
+every job that is a site that has a site of all, all of those officers would see that job if you open to out of area when normally opening to out of area only opens within the site, which is basically a state.
+
+Speaker 3  26:16  
+That makes sense, further down the line that makes sense, yeah, okay,
+
+Unknown Speaker  26:24  
+all right.
+
+Speaker 1  26:25  
+So, I mean, are these partners going to be using the agency app?
+
+Unknown Speaker  26:30  
+Not sure. Honestly,
+
+Speaker 1  26:33  
+they do. That's a conversation that we need to have. That's, that's some big changes, so if you could get that answer, okay, that would definitely be some changes to what agencies are and what they can handle and how they can handle because, you know, right now we're discussing an agency can only create a non billable job and can only do certain things to non billable jobs. But you're saying this partner can do those things, you know, that's,
+
+Speaker 3  27:05  
+I mean, the only thing I can think of that would be a yes, is if they, if wait when we get to that point where we're like, you know, paying invoices online and things like that, if any of that changes, then yeah, Then we would. But for now, for now, they're not, but I will ask, I'll see if we think that that's something,
+
+Unknown Speaker  27:28  
+you know, that may, you know,
+
+Speaker 1  27:35  
+yeah, we, I mean, this is kind of the first I'm really hearing of this.
+
+Speaker 3  27:39  
+It's really the first time it's kind of became a problem, yeah, so I don't know I will, so I find out
+
+Speaker 1  27:48  
+have a lot of stuff in here to handle this type of situation.
+
+Speaker 3  27:53  
+Okay, the next one. I don't remember the exact example, but anyway, so we had someone assigned to a job, and when she went, this is not the job, I will tell you that I could find the job if she really needed. But when she went, like, here, for example, his name, it was blank here. And so I was like, that's weird. I wonder why. So I went in to the officer, and it didn't have a QB name, just a first and last so I'm not sure if you in, if this is intentional, or if this, if you didn't know, or you know what, I don't know, whatever. But so this pulls from Qb, I think,
+
+Speaker 1  28:39  
+yes, it originally pulled from first name and last name and requested that it pulled from QB name because you didn't have all the first and last names entered, if you like, it to go to first and last name, which was the way it originally was. We can change it back, but it was changed under yours and probably Lori's request, but I definitely remember you making that request.
+
+Speaker 3  29:01  
+Yeah, well, back when we didn't have all the first and last names, that does make sense. Okay, that's the first time, honestly, I've seen that happen. I just wanted to bring it up. I don't know how hard of a change it would be, or if you it's
+
+Speaker 1  29:15  
+a pretty quick change, whatever you'd like me to make it, just know you've got to choose. You know, it's either going to be the QB name or the first and last name, not whatever you want to see in that instance.
+
+Speaker 3  29:27  
+Yeah, okay, I, I'll get back to you. I, because I, I don't see why it would need to be qB. I know why we did it initially, but, yeah.
+
+Speaker 1  29:43  
+And I'm also not sure why the QB name would be empty. I mean, that's they're they're not. So they're not if the QB name is in empty, then they're definitely not in QuickBooks. Yeah.
+
+Speaker 3  29:54  
+So in this particular instance, it was being filled by an officer that wasn't in our. System yet. So we use, kind of like a placeholder of this. Aaa, yeah. What I kind of think is strange, though, is that this has been a, you know, it that we use this in our old system too. So I'm curious how it didn't have a
+
+Unknown Speaker  30:19  
+QB name attached. Anyways, I don't
+
+Unknown Speaker  30:22  
+know that. I don't know but I'm,
+
+Speaker 1  30:25  
+I'm happy, yeah, because it looks like the record was created back in 2014 This is not a new,
+
+Speaker 3  30:30  
+not new, yeah. So I was kind of shocked it didn't have a QB name.
+
+Speaker 1  30:35  
+But yeah, yeah. Again, if you just gotta pull the trigger and make the decision on which shows there the QB name or the first and last name. And I'll do that.
+
+Speaker 3  30:55  
+Well, I will get back to you on that too, because to me, I don't see why we would need Qb, but I want to make sure before I tell you to do anything. We already
+
+Speaker 3  31:13  
+talked about this, the hover trick on the bond. He talked about things the version, oh, reoccurring jobs. Okay, so you
+
+Speaker 3  31:34  
+know how you made it so that there was like that pop up and then things were yellow, also, yes. Okay, so two things on that, for the most part, it does work.
+
+Unknown Speaker  31:50  
+See, let me just show you one.
+
+Speaker 1  31:51  
+I know the dots don't glow. The Yeah, once daily or weekly.
+
+Speaker 3  31:57  
+Well, so I tried weekly, and obviously they don't, they're not yellow, but it let me create a job without picking any dates, and it gave me, it gave me the submit button, and went away like it did work, which I thought was kind of strange.
+
+Speaker 1  32:21  
+Yeah, I put, I don't think I put the requirement of picking the days.
+
+Speaker 3  32:29  
+Oh, okay, yeah, because, I mean, it looks like it works, like it didn't feel it didn't give me a pop up, like, Hey, pick a day, you know, or select your days of the week.
+
+Speaker 1  32:37  
+Oh, it did work. It went through the process. It just didn't create any because you didn't tell it any days of the week. So, oh
+
+Unknown Speaker  32:44  
+no. I mean, I understand that created wrong.
+
+Unknown Speaker  32:47  
+I can, yeah, I can add,
+
+Speaker 3  32:50  
+I get that. It's just for other, you know, people,
+
+Unknown Speaker  32:57  
+yeah, darn people.
+
+Speaker 3  32:58  
+Nice, like, obviously, I know why it didn't do anything, but it looked like it did. And if they didn't check here, I don't you know, they could just go on with their life assuming that it worked. It's not what they want.
+
+Speaker 3  33:18  
+The other one that we found, if I can even share it on that one, do you want me to wait a second?
+
+Unknown Speaker  33:26  
+One second? Yeah, yeah.
+
+Speaker 3  33:31  
+Okay, go ahead. I feel I don't feel like this was a problem, or I just never tried, I don't know. And I feel like I did so daily. And so if you at first she picked weekday, doesn't really matter the order. But then she's like, Oh, wait, I need a Saturday. So she clicks every day, and it didn't unclick weekday. So when she proceeded to, you know, fill out everything out, it overrode it to weekday. So it didn't do her Saturday that she wanted. Is there a way to either a on click, once you, you know, click back
+
+Unknown Speaker  34:05  
+or click, they shouldn't both be able to be clicked. See,
+
+Speaker 3  34:08  
+that's what I thought. I felt like it was like that, like, if I click this one, yeah, I think so too, so, but yeah, it did let her do both. It, let I tested it, let me do both. And then it just never did The Saturdays I
+
+Unknown Speaker  34:46  
+Okay, I.
+
+Unknown Speaker  35:10  
+Oh,
+
+Speaker 3  35:18  
+the so we've got a few of the zoom. I don't know if you call them zoom, but where you need to, like, connect to our computer, for Sean, for me, for the collapsing of the dashboard, for the BF helper, and then for the not being able to click back and forth. I haven't actually heard many complaints lately about that, so I'll all up. I'll see if Christine, if that's still happening to her, but at least for the other two, I'm curious if you want those separate, if we want those on the same day, back to back, or if you have preference on that,
+
+Speaker 1  35:56  
+probably back to back will be fine. I'd like, although I will definitely say I want the the, you know, trying to deal with issues of window management should be last anything that's about, you know, security or being able to open a certain file that stuff is, is a lot easier and a lot less, just me looking around trying to figure out what the problem is, you know, so I would definitely want to do those First. Got it? Let's see.
+
+Speaker 3  36:38  
+Oh, duplicating a job. What did I do? Oh, so I tried to duplicate a job from five five, and I made it for 610, but it was weird because it didn't show up under the job location detail. Let me show you which what I was checking for, honestly, in the beginning, was just to see if it was, you know, erasing that previous pay date, like it was doing. So I was seeing if that was still good, but I couldn't find it in here.
+
+Unknown Speaker  37:16  
+See, we can't find what are we looking for again.
+
+Speaker 3  37:21  
+Okay, so I went to five five, and I duplicated this job for today, which you can see right here. And when I went into the scheduled jobs, it didn't, it wasn't here.
+
+Speaker 1  37:34  
+Okay, go back to the job detail, the actual job assignment detail. Sure. You go, Okay,
+
+Unknown Speaker  37:42  
+hit the job tab
+
+Unknown Speaker  37:46  
+and click on the arrow to go to the reoccurring job.
+
+Speaker 3  37:53  
+Oh, that's so Okay. Go ahead like I see what happened. But how do I avoid that?
+
+Speaker 1  38:04  
+I'm not sure what happened. So it's a job that's not is that not assigned to the same job location?
+
+Unknown Speaker  38:12  
+No, it is. But look at so
+
+Speaker 3  38:18  
+like you can see the the work date is 610, but when I go to job, it still is under the the old reoccurring job. Yeah, so that's why,
+
+Speaker 1  38:28  
+obviously, yeah, you you duplicated the job assignment. I don't really we have a duplicate reoccurring Job button. You thought you were duplicating the reoccurring job, but you actually were duplicating the job assignment and put it on a new date, and that date does not come within the date range that the reoccurring job that's associated with is four. So it is there. It's just under the five to seven.
+
+Unknown Speaker  39:01  
+So you're saying, If I went here,
+
+Unknown Speaker  39:05  
+yeah, there it is. Okay.
+
+Speaker 3  39:06  
+I'll have to tell them. I mean, I don't, honestly do that a lot, but I know that accounting does, because sometimes they'll they get invoices for jobs, you know, after the fact. So sometimes they'll go in and just duplicate a job
+
+Unknown Speaker  39:24  
+instead of creating it.
+
+Unknown Speaker  39:26  
+But okay, I see that's good to know. I
+
+Unknown Speaker  39:35  
+Okay, so
+
+Speaker 1  39:39  
+remember correctly I gave you a process to duplicate the assignment, not the job.
+
+Speaker 3  39:44  
+Well, had, okay, so correct. Okay, you know, maybe, maybe you did. But can you talk me back through it? Because I don't like I did it how they we used to do it. Um. Where you here? I'll show you. So I went to five five,
+
+Unknown Speaker  40:05  
+and I found the job.
+
+Unknown Speaker  40:09  
+Stop me when I'm wrong.
+
+Speaker 3  40:12  
+Well, I'm already wrong. Okay, so I went Duplicate button is it's so okay. So I went into the job assignment details, right? So this is five, five, blah, blah, blah, I hit duplicate, yep, and then I changed the date,
+
+Speaker 1  40:26  
+so you've duplicated that assignment. It's still attached to the same job, reoccurring job, right?
+
+Unknown Speaker  40:32  
+Yes, so yes.
+
+Unknown Speaker  40:37  
+So is that wrong?
+
+Speaker 1  40:39  
+Well, if it is because that was to make a new assignment, like, hey, we need an we know, we asked for one officer, but now we need two officers for this day or day, or even if you're adding an extra day, but right, that doesn't, you know that's not for, hey, some random job that has nothing to do with what's going on, You know, came in and we got an invoice for a totally different job that happens to be for the same customer or something that's probably going to work. You can like for the instance that you seem that that seems to be used for. You can duplicate it, change the work date, but then you have to remember to go to the reoccurring job and change the end date of the reoccurring job so that it makes sense,
+
+Speaker 3  41:27  
+yeah, and that that does make sense to me, and like I we don't. We don't really do that often, but I know accounting does that from time to time, which is how we found out that it kept like, that same pay date, but I will Good to know, because I do see it now where it's At or where it ended up.
+
+Speaker 3  42:01  
+Okay, so the I was trying to see how bad the duplicate customers were for,
+
+Unknown Speaker  42:09  
+you know, when we get to the client portal,
+
+Speaker 1  42:11  
+well, I bet you that's not happening contacts. I know contacts.
+
+Speaker 3  42:16  
+That's why I was little worried for some of those customers that have just a civilians. But so I went church, and I went active, and I went Arizona, because I just wanted to start with Arizona. And then I went here, and I did exclamation point, I went here, and then alphabetized it, and I feel like it's, at first, I thought, oh, it's might be giving me active and inactive, but that wasn't it. So I looked, you know, like, where this other Atlas traffic was, because obviously it's not in my list right here, and it was like Texas. So I, which isn't necessarily bad, because it's not like I I'm glad to know that it is a duplicate, but I'm curious.
+
+Unknown Speaker  43:07  
+Well, it really shouldn't be because,
+
+Speaker 1  43:11  
+well, the QB name really shouldn't be because QuickBooks does not allow duplicate names for customers. So I mean, sometimes, you know, it can be as little of a difference as a space. Add another, you know, put a one at the end. But whatever, those two
+
+Unknown Speaker  43:35  
+should not be allowed
+
+Speaker 1  43:39  
+they have the same QB names, so they are really the same customer. As far as QuickBooks is concerned, because see the same QB ID
+
+Speaker 3  43:48  
+and that that one does. There was some other ones that I was just like confused on, but so since, but since I picked site Arizona in the very beginning, did
+
+Unknown Speaker  44:04  
+that work correctly?
+
+Unknown Speaker  44:06  
+Yeah, because it didn't show you the one in Texas. True.
+
+Speaker 3  44:11  
+Okay, I get, I get stressed, but
+
+Speaker 1  44:16  
+it did have a duplicate. That's that, that exclamation point operator is is sketchy. I've, I've never, I've never seen it work exactly how you think it would, every time I worked. Well, yeah, that's file maker for you, and there's nothing I can do about their programming.
+
+Speaker 3  44:40  
+It was just, I wanted to make sure that I was doing it right. You know, when I did equals, I got a nothing,
+
+Speaker 1  44:51  
+yes, blank, that's good. Oh,
+
+Unknown Speaker  44:55  
+I thought, I thought it was match. Whole word, sorry.
+
+Speaker 1  45:00  
+Yes, but you got to put a word after it for it to do that, since you just put an equal by itself, then that means equals nothing, a matching word of nothing. It's looking for blank word.
+
+Unknown Speaker  45:15  
+Okay, that makes sense. I would
+
+Speaker 1  45:17  
+have done asterisk certs for something equals your you know, I want to see. I want to see. Let me think for a second, like with the equals you would say, I want to see Chris. I don't want to see Christopher. So I would put equals C, H, R, i, s, and when you do that, it would only find Chris, it wouldn't find Christopher. If you don't put the equal and you just type in Chris, it's going to find Chris and Christopher, because Chris is within the word Christopher.
+
+Speaker 3  45:56  
+That makes sense. Okay. Oh, cool. Glad I asked Oh, I
+
+Speaker 3  46:07  
+don't know if it's this is an easy fix or not, but adding the last name to cancelation notification emails, and I'm sorry, I'm not like, broken, sorry. What about it the last just adding the last name. It's on the assignment booked. It's just not on the cancelation notification.
+
+Speaker 1  46:24  
+I thought I'd done that. I'll look again see if there's a number. Okay. Ask
+
+Unknown Speaker  46:47  
+Okay, so clock out early,
+
+Speaker 3  46:55  
+that's if sorry under correspondence, that's if I clock out under four hours, or is that
+
+Speaker 1  47:07  
+the under hours? I don't think anything goes out. I don't remember if something goes out. If you clock under four hours, I
+
+Speaker 3  47:13  
+Well, we do get a notification saying that Ashley clocked out under four hours. Okay, good, but I wasn't sure if that was this button or this notification filter type.
+
+Unknown Speaker  47:26  
+I don't let me look. Okay.
+
+Unknown Speaker  47:33  
+Just say,
+
+Speaker 1  47:38  
+Where is Notification Search?
+
+Unknown Speaker  47:43  
+Let's see
+
+Unknown Speaker  47:46  
+reminder, no clock in, no clock out.
+
+Speaker 1  47:53  
+Where are you? What is this? Nope, yeah, I'm gonna have to search and remember what it is. Guess it should be on clock out, then clock out,
+
+Unknown Speaker  48:07  
+early clock out. So early clock out is
+
+Unknown Speaker  48:11  
+yes, should be if it is
+
+Speaker 1  48:17  
+clocked out under four hours.
+
+Unknown Speaker  48:21  
+So those aren't polling
+
+Speaker 3  48:24  
+for for this in here, in this correspondence, like they're not linked to this. I did it a few times today, just for testing. Not bad, but other things, there we go. Do
+
+Speaker 3  48:51  
+you need to see it? Or do you need anything for me? Oh, there it is. I'm writing. Oh, okay, good, sorry. I
+
+Unknown Speaker  49:11  
+Okay,
+
+Speaker 3  49:20  
+Shawn already talked about that. I'll sit with you on Do you have a preference on days? Just curious.
+
+Unknown Speaker  49:29  
+No, okay, oh,
+
+Speaker 1  49:35  
+Jericho, that we are that we're planning this far ahead yet, but I am going on vacation the last week of July, so next month, I don't think that's I don't think we're going to be waiting that long to have this, but to do this. But, uh, just to let you know, in general, I believe I'm out the 25th through. The first is a Friday, so second, third, I'll be back on the fourth of August, okay. But other than that, no, if you just want to shoot me over some thoughts on times, you know, in the next couple days or next week. That's fine with me.
+
+Speaker 3  50:23  
+Okay, yeah, it's just not Friday, because Sean came in late on Friday, so no worries. Oh, okay, so wasn't sure if you, I know you got my email because you responded Jericho Valley. I he's like, I don't know if he's stuck in me invited because there's, like, something that needs to be archived on the back end. That's how it kind of felt when he was explaining it to me.
+
+Speaker 1  50:49  
+Okay, let's see Jerry coo Yeah, or ballet,
+
+Unknown Speaker  50:57  
+yeah. I don't know how you say it.
+
+Unknown Speaker  51:00  
+Like the East
+
+Speaker 1  51:01  
+silent, but I'm not. Kind of depends on if, if he's Hispanic or not, because that's valet and Spanish, but that's ballet and most other languages. Um, let's, let's look that up.
+
+Unknown Speaker  51:16  
+Officer, officer and i Gentlemen,
+
+Unknown Speaker  51:23  
+let's go share go. All right, your
+
+Speaker 1  51:37  
+officer ID is this?
+
+Unknown Speaker  51:44  
+Let's go to
+
+Speaker 1  51:51  
+here. Stop here you do. Officer counts, counts. Officer ID. There's your BF ID. Well, he's still got a token, which means he hasn't accepted the invite. It thinks so. Let me look see if we got two of them in the BF helper file,
+
+Unknown Speaker  52:24  
+did you?
+
+Speaker 1  52:27  
+Do we have zero in there? No, it looks like it's just a, just an invite that was never accepted.
+
+Speaker 3  52:34  
+So when I, when I first talked to him, obviously, I deleted his initial one, which said invited, and then I resent him one and it's it said,
+
+Unknown Speaker  52:45  
+when he clicked on it,
+
+Unknown Speaker  52:48  
+it says he's already registered. That's
+
+Unknown Speaker  52:53  
+the the error message it gave them,
+
+Speaker 1  53:00  
+um, we can have you, like, deleted his, his
+
+Unknown Speaker  53:09  
+little account there. And,
+
+Speaker 3  53:11  
+yeah, yeah, that was, yeah, that's the first thing I did. And then he gave me a call back a little bit later, and he's like, when I click on it, and I don't know if he having a password or not? I'm pretty sure he did. And then hit sign up or whatever it was, just told him that he's already registered. I thought it was weird.
+
+Speaker 1  53:32  
+Yeah, no, he's he's got nothing in the in the BF file.
+
+Unknown Speaker  53:37  
+So I'm not sure. We might have to,
+
+Speaker 1  53:42  
+we might have to get Jake and on looking at this, because it's, it looks like there's just an invite out there that was sent on six, six. No, it's 144
+
+Speaker 3  53:53  
+Okay, so what I'll do is I'll delete it, and instead of just sending it to him, I'll just, you know, send it the other way, so I can try to sign up and and see if I run into any issues. And if it works, I'll have him change his password. If it doesn't, I'll let you know. That sounds
+
+Unknown Speaker  54:08  
+good. Yep, that sounds good. Okay.
+
+Unknown Speaker  54:11  
+Last thing, basically.
+
+Speaker 3  54:16  
+So you know the the new customer being a different color. So for most everything that I searched like, for example, if I went to officers and I went to like a certain agency, and it lists it, it'll First give me the order that it was put in, and then if I click towards the top, it puts an alphabetical Right, yeah. So when I do customer and I do you know the
+
+Speaker 3  54:55  
+no service agreement, it's always alphabetical. Is there a way? Way to have it do both like the other one, only because that way until, I mean, I know, once this is cleaned up, like it'll be easier for, yeah,
+
+Speaker 1  55:11  
+when you identify service agreement button, you're running a totally different process that's changing the sort it's changing what you're looking at. It's not even looking at that site that you just that site that you picked anymore. Now all sites like you have to pick there, if you want, you know stuff like that,
+
+Speaker 3  55:31  
+yeah, which is great. And I did realize that it just until it gets cleaned up, is there a way to does it have to be just alphabetical. I mean, it's great that it's alphabetical. At some point we will definitely want that. But that way, you know, Lori could come to the bottom of the list and be like, Oh, these three were entered, you know, yesterday, kind of thing. I don't know if that's possible.
+
+Speaker 1  55:56  
+The only other way I could think of is make another column that shows creation date and then allow you to sort by creation date. Okay. I mean, if you'd like that, I can put that on that screen.
+
+Speaker 3  56:12  
+Yeah, if it's not too hard, it that's pretty that's what she, you know, uses it for. And I do understand that when it gets cleaned up and when someone goes through it, it won't be a long list, but for right now, there's no way for her to easily Identify what she needs to run creation to customer list. Provide sort,
+
+Unknown Speaker  56:52  
+okay, right? That's all from my list.
+
+Speaker 3  56:58  
+The last thing though, on the agenda was the dev app roll out.
+
+Unknown Speaker  57:05  
+Okie dokie, yeah. Do we
+
+Speaker 1  57:09  
+have an update on what we're thinking on that?
+
+Speaker 2  57:13  
+Joe, yeah, so Ashley and I talked about it, and I think we can roll that out next week. Okay, so I think that's when we want to I think it's just go ahead and kind of take the band aid off and we can move forward with that. I think the only thing that's really kind of iffy right now is just that, that exporting of the on the officer side. But other than that, I think,
+
+Speaker 3  57:36  
+yeah, and the past jobs, but that was only today. That's literally a today thing. So I don't know that's the only other thing I can think of, too.
+
+Speaker 2  57:47  
+Yeah. So other than that, I think that's that. I mean, I think we're ready to go for next week, for sure.
+
+Speaker 1  57:52  
+I'll get with Jake and see what day works for him. I don't think it's that big of a deal for him to push it, but we'll, I'll get with him and find, you know, a date and time that works for him, and we'll shoot you an email to let you know when that, when that date and time is there. Shouldn't you shouldn't need to do anything on your side. I have to ask Jake if I don't think we need them to, you know, like, delete the PWA app and, you know, re add it to the home screen, but I'll make sure, okay, otherwise, you know, it should just be using the new code, and nobody else should really notice differences. Users should notice differences.
+
+Speaker 2  58:39  
+Okay, great, yeah, I think we're good to go there. So that was the final piece that we wanted to add for today's meeting. And think we're good to go Brian.
+
+Speaker 1  58:47  
+Otherwise, that is great. I was going to say to Amanda, but she popped out if, but if you could relay to her. She had emailed yesterday about the the charge for the web hosting, or web hosting of of the FM better forms, basically, oh, both of your apps. And I don't, you know, I wrote back to her that it was a, it was a verbal agreement, a verbal you know, option that you had chose, because the two options were, be under our account for 800 a month, or be under your own account for 1700 a month, and you chose Uber, which is absolutely fine with us. I did want to point out to her today, while we did not have a specific agreement on that, that it is in the estimate for the original officer app, if she looks at that document that I know I sent her a while back. Okay, the it is there, and it does give the two choices there. It just doesn't say which one you. Chose, you know, which right shows was, was verbal but, but it is there that that was a that was going to be a yearly reoccurring charge.
+
+Speaker 2  1:00:10  
+Yeah, absolutely. And that was something that we anticipated, obviously. And I know she had some questions in regards to if it's going to change in pricing and things like that. But, yeah, I think with anything, I mean, things
+
+Speaker 1  1:00:22  
+forever, it won't change. But I right, but I've heard no, you know, no rumblings or talkings of it changing anytime soon. I know we pay a yearly and then, and then we kind of sell slots, basically in our hosting, our hosting account. So unless ours goes up dramatically, for some reason, you're, you guys shouldn't change Sure?
+
+Speaker 2  1:00:50  
+Yeah, absolutely. So, I mean, she'll, she'll hear this call anyway as well. So she'll be able to, you know, go through, comb through that original estimate, and can find that in there. So we appreciate it.
+
+Speaker 1  1:01:00  
+It is in there, and then just one quick final thing, if you could bring back to the group, it might help me out. Should have talked about it yesterday. But as far as hit the client app, I I'd like to know for anything that's facing users, I think we should make a decision, if they are your customer or they are your client. Which word are we going to use, you know, all over the place. So I yeah, I think we should choose one, because we keep kind of using them in those two words. We should probably, we should probably choose one at least as far as what they see. Yeah, you know, I think it might make things nicer. Yeah, absolutely, alright. Yeah, that'd be great. And Ashley, I'll be looking for the email with the job assignments I need to look, to look at for those issues and and I've got my list to continue working through. Oh, Joe, I do believe the so the 90 day tech support on the scheduler, file, maker, app, I believe I'd have to look it up. But it's, it's ups, I want to say the 15th or the 16th of this month. So when that is finished up, I will send you another you know, this is how many hours we put into it, and it's finished as of this date, I can say that pretty much anything that we have that would be covered under that that is already sitting on Trello, we'll, we'll continue to finish fixing it under this 90 days, even after the 90 days is over. So okay, it's if it's, you know, if it's our workload, that we're not able to get around to fixing it for you within the 90 days, then that's on us. So as long as it's been it's been pointed out. We've said, Yes, this is, you know, something that's not working correctly, and it's been put on Trello. We will finish, you know, those tasks, whether or not we can finish them within the 90 days, we'll finish them under that support.
+
+Speaker 2  1:03:22  
+Got it. Okay, perfect. Thanks for that clarification on that, Brian, we appreciate that.
+
+Speaker 1  1:03:26  
+Anytime I'm happy to help. I guess everybody have a great day. And what we see each other
+
+Unknown Speaker  1:03:33  
+think it's Friday this week.
+
+Speaker 1  1:03:35  
+Oh no, you're right. Oh yeah, Friday, yes, it's Friday. Oh, okay, yeah, I've got to send out more more invites, because on the calendar, we I had it ending here in June.
+
+Unknown Speaker  1:03:50  
+So let's, let's expand that a little longer
+
+Speaker 3  1:03:55  
+that you said that was the 16th of June, or is it July 2? Let me look.
+
+Speaker 2  1:04:04  
+That's a good point. Ash, I forgot. I think it is. I think we're looking at why a second but, oh yeah, if
+
+Speaker 1  1:04:09  
+you have more, I could have sworn it was in the middle of June, but let me look.
+
+Speaker 3  1:04:15  
+I think I saw it on Trello, and it was just a tentative date
+
+Speaker 1  1:04:20  
+that might have been, let's see scheduler. Where do I put you? I've got a bunch of documents that we've passed back and forth over the last year trying to find this one restart procedure. Timeline. Is this it? Yeah, scheduler, oh, I am wrong, so disregard everything I just said, except the again, anything that is already on Trello before seven two, we will continue with until it's finished. But yes, you are correct. That is the date that. We gave, I apologize, sir,
+
+Unknown Speaker  1:05:03  
+so yes, and we have not.
+
+Speaker 1  1:05:11  
+Also, I guess Friday, when we talk, we can discuss the agency app go live. We still haven't technically stamped that that is live, because we are kind of waiting for the GPS and this update to the officer side, because it affect the agency and really the agency settings that is set on the agency app, controlling what jobs they see is kind of the final big piece for the agency app to go live with the space. So we can discuss exactly, but I I feel pretty much we're ready to go live, quote, unquote, live with agency when we push the dev officer app to production. Yeah, that's kind of one process. I mean, we could probably give it a few days, or the beginning of the next week, say the be the go live of the agency app, to give a few days of the new officer coding to be in there for you to be able to see it, test it, make sure we don't want to roll back, you know, some horrible problem happens, but be prepared for the agency to officially be going live, let's say not this next week, but the week after. So next week, we'll push the dev to production of Officer app, and then the week after that will be the go live for agency, and I will adjust the dates in this timeline to show that.
+
+Speaker 2  1:06:47  
+Okay, yeah, that'd be perfect, Brian, so we can at least have something that's a little more updated on our
+
+Unknown Speaker  1:06:53  
+end. All right, then that sounds great.
+
+Unknown Speaker  1:06:57  
+Great. We appreciate it, Brian. We'll see you Friday.
+
+Unknown Speaker  1:06:59  
+All right, have a good week. You
+
+Unknown Speaker  1:07:01  
+too. Bye, bye, bye.
+
+Transcribed by https://otter.ai

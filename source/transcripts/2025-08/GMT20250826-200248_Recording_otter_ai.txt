@@ -1,0 +1,466 @@
+Speaker 1  0:02  
+All right, so that seems I have any updates outside of Ashley's big old list. We have been working for. Jake has been working a little bit on a different project for me, but he has still been putting plenty of time into les Steve's been working along though we'd really like to get the server stuff kind of deployed the way we wanted and dealt with. So I know they're working on it. We met last week with ginger sec and kind of set some dates that we'd like to hit. One was having the server prepped by them and handed over to us so we can get you guys started testing, but really continue testing we have with the security protocols in place. So that was, and then I believe next Wednesday is what we put in as our, if everything goes right, that would be the actual date of, you know, flip and make things, make things happen. Make that your actual prod server and such. Okay, so I have not heard from Ginger SEC today. I did speak with Jasmine yesterday, I guess she was getting around to getting started on this stuff yesterday, and was having problems getting signed into everything she needed to get into. So I helped her as much as I could with that, and I pointed her to Steve and Jake for anything more she might need. That's the last I've, I've heard from her. So I'm not sure if they're done with their security stuff. I know Tom had said they wanted to do some configurations, install some stuff, and allow a hardening process. Now, normally a hardening process takes a few days. Okay, so I don't know when they planned on doing that if, if it wasn't start, the work wasn't started till yesterday. I believe we had on the call. We had kind of planned that it was going to start Thursday, but I'm guessing that didn't happen. So the two dates I just gave you of you know, today start testing, and next week go out. That's kind of in flux. Until we can get it, we can get them to finish their work and turn it over.
+
+Speaker 2  2:54  
+Okay, yeah, so Tom actually reached out to Bonnie earlier today, and I wasn't on that call. And according to Tom, they should be finished up with their security protocols they're using. They're using containers. I don't know if you're familiar with that, Brian, but some kind of protocol, what's called containers. And so they're getting that installed. He told Bonnie, they'd have it done tomorrow at the absolute latest. So I don't know if that's a real, you know, hard stop for them, or if they're just saying that. But from what I understood, at least on that call earlier, that's what Tom was saying directly, that they should be done with that by tomorrow.
+
+Speaker 1  3:27  
+Good, yes, I hope that's, that's correct. I That's first I've heard of it. Good. Now, as far as containers, yes, we discussed that yesterday. That's, that's a protocol that AWS is using already, so they're just configuring that. I When I talked to him, he said he wanted to put Sentinel and coda, were two pieces of software he wanted to put on, I'm not quite sure what either of those are. And then they wanted to do some extra configuration on the AWS stuff. So when that's finished, I'm I'll be making move to kind of refresh the files that are sitting up on AWS so they're more recent. They've got fixes I've been working on and such, and will have what, because a lot of the scripting and structure that we've been preparing for the native app we've been doing on the AWS server, because that's kind of the dev server, we don't want to be making those changes on your live system. So it makes it a little harder, because now I've got new code in two different places, instead of just one place, which is absolutely the way you want to do it in the long run. But once we can get you guys live on AWS, then your current server you have there will be our dev server, and that's where all the code development will happen.
+
+Speaker 2  4:58  
+So. Okay, great. At least there's some kind of alignment there. I know Bonnie was was a little confused by it, because Tom was giving us one side. And obviously we hear from you as well, Brian. So we're trying to, at least from our point of view, we're trying to understand where we're exactly we're at, but at least according to Tom, I mean, if they're done tomorrow, he said you guys would be able to to push everything live on Thursday, as far as I guess, I'm assuming, on AWS, pushing everything over there by Thursday. But I don't know if that's a real day.
+
+Speaker 1  5:28  
+Not our plan. Our plan was to give at least a week okay, for testing, because all of the testing you guys have done is it's not worthless, but you definitely need to change our test again, because we're making huge changes to the server with all the security so and we need some time for testing to happen, and testing can't happen in a few minutes. We can cut it, you know, again, if everything's going great and you have a few people really testing it hard, you know, maybe we can cut that from a week down to, you know, three days or something. I usually find it takes about a week for a client to feel comfortable to, you know, to move their production and their core system for their business up and, you know, onto a new server. You want to make sure that it's good.
+
+Speaker 2  6:17  
+So, yeah, absolutely, that makes perfect sense. Now, what if we do this, Brian, after our call here, if you want, can you reach out to Tom and CC me on that and just kind of get an update on him, because I want to see if he if he still has that plan of waiting a week or, like I said, we just, we're getting mixed signals, and we're trying to understand if he is saying he's ready tomorrow and everything's going to be done tomorrow. I'd like to see him actually convey that to you, okay?
+
+Speaker 1  6:45  
+And that would be great if it is done, if it is actually done tomorrow, and by tomorrow, I mean, not five o'clock Pacific Time, then we can do some pushing, and we can get it prepped for you guys tomorrow to start testing. And if you start testing, you know, later tomorrow afternoon, your time, and or even the next day, even Thursday morning, then that still would give you four solid days of testing to tell us yay or nay to go next Wednesday. And that's, you know, that's only one day short of of a five day, you know, plan so that I don't think that's crazy, but deploying, and you actually using that as production tomorrow? Yeah, that's that's not going to happen. You guys have right it, after putting all their security protocols on there to act like that has zero chance of causing troubles. Is just naive. It can. It may not, you know, I hope. But it's got enough of a chance that it can that we definitely want you guys to test it again before we we make that your, your main server, Okey, dokey, that's, think that's mostly what I have updates on. I have done a couple of things from my list from Ashley last week. I'm sure she's been seeing most of them, they're not too big. Today, I have been working on the agency reports getting all three of those to work properly, and I feel like I have them at least working properly, so they're not sending multiple emails or something. You know, when you when you ask for a report, it just sends it to you every 15 minutes, and for like 12 hours, and I looked over, I looked them over, and they looked good to me, but I can look at them again before Ashley tests. So I'll be passing that to you via Trello here soon. Ashley, probably tomorrow morning, because my day is usually done after this meeting. Yes, and I'm finishing up writing a test plan for the agency web area. So we're, we're ready for you guys to test the new job creation area, as well as the mapping that's involved in that which is, which is big. It's a big part of it all the location, selecting the time zone, pulling you can drop a pin on a map. In fact, let me just show that to you real quick, because we have made some changes to that.
+
+Unknown Speaker  9:44  
+Where are you? Right there?
+
+Speaker 1  9:48  
+And let's share the old screen here. Everybody see, yep, yep, okay. So since before you have the choice of one of the two, basically you're either going to type an address and select it from the list. As you type, start to type it. I get a list from Google Maps so I can select there. It puts the pin on there for me. Here is, we put the two buttons here. Those are both new. So I can, if I've, you know, started scrolling and playing around, I can click center on marker, and boom, it centers right back with the marker in the center. No matter where you are, as you're looking around, it'll take you back. And then you can clear the marker. Just click the button and marker goes away. You can also so if you don't want to pick from up here, you can just drop a marker. Zoom in a little bit. This is usually going to be for, you know, a job that's like a specific mile marker on the interstate or some intersection you have problem, you know, have problems correctly here, you can just come here on the map, and I'm going to drop a pin boot right there, and it gives you the address the best it can. But in the background, it's really grabbing the coordinates anyway. So it doesn't matter if this is 100% correct or not. It's grabbed the coordinates. The coordinates are going to be correct. So those are the two methods you can get a pin dropped this down here with the check. This is the address that's going to be shown. This is the you know this here. I'll say all, not necessarily what you typed up here. So if you click from the list, that's going to be the address that you started to type, if you drop the marker, it's going to be that address, and it'll have a check on it if it has the coordinates. So if it got it correctly, because someone can kind of come up here and not select anything, so like top type out the entire address and never select from the list, and that's not going to be valid. So there's no address and there's no check mark, no matter if I type out a whole address, you know, it doesn't matter, I have to select from from the list or drop the pin. Okay, yep, see it shows the address that I typed, but there's no check mark, which means it doesn't have coordinates. It's not verified. It's not we're not going to accept it. In fact, I believe the validation will fail when you create job. So that's, that's kind of the new stuff. That's the way the map will work. And then we also added a place for a customer name, you know, as well as the contact information, which we already had, but we, we went ahead and added the customer based off of feedback. And I think that's pretty much all that's new. Oh, I don't know if you guys saw this. They were he was having problems with the entering time and having it be allowing you to enter time in military time. So we we ended up with a selector. So you pick that, then you pick the minutes I just put. I told them to put every 15 minutes. I thought that was a nice Yeah. That'd be tough, yeah. So they can pick it like this, and it's a nice military time this way. So Oh, and then the time zone picker we made look like the other pickers that, you know, say, press Enter to select and stuff like that. So it looks up the time zone automatically, because the what I originally put in here and clicked on, and where I dropped the marker was both on East Coast, so it pulled that, but they're allowed to change it, and that's create a job, and then you can hit create job and go see you know what it creates as requested. Remember, everything that's created through this process is a non billable job. So you're when just remember that when you go look it up in the system on the dashboard to make sure it created correctly, that you got to, you know, tell it you want to see non billable
+
+Speaker 3  14:31  
+jobs, right? Where does it show in where you're at right now, in jobs, is it separated from the billable?
+
+Unknown Speaker  14:41  
+No, not by default.
+
+Unknown Speaker  14:46  
+How would I? I thought we had put in a filter for that.
+
+Speaker 1  14:53  
+I will, I will get a filter added. Okay, oh, I know we didn't do it because we couldn't. Uh, we, we couldn't come to an agreement on what the wording would be, because we don't use non billable jobs. No internal, internal. We like that. Okay, so,
+
+Speaker 3  15:12  
+Joe, do you remember I thought summers? I was thinking it was internal,
+
+Unknown Speaker  15:15  
+but yeah, it was internal.
+
+Speaker 1  15:17  
+Okay, good, yes, I will get get somebody to add that as a filter.
+
+Unknown Speaker  15:24  
+Um, I know you can tell
+
+Speaker 1  15:30  
+there's, uh, there's a coloring difference. If it's an internal job, I don't remember it's, it's like a lighter gray instead of this white background. Um, if it's an internal job, um, okay, yeah, there's just not much for a good old Maricopa.
+
+Speaker 3  15:48  
+Just, yeah, it was more of a testing agency for us. Sorry. I can add some that would be helpful.
+
+Speaker 1  15:55  
+Other than that, like I said, we're about ready for you guys to start testing it. So I'm writing out a test plan back, yeah, with with little screenshots of the buttons and stuff here, so that will be your plan to walk through and verify that everything on that plan works,
+
+Unknown Speaker  16:16  
+or if it doesn't, let us know.
+
+Unknown Speaker  16:20  
+So that's what I've been up to.
+
+Speaker 1  16:26  
+If nobody else has a overarching update or question, we can hand it over to Ashley. All right, Ash. Um,
+
+Speaker 3  16:43  
+let's see. Oh, so I don't know if I was hoping Jake would be on but I know he's sick, but I just want it so we're having that issue again, where other where officer has seen other people's profiles, usually, so like an officer, Dan Webb, he quote, unquote, requested to be taken off of a job. But thankfully, the guy who requested to be taken off of the job sent one of those emails through the app, James McCollum, so we, we it was a red flag, right? Because it's officer Dan Webb, but James McCollum, it's like, I did not ever book this job. So, you know, prompted us to call Dan and and just to make sure, and he he was seeing his real job. So Dan Webb was seeing Dan's jobs, and so was James at the same time. So that's that was a little bit new. Usually, you know, they're both having issues at the same time. But this one was not the case. I don't know if,
+
+Unknown Speaker  17:45  
+what else I could do to, you know, help.
+
+Unknown Speaker  17:50  
+Sorry, what'd you say? I don't either. I've said that's interesting, yeah.
+
+Speaker 3  17:56  
+I mean, yeah, the request to be removed that looked like it came from Dan Webb, just this email was the way we were red flagged on it. But not everyone does that. So, yeah, I don't know how often it really happens. You know, it's just when it gets brought to my attention. But I wanted to point that out. I know we had a way and it was fixed at one point, but you know, through the time or updates.
+
+Speaker 1  18:23  
+So if he saw that, he saw that on the my jobs, not the job search, because it all correct.
+
+Speaker 3  18:28  
+Yeah, great, because Gam was already assigned that job. Yeah.
+
+Speaker 1  18:32  
+Is that more where it tends to happen? Well,
+
+Speaker 3  18:36  
+yes, only, yes, only because that's when people are like, Oh, I didn't sign up for that. Yeah.
+
+Speaker 1  18:43  
+So that's yeah. Did you happen to talk to, I guess, McCullen, and was he seen his jobs in the my jobs?
+
+Speaker 3  18:53  
+And, no, just dance, Just Dance. Yeah, but it auto corrects fairly quickly. So being able to, like, ask him to not refresh or anything and get a hold of someone else, it's it happens so quick.
+
+Unknown Speaker  19:10  
+Okay, yeah,
+
+Unknown Speaker  19:13  
+that was yesterday.
+
+Unknown Speaker  19:16  
+This hasn't happened much the NA, that's good.
+
+Unknown Speaker  19:20  
+Oh, that error,
+
+Speaker 3  19:23  
+this pretty little symbol, this, you're offline, and it's, it's funny, because you're not actually offline once you hit okay, like if you've clocked in, if you've done anything, it doesn't actually prevent them from doing anything, but they get definitely confused. They think that it's, you know, not working.
+
+Speaker 1  19:43  
+Yeah, it turns out they, I don't remember, I think it was Jake, but it, it turns out he pretty much made that the error for a lot of different things, basically, if he wasn't 100% sure what the problem is, you. He just, he put that on there. Yeah, I noticed, usually just it didn't get a response fast enough. It went over that 22nd time on the refresh.
+
+Unknown Speaker  20:13  
+So it timed out.
+
+Speaker 3  20:17  
+People get it a lot in the my jobs tab, whether it's clocking in, clocking out, or just switching through things, or just leaving it open for too long, that's where it seems to pop up mostly, yeah, I really want to.
+
+Speaker 1  20:33  
+I'm torn on so much time to spend on this kind of stuff, because right, right when I know we're working on a native app that's going to replace this app, but more more pressing, I know that these problems come from timeouts and timeouts very well can happen because we're on an underpowered server, and every time I open it up, the brand memory is running between 85 and 95% And that it shouldn't run like that all day long. It's just the slightest going to make it timeout for calls. So I have a strong feeling that's really it, and getting you on a more powerful server will deal with a lot of these, especially the timeout ones, right?
+
+Speaker 3  21:26  
+I mean, I 100% agree. I do think that too. I just, I do have to bring it up just because, oh yeah, no problem. No. I don't want to act like I'm not talking about it. But I do agree, expect, and the next one on the list was the loading and refreshing, which I think, I mean, I don't get them as much as they do out in the field, which makes me feel like it that's a connectivity issue. It very well could be the, you know, the server not having enough, being at capacity as well. That's still, you know, the biggest complaint we get, which
+
+Speaker 1  22:00  
+not a max, a mix, yeah, you know they very well. They're out and about. They can have crappy you know, if I step outside into my yard where I can't get my Wi Fi, I can barely get Facebook to load half the time, I just I don't have a good enough signal. It's a signal, you know, I've got a bar, maybe two, if I'm lucky, but I don't know these phones these days, don't? They don't seem to work unless they have full bars, like anything under full is just trash, as far as you know, using stuff on the internet. But I definitely think we'll take care of a good chunk of these when we move to the new server, and others will go away once we're on the native app, because it's going to work differently. It doesn't. It just does things differently, as far as caching and where it gets its information from.
+
+Unknown Speaker  22:56  
+Yes, I agree.
+
+Unknown Speaker  23:00  
+That's all I have for the app.
+
+Unknown Speaker  23:05  
+See cursor on the seat?
+
+Speaker 3  23:09  
+Oh, this one's a little one. I love the the tab feature on the assigning contacts. Let me go to a fake one actually,
+
+Unknown Speaker  23:21  
+actually alphabet,
+
+Speaker 3  23:29  
+the tabs, great. Is there any way we can put the auto cursor back here to start and keep the tab? Or does it need to be one or the other?
+
+Speaker 1  23:39  
+Oh, I'll look at it. I didn't remove that, so I'm not quite sure what it's not. I just figured
+
+Speaker 3  23:45  
+it got replaced with the tab because that works, because I can, that's cool,
+
+Speaker 1  23:49  
+yeah, because both of those fields have a trigger on it, so as you're leaving the field,
+
+Speaker 3  23:55  
+yes, like this one, if I tap it or I gotta type something in, but it, you know, auto searches, which is, yeah, well, I'm Oh, I'm gonna wait. No, no, no, one thing. So like, let's say I click on here, and I put something someone on there, and then time goes by. But they don't want that as a secondary contact anymore, and they don't replace it with someone. I have no way to take that off
+
+Speaker 1  24:24  
+right now. Yes, you're in the lit put open the list and put the cursor back in the list.
+
+Unknown Speaker  24:29  
+Oh, hold on. I haven't
+
+Unknown Speaker  24:35  
+done this to me all day.
+
+Unknown Speaker  24:39  
+Now people are watching. So
+
+Unknown Speaker  24:42  
+I mean
+
+Unknown Speaker  24:46  
+some indications from later
+
+Speaker 1  24:49  
+I absolutely understand every time I do a demo for people, I sit around and practice it for 30 minutes before the meeting. It works beautifully. Every time I get on the meeting, everybody watches and it falls. Apart. Do you
+
+Speaker 3  25:09  
+think that's a sign that the server's getting two fold? Yeah, because I feel like that happens. Usually seems like it's like Monday or Tuesday. We have, we end up emailing you at around four, 330
+
+Speaker 1  25:27  
+Well, I've been going on a good three times a week and manually delete backups off of your server to make sure it's got enough at least hard drive space to keep running. And I turned down how many backups it's keeping, in general, for the same reason. But I mean, your only options there are do what I'm doing, or, you know, or pay to get more memory, you know, or more hard drive space on a server that you're not going to be using for production here, hopefully soon.
+
+Unknown Speaker  26:06  
+All right. Now, you said click on the list,
+
+Unknown Speaker  26:08  
+yep. Now just and then unclick it.
+
+Speaker 1  26:13  
+Oh, or backspace. I'm sorry. You're on a Microsoft computer.
+
+Unknown Speaker  26:20  
+Okay, wait, Backspace done.
+
+Speaker 1  26:23  
+It doesn't do it. Oh, okay. Well, yeah, I can give you a, like, a little x on the right hand side to clear those if you'd like,
+
+Speaker 3  26:39  
+okay, that's, I mean, it doesn't happen often, but it does occasionally. Yeah, and I was
+
+Speaker 1  26:45  
+just change that to the to the selector screen, like you have on the primary contact that's on my list. That is true. Can do it as part of that. Thank you.
+
+Speaker 3  27:02  
+Let me know when you're ready. Oh, I'm ready. Go ahead. Okay, so the AWS, so I have been testing, and I did do, like, time testing between on the AWS versus, you know, production, and I did, like, pre security, so I'll do when they're done, I'll do my same tests over again. But today in particular, I kept getting this. It kind of would pop up right over here. Kind of felt like it was trying to kick me out. I don't know if you've seen that, or if that meant they were working on it,
+
+Speaker 1  27:37  
+or it probably means they're working on it or something done has because, yeah, I haven't been messing with it since I turned it over to them last week.
+
+Speaker 3  27:47  
+Okay, well, I took a picture just in case, but I didn't get to do any testing on that today. Because of this, I was just maybe nervous or stay in there, but
+
+Unknown Speaker  28:02  
+let's see, this
+
+Speaker 3  28:07  
+is an oldie, but a goodie, but the corresponding the only one that doesn't show up is still the clock in late I know it's still probably on your list. Just wanted to bring that up
+
+Unknown Speaker  28:20  
+again, just in case.
+
+Speaker 3  28:23  
+Did you want me to show you, or do you know you know what I'm talking about? I know what you're talking about. Okay, and then I had put the bulk cancelation email, not working, but I saw that you added that to Trello, so I will hold off on that, since it feels like you're working on that,
+
+Unknown Speaker  28:40  
+I was still writing. Still writing, what?
+
+Speaker 3  28:43  
+Oh, yeah, sorry, the book, the master
+
+Speaker 1  28:47  
+cancelation email, yeah, okay, it is on my list, on Trello.
+
+Speaker 3  28:53  
+Yeah, I'd written it down, and then I saw your Trello card, and I was like, Oh,
+
+Speaker 1  28:56  
+well, is it late clock in or late clock out? I think it's
+
+Unknown Speaker  29:01  
+actually, I think it's out,
+
+Speaker 3  29:04  
+pretty sure it's out, okay, double check.
+
+Unknown Speaker  29:08  
+I don't think we have a late
+
+Speaker 3  29:13  
+we have, like, a no clock ins, but I'm pretty sure it's
+
+Speaker 1  29:17  
+Yeah, early clock out, oh, early clock out, not late,
+
+Speaker 3  29:21  
+yes, yeah, that's, I mean, that would be If it's over 12, but early clock out, okay, do
+
+Speaker 3  29:40  
+I know we had talked about this last time, but the address is by clicking refresh, it doesn't reflect on the app. It does everywhere else, though. So just not on the app. Refresh where so like if I changed. The address
+
+Unknown Speaker  30:03  
+to like, if I changed
+
+Unknown Speaker  30:08  
+this to street,
+
+Unknown Speaker  30:11  
+yeah, and then you click the Refresh All button there,
+
+Speaker 3  30:15  
+yeah, it'll refresh everywhere except for the app. Yeah. Which, again, doesn't happen often, but when it does like that can be a big difference.
+
+Unknown Speaker  30:29  
+Straight and Avenue. I want
+
+Unknown Speaker  31:03  
+bit, okay,
+
+Speaker 3  31:09  
+that's weird. I tested this yesterday, and it yesterday, the refresh all, oh, wait, I'm an idiot. I
+
+Speaker 3  31:28  
+Yeah, yesterday, when I tested it and I did the refresh all, it changed it here. It changed. It even on like the email. So I tried to email it to myself that changed, but just now It stayed as Avenue. So that's new.
+
+Unknown Speaker  31:56  
+I did that yesterday
+
+Speaker 3  32:00  
+to this exact same one. Do you think that wouldn't matter, right? Shouldn't I don't think so either. Well darn
+
+Speaker 1  32:10  
+Okay, I'm gonna verify it's pushing to everything I want it to, and I'm going to verify that it is refreshing all job assignments today, forward. Thank you.
+
+Unknown Speaker  32:31  
+Anyways,
+
+Speaker 1  32:38  
+although I'm not sure we're not going to do something different when we go to the native app, yeah, because we're going to be capturing coordinates, and I'm not sure we want the job location address really being changed after we've got jobs done
+
+Unknown Speaker  33:04  
+for that job location
+
+Speaker 3  33:07  
+is the way that you showed us earlier for the non billable jobs. Is that going to be very,
+
+Unknown Speaker  33:15  
+very similar to
+
+Unknown Speaker  33:18  
+FileMaker? Yes. Okay,
+
+Speaker 3  33:20  
+so the one thing, and I feel like I probably said this before, because for internal, like, the way that it is is fine, but you know how, like, if I, let's say I just dropped a pin and it like created the closest thing is, would there ever be a way for us to rename that, the reason I ask and the reason why it we will,
+
+Speaker 1  33:43  
+yeah, we can give, we make a Location Name field or something like that,
+
+Speaker 3  33:48  
+yeah, okay, because a lot of times we'll, you know, we use this to, like, search through our emails, you know, researching whatever. So having it stay consistent, or what we wanted it to say is kind of important? Yeah? Or external, yeah?
+
+Speaker 1  34:05  
+We're probably going to give you a location name and put it right there above street one, and something that you can search on, and we can display that if you'd like, yes, yeah, just instead of the actual address where the pit, where the, you know, coordinates are. That's fine. I have, like I said, I have reservations about actually changing the address of a job location for a location that already has jobs, you know, that have happened and such. Yeah, that that could get sketchy. I could see that when you already have jobs, and they're going to be looking back and they're going to be saying, well, the job was at this job location, at a different address than the same location, especially if you're trying to show to your clients any type of reporting based off of a location. Yeah. Uh, you know, you want to show the multiple jobs they've done at that location for reporting purposes that would that report would look sketchy if it had different rights. Is on it? I agree. Okay, we can absolutely give you a name, a location name. Okay, thank you.
+
+Speaker 3  35:20  
+The next one I was going to it's on my list, so I have to be in there for in here for about 30 minutes before it'll do the the error that I was going to show you. And I don't know if you saw, but I had to log out because my dashboard collapsed. So I don't know if it's I don't think it's going to do it right now. I'll try it in one second. But,
+
+Speaker 3  35:49  
+individual, oh, we, we did talk about this last time. I just wasn't sure
+
+Unknown Speaker  35:56  
+if you so. Like, let's say I
+
+Unknown Speaker  36:01  
+added a job
+
+Speaker 3  36:04  
+to a reoccurring and having that somewhere either show up in in this mod log, or because I know it shows up in the job assignment detail, but when it shows up there, if there's a way that it could also say added to a reoccurring job, that way we know where it came from. I don't know if, if that makes sense or
+
+Unknown Speaker  36:31  
+yes, it's something that can
+
+Unknown Speaker  36:35  
+it's something that can be done.
+
+Unknown Speaker  36:39  
+Yes. I mean,
+
+Speaker 1  36:41  
+I just have to specifically script that modification process instead of using the internal which is what we've been using. There's a couple things that I've already done that for, but this could be another one.
+
+Speaker 3  37:02  
+I'll see if it doesn't, don't know if it's gonna have not probably done long enough. So the other so I was, I found that if I'm in the UI for at least 30 minutes, just kind of doing the normal thing it was giving me, I'll show you like this, except for there's, there's no x, there's nothing, and the only way to get out is to close card window. Yeah. And I wanted to show you because, like, my UI was still, I believe you, Oh, yeah. But I wanted to be able to show you that my UI had not been closed, and it was still doing that, but I can't take a screenshot of, yeah, it's hard to do that, but anyways, next time, or some other time, but I think nature, so that's all i Our series
+
+Unknown Speaker  38:06  
+care for
+
+Unknown Speaker  38:15  
+can you remind
+
+Speaker 3  38:19  
+me the the customers that have too much for us to be able to
+
+Unknown Speaker  38:25  
+just rename the customer.
+
+Speaker 3  38:28  
+I can send you those customers and you can merge them if there be remember, there were some that had just like, multiple different jobs, multiple different contacts and so forth. Okay, so I just email you those names.
+
+Speaker 1  38:42  
+You can email me the names of both of them, or three, or whatever that you want merged. I don't care put a one, a mark, a star, or say this one, because I want to know the one that you want to keep. Gotcha.
+
+Unknown Speaker  38:59  
+Okay, just wanted to make sure I'm make sure. Think that's
+
+Unknown Speaker  39:11  
+all that I had,
+
+Unknown Speaker  39:16  
+all righty, you
+
+Unknown Speaker  39:19  
+don't have to keep trying it, I believe you.
+
+Speaker 3  39:23  
+I saw my dad's work class earlier. I was like, dang it, not gonna work.
+
+Speaker 3  39:33  
+Yep, that's, I think that's all I have for today.
+
+Speaker 1  39:37  
+Nice, not even a page of notes. That's
+
+Unknown Speaker  39:44  
+right then. Joe, Amanda, do we have anything else
+
+Speaker 2  39:50  
+got on my end? Brian, I think what I needed to covered was towards the beginning, more so with Tom and whatnot. So I'm good. What about you, Amanda?
+
+Speaker 4  39:58  
+Did you happen to get Clapping? Of our response to the RFP already. I apologize if it was sent, and I'm just asking on that one your response to what to the RFP. Did you see the final results from that? Did we share that with you? Oh, okay, so the news did come in, and we did get an evaluation report, and I can push you over the evaluation report, but we did not, we did not get selected. Hold on. Little bummer, but I can again, I'll work with Joe and send you over kind of what they said and why and some of the areas that they felt we had gaps in. But I just want to make sure you were up to date with that.
+
+Speaker 1  40:34  
+Too. Great. Yeah, I'd love to see that. And I, you know, I don't think I actually saw the final of what you guys were sending to them, either,
+
+Speaker 4  40:44  
+okay, okay, and I'll, I'll see if, did you want? Are you wanting to see that? And I
+
+Speaker 1  40:50  
+can be great. Yeah, I'd like to, I'd like to look it over, see what, what we sent to them, and then where they felt gaps were, and see if they're, if they're technological or business in nature, so
+
+Speaker 4  41:06  
+no problem. Yeah, we were reviewing that yesterday. We were all together. But okay, so I will, I will let you know on that. And then did we kind of time wise? I know you said over the outline. So thank you so much for that kind of big picture. What does that kind of look like? I know when we started the meeting, you guys were talking about ginger sex and talking about the meeting and next week for the production and all of that. But what are, what are we thinking like with the app? Like, where do you feel like we're at?
+
+Unknown Speaker  41:34  
+I think we're doing pretty good. We're still,
+
+Speaker 1  41:39  
+we're still, to my knowledge, on track to finish primary development the end of the second week of September, and then we will be it will be you guys Testing and going through the whole approval process with Google Play and Apple Store. We wanted to leave a good 30 days for that, which leaves us going live the second end of the second week of October, I believe. Okay, it's like the 17th or something like that. Does that still
+
+Unknown Speaker  42:17  
+sound good to everybody?
+
+Speaker 2  42:19  
+Yeah, it sounds great. That's exactly what we wanted to be on par with October.
+
+Speaker 1  42:25  
+Yeah, to my knowledge, we're still on on track for that. I haven't had the greatest time to be to get updates with Jake or Steve since they've gotten back from vacation, but I have had some and things are still moving. So I'm trying to talk to Jake. I said he's he's sick today, so I wasn't able to talk to him, but I want to talk to him tomorrow and get updates, but also see if we are ready for another demo, or if we're ready for you guys to get on the test flight system set up for Apple so that you can download the app and you know, in its current form, whatever it was the last time he pushed a version up and yourself. So, yeah, that's, oh, that's perfect. I hope that's fairly soon. I'm probably going to ask him to put one up one way or the other Friday for that test flight thing. Okay, I believe it is on. I'd have to talk to him. I don't. I think it's still on his private Apple ID account.
+
+Speaker 4  43:47  
+Remember him saying that the last time too, and I didn't know if we had transitioned that.
+
+Speaker 1  43:51  
+Um, they may have, because I know they got all the credentials and such from Joe for his apple or Las. I don't remember if it was Joe's or Les, but I know Joe was like the contact for authentication, so, so I'll see if he got things moved over there, and we can have the test flight go from there instead of from his private account. We'll see. And I've been writing, you know, structural scripts and such for processes so that the native app can book a job and find jobs and that kind of stuff. So that's what I've been working on. And I need to work with Steve to get those actually connected. But that's, that's where we are as far as timeline, we're still we're still looking for that end of the second week of September, which is what less than three weeks for primary coding to be done, and you guys to be able to test and start playing around with it.
+
+Speaker 4  44:59  
+Got. Good. Everything sounds good. Ashley and Joe walking it.
+
+Speaker 1  45:04  
+I'm hoping that we can still we've got to compress a little bit because we were, we were originally planning for AWS to be your production server already, for all the server stuff to be finished, I don't think it's going to completely hurt us. We can still we can still connect and use AWS, at least for now. I don't know if you know if anything has been messed up in the last two days, but we have been able to continue to go, but that's the that's the hurdle I see right now.
+
+Speaker 4  45:45  
+Okay, okay, all right, I have no other questions, and thank you for also sending over the running tally. I appreciate that. I just
+
+Unknown Speaker  45:54  
+got that. Yep, awesome. Nothing more for me.
+
+Unknown Speaker  46:02  
+Already. Everybody, thumbs up.
+
+Unknown Speaker  46:06  
+We're good to go. Brian. All right,
+
+Speaker 1  46:09  
+you guys have a great evening then, and I'm sure I'll talk to you at some point.
+
+Speaker 4  46:13  
+Awesome. Thanks, Brian. All right, bye, guys. Bye.
+
+Transcribed by https://otter.ai

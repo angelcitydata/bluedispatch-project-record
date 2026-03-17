@@ -1,0 +1,841 @@
+Unknown Speaker  0:00  
+And it brought me to that job. It brought you to that job in the app, right? So you could go add a photo or a note if you forgot. This is how you can get an officer.
+
+Unknown Speaker  0:14  
+This is the only way, really, you can get an officer back into a job they have completed. So
+
+Unknown Speaker  0:20  
+once they've completed it, it goes to the past job section, and that's just kind of where it lives. They can see what they can see, you know, they worked X number of hours, and if they put in mileage, it'll tell them.
+
+Unknown Speaker  0:32  
+But if you need them to get back into the job for some reason, to again, add a photo, add a note, add mileage, you know, something like that. You can send them a notification like this. They can touch it and it will open back up the detail. They can't clock in, they can't request to unbook a job, but they can change their mileage, add photos, add
+
+Unknown Speaker  0:52  
+notes,
+
+Unknown Speaker  0:55  
+dokey. Very cool. That function, the notification stuff is not on one point 4.7 which is what we will go soft, live with tomorrow. But we will soon, after going live with that
+
+Unknown Speaker  1:14  
+again, probably right, right at the New Year, we will submit 149, or maybe, maybe a
+
+Unknown Speaker  1:23  
+different build of 149 if we've made some changes, but that's what we will be submitting
+
+Unknown Speaker  1:29  
+in the new year, and that does have notifications on it.
+
+Unknown Speaker  1:34  
+Obviously, those notifications anywhere like any mod logs or any any things just in case, like Jessica sends them a message or notification, and they call and then I
+
+Unknown Speaker  1:47  
+there, so right here, but it doesn't say, it doesn't say anything. It just says it was modified. This was actually what I just did. Or no that maybe that was me booking the job. Now that think of it. I don't, yeah,
+
+Unknown Speaker  2:03  
+logging
+
+Unknown Speaker  2:06  
+anything, truthfully, for these notifications. I was just curious, because the one that so, like, the one that I pressed and it,
+
+Unknown Speaker  2:16  
+it took me to the job. I wasn't able to see that again. Like, I wasn't, like, if, for instance, I hit it really quick, but I didn't actually read it,
+
+Unknown Speaker  2:25  
+knowing what it said. And if someone did call me and I'm like, I didn't send that,
+
+Unknown Speaker  2:31  
+just curious if it said it anywhere, no, currently, no, I'm not really logging it. I don't
+
+Unknown Speaker  2:41  
+I know you like to log a lot of things. It's just because there's so many of us that it gets, you know, confusing, and we don't all, we're not always all working. So it's, you know, if they're at doing it at night, and then someone talks to me the next morning. It's just nice to be able to kind of figure it out, versus waiting till they're on their next shift.
+
+Unknown Speaker  3:06  
+Is it a correspondence? Guess I could add it as a correspondence.
+
+Unknown Speaker  3:14  
+Adding it to the mod log is pretty hard. Nothing's actually modified, so and that's okay to trigger that process. Yeah, that makes sense. We don't change anything. So we could talk about making it a correspondence. Okay, that might be, that might actually be best, because, you know, I don't know if we desperately need an email,
+
+Unknown Speaker  3:40  
+but I was just curious, because it does go away if you click it
+
+Unknown Speaker  3:45  
+and again. The The other problem is always going to be, like I said before, you don't know if they really have notifications on, and there's no way we can force that.
+
+Unknown Speaker  3:57  
+So just because it says in the correspondence that you sent a notification to their phone, doesn't mean they get they got it, got it, yeah, and we don't know.
+
+Unknown Speaker  4:09  
+We, we, I believe we may log on the server on the Linux machine, I can check if
+
+Unknown Speaker  4:19  
+you know if their notification is turned off, so it didn't work for that reason, but I'm not 100% sure. I I've got to check with Steve to see if he's logging that he logs a bunch of stuff, so he probably does,
+
+Unknown Speaker  4:35  
+but that is not something here in FileMaker, but we can definitely discuss correspondence for that
+
+Unknown Speaker  4:42  
+on for that?
+
+Unknown Speaker  4:45  
+Remember, I think that's, I don't know if we discussed with you guys or showed off the the avatar. Did we show that to you guys?
+
+Unknown Speaker  4:55  
+No, I don't remember that. No, me either. Okey, dokey do.
+
+Unknown Speaker  5:00  
+That is another thing that is fairly new, but I believe it's in 147,
+
+Unknown Speaker  5:07  
+so the profile picture here in FileMaker,
+
+Unknown Speaker  5:12  
+this image is not actually in FileMaker. It's up on
+
+Unknown Speaker  5:16  
+up in the s3 and it is what's used in the app. When you go to the Account tab and you see a little circle at the top, right next to your name, you can touch that, and you could take a picture, or use this picture from your library,
+
+Unknown Speaker  5:39  
+and that gets saved as your avatar in the app, and you can you guys as staff. Can see it here in FileMaker.
+
+Unknown Speaker  5:47  
+It's a pretty easy process you ever won't try
+
+Unknown Speaker  5:51  
+see.
+
+Unknown Speaker  5:55  
+We can see what picture Ashley puts up.
+
+Unknown Speaker  5:59  
+Do, yeah,
+
+Unknown Speaker  6:02  
+so that's, of course, a
+
+Unknown Speaker  6:05  
+more cute than utilitarian. But
+
+Unknown Speaker  6:09  
+you know, it is what it is people like that,
+
+Unknown Speaker  6:13  
+and I think that's mostly
+
+Unknown Speaker  6:17  
+what I have. As far as the native app changes are concerned. We've We've done some little things
+
+Unknown Speaker  6:26  
+that I don't know if you know it's needed to report out, but
+
+Unknown Speaker  6:31  
+little things about what happens when you
+
+Unknown Speaker  6:34  
+when you clock out, you know, where do you go? Because you can't see that job anymore once you've clocked out. So
+
+Unknown Speaker  6:41  
+a little bit of navigation stuff like that,
+
+Unknown Speaker  6:45  
+and we're really this most likely isn't going to make it to go live before go live, but we are still working on
+
+Unknown Speaker  6:56  
+more graceful ways to have the app react when somebody is clocked in and they close the app like they're definitely not supposed to
+
+Unknown Speaker  7:07  
+do it, you know, it stops tracking their location and stuff if they close the app, and there's nothing we can do about that.
+
+Unknown Speaker  7:15  
+So when they try to go back in, they're not, they're going to see the job, you know, saying, like, clock in, but when they try to clock in, it's going to say, aren't, you know, you're already clocked in.
+
+Unknown Speaker  7:26  
+That might be how it goes. We're trying to find other ways to get you back to a job if you've clocked in and closed the app. But more to the point, like I've always said, we're just trying to find a way to elegantly deal with that situation. Since there's points that we can't control. We can't control if they close the app while they're clocked in, and we can't control the fact that it's going to stop tracking them if they close the app, I
+
+Unknown Speaker  7:53  
+understand the not tracking part, but the fact that it literally clocks them out is definitely going to be a good issue. That's the bigger problem. It doesn't clock them out, it just it kind of breaks the connection.
+
+Unknown Speaker  8:09  
+So you're saying that if someone did that and then I went back into their profile or into job detail assignment and clocked them out, I would still get the full eight hours, or however long they're there. You Yes, but I would not get their GPS Correct. Yeah, it's just, it's so easy sells back out. Oh, I know, yeah, it's, it's so easy to force clothes graceful ways. I actually
+
+Unknown Speaker  8:38  
+just for you guys, I've gone through the process in the last month of of becoming a Uber driver. I do not plan to drive for Uber, I think, but I went through the process so that I could use the app, the driver side of the Uber app, and see how it reacts to certain things. Because it's actually kind of similar to the officer app, really.
+
+Unknown Speaker  9:03  
+I know Bonnie likes to use that metaphor of, you know, she wants this to be, you know, Uber for off shooting officers. So I was thinking about it, and the Uber driver is more the officer end of that, you know type of thing. And it does if you, if you're driving someone, and you close the app while you're in the middle of driving somebody, it, it wreaks havoc. And people will call you,
+
+Unknown Speaker  9:29  
+you know, be like, Why did your trip just stop? And Is everybody okay? And you know, like,
+
+Unknown Speaker  9:34  
+it's you're not supposed to do it. It definitely breaks everything that they have going on too, and it makes it harder for them to do the charges and and the tip window doesn't come up on the customer screen if the driver closes the app while in the middle of a drive, you know, while in the middle of a service. So
+
+Unknown Speaker  9:53  
+it's it's not something that just we have to deal with.
+
+Unknown Speaker  9:57  
+It was weird. Can you see if mine loaded because I.
+
+Unknown Speaker  10:00  
+Put a picture on there, just over the team,
+
+Unknown Speaker  10:03  
+and it
+
+Unknown Speaker  10:07  
+like was there, and then it went away really fast,
+
+Unknown Speaker  10:13  
+seeing one like now it just says as again, instead of the photo that I picked. Oh, this photo right here. Oh, it's there, okay, but it's just not showing you might have to refresh, you know, go to a different screen or something and come back. But
+
+Unknown Speaker  10:34  
+this is the photo you put up. It looks like a holiday party or something. That was our holiday party. I realized I don't have any pictures of just me, so it would have been like me and my kids or me and my husband. So I flew with the team.
+
+Unknown Speaker  10:46  
+Sorry. No love it
+
+Unknown Speaker  10:50  
+ever.
+
+Unknown Speaker  10:52  
+So there's your avatar picture. Yeah, and yes, it did definitely work.
+
+Unknown Speaker  10:59  
+That's neat.
+
+Unknown Speaker  11:00  
+So those are, yeah, the features. I'm kind of opening the app myself just to look at it and see if another one pops
+
+Unknown Speaker  11:08  
+up my head. I think we had shown you before,
+
+Unknown Speaker  11:13  
+the
+
+Unknown Speaker  11:14  
+on every map, you know, map that you see during the list screen, or the my list,
+
+Unknown Speaker  11:22  
+the mileage in the top right hand corner, touching that is how you get directions to that at a particular location.
+
+Unknown Speaker  11:30  
+Oh,
+
+Unknown Speaker  11:34  
+yeah, it works. Look at that.
+
+Unknown Speaker  11:40  
+Yeah. You
+
+Unknown Speaker  11:43  
+takes a few seconds for me, because the jobs are in Northern California and I'm in Virginia, that takes it a few minutes to figure out every turn I need to make to get sorry, from North Carolina to San Francisco.
+
+Unknown Speaker  11:58  
+But you know, the way it is okay. I think that's mostly the dashboard should be working. We got that up and running.
+
+Unknown Speaker  12:13  
+I don't see any really new things, maybe in the account area, you know, we added the permissions button, which just takes you to your permissions for the app. As far as the phone is concerned,
+
+Unknown Speaker  12:26  
+the contact us so that they can easily call you guys or email you or view our privacy policy.
+
+Unknown Speaker  12:38  
+There's a notifications where they can set up notifications, you know, if you want to allow them in general, and then which ones you would like.
+
+Unknown Speaker  12:49  
+Currently, we're basically ready to send the bottom four, the time based ones. They're not currently set up and running, but we have the setup for that, so I just kind of need to turn it on for notifications. Yes, or did you ever figure out the issue that's on my list too? Absolutely we were have. I did okay. I did put in a couple more
+
+Unknown Speaker  13:17  
+validation points that will hopefully help it not happen again. But I did not figure out what the heck happened? Truthfully, no. So the one that it was trying to send, like the 1000 a second, or whatever it was, was the one hour before warning, and was that in that person's correspondence, like, were you able to tell that that was happening, if you would have, if we look back, like, is there a way? The reason I'm asking is to see, yeah, I don't think so. It made the records, which is the correspondence records, but I did not see it in the correspondence for that particular officer. The officer was Tim Cook, the, you know, the fake
+
+Unknown Speaker  14:04  
+user we made for them to test with.
+
+Unknown Speaker  14:08  
+I did, was it going to that fake email? The no good one? Yes. Okay. The only reason I ask is just to, you know, periodically, just check to see if that's happening again.
+
+Unknown Speaker  14:20  
+Or, yeah, gone on our side, yep, I said, Right now all those notifications in the dev side are turned off.
+
+Unknown Speaker  14:29  
+So
+
+Unknown Speaker  14:32  
+yes, so the notifications in the app, like I said, we're we're prepared for the bottom four, the approaching start time, missed clock in, approaching stop time and missed clock out.
+
+Unknown Speaker  14:43  
+Although I don't know about approaching stop time, I don't I never saw that one before that. Yeah, that Jake made up. I'll have to tell you that's not needed.
+
+Unknown Speaker  14:54  
+But the middle to the new jobs, new traffic jobs or new security jobs that you might want notifications.
+
+Unknown Speaker  15:00  
+Before we're going to have to discuss with you guys the parameters of that, and I doubt that'll make it to go, you know, initial go live, but that can be done fairly easily afterwards. And that's, that's kind of the idea of, you know, yeah, I want to hear about new postings for traffic jobs in my area, but I don't know if that's as simple as everybody who has that notification turned on
+
+Unknown Speaker  15:27  
+within an agency should get that you know, notification, or if it's bigger, if it's more,
+
+Unknown Speaker  15:37  
+more detailed. So we're going to need to have a conversation at some point on the parameters on that.
+
+Unknown Speaker  15:46  
+Yay, yeah, yes, definitely. I have some ideas on it. So perfect. I like ideas.
+
+Unknown Speaker  15:55  
+Think everything else is pretty the app details, you know, has a couple of app details about what version it's on and all that kind of stuff, and a logout button. And then, like I said before,
+
+Unknown Speaker  16:07  
+it's required by both Apple and Google that they have a way to remove their data or request to have their data removed. So that is there. And we went through what that process means before.
+
+Unknown Speaker  16:20  
+So
+
+Unknown Speaker  16:24  
+we get, we get notified of that, and then I manually turn it off, right,
+
+Unknown Speaker  16:29  
+um,
+
+Unknown Speaker  16:31  
+do, do do do, do do do,
+
+Unknown Speaker  16:41  
+actually, we go ahead and turn it off. Oh, it just unclicks it by itself. Yes, okay, cool, but it's not deleting anything. It does delete some stuff on the Linux side, but it does not delete
+
+Unknown Speaker  17:00  
+the location data that has been tracked,
+
+Unknown Speaker  17:04  
+and it basically only deletes anything that they can be actively in, because once a job is finished being worked, that data, it belongs to Les. The location data belongs to Les as soon as it happens so they there's not much they can request to be removed. All it really does, as you can see, is sets a flag so that we know that they requested to move remove the data, and it turns off the allow login button so they won't be able to log in.
+
+Unknown Speaker  17:37  
+Sue
+
+Unknown Speaker  17:39  
+also, we did some stuff to make sure that although their account is really their phone number, if they do change phone numbers,
+
+Unknown Speaker  17:52  
+you guys can easily come in here and change the phone number and it's still pointed to the same officer. You know,
+
+Unknown Speaker  18:00  
+they don't, they don't lose history, historical data, just because they change their phone number. So we just change it in the contact info.
+
+Unknown Speaker  18:10  
+You change it well, contact info, of course you want to change it, but you know you need to change it here and right? Thank you their account.
+
+Unknown Speaker  18:21  
+Okay, so both
+
+Unknown Speaker  18:23  
+got it.
+
+Unknown Speaker  18:29  
+That's what I've got there. I emailed you today about the couple of small changes I made in production, as far as getting the on watch stuff from customer to stop people from being able to make recurring jobs for those customers, and I did something else. What else did I Steve Maya, Oh, yeah. And I checked both of those, and they're both good to go. Well, I deleted the one and then tested the other thing. So that's good,
+
+Unknown Speaker  18:56  
+all righty,
+
+Unknown Speaker  18:58  
+I guess then it comes down to
+
+Unknown Speaker  19:01  
+server conversations.
+
+Unknown Speaker  19:04  
+Yeah, I didn't know if, Joe, you wanted to wait for Tom to have these conversations. We, we've kind of already discussed what our plan was, but
+
+Unknown Speaker  19:15  
+yeah, differently, well, that's what I'm I'm kind of confused with, because I know, I mean, I saw the thread between Tom and yourself in regards to, I guess we have opposing ideas or how we want to implement the server. Yeah, I'm just, I guess I don't understand what exactly Tom needs, or what's left on his end, as opposed to what we already have in production that allows us just to move forward. I guess I'm just afraid that I don't want it to delay us any further than what's already happened, and we want to maintain that January 16 date. So what are your thoughts? As you know, I guess in regards to wearing on you, I'm completely green with you as for where he's.
+
+Unknown Speaker  20:00  
+Coming from the current production server has the
+
+Unknown Speaker  20:05  
+security of AWS setup, security of FileMaker,
+
+Unknown Speaker  20:12  
+basically the stuff that we originally set up on that server. And when I say we, I mean me and Jake and Steve, so none of their changes, I don't think are on that server. None of ginger sex changes or additions. So we they've been working on the second server. And I had thought the plan, you know? What I had recommended, and I thought we were on the same path for was to get this second server completed with everything ginger sex wants to do, then we can thoroughly test it and we can make that production server. Now we're, in my opinion, I agree with you, where we're close to be making the type of changes on the server that he's discussing
+
+Unknown Speaker  21:03  
+before go live.
+
+Unknown Speaker  21:06  
+Okay, yeah. And that's what, anything goes wrong. I mean, pretty much anything goes wrong. It would push that date, yeah. And that's what, that's something that, I mean, we're considering, right? I mean, that's, that's the focal point, and so that's why I'm confused that Tom brought it up in regards to, you know why we're not using that second server with, and they're not even done anyway with, with the security updates and whatnot on their end. So you know what? Let me I might have to just wrangle in Tom and chat with him today about it and see what exactly his goal is and what we're what we're looking at, because we definitely don't want to delay it. I also know that Bonnie wants our server to be as secure as possible. So I know that's something that stands out to her when, whenever Tom suggests a new security update or an install in general. But I think for now, let me, let me chat with Tom, and I'll get back to you. All right. So that's the FileMaker server that we're talking about. We also have the Linux server, which is the API, and, you know, the whole middleware for for this, for this app. We've had one. We Steve is spinning up the second one right now so that we have a dev and prod on that. Also right now we've just had a dev basically, because we've had no prod for it,
+
+Unknown Speaker  22:24  
+we're going to have that up. So we will have two of those Linux servers running, one for development, one for production, and we'll be testing out the production. So the production version of the Linux will be what goes live,
+
+Unknown Speaker  22:41  
+and at least in my recommendations, would be what we'd go live with. It's definitely what we would be going soft open with tomorrow.
+
+Unknown Speaker  22:51  
+That's why I waited till the end of the week, so we could get all of that stuff up.
+
+Unknown Speaker  22:55  
+So right now, the
+
+Unknown Speaker  22:58  
+live version of the
+
+Unknown Speaker  23:01  
+app
+
+Unknown Speaker  23:03  
+once it goes live tomorrow for the soft opening, will be connected to the Linux production server and then connected to the file maker dev server.
+
+Unknown Speaker  23:14  
+Got it Okay, once again, live, live on the 16th,
+
+Unknown Speaker  23:21  
+then the Live app would be looking at the live Linux server, would be looking at the live FileMaker server,
+
+Unknown Speaker  23:31  
+and we will also have a dev version of the app that's going to be on test flight, you know, as we continue to do updates, that is going to be looking at the dev version of The Linux server and the dev version of file maker,
+
+Unknown Speaker  23:43  
+and everything will line up the way it's supposed to be once we go live, you know, with Yeah, all production, production and all Dev is going to be Dev. There's no crossover, but for the next almost a month, there's going to be some crossover as we test, and we're going to be pointing and unpointing and repointing those servers left and right as we test
+
+Unknown Speaker  24:04  
+between now and real go live on 16th.
+
+Unknown Speaker  24:08  
+Okay, great. Yeah, whatever the process we have right now is the process I think has to stay in place, because we got to have it on that 16th. I don't want to risk it. I don't want, I guess, I don't want to any, any kind of issue to pop up. So that's why I want to talk to Tom about it, because I know he's going to push for a lot of different things. That's okay, but yeah, so keep that in mind, also for the Linux servers that I'm discussing, because Jasmine also pointed out that's part of what she wants, not just, you know, learning how to do what she needs to do on those Linux servers, but also doing the same thing, the scans and making security changes, as far as they're concerned, on the Linux servers, on the Linux side as well. Okay, I'll make a note of that, and for clarity purposes, at least, Brian, so from her email this morning, it sounded like she didn't even know how to how to log in. Is that? Am I getting that correctly through her email? I don't know if you.
+
+Unknown Speaker  25:00  
+Read that in the thread. I don't know if she was, if she doesn't know how, or if she was, you know, messed up somehow. Her login got messed up somehow. Okay,
+
+Unknown Speaker  25:10  
+but I'll make a note of that as well. Yeah, it didn't i
+
+Unknown Speaker  25:17  
+Oh, Joe, it doesn't seem nice. Very deeply knowledgeable in
+
+Unknown Speaker  25:23  
+winnix.
+
+Unknown Speaker  25:25  
+Understandable. Like I said, I just want to make sure I have all my ducks in a row. So when I talk to Tom about it, I can be as clear as possible with him and tell him that we we're not going to have any delays. We can't have any delays. I know Bonnie's very adamant on that 16th and even that was pushing it, you know, on our end, yeah, so I got to make sure we relay this as clearly as possible to her, and we can, you know, it like I offered what last week or week before, we could go a little quicker. You know, we right. If the 16th really is pushing it too much, we can go a little quicker, but every day faster is a little bit more risk, because that gives us time for testing, less time for, you know, fixes to pass through review and get approved. Yeah, and she's okay with the 16th. I mean, we kind of, you know, put that on her and, you know, she's okay with it, but anything after that, no way. So that's why I want to talk with Tom. And you know what I might do is, when I, when I do chat with Tom, I mean,
+
+Unknown Speaker  26:24  
+I might even wrangle you in Brian or Jake at least, and just so we can get better understanding, and we're understanding completely across the board, what exactly we're looking at and why we're doing what we're doing. Yeah,
+
+Unknown Speaker  26:36  
+yeah, it, in my opinion, it's,
+
+Unknown Speaker  26:40  
+it's, it's two hats that they're wearing and I and sometimes it's hard to have a conversation with the proper hat. Sure, understandable. They're, they're security people, but for you guys, they're also your it, yeah, and that's two different hats and two different conversations and two different points of views. So
+
+Unknown Speaker  27:04  
+for me, I'm, I'm mostly trying to deal with the IT hat,
+
+Unknown Speaker  27:11  
+yeah, but the security hat keeps it keeps showing, showing up when I'm trying to deal with the it ad,
+
+Unknown Speaker  27:19  
+right? Understandable. So okay, at least server wise, I'll chat with Tom about it, and we'll, we'll see where it goes. Yeah. So yeah, bottom line, my recommendation, if they want to start doing their thing with the Linux server, is fine, they can touch the dev version that we are whipping up. Okay, I I would prefer not to have any changes happen to either of our production servers before go live. Got it okay that Hey, Brian, yes, ma'am, I'm sorry to cut in, but they we are not able to get into FileMaker. It's like not responding, just curious if you
+
+Unknown Speaker  28:04  
+am I still, I'm still sharing my screens. Oh yeah, you are.
+
+Unknown Speaker  28:08  
+And I tried to log out just to see if I because I was in dev and mine
+
+Unknown Speaker  28:13  
+did, like a really long clothes and then not responding. And now I double click, I can't even get in. Christine tried to reboot her computer. See it's right here,
+
+Unknown Speaker  28:24  
+but in your slide, you in what is going on with ours
+
+Unknown Speaker  28:32  
+double?
+
+Unknown Speaker  28:39  
+Did you
+
+Unknown Speaker  28:41  
+want to see mine?
+
+Unknown Speaker  28:45  
+Yeah, that's dev right here. There's production.
+
+Unknown Speaker  28:52  
+If you would like to share your screen. That's fine.
+
+Unknown Speaker  28:57  
+Work.
+
+Unknown Speaker  29:19  
+Hmm,
+
+Unknown Speaker  29:21  
+Christine did yours work after you restarted
+
+Unknown Speaker  29:25  
+so you file maker is,
+
+Unknown Speaker  29:28  
+Oh, her
+
+Unknown Speaker  29:31  
+computer's still coming back up.
+
+Unknown Speaker  29:34  
+I don't know, it's weird.
+
+Unknown Speaker  29:37  
+Maybe we just need to restart our
+
+Unknown Speaker  29:41  
+computers.
+
+Unknown Speaker  29:42  
+Do Yeah, she said it the third time this week. And I have had it happen to me, actually.
+
+Unknown Speaker  29:47  
+And I called you, I think you remember I called you, was it last week or earlier this week or no, it was, got it been last week because I was out Monday, Tuesday, so, and then as soon as I called you, it worked, and you were on the phone with someone, Jake.
+
+Unknown Speaker  30:00  
+Jake, maybe I don't know. Either way, I will fix it. Well, it did that time. This time, I might have to restart my computer, I guess.
+
+Unknown Speaker  30:12  
+But
+
+Unknown Speaker  30:19  
+don't know that's
+
+Unknown Speaker  30:22  
+I mean about how often does it happen? Regular basis. It's
+
+Unknown Speaker  30:28  
+just happened a few times this week so far, and then at the end of last week it happened, but that one was
+
+Unknown Speaker  30:38  
+last week, self corrected, but i don't
+
+Unknown Speaker  30:44  
+know i It
+
+Unknown Speaker  30:45  
+is weird, because I just had Becca test hers, and it's, it's working ash just fine. So it's my it's the computer, then it's computer Sam. That's annoying.
+
+Unknown Speaker  30:58  
+I mean, Becca just opened it, not even 30 seconds ago.
+
+Unknown Speaker  31:02  
+Interesting, I wonder. But she wasn't in it before when it about, no, she wasn't. Wonder if that has anything. So that was in depth. She was in production.
+
+Unknown Speaker  31:13  
+But
+
+Unknown Speaker  31:15  
+okay, well, guess I'll let you know. Yeah, I Yeah. I don't know how much I can do with some people can get in. Some people can't.
+
+Unknown Speaker  31:26  
+That's,
+
+Unknown Speaker  31:28  
+yeah, it might just be a Windows thing. I don't know.
+
+Unknown Speaker  31:31  
+Either way, you guys can go back. I'll, I'll test it after we're off the call, okay, okay. I think that's pretty much all is as as far as that goes show
+
+Unknown Speaker  31:45  
+we can
+
+Unknown Speaker  31:48  
+make the plan, oh, yeah, also in that plan, probably a few days before
+
+Unknown Speaker  31:56  
+we have to get Officer accounts ready. So you, I don't know if you guys want to make all the new accounts in FileMaker, just like you did for the, you know, for the web ones. Or if you want me to say, you know, every officer that has a web account, give them a, you know, give them a native app account, I can do that.
+
+Unknown Speaker  32:23  
+So we we need a decision on it how we want to do that, because going okay means nothing if there's no, if there's no account for them to sign right? Exactly? Yeah. I mean, it makes sense, at least on top of my head, it makes sense to just give the accounts to those I already have a web app, because those are the ones that are actually using it right. But we'll mow it over on our end just to see if there's any nuances that we got to be aware of beforehand. But I think that's the route we'll go. Yeah. The only kind of downside for that approach that I can possibly see is we, we can't really validate phone numbers. So with the web accounts, you validate the email by sending in the invite via email. So you validate that email address. We're really not validating the phone so if they have an improper phone number, then you know in their officer record,
+
+Unknown Speaker  33:18  
+then whoever does have that phone number is going to have access to the app. Got it? Yeah, and I think we should be okay with that, because we use dial my calls, which is a text provider as a mass text provider that we we utilize for our officers. So I think those should be aligned, I would say pretty accurately. But what we could do worst case scenario is, you know, if we have some stragglers out there for whatever reason or something weird is going on, what we can cross reference? Yep, makes sense.
+
+Unknown Speaker  33:49  
+Yep, alrighty. That's about all for the
+
+Unknown Speaker  33:55  
+for the touch up on go live,
+
+Unknown Speaker  34:00  
+I will be meeting next Tuesday. Yeah, I'm not going to meet any Tuesday meetings, as long as you don't have to push it again. I'm not meeting next Thursday. That's Christmas. I won't be here.
+
+Unknown Speaker  34:11  
+Yeah,
+
+Unknown Speaker  34:17  
+Ashley says I'm not either. I'm not working Christmas this year, this year. Yeah, did the last two good? Oh, that's right, two in a row. Ash, I forgot about that Thanksgiving this year. So wait. So we are doing a meeting next Tuesday. That's fine, unless you guys don't want
+
+Unknown Speaker  34:38  
+to, I probably
+
+Unknown Speaker  34:40  
+won't have much to tell you about, because it's a shortened time period. And like I said, not much is going to happen next
+
+Unknown Speaker  34:48  
+week. If we don't do next week, do we resume on the 30th? But I don't know, Joe, do we need it with the IT items that we have going on? I was gonna say I just really.
+
+Unknown Speaker  35:00  
+Dependent on whatever Tom relays to me on my end. So it's kind of hard to say. I think we should at least have it as a soft hold for next Tuesday. That's fine. That gives me a chance to talk to Tom. And, I mean, I'm going to chat with him today, so I want to see what exactly is going to go on and what his thought process is. But at least for now, let's keep it for next Tuesday and if something changes. I mean, we have, we have some time. Okay, perfect, yeah, because I do have some things to
+
+Unknown Speaker  35:28  
+bring up, or at least talk about, but we're kind of running out of time today. So
+
+Unknown Speaker  35:36  
+do you have one or two that are, you know, more urgent or more? Yeah, let's see.
+
+Unknown Speaker  35:45  
+Okay, well, real quick. So when I clock out of a job, whether it's through the app or through,
+
+Unknown Speaker  35:52  
+you know, file maker,
+
+Unknown Speaker  35:54  
+mine just goes straight. It doesn't go straight to pass like it at some point it does. And I don't know if it's when I'm forced closing or if there's like a time period, but it stays there, and it just reverts back to the start job, like basically acting like I need to clock in
+
+Unknown Speaker  36:11  
+at some and so either it's when I force close it that it goes to pass, or it's when you put me on that other job. I don't really know. It just all of a sudden I went back in, and it was in my past. But for quite some time it was still in my
+
+Unknown Speaker  36:26  
+the Jobs tab in the app. I don't know if that makes sense. I don't know there you should be able to in, like, pull down on the my jobs, yeah, did that, yeah, and it refresh.
+
+Unknown Speaker  36:40  
+Otherwise you want to check the job assignment record in FileMaker make sure that the clock out, you know, actually went through. It did hours.
+
+Unknown Speaker  36:54  
+And like I said at some point, it did move into past, but it took a while. So I wasn't sure how long that takes, or if I needed, I'll try to test some more and see if it's what triggers it, if it's forced close, or if it's putting myself on a new job, or if it's, you know, I don't know, I'll just test a few different things. Yeah, like I said, that is definitely an area we've been messing with. Is, you know, what happens when a job finishes, and where does it automatically navigate you? And, you know, certain questions like that. Yeah, been messing with the
+
+Unknown Speaker  37:25  
+other one. So I was clocked into a job, and I hit that reset button,
+
+Unknown Speaker  37:31  
+which, oh, that not working yet. Yeah, yeah, it should be okay. So for me in the app, though, like my clock still ticking, yes, it was still counting because it doesn't know that that you did that, and that reset button shouldn't be hit when an officer staring at the app that is, that's kind of for the the
+
+Unknown Speaker  37:56  
+that one is really for the I clocked In, but then I accidentally force closed the app
+
+Unknown Speaker  38:02  
+that allows, if they call you with that, that allows les to kind of reset it, and allow them to clock back in.
+
+Unknown Speaker  38:09  
+If they're sitting there clocked in looking at their app. There shouldn't be much reason for you to hit that reset button.
+
+Unknown Speaker  38:17  
+But yes, it would. It would show it like that on the app. But once they leave the app, or leave that screen and refresh or something, then it would go back to, it
+
+Unknown Speaker  38:28  
+would go back to a scenario like, if they force close,
+
+Unknown Speaker  38:32  
+okay, I'll keep testing that.
+
+Unknown Speaker  38:35  
+The other one, I really need to show you my screen, so I'm not going to go over that, since I can't get in.
+
+Unknown Speaker  38:44  
+Let's see discussion. Oh, next one was a discussion about your question early in the week.
+
+Unknown Speaker  38:52  
+I don't know if that Well, I could give it a shot. So I feel like because you had asked, you know, like, who should have access to that reset button. Yep, and unless I have, I feel like, unless I have a really good reason why we shouldn't, they're definitely, if I just post that question, they would absolutely just say everyone, or all schedulers, at least, only because you know everyone's answering the phones, and everyone you know has access to talking with these people, and they're going to get these questions, and they can't always wait for
+
+Unknown Speaker  39:28  
+you know someone with access to guarantee it always be here. So I guess my question to you is,
+
+Unknown Speaker  39:37  
+what would be the downside to having all schedulers or all, everyone being able to access that button.
+
+Unknown Speaker  39:45  
+Well, it just comes down to, it's a it's it's a button that really does clear some stuff. So, like you pointed out, it definitely clears out their clock in time that they had been clocked in at all. It clears.
+
+Unknown Speaker  40:00  
+There's any location data that's been tracked so far that gets, that gets cleared out and deleted. And if you are, if there is an officer, as you saw, that's clocked in and somebody accidentally hits that reset button, they're not going to necessarily notice on the app. They're going to see the time keep going. So it's, it's not as much about, you know, certain people shouldn't be able to do it. It's, you probably don't want, but so many people to be able to do it, as far as numbers, just so you can track who's, you know, who's doing it. And when I just see, I saw, when I asked the question, I saw the possibility for accidentally clicking that button happening a lot, you know.
+
+Unknown Speaker  40:45  
+And to me, it's it's not certain people shouldn't be able to do it. It's the smaller amount of people can do it, the the more processes behind the decision.
+
+Unknown Speaker  40:58  
+If that makes sense,
+
+Unknown Speaker  41:01  
+it's not sure.
+
+Unknown Speaker  41:04  
+Yeah, I don't know. I could absolutely leave it open to everybody, you know that's that's getting into the FileMaker system. It's fine with me. It was just a question, yeah, because I'm just curious, because, like, even if they reset the clock right, and because, like, they, here's, here's what I'm thinking like, the most of the time that this is going to come up, or that people are going to want to do this is the officer, you know, clocks in
+
+Unknown Speaker  41:31  
+late, and they're like, I'm what I'm How do I explain this? The officer clocks in late and they want us to reset it so that they can clock in on time. And that's not like, that's not how it works, but that's like, our number one thing, where they're like, I clocked in late. But even if you erase that like, it's not going to make their hours accurate. You know, it would be like for if, you know, they have a morning job and a night job, and they accidentally clock into their night job, that would make sense. You know, that would be a reason. You know, you might want to do that because it's not the right job.
+
+Unknown Speaker  42:04  
+Exactly that,
+
+Unknown Speaker  42:06  
+I don't know.
+
+Unknown Speaker  42:08  
+As for the scenario you said, I mean,
+
+Unknown Speaker  42:11  
+if, if I clock in five minutes late, but I say I was really here on time. Can you currently go in and change the clock in time? No. But what I'm a no, you can't. But what I'm afraid of is that people are that's how schedulers are going to interpret that button. You know, to mean, no, yeah, that's like, they're gonna be like, Oh, I can just reset this for you when really, like, that's not,
+
+Unknown Speaker  42:35  
+I can change why you'd want to use that to say something different, if you'd like.
+
+Unknown Speaker  42:41  
+I think I've got a like, Are you sure window that comes up when you click it? You do. Yeah, you do. But you know that's, as we've talked about, many, many times, people tend to just hit okay on those windows. And just
+
+Unknown Speaker  42:57  
+in my experience, you get a lot of that, okay, well, so I don't have an answer for you today, but I will try to get you on
+
+Unknown Speaker  43:10  
+the other ones. I can probably wait until Tuesday.
+
+Unknown Speaker  43:14  
+Okay,
+
+Unknown Speaker  43:19  
+when? When were you gonna move the there
+
+Unknown Speaker  43:23  
+was, it wasn't
+
+Unknown Speaker  43:26  
+the the updates on dev, but it was something else that you were gonna move over to production. What was that? Was that wasn't notification? I'll go back into my notions and mapping. Were the two big ones. I think that I was gonna Oh, so it was just notifications. Yeah, I think it was notification that was the one you wanted to hold off on till you figured out the trigger.
+
+Unknown Speaker  43:49  
+Yep, and it's mostly, it's not new notifications, necessarily, yeah, it's time stuff, time zone and timing stuff, yeah, yeah,
+
+Unknown Speaker  43:59  
+okay,
+
+Unknown Speaker  44:01  
+everything works on
+
+Unknown Speaker  44:03  
+offsets of UTC got it.
+
+Unknown Speaker  44:19  
+Don't see anything really else in my notes about,
+
+Unknown Speaker  44:23  
+you know, something else I was going to push?
+
+Unknown Speaker  44:26  
+No, I think it was those two, yeah.
+
+Unknown Speaker  44:32  
+How did the training go yesterday for the maps?
+
+Unknown Speaker  44:36  
+Ah, good. I think I hope so. It's hard to it's hard to tell sometimes, but we did do it. We did complete it. And so when, whenever you want to.
+
+Unknown Speaker  44:51  
+Well with that, sorry. You can hear more talking behind me.
+
+Unknown Speaker  44:59  
+Okay.
+
+Unknown Speaker  45:00  
+And I don't even ever want to go for this.
+
+Unknown Speaker  45:04  
+So
+
+Unknown Speaker  45:08  
+the job name in in job location, that's the one that shows on dashboard, and I'm or No, it's the it's the one that's pinned, that's the one that shows on dashboard.
+
+Unknown Speaker  45:20  
+Actual, the full address is the one that shows right now, yes, not, yeah, I know. And that's it. Eventually it's going to only be the name is, because that's what the officers are going to see. So I'm sure that's what you want to see on the dashboard. But for a couple months, yeah, it's going to be both, depending on, you know, whether they're on the web app or the native app, and that's going to be a beast for you guys. I understand.
+
+Unknown Speaker  45:49  
+Is there a way you'd like to handle that differently, trying to think? Because I the only problem is when you move the pin, and it doesn't go to like, where you know Bell and rings, but if you move that pin a little bit further, then it's gonna
+
+Unknown Speaker  46:07  
+show you like, 1556, North Greenway, or whatever, Bell Road. And that's where I think that's the only time I can see that that pin part getting confusing,
+
+Unknown Speaker  46:20  
+with schedulers showing up on the dashboard, not necessarily on the officer app, because that that's where we want them to go. But when it comes back to, like, referencing what SRP ordered or how to type it into the original email, I feel like that's where that's going to get sticky or hard to research,
+
+Unknown Speaker  46:42  
+is, when they edit that pin does that? I don't know if that makes sense, yeah, yeah. And it, it gets even uglier. I've it didn't seem like it was going to work for you guys, but I've always been of the opinion, truthfully, that once you create your first recurring job for a job location. You shouldn't be able to change the law the location information anymore. But that didn't seem to, you know, you had cases. Yeah, there are. There's some where they're like, can we actually make this this? And then you're like, Okay, so you go back through, but it's, it's essentially, it's the exact same job. They just ordered it wrong, or, you know, something like that, yeah,
+
+Unknown Speaker  47:24  
+yeah, I know that's, that's,
+
+Unknown Speaker  47:28  
+it is what it is. That's why, I mean, I understand so I haven't, you know, programmatically locked you from changing it, but,
+
+Unknown Speaker  47:36  
+you know that's that would make things work easier. The
+
+Unknown Speaker  47:40  
+other thing would be,
+
+Unknown Speaker  47:43  
+again, I know you have use cases where you need to use the pin dropping, but I would try to use the,
+
+Unknown Speaker  47:50  
+you know, type ahead on the address and select from the list, as much as, yeah, that works as that's possible. So that's going to be your best, your best deal there.
+
+Unknown Speaker  48:01  
+But I know that's not always a possibility, especially when you're working with mile markers and intersections and bridges and such. So love that. And you know, if, if someone's in Phoenix, and it's like on the corner of Phoenix and the next city, you know, so there's, there's definitely times where it'll do that, but I guess we'll see how it goes. And I mean, you can change the address after the pin changes it after you repent and it changes it.
+
+Unknown Speaker  48:30  
+You can, you can type a new address in there, or, you know, change the city, or whatever. I know you can't right now in production,
+
+Unknown Speaker  48:37  
+but you will be able to
+
+Unknown Speaker  48:41  
+in dev right now, but I'm going to open those up. Oh, okay,
+
+Unknown Speaker  48:47  
+especially for the,
+
+Unknown Speaker  48:50  
+for the gap period when we're running both of them, Okay, hopefully, as we're doing that, we can come up with a interesting with a good method,
+
+Unknown Speaker  49:00  
+yeah, because once you've once you've set that pin, you know, remember, it's the Latin long that the native app cares about. So once you've set that pin, or clicked on the address from the drop down, it's going to replace the physical address. But then you can go and change that, and it's not going to really change anything, because the Latin long is what it's really looking at on the street, one level, or are you talking job name,
+
+Unknown Speaker  49:25  
+oh, I'm talking about street level. I'm talking about the Oh address. That's cool. I didn't know. But, like, I didn't know you could do that. That might be,
+
+Unknown Speaker  49:33  
+well, you can't, right now, I'm saying Right, right, right. I'm good, and that that could solve my problem altogether. Yeah? Because really, it's the lat long that the app cares about. Okay, cool. That's Well, that's good, then that's us. But yes, I understand what you're talking about. I I live in a neighborhood that's in a town called Four oaks, but everybody around the neighborhood, the store that's a half a mile away is in Benson, the golf course, right?
+
+Unknown Speaker  50:00  
+That I can see from my window is in Benson is in a different town. So it's, it's a, it's really hard to drop a pin here and have it say four oaks,
+
+Unknown Speaker  50:10  
+because everything around me is Benson is a different
+
+Unknown Speaker  50:15  
+town. Cool,
+
+Unknown Speaker  50:17  
+cool. Um, I think that's it. Then the only other thing I have I literally need to show you, and it's not going to kill me to wait, okay,
+
+Unknown Speaker  50:28  
+alrighty, then I guess.
+
+Unknown Speaker  50:31  
+Did you have anything else? Joe,
+
+Unknown Speaker  50:35  
+no, I think we're good right now. Brian, like I said, I think my main focus is going to be this,
+
+Unknown Speaker  50:40  
+all these server questions that we have, and I'll get back to you on them. But other than that, I think we're good. Alright, I'm good. Dan, last thing I've got is it sucks because we're going headlong into go live and our mind is somewhere else, but the boss has been asking me about next quarter or two. So
+
+Unknown Speaker  51:04  
+at some point, I'd like to talk what comes right after we go live with this.
+
+Unknown Speaker  51:12  
+Okay, you know, are we going to work on, you know, updates and additions to the app? Is that what we want our priority to be, are we going to pivot over to Customer Portal? Do you guys want to take a break? Right? No. Understandable, absolutely. And I think we have an idea of where we want to go, but I think we'll have to narrow it down. I know customer portal, you know, focal point for us as well, but that's something that will. We'll have a meeting of the minds and let you know. Alrighty, yep, yep, and just, yeah, just let you know. I'll be trying to have that conversation here soon. Okay, yeah, absolutely, alright. Well, that's all. Thank you very much, and especially if this soft meeting next Tuesday doesn't happen. You guys have a Merry Christmas. Otherwise, I'll talk to you Tuesday and I can tell you again. Then, awesome. All right, Brian, you as well. Merry Christmas.
+
+Unknown Speaker  52:09  
+Bye, everybody. Bye, bye, bye.
+
+Transcribed by https://otter.ai

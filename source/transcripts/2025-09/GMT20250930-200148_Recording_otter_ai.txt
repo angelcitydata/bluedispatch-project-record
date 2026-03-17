@@ -1,0 +1,118 @@
+Unknown Speaker  0:00  
+Me just tell you, Brian, I saw that in the agenda thing, but I've not seen that, so I'm, I'm, oh, waiting to see that. I know, I'm sure we'll cover it. Yeah, we will. We will get there. We want to run through other updates first before we get to Ashley there. So we've, you know, we were running, what is this second second week or so of of AWS being our production. I haven't heard a peep from you guys, really, as far as you know, it falling apart or being slow. So that's great. I'm liking that I'm not hearing about, you know, the officer web app just not loading and timing out all the time. So that's great. So just a little thumbs up there. We're, I think we're doing good with that particular thing. I have been working diligently, and I'm about ready to pass over Ashley on a lot of the time stuff, especially as it comes to notifications and mod logs. So Right? I think I've got it. Some of the notifications are a little bit
+
+Unknown Speaker  1:21  
+more interesting than others to pull off,
+
+Unknown Speaker  1:26  
+but I've got most of that in dev, and I'm probably going to be passing that to you soon. That's kind of been one of my bigger focuses. As far as as your list stuff would be concerned. What else do we have? The native app stuff, of course, is just moving forward. I do see Jake push a a new version to test flight earlier today, and it immediately crashes when you try to log into it. Yes, I got him back on that, and he's trying to figure that out. So yes, we did. I did notice that immediately
+
+Unknown Speaker  2:08  
+on that really quick, did you get confirmation of whether or not it will work on the iPads? The the native app. Yep, that was the action item for last week we were going to, you're going to check into that because we are for the IACP conference in October. We will be doing agency, but we're also going to put the on the small iPads, if that's possible.
+
+Unknown Speaker  2:35  
+So obviously, yes, it will work. Okay, probably look odd, because for a phone and the core functionality, which is a lot of the GPS stuff, will not happen on an iPad, because iPads don't tend unless you have a cell version cell GPS version iPad. So I'm not sure if it will let you in. Jake is not sure either, because he doesn't have a we don't have a cell phone, GPS enabled iPad to test on.
+
+Unknown Speaker  3:19  
+Okay, and Joe, do you know if ours are yesterday for during it, I
+
+Unknown Speaker  3:24  
+don't think they are. But I think a nice workaround, if need be is everybody that has their iPhone there at the event anyway can just stream it directly. Yeah, and so we've, like Ashley and I went over that last week, and we we've been able to mirror it directly to the big display screen.
+
+Unknown Speaker  3:39  
+So that'd be the work around if need be okay. I think, I really think that's the way to go. This is really being developed for the phone, since it's so much local oriented.
+
+Unknown Speaker  3:51  
+Is somebody having another meeting going behind? Sorry, there's okay.
+
+Unknown Speaker  3:56  
+I keep seeing like my I don't know why my headphones are like, picking up background noise. I can look into it. I think it's me, but I'm not having another meeting. I promise I
+
+Unknown Speaker  4:07  
+didn't think you were having. Maybe one was going on behind you. I'm like, I'm hearing
+
+Unknown Speaker  4:12  
+a lot. We're talking, but okay,
+
+Unknown Speaker  4:15  
+sorry it was just as a little distracted. No, it's, it's, yeah, the world. So my answer would be, if, if all possible, I would say, Plan A should be a phone. If, then, yep, if you can mirror the phone onto a big screen or something, that's great, but the app really is location centric and really needs GPS connection.
+
+Unknown Speaker  4:38  
+Okay, no worries. I just wanted an answer, and I wanted to just circle back. So thank you
+
+Unknown Speaker  4:44  
+that that is definitely the answer, right?
+
+Unknown Speaker  4:47  
+Got it? Just use a phone. No, don't use an iPad again unless you have a GPS cell version. Understood. A lot of people don't have, I don't like I said, we don't have any at the company. It's just not. It. Nobody wants another, you know, 100 bucks or whatever you got to pay a month for that service.
+
+Unknown Speaker  5:07  
+Okay, got it other
+
+Unknown Speaker  5:10  
+than that, yes, where it's moved forward and the new push today was supposed to show the the the My List screen, you know of actual stuff that they've booked for themselves, where they can clock in and such as well as we've got it on the main home list view, where you can, where you can, kind of swipe on each individual entry and see the like the officer notes and such. And I believe we're doing something fairly similar on the buy List screen for them to be able to enter notes
+
+Unknown Speaker  5:55  
+on that end. So that's what you're supposed to see.
+
+Unknown Speaker  5:59  
+And it's it's there, but just crashes, as we all know. So Jake's looking into that. Funny enough. He went to push that today, but yesterday, I updated everything I had, my phone, my iPad, my computer, to the newest operating systems, and he actually got the new iPhone 17, so we don't have an older version of the OS to look at. Oh, I don't know if that has anything to do with it. We just found it interesting that we happen to update just right now and immediately solve problems. Anyhow, I think that is mostly what I have. We can discuss the map stuff I have. Jeremy looking into it does, if you put in an intersection, it does not return a street or a city, just a state and a zip code, but it still puts in the Latin long which is, realistically all we're using the new job name field, which is just in dev currently, it's just a new field that is going to be what is displayed for your officers on the native app eventually. So the fact that it doesn't have a street in a city shouldn't really hurt things, because they're not going to be seeing that on the app. They're just going to be seeing whatever, you name it. And then, of course, it'll have the Latin long in the background that it'll use for all of its mapping purposes, and it's pulling the time zone correctly, which is also one of the more important things, but we can absolutely look at it, because I don't see the Canada we're I think I had said this before when I showed it to you, but it's not currently doing a, you know, when you open the map back up, it's not the pin's not still there, and it's not, you know, it's Not showing what's there for that job, location, that functionality is coming. I want this to be to be tested and okayed and such, because getting the Latin long really is the top priority. But we'll come back to it and make sure that you can reopen that map and kind of and see where the pin is shortly. Okay? Alrighty. Miss Ashley, that's unless Joe, Amanda, somebody has another question that's outside of Ashley's list that you'd like to get to before I pass it
+
+Unknown Speaker  8:34  
+to her. Not yet for
+
+Unknown Speaker  8:36  
+me, yep, same here, Brian, I think we're good to go.
+
+Unknown Speaker  8:38  
+Ash, all right, Miss Ashley,
+
+Unknown Speaker  8:42  
+just a little follow up on some of the like for the most, when you were talking about switching to AWS, and we're not getting any complaints, I mean, that is it is true, like not a lot of people are. There are still some people that are having the same loading issues, but it it's just not as many as before or that have at least reported it, but there are still some out there that I I can't figure out why. You know they're having issues when someone down the streets not
+
+Unknown Speaker  9:12  
+I'm still, I'm gonna definitely say it's most, more likely phone signal problem, because, just because you have another person right down the road, number one, it's, it's right down the road. That's something, you know, that's some type of extra distance. You don't know where the nearest tower is. And, you know, do they have a different provider? Do they have a different phone? Do they have something else open, running, you know, take that's currently taking up some of the cell connection. But I have, you know, kept an eye on the server, and it's, it's not getting pegged and destroyed, you know, like you're like, your red house server was being so,
+
+Unknown Speaker  9:55  
+oh yeah, no, it's a lot better. I just want it on the record that there's still some out there, just in case it's. Comes back,
+
+Unknown Speaker  10:01  
+you're away from it, because you're never going to convince them that it's their phone, you know, or where they are. So, you know, there's a lot of variables, but it's looking like the server isn't one of those variables anymore, and it definitely was
+
+Unknown Speaker  10:20  
+before trying to share my screen. I don't see the little thing. Oh, there it is. Okay. So I was testing dev last last week, late, late last week, and I would put in an address and check dev on the app, and that's where I saw that it was, you know, in Canada. But today, like, if you go to any job on the production side, it also pins you in Canada. Now I can, like, when I log in through my computer, this is what I see when I hit maps, which is not helpful, so I emailed us a picture of
+
+Unknown Speaker  11:08  
+and this is on production to show you Deb too, if not
+
+Unknown Speaker  11:14  
+there's like Toronto's right up here, but This is where it's pinning every job for production.
+
+Unknown Speaker  11:23  
+Hit the map button,
+
+Unknown Speaker  11:25  
+yes, from the app on production and Dev, but yes, production is the dev that started. I want to say today, possibly yesterday, but no one complained till today. So I started looking into it, and sure enough, like when I go here, that's where it pins you in Canada that you can't see. But I promise, if you do it on your phone, it's it's Canada,
+
+Unknown Speaker  11:53  
+yeah, well, it's sending the undefined. You could see the parameter. It's sending the address. I just
+
+Unknown Speaker  12:00  
+thought it was interesting that the dev one also sent me to Canada.
+
+Unknown Speaker  12:09  
+Definitely interesting. Let's see here. Do I have this? Why don't of course, I can type it out.
+
+Unknown Speaker  12:22  
+Okay? Best word is Indian
+
+Unknown Speaker  12:42  
+School. Scottsdale, Arizona, push the map, undefined cocktail bar. Yeah, it's always the same cocktail bar in Hamilton, I know exactly where Hamilton is.
+
+Unknown Speaker  13:02  
+That's That's an odd default spot.
+
+Unknown Speaker  13:06  
+It is the Go ahead. Sorry,
+
+Transcribed by https://otter.ai

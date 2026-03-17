@@ -1,0 +1,1297 @@
+Unknown Speaker  0:00  
+The art.
+
+Unknown Speaker  0:02  
+All right. Well, recording started, and we'll go ahead, since this is Ashley's meeting, we'll start with you.
+
+Unknown Speaker  0:10  
+How are things going? Ma'am, I saw your your itinerary email. Oh, yes, yeah, going good.
+
+Unknown Speaker  0:19  
+Some of the I guess I'll start with the agency. I don't know if, if you've been on the agency much today or yesterday?
+
+Unknown Speaker  0:27  
+No, I have not okay, and it might just be like coincidence or today and yesterday, but I just kept running into like issues where after about 15 minutes of clicking around in different places, not nothing like quick or fast, but it would start like finding out or freezing. I tried, well, edge is how it normally comes up. But I tried just, you know, switching to Chrome, seeing if that helps.
+
+Unknown Speaker  0:53  
+So I wasn't sure if that's ever happened to you guys, or if it maybe it could just be a fluke. I don't know. I think it's a fluke. Usually, when that happens, it means I need to log out and log back in,
+
+Unknown Speaker  1:05  
+and I did that, or I do that, and then it's fine. But we're also kind of discussing some server upgrades for y'all anyway. So I'm suspicious of the connectivity level of the server at times, to be honest, I don't it's the timeouts come from the server, not
+
+Unknown Speaker  1:28  
+from the app. Interesting, yeah, yeah. And with the
+
+Unknown Speaker  1:33  
+with the shutdown we've had Sunday, yeah, that,
+
+Unknown Speaker  1:39  
+that was not great. And I did have to bring a backup of one of the files, the FM better forms helper file, which is, of course, the one that it's speaking with. I had to bring a backup up.
+
+Unknown Speaker  1:52  
+So I don't think, I mean, obviously, other than Sunday itself, that shouldn't be a problem moving forward. But it, you know, it definitely speaks to that server, you know, not being, not being top notch for what we're trying to use it for currently, which is why we want to move, move that server up to AWS, this,
+
+Unknown Speaker  2:16  
+this type of stuff will will go away.
+
+Unknown Speaker  2:22  
+I was actually going to ask about that backup. How far back did you have to go? Was it just a few hours? Or was it like it was, it was a
+
+Unknown Speaker  2:30  
+nighttime, Saturday night. Pretty late Saturday night. Now that file only has like user accounts. There's no There's no production data in that file. So unless some changed their password
+
+Unknown Speaker  2:45  
+within that time period, or if you created or created a new account that wouldn't be in the new in the file, because we, you know, we brought it a backup back from, like I said, Saturday evening sometime, I believe it was like 3am Sunday, really, technically, you know, 3am is the backup I used, so changes to passwords or new accounts would would be affected by that, but nothing else. Okay, we had a someone, so she changed the hours for an officer
+
+Unknown Speaker  3:18  
+and sent like a screenshot with the picture of it saying 12 hours. But when we when Stacy was looking through it yesterday,
+
+Unknown Speaker  3:27  
+it had switched to it was at 12.5 which was what it originally was. So I was wondering if, by any chance, you had to go that far back with the backup. But it sounds like there was no if that wouldn't have that file didn't did not get recovered.
+
+Unknown Speaker  3:47  
+Yeah, that's that file open. I don't know who opens the files after the server went down, but you know, but that one did open.
+
+Unknown Speaker  4:01  
+Okay, I'm assuming. It was Jeff. I don't know who else would have access
+
+Unknown Speaker  4:19  
+this. I'll show you this, but I think, I think
+
+Unknown Speaker  4:23  
+it was just, I was just having issues today, and it wasn't updating quick enough. I had this job. I don't know if you can see this.
+
+Unknown Speaker  4:31  
+So this top one, Andrew,
+
+Unknown Speaker  4:36  
+do,
+
+Unknown Speaker  4:43  
+all
+
+Unknown Speaker  4:46  
+aren't at all.
+
+Unknown Speaker  4:49  
+Okay,
+
+Unknown Speaker  4:52  
+the top one shows that the pay date was set on this and it shows, you know, clock in, clock out, hours.
+
+Unknown Speaker  5:00  
+But then on the agency site, just not on the dashboard, but just in the jobs and active tab, it was still showing there. And at first I was like, Oh, that's weird. Why is it still showing there? That was at 930 when I went back at 1058 without logging out. It was, it was gone. So I don't know if I if it just needed, yeah, it probably refreshed jobs at the top, it probably would have gone away well, and also, it'll do that occasionally on its own. I was hitting refresh like no one's business, because I was trying to get my thing to continue to work. So I was hitting all the repressions, but it did eventually go away, and I can't explain it, so I'll just wanted to bring it up, but as of now, I don't think it's an issue. Okay, good.
+
+Unknown Speaker  5:54  
+Another thing I noticed was so jobs that are on hold in scheduler, they're showing up on the dashboard, but only the dashboard they're not showing up like in the jobs active tab or upcoming tab, is that how it's supposed to be? That's how I remember talking about that with you guys. But this was probably back in January. The consensus was that we wanted them on there. Okay, I don't remember why, though,
+
+Unknown Speaker  6:23  
+okay. I mean, it didn't, it doesn't really bother me. I was just like, Oh, that's interesting. I didn't think jobs that were on hold were showing so I just thought I'd bring it up. But yeah, whenever we did the dashboard that we had, I don't know, I think it was Bonnie that was like, well, let's have him on there for now, and we can discuss it was something like that, and then we just never talked about it again. Doesn't
+
+Unknown Speaker  6:47  
+bother me. I was just like, Oh, that's weird. It's showing on dashboard, but not in the other area. So I just thought I'd bring it up,
+
+Unknown Speaker  6:54  
+generating a report. Okay, so
+
+Unknown Speaker  6:58  
+we had that meeting. What was that like the 24th
+
+Unknown Speaker  7:02  
+and I wasn't getting any of the the emails to my email. So on the 26th though, I got like, 20 of them, like, like a lot, who fixed the issue and it worked through the back backlog. I haven't got any sense, and I've been requesting them, but one thing I did think was interesting was let me open it up. It's like, it's like, every job, like, not just Glendale. Okay, you do know that? Okay, I figured I was like, assuming that it was just going to be my stuff fixed. So that was probably you requested it before the fix happened. It never sent out and after we fixed some things. Yeah, I'm looking back on our meetings. Brian and I literally fixed it on the 26th so it's no surprise that you got a bunch that day. Okay, yeah, I got, I got quite a few, and then I haven't got.
+
+Unknown Speaker  8:00  
+I've been requesting them, not as many, just for the just in case, but I haven't gotten any since then. And I don't think Joe has either been asking. I asked him to check, okay, do you get them when I run it, or only when you
+
+Unknown Speaker  8:17  
+run it? Oh, only, only the requester gets an email. Oh, les doesn't get a copy or anything.
+
+Unknown Speaker  8:26  
+Saw you get it, though, because I saw your email
+
+Unknown Speaker  8:30  
+when we were on a call previously, so I saw you get it, and that's why I was like, What am I doing wrong?
+
+Unknown Speaker  8:37  
+I just requested one. That's true.
+
+Unknown Speaker  8:42  
+No, I haven't tried one since the
+
+Unknown Speaker  8:46  
+since the server went down Sunday. I wonder if the server side script is running or not.
+
+Unknown Speaker  8:55  
+Yeah, because I requested it myself, even, gosh, probably the past couple days, right? Ash, and I still haven't received any as well. I just requested one myself, so we'll see.
+
+Unknown Speaker  9:08  
+And then, is this one
+
+Unknown Speaker  9:12  
+working now? Because I haven't gotten any from here either. I was just curious,
+
+Unknown Speaker  9:17  
+which one? Sorry, no, you're good. It's in that jobs tab, and you can under like upcoming or completed. There's this job report button. Does this do anything as as of right now? It does. Oh, okay, so I'm just not getting those. Okay, yeah, I'm, I'm, I'm trying to get some more availability to get back to some of these things I've been on pretty much nothing but project management for, you know, for this native app, getting this project up and going, and, you know, all the resources in place and documenting a bunch of stuff. So that has definitely been most of my plate. And.
+
+Unknown Speaker  10:00  
+These reports are top of my list. To get back to Awesome.
+
+Unknown Speaker  10:05  
+When you do, Brian, can you just verify the JSON Query structure for the job report button that Ashley just mentioned? Absolutely Okay.
+
+Unknown Speaker  10:22  
+Jake,
+
+Unknown Speaker  10:24  
+oh, how do you want? I think we went over this just in case really quick, like, if I'm if I am an agency and I add someone's name to an unstaffed job, we get the notification. We do, and the officer does, but it still doesn't pull the contact. Is there a way to add that
+
+Unknown Speaker  10:44  
+the contact to the job information when they book? Yes,
+
+Unknown Speaker  10:49  
+okay.
+
+Unknown Speaker  10:58  
+And what do you want? Just the the name, name and phone numbers. Yeah.
+
+Unknown Speaker  11:12  
+How's the weather in Peoria? I see that tab.
+
+Unknown Speaker  11:18  
+It's very like windy, though, and dusty, fun. I remember that, yeah, it's we're expecting a monsoon storm pretty soon here. So you know how that is? Jake, it's my favorite time of year. There power outages. You know how it goes? All the fun? Uh huh. I definitely remember that.
+
+Unknown Speaker  11:38  
+Oh, we had our house power go out during monsoon season, because the main line to our house ran under the street by our house, and the street got flooded so bad,
+
+Unknown Speaker  11:55  
+so they had it took a week for them to get The power back. Oh, it's brutal, yeah.
+
+Unknown Speaker  12:01  
+So the it looks like I disabled on the 27
+
+Unknown Speaker  12:06  
+the the
+
+Unknown Speaker  12:08  
+server side script for the reports I must have seen something I wanted to look at.
+
+Unknown Speaker  12:15  
+I would explain it. I just re enabled it. But if it starts sending out a bunch of emails again, I will, I will disable it again until I can figure out what's doing that and fix it.
+
+Unknown Speaker  12:28  
+Thank you.
+
+Unknown Speaker  12:31  
+Oh, everything else on the agency side is is kind of just carry over
+
+Unknown Speaker  12:38  
+with, like, non billables and stuff, aside from the adding,
+
+Unknown Speaker  12:44  
+adding jobs themselves, but that is LinkedIn with the native apps. So I think correct, or is that separate? Should I it's gonna be its own it's gonna be its own thing.
+
+Unknown Speaker  12:55  
+It's no it's separate from the native app. Okay?
+
+Unknown Speaker  13:00  
+That on there, that was the other thing on my list for agency.
+
+Unknown Speaker  13:06  
+Okay, so
+
+Unknown Speaker  13:09  
+today hasn't been an issue, but every day since our last meeting, basically, we've just been getting weird scenarios. And it's not not everyone, so I couldn't tell you why, but I've seen it happen, like in the moment. So like Charlie Murphy on 630 Yeah, is this in production
+
+Unknown Speaker  13:31  
+for the app? Yes, yeah, yeah. Anymore do we we've Yeah, we do,
+
+Unknown Speaker  13:39  
+and we fixed a bunch of stuff on dev.
+
+Unknown Speaker  13:45  
+So I think
+
+Unknown Speaker  13:49  
+if we push we should be want to, yeah, we just want to test that before we push it. Yes, please. We have somebody that was dealing with the
+
+Unknown Speaker  13:59  
+with the problems we were having, we were only getting law clock out locations no matter what they were actually doing, which is, of course, a problem. So we've got that fixed on the dev side. So we, I want to, we think, we think I want to test that in dev some, and then, and then we can push that to production once we approve it. Okay, awesome. So, yeah, I mean, it was like, turning off everyone's location, or turning it on, but not actually filling it in here, depending on the situation. Is that kind of what you're Yeah, it was involved. All of that was okay, yeah, there was, like, timeout stuff, it appears you're not connected to the internet stuff. There was a whole bunch of stuff that was wrong.
+
+Unknown Speaker  14:48  
+Okay, so then I will wait on that and I'll test it.
+
+Unknown Speaker  14:53  
+That. That message right there, yeah, this one, yep, yeah, I actually haven't seen that. And if I mean, I think.
+
+Unknown Speaker  15:00  
+I've seen it one time, but in production, not Deb, so I will look in depth, please. And I don't know, I couldn't tell you the pins like, how they are getting two clock ins and two clock outs without, yeah, no, we've
+
+Unknown Speaker  15:16  
+we. That's one of the things in dev. We hopefully fixed that. I'm going to be testing Cool. I'll just keep scrolling up.
+
+Unknown Speaker  15:25  
+Oh, the mileage request, the mileage and the pay which was interesting. I requested a pay report from the app,
+
+Unknown Speaker  15:33  
+and it was for the pay report. It was different total amounts, which I thought was interesting. Yeah, I can't see where it was off because it it does in the Excel. Give me
+
+Unknown Speaker  15:46  
+a list, but I can't see per month what it should be, if that makes sense. Wait a second, so I'll show you, yeah,
+
+Unknown Speaker  15:57  
+on the dashboard part, like on their their phones,
+
+Unknown Speaker  16:03  
+yes. So like when I pull it up on
+
+Unknown Speaker  16:07  
+on my phone and I go to
+
+Unknown Speaker  16:10  
+log in
+
+Unknown Speaker  16:18  
+dashboard, yes. So like I can see for earnings, I can see the total, and then I see January, and I get, like a bar graph,
+
+Unknown Speaker  16:27  
+but I don't know the exact total of it, so I couldn't tell you how it's off, but I know that my earnings is 31,000
+
+Unknown Speaker  16:35  
+But when I got this,
+
+Unknown Speaker  16:41  
+it's 40, I don't know
+
+Unknown Speaker  16:46  
+how or why, or, you know, like which, which month is off, but something's off somewhere. I bet you where.
+
+Unknown Speaker  16:55  
+We bet you Jake. For the two scripts we're using,
+
+Unknown Speaker  17:00  
+we're using a different way to determine
+
+Unknown Speaker  17:04  
+canceled jobs, how they're count if they're, I bet you that's true.
+
+Unknown Speaker  17:09  
+So I can look into that and, okay, make sure, because that's that's really the only variable in these in this report, that's it. Yeah, this and the mileage report, that's only the real only variable is whether or not we count a canceled job. Yeah, I'm looking at my dashboard, it says I've made a whopping $3,880
+
+Unknown Speaker  17:33  
+and I just requested the report,
+
+Unknown Speaker  17:36  
+and I guess we'll see what that says. I it,
+
+Unknown Speaker  17:43  
+Yeah, mine took, mine was fairly quick, but it did take a few minutes, and the mileage is still just, it's fun. It's just like, off by a month on both. I bet it's what you're saying, Brian,
+
+Unknown Speaker  17:57  
+it's off by a month. You mean, yeah, display like, column Exactly, yeah, so it says May and July, when that should say April and June, like the 320 should be in April and the 48 should be in June. The total is right, though.
+
+Unknown Speaker  18:14  
+Well, that is a different problem.
+
+Unknown Speaker  18:20  
+Okay, okay.
+
+Unknown Speaker  18:31  
+And I did get your email, the template for what should be held out if no report information is found. I haven't gotten around to it, doing anything with it, but I do have it, and it's on my list. Thank you. I was supposed to talk about that. I was going to make sure you got
+
+Unknown Speaker  18:47  
+that. Thank you for bringing that up.
+
+Unknown Speaker  18:52  
+Talk about that. Talk about that. Oh,
+
+Unknown Speaker  18:55  
+hey, Brian, yes,
+
+Unknown Speaker  19:02  
+we're weird I got an email, but it said no booked days for the given criteria,
+
+Unknown Speaker  19:11  
+but that's
+
+Unknown Speaker  19:14  
+all I did was request the Excel report from the dashboard.
+
+Unknown Speaker  19:19  
+Well, but you, but you requested an officer over hours I did, but that was a different thing. What?
+
+Unknown Speaker  19:27  
+Oh, so the off the No, I requested an unstaffed jobs in the agency app,
+
+Unknown Speaker  19:35  
+and I got it that I got, then I requested the pay report from the officer app. Oh, from that, yeah, and I got an error, no booked days for the given criteria. I'm gonna, I'm gonna run it one more time, just to make sure. But, yeah, make sure what, what date range you pass, that you actually have something, that you actually have pay or mileage. Yeah.
+
+Unknown Speaker  20:00  
+Yeah,
+
+Unknown Speaker  20:02  
+well, it's just a year.
+
+Unknown Speaker  20:06  
+Okay,
+
+Unknown Speaker  20:08  
+let me, I'll double check, yeah, I have a look at those reports.
+
+Unknown Speaker  20:14  
+Note here. Just fix it now. Come on, you can do it.
+
+Unknown Speaker  20:22  
+I I'm gonna go look at what I sent in.
+
+Unknown Speaker  20:27  
+Export. Pay, yeah,
+
+Unknown Speaker  20:33  
+yep,
+
+Unknown Speaker  20:38  
+okay, I'm sorry. Continue. Miss Ashley, Okay, this next one, it's a weird error code. I'm not looking for an answer yet, but I'm wondering if you've ever seen it, because I have not. He was trying to log into his app, and he got an error code at the bottom saying, not logged into server. I've never seen, I mean, I've, I've seen error codes, but that not that logging into the officer app. Yeah, yeah. Was that Sunday? No, that was today.
+
+Unknown Speaker  21:07  
+Was this morning. I had him. I sent him a new install link just to see if I had him delete it, reopen it. I haven't talked to him since. He didn't call me back, but I was just curious, what's his what's his? Do you know his email,
+
+Unknown Speaker  21:22  
+Yeah, Hold on.
+
+Unknown Speaker  21:38  
+Jeffrey Perez, on on
+
+Unknown Speaker  22:02  
+Bres Yeah. Can you read that to me? Yeah. Perez, Jeffrey 20 three@gmail.com
+
+Unknown Speaker  22:10  
+is it spelled the normal J, E, S, S, E, R, Y, okay. Jeffery, yeah, that's kind of like this is because that's not quite how I would spell it,
+
+Unknown Speaker  22:21  
+but you can
+
+Unknown Speaker  22:29  
+Jeff for 320, three@gmail.com
+
+Unknown Speaker  22:35  
+Whoa, there were Two records here exchange, and now they're not there.
+
+Unknown Speaker  22:44  
+20 three@gmail.com
+
+Unknown Speaker  22:47  
+Brian, I just watched two records get deleted, user or log, log.
+
+Unknown Speaker  22:57  
+That's weird,
+
+Unknown Speaker  22:59  
+even though we still see it,
+
+Unknown Speaker  23:02  
+yeah? Well, it looks like it, you know, you hit the
+
+Unknown Speaker  23:06  
+because it, I noticed it does delete itself like it doesn't keep an unlimited amount,
+
+Unknown Speaker  23:13  
+yeah, but 926
+
+Unknown Speaker  23:18  
+wouldn't delete those.
+
+Unknown Speaker  23:20  
+I um,
+
+Unknown Speaker  23:23  
+that's concerning,
+
+Unknown Speaker  23:26  
+given what what we know about what happened on Sunday.
+
+Unknown Speaker  23:30  
+All right, we can look again. It passed a consistency check, but that's all. I didn't do much else,
+
+Unknown Speaker  23:38  
+yeah, brought an older version back then.
+
+Unknown Speaker  23:42  
+Yeah, I just watched there were two inbox records there, and it looked like he had loaded the app. So that's what I saw, and I was going to show you guys, but they then just delete it. Oh, there's more records getting deleted. No, hold on. Nope, wait, no, now they're getting created. Okay, I guess someone's using the app right now,
+
+Unknown Speaker  24:03  
+so the number is going up, but, but, but those records, for sure, are not there.
+
+Unknown Speaker  24:09  
+Well, that's fine, yeah, we can. I mean, we can do a, you know, a recovery and a good look at that file. I guess
+
+Unknown Speaker  24:17  
+I don't know. What else you know,
+
+Unknown Speaker  24:21  
+what else I could really do?
+
+Unknown Speaker  24:24  
+I think he'll be okay, but I definitely think we should look at that
+
+Unknown Speaker  24:30  
+already
+
+Unknown Speaker  24:33  
+when I do reach back out to him, if you know, reinstalling the app didn't work out. Is there anything I should advise? No. I mean, I'm looking at his record right now, he's verified and enabled. Okay, so he should be fine.
+
+Unknown Speaker  24:46  
+That's good. I just had never seen that code or that error message before, so I thought I'd bring it up just in case. Oh, that's exactly what I saw while your server was down or while while this file was down on yesterday or on Sunday. That.
+
+Unknown Speaker  25:00  
+That's exactly what it said it, you know, it couldn't connect to the server.
+
+Unknown Speaker  25:04  
+Was the code done? The file thing that it gave, but that you shouldn't have gotten that today. I mean, I understand that. Yeah, hopefully the error I saw Sunday, that's here. I saw, well, actually, no, I actually, I saw a different one I saw
+
+Unknown Speaker  25:21  
+for the app. Mine was
+
+Unknown Speaker  25:25  
+helper File Error, unable to open check helper file. But
+
+Unknown Speaker  25:32  
+that one too, and then a couple times you got different errors. It was fun. Oh,
+
+Unknown Speaker  25:38  
+you ready? It was okay. Well, cool. It's crazy watching this file, by the way, just you actually see people like as they use the app. There's, there's a lot of stuff that happens all the time. I'm just like, I've sat here watching, in the last like two minutes, like almost 100 records get created.
+
+Unknown Speaker  26:00  
+Wow, yeah, that
+
+Unknown Speaker  26:03  
+actually sounds interesting. It
+
+Unknown Speaker  26:06  
+is
+
+Unknown Speaker  26:08  
+cool. The last thing I wanted to it was just something I've been thinking about since we had the native app discussion about,
+
+Unknown Speaker  26:16  
+I talked about notifications, but for jobs that get like, created into the dashboard. And I just wanted to clarify, just in case I was confusing when I said all I didn't mean that just because, like, the codes already written, that the it knows me as an officer, and what I can and cannot see and what shows up on my home screen. So I was just curious how much of a stretch it would be to if something does appear on my home screen in my app that, you know, a notification? Yeah, I think they can do that.
+
+Unknown Speaker  26:51  
+So we're going to be constantly watching the database.
+
+Unknown Speaker  27:01  
+And
+
+Unknown Speaker  27:03  
+when new jobs show up,
+
+Unknown Speaker  27:06  
+we might be able to run some kind of a thing on the app that continually kind of observes those jobs. And if they can work them and they're new and they're not listed for them, well, wait, actually, know the code will handle that. I think we can do that. Okay. I think we can. Don't, don't quote me on it yet, but I'm pretty sure okay. I just wanted to bring it back up, because I feel like I maybe
+
+Unknown Speaker  27:33  
+what's confusing, or I said it wrong. I wanted to just talk
+
+Unknown Speaker  27:38  
+about it one more time, just to get your thoughts on that, yeah, okay, that I
+
+Unknown Speaker  27:46  
+wraps
+
+Unknown Speaker  27:49  
+my app section
+
+Unknown Speaker  27:54  
+on to scheduler
+
+Unknown Speaker  27:58  
+reports
+
+Unknown Speaker  28:00  
+the job count by day, and job count by month, both of those reports. So like, let's say you're looking up for the month southwest barricades jobs. It pulls all the Southwest barricades jobs, but it says on the top, like, APS or something.
+
+Unknown Speaker  28:15  
+Does that make sense? Or do you
+
+Unknown Speaker  28:19  
+want me to show you?
+
+Unknown Speaker  28:43  
+Oh yeah. So it says for client, APS, but like, these are all southwest barricades. Jobs, as I requested, which is, which is great. It's just, if you're sending this we want, you would want that to reflect down here,
+
+Unknown Speaker  28:56  
+makes sense. And
+
+Unknown Speaker  28:59  
+it was the day one count, job count by day, and then the other, The Job count by month.
+
+Unknown Speaker  29:06  
+Get that same result. Yeah.
+
+Unknown Speaker  29:25  
+It
+
+Unknown Speaker  29:29  
+stands
+
+Unknown Speaker  29:40  
+are
+
+Unknown Speaker  29:45  
+you ready for me to continue? One second? Okay, no worries. I just see one else.
+
+Unknown Speaker  29:52  
+All right.
+
+Unknown Speaker  29:57  
+Ian Marino, I got a we got notification that.
+
+Unknown Speaker  30:00  
+He made changes to his profile. And then I so trying to figure out what he changed. I went in here, and I can't, all I see is the comments, because we have so many comments in there, which okay. And then I went to, like, hover here.
+
+Unknown Speaker  30:16  
+I want to do
+
+Unknown Speaker  30:19  
+it. It's so fast it like doesn't stay very long. So I was wondering if either A, we can not have the con, I mean, not have because some of the comments on these officers logs are are enormous, so I don't know if a we didn't have comments on there originally, and you asked me to, I know, I know, I'm sure I did, but I didn't realize that it was it's just, I don't have any time to, like, look through it. I mean, I guess if a comment is changed or added, but it shouldn't drop like that. It should the tool tip should stay up as long as you don't move the mouse at all. But I'm not touching my mouse right now. Yeah, it goes for like, two seconds, and I'm like, I can't get anywhere with this,
+
+Unknown Speaker  31:02  
+but it's just so any changes that are made.
+
+Unknown Speaker  31:07  
+So I don't know, I don't know, I get why I would want comments in there, because sometimes we put important information in the comments, but at the same time, it's, it's just a lot to read through when you're just trying to find what changed. Yep, I
+
+Unknown Speaker  31:22  
+don't know what, what the easier fix would be that should be slimmer as you move forward, as more changes happen. Because right now, it's looking at, there was a lot of changes because we changed what it is tracking, not necessarily because the comment changed. You're saying if, he went in and changed his days off again or something, I wouldn't see all those comments. You probably shouldn't see the comments unless someone also changed the comments at the exact Well, no, because when you change the comments, it would make its own log. And then the next time he makes a change, you know, the comments shouldn't be part of it,
+
+Unknown Speaker  32:01  
+something that would make the change.
+
+Unknown Speaker  32:05  
+Yeah, I don't think I am tracking that. Okay, yeah, maybe I'm not tracking that.
+
+Unknown Speaker  32:14  
+Maybe I'm not trying. I'll have to look. I don't know what I'm tracking for officers, okay, well, I'll wait till someone else makes a change, and then I'll keep looking. But I mean, you won't see what you want to see anyway, there it is. Yeah, it did. Just took a minute.
+
+Unknown Speaker  32:31  
+Okay, so it won't show up. My comment, okay. So right now we're just at that awkward in between point where I just Yeah, where the results of the changes we're making are causing that, because it is a difference, because I added something new to what's being tracked. So the first time for each officer that you know is made, it's going to reflect everything that I added,
+
+Unknown Speaker  32:55  
+which in this case, apparently was comments.
+
+Unknown Speaker  32:58  
+And it seems like this one just, it's just a really long one, so it go away real fast, yeah,
+
+Unknown Speaker  33:06  
+does the same thing for me. And like, job assignment detail, not at not that quick, but pretty quick where I have to kind of hover over it quite a few times, because you can't scroll on that one either. Yeah. I mean, I can make it that little popover that comes over when you click the green arrow. Was a quick way of doing that without having to make a bunch of new screens. Because basically, I have to screen for every screen that has a mod on it, a mod log. But I can make something that shows two fields that are scrollable, you know, like a real detail for those modifications.
+
+Unknown Speaker  33:44  
+Most of the time, it's, it's not a problem. It's just, every once in a while, I'll get a Yeah, a weird one where I'm going
+
+Unknown Speaker  33:52  
+back and forth, but it might, it'll make Yeah. When there's guys want me to put in the time to do that, I can, you know, to make a bunch of detail screens for these mod logs that come from wherever they come from.
+
+Unknown Speaker  34:08  
+You know, that's making new screens and the navigation to make them pop up and work and close easily and not get lost.
+
+Unknown Speaker  34:16  
+I can do that. If you want me to remove comments from from what's being tracked. I can do that,
+
+Unknown Speaker  34:23  
+or you can continue to use it as is. Those are kind of your three options. Okay,
+
+Unknown Speaker  34:32  
+I don't think so. I mean, I I would worry having multiple, you know, people not closing out of those screens, and then they just have, like, 12 open. I could see that happening, so I
+
+Unknown Speaker  34:44  
+I don't know, I guess I'll say no for now, especially as mod logs continue, it might
+
+Unknown Speaker  34:50  
+get easier to see. So I'll wait
+
+Unknown Speaker  34:54  
+on that. Oh, on officer detail page. Is there?
+
+Unknown Speaker  35:00  
+Anywhere where we can add, right now, we add it in the comments. There's the supervisor's name for the officer, Sarah place. We can add that somewhere in here,
+
+Unknown Speaker  35:13  
+that, if you like a field or whatever, for supervisor. And we can make, make it so that you have to select an officer to be their supervisor, you know, someone from the officer table.
+
+Unknown Speaker  35:28  
+Interesting.
+
+Unknown Speaker  35:34  
+What if they're not in our system already? I mean, I don't know if that would well, then they probably should be if they're not. I mean,
+
+Unknown Speaker  35:42  
+an officer's supervisor is an officer like 99.99%
+
+Unknown Speaker  35:46  
+of the time, right?
+
+Unknown Speaker  35:48  
+Yeah, I just don't know if they work a lot of off duty. I mean, in most cases, they probably do. I just don't know. I've, I've never researched that on how many of them are in there. Lori, do you have any
+
+Unknown Speaker  36:04  
+insight?
+
+Unknown Speaker  36:09  
+Or I can just look into it further and and see if what would be a better option.
+
+Unknown Speaker  36:16  
+I mean it because, I mean most of the supervisors probably are not in the
+
+Unknown Speaker  36:24  
+probably not in the system. But, I mean, you could add, because the point is
+
+Unknown Speaker  36:30  
+it, I'm looking down the road. So yes, I can slap a field on there, and you can types whatever you want in there, you know, supervisor. And you could type Jiminy Cricket. It doesn't matter. I can leave it open. And you can type whatever you want. Whatever you want in there.
+
+Unknown Speaker  36:45  
+But I think it would behoove you to add them as officers and assign them, because that way you can number one. You'd be able to go to that supervisor's record and see these are all the officers they supervise. You know, I can give you a list of officers that they supervise that way. And when we move into agency app, and we start getting into administration through the agency app and such, especially if we end up talking about this department of education stuff, you're going to want then to be able to say, you know,
+
+Unknown Speaker  37:18  
+I supervise these officers, and you can run reports off of this so I can, you know, only see what officers are over their hours. You know, are overworked that are assigned to me. You know, with if you add them as an officer, and you select the, you know, who the supervisor is as an officer in there that gives us, that gives us more stuff we can do from the administration side as we move forward, and allow them to administrate their officers in your system.
+
+Unknown Speaker  37:49  
+If we just have a blank field that you can enter whatever you want, then we can't do much with that except show it to you,
+
+Unknown Speaker  37:59  
+and we're probably not going to have like, their address and all their information, and that's fine, yeah,
+
+Unknown Speaker  38:07  
+so, like, when I was adding off the supervisor,
+
+Unknown Speaker  38:14  
+oh, we have it the supervisor's name and phone number and the information we collect on the supervisor.
+
+Unknown Speaker  38:21  
+Well, we would know what agency they're attached to, you
+
+Unknown Speaker  38:27  
+know, and their their name, their phone number. That's fine. That gives you enough to work with. I mean, if I give you a field where you type stuff in, I mean,
+
+Unknown Speaker  38:37  
+even in file maker, I wouldn't be able to really run you a decent report of, you know everything that officers under this supervisor are doing, because I don't know that two officers have the same supervisor.
+
+Unknown Speaker  38:49  
+If you're just typing open text,
+
+Unknown Speaker  38:55  
+I need a selection to happen in order to really relate the two.
+
+Unknown Speaker  39:01  
+That makes sense. When I was adding agency, we were getting Peoria set up for an agency, and some of them, there were some that wanted access to the agency but didn't have access to or weren't an actual officer, like we didn't have their w9 and and all the things that we typically have. And I think I ended up writing,
+
+Unknown Speaker  39:21  
+I was gonna find one for you, Lori, so you could see, but I I broke something in here, and then I picked a different rank for them so that we knew that it was only for you know that access, or just to differentiate them from an actual officer that we had all the information we needed on. Wonder if we would be able to do something like that.
+
+Unknown Speaker  39:42  
+Well, that or again, down in in assets, you know, we can have a checkbox that says, you know, we have all the information we need. W9 you know, their information. And if that's not checked, then they're not that type of, you know, they don't have that stuff. You.
+
+Unknown Speaker  40:00  
+The other thing would be the
+
+Unknown Speaker  40:02  
+QB name. If, if they're not an officer that's going to be working with you guys, they're just a supervisor or something, then they shouldn't have a QB name.
+
+Unknown Speaker  40:14  
+Because, a QB name, you know, because, why would those people be in QuickBooks?
+
+Unknown Speaker  40:22  
+Yeah, like that one right there. I mean, Matt, yeah, coordinator. Why do they have a QB name? He's not in QuickBooks.
+
+Unknown Speaker  40:31  
+I mean, I can absolutely take it out. I just wanted to put somewhere that he was a coordinator, so that they would see it
+
+Unknown Speaker  40:39  
+quickly. You've got a coordinator checkbox right there that you can also use,
+
+Unknown Speaker  40:45  
+okay,
+
+Unknown Speaker  40:48  
+that doesn't do anything programmatically currently, you know, but you can check it, and we can use that later if we want to,
+
+Unknown Speaker  40:57  
+to know that That person's a coordinator.
+
+Unknown Speaker  41:01  
+But as for, like I said, assigning a supervisor to an officer, or assigning officers to a supervisor, I would assign them, meaning they should have an officer record, and you should pick them where they are, you know, in the background really connected, because then we can do a lot more with it, if we just add a field where you can type in a name. I can't run a report on that. I can't do anything on that. It's, it's just sits there on the officer detail page.
+
+Unknown Speaker  41:35  
+Yeah, I completely understand what you mean. I Lori, I mean, what do you think? I don't know what we do with that information. So to me, it sounds like reasonable to link them.
+
+Unknown Speaker  41:53  
+I guess it depends on what if you want to do anything with it right now we don't really do anything with it.
+
+Unknown Speaker  42:00  
+Yeah, you know, just again, if at any time you want to be able to say when they sign into the agency app, these are the officers that they supervise, and they need to be able to do stuff with
+
+Unknown Speaker  42:13  
+then we have to select. Just entering isn't going to work. If you ever want to run a report in FileMaker, you know, on, you know, officers or jobs that are under this particular supervisor. If you're just typing in a name, I can't run that report for you.
+
+Unknown Speaker  42:35  
+Okay,
+
+Unknown Speaker  42:40  
+so again, if you'd like me to set that up so that you can select officers, assign them to a, you know, a supervisor and all that kind of stuff. I can do that.
+
+Unknown Speaker  42:50  
+I just need to go ahead.
+
+Unknown Speaker  42:56  
+Yo, do you?
+
+Unknown Speaker  42:59  
+No, no, we were talking about this at the the meeting, and this is one of the beats of Bonnie wanted us to add. Should we go ahead and do the do that or, or, wait, yeah. I mean, I
+
+Unknown Speaker  43:13  
+think it's something like we talked about before with Bonnie wanting to add it. So that's definitely something in our on our list that we want to have done. I just think at this point, as long as it's not going to interfere too much with the native app obviously being the priority overall, I think, why not? Why not move forward this? This would go on my plate. And truthfully, we have, we meaning Angel City data. We have more resources for FileMaker development than we do for native app development right now. So, and this change is file maker side. So even if I have problems getting to it, I can hand it off to co workers.
+
+Unknown Speaker  43:53  
+We just, we just have a lot more bandwidth with FileMaker development than we do
+
+Unknown Speaker  43:58  
+the web stuff. So, so no at making a change or an addition in FileMaker will a lot less likely affect, you know, the native app development. Okay, great, yeah, well, I mean, on that note, I think absolutely we move forward with that. Okay, I have it noted, great.
+
+Unknown Speaker  44:19  
+And then you're going to make a checkbox in the asset area.
+
+Unknown Speaker  44:25  
+Yeah, I can also
+
+Unknown Speaker  44:28  
+for Yeah, checkbox and asset area. What should we call that? Like, as all paperwork or something like that?
+
+Unknown Speaker  44:41  
+Yeah. We did. Is
+
+Unknown Speaker  44:49  
+that what we want to name it?
+
+Unknown Speaker  44:52  
+Yep, that sounds
+
+Unknown Speaker  44:56  
+good. All paperwork.
+
+Unknown Speaker  45:03  
+Okay,
+
+Unknown Speaker  45:04  
+oh, this one, and then should I to denote them as a supervisor? Should I use that coordinator checkbox? Or would you like that a new checkbox for that? Or,
+
+Unknown Speaker  45:17  
+I don't know if, no, I don't know if it's is a supervisor always going to be a coordinator? Do you think, Joe or like the
+
+Unknown Speaker  45:27  
+I don't think so. Not necessarily. I think we should have two different ones. Okay, so officer detail
+
+Unknown Speaker  45:39  
+and checkbox.
+
+Unknown Speaker  45:46  
+To denote
+
+Unknown Speaker  45:50  
+as supervisor, okay? And then part of this will be kind of like when you go to a customer record and you see all the contacts that are related to it, you have a tab that will give you the list of all the contacts you do. Tab here on the officer, so that when you go to a supervisor, you will see a list of all the officers that are assigned under the net of The supervisor. Okay, gotcha
+
+Unknown Speaker  46:17  
+do?
+
+Unknown Speaker  46:39  
+Hmm, I think
+
+Unknown Speaker  46:42  
+we figured, this out. The notification just that one officer that was getting like a million notifications. That was just because Jessica was locked in there, right? Yeah,
+
+Unknown Speaker  46:52  
+I haven't seen that happen since. So,
+
+Unknown Speaker  46:55  
+hey, by the way, real time update.
+
+Unknown Speaker  46:59  
+I did get the yearly pay export,
+
+Unknown Speaker  47:03  
+and it is off by
+
+Unknown Speaker  47:06  
+$1,000
+
+Unknown Speaker  47:07  
+I think for me, right?
+
+Unknown Speaker  47:11  
+And then I got a bunch of the other error running Requested Reports. I think those are from the when you had it turned off and when we were working on things. I just wanted to
+
+Unknown Speaker  47:21  
+chime in there.
+
+Unknown Speaker  47:27  
+Oh, to be Katie.
+
+Unknown Speaker  47:33  
+Oh,
+
+Unknown Speaker  47:35  
+I hope this is a quick one.
+
+Unknown Speaker  47:39  
+We talked
+
+Unknown Speaker  47:41  
+this up, but when we pick in an agency, can you have the auto cursor right here so we can just start typing? I
+
+Unknown Speaker  48:08  
+I
+
+Unknown Speaker  48:20  
+just wanted to make sure this was on your list. Still the officer pay report having a
+
+Unknown Speaker  48:28  
+an icon, a blue icon, or whatever it is, if an officer note is in the Okay, thank you. Yep, that is in my very long list of notes. Sorry, promise. I'm almost done
+
+Unknown Speaker  48:48  
+about that.
+
+Unknown Speaker  48:50  
+Oh, I was curious, did you change? Remember, you're going to get rid of, like, the special characters in phone numbers? Did you already go through officers? I did okay. I thought so,
+
+Unknown Speaker  49:02  
+but not contacts yet. Correct, correct. Am I supposed to go through contacts? I was just requested officers.
+
+Unknown Speaker  49:10  
+I don't know. Do you see that affecting it
+
+Unknown Speaker  49:14  
+anywhere down the line, like in the contacts or no, the customer side, whenever we get there, do you it might be something we want to do at some point, but I don't know how hard it is. It's
+
+Unknown Speaker  49:28  
+it's a little time consuming, but it's not hard.
+
+Unknown Speaker  49:32  
+Okay, there's not a lot of variable. It just takes a while for it to happen. Yeah,
+
+Unknown Speaker  49:38  
+okay, I did notice the officer one, because I was trying to find one, but I could,
+
+Unknown Speaker  49:49  
+oh, I wanted to show you what I meant.
+
+Unknown Speaker  49:53  
+Or
+
+Unknown Speaker  49:58  
+did ask me a question in 20.
+
+Unknown Speaker  50:00  
+Hello. I wasn't sure if you knew what I meant or not, if I explained myself clearly. So like, I created this one, for example, today, and all I did was, you know, just create it like normals at first. So the first one, I got all four of these, and I always get four. I don't know. I don't know why or if that's supposed to happen. And I like, they seem
+
+Unknown Speaker  50:27  
+to be no sense.
+
+Unknown Speaker  50:30  
+Like, I don't maybe you can explain why. It
+
+Unknown Speaker  50:34  
+gives you four every time. That's what I was trying to explain. Oh, yeah. Well, I mean, it does look like, you know, something changed. It's and maybe the reason you get four is,
+
+Unknown Speaker  50:47  
+while you may only be, you know, create this record, one record in the background. It's setting things, you know, setting all your defaults and all that kind of stuff. It very well may be tracking those modifications separately, as far as triggering the mod log. Okay. So then I went back. So I did everything, and then I went back, and I just hit POV and refreshed all and I got these last three.
+
+Unknown Speaker  51:15  
+There's no new value at first,
+
+Unknown Speaker  51:19  
+there's my POV. And then
+
+Unknown Speaker  51:23  
+no new value. Just seems I
+
+Unknown Speaker  51:26  
+was just confused. Yeah,
+
+Unknown Speaker  51:30  
+that's
+
+Unknown Speaker  51:34  
+that's interesting.
+
+Unknown Speaker  51:37  
+I can look at what's happening there. Let me see, can you click on the job assignments tab? Yeah,
+
+Unknown Speaker  51:46  
+okay, so
+
+Unknown Speaker  51:49  
+surprised you're not getting five, yeah? Me too. That was one of the things that I was because, like, tried to explain it away, yeah?
+
+Unknown Speaker  52:01  
+But
+
+Unknown Speaker  52:03  
+it's, it's not making five changes to the recurring it's making changes to, you know, if you go to those, each of those job assignments, you should see the modification of that, you know, pushing the POV, yeah, right.
+
+Unknown Speaker  52:22  
+There. Right. There. It went from zero to one
+
+Unknown Speaker  52:26  
+on seven. That was today.
+
+Unknown Speaker  52:30  
+So it's clocking to really
+
+Unknown Speaker  52:33  
+show you everything.
+
+Unknown Speaker  52:35  
+It's weird because it like captured it individually. It looks like, but I did it all, you know, a block. Yeah, that's, that's because it's, it's doing what's called a fine replace. So it's replacing one value. You know, if you hit Refresh All and you've changed more than one value, or one or more value has changed, it's doing it for each thing, one at a time. So it's changing all the POVs, then it's changing all the times, if a time changed, you know, it's doing it like that. So, yeah, you'll see them separately instead of one change when you use the Refresh button. But as for all of these here, I'll I can look at that.
+
+Unknown Speaker  53:19  
+Okay.
+
+Unknown Speaker  53:22  
+Oh, for the officer, sorry to go back and forth. Is
+
+Unknown Speaker  53:26  
+there any way to capture on the mod log when we change the address?
+
+Unknown Speaker  53:30  
+Yes, we can just add it to the mod log. Let me know
+
+Unknown Speaker  53:40  
+when you're ready. Yep. Okay. Ready. Yep, okay,
+
+Unknown Speaker  53:50  
+okay,
+
+Unknown Speaker  53:56  
+so when I change like, when I assign a different officer, and it does. It does record on the mod log, but it gives me the officer ID number, yep, which is fine, except for, I don't know how to to see that or search for that, or where do I go to find officer ID in case I ever wanted to, like, you know, someone didn't put for Joe Morales, which is how we typically do things, but there's been times where I was like, Who is that? I don't know who that is,
+
+Unknown Speaker  54:32  
+and that's on the job assignment. Yes,
+
+Unknown Speaker  54:36  
+I can add the officer's name to what the mod log tracks, because it does do a lookup so but I'm afraid it'll do it twice. I'm afraid it'll show one log for changing the ID and one log for changing the name.
+
+Unknown Speaker  54:50  
+I was
+
+Unknown Speaker  54:52  
+trying to go through and just find where it even I could reference. You can't The other thing I can.
+
+Unknown Speaker  55:00  
+Do like is expose that number in find mode on the officer detail,
+
+Unknown Speaker  55:08  
+so find by that number. Oh, no, no, no, don't worry. I won't let you change it.
+
+Unknown Speaker  55:15  
+Thank you. To do anything to it, but in find mode, you need to buy it. I could do that. I could expose the ID for finding I can do that in all the major modules, if you'd like, okay, yeah. I mean that that works too. Honestly, I just need some way to if I ever needed to find out who, 1207493,
+
+Unknown Speaker  55:38  
+was just a way to find that.
+
+Unknown Speaker  55:58  
+This is all kind of old news the dashboard class, and we still need to, I don't know, get
+
+Unknown Speaker  56:05  
+get with you on so you can look at my computer. It's been happening to me personally a lot, so I imagine this happened to everyone else. Haven't gotten a ton of complaints, but
+
+Unknown Speaker  56:20  
+merging customers. Laura and I were trying to merge a few of the customers that have that just have too many records that are different, that we can't just, you know, switch the customer name to.
+
+Unknown Speaker  56:32  
+We went to, she went to the old, you know, area.
+
+Unknown Speaker  56:37  
+And we,
+
+Unknown Speaker  56:39  
+we don't have permissions to grant you the right to perform that action, is the message we got when we tried to merge.
+
+Unknown Speaker  56:49  
+What merge was?
+
+Unknown Speaker  56:56  
+Oh, in your section, I don't have no idea. Yeah. So merge. We clicked here, and that's when we get this.
+
+Unknown Speaker  57:05  
+We just have some records like road safe, for example, and they're just a ton of jobs on full customer accounts.
+
+Unknown Speaker  57:16  
+So we were going to merge them so that we didn't have to,
+
+Unknown Speaker  57:19  
+you know, pick and choose. It gets confusing when you're scheduling and two names pop up and you have to decide which is the right one. And you don't know until it's, you know,
+
+Unknown Speaker  57:30  
+you can eventually figure it out, but it's,
+
+Unknown Speaker  57:33  
+you don't always have that kind of time. So we were going to merge them. I mean, wow, you can
+
+Unknown Speaker  57:39  
+add to the customer name, like delete or to be deleted at the end, or something,
+
+Unknown Speaker  57:48  
+so that that shows up on the picker screens.
+
+Unknown Speaker  57:54  
+Yeah, I definitely could do that. But is there in the future? Is there going to be a way for us
+
+Unknown Speaker  58:02  
+to hopefully, we don't have this problem that comes up, you know, a lot, but there are a few that need to be merged, unless you can think of another way to
+
+Unknown Speaker  58:13  
+combine them,
+
+Unknown Speaker  58:16  
+not Without programming a process to do this. So
+
+Unknown Speaker  58:22  
+I will, I will look at that, that giving you access to
+
+Unknown Speaker  58:27  
+do what you need to do in the old section. But I'm, I don't know what that process is, and I don't know if it's going to mess anything up if you do it over there, because I don't know what it's doing.
+
+Unknown Speaker  58:46  
+I have
+
+Unknown Speaker  58:48  
+not done enough to be able to walk you through that. I don't know. I just know that it takes you know we're basically merging
+
+Unknown Speaker  58:57  
+one detail with one record with another record.
+
+Unknown Speaker  59:03  
+It's the best explanation I can give
+
+Unknown Speaker  59:06  
+you. I can look into giving you access to using that process in the old system, but there's no way to know if it's gonna mess anything up. That's yeah, it's scary, but it has a lot less chance of messing something up now than it would once we get, like, customer app and all that kind of stuff in place since we since the customer really doesn't have any point in the,
+
+Unknown Speaker  59:33  
+you know, in the current web presence, it has a lot less chance of causing a problem now.
+
+Unknown Speaker  59:41  
+But I don't know. I mean, it's, you know, recurring jobs and all that has IDs of contacts that are your primary contact for that job. If it merges and deletes that contact because it's got the same in the other record.
+
+Unknown Speaker  1:00:00  
+You know,
+
+Unknown Speaker  1:00:01  
+I don't know it. You may see primary contacts drop off of
+
+Unknown Speaker  1:00:09  
+drop off of jobs,
+
+Unknown Speaker  1:00:14  
+like I actually see customers drop off of jobs,
+
+Unknown Speaker  1:00:19  
+because I don't know what that merge is doing, and I don't know if, if
+
+Unknown Speaker  1:00:23  
+it's going to keep the correct one.
+
+Unknown Speaker  1:00:27  
+I get you, um, I
+
+Unknown Speaker  1:00:34  
+trying to think, like, I mean this, like, you can see all the different jobs that this one has,
+
+Unknown Speaker  1:00:39  
+and it's different than this one,
+
+Unknown Speaker  1:00:43  
+which has, you know, just so many records. I mean, our hope was that, you know, whatever, when we merged one into the other, all of the information would be just combined. Essentially,
+
+Unknown Speaker  1:00:58  
+I don't know. I like to says, Does I have no idea? Okay, well, maybe I'll test it before I go on a big
+
+Unknown Speaker  1:01:07  
+or I do a big one. Yeah, I definitely start with this one with Rose.
+
+Unknown Speaker  1:01:13  
+Yeah, I would not, I will not start with that one. And we, there's not a ton, like I said, but there's enough that we wanted to get it cleaned up before we started customers. So
+
+Unknown Speaker  1:01:28  
+focus signing. That's actually good correspondence. That's kind of a rerun, the only one that's not there, so clock out early or under four hours. Rather, I
+
+Unknown Speaker  1:01:44  
+Oh, it's the same thing. Yep, that
+
+Unknown Speaker  1:01:49  
+is it. That is it.
+
+Unknown Speaker  1:01:55  
+All righty, I have taken my copious notes and
+
+Unknown Speaker  1:02:00  
+continue moving forward with everything I can
+
+Unknown Speaker  1:02:05  
+before we go. I did changing subjects here real quick. So Joe, I just got off right before this meeting. I got off a meeting with Jake and Steve, who is going to be doing the server side stuff for the native app for us.
+
+Unknown Speaker  1:02:26  
+So I got a lot of information about, you know what, what structure, what things we're going to be using in the stack there, and
+
+Unknown Speaker  1:02:36  
+Steve's request that I'm going to back up that he be allowed to
+
+Unknown Speaker  1:02:43  
+either do or sit there in a zoom with ginger SEC as the web server is created and that stuff is created, and he definitely we're going to need credentials for that.
+
+Unknown Speaker  1:02:58  
+I'm about to pass probably tomorrow morning, the email to Tom at ginger sec to get of the requirements we need for the FileMaker server in AWS
+
+Unknown Speaker  1:03:11  
+FileMaker instance, but the web
+
+Unknown Speaker  1:03:16  
+one we we would really like Steve to either do that or be, you know, very intimately involved with the ginger SEC team in doing that one. Sure. We don't, we don't want them setting anything up without him on the meeting the entire time, if they're if they're going to set it up. And the reason for that is because we've had other clients who tried to get their AWS team to set up the server the way we needed it. And like, three and a half, four weeks later, it's not there, and he ends up having to set it up anyway. Gotcha, yeah, that makes sense Absolutely. And I think Brian, since you're going to shoot an email to Tom regarding that anyway, I think, I think it'll be a good idea to make sure Steve is sitting in through every step of that process. Yes. So we'll I've already, I talked to Tom yesterday and but we just really discussed the FileMaker server, because I hadn't had this meeting with Jake and Steve yet. So I told him a web server was coming, but I didn't know, you know, what we really needed out of that yet. So I'm going to get him going on the FileMaker server and have that set up ready for us. And then, then, then, yeah, I'll make sure he knows I need, I need Steve to be to either do it himself or be involved in setting up that web server. The web server will be a Linux system, not windows.
+
+Unknown Speaker  1:04:43  
+He also uses some, for lack of a better word, plugins. They're, you know, other features that AWS has besides just a server. And those are going to include s3 which is kind of their quick storage that we'll be using for.
+
+Unknown Speaker  1:05:00  
+For, probably for backups, but also for images, documents and location data.
+
+Unknown Speaker  1:05:09  
+He'll also be using something called lambda functions, which are, it's kind of hard to explain, but they allow us to basically spin up a small instance on demand, like for half a second to do one very specific thing.
+
+Unknown Speaker  1:05:27  
+And those, those will be needed, and those are great. They're not they're not very expensive, neither is the s3 as far as storage is concerned. And then we are going to recommend AWS does have a texting service that we would like to use to text,
+
+Unknown Speaker  1:05:47  
+to text officers to text, you know, phones, right? And we were wondering your thoughts on because we were discussing password protection and having better Pat, you know, requiring better passwords and such. And Steve suggested. He's like, you know, lately I've just been instead of using passwords, you just get, you know, that one time code text to your phone, and you enter that code, it only works once. It's only open for a few minutes, and you don't even need a password anymore. You just, you put in your username, which is again, going to be your your email address, you click a button, you know, a second or two later, you get a text message. It'll give you, like, a six digit code. You enter that and, boom, you're in the app, right? Does that sound good to you? I think so. I feel like a lot of my apps have been doing that. They've been moving over from a password to a code now, and it makes it so much easier. Honestly, I think it makes sense, in my opinion. Let me get that clarified with Bonnie, just to get the okay from her. But I think at least future proofing, if that makes sense, yeah, for future proofing and technically, some people see it as they're like, well, it's just a six digit code that's less secure than a password. No, it's actually more secure because it only works once, and it's only available for, you know, a 10 minute period, or until they use it. So right as soon as they get it, then that code is only useful for five seconds, or, you know, 10 seconds,
+
+Unknown Speaker  1:07:14  
+and it does make it more secure. And you don't have to worry about people losing their passwords. You don't have to worry about your passwords. System getting hacked, you know, and it's that, that stuff just doesn't exist. There is no password.
+
+Unknown Speaker  1:07:30  
+Yeah, I agree with him. I think it makes sense, like I said, let me just get that okay for you, yeah. But yeah, I think Yeah. I think absolutely. But that is another service, so technically you would see on your AWS Bill, you know, like s3 technically, is another charge on top of the server so or lambda functions. So it would be this tech service. Now they are pieces of a penny, and normally only add up to, you know, less than 20 or $30 a month, except the s3 might get a little bit more expensive as you as we add more and more stuff to it. You know, if we start uploading a whole lot of documents and such, it can get a little bit bigger and cost a tiny bit more. But it's still pennies on the dollar. It's really not too bad at all.
+
+Unknown Speaker  1:08:25  
+I like to let people know when other charges are going to be added to their stuff. Did you bring up the A and B servers? Brian, sorry if I missed
+
+Unknown Speaker  1:08:34  
+that, the A and B users? No, the A and B servers, the basically mirrored server. Yeah. Well, he was talking about that would be two whole accounts, yeah, two different accounts, different AWS accounts. That was another thing that Steve recommended. And I,
+
+Unknown Speaker  1:08:54  
+I can talk with ginger SEC about it, but really it'd be up to you guys. So what he's recommending is there's a way in AWS, you would have two totally separate accounts, two totally separate Billings.
+
+Unknown Speaker  1:09:09  
+But what they do is actually mirror each other on both coasts, so on one in San Francisco and one probably up here in Virginia.
+
+Unknown Speaker  1:09:21  
+And what happens is, if a meteor hits the data center in in San Francisco, you can hit a button, and within a minute or two, you're up again in Virginia,
+
+Unknown Speaker  1:09:36  
+okay, okay. It's also if somebody happens to hack one manages to hack one, we just have a failover
+
+Unknown Speaker  1:09:46  
+immediately, an immediate failover that has everything you have boom is up again. So that does mean having two accounts and
+
+Unknown Speaker  1:09:57  
+but the second account should only be.
+
+Unknown Speaker  1:10:00  
+A few dollars a month unless you use it so, but again, if you use it, that means one is down and you're moving to two anyway. So then one would be the one that would only be a few dollars a month, and the two, you know, would be the new real production. But you a fail safe in case some really bad stuff happens,
+
+Unknown Speaker  1:10:21  
+or you are, somebody does manage to, you know, hack into your user and cut off all your stuff and tell you that you got to pay them, you know, half a million dollars to get it back. You'd be like, I don't care. It only shut me down for a minute. I can cancel that account. Make an you know, make another one, and boom, I'm back up.
+
+Unknown Speaker  1:10:40  
+Right? Yeah. I mean, that does make sense as well, for sure. Okay, so I'll, I will recommend that also with Steve and ginger sec, then that we would like that to go down.
+
+Unknown Speaker  1:10:56  
+I do just, I want to keep ginger SEC very involved. And Steve was like, I, you know, I like it better when I do it. I get it done the way I need it, and everything which is perfect. But as I told him, going forward, Ginger SEC is going to be who maintains and supports the AWS. So I need them involved every step of the way also. So, so I'll try to connect those two, you know, Steve and them, and make sure that that ginger SEC is completely, you know, up to date on everything that Steve's doing, as far as setting and configuring that he does. We you know, we worked with him for a while. He does great documentation of everything he does, everything he sets up. So it's pretty easy to follow and support,
+
+Unknown Speaker  1:11:47  
+but that's that's kind of what we're recommending as far as setting that up.
+
+Unknown Speaker  1:11:52  
+Okay, great, yeah. And like I said, I know, as long as ginger, sec and Steve are on the same page, I see this transition going rather smoothly. So we hope, yeah, yeah, fingers crossed for sure. So we want to get, I want to get the file maker server up first so that I can get file maker set up on there. We can make sure we've got the SSL installed properly. I can get copies of your whole FileMaker system up on there, and we can test it a decent amount before we say, Okay, this is going to be our new production server. And then we will schedule some downtime to actually do the change, because we have to
+
+Unknown Speaker  1:12:34  
+not just move the FileMaker files up there and get them going, but we have to repoint everything that's in better forms and such to the new to the new server.
+
+Unknown Speaker  1:12:45  
+So there is some downtime in that. But I agree. I think it'll it should be rather smooth, if we can get them to work together.
+
+Unknown Speaker  1:12:53  
+Yeah. Okay, great. I appreciate that, Brian,
+
+Unknown Speaker  1:12:56  
+and that is basically what came out of, came out of those two conversations, like I said, speaking with Steve and Jake today, and then speaking with Tom yesterday. That is, that is where we're at with those things.
+
+Unknown Speaker  1:13:11  
+And then otherwise, the only update is, Jake's been working. He's, he's been putting a bunch of time into native app, and he's, he's developing, he's moving, and I am going to be
+
+Unknown Speaker  1:13:25  
+dealing with another one of our developers here soon, Jeremy, who is going to start working on new job creation within the agency app Online,
+
+Unknown Speaker  1:13:40  
+because that is another one of your, you know, needed things that you got there.
+
+Unknown Speaker  1:13:47  
+There was the native app and creating jobs and agency AWS was kind of your, you know, your priorities. So I will have him started on that rather soon, and I may have him also looking into any of the issues that we get from Ashley, as far as the agency app is concerned, so that I can keep Jake plugging on the on the native app. So just let you know if a new name or a new person starts being in on
+
+Unknown Speaker  1:14:16  
+on some of this development. That's why.
+
+Unknown Speaker  1:14:19  
+Okay, great. Thanks for the heads up on that.
+
+Unknown Speaker  1:14:23  
+Alrighty,
+
+Unknown Speaker  1:14:25  
+that's all I got. Does anybody else have anything we need? We're good to
+
+Unknown Speaker  1:14:30  
+go. Yeah, I was just gonna ask real quick, Brian, are you I know that I'm taking notes, but are you gonna recap some of those items at the end there that you shared some of those recommendations. Are you able to send me some bullets? I sure can. Okay, I still want to capture that incorrectly. I can tomorrow. I am today. Yeah, no, I'm feeling it too. So
+
+Unknown Speaker  1:14:54  
+I'm making a note bullet point to Amanda.
+
+Unknown Speaker  1:14:58  
+Those recommendations.
+
+Unknown Speaker  1:15:00  
+I think that'd be very helpful for us to share with Bonnie and speak to it. Yeah,
+
+Unknown Speaker  1:15:06  
+native, AB, Rex, yes, please.
+
+Unknown Speaker  1:15:15  
+That would be seven, two. Jesus, we're already in July. Yeah, he's real weird, huh?
+
+Unknown Speaker  1:15:23  
+My kid turns this whole year is just a blur. I'm not gonna remember any of it I know.
+
+Unknown Speaker  1:15:31  
+All right, well, if that's all we got, and I will, of course, again, most likely tomorrow, send out this recording. Also awesome. All right, I appreciate that. Thank you. Great discussions today. Thank you, right? Everybody. Have a great day. All right, you too, see you next week. If nothing else comes up, awesome. Happy Fourth guys. Yes, yes. Oh, that reminds me. Oh, yeah, we do not. We are out Friday as you should be. Yeah, Independence Day celebrate. I'll be at the baseball fields watching that's quite American. Jake, that's quite Yes, ma'am, hot dogs and watch baseball. Yes, I love it. We have a guy in our neighborhood who goes down to
+
+Unknown Speaker  1:16:18  
+a place called south of the border, which is on the border of Georgia and South Carolina, where the fireworks laws are different. Oh, of course, the whole neighborhood throws in. And he takes about 10 grand down there and gets, oh my gosh, of illegal fireworks, brings them back, and we just go crazy. So that is what we're gonna do. Wow, I live in America where we can buy as much fireworks as they want, over here, yes, we can
+
+Unknown Speaker  1:16:46  
+buy as much as we want. It's just gotta. They just have to be pathetic
+
+Unknown Speaker  1:16:51  
+boomers, we understand, we understand
+
+Unknown Speaker  1:16:55  
+how many people have fingers today
+
+Unknown Speaker  1:17:00  
+will not have fingers on Saturday. I will say this, if you stop the recording,
+
+Unknown Speaker  1:17:07  
+one of the man is like, I don't want this on tape. That's.
+
+Transcribed by https://otter.ai

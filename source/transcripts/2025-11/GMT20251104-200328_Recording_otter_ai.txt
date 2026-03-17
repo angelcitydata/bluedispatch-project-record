@@ -1,0 +1,1222 @@
+Unknown Speaker  0:03  
+Brian. So just to kind of preface the meeting, the team and I, we kind of sat down together, and Bonnie definitely has some concerns in regards to the timeline, I know you mentioned in the last call was, you know, towards the end of the year. She's not really happy with that, and she's not able to discern really, why that timeline keeps getting pushed back further and further.
+
+Unknown Speaker  0:26  
+So I want to bring that to your attention. First off, just to give you kind of a heads up of what we're looking at, alright? Secondly, she's not really, she's not really too sure what, what's really left as far as accounting for Apple and Google,
+
+Unknown Speaker  0:43  
+or why those pro, you know, those processes really haven't moved forward? She feels, probably for the past three or four weeks, not much has changed as far as the app is concerned.
+
+Unknown Speaker  0:55  
+So those are her biggest sticking points at this point. So right now, she's really pushing the idea of, you know, why we have such a long timeframe or timeline, as far as why we aren't launching when her initial thought process probably a few months back we were expected to launch November 1. So yeah,
+
+Unknown Speaker  1:18  
+so we Yeah, that's number one at the very beginning, I want to just remember again and again the the deadline was not based off the original deadline was not based off of how fast we thought we could do it. It was based off when you guys would like to have it for that,
+
+Unknown Speaker  1:41  
+for the contract for the school systems,
+
+Unknown Speaker  1:45  
+right? Like we said, it was, it was kind of a crazy deadline, and we were happy to try to push that deadline, but we didn't necessarily think we could make it, but we were going to try.
+
+Unknown Speaker  1:56  
+And as it turns out, no, we absolutely couldn't.
+
+Unknown Speaker  2:01  
+It's mostly come down to
+
+Unknown Speaker  2:05  
+a lot to resources, basically, people's time. I haven't been able to hit the type of numbers that I was hoping we would hit at the beginning, like I had originally told you we were hoping to push around. I believe it was 120 to 160
+
+Unknown Speaker  2:22  
+hours. 160 hours a week. And I don't even, I think we've made it over the 120 hours in two weeks, maybe twice, you know, in a billing period. So we're, we're not quite even hitting half of what I hoped
+
+Unknown Speaker  2:37  
+Gotcha. And I think that falls right in line with what she's thinking, as well as in regards to, I mean, obviously you guys have other clients as well, and she, she kind of feels like we've kind of fallen by the wayside. We're not really the priority as much as we once were, at least. I don't know the the situation regarding that, but I know that's what's really concerning to her. What it came down to was we weren't able to
+
+Unknown Speaker  3:02  
+quickly find and get somebody else find period, much less get them up to speed. We kind of found somebody that could help us. But pushing getting them up to speed to where they're really helpful,
+
+Unknown Speaker  3:16  
+it just hasn't really happened. So we're really looking at, as far as developing the app, it's Jake and Steve. Steve is doing the background. Jake's doing the foreground. We were hoping, when I said, you know, 120 that's three full time people, we would 120 to 160
+
+Unknown Speaker  3:36  
+meaning three full time developers and me, you know, managing, doing what I can do as far as development is concerned, being being the the lad, the fourth person you know, up to the 160 and it's really ended up just being Jake and Steve. We haven't been able to find and we've been looking. I actually interviewed someone about a little more than a week ago, trying to get another person. I'm still looking
+
+Unknown Speaker  4:03  
+it's, it just hasn't happened. We haven't been able to find another person that we could get to help us, you know, to help Jake in the end. So it's pretty much just been Jake and Steve.
+
+Unknown Speaker  4:17  
+So that is probably the biggest point, you know, sticking point as far as the speed is concerned. But again, you have to layer that over.
+
+Unknown Speaker  4:29  
+It was a, it was a fairly insane deadline originally, to try to hit.
+
+Unknown Speaker  4:37  
+So those, those are really the two biggest factors as for the time it's taking
+
+Unknown Speaker  4:43  
+as for not much has changed in the last few weeks. I know we made the big push right before the
+
+Unknown Speaker  4:50  
+conference, and I been just talking to Jake before I got on this meeting, because I wanted to make sure I had answers to Ashley.
+
+Unknown Speaker  5:00  
+These questions on the check in and check out type stuff, and he's planning to push another test flight. So changes have been made. They just haven't been pushed to test flight, where you guys and mess with them. So stuff is absolutely still happening. It it's just not like file maker, where we're developing in an area that you can connect to. So we have to, we have to push to test flight for you to be able to see the changes in the work we've been doing. It's it's there, I promise you, we just haven't pushed it. So Jake did tell me he would push by the end of the week, so you'd have, you'll have another version by the end of the week. I know they are currently, right now, working on push notifications as I was talking to you, Joe, I guess emailing with you in the morning about getting, oh, right count access and such. So they're working on that so that, you know, officers will get the little banners and stuff, you know, like, like, most apps can send you those type of notification type stuff and everything doesn't have to be email. It can be nice and pretty on their phone, like, like other modern apps. So that's currently what they're working on right now. I know Jake has put other work into just the detail screen and job detail screen and some of that type of stuff. So that type of work has been being done. You just can't access it again because it's not on test flight yet. So you'll be able to access that at the end of the week, when that is up.
+
+Unknown Speaker  6:26  
+But things are things are moving. I I agree. I wish they were moving a little faster. I wish at the very beginning of the process we could have found another person to help us move faster.
+
+Unknown Speaker  6:37  
+In fact, last week, Yes, last week, because Dave, our boss, or the president of ACD, is on vacation, and he dropped a bunch of stuff on Jake before he left that he wanted Jake to do for him. And last week, I got a hold of my boss and told my boss No. So you guys have definitely not been pushed down. I'm battling with I'm telling my boss know, for you guys, he can't have Jake, Jake's mine and and the boss agreed with me. Finally, I had argued with him a little bit, but he took that stuff off Jake's plate, and, you know, made sure you were his top priority again.
+
+Unknown Speaker  7:15  
+So so we are absolutely moving forward. We're moving forward as fast as we can with the resources we have. I wish we had more. We're going to continue to look for more to make sure that we can, we can speed up more,
+
+Unknown Speaker  7:31  
+you know, moving forward when needed. But for now, just haven't had the best of luck finding anybody. It's
+
+Unknown Speaker  7:39  
+it's fun, but
+
+Unknown Speaker  7:42  
+right now, the we're
+
+Unknown Speaker  7:45  
+running across, we can't, flat out, can't find people that have the skills that want a job,
+
+Unknown Speaker  7:52  
+and the ones that we can find, they want a full time job, and we're not looking for that right now. We're trying to find some subcontractors that can help us.
+
+Unknown Speaker  8:02  
+A couple I did find were like, actually they were, a friend of mine works for the government, and a bunch of her people got furloughed and laid off in the Doge, you know, layoffs and such and and a lot of them are on furlough now because the government shut down, and I was, I was hoping to pick, you know, some of them off, but absolutely every single one of them that I could meet with turned down a contracting gig.
+
+Unknown Speaker  8:34  
+So they're, they're holding out to get back into the government. And this is the type of stuff we've been running into. I just can't find people that want to
+
+Unknown Speaker  8:46  
+work. So we're, I mean, we are still pushing along fast. I think you'll see a decent amount of change in the next test, test flight push.
+
+Unknown Speaker  8:59  
+And we're, we're heading we're still heading long into I talked to Jake about again, primary development at the end of the month, ending primary development at the end of the month. And he's still telling me that that that's his goal, and that's still doable. So that's still our, our plan.
+
+Unknown Speaker  9:19  
+Okay, so as for the end of the year, actual launch that's giving Google and Apple 30 days. It may take three days. It may take two weeks. It's just out of our hands.
+
+Unknown Speaker  9:35  
+We'll absolutely
+
+Unknown Speaker  9:37  
+submit it to them as soon as we can. We'll absolutely if we get a response and get turned down, which we most likely will, you know, you're going to get turned down once or twice.
+
+Unknown Speaker  9:49  
+You know, we'll make the changes that they suggest as quick as we can and get it back submitted immediately. You know, we'll try to get that process to go as fast as we can get it to go. Yeah.
+
+Unknown Speaker  10:00  
+Sure, and it's understandable from that perspective. Like I said, you know, when it comes to Google and Apple, I know it is out of your guidance hands, but at least, to give this a better picture as to what we're looking at and to why the timelines are the way they are right now. So we just can't misconstrue them or anything like that. So that's good information for us to pass onward to Ronnie. So we definitely appreciate that feedback. Brian, yeah. I mean, I I try my best, and this is why we were when we were looking at the customer portal, why we were doing all of that planning. So we had a nice we can say, you know, we're here and we have this much left because we planned it all out. And we didn't do this with the native app, because we were trying to hit an ungodly, you know, deadline,
+
+Unknown Speaker  10:43  
+so that this is kind of the, this is kind of the negative taking that method
+
+Unknown Speaker  10:49  
+and, and, yeah, again, I would say that the top reasonings, if you know, if you need to give her a couple bullet points, it was, it was a fairly unrealistic deadline in the first place. Number one, number two, yes, we have not been able to get the resources on it that we had originally hoped for. Now, that being said from the
+
+Unknown Speaker  11:11  
+from the accounting side, if you take 120
+
+Unknown Speaker  11:14  
+and up to 160 hours, starting in the second week of June, which is when we started through, when we hope to be completed, you know, the end of October. And you see how many hours, and you know, by equivalent how much money that is, we're, we're actually really well under budget, a lot. So I understand the timing isn't quite what we had hoped for. You know, as far as calendar days, but as far as, as far as cost and hours put into it, I think we're, we're doing very well.
+
+Unknown Speaker  11:50  
+Okay, yeah. I mean, that'd be something for, you know, a different perspective, I guess you could say, or, you know, a different look. But like I said, at least it gives us some information on our end. Kind of gives us an update as what we're looking at and the reasoning behind it. So again, we definitely appreciate it. Yeah, absolutely. And that's, yeah, that's, that's what's going on. And I understand the concerns. Like I said, I've been fighting with my boss to make sure I can get as much Jake time as possible.
+
+Unknown Speaker  12:16  
+And I wish we'd have found another person earlier. You know, we're, we're still working on getting somebody, because
+
+Unknown Speaker  12:26  
+even
+
+Unknown Speaker  12:29  
+without even further development, if we're not even looking at further development, just looking at maintaining and supporting we want, we want backup. We want, you know, bootstraps for you guys.
+
+Unknown Speaker  12:43  
+Jake takes vacations, you know,
+
+Unknown Speaker  12:47  
+Steve is technically retired and takes a lot of vacations. And this, this can't be the long term support. So we're, we're still looking, and we're going to make sure we have somebody that can, you know,
+
+Unknown Speaker  12:59  
+that can support you or be a second person in case Jake isn't available.
+
+Unknown Speaker  13:04  
+As far as support reasonings are concerned,
+
+Unknown Speaker  13:08  
+for primary development, I've got Jake.
+
+Unknown Speaker  13:12  
+I can't take him 40 hours a week, but I can. I can get close
+
+Unknown Speaker  13:17  
+at least 30, I'm thinking, and I haven't been able to hold, even hold him for a whole 3035, hours a week every week since we started, which I I'd hoped, but realistically, I was only given 20 plus of Jake, and we were hoping for a second person
+
+Unknown Speaker  13:34  
+to be able to help out, and we just haven't been able to. And they don't hire anybody. Nobody wants a
+
+Unknown Speaker  13:41  
+job. They really, really don't, and it's a sad, sad situation, but
+
+Unknown Speaker  13:45  
+at least nobody with the skill set. I'm sure I could find somebody that wanted a job, period, but the skill set we need, the answer is, pretty much been no.
+
+Unknown Speaker  13:55  
+Nobody wants to do contract or just nobody wants to do it.
+
+Unknown Speaker  14:01  
+So yeah, that's, that is where we are with all of that. And again, you'll see, I was talking to Jake, and I'm like, you know, we, we probably should be pushing to test flight every week. He hasn't pushed since the conference, that's two weeks and a couple days. And by the end of this week, if he pushes, that's three weeks, and we need to push, try to push every week. So we'll definitely be doing more pushes as we get into more and more of you guys testing,
+
+Unknown Speaker  14:35  
+because we'll want, you know, we'll just want to do more pushes.
+
+Unknown Speaker  14:39  
+Yeah, I think that's a good idea.
+
+Unknown Speaker  14:41  
+So that's the type of things, hopefully, that will alleviate some of her thoughts and some of her worries.
+
+Unknown Speaker  14:50  
+Plus, you know, truthfully, as far as those variables we can't control, mainly Google and Apple. You know.
+
+Unknown Speaker  15:00  
+So our
+
+Unknown Speaker  15:02  
+our history and our experience is we're going to have better luck with Apple than Google.
+
+Unknown Speaker  15:09  
+And there is no rule that says we can't
+
+Unknown Speaker  15:13  
+push it out on iOS, and then, you know, a couple weeks later, once we finally get, you know, Google to approve everything, push it out on Android.
+
+Unknown Speaker  15:24  
+So if you know, if you if you want to a quicker win, that may be a way to look at it.
+
+Unknown Speaker  15:32  
+Yeah, I think that's probably the best approach at this point.
+
+Unknown Speaker  15:38  
+So of course, the current web app will will be there during this whole period. And I was, I've already been thinking and and then taking notes on such, on how we're going to plan the fade out of the app, of the current web app, not the native app, obviously, but the fade out of the web app as the native app becomes, you know, our standard for doing, for doing this stuff.
+
+Unknown Speaker  16:11  
+Does that sound good? Does that answer your questions? And,
+
+Unknown Speaker  16:15  
+yeah, I think it addresses it, you know, it'll be some information that we can pass on to her, and
+
+Unknown Speaker  16:20  
+we can, we can go from there. So like I said, we definitely appreciate that. Brian,
+
+Unknown Speaker  16:26  
+Alrighty, so we've got that now. We can move on to to just
+
+Unknown Speaker  16:35  
+general updates and our normal meeting stuff
+
+Unknown Speaker  16:40  
+I do. I did see Ashley in your agenda, the clock in, clock out, stuff on the native app in your agenda. So I was talking to Jake and Steve right before I came in here, and they did find
+
+Unknown Speaker  16:57  
+Ashley, you clocked into a job and never clocked out on the 30th?
+
+Unknown Speaker  17:04  
+Looks like 10:05am.
+
+Unknown Speaker  17:06  
+You clocked in and never clocked out. So that's why it's not letting you clock into any because you're clocked into one. Yeah, that's we are going to have a way in FileMaker for you to clock out an officer, you know, and then they be clocked out, as far as the app is concerned. But that process is not quite in place yet. Okay, yeah, when I was trying to clock out, that's when I was getting these, those errors. Okay, yeah, we'll look at, he sent a screenshot of because there's also one for Joe. Joe is also clocked in one. And yeah, it was, I'm always clocked in, Brian, no, that was that same day, Joe, where you and I were trying to figure out what was possibly going on with Amanda's
+
+Unknown Speaker  17:49  
+right? And then we kept getting that error message
+
+Unknown Speaker  17:54  
+that we were getting when we tried to clock out. And that's so like we were trying to clock out. It just wasn't letting us.
+
+Unknown Speaker  18:03  
+Yeah, that looks like it would be last Thursday. And then I also tried today,
+
+Unknown Speaker  18:10  
+and I got that same I got,
+
+Unknown Speaker  18:13  
+let's see today,
+
+Unknown Speaker  18:16  
+saying that I was already clocked in, but I had a green pin like it looked like it clocked me in, but you couldn't, you couldn't see anything on, like the job location detail area, no clock in or clock out on either of ours on dev, yeah, I'm sure that the clock in time is going into the job detail, and that's something I have to get done. I am looking at. He sent me a map of locations for Joe's job, and it looks like he clocked in. And is that something station? I can't tell where it is, but it looks like he walked around, maybe drove, went out to Olive Avenue and came back
+
+Unknown Speaker  19:00  
+and but there, there was no clock out. It looks like you walked around a bunch.
+
+Unknown Speaker  19:07  
+It just says station. I don't know if that's a business. Gas Station would be my gas he was probably out getting his teeth. I don't know, right? Yeah, right now, select glass, yeah, that sounds right, yeah. It just wasn't, it just wasn't. It just wasn't letting us clock out. That's why we didn't clock out
+
+Unknown Speaker  19:25  
+so and the other, the other thing I noticed, though, was even after I tried to clock in, it didn't like switch from, you know, after you clock in, then it should say clock out, but it still just says clock in. But did it really clock in? Because it shouldn't let you if you were clocked into one already, and it still thinks that you are, that's that's why the green pin, I thought was strange, because I can see where I clocked in.
+
+Unknown Speaker  19:52  
+There's like a green pin on in the app, yep. But no, I doesn't look like I'm clocked it clocked.
+
+Unknown Speaker  20:00  
+Did all right? Well, this will be some great stuff for us to test. I did ask him to
+
+Unknown Speaker  20:09  
+let me see if he responded and kind of say yay or nay.
+
+Unknown Speaker  20:16  
+Said, we have the option to reset the job completely so they can re clock into the same job, but one way or the other, I'm I'm going to get them to clock you out or delete your clock in for that job, something clear it out so that you can start clocking in and out again.
+
+Unknown Speaker  20:35  
+Should I wait until the new update? Or, you know, maybe like that. That might be the,
+
+Unknown Speaker  20:42  
+there will be more, you know, guardrails and such in place with the new with the new push to test light.
+
+Unknown Speaker  20:53  
+So it's, it's, it's up to you. But I, we've, we've told you you could test and play with this one. So I'm not going to tell you, No, you know, by all means, we can clear it out and you continue to try to test on it. Yeah, that's fine, okay? But the bigger thing as as far as I'm concerned, is, is
+
+Unknown Speaker  21:14  
+we have to have, we have to give you guys a way to
+
+Unknown Speaker  21:20  
+to clock an officer out from file maker, in case they they close the app, or, you know, their phone dies or falls into a river or whatever, and they can't clock out. You guys have to be able to clock them out from file maker. That's an administration console you should be able to use to do that.
+
+Unknown Speaker  21:39  
+So that is definitely on our list, and it's something that will be getting done here very soon.
+
+Unknown Speaker  21:46  
+Also, I know Jake showed you some a while ago in one of the demos that there is
+
+Unknown Speaker  21:53  
+a a website that they've created basically for looking up and administering a lot of this.
+
+Unknown Speaker  22:02  
+And you guys, of course, will have access to that at some point. And he was showing me screenshots from that, Dave, so from there, you can see what officers are logged in and which ones just have the app open. You'll be able to see who has accounts and such. As far as
+
+Unknown Speaker  22:22  
+you know, as far as the app is concerned, you'll be able to cut off their access. You can do that file maker, but you can also do it from there in case something gets out of sync. And you can also see, let me hit share real quick. It's just a little screenshot, but there we go. So this is the screenshot he sent me from that Administration website of the the job that Joe is clocked into. So you'll be able to see all jobs that are actively being worked and and you know, here's the job number, here's the timestamp of when Joe clocked in, the address and and you can see them walking around kind of in real time. It'll be pretty close to real time. I mean, of course, take a couple seconds to get there, but
+
+Unknown Speaker  23:14  
+you'll be able to see what's going on. This is what I was trying to figure out. It just says station here. I don't know what that is, but looks like Joe did a decent amount of walking around here. Walking around here. Yeah, apparently
+
+Unknown Speaker  23:25  
+I'm going around casing like a caged lion just thinking, that's it. Yeah, I'm just sending this out.
+
+Unknown Speaker  23:34  
+That's about, right? So this is the type of of stuff you'll be able to also see there. And this is how, this is how he was showing me
+
+Unknown Speaker  23:43  
+again. This is the active jobs you were just the other screenshot was this, like the detail, and this is more the list where you can search by officers name, by their phone number. You know what the what status the job is in. And, you know, and kind of see this. So this is still in progress. Yours, Ashley and Joe's, these are the two jobs I'm talking about that are technically in process. They were never finished.
+
+Unknown Speaker  24:10  
+So we can, we can look at that, you know, at what was happening. But in general, I think
+
+Unknown Speaker  24:18  
+it's going to come down to again. You need a way in FileMaker to clock out, quote, unquote, clock out, or just stop these jobs in case the officer does something that, you know, close the app, do away their phone, whatever
+
+Unknown Speaker  24:37  
+they can call you or, you know, you can just notice that they never clocked out and do it for them something. So you guys definitely need control via file maker,
+
+Unknown Speaker  24:49  
+but this is just another tool that you'll be able to use to see what's exactly is going on.
+
+Unknown Speaker  24:55  
+One thing. So I was talking to Amanda right before this call. That's why I was a tiny.
+
+Unknown Speaker  25:00  
+Bit late, and she was wondering, and I probably should have asked before the call, because it would have been probably in this but she was curious if she was saying that,
+
+Unknown Speaker  25:12  
+or you guys were saying that she wasn't logged in on Saturday, like there was no record of her, like going in and clocking in and seeing this, she called some of the scribbles, but it's basically the, you know, the location.
+
+Unknown Speaker  25:26  
+And she was wondering if, if you guys had record of us when we were doing it on Friday, during our calls, right before the IACP. So that would have been what, like the 17.
+
+Unknown Speaker  25:36  
+Yes, we did. So that, so that had record. It was just nothing on Saturday or Sunday,
+
+Unknown Speaker  25:44  
+right? Yeah, that's weird. That's what she was wondering. And that's what, because we couldn't see any of her of the scribbles. That's why me and Joe, you know, went into and we're trying to test the app to see if we could see it.
+
+Unknown Speaker  26:02  
+But we obviously couldn't yeah last week. So that's that was one of the things she wanted me to ask so you so yes to the Fridays, notice the weekend strange, correct. She was also saying that she had to go back and forth between an app so it was in like the background that that wouldn't have affected it. Correct. Correct, as long as she doesn't swipe up. So you know, you show all your apps and then swipe one of the apps up to close it. Brand is called force closing, or force quitting. That week, we'll mess things up, and there's nothing we can really do about that, but, but switching to another app and having it in the background, nope. That shouldn't affect anything. It should still be working just fine, and collecting all its all of its data, sending it to the server, and all of that
+
+Unknown Speaker  26:50  
+we, we are still working on. It's just, it's, it's really hard to test, so it's hard to make it a development priority, but we're trying to work on some more guardrails for
+
+Unknown Speaker  27:04  
+for losing connection at inopportune times. You know, cell phone connection, so even if the app is open in the foreground or the background, but you lose and gain,
+
+Unknown Speaker  27:18  
+you know, you lose and gain internet connection through your cell service. Currently, it does it okay. It keeps collecting the location data the best it can, because apparently GPS works better than your cell phone signal. So it'll still continue to take that and then the next time it gets a cell signal, it sends it all at once.
+
+Unknown Speaker  27:41  
+But if you close the app before it gets that chance to get a sell signal and send everything it's been collecting, then everything it was collecting disappears.
+
+Unknown Speaker  27:52  
+Oh, yeah, interesting. Interesting, yeah, wow. So we're trying our best to put some guard rails, but with my research, it seems,
+
+Unknown Speaker  28:03  
+especially with, you know,
+
+Unknown Speaker  28:07  
+Bonnie's point that she would like this to be, you know, like ordering an Uber for off duty officers. Well, if you look at Uber and your Uber driver when they're driving, they can put the app in the background, but they can't close it. And we know that Uber has a lot of the same problems that we're discussing with tracking their drivers if they drive somewhere outside of, you know, decent sell signals, and they close the app at inopportune times. So they have the same type of problems. And that, of course, is a you know, huge, couple billion dollar company. So I don't know if we're going to come up with 100% solutions to these. If a company like them hasn't done it, I don't know how we will,
+
+Unknown Speaker  28:54  
+but it's pretty good. Like said, so far we have tried,
+
+Unknown Speaker  28:59  
+you know, clocking into a job, driving around some and then just turning off the sell signal. Or Jake's house is being built in a place that doesn't get a very good signal, so when he goes up there, it tends to drop
+
+Unknown Speaker  29:13  
+and what, from what we've seen, as long as you don't
+
+Unknown Speaker  29:17  
+try to clock out while you have no cell signal
+
+Unknown Speaker  29:21  
+or force close the app, it will, next time you get a signal, it will,
+
+Unknown Speaker  29:28  
+it will push out that data. It was tracking your location even when it didn't have a signal. So if you force close it and then open it back up, will it pick up where you left off? No. If you force close it, it doesn't it's done. Yeah, I get you Okay, it's done. And that's when you guys are going to have to clock them out from file maker.
+
+Unknown Speaker  29:54  
+We,
+
+Unknown Speaker  29:56  
+I mean, we could do something like,
+
+Unknown Speaker  29:59  
+uh.
+
+Unknown Speaker  30:00  
+But you know, if,
+
+Unknown Speaker  30:03  
+if we don't get a signal, if we don't get anything pushed to to our database in, you know, X amount of minutes or hours or something, we can automatically clock them out and just say, hey, you know you haven't that. You haven't talked to the database in so long, we're going to assume you're done and automatically clock them out. I don't know. That could have some bad repercussions if they really are doing an eight hour job in some area that just doesn't have a cell phone signal.
+
+Unknown Speaker  30:34  
+Yeah, well, that eight hours definitely,
+
+Unknown Speaker  30:38  
+I just don't know. And if you like, we can come up with, we can do something like that. If we haven't gotten, you know, a cell phones, if we haven't gotten a signal, we haven't gotten any information about a job that's clocked in for X amount of time, we can clock it out
+
+Unknown Speaker  30:54  
+and notify you, if you want, you know, notify OES.
+
+Unknown Speaker  30:59  
+But that's, that's something where we just have to find out the best way to take care of it. It's
+
+Unknown Speaker  31:06  
+interesting though, that you say that, because you know how I've been clocked in since last Thursday. So I kept getting these, like periodically, these notifications saying that blue dispatch was running in the background of my phone, which I thought was weird, because I had force closed it, you know, many times, and that I gave, you know, it was like only while using the site or allow always kind of thing for the location.
+
+Unknown Speaker  31:32  
+So it's interesting that it didn't, you know, by me force closing it, that it was still tracking my location in the background, somehow, somewhere, somehow.
+
+Unknown Speaker  31:43  
+I thought that was still technically clocked in. So it's still trying to collect it, because basically it's, it's acting like you've lost connection.
+
+Unknown Speaker  31:54  
+It makes sense. Now I was, I was wondering why it was still doing that. I didn't know I was still clocked in. But the thing is, it? So we have it set at certain intervals to talk to. I said, right now it was, it was like every second, but that's just for testing purposes. We were thinking more in the 15 to 25 second range in in reality, when it goes live, so it collects all that information and keeps it on your phone when you're clocked in, and that's what you're seeing, because it's still collecting it on your phone. It's just not it's just not sending it to the database because it's closed, and when you open it back up, it actually has a different app session ID, so the database doesn't know that it's still the same app on the same phone. It's also strange that it wouldn't still be in my active job, since I haven't clocked out. Do
+
+Unknown Speaker  32:44  
+you think that's weird? Maybe that that might be,
+
+Unknown Speaker  32:49  
+that might be,
+
+Unknown Speaker  32:52  
+might be some interesting that we have to look into. And it may just be that we weren't talking to FileMaker as much. I don't know if we talk to FileMaker
+
+Unknown Speaker  33:05  
+as often. I know we don't talk to FileMaker as often as we talk to the API on Linux.
+
+Unknown Speaker  33:13  
+So it just may be that we were looking to when a job closes, basically when it's clocked out, that's when we send all the information to file maker,
+
+Unknown Speaker  33:22  
+which means file maker may not have known it was active. They should have known it was actively clocked in, but it probably, but it's probably not setting that flag, because the clock in flag in file maker isn't being set properly. That's that's a known thing that I have to work on. Okay, okay, that makes sense. We can go here.
+
+Unknown Speaker  33:44  
+Let's go looking
+
+Unknown Speaker  33:47  
+for
+
+Unknown Speaker  33:49  
+job assign
+
+Unknown Speaker  33:56  
+the ID on Ashley's it was 775, 755732,
+
+Unknown Speaker  34:10  
+so let's see what it says here.
+
+Unknown Speaker  34:14  
+The active flag is zero,
+
+Unknown Speaker  34:17  
+so it doesn't know it's active, probably because it doesn't have a
+
+Unknown Speaker  34:23  
+clock in time.
+
+Unknown Speaker  34:26  
+Where is clock in time on this psychotic screen?
+
+Unknown Speaker  34:32  
+Nothing. So that's not there,
+
+Unknown Speaker  34:36  
+and we don't have a token. So that's why you wouldn't see any squiggly lines. I know the token isn't set until
+
+Unknown Speaker  34:43  
+so we don't tell FileMaker This s3 token is what we use to connect to the s3 storage on AWS to get the all
+
+Unknown Speaker  34:56  
+the latitude and longitudes of where you were while you were clocked in. I.
+
+Unknown Speaker  35:00  
+And that is not sent to FileMaker until you clock out.
+
+Unknown Speaker  35:04  
+So that's why you definitely wouldn't see anything on the mapping here. It definitely doesn't show anything on the mapping until they clock out in FileMaker.
+
+Unknown Speaker  35:15  
+So
+
+Unknown Speaker  35:17  
+again, I have to just say it's it to me, it comes back to, there's certain scenarios where it's just not going to work perfectly. And that's the way it is.
+
+Unknown Speaker  35:27  
+You know, like I said, they're out of cell phone coverage for too long. They force quit it at the wrong time. Their phone gets destroyed, you know, whatever. There's going to be those type of scenarios. So it comes down to, you guys need a way in FileMaker to clock out a job.
+
+Unknown Speaker  35:44  
+And when you clock out that job, it takes them out of the app, you know of the job in the app, and generates this s3 token for us so that we can see what it did track, at least even if it didn't track everything.
+
+Unknown Speaker  36:02  
+Does that? Does that make some sense?
+
+Unknown Speaker  36:06  
+Yes,
+
+Unknown Speaker  36:08  
+okay, so we just need to, I just didn't get that cleared so I can retest. And interesting, that's interesting. Yeah, there's, there's always going to be scenarios and stuff, especially when you deal with mobile, you're always going to end up with scenarios where stuff doesn't work perfectly, because
+
+Unknown Speaker  36:25  
+you've got the two things that really make programming impossible. You've got a human user interacting with it, and you have a mobile device that's dependent on, you know, on cellular connection to talk to the database. Those are two things that are really enemies of programmers, and we really have no control over and you've got both of them. So there's going to be scenarios that don't work out perfectly.
+
+Unknown Speaker  36:52  
+So it comes down to, we need to make sure you have a way to administer, you know, as an admin, as a scheduler and such, to to administrate those, those situations?
+
+Unknown Speaker  37:05  
+Well, it's good information on what to test and look out for, also in the future for me. So that's good. Yes, ma'am. So
+
+Unknown Speaker  37:17  
+as far as updates are concerned, we just had that conversation.
+
+Unknown Speaker  37:24  
+We are, as I said, we're working on push notifications. Is the thing that they're working on. This minute, I
+
+Unknown Speaker  37:30  
+was going to ask about that to the push notification. So I know, like right now in our correspondence area, we can see, like, what emails are going out. Is there going to be a place like that for the notifications that they get, or is that? Is that the same thing?
+
+Unknown Speaker  37:48  
+I mean,
+
+Unknown Speaker  37:49  
+we possibly could, but I don't know. I don't know if we want them the push notifications are going to be different. There's so they're still going to get email notifications like they book a job, we still want to email them the job details. That's not something you want to put in a app notification, you know,
+
+Unknown Speaker  38:08  
+then. So the things
+
+Unknown Speaker  38:10  
+that we're going to want to do the push notifications for are probably going to be, you know, maybe a reminder an hour before the job starts,
+
+Unknown Speaker  38:21  
+a notification of, hey, you know, the job started 15 minutes ago and you haven't clocked in.
+
+Unknown Speaker  38:31  
+And maybe the job was supposed to end more than an hour ago and you haven't clocked out.
+
+Unknown Speaker  38:38  
+So those notifications are probably going to be the push notifications? Are we still hopefully going to be able to add the if new ones pop up in the dash, in their dashboard,
+
+Unknown Speaker  38:52  
+pop up in their dashboard. How do you like you know, if I was going to be searching for jobs as an officer? Is that something? I know it's something we talked about a long time ago. Yeah, I don't know if that's high on our priority, but that's something we can do. Is what we're really getting together right now is just like for the SMS campaign, we have to get, we have to get accounts and approvals from Apple and Google to be able to do push notifications. So once we get that approval, what we do notifications for is pretty easy. We can add on to
+
+Unknown Speaker  39:30  
+it's it's getting the structure set up properly and getting them to approve it so that we can, you know, send them out. Gotcha,
+
+Unknown Speaker  39:42  
+okay,
+
+Unknown Speaker  39:43  
+well,
+
+Unknown Speaker  39:45  
+those are our thoughts on push notifications. We can, I don't think it's that big of a deal to add more, you know, notification reasonings or notifications that we're going to be sending out that we can do,
+
+Unknown Speaker  39:58  
+like said right now, it's, it's.
+
+Unknown Speaker  40:00  
+Really the real thing is getting it approved as a campaign
+
+Unknown Speaker  40:04  
+with both Google and Apple. So we're already starting on that,
+
+Unknown Speaker  40:11  
+and hopefully that'll give us a leg up when we go to get the approved. Is we've already gone through the notification approval process.
+
+Unknown Speaker  40:20  
+So but, but we'll see. Hopefully it'll give us a leg up and help us
+
+Unknown Speaker  40:27  
+do I have other simple I've I made a couple trellos today
+
+Unknown Speaker  40:35  
+for
+
+Unknown Speaker  40:37  
+Jake wrote me something right after we started our meeting. Also Brian, the app currently shows the same route on all jobs until the app gets reset. But that will change. I don't know what he means. I'll ask what that means.
+
+Unknown Speaker  40:55  
+So
+
+Unknown Speaker  40:59  
+we also have, like, said some of the things I put in Trello for you. You've, you've already started to respond to those.
+
+Unknown Speaker  41:07  
+Yeah, the only agenda was this. So, oh, yeah, notice we have a second button now. So for, yeah, that's since this morning.
+
+Unknown Speaker  41:16  
+No, I think we did this. I think we did this last week. Okay, that's what my So, mine right now. I wasn't able to even add a job today. It was like, in, read
+
+Unknown Speaker  41:28  
+here, yep. It was like, read, read option only, yeah. So what, what we did is, so this one right here doesn't have a Latin long yet, so it hasn't been selected on the map. So this one, it's not in. Should it read only? No, that's how mine was, too. And it doesn't let you type or do anything. So I wasn't able to put a lot long in there, and it's not supposed to, but it's supposed to be able to. I tested this last week. I'll talk to him. Thank you. Last week it worked. It was just when I tried it yesterday and today, yeah, maybe supposed to be like this, like the first Yes,
+
+Unknown Speaker  42:04  
+shows Read Only once you have a once you've selected, and that was just, I turned it into two buttons, and I wanted to talk to you today about if, if this was the way we wanted to do it or not, but,
+
+Unknown Speaker  42:16  
+but this isn't. This isn't working right here, because, since this one has no Latin long. It should not be read only. I should be getting
+
+Unknown Speaker  42:25  
+I should be able to select here.
+
+Unknown Speaker  42:29  
+And then once it does, once you have selected and hit Save, then that button is supposed to only show up in read only and show you where the platin long is. And then you have to use this other button in order to edit it. Edit it. That makes sense. Yeah. I was, yeah. That was going back and forth on whether or not I wanted a, you know, just a dialog box that says, Are you sure you want to change this? Or, you know, you're going to be changing this, or just make two buttons. And I went for the two buttons because I found in my experience, man, do people just hit okay or continue when they see a dialog box, they don't, especially when you're going fast, yeah, when you're going fast, you're just hitting okay. You're not thinking about it at all.
+
+Unknown Speaker  43:11  
+So I thought a totally different button would probably be better. You have to, you have to actively think, Oh no, I need to change this from where it is to write the other button. So that's the theory behind that.
+
+Unknown Speaker  43:25  
+But you can see before,
+
+Unknown Speaker  43:29  
+if you already had a lat long selected, it wasn't showing it when you reopen the map later, now it is and
+
+Unknown Speaker  43:37  
+then I can also say,
+
+Unknown Speaker  43:40  
+find one that
+
+Unknown Speaker  43:44  
+was used for testing,
+
+Unknown Speaker  43:46  
+maybe one of these last couple here.
+
+Unknown Speaker  43:51  
+This was
+
+Unknown Speaker  43:54  
+Ashley in Denver.
+
+Unknown Speaker  43:59  
+Maybe that was one of the ones that I'm thinking about testing. Okay, yep, let's try this one so something that has that we can go to
+
+Unknown Speaker  44:11  
+job.
+
+Unknown Speaker  44:14  
+What is your job? Your job is
+
+Unknown Speaker  44:26  
+yeah, this job is job, assign,
+
+Unknown Speaker  44:30  
+recur, Job, Job. Job ID
+
+Unknown Speaker  44:34  
+is seven, eight.
+
+Unknown Speaker  44:37  
+I still can't copy Yes, I can, just have to remember
+
+Unknown Speaker  44:42  
+that is a Mac problem that we're trying to get them to deal with.
+
+Unknown Speaker  44:49  
+Yeah, for some reason, the the newest operating system with file make, newest version of file maker, and the newest version of Mac, you can't copy and paste from certain screens. You.
+
+Unknown Speaker  45:00  
+Using you have to use your mouse. Oh, yeah, it's really cool. Yeah, I agree.
+
+Unknown Speaker  45:10  
+It's my response, yeah.
+
+Unknown Speaker  45:14  
+Let's see what date was this one on this was on the 30th,
+
+Unknown Speaker  45:20  
+3030, 30. Where are you 30th? Or this way,
+
+Unknown Speaker  45:27  
+which one it is? Just gonna have to go to both of them and see
+
+Unknown Speaker  45:36  
+this one. Have any
+
+Unknown Speaker  45:39  
+so that's where it was. That's the job location in Denver. But,
+
+Unknown Speaker  45:44  
+yeah, I was in Arizona. Sorry, no, that's perfect.
+
+Unknown Speaker  45:50  
+So the job locations there, but here's,
+
+Unknown Speaker  45:55  
+yeah, here was the clock in and clock out. And this was another thing I wanted your opinion on. Looks like someone clocked in and clocked out really fast on this one, but
+
+Unknown Speaker  46:07  
+I had him cock the pins. Oh yeah, map, because if it's in the same place, you can't see both of them. That makes sense. And considering they don't always move. Like, sometimes they are just in their car and they don't move at all. So that kind of, I mean,
+
+Unknown Speaker  46:27  
+I don't hate it. I like it, because otherwise I had to zoom in, like, really close. Yeah, before. But Joe, do you said,
+
+Unknown Speaker  46:37  
+yeah, do you have different thoughts on that? Joe, are you okay with the cocking of the things?
+
+Unknown Speaker  46:43  
+Yeah. I think that makes some more sense, because when they overlay with each other, it'd be tough to see, yeah, yeah. That's what makes it, yeah. It makes more it makes more sense the way you have it. And I was like, I was telling Jeremy, I'm like, you know very well an officer may, yes, sit in his car for six, seven hours, or be in a guard booth or something, you know, directing traffic in one intersection. He's not going to move too far.
+
+Unknown Speaker  47:06  
+That's true. Yeah, absolutely. So we needed some way to kind of see that and notice, you know, hey, this is what we're really talking about.
+
+Unknown Speaker  47:16  
+So there was that one. But is that?
+
+Unknown Speaker  47:21  
+Are you this one?
+
+Unknown Speaker  47:23  
+Yes, you are. Let's try
+
+Unknown Speaker  47:30  
+the other one.
+
+Unknown Speaker  47:32  
+We did that one.
+
+Unknown Speaker  47:35  
+What number are you I want to show? Because we did have,
+
+Unknown Speaker  47:39  
+we did have one where I can show on on this screen here, you know the locations, but the big point is here on the job assignment detail now, you can now see the line, you know, you can see the path and the movement
+
+Unknown Speaker  47:54  
+and making sure you were okay with the with the 45 angle cocked clock in and clock out deals here, because otherwise, yeah, you're going to run into those situations where you just can't see what's going on because they're right on top of each other. Not much I can do about that. So yeah, that's the one we're looking at. Let's look at the one right before it. Are you the same job?
+
+Unknown Speaker  48:18  
+263,
+
+Unknown Speaker  48:27  
+sea wall, and you're also on the 30th. Yeah, so I clicked the first one last time. Let's put the second one see if we get a different map.
+
+Unknown Speaker  48:37  
+Again, the job was in Denver, so like we go stairs, they won't have to do this much, you know? No, the odds are slim. So, you know, they should be clocking in and out near where the actual job is. And
+
+Unknown Speaker  48:53  
+this one obviously doesn't have them cocked.
+
+Unknown Speaker  48:59  
+You're close. Yeah, up north.
+
+Unknown Speaker  49:04  
+Yeah, this one moved a little bit more. This looks like maybe one of you guys. Oh, station three. That's the name of it.
+
+Unknown Speaker  49:12  
+Oh, I bet you. That's it, ambulance. Joe's not going back and forth.
+
+Unknown Speaker  49:18  
+Joe's not just walking around in the parking lot back and forth to this gas station, getting coffee over and over.
+
+Unknown Speaker  49:27  
+Looks like somebody maybe, I don't know if the parking lot is over to the side of your building or something, and then
+
+Unknown Speaker  49:33  
+like it looks like they turned it on right here and
+
+Unknown Speaker  49:37  
+went over towards the building. But, you know, here's, I don't know what's across that street, over next to the interstate. Oh, that's probably Joe's car. Yeah, it's probably my someone's car. Maybe you turned it on on the exit or something and went in, I don't know. Yeah, it's possible. Or I don't know if there's a big parking lot out here, yeah, I don't. I've never, never been to your to your office, so I.
+
+Unknown Speaker  50:00  
+Know what it looks like. But nevertheless, here's a clock in someone walked. I'm assuming this looks like a walk, not a drive,
+
+Unknown Speaker  50:08  
+you know, from over here to here, and clocked out. So this map is is up and running for you in dev. So you can start looking at
+
+Unknown Speaker  50:21  
+that. Is there.
+
+Unknown Speaker  50:24  
+And I will talk to him about I will talk to
+
+Unknown Speaker  50:29  
+Jeremy about this.
+
+Unknown Speaker  50:34  
+This button always showing, read only that's not okay.
+
+Unknown Speaker  50:38  
+It was working last week. So I don't know it was, it definitely was last week, because I created some jobs last week, but that today, for sure. When I was there, I was like, ah, read only, I can't do it.
+
+Unknown Speaker  50:51  
+That's weird. Yep, I will talk to him and see why the heck that's not that's
+
+Unknown Speaker  50:56  
+not showing because it should just be looking at this Latin long and saying, if both of these are empty. You can do it. If not, it's read only. I don't know why it's doing read only right now. I
+
+Unknown Speaker  51:07  
+don't think we've really made any changes so, you know, since last week. So I don't know why that's not but I will talk to him, and I will get that back to working.
+
+Unknown Speaker  51:18  
+Another thing I noticed on dev, and I don't know if it was because of the it thinking I was still on a job or clocked in, but I didn't get any notifications for my jobs, like my future ones, my you need to clock out. Like, I didn't get any notifications through Deb, that normal, um,
+
+Unknown Speaker  51:42  
+maybe I, I was getting them before, but I haven't got one in a while either. But I don't know if that's because I was getting a crapload of them. Because Jake was using my phone number for all of his testing. Is why I got a boatload of them. I
+
+Unknown Speaker  51:58  
+don't know if he's still using me for his testing.
+
+Unknown Speaker  52:02  
+Yeah, because I was thinking, because I was like, gonna test, you know, the UTC and things, but I was like, I didn't, I haven't actually gotten one from dev, at least not I did look in prod yesterday morning. That was the first thing I did when I logged in yesterday morning, was go look at prod and make sure that it caught the time change for you guys, or lack of I think it changed for you guys, and it did. It did. So is it still minus seven right now? Yep, okay, good. So it did work.
+
+Unknown Speaker  52:35  
+It grabbed the new time zone Sunday,
+
+Unknown Speaker  52:39  
+and now you guys are in Mountain,
+
+Unknown Speaker  52:43  
+so it did figure that out.
+
+Unknown Speaker  52:47  
+So yeah, that, like, said, that was one of the first things I tried in the morning.
+
+Unknown Speaker  52:52  
+So that is working, I can look into notifications.
+
+Unknown Speaker  52:57  
+What if anything's happening since
+
+Unknown Speaker  53:01  
+Thursday? I don't know if, if it was cut off because it was a morning of Jesus out of me. I don't remember doing that. I might have because I was getting, I was getting about a dozen a day as Jake was testing so
+
+Unknown Speaker  53:16  
+notifications and Dev let me come back.
+
+Unknown Speaker  53:31  
+Right? I
+
+Unknown Speaker  53:33  
+guess the last update I would have
+
+Unknown Speaker  53:39  
+is the FileMaker Pro two, the new AWS server. I worked with jasmine and Michael and such the other day, or, I believe it was Wednesday last week, and we were unable to get a correct SSL put in there and such. And I need to work with Steve, who has access to your GoDaddy to get a new cert
+
+Unknown Speaker  54:05  
+exported or generated, and I would like to work with him on that right after this meeting and see if I can get that in there. And then I meet with ginger SEC again tomorrow. I think I'm on the list for them tomorrow,
+
+Unknown Speaker  54:22  
+and hopefully that SSL is the only thing stopping us.
+
+Unknown Speaker  54:27  
+I don't believe it will be, but
+
+Unknown Speaker  54:31  
+we will see if any of their other changes, I know Jasmine said she was rolling back a good chunk of the changes that she had made
+
+Unknown Speaker  54:40  
+based off of their security software's recommendations to see if we can get a connection working, and then start putting them back on, one at a time.
+
+Unknown Speaker  54:50  
+You know, see if we break it again,
+
+Unknown Speaker  54:53  
+but at least we'll know exactly what broke it this time.
+
+Unknown Speaker  54:58  
+As far as I see with my.
+
+Unknown Speaker  55:00  
+Limited, you know, networking security knowledge there is server stuff is that the SSL was deleted, like we spoke last week. SSL cert was deleted off of ISS IIS, and they were fairly certain it was them.
+
+Unknown Speaker  55:18  
+So okay,
+
+Unknown Speaker  55:21  
+and we're trying to get that reinstalled now.
+
+Unknown Speaker  55:25  
+Was it an expired cert? Is that the Nope, they were no, no.
+
+Unknown Speaker  55:31  
+The CERT doesn't expire until next year,
+
+Unknown Speaker  55:35  
+July. I think it was July or August of next year,
+
+Unknown Speaker  55:39  
+because
+
+Unknown Speaker  55:40  
+it was a one year cert, and then all you got to do is, do is renew it. So we shouldn't have to go through all this process again, as long as as long as ginger SEC doesn't remove it again
+
+Unknown Speaker  55:50  
+very forcefully,
+
+Unknown Speaker  55:53  
+as they did this time.
+
+Unknown Speaker  55:58  
+You can just renew it when it gets close. I think you can renew it within 30 days of exploration
+
+Unknown Speaker  56:07  
+and a search. Always, that's good to know, yeah, for the future,
+
+Unknown Speaker  56:11  
+yeah, yeah. Don't, don't rip out an SSL certification. Yeah,
+
+Unknown Speaker  56:18  
+yeah, that's, that's something to know. Yeah, don't do
+
+Unknown Speaker  56:24  
+that. That breaks a lot of stuff.
+
+Unknown Speaker  56:27  
+We have, however, gotten a
+
+Unknown Speaker  56:31  
+valid test connection working between the native app and the current FileMaker Pro, one server up on AWS, so it's, it's pointed at Dev because we're still developing, but I, I made him point it at your production server just to test, and we were able to get that connection to work. So even if this second one,
+
+Unknown Speaker  56:57  
+if we can never find, you know, a balance where ginger SEC is happy and everything still works. Your current prod server can run it. It's there. It works for that. It just doesn't have all the security stuff that ginger SEC wants.
+
+Unknown Speaker  57:18  
+Does that float? Joe,
+
+Unknown Speaker  57:21  
+yeah, no, that makes sense. Lisa, make there. You know, there's progress being made on it. That's, that's the key, I think. So that's always a good sign. Yeah, yeah. We're definitely, I hope, making progress. It's
+
+Unknown Speaker  57:34  
+so we're trying to get that one up and running. So as far as, as far as us, as you know, app and data developers are concerned. The current production server you have is fine,
+
+Unknown Speaker  57:48  
+and it just it doesn't meet the security requirements that gender SEC has. So
+
+Unknown Speaker  57:56  
+if, again, if it's if it's just something that we can't find that homeostasis, or we can't find it in time, we can still go forward with going live with the native app pointed at your current prod server that will technically work. It just won't be a security umbrella that gender SEC would like to have.
+
+Unknown Speaker  58:18  
+Okay, at least we know that's a worst case scenario type situation, so at least we have a backup plan. Should, should it come to it? Okay? Yes.
+
+Unknown Speaker  58:27  
+And I think in the end, we will be able to find that homeostasis. I just don't know if it's going to be something that's going to happen quick.
+
+Unknown Speaker  58:36  
+We may still have some arguments to go. As far as you know, it's not much of an argument, from my point of view, but it's like, you know, they want this, this configuration here or there because of security concerns. And I'm like, Well, that's all fine and dandy, but if you do that, file maker doesn't work. I can't, you know, it's not a it's not an argument of what's secure, not secure. It's, it doesn't work when you do that, you know, sure, yeah, we definitely need to find a balance between the two, because we want to make sure both sides are happy, right? So, yep, that's what we're working towards on that second server. But again, even if we haven't reached that in time, we can, you know, technically, again, go live with what we have as far as the server side is concerned, okay, we've tested that it does work.
+
+Unknown Speaker  59:33  
+Okie dokie,
+
+Unknown Speaker  59:35  
+all right. Now, between those conversations and updates, we've already run a nice hour. Ashley, do you want to run over your list, or is there something else in the agenda you want to make sure we still get to see there's one thing that I saw was weird. I.
+
+Unknown Speaker  1:00:00  
+1180
+
+Unknown Speaker  1:00:06  
+Okay, so
+
+Unknown Speaker  1:00:10  
+I thought I figured out what was going on, but then,
+
+Unknown Speaker  1:00:15  
+when I tried to
+
+Unknown Speaker  1:00:18  
+fix it, you stopped my share. You can take over if you need, yeah, well,
+
+Unknown Speaker  1:00:24  
+I'm gonna go out of order,
+
+Unknown Speaker  1:00:29  
+not yet, actually. Okay, so this job, Hyatt, so Christine, had we noticed? Christine noticed that it's a security job, right? But it was put in as traffic, so she goes in. Oops, let's pick the right one. First of all, that's helpful to
+
+Unknown Speaker  1:00:58  
+change it to security. It refreshed. And it refreshed all of them, except for like this one, this one. Now, one of the things I did notice was that when the person originally put it in, he put it in
+
+Unknown Speaker  1:01:15  
+as October 9, October 11, and then this one was October 8, right? So I was thinking, okay, so it's not changing it, because they are past, right? But then so we go in and we change it to from that example. Let me show you this one. This one was 1011, or 10 810, eight. Yeah, we changed it to 11 eight,
+
+Unknown Speaker  1:01:43  
+and it changes here, and it's changed here, but it still did not update the category.
+
+Unknown Speaker  1:01:54  
+Okay, now, I don't know. I mean, that was my initial thought. I was like, oh, because he put it in wrong. It thinks it's already passed, so it's not going to update the category for whatever reason. But then when I changed it and it still didn't work, I doubted myself.
+
+Unknown Speaker  1:02:14  
+Let's see what category does fresh.
+
+Unknown Speaker  1:02:22  
+Talking Job Items
+
+Unknown Speaker  1:02:39  
+doesn't. Oh yeah, it does. Category.
+
+Unknown Speaker  1:02:45  
+Does category for the whole job.
+
+Unknown Speaker  1:02:51  
+Oh no, okay, yeah, it's doing.
+
+Unknown Speaker  1:02:54  
+It is doing the date greater than equal to to start, the start date greater than equal to today.
+
+Unknown Speaker  1:03:06  
+Push
+
+Unknown Speaker  1:03:08  
+looks like it should have pushed the category,
+
+Unknown Speaker  1:03:12  
+one thing so the Yeah, the the date of the job assignment,
+
+Unknown Speaker  1:03:20  
+not the reoccurring job,
+
+Unknown Speaker  1:03:22  
+the job assignment that date needs to be greater or equal to today at the moment that you change the category on the job location, okay, so if this was changed after she changed it to security,
+
+Unknown Speaker  1:03:40  
+I that makes sense, except have to go, what job location, not so then theoretically, if I change it to traffic and then change it back to security, this one should change, well, no, because the eighth, oh yeah, Because the teacher, yes, it should. Theoretically, my
+
+Unknown Speaker  1:04:02  
+daughter said, you shouldn't have to hit the Refresh All buttons.
+
+Unknown Speaker  1:04:08  
+You just change your security. I'm still thinking Mike told me to call him,
+
+Unknown Speaker  1:04:17  
+I haven't seen
+
+Unknown Speaker  1:04:21  
+and just run the light
+
+Unknown Speaker  1:04:25  
+PO number. Becton Dickinson, yeah, that's the event. That's who's,
+
+Unknown Speaker  1:04:32  
+who's using the Hyatt which is a hotel? Yeah? Yeah, well, I know Hyatt Hotel, absolutely. Yeah. Okay, so, okay,
+
+Unknown Speaker  1:04:42  
+change it back to security, let it do its thing. Some of
+
+Unknown Speaker  1:04:49  
+those scans, and I only know because I took Okay, so I was right. I just needed to do one more step, which I don't know if I ever would have been like, let's change it back to try.
+
+Unknown Speaker  1:05:00  
+I think I'm insecurity again, but maybe eventually what I got
+
+Unknown Speaker  1:05:04  
+there, that was the reason then, yeah, the other thing I could say, the other possibility that can happen.
+
+Unknown Speaker  1:05:16  
+Did it
+
+Unknown Speaker  1:05:18  
+do it?
+
+Unknown Speaker  1:05:19  
+No, it didn't. Well I but I didn't change the night. The night is still in October, technically, so that one's so I think it did. I guess I'll change the other ones, and you do this process again, and just to verify that it works. But okay, good to know that I was all right track. Yeah, the the other scenario that that process might break is, and one of you know, one of the many reasons I try to not let you guys have 100 windows open, is, if you're in one of those job assignments, on the job assignment detail, your cursor was sitting in one of the fields, which means that record is activated. And then you come over to this window and you change, say, the category, and you want it to push, well, that window that you have your cursor in the job assignment, that record is locked. So when it tries to go changing things, it's just going to skip over it because it can't make changes on that record because you have it locked. Some anybody, actually, any user that happens to be in that record with their cursor in it sitting somewhere, yeah, like, if your cursor was sitting there and you tried to do that change, it may skip right over it, yeah, records locked, and it may not be you. Maybe you know Christine or or you know one of your other employees, one of the other staff,
+
+Unknown Speaker  1:06:43  
+yeah, it could be in that record with the cursor sitting in there. That record is locked while you have a cursor somewhere in there, and any of these refresh changes will not change that record.
+
+Unknown Speaker  1:06:59  
+Cool,
+
+Unknown Speaker  1:07:01  
+standard database stuff, if you want, you know, for, I know you like the really techie stuff there, Ashley, that's going to be true. And you know, SQL and anything, if you have a record up and you're you have your cursor in a field, it locks the record so that only you can make changes
+
+Unknown Speaker  1:07:20  
+to that record for that moment. And any other process that tries to make a change that record, it won't do it because you have it locked. That's, that's just data basing 101,
+
+Unknown Speaker  1:07:32  
+Cool,
+
+Unknown Speaker  1:07:33  
+good to know.
+
+Unknown Speaker  1:07:36  
+Um, so I don't know which happened here. It was definitely the first one, only because I know, like, no one else would have been in here. She just was, you know, working in advance. This was, like, last week. And, yeah, yeah, it was definitely that scenario. But I have seen the other scenario happen, but it's usually like someone was doing, like, someone's hours. And do you remember when it just kept sending notifications and stuff, yeah. And it was like, locked, yeah, yeah. Okay. Well, Mr. Resolved on that we
+
+Unknown Speaker  1:08:09  
+didn't talk about regions next time, because that's not something we're going to do soon. It's something that will be in the future, that we will need.
+
+Unknown Speaker  1:08:17  
+But let's see, oh, I was going to tell you so I saw that you moved the pay report to complete it, but I wanted to point out which you may already know, come on,
+
+Unknown Speaker  1:08:33  
+it is still showing, oh, go ahead. I fixed the problem
+
+Unknown Speaker  1:08:38  
+that you'd show me for that particular record, the what we looked at on the phone call, though, as far as
+
+Unknown Speaker  1:08:47  
+the the mod record thing, I have not gotten back around to that so that, oh, I closed that one. Oh, okay, I was gonna say, because I thought you had taken the,
+
+Unknown Speaker  1:08:58  
+you know, the location history, yes, oh, see that anymore. Do you, um, well,
+
+Unknown Speaker  1:09:07  
+I mean, I did that. I still see it still switches to a different location. Yeah, that problem.
+
+Unknown Speaker  1:09:13  
+Okay, that's a different showing location history with a bunch of timestamps and latitude, longitudes and stuff, and we didn't want that in the mod record.
+
+Unknown Speaker  1:09:25  
+Yeah, so that shouldn't be there anymore. As far as the problem, the the absolute problem we were looking at, which is it's switching in the mod log, although it's not really switching.
+
+Unknown Speaker  1:09:35  
+I have not gotten into that. The Trello card that I completed was that one example that you gave me, you know, it was in somehow a zero got into there. Oh, oh yes, yes, yes, I remember that one. Okay, cool. So that's what I on Trello was saying. I fixed that. That is the record that was still showing up when it shouldn't.
+
+Unknown Speaker  1:10:00  
+Yes, okay, and that's that problem is fixed. But the problem with the mod log, which was the symptom you originally saw, I have not gotten around to definitely got my notes from us meeting the other day and and I'm trying to get to it. Okay, gotcha
+
+Unknown Speaker  1:10:18  
+the other ones. I can probably wait until next week. They're nothing that's gonna
+
+Unknown Speaker  1:10:25  
+affect anything this week at all.
+
+Unknown Speaker  1:10:30  
+But so that the SL SSL thing that you were talking about so it wasn't that it was expired or that you're using the wrong password or using it both in FileMaker and IAS supposed to be in both but it is intersection. Removed it from IIS, but it is because they were saying that the certificates only good for one,
+
+Unknown Speaker  1:10:52  
+like one or the other. So that's, that's the argument we're having. We use, we used a wild card certificate, right, which is used for anything in the blue blue dispatch domain,
+
+Unknown Speaker  1:11:06  
+and their security software is saying they would prefer us to use a different certificate for each sub domain, meaning admin, dot, blue dispatch, agency dot, blue dispatch. All the different sub domains we have, they want a different certificate for each and I was like, Well, I don't think that's needed. But more to the point, we've already done the wild card, and Les has already paid for it for the year. Wow,
+
+Unknown Speaker  1:11:37  
+do you want to go back to Bonnie and tell her that you want her to spend another $500
+
+Unknown Speaker  1:11:42  
+to do it your way, go for it.
+
+Unknown Speaker  1:11:45  
+And they did not seem going to have that conversation. And I don't blame them. Maybe this will come back up next year when the cert comes up for renewal.
+
+Unknown Speaker  1:11:56  
+I don't know,
+
+Unknown Speaker  1:11:59  
+two methods of doing the same thing, like the wild card, because that allows us to make new sub domains whenever we need. Like we made a sub domain of testing, dot blue dispatch.com, for the new server. And if we, if we did it the way they wanted, then every time we needed a new domain, we would have to absolutely contact you guys get your Okay, purchase the SSL for that particular sub domain one at a time,
+
+Unknown Speaker  1:12:30  
+and that just makes testing take longer.
+
+Unknown Speaker  1:12:36  
+I don't see the particular security problem between the two, but
+
+Unknown Speaker  1:12:41  
+that's why I'm not the security person.
+
+Unknown Speaker  1:12:45  
+So
+
+Unknown Speaker  1:12:51  
+does that part make sense to you? Also? Joe, yeah, no, yeah, it makes perfect sense. Brian, I know that was something that we were discussing, I think, last week with Bonnie, and we were just trying to figure out what exactly was the issue and, and we got some clarification from your end. So that's good as well. So, yeah, yeah, that's, that's kind of what's what's going on there. As far as nothing expired, it's just the argument between, do we go with wild card or specific and, and it's kind of one of those, if I remember correctly, wild cards were like
+
+Unknown Speaker  1:13:29  
+479
+
+Unknown Speaker  1:13:31  
+I think a year. And individual ones are like 65 I think a year.
+
+Unknown Speaker  1:13:38  
+So it kind of comes down to, if you use more than, say, five, it's going to be more expensive to do them one at a time.
+
+Unknown Speaker  1:13:47  
+And right now, I believe we're using eight.
+
+Unknown Speaker  1:13:52  
+So we're getting we're by doing a wild card. We're currently saving about a, what, 180 bucks.
+
+Unknown Speaker  1:14:03  
+And that's if we use no more sub domains, which we probably will.
+
+Unknown Speaker  1:14:09  
+Did
+
+Unknown Speaker  1:14:15  
+you have any other thoughts or something you want to try to get in today? Miss Ashley,
+
+Unknown Speaker  1:14:22  
+no. Nope. Everything else can can wait. It's not it's not bad, not big,
+
+Unknown Speaker  1:14:32  
+all right. Well, we, we
+
+Unknown Speaker  1:14:35  
+will continue to push forward. Like I said, you can expect a new test flight by the end of the week, and and I'm going to try to get, I'm going to try to get Jake on a weekly push of that moving forward.
+
+Unknown Speaker  1:14:54  
+Yeah, that's about what we've what we've got there. I.
+
+Unknown Speaker  1:15:01  
+Of course,
+
+Unknown Speaker  1:15:03  
+Joe, when you, when you go back to Bonnie, you're more than welcome to tell her if she, you know, needs more information, or you know, would like to, would like to talk. I'm available when she needs me.
+
+Unknown Speaker  1:15:14  
+Sure absolutely. Brian, we appreciate
+
+Unknown Speaker  1:15:17  
+that. Alrighty, well, if there's nothing else,
+
+Unknown Speaker  1:15:21  
+you guys can have a great day and Miss, Miss Lori, I can tell you, we are going to be sending out invoices soon. They're a little slow because the first was on a Saturday,
+
+Unknown Speaker  1:15:39  
+but I know Angie's working on them. She's She sent me stuff to review today, so they'll probably be coming in the next day or two.
+
+Unknown Speaker  1:15:48  
+Okay, awesome. We appreciate it. Brian, like always, all right, you guys have a great day, and I'm sure we'll talk at some point. Thanks. Alrighty. You.
+
+Transcribed by https://otter.ai

@@ -1,0 +1,1012 @@
+Unknown Speaker  0:02  
+Alright, I guess Joe is sick, so we won't have Joe again this week.
+
+Unknown Speaker  0:10  
+Let's see. I guess first
+
+Unknown Speaker  0:13  
+we are closed Thursday for New Year's Day. That is the only day I'm taking off this week, though, so Jake, also good for you guys. Good, oh,
+
+Unknown Speaker  0:26  
+we don't have a choice. Good work, but we don't get paid anything more. So that's not right, right, right,
+
+Unknown Speaker  0:32  
+understand. So just to let you know, yeah, we won't be available Thursday, the rest of the week. We are working on regular hours.
+
+Unknown Speaker  0:43  
+I do have couple updates. So you may have noticed or not, but we've we have pushed a couple more versions. Pushed another one yesterday.
+
+Unknown Speaker  0:57  
+This is one point 5.2
+
+Unknown Speaker  1:01  
+most of these changes are not things you're really going to see as a user.
+
+Unknown Speaker  1:07  
+It's we're still working on
+
+Unknown Speaker  1:12  
+a couple of places where, basically, if a user does things they're not supposed to do, we want it to fail more gracefully. So we're working on some of that.
+
+Unknown Speaker  1:24  
+So that's, yeah, that's, that's what this last one was.
+
+Unknown Speaker  1:28  
+The big point of the last push was when they attempt to clock in on a job, but they're already clocked in on another job, the instead of just telling you that it is going to be giving you, the user, the job ID of the job that they are, that it thinks they're clocked into.
+
+Unknown Speaker  1:49  
+So that will help you guys when they call you guys, you know.
+
+Unknown Speaker  1:56  
+And this will, this could end up happening if they clock into a job and they force quit the app kind of thing before they clock out, and they try to come back in, and they try to clock back into that job, or clock into a different, you know, something else. But it's saying, Hey, you're clocked into something. It thinks you are still
+
+Unknown Speaker  2:14  
+so we're trying to get that process fairly graceful. We do have ideas for allowing you to what we call rehydrate a job.
+
+Unknown Speaker  2:26  
+Basically, that means you can force quit the app and later try to come back and go into it, and it'll notice that you're locked clocked in and take you to that job and allow you to continue it. It's it's very tricky, and it's definitely not going to be in before go live on the 16th, but we're already right now. It's just trying to make sure that that fails as gracefully as we can make it
+
+Unknown Speaker  2:50  
+after go live, we will be working on getting an update to
+
+Unknown Speaker  2:56  
+to allow that, you know, to allow someone to be able to continue with something that they shut down when they shouldn't have. It's not going to be perfect, because if they do force quit the app, we can't continue to gather location data,
+
+Unknown Speaker  3:13  
+the little clock, the timer that runs,
+
+Unknown Speaker  3:17  
+you know, that's been kind of backed out of so it's very difficult to get back in and see where that timer should be, down to the millisecond, because it tracks it very fast, down to the millisecond.
+
+Unknown Speaker  3:30  
+So but that's something we'll be working on after go live. That'll be one of the updates we want to look into
+
+Unknown Speaker  3:38  
+after go live. I
+
+Unknown Speaker  3:41  
+don't know if there really was anything user facing, necessarily, that has come in these last couple except the one point 4.9 which we already discussed last week, which had notifications. So that stuff is up. We are
+
+Unknown Speaker  3:59  
+we're working on testing and prepping for go live.
+
+Unknown Speaker  4:06  
+I do have a test plan for the native app, which I finally completed today, and I'm ready to send to you, Ashley,
+
+Unknown Speaker  4:18  
+you know, just so you have a nice written out document of what features you need to run through in your testing.
+
+Unknown Speaker  4:27  
+It's, it's about 10 pages, but it has some images. So
+
+Unknown Speaker  4:32  
+it's not just 10 pages of dense text.
+
+Unknown Speaker  4:37  
+There is, there is a lot of things you can do. And so took me a little while to write up the plan, and we keep making these changes that I'm talking about, and I have to make those changes in the test plan, so it's kind of a breathing document.
+
+Unknown Speaker  4:54  
+Any other updates we
+
+Unknown Speaker  4:58  
+we do have the.
+
+Unknown Speaker  5:00  
+Dev and Linux, or the dev and the pro Linux servers
+
+Unknown Speaker  5:07  
+kind of
+
+Unknown Speaker  5:09  
+at even keel now, and we can and we have the connection so we can easily promote code and such between the two,
+
+Unknown Speaker  5:18  
+so that stuff is also there.
+
+Unknown Speaker  5:22  
+What else have I been working on? I had that issue was that yesterday, Ashley, that you called Yeah, that was Yeah, yeah. That yesterday, I don't even know what week I'm in. Sometimes,
+
+Unknown Speaker  5:36  
+yes, we dealt with that, and we've had some other small items that we have looked at, but mostly we're just running through tests with the native app and running through more and more odd scenarios to see if we you know if we can trip it up and if we can fix that.
+
+Unknown Speaker  5:55  
+And we'll definitely be looking forward to your feedback or what you find when you're when you're running through the test plan and such, and see if you find something different than what we find.
+
+Unknown Speaker  6:08  
+We have had a couple scenarios we've had to figure out how to deal with that just seem to come from different phones getting a little bit different reaction out of it. So we're we're chasing down those things to make sure everybody has a has about the same,
+
+Unknown Speaker  6:29  
+the same interactions with the phone with the app.
+
+Unknown Speaker  6:33  
+So yeah, that being said, I can tell you that when we are doing updates now, they take about a day so, but we haven't had a we haven't had a denial since we went live. So any of the three or four updates we've done since we
+
+Unknown Speaker  6:55  
+we went, you know, I guess soft open, not live, since we went soft open on the store, we haven't had any denials. Everything's been approved. Actually, Google seems to take about an hour, and Apple seems to take most of the day.
+
+Unknown Speaker  7:10  
+We could see in the background, and I don't know why Apple takes most of the day. They put it in review, and then they let it sit there for 1012, hours, but we can see in the background, they didn't do anything, they didn't book a job, they didn't open the app, they didn't do anything. They just put the status in review and let it sit there for half a day and then finally approve it. So I have no idea what they're doing,
+
+Unknown Speaker  7:37  
+but nevertheless, those have been going through with no problem. And I don't see there necessarily being a problem with, you know, any updates that we push through
+
+Unknown Speaker  7:47  
+unless we decide to make changes to anything that has to do with their privacy settings. That seems to be when both of them their ears perk up and they really test everything again. So we don't have any plans to make changes to those settings anytime soon, so we shouldn't have to worry about it.
+
+Unknown Speaker  8:06  
+That, I think,
+
+Unknown Speaker  8:10  
+is my updates of what we have been running through and working on.
+
+Unknown Speaker  8:16  
+Oh, this isn't necessarily technical, but I believe Steve has worked on and is getting you guys on that, or got you guys on that contract with Amazon for conversations with Joe and everybody before. So
+
+Unknown Speaker  8:36  
+it doesn't change your billing. Your billing still happens every month, but you guys are into a year contract, and that has taken just about 25% maybe a little bit more, off the cost for all of the servers, really.
+
+Unknown Speaker  8:54  
+So that's kind of the trade there that has been instituted. You should start seeing change in the invoices coming from AWS next month, I'm assuming, or the invoice for this month, which you should get next
+
+Unknown Speaker  9:08  
+month? Yeah,
+
+Unknown Speaker  9:11  
+that's about it.
+
+Unknown Speaker  9:15  
+Do we want to have Ashley go next or Tom? Do you have any questions, feedback, comments, things you need.
+
+Unknown Speaker  9:29  
+Okay,
+
+Unknown Speaker  9:33  
+I guess not. What happened? Sorry, no, I was before I turned it over to Ashley, I was gonna see if Tom had anything. Oh,
+
+Unknown Speaker  9:43  
+no, no, not you.
+
+Unknown Speaker  9:46  
+All right, I don't know. I don't know if he stepped away for a second or just doesn't know he's muted, but I guess, Ashley, if
+
+Unknown Speaker  9:54  
+you'd like to go through some of your agenda items, yes, okay, I'll go over.
+
+Unknown Speaker  10:00  
+Sorry, no, no, go ahead. No, I'm sorry. I forgot I was muted, so that's fine.
+
+Unknown Speaker  10:05  
+Go ahead. No worries. Are you sure?
+
+Unknown Speaker  10:09  
+Yep, I was the dumb ass, so I'll wait.
+
+Unknown Speaker  10:13  
+No worries. Okay, so the thing yesterday that we fixed the POV, you know, not creating
+
+Unknown Speaker  10:21  
+or transferring, rather, to the job assignment details. So once, once works, but if you do like daily or if you do weekly, it still doesn't transfer. Do
+
+Unknown Speaker  10:35  
+you want to show you, or does that make sense?
+
+Unknown Speaker  10:41  
+See, did you
+
+Unknown Speaker  10:45  
+try that today? Yes. And well, so I first noticed it yesterday, around, like, I don't know, three o'clock maybe, and then I tested it today, like, because I was like, why did it work yesterday? But it was, I was just doing once yesterday, when I tried to do a daily and a weekly, those didn't transfer.
+
+Unknown Speaker  11:17  
+Might need you to try one again, because I did make changes to that in dev. I did not make the changes in prod. Now that I'm thinking about it, okay,
+
+Unknown Speaker  11:33  
+so I can look at making those changes in prod.
+
+Unknown Speaker  11:38  
+Okay, so do you still want me to test it. I mean, I tested it earlier today. Okay,
+
+Unknown Speaker  11:43  
+you're on prod, and I haven't made the changes on prod, so it's not going to work. Yeah, okay. Do you think we can push that
+
+Unknown Speaker  11:52  
+like tomorrow morning, or I might be able to do it right now. Okay, cool.
+
+Unknown Speaker  11:59  
+Next thing, and this one,
+
+Unknown Speaker  12:03  
+let me just show you. It's gonna be easier to show Okay, so this job in particular, this is a fake one. I did it. I like copied it because we were having an issue with an SRP job, not
+
+Unknown Speaker  12:18  
+incorrectly. Like
+
+Unknown Speaker  12:22  
+so it's hard, but it's like, so this is like a South Mountain loop 202. Kind of deal. So it's on like a highway.
+
+Unknown Speaker  12:31  
+You know, we went in here. We pinned it. I'll show you. I know it's read only mode, but we did pick from the drop down. And then she moved. We moved the pin to where we actually wanted. It okay? And then when you
+
+Unknown Speaker  12:47  
+watch what happens when this is how, and this is how it exactly was on the other jobs too,
+
+Unknown Speaker  12:54  
+it pins in a different spot,
+
+Unknown Speaker  12:57  
+in this exact same spot, which I thought was kind of strange. So,
+
+Unknown Speaker  13:03  
+yeah, that looks like some default.
+
+Unknown Speaker  13:06  
+It's just bizarre. I don't know how. I don't know what is the issue like that looks like, what gets pinned when you just say Phoenix,
+
+Unknown Speaker  13:22  
+the so how do we get around that? Like, even if I edited it and, you know, moved it, okay, I've got to,
+
+Unknown Speaker  13:30  
+I'd have to, I mean, we do have coordinates, I see it, so I have to,
+
+Unknown Speaker  13:36  
+I'll have to talk to Jeremy, who does, who does the mapping stuff for us and have him look, okay? Um, it doesn't, it hasn't happened often, but you know it's, I just don't know how to advise them to, you know what to do? Yeah, um,
+
+Unknown Speaker  13:55  
+excuse me.
+
+Unknown Speaker  13:57  
+Okay, so that's all I have for production. Um, but let's see sending notifications. I thought you had said that that was fixed, but I'm still getting that error code,
+
+Unknown Speaker  14:10  
+the failure attempting to send to endpoint. Is
+
+Unknown Speaker  14:16  
+that what you meant when you said notifications were fixed?
+
+Unknown Speaker  14:20  
+Well, number one, notifications. Should only be on dev, not production. Let's make sure we're on dev. Oh, yeah, no, I said I'm done with that, or production. Oh, and I moved on to dev, sorry. Um,
+
+Unknown Speaker  14:33  
+one second. Let me still making notes of the map. Oh, sorry. I'll just log in real quick. I'll give you some time.
+
+Unknown Speaker  14:48  
+I.
+
+Unknown Speaker  15:17  
+I'm
+
+Unknown Speaker  15:21  
+okay. Now, what do we oh,
+
+Unknown Speaker  15:24  
+this notification.
+
+Unknown Speaker  15:28  
+I thought that I had read that it was fixed, but I it's just still giving me that same
+
+Unknown Speaker  15:37  
+okay. Are you serious? I didn't. I tested it this morning, and it still would say that failure. What does it say? Failure, attempting to send the endpoint. And I might have, that might have been me. So we're changing, okay, we're flipping back and forth. The problem is both a version of the native app on test flight and the version that's live on the App Store. Currently, they are talking to two different API servers, but they're talking to the same file maker server. So when I'm sending those messages out from file maker server, I have to point which API I'm looking at, and I keep pointing it at the dev API so that we can test when it's in test flight. And then once I see it's on the store, I have to move it to prod, because we can kind of only test one at a time
+
+Unknown Speaker  16:28  
+when we're using the same FileMaker system in the background. So I changed it because it was pushed to Apple or, I mean, it was pushed to the app stores late last night, and I didn't do it. I didn't make that change last night I made it when I noticed the problems today. So may have tried it before I made that flip. That makes sense that job, or was that Joe? That was Joe, and he did get it. So did get it? Sweet, he texted me,
+
+Unknown Speaker  16:57  
+sweet, yeah, let's see. Oh, okay. So the, I don't know if you've gotten any updates on the mapping situation, but after you clock out,
+
+Unknown Speaker  17:09  
+the map literally disappears.
+
+Unknown Speaker  17:14  
+It happened. And I was like, Okay, so maybe it just is loading. So I gave it time. I log out, log back in, and it's still it doesn't matter, like the map just goes away.
+
+Unknown Speaker  17:26  
+So obviously I can't tell if it pins one second here me,
+
+Unknown Speaker  17:32  
+I want to try to find something. Do you
+
+Unknown Speaker  17:37  
+do? What date is this job for the 30th today?
+
+Unknown Speaker  17:42  
+And it is Joe for cow town range.
+
+Unknown Speaker  17:49  
+Oh, when I click on it, map shows right up for me.
+
+Unknown Speaker  17:54  
+It's Microsoft, or is it a caching thing? Like, what should I have no idea
+
+Unknown Speaker  18:01  
+you're on dev, right? Yes, I am.
+
+Unknown Speaker  18:06  
+Yes.
+
+Unknown Speaker  18:08  
+Now I don't know about now I see the ping where the or the pin where the job is, but I do not see any location data.
+
+Unknown Speaker  18:22  
+I
+
+Unknown Speaker  18:23  
+I see there it is. That's what I see. That's weird, because, I mean, I tested yesterday was when I was testing. Well, it's been, honestly, a lot like the last few days. But every time I'd clock out, my map gone,
+
+Unknown Speaker  18:39  
+and I couldn't figure out why. So let me, did you just need a location token here?
+
+Unknown Speaker  18:51  
+What are you under?
+
+Unknown Speaker  18:54  
+See, these ones are gone from yesterday. Have a token so you should be getting I'm
+
+Unknown Speaker  19:02  
+gonna have him looking at the map anyway, so I'll just have him look at this too. Okay, yeah, you can see like mine. This is yesterday, but mine's
+
+Unknown Speaker  19:13  
+gone.
+
+Unknown Speaker  19:18  
+Is
+
+Unknown Speaker  19:19  
+fun and interesting
+
+Unknown Speaker  19:23  
+indeed.
+
+Unknown Speaker  19:24  
+Let's see. I may know when you're ready. I don't want
+
+Unknown Speaker  19:31  
+to, okay,
+
+Unknown Speaker  19:33  
+all right, um, yeah, I'll,
+
+Unknown Speaker  19:35  
+I'll look into that. But some of this stuff absolutely may be because we keep, like, repointing servers and changing things around, you know, over and over during the days. So Friday we do plan like I had told you I believe last week,
+
+Unknown Speaker  19:53  
+or when I talked to you yesterday, yeah, Friday we are,
+
+Unknown Speaker  19:58  
+we are going to do.
+
+Unknown Speaker  20:00  
+The, you know, point the production API server and the production version of the app to the production version of FileMaker. And probably right before we do that, we're going to be cleaning out, you know, resetting the API database, and I'll be clearing people that are booked on jobs so that everything's kind of starting
+
+Unknown Speaker  20:22  
+fresh,
+
+Unknown Speaker  20:26  
+and hopefully once we get those tests, we won't be doing as much flipping back and forth of servers so that you guys can get a solid
+
+Unknown Speaker  20:37  
+like two weeks in of testing.
+
+Unknown Speaker  20:40  
+Um, so, yeah, I think that might, that might fix some of these problems. I think that's maybe what's happening in some of this. You're, you know, you're, you may think you're clocking in and out normally, but you very well may be like clocking in on one database of the API server and clocking out on a different one, and it gets confused. It doesn't know what's going on, what the job may be there and may not be there on others
+
+Unknown Speaker  21:09  
+API server. So
+
+Unknown Speaker  21:13  
+yeah, I do, like I said, I'm going to have Jeremy look at the mapping thing, because what I just described definitely would not,
+
+Unknown Speaker  21:21  
+would not have anything to do with it, not showing the pin correctly, the first thing you discussed on mapping. So while Jeremy's in there, I'll have him look at more stuff that has to do with mapping and make sure that we're okay.
+
+Unknown Speaker  21:37  
+Gotcha cool.
+
+Unknown Speaker  21:41  
+So on the app when they after they've clocked out, can they,
+
+Unknown Speaker  21:46  
+they can't go back in and, like, change the mileage, or update the mileage, or, you know, add officer notes or anything like that, right? Yes, once it's in that okay, so clocked out, as long as they don't leave the screen because they're, you're still sitting on the detail screen. When you clock out, you can right, then you can still add photos, notes and mileage, right. Once you've left that screen, then it's on your past jobs and no you cannot get back in. The only way they could get back in from that point is if you send that notification, like you were just doing.
+
+Unknown Speaker  22:23  
+Can touch that notification and it will take them back into that job. They can't clock in again, but they can add more notes, photos, mileage, if they will. Is that on is that on your testing? Okay, is that on their test? Your testing thing? It is not. Notifications are not on it, okay, I might add that just because, I mean, because I know that, like, we could add it through file maker, but I was just curious,
+
+Unknown Speaker  22:50  
+yeah, but that's how you would initiate allowing them back into the job to put any extra notes or photos or whatever is by sending them a notification, Okay, um,
+
+Unknown Speaker  23:01  
+for the dashboard, like the earnings and the mileage, you know how it breaks it down by month, year, etc. Is there going to be an export button for them on that like there is in the web app, or is that feature gone? Um, it is not there right now. We could definitely
+
+Unknown Speaker  23:20  
+add it back, but I don't think that's going to make go live. Okay. No, it's okay. I was just curious. I just didn't see it on there. Yeah, it's not we do
+
+Unknown Speaker  23:33  
+last thing on
+
+Unknown Speaker  23:36  
+dead.
+
+Unknown Speaker  23:37  
+So I tried changing my picture,
+
+Unknown Speaker  23:40  
+and this isn't even a huge deal. I just want to make sure that I'm gonna miss something. But when I added the picture like it looked fine, like right side up and everything, but it added it
+
+Unknown Speaker  23:53  
+sideways, and I didn't see a way to rotate, I was just curious if and you won't be able to, does it show,
+
+Unknown Speaker  24:02  
+you know, properly on the app? No, the app. So, like, when I was uploading it, like from my, my, you know, what do you call that album? Or, you know, whatever, that was right side up. But when I added it to the app, it was flipped. And I don't know how the person was, you know, holding the phone when they took it. So I don't know if it was like in landscape or something I like, I have no idea, but I was just wondering if there was a way to rotate it, or if I just missed it. Yeah, there shouldn't be a way to rotate it. Should show like it does in your library.
+
+Unknown Speaker  24:37  
+I can just, Steve, I haven't seen that
+
+Unknown Speaker  24:42  
+either. I just interesting when I up, because, like, it looked like it was going to be great, and then I, you know, continued, and I was like, oh, it's sideways. That's weird.
+
+Unknown Speaker  24:51  
+That is, that is very odd.
+
+Unknown Speaker  24:54  
+I'll have to talk to people who know better than me. All right.
+
+Unknown Speaker  24:59  
+So.
+
+Unknown Speaker  25:00  
+See,
+
+Unknown Speaker  25:01  
+big jobs. Oh, so agency car. This is sorry, back to production when we send like the notification, like this, this email, I know I'm on dev, but you know, hit here and send it. If an agency car is marked it does not show up on the the
+
+Unknown Speaker  25:25  
+email, you know, normally it'll say, like, This job requires a car or something, yeah, yeah. And I remember that being a thing in the past that we had fixed.
+
+Unknown Speaker  25:37  
+But see how it doesn't say under job requirements. Usually that's where I would say that it requires a car.
+
+Unknown Speaker  25:43  
+Yes, okay,
+
+Unknown Speaker  26:08  
+you,
+
+Unknown Speaker  26:18  
+takes me longer to write these notes when it's a long process of things that we have to do in order to find the problem.
+
+Unknown Speaker  26:26  
+No problem.
+
+Unknown Speaker  26:35  
+C, chord, I,
+
+Unknown Speaker  26:47  
+okie dokie,
+
+Unknown Speaker  26:49  
+Okay, last, but not least, on the AWS server, the server too, I don't know if you remember. I'm sure you do remember, actually, because it was like a big thing before we went to AWS. And when we would search for customer, like a big one, like SRP, APS, somebody with a lot of
+
+Unknown Speaker  27:11  
+jobs that were in there, it would like time out because it was not responding. Yes, it's doing that same thing on the just saw that
+
+Unknown Speaker  27:23  
+the dev server too. Sorry, that very well may be true, that copy that I put up there, oh, is old, okay, okay, doesn't have any changes that we've made since I put copy up there, which is a couple months ago, okay,
+
+Unknown Speaker  27:41  
+yeah, probably about two months ago, yeah, we put that server up, and I took an old, it was already an older copy when I put, you know, wasn't a brand new copy when I put it up there. So, okay, so wait then, yeah, yeah, okay. I was just like, oh no. Test that deep. We just want to make sure that that you can connect, that you can edit things, that you can do basic finds,
+
+Unknown Speaker  28:06  
+and we can move a
+
+Unknown Speaker  28:09  
+we can move a more modern copy up there sometime soon, I'm sure, and and do further testing like that, but I'm
+
+Unknown Speaker  28:19  
+any configuration changes or anything that's being made to the server,
+
+Unknown Speaker  28:26  
+they're going to either, like I said, they're either going to stop, if there's a problem, they're going to stop you from connecting to it, period, or you're not going to be able to write, you know, basically, edit things. Yes, so that's that makes sense. If you're not seeing those problems, then, then it very well just may be it's an old file, an old copy of the files, and doesn't have any of the changes we've made in the past couple months. Cool,
+
+Unknown Speaker  28:52  
+that makes sense. I will
+
+Unknown Speaker  28:56  
+wait on that when it comes to like so fake jobs. Obviously, we did a lot of fake jobs in 2025 right? And as we're approaching 2026 one of the things that I do is I keep track of, you know, how many jobs we worked last year on each day, and blah, blah, blah, blah, blah. But when I pulled the report, you know, if those fake jobs weren't canceled, obviously they're showing in our jobs worked for that day, I guess my question is, can I delete those? Or should I delete those? Or should I keep them? Because I know, I mean, they are helpful, especially if you're, you know, doing testing and being able to see, quote, unquote, past jobs. Obviously, I'm not working them, but I can see them in my, you know, my app and and different years. So I just was curious.
+
+Unknown Speaker  29:46  
+They would they would have no they would cause no problem for me, like you just pointed out. Those are the potential pitfalls of deleting those is, yeah, you won't see them on your past jobs. You won't see them, you know, in the.
+
+Unknown Speaker  30:00  
+Dashboards when you're testing the app or something, so it may remove a lot of data that you're using to test things with no that's why I don't want to do it. But at the same time, I want to keep my other reports accurate, which I do have workarounds, like I can, you know, just use my spreadsheet from this year when I'm transferring them over. But I was just curious what your thoughts were before i Yeah, that's it. It's up to you. The only, the only person that will make things more difficult for is you. So,
+
+Unknown Speaker  30:32  
+yes, okay, I will tell you. We'll be making some more in production, yeah,
+
+Unknown Speaker  30:39  
+probably Friday morning, right before we start testing, because we need some fake jobs to test with.
+
+Unknown Speaker  30:46  
+So we'll be adding some more, but that worries. But that'll be January 2, so that won't be part of 2025 that's next year's problem. That's next year's problem. That's next year Ashley's problem, not this year,
+
+Unknown Speaker  31:00  
+all right? Well, that is all I have.
+
+Unknown Speaker  31:03  
+Wonderful that's that's great. The
+
+Unknown Speaker  31:08  
+list is fairly short and very specific, and I like those. That's that tells us we don't have huge problems where we're just like, this whole section doesn't work. You know, we're well past that. As I've said before I like it.
+
+Unknown Speaker  31:23  
+All right. Mr. Tom, are you?
+
+Unknown Speaker  31:26  
+You there? I'm off mute. All right.
+
+Unknown Speaker  31:35  
+No, my same thing is just kind of where we've been in a holding pattern to implement the rest of the hardening and
+
+Unknown Speaker  31:45  
+updates, but I think you guys did all the updates on the Linux stuff before doing the prod, right? Yes,
+
+Unknown Speaker  31:54  
+okay,
+
+Unknown Speaker  31:58  
+I did. I did talk to Steve after we spoke last week, and it is, I just wanted to verify like versions and everything. So it is the AWS version of Linux,
+
+Unknown Speaker  32:08  
+which is built on Red Hat technically, but it does not have the UI
+
+Unknown Speaker  32:13  
+portion installed. And we weren't planning to that is a security hole nightmare putting the UI on there
+
+Unknown Speaker  32:22  
+because then you, then you open up, you have to open up Remote Desktop and other ports and such for the UI.
+
+Unknown Speaker  32:30  
+Wow,
+
+Unknown Speaker  32:33  
+that's not that bad. That's fun.
+
+Unknown Speaker  32:39  
+But and then, what's the time frame
+
+Unknown Speaker  32:45  
+for the pen test? Because,
+
+Unknown Speaker  32:49  
+I mean, I know that was like, that's
+
+Unknown Speaker  32:52  
+kind of dependent upon when we could get our stuff done. Because I don't know if Bonnie wants to do a pen test before we get our stuff done, but I also don't think she wants us in production a super long time
+
+Unknown Speaker  33:07  
+not knowing the security of it.
+
+Unknown Speaker  33:10  
+Yeah,
+
+Unknown Speaker  33:12  
+I'm not sure that's I can, you know, give some recommendations when it comes down to some specific questions. But in the end, it's a, you know, that's a business side decision, and
+
+Unknown Speaker  33:27  
+I've, I've kind of pushed your questions on that last week because I was hoping Joe would be here this weekend, because he's the person that we need, a we need for that discussion. I think
+
+Unknown Speaker  33:44  
+okay, I
+
+Unknown Speaker  33:48  
+guess we'll just have to keep
+
+Unknown Speaker  33:52  
+plugging along. And then the
+
+Unknown Speaker  33:56  
+pricing stuff, I just want to make sure that they're not paying double for the licensing
+
+Unknown Speaker  34:03  
+file maker
+
+Unknown Speaker  34:05  
+for the Yeah, cuz they, we basically bill them for what we're getting charged on AWS.
+
+Unknown Speaker  34:17  
+And then they have, they have a like license agreement with them they can have up to, I think it's 20 servers, and no with AWS, sorry. Oh, with AWS, yeah, no. There's no reason they should be being charged double. They are being charged for currently, four servers, two Linux and two windows. And that's kind of how
+
+Unknown Speaker  34:45  
+you know how we'd be moving forward.
+
+Unknown Speaker  34:48  
+So it's coming from AWS. It is two Windows servers, two Linux servers, a prod and a dev for each Okay, and then you.
+
+Unknown Speaker  35:00  
+A lambda functions
+
+Unknown Speaker  35:03  
+setup, which is very cheap, but that's what it uses for doing certain functions and features. And then, of course, s3 that's holding all the images and
+
+Unknown Speaker  35:15  
+all the location data and such.
+
+Unknown Speaker  35:23  
+Yeah, okay,
+
+Unknown Speaker  35:25  
+yeah, because when you said the billing and you got a discounted I was like, I want to make sure they're not paying twice for the same stuff. But yeah, right.
+
+Unknown Speaker  35:36  
+And the plan is a still a week or so to push everything over from the current production to the current Dev and then making the current dev production,
+
+Unknown Speaker  35:48  
+that would be probably a couple weeks after go live, which is January 16, so probably the beginning of February, if you know all the if all the Testing and everything continues to go okay for the
+
+Unknown Speaker  36:04  
+for the AWS file maker Pro two server, which is, I guess what. What we're saying is Dev for now,
+
+Unknown Speaker  36:12  
+okay,
+
+Unknown Speaker  36:14  
+all the dev servers, Linux and
+
+Unknown Speaker  36:18  
+the windows,
+
+Unknown Speaker  36:20  
+those are cleared for us to get updates, get patches, get the hardening in place, our tools out there, all that good stuff. The dev version of Windows, which is file maker Pro two, is the name of it. Yes, that one's fine. That was, that's the one you guys have been working on, and you can continue to do anything you need to that one, the dev Linux server, I'm not as sure that is kind of in use. So anything that's on the native the native app on test flight looks at that dev Linux version,
+
+Unknown Speaker  36:59  
+anything that is that when the app comes from these actual stores, it goes to the prod Linux server. So the dev Linux server is being used when we test things on test flight, but more importantly, it's what Google and Apple use when they're reviewing our our submissions. So
+
+Unknown Speaker  37:23  
+that one needs, you know, needs to run. We can't, we can't have issues with that.
+
+Unknown Speaker  37:32  
+It would again, I'd love if Joe was here.
+
+Unknown Speaker  37:38  
+Best practices would probably be you guys taking, you know, taking an image of the Linux, the dev Linux server, and doing everything you need to do to that one. And then we can, you know, we can propagate that one once you're finished with anything you need to do with it.
+
+Unknown Speaker  37:59  
+But that would make yet another server on AWS that they'd be paid for. So I'm not sure if that's the route they want to go or not. No, because typically the dev servers or dev servers, they're not like they're not hybrids or Dev and production servers.
+
+Unknown Speaker  38:16  
+I agree it's not necessarily a hybrid. But like I said, the
+
+Unknown Speaker  38:21  
+I wouldn't mind if we were the only one using it for testing, but I said, when we submit things for review, that's what the one that they look at, so that we don't have them, you know, doing looking at and messing with your production setup, Apple and Google, their reviewers use the dev
+
+Unknown Speaker  38:42  
+which points at the dev version of file maker.
+
+Unknown Speaker  38:48  
+Okay,
+
+Unknown Speaker  38:49  
+so I mean, we do, I mean we do snap. We could do the snapshots and all that stuff. That's no big deal. They should be doing that anyways. But the issue is, if
+
+Unknown Speaker  38:59  
+you know the goal is not to crash a server, but that's why you always are real careful with them. If we roll something out or we flip a switch, there's always a possibility of it crashing, and then it has to be, you know, whatever the time is for it to get rebuilt from the image or from the snapshot. That's going to be downtime. Yeah.
+
+Unknown Speaker  39:23  
+So that's what we're trying to avoid,
+
+Unknown Speaker  39:27  
+because otherwise we're going to have to do it well, if it's in production, that's in production, so we would have to do it off hours, which means
+
+Unknown Speaker  39:36  
+if it crashes, you know, we're going to have to have somebody
+
+Unknown Speaker  39:41  
+from your team available to fix. The bigger problem is, I don't know When downtime is because, like I
+
+Unknown Speaker  39:49  
+said, the the potential problem I see is if an update that we've pushed is currently in review with Apple or Google,
+
+Unknown Speaker  39:59  
+then.
+
+Unknown Speaker  40:00  
+Yeah, it crashing is probably going to get us denied. And they seem to especially Apple,
+
+Unknown Speaker  40:09  
+I have a strong feeling that their team is maybe in India, because they really tend to do reviews at three, four o'clock in the morning, Eastern Time.
+
+Unknown Speaker  40:22  
+So I'm but sometimes they do it during the day, but usually it's in the middle of the night. So I don't know when my point is. I don't know When downtime would be, you know, when off hours would be because, well, it'd be when it's not being used that much. So whether that's, yeah, you know, on the weekends or, I don't know.
+
+Unknown Speaker  40:41  
+But I mean, that's at the end of the day the stuff needs to get done. Because,
+
+Unknown Speaker  40:47  
+you know, we're not trying to be a pain in the ass. We're not trying to be a thorn, but you have a lot of officers information out there that's I might as far as I'm concerned, it's not secure. And the problem is,
+
+Unknown Speaker  41:01  
+my information is out there in that database as well. So call it selfish or whatever, just works out that way.
+
+Unknown Speaker  41:11  
+If there's a security incident or a data breach, Bonnie's out of business.
+
+Unknown Speaker  41:17  
+Well, I understand guarantee of that, and
+
+Unknown Speaker  41:21  
+I don't think she would be too thrilled with that.
+
+Unknown Speaker  41:25  
+So that's where,
+
+Unknown Speaker  41:27  
+you know, there's we just
+
+Unknown Speaker  41:29  
+need to get this stuff done. I mean, it's not like it has to be done tomorrow, but it's like there's always a reason why we we won't do this or we can't do that. And
+
+Unknown Speaker  41:39  
+anyways, so I can say, I mean, of course, we've taken,
+
+Unknown Speaker  41:45  
+we've taken several precautions with the configuration of AWS with, you know, SSL encryption over transfer from FileMaker and such
+
+Unknown Speaker  41:56  
+encryption at rest for FileMaker,
+
+Unknown Speaker  42:00  
+the Linux API systems don't hold any officer personal data. It only holds it only holds the ID and a token, which are just, you know, random strings. That doesn't mean anything if you can't get into the file maker database.
+
+Unknown Speaker  42:16  
+So the API itself doesn't hold any offer officer information. It holds records with with a couple IDs in it,
+
+Unknown Speaker  42:25  
+so that one is and that one is less of a worry.
+
+Unknown Speaker  42:31  
+The Linux API's also only.
+
+Unknown Speaker  42:36  
+They're like white listed
+
+Unknown Speaker  42:39  
+to only talk through internal IP addresses,
+
+Unknown Speaker  42:45  
+which is yet another layer of security we have on there.
+
+Unknown Speaker  42:50  
+But of course, I'm happy to have you go through and do what you need to do for security. We do what we do, and then ultimately to make sure it's tested and it's secure. Is that's why we have a pen test that comes that comes in and does all that. I mean,
+
+Unknown Speaker  43:07  
+if it makes it easier, I can have them schedule the pen test for soon as you guys go live, or two weeks out from going to live.
+
+Unknown Speaker  43:16  
+The problem with that is they're going to find a bunch of vulnerabilities, a bunch of ways to get in. I mean, it's, you could say it's secure, all that, which is fine, you know, I believe you guys are taking precautions,
+
+Unknown Speaker  43:29  
+but is it? Have you guys tested cross site scripting, cross site overflows, buffer overflow attacks, forgeries? I mean, all of those, all just the whole litany of
+
+Unknown Speaker  43:42  
+security things that you know, the assholes do, I don't know put it,
+
+Unknown Speaker  43:50  
+and that's kind of what we could do. The what you guys have is kind of like the basics, but you know, there's a lot out there, like, if you look at the OWASP Top 10,
+
+Unknown Speaker  44:02  
+have you guys hardened against any of that stuff? I mean, have you done any static or dynamic testing on the mobile apps?
+
+Unknown Speaker  44:12  
+We have not done much on security testing. We We basically we test for usability. Does it work efficiency? Does it work fast? And then,
+
+Unknown Speaker  44:26  
+of course, we do like traffic and load testing.
+
+Unknown Speaker  44:31  
+Other than that, we, you know, we have our standards, like I mentioned, you know, encryption at rest, encryption over, you know, over SSL or the sockets.
+
+Unknown Speaker  44:43  
+And, of course, the stuff you know that AWS offers you know at that level, that kind of network level, right, which no much past that,
+
+Unknown Speaker  44:54  
+my
+
+Unknown Speaker  44:57  
+my recommendations mostly come with.
+
+Unknown Speaker  45:00  
+Uh,
+
+Unknown Speaker  45:02  
+we, we were given a go live date of January 16, and Bonnie does not seem to want to move, that, you know. So we're, we're pushing to try to hit that.
+
+Unknown Speaker  45:17  
+Well, I'm not saying she needs to move. I'm not saying that by any stretch of the imagination.
+
+Unknown Speaker  45:23  
+It's just,
+
+Unknown Speaker  45:27  
+we run into a lot of obstacles when it comes to the security
+
+Unknown Speaker  45:32  
+topic, you know, and I get it. I've worked with developers before, and developers are not security minded.
+
+Unknown Speaker  45:40  
+It's like, honestly, for the most part, it's like oil and water,
+
+Unknown Speaker  45:47  
+you know? And
+
+Unknown Speaker  45:49  
+it's, that's it
+
+Unknown Speaker  45:52  
+does not uncommon,
+
+Unknown Speaker  45:56  
+so, but that's, you know, why we have
+
+Unknown Speaker  46:00  
+the pen test, the security protocol, all that good stuff in place. So I guess we'll just continue to hold, hold the pattern until we figure out what's going
+
+Unknown Speaker  46:09  
+on. Yeah, it's, it sounds like we we need, we need decisions and thoughts from the business side on that.
+
+Unknown Speaker  46:22  
+Because I don't I that's in order to hit, in order to hit that deadline. I,
+
+Unknown Speaker  46:28  
+you know, this is, this is kind of the plan we've, we've put in place to make sure that we can continue to, you know, fix problems, push updates, and everything right up until the 16th there.
+
+Unknown Speaker  46:42  
+Yeah, after that probably slow down some on the updates. As far as the app is, you know, the app in the App Store is concerned.
+
+Unknown Speaker  46:53  
+Well, I'm not talking delay that at all, yeah. So that's not even what I'm even implying in the slightest. This has already been delayed, and we've taken the brunt of that. A lot of the stuff is delayed because of security or whatever.
+
+Unknown Speaker  47:11  
+At the end of the day, the stuff needs to get done, it's going into production or in production. So
+
+Unknown Speaker  47:16  
+we need to figure out how to get this stuff done, so we can get the pen test, so
+
+Unknown Speaker  47:21  
+we can make sure it's secure.
+
+Unknown Speaker  47:24  
+Sure. I mean, I'll
+
+Unknown Speaker  47:26  
+support you however, I can, you know, if you I believe it looked like Jasmine had access now to the dev Linux server. Well, we can't, I don't want to. That's in production now, kind of, yeah, yeah, yeah, that's the problem. If it's in production,
+
+Unknown Speaker  47:44  
+if we do something on there and, you know,
+
+Unknown Speaker  47:47  
+whatever happens, the configuration doesn't set, or it causes a conflict, it's going to be down, and then that's going to cause the mobile apps, apparently, not to work or fail the upload. So then there's a problem now, and you know, I don't
+
+Unknown Speaker  48:04  
+want to, I don't, we don't need to have another expense to generate another dev server,
+
+Unknown Speaker  48:10  
+or dev Linux server when there was already one, but got pulled into production.
+
+Unknown Speaker  48:15  
+Yeah, it was. It was pulled in pretty, pretty immediately upon because So,
+
+Unknown Speaker  48:22  
+yeah, because we just need to figure out when the stuff can get done and if the business owners fine with the risk.
+
+Unknown Speaker  48:31  
+I mean, that's
+
+Unknown Speaker  48:33  
+I can only do, I can only advise.
+
+Unknown Speaker  48:38  
+That's it. But I mean, like I said,
+
+Unknown Speaker  48:41  
+trying to make sure she's taken care of and
+
+Unknown Speaker  48:44  
+everybody's protected. Because I don't mean
+
+Unknown Speaker  48:48  
+I'm sure you guys don't want to have a breach on your
+
+Unknown Speaker  48:52  
+record. Nope,
+
+Unknown Speaker  48:54  
+nope.
+
+Unknown Speaker  48:56  
+We don't tend to run into stuff some of these.
+
+Unknown Speaker  49:02  
+Again, I'm far from a from a security guy, but
+
+Unknown Speaker  49:08  
+a lot of these have to do with, you know, our
+
+Unknown Speaker  49:13  
+is the server or the business and that matter,
+
+Unknown Speaker  49:18  
+a target that someone's going to spend time on. We definitely dealt with 99.9%
+
+Unknown Speaker  49:24  
+of the time. The security stuff we deal with is either, you know, somebody that turns a robot on to trying passwords over and over again, or just a straight denial of service attack type thing. That's what we're much more prepared to deal with.
+
+Unknown Speaker  49:40  
+Then, then, you know, more targeted type attacks. That's when you get outside of my wheelhouse pretty fast. Well, I mean, there is, I mean security by obscurity is one level 100%
+
+Unknown Speaker  49:53  
+Yeah, but it's definitely not the only one. I'm well aware.
+
+Unknown Speaker  49:57  
+The problem is this is a law enforcement and.
+
+Unknown Speaker  50:00  
+And there are groups out there that target specific law enforcement organizations, absolutely. I mean,
+
+Unknown Speaker  50:08  
+it's just the name of the game. And I mean, is it a critical infrastructure? No, but there are groups out there that definitely target law enforcement organizations and love to have officers information, especially now with
+
+Unknown Speaker  50:22  
+all the BS going on, Yep,
+
+Unknown Speaker  50:25  
+yeah, I
+
+Unknown Speaker  50:27  
+like, I'm, I'm happy to support you. However I can. I just don't know if I'm like you all, all either of us can do is make our recommendations, but somebody, somebody on the business side, has to pull the trigger and tell us what to do.
+
+Unknown Speaker  50:44  
+Well, I mean, yeah, I guess, I mean, I mean, I can, we can go in there today and start doing all these changes, but again, it's going to be causing some issues, I'm sure, on the production side.
+
+Unknown Speaker  50:57  
+But
+
+Unknown Speaker  50:59  
+anyways, it very well, maybe, and we can, we can just coordinate on when you're making changes and when we're sending updates to Apple and Google, because that's my big one. If you know, if you guys make a change and it breaks, the servers, the dev server,
+
+Unknown Speaker  51:19  
+when we're not trying to get a new version approved, then it it only affects us, and that's not that big of a problem.
+
+Unknown Speaker  51:30  
+But if, if it happens when we're waiting for an approval, like I said, usually, from the time we submit to the time we're approved is about a day, maybe, you know, less usually we'll do it in the evening, and it's approved by the morning.
+
+Unknown Speaker  51:45  
+So as long as we kind of coordinate,
+
+Unknown Speaker  51:50  
+and you guys, you know, don't make changes for that day when we're doing an update,
+
+Unknown Speaker  51:55  
+then maybe that could, that could be a way forward faster.
+
+Unknown Speaker  52:01  
+Okay, let me I'll work with jasmine, and we'll develop a plan. We'll send out what we're going to do, so you guys can see what that is, and then I guess between Ashley and Amanda, you're new. So hi, Amanda, I'm Tom, I'm a pain in the ass.
+
+Unknown Speaker  52:20  
+Tom, I know you. It's okay, just taking care of it. You're taking care of us, trying. We'll just send that over, and then whenever we get the Go ahead, nod, we'll implement it. We'll go from there. We'll just do like a change review board, if you will. Yep, yeah,
+
+Unknown Speaker  52:40  
+okay, plan, and I'll recap, and I'll send this out, and I'll make sure that I highlight at the top some of these items that are of higher priority when I send these notes out.
+
+Unknown Speaker  52:51  
+Okay, great, perfect. All right, thanks. You're welcome. It's great talking with you. All
+
+Unknown Speaker  52:58  
+yep, yep, yeah. I think that's all I have. Ashley, just give everybody a chance say anything if they need to.
+
+Unknown Speaker  53:07  
+Nothing on my end, nope, I'm good.
+
+Unknown Speaker  53:11  
+Just as long as you push that thing to production, then I'll be then we'll be really good. I already have, oh, good. Thank you for talking.
+
+Unknown Speaker  53:21  
+Thanks. No worries. And Ashley, I'll stay on the lookout for an email about when we want to do stuff Friday, because I would like you to be involved in that testing. Perfect. Okay, definitely. I'll add notifications to these test plans and probably send that out tomorrow. Also awesome. Thank you. All right. Thank you guys, thanks. Have a good one. Good one. Bye. Happy New Year. Bye.
+
+Transcribed by https://otter.ai

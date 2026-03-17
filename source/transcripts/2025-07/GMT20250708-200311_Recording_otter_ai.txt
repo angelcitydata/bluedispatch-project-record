@@ -1,0 +1,637 @@
+Speaker 1  0:00  
+Computer. I don't, I don't want to save it on my computer. I did have, mostly Joe. Did you get a chance to speak with? Believe his name is Tom, yesterday on the AWS.
+
+Speaker 2  0:16  
+So I did reach out to him, and I think he's going to reach out to you in regards to coordinating what needs to be done on their end and making sure that we have your team on it through every step. So that was my understanding of it. I'm assuming he hasn't reached out yet, but if he hasn't, I'll make sure to follow up with him then. So he does actually reach out.
+
+Speaker 1  0:37  
+Yeah, he has not reached out. I I did send an email last week, middle of last week, just kind of quickly, asking him if, if his team has Linux experience. Since we want the web server side to be Linux, I haven't received a response to that.
+
+Speaker 2  0:59  
+Okay, yeah, I'll follow up with him again, just in case, and I'll make sure to stay on him about it until he does reach out to you.
+
+Speaker 1  1:05  
+Yeah, I know Jake's kind of non, yeah. Really can't get started too much on what he's doing, which is all the background for the app, the server side stuff, until we have this server up. So, so yeah, there, he's ready to get started, but he can't. And as you know, we're trying to hold her
+
+Speaker 3  1:26  
+well, we're, no, I mean, I don't want it to seem like we're, we are started. We're working on stuff.
+
+Speaker 1  1:31  
+Well, we are started, yeah. But Steve himself,
+
+Speaker 3  1:34  
+yeah, he's, he's working with me on the stuff that we can work on right now. But that's sort of a huge part.
+
+Speaker 2  1:40  
+So, yeah, I'll make sure to follow up with Tom. I mean, as soon as we get off this call, reach out to him again and make sure he sends you something or responds at least to your email. Brian, today sometime,
+
+Speaker 1  1:52  
+yeah, you know, if it takes a little longer on the FileMaker server, that's probably fine, but since we would like Steve to pretty much do the web server, set up himself even, I mean, it's fine if he does it on on a call with ginger sec. But you know, if timing is going to be a problem, we can do it with you, Joe, you know, we just sure buddy with a with a credit card number.
+
+Speaker 3  2:24  
+Basically, bottom line is we just, we just need Steve on the call, whoever, whoever it is, yeah,
+
+Speaker 1  2:30  
+yeah, whoever it is. We need Steve on the call. And yeah that, the sooner, the better on that so we can get him started. The server side is a lot of stuff, and the sooner we get him started, you know, sooner it can be finished.
+
+Unknown Speaker  2:45  
+Sure, yeah, absolutely.
+
+Speaker 1  2:48  
+That was most of mine. I just wanted to make sure that we were moving briskly because that, you know, the server stuff is the is the structure. It's the foundation of the house. It's kind of got to be there before you, you know, we can't build much of the house until the foundation's there.
+
+Unknown Speaker  3:03  
+So, so we definitely need that.
+
+Speaker 1  3:09  
+I have seen a couple emails and such, moving over to Ashley on the agency app, still returning a 401 or 408 error for you.
+
+Speaker 3  3:23  
+Yeah, we've been working on that just FYI
+
+Speaker 1  3:26  
+Brian, good, yeah, I didn't, I didn't know that. But that's good.
+
+Speaker 3  3:31  
+It's not exact. I mean, basically what we're doing is working on some of the asynchronous stuff that goes and gets jobs, and hopefully that this is all on dev So, okay, um, hopefully that will resolve it.
+
+Speaker 1  3:44  
+Good, because I was going to be asking you, you, Jake, about the in the log on BF helper for every call that comes through, not just from the agency, from the officer app. Also, there's a second call that's pretty much blank, that's called on API call, but it is still logging it as a call, and it is still getting authentication and token from file maker, but then doing nothing else. You know, it's a blank call. There's nothing else in the call, but that's something you may want to look into. That's just phantom calls, or have, you know, have Andrew or somebody look into fine with me, and then before I hand it to Ashley, Joe, Amanda, anybody do you need anything more? I did send yet another chart that I had played with today. I kind of agree with Becca. I don't know if, if the financial flow is a chart that you want to make public. And even if it is, it's it's not really technical. So how much I could help you there?
+
+Speaker 2  4:53  
+No, yeah, we, we were talking about it, and it doesn't make sense to have, one, have you guys work on that. And two, just have. Out there in general. So I think we're going to, you know, hold off on that. But as far as your other charts, I think that those are sufficient for what we need. So we do plan on submitting it tomorrow. So if there is anything else, we'll reach out to you. But as of right now, I think you know, from what we've seen, I mean, those are, those are great.
+
+Speaker 1  5:17  
+I know there's a lot of like, potential for capacity expansion kind of questions in the RFP, and I tried to, in graph form, answer it as best as I can. But basically our answer is, we're on AWS. Amazon is run on AWS. We don't plan so that's how big we could possibly get. That's the capacity that we could expand to if we really wanted to. I don't know how to diagram that, you know, just AWS. We pay them more, they give us more capacity. That's, that's exactly, it's not a question of, Do you have space in your server room for more servers and, you know, and more employees that could run it, blah, blah, blah, that's, that's not what we're doing. We're in cloud. If you want more capacity, you pay them more and they give it to you. The only other thing I could suggest is you might want to put in there, you know, maybe even if it's a single sentence that you've you've budgeted for this possible expansion of, you know, x times the system size, if needed. That's the only other thing I could think of that you could really add to the capacity expansion question, other than we're on AWS, and we can expand as big as, you know, the biggest websites in the world, if we really need to. It's so that's kind of my opinions on that. If you again, if you have any more questions, I'm happy to help.
+
+Unknown Speaker  6:47  
+Awesome. We appreciate that. Brian, yeah, absolutely.
+
+Speaker 1  6:51  
+Alrighty, then if, if you guys don't have anything else, we can move to Ashley's ever growing list.
+
+Speaker 3  6:59  
+Brian, I just wanted to be here to support for that AWS thing. So I'm gonna keep working on the native app, if you guys are good with that,
+
+Speaker 2  7:05  
+yeah, for sure, Jake, we appreciate you. Pop it in.
+
+Unknown Speaker  7:08  
+Yeah, go, Jake, go for it. All right. Thanks guys. Thanks, bud.
+
+Speaker 1  7:15  
+And I do today. Today is my birthday. I an age way older than I care to admit. My daughter has begins her volleyball camp tonight, so I have a hard stop at the top of the hour. So Miss Ashley, you have 50 minutes.
+
+Speaker 4  7:38  
+I don't so I wanted to kind of piggyback on the agency that 408 error probably should have asked Jake to maybe stay for a second, but maybe he already knows this, and if so, then I'll just, I just wanted to throw it out things that I noticed while I was testing, because I tried it for like 45 minutes, kept getting that error code, did everything that I could think of, and Joe to troubleshoot it. I had Joe try it. He was with Maricopa, PD at the time, and his worked on his Mac. So I was curious, you know, is it my computer or is it my agency? Like, why is it not working for me and it's working for him? I waited like 3045, minutes, tried again, same issue. Then I switched Joe over to Glendale with me, and then his was giving him the 408, so I wasn't sure if that had anything to do with it, but I thought it was kind of interested.
+
+Speaker 1  8:36  
+Maybe I can switch myself to Glenda because I'm in Maricopa County, and I bang around on it, and I don't get, yeah, never seen that error. So it could be a browser thing. If you're on Windows, Chrome is going to be the best.
+
+Speaker 4  8:53  
+Yeah, I that's what I was on. Because at first I was on edge, because that's like default. But then I did switch over, and I just keep getting 408, and you can see, like it's, I cleared my cookies, I did everything I could think
+
+Speaker 1  9:08  
+of, so that's fine. Yeah, that they're Jake did say that you're working on it. So maybe it's a, you know, a caching problem or something with with the way he's making sure it can work,
+
+Unknown Speaker  9:25  
+that it can work the way it works.
+
+Speaker 4  9:29  
+Yeah, I just wanted to. Wasn't sure. I thought it was interesting that I don't know if the agency has anything to do with it, but it's not just in case. I would like,
+
+Speaker 1  9:36  
+you know, it shouldn't. Maybe changing agency has something to do with it. You know, like it for the first time, it pulls for the new agency and see, there you go. I don't know
+
+Speaker 4  9:47  
+why I've been, I've been on this agency, though, for weeks. Yeah, weeks so, but I don't know. I've, I've had issues. Honestly, the last two weeks, I've tried personally, but I've stuck with Glendale just. To, you know, see if anything improved. Thought. Other than that, I wasn't able to do too much on agency today because of that. But one thing that I did want to update you on was that I did receive a report from the reports page. It still wasn't, you know, agency specific, but at least I got it in a more timely manner.
+
+Unknown Speaker  10:25  
+Wasn't agency specific as
+
+Unknown Speaker  10:27  
+Yeah, like, I like,
+
+Speaker 4  10:30  
+it was the jobs by specifically, it wasn't edge, I think
+
+Unknown Speaker  10:38  
+it was a job, count one,
+
+Unknown Speaker  10:41  
+well, that's not a jobs
+
+Speaker 4  10:43  
+Yeah, jobs report, okay, sorry, I'm sorry, and I just did it for a week. But it had, it wasn't just Glendale jobs. It was like, you know, Mesa Phoenix, like every job
+
+Speaker 1  10:55  
+well, make sure it's supposed to be showing you, like, if you're Glendale, it should be showing you glendale's jobs, but it should also be showing you jobs that Glendale officers were assigned to, even if the job itself wasn't for Glendale.
+
+Speaker 4  11:11  
+I can double check, but this, this was way too many jobs, the one that I received,
+
+Unknown Speaker  11:17  
+and I'll double check,
+
+Speaker 4  11:20  
+it was a pretty massive list, but it did get to me quicker than before.
+
+Speaker 4  11:30  
+Okay, so that's kind of all I have right now for agency, is I wasn't really able to do much today.
+
+Unknown Speaker  11:41  
+See
+
+Speaker 4  11:51  
+Oh, this one also might have been maybe a Jake question, but let's see. So we had a specific location at Broadway road and Solomon, and some of the officers that were, you know, using the app and pulling up the map and getting driving directions to this area was taking them somewhere different when I tested it, and mine defaults to Google Maps. It goes straight to where it's supposed to and I had Joe test it, and his took him somewhere different, and I the only thing we could find that was different was his opens through Apple Maps. Do you think that is something that would affect,
+
+Unknown Speaker  12:39  
+well, how it's pulling
+
+Unknown Speaker  12:43  
+it shouldn't, yes, and no
+
+Speaker 4  12:49  
+one other thing, though, so for mine to like it didn't love Broadway road and Solomon, it gave me like a bus stop that was nearby, but it was very close, you know, so, and I wasn't sure if that had something to do with it, but it just seemed interesting that when we both hit driving, you know, Jake is there, it took him to A completely different area. Yeah,
+
+Speaker 1  13:21  
+hopefully those roads don't intersect again within that town, within two that was, I mean, or within wherever the city for Broadway road and Solomon is,
+
+Speaker 4  13:38  
+yeah, it was, and I'd have to have Joe pull it up to see where it took him, because mine honestly was super close to the intersection where it was supposed to be. Yeah, I'd have to see what his
+
+Unknown Speaker  13:50  
+Yeah, I don't remember.
+
+Unknown Speaker  13:52  
+It was mesa. It was, it was like nine miles.
+
+Speaker 2  13:55  
+I don't Yeah, it was close, but not actually close. It was weird, for sure. And you got to figure Brian, for the most part, anybody that's doing or using Apple, at least, it's going to default automatically to Apple Maps. So, and
+
+Unknown Speaker  14:12  
+that's what we've done the most testing on
+
+Speaker 1  14:15  
+they actually for you guys, Angel City data, purchased an Android phone for Jake so that he can do more tests.
+
+Unknown Speaker  14:29  
+So Jake got a free phone out of this,
+
+Speaker 1  14:34  
+which he absolutely hates and still uses his Apple phone, but Oh, absolutely for testing purposes. Um, what was the date of the job I just want, I want to be able to,
+
+Speaker 4  14:44  
+um, let's see, I did a I actually did a fake one too, so that I could, like, test it. That's fine and not interfere. Was it? What was
+
+Unknown Speaker  14:53  
+it today? Was it? What day
+
+Speaker 4  14:56  
+I want to say it was yesterday. Is when I had Joe tested. So. No. Sounds about right? There it is. Yeah, one of them for sure, is on Tuesday, the eighth.
+
+Unknown Speaker  15:08  
+And I put it in exactly as I
+
+Speaker 1  15:12  
+just went back to yesterday. But wait a minute, dude, was it fake customer or fake
+
+Unknown Speaker  15:19  
+fake ink? Fake ink, ink
+
+Unknown Speaker  15:24  
+or No, fake ink, LLC, that's right, yes, all right.
+
+Unknown Speaker  15:33  
+It's interesting. Okie dokie, I will.
+
+Speaker 1  15:39  
+I will. I just wanted to make sure I had it with exactly which one we were looking at. I can test it and try to see what's going on. If what I get,
+
+Unknown Speaker  15:50  
+can I lose your volume? Volume?
+
+Unknown Speaker  15:53  
+I'm sorry.
+
+Speaker 1  15:59  
+Oh, I heard Amanda say something, but something about volume. Is my volume too low?
+
+Speaker 2  16:04  
+No, it's fine, Brian, at least from my perspective. What about you? Ashley, everything's good on your end. Yeah, I'm good. I think, yeah.
+
+Unknown Speaker  16:18  
+Hope so. So,
+
+Speaker 1  16:22  
+yeah, I don't see that one on the app, probably because it was,
+
+Unknown Speaker  16:29  
+maybe the time is already done.
+
+Unknown Speaker  16:32  
+Yeah, maybe that's why I don't.
+
+Speaker 4  16:35  
+Oh, yeah, I also have it on hold. I don't know what I
+
+Speaker 1  16:40  
+Oh, it's on hold. Yes, probably let me I'm gonna take it off hold just so I can see it in the app. Let's say There she blows. Let me hit the map and see where it takes me.
+
+Unknown Speaker  16:55  
+Well, it shows the pin
+
+Unknown Speaker  17:00  
+not at the right spot.
+
+Speaker 4  17:03  
+Your sesame there is yours. Take you to
+
+Unknown Speaker  17:06  
+mine, South Broadway village,
+
+Unknown Speaker  17:09  
+yeah. What is yours? Open
+
+Unknown Speaker  17:11  
+up center, or something like that.
+
+Speaker 4  17:14  
+It's fine. Mine gives me a bus stop. So I don't know what is yours open up with, or is it Google?
+
+Speaker 1  17:21  
+Oh, yeah, no, it opens up with Apple Maps. Yeah, yours does okay, but it shows, but it shows South Broadway village is what.
+
+Unknown Speaker  17:30  
+Again, I think that's what Joe's was too.
+
+Speaker 2  17:34  
+So, yeah, that's exactly what it was. Yeah, it's almost like an apartment complex, sorta like, I mean,
+
+Speaker 1  17:41  
+yeah, I'm somewhere, almost looks like a little resort or something. Yeah, exactly. That's interesting mine, but I saw the correct address go in there. If you see it real quick, you'll see, like, the address in there, and then it, you know,
+
+Speaker 4  17:57  
+yeah, like, for me, it, mine is like a bus stop. That's like, right here. So my mine was really, really close, so I wasn't understanding, you know, how it was taking them so many miles away from, you know where it shows up for us?
+
+Speaker 1  18:13  
+Okey, dokey. Well, that's one to look at. I'm going put this back on hold so nobody tries to take this stupid job that doesn't exist, no matter how many flags we put on it that says it doesn't exist.
+
+Speaker 4  18:26  
+It's been nice, you know, like not as long as it's marked,
+
+Unknown Speaker  18:30  
+not marked out of area that's been kind of nice.
+
+Speaker 4  18:36  
+Okay, a lot of these are just
+
+Unknown Speaker  18:43  
+one interesting thing I don't see,
+
+Unknown Speaker  18:47  
+so I'm just looking at the map
+
+Unknown Speaker  18:52  
+in Mesa.
+
+Speaker 1  18:55  
+I see East and West Broadway. Is there a South Broadway.
+
+Unknown Speaker  19:03  
+Oh, it doesn't say South Broadway. It just says Broadway.
+
+Speaker 4  19:06  
+There's it is supposed to be South Solomon, and that might help. But I just thought it was weird that, you know, some some areas it was pulling up right, some areas it
+
+Unknown Speaker  19:16  
+wasn't. And which Broadway would it been?
+
+Speaker 4  19:18  
+It's East Broadway, East Broadway, South Solomon. So I'm
+
+Speaker 1  19:22  
+going to change this to E, Broadway and s Solomon, C. I can get that to reload. Oh, I've got to go back in and re un hold it.
+
+Unknown Speaker  19:46  
+There it is, and you hit the map and see what it does now.
+
+Speaker 1  19:52  
+Oh, it just puts me somewhere in general, on East Broadway road. Okay, where do. Yeah, that was working before the whole intersection. I don't know why. It's all of a sudden not
+
+Speaker 4  20:06  
+and it's, it's really just some intersections, so I don't know, yeah, I don't know why. That's why I tested this one specifically, because this one was giving officers some officers issues, because some were just fine. Others weren't. So I was trying to figure out why and what the differences were.
+
+Unknown Speaker  20:28  
+Computers, they're perfect, aren't they?
+
+Speaker 4  20:32  
+I don't, yeah, yeah, of course. It's very interesting, that's for sure. Okay, well, I will let you know if it keeps happening or happens to other locations, but I just wanted to at least bring it up, and maybe if you have any insight on
+
+Unknown Speaker  20:49  
+you know anything about it, let me know.
+
+Unknown Speaker  20:54  
+I don't
+
+Unknown Speaker  20:55  
+currently okay.
+
+Speaker 4  21:02  
+I carry over. Oh, the mileage and the pay reports, those are still off a little bit. Oh, and then I was going to ask him about the dev results, if, if they were still testing the dev for the app, you know, the error message and the clocking in and out, the punches, things like that
+
+Speaker 1  21:25  
+code when punching. So
+
+Unknown Speaker  21:30  
+I believe, so I
+
+Speaker 1  21:33  
+believe that the fix was put in, but into dev, yeah, yes, we've pushed that.
+
+Speaker 4  21:43  
+Yeah, I've been testing it since I found out that we were doing that, and I honestly haven't had any issues. But especially, like with this, like, exclamation point one, yeah, that one's seems good. So I was just curious if he knew when he was when we were going to push that out.
+
+Speaker 1  22:00  
+But no, I'm not sure. Off top of my I think there's a couple of, there's a couple other items from your ever growing list that we want to get in to this particular push. Okay,
+
+Unknown Speaker  22:20  
+all right, well, then I will move on to scheduler.
+
+Speaker 4  22:25  
+Let's see this one. This wasn't on my agenda because this happened after it, but so I changed Christina, changed her agency, and we deleted the invite. Resented to her. And I got this after I sent the invite, I got that weird tell site job event. I don't know what, I don't know what. It's always the same job too.
+
+Speaker 1  22:50  
+So it happens to be the first one on the table. It's not that's just weird, yeah. So that was what that was, when you were making a new website account sending me, yeah, right,
+
+Speaker 4  23:02  
+yeah, yep. And I'd never seen, honestly, that happened before. This is fun. She had, like, the, there was a G instead of a key right here, so she had me delete it and resend it. So I did. And after I, you know, hit the STMP, then I got this, you know, cute little tell site job. I was like, That's bizarre. I don't even know what would have triggered that.
+
+Unknown Speaker  23:32  
+Which, which web app were you inviting her to? Officer, I
+
+Speaker 1  23:51  
+and an off, and you changed the officer's agency right before you did it, correct?
+
+Speaker 4  23:59  
+Yeah, she Christina, changed her agency and then fixed her email, and then I deleted it and resent it. Okay, yeah, fun. I know we talked about like Jeffrey Perez and another officer, where randomly, like their traffic and security settings were unclicked for unknown reasons. Well, I had another guy who Jeff Griffith, he was inquiring about, you know, the app not working. So when I checked his profile, he didn't have a site on attached to his name. So I was like, obviously, that's why he's not seeing jobs. But I went to mod log, and there was no, I didn't see site on mod log, so I couldn't tell if it was there at one point, and then, you know, was somehow deleted or taken off or unassigned. But I. I was curious at I'll stop there, see if you have any ideas.
+
+Speaker 1  25:04  
+Don't even know if there's a way to take off the site right for you guys. So and when did you created that? It was set period when you said it did.
+
+Unknown Speaker  25:18  
+It did it log that?
+
+Speaker 4  25:32  
+Yeah, site one, yep. But I mean, when, when they're being created? Because this was created, you know 425, so not too long ago, I was curious, like, Can they even be created without a site attached?
+
+Speaker 1  25:50  
+Oh, yeah, if you just kick click that plus button, yeah, and create them, then they're created.
+
+Unknown Speaker  25:57  
+You have to set the site. I
+
+Speaker 4  25:59  
+just didn't see it on anything on here.
+
+Unknown Speaker  26:06  
+But I
+
+Speaker 4  26:11  
+let's see I'm on one. He's bought, he's bought. He He's taken things off the app before, which I thought was weird. So that kind of tells me, like he had to have the site attached, right if, I mean, how else would he be able to book a job?
+
+Unknown Speaker  26:27  
+Yeah, you'd think
+
+Speaker 4  26:30  
+unless, because this was before we pushed Deb. So I don't know, you know, I don't know. Seems just it was weird to me.
+
+Speaker 1  26:41  
+Yeah, I'm not sure. I'd have to have some type of idea of, you know, something, maybe something that really has nothing to do with site was being done, and it cleared the site for some reason because of a bug. But I'd have to know. I'd have to know kind of what was being done, or, you know,
+
+Speaker 4  27:06  
+well, I'm not sure, yeah, I don't know. But then it brought me to my next question, which was, is there a way, because I was trying, is there a way to filter or search for officers either missing one of these, like key or, you know this, particularly, you know job settings, and if they aren't attached to a site.
+
+Speaker 1  27:33  
+So not attached to a site is easy. You just go into fine mode and put a equals.
+
+Unknown Speaker  27:39  
+That's right there. Equals,
+
+Unknown Speaker  27:48  
+so if I put equals, it'll just give me
+
+Speaker 1  27:50  
+Yeah, but you're not in the site thing, so it
+
+Speaker 4  27:53  
+doesn't Oh, I know, oh and i Yeah, okay. Because I was trying zero, I was trying the this, so there are more the
+
+Speaker 1  28:01  
+opposite that finds ones that definitely have something in there. Asterisk means, so search with the
+
+Speaker 4  28:10  
+equal sign. I can do that, okay, and then, but not
+
+Speaker 1  28:13  
+for check boxes. That's a little harder. Yeah, you can go into find and then check, you know, traffic or something, and search for people that do have traffic. But searching for blank in a check in a box field like that is not really you could it's a little more advanced, but you could go into find mode, go up top. So go ahead and define mode, yep, up top, near the middle where it's saying match records include down on the little black and gray bar, yep. Switch that to omit, and then select, say traffic. So and then he continues. So now it's omitting everything that has a traffic, and these are just the ones that do not have traffic set to on file.
+
+Unknown Speaker  29:09  
+Oh, what? I know, I know it's just thinking,
+
+Speaker 1  29:14  
+yeah, you hit sort, you clicked on one of the headers. So it's trying to sort site.
+
+Speaker 4  29:18  
+Yeah. It's interesting. Okay, thank you. I that that's helpful. I can do that. Let's see job count by day. I feel like you were possibly working on this when I was testing it today, maybe not, but at this point it said, like, instead of the wrong customer, just said customer name. So, I mean, I feel like it was getting there, but just not quite there, okay. Oh, and then I was, I know, I've already talked. About this, but I was just wondering when the officer notes icon would be added to the the report, the pay report,
+
+Unknown Speaker  30:11  
+um, I,
+
+Speaker 1  30:15  
+I'm trying to get around to more of this stuff. I'm I know. I know. Yeah, I've been doing pretty much all project management every day. I know, yeah, trying, trying to, you know, get those things. And I do have them moving, but, yeah, it takes a lot. It is still on my list. I still do know that we want this done. Awesome. Mean, we already
+
+Speaker 4  30:49  
+went over this. I don't want to sound like a broken record, but the contact still not being recorded. And then there was
+
+Speaker 1  31:01  
+the contact on a record? Yeah, re read, yeah.
+
+Unknown Speaker  31:06  
+Oh, this is on job location.
+
+Speaker 4  31:08  
+This is, yeah, I'm sorry, on job location. The only thing I found that doesn't get included in here is when I change the contact,
+
+Speaker 1  31:18  
+okay, well, yeah, no, I I added it to the recurring job level. That's what was, oh, last time, or at least that's what you were showing me.
+
+Speaker 4  31:28  
+Yeah, this one still has its own. It's not an issue. It's just interesting, because any change I make gives me four, and two of them are blank for new value. I know
+
+Speaker 1  31:42  
+how you make a change, or anytime you make a change, and then hit Refresh All
+
+Speaker 4  31:46  
+any time I make a change, I'm trying to think of what I changed this last time was, I think all I did, oh, I just put something in internal notes. So all I did was change the internal notes, and it still just gives me four of them, and two of them have sorry, maybe. What were you gonna say?
+
+Speaker 1  32:09  
+I was just gonna say so you didn't hit Refresh All to push those notes or or the refresh button there beside the notes.
+
+Speaker 4  32:19  
+Yes, I did. I had to. I would have had to, yeah, I would have had to press that for
+
+Speaker 1  32:23  
+sure, that's basically, that's a refresh. All Okay, so I have a feeling that's what's doing it not because, not the making the change, but pushing the change to the related stuff. I can try to look at that, okay, but one thing at time, add, yeah, sorry, Add primary contact
+
+Unknown Speaker  32:47  
+to mod log
+
+Unknown Speaker  32:54  
+at job location level.
+
+Unknown Speaker  33:04  
+IT jobs getting multi
+
+Unknown Speaker  33:24  
+mod logs, when refreshing
+
+Unknown Speaker  33:33  
+say, when pushing
+
+Speaker 1  33:36  
+to job assignments, okay? Okay.
+
+Speaker 4  33:44  
+And then just kind of circling back to something we had talked about a few weeks ago on the reoccurring job detail level, or Yeah, right here. And this was pulling QB name, and we had, you had asked if we wanted it to stay QB name or change the first and last. I'm curious. Is there anywhere else that has QB name in that officer area?
+
+Speaker 1  34:12  
+Um, I believe so. I don't know. I mean, obviously the officers detail record, sure, yep.
+
+Speaker 4  34:27  
+Or can you think of any benefit to having the QB name in that spot?
+
+Speaker 1  34:32  
+No, I can't think of having the QB Okay, anywhere being a good thing, really, okay, right there on the detail record, because Laurie needs it for pushing to QuickBooks.
+
+Speaker 4  34:43  
+But yeah, okay. So I was just, I know I told you, I think about it, but I couldn't think of anything either, and I just figured to stay consistent. And this no rush on this one gets it doesn't really bother us. But just for consistency, i. Is putting this keep changing this to first and last name instead of qB. I know I told you a long time ago to have Qb, but now that most more things are updated, I think eventually switching it would be good. I just want to follow up on that. Yep, I it.
+
+Speaker 4  35:36  
+Let me know when you're ready. Ready, okay, and last, but last thing is, I mean, I know that you've been really busy with, you know, putting things together with the FRP and then project management. So I was just, if you want to, maybe, I don't know if it'd be more helpful if, if you give me times for the BFL, for for Sean, and the dashboard collapsing, because I, you know, it doesn't really matter me. I'm always, I'm here, you know, a lot, but just putting on your schedule if you want to let me know when would be a good time or week.
+
+Speaker 1  36:10  
+I'm, I'm pretty good most, most days. I mean, I'm doing a lot of, like said, project management, documentation and such, but I'm, I'm not doing a ton of meetings, which means, you know, I can help you out kind of whenever I'm working,
+
+Unknown Speaker  36:30  
+okay
+
+Speaker 4  36:31  
+with me. I mean, the only day Sean is not here is Mondays,
+
+Speaker 1  36:35  
+if that helps. I mean, I'm I'm fine tomorrow. I'm fine Thursday, okay, I've just had team meeting Thursday at 9:30am your time. Other than that, I've got nothing the rest of the week so far.
+
+Speaker 4  36:50  
+Okay, do you want me to just like, email you in the morning.
+
+Speaker 1  36:54  
+Yeah, email me pick a time, and we'll jump on Cool.
+
+Speaker 4  36:59  
+Well, that, I believe that's all that I had that's not carry over Okey dokey. Yeah, I did.
+
+Speaker 1  37:14  
+I have in here that I added on the officer screen, officers detail screen, I added their address. Okay, so when you change their address, it should log that I added the primary key, which is what you'll see in those mod logs to almost every detail screen. You can see it right there. The job ID is 7262, so you can't change that, but you can find based off of that. And I added that to job location officers site. I added them to all the major detail screens. So if you, if you're looking at a mod log, and it's just giving you some number, you know, you can, you can copy and paste and find that way. That's what we doing in the background. So that is the primary key I have when opening the agency select screen. It drops the cursor directly into agency name. Saw that I've got that. Then I think I took another stab at clearing on hold when doing bulk assignments.
+
+Speaker 4  38:29  
+Yes, I did see that too, all three of those I saw, and I'm I'm going to test the bulk hold one more time. I only had one time where it like switched back, and I don't know why it did it, so maybe it was something I did. But the other two I tested and and took off my list, or at least unpiloted them.
+
+Speaker 1  38:48  
+Okay. And the last thing I have is adding name and contact, name and phone number to all the different ways that you can send out the job description stuff.
+
+Speaker 4  39:02  
+Oh, yeah. So I tested that too on agency at least sweet, yeah.
+
+Speaker 1  39:10  
+Other than that, I've been writing documents and making flow charts. So yes, it I've made the you know, flow charts and structure charts that I sent you, and I've been making other ones to make our developers jobs easier, because some of your processes here are not the you know, most straightforward. So I've been making a lot of flow charts to try to make sure that my developers know what we need. And I did add to Jake's Trello card on the release job a flow chart of when the release job should show or hide. If you get a minute, if you could look at that and tell me,
+
+Unknown Speaker  39:54  
+you know I did, do you agree? What did it look good?
+
+Speaker 4  39:57  
+I think I was that like either me. Last week or the week before? Yeah, yeah, it did. I did read that and it did look good. That looked accurate.
+
+Speaker 1  40:08  
+So that's probably what we're going to be handing to Jake, or whoever does that. We have acquired some time with two new subcontractors that both worked at FM better forms, and now no longer do, which is perfect for FM better forms development. We don't get a lot of time with them because they are doing other things. They're they're kind of freelancing, so I think we tend to get about 10 hours a week out of each but they're going to be looking into some of these small, hard to figure out problems that we don't want Jake using his time on, because Jake is full forward on your native app.
+
+Unknown Speaker  40:53  
+So I will pass this kind of stuff to them,
+
+Speaker 1  40:58  
+and then I am waiting for Jeremy to finish something else, a different project we're trying to get wrapped up, and he will be getting started soon on the job creation in the agency app. So that's going to be the next new feature there. And maybe once he does that, I'll get him looking into issues too, but I want that is on the list of what we want primary development to be. So that's what I'm going to get him to work on first, and that the flow of that will generally go through the flow chart that I sent you guys for your RFP, but the one I have for him is a little more complex, but nevertheless, in general, it will go through that process. The one I sent you guys is just one little square that says, you know, pick all your settings for your job. Here, it's a lot more complex than that for the developer.
+
+Unknown Speaker  42:06  
+So that will be that.
+
+Speaker 1  42:10  
+All right, that's all I've got. Anything else from your side? Ashley, Joe, Amanda, no,
+
+Speaker 2  42:18  
+I think, I think we're good right now. Brian, already reached out to Tom. I know Tom has a meeting with Jeff tomorrow, and I think once they connect, they're going to reach out to you from there. So just give you a heads up, but it will be sometime this week that they're going to reach out to you. I don't know when exactly, but Jeff's a little tougher nailed down, so I'm hoping they can knock that out relatively quickly.
+
+Speaker 1  42:38  
+Yeah, because he's going to need to talk to Jeff to get the to get any DNS names and pointers, and then for the SSL certificate. I don't know if you've got to get a new one for AWS or not, but I don't think you do, because it's by DNS domain. Shouldn't have to, but we'll see. Jeff would know better than me,
+
+Speaker 2  43:04  
+yeah, so at least you're getting a heads up on that. And I think, I think that's all we got for right now, other than Happy Birthday, Brian, we have no clue.
+
+Speaker 5  43:12  
+Yes, happy birthday. Yeah. Big deal.
+
+Unknown Speaker  43:17  
+An old, aging cancer here working another day.
+
+Unknown Speaker  43:28  
+As for my astrological side, I don't have cancer.
+
+Speaker 2  43:34  
+Yeah, I think we're I think we're good, unless, Amanda, you have anything on your
+
+Speaker 5  43:38  
+end, you guys covered everything I was I was following along and marking it off. So we're good.
+
+Speaker 1  43:44  
+Glad we covered anything. And you know, please try to get a hold of me earlier. The better is if you need anything else for me for that RFP, before you turn it in tomorrow.
+
+Speaker 2  43:54  
+Yeah, absolutely. We appreciate it. Brian, go enjoy your birthday. Get out of here.
+
+Speaker 1  43:58  
+Yeah, I'm gonna go watch tweens play volleyball, I guess.
+
+Speaker 5  44:03  
+Just don't watch Jurassic Park, okay? Because it's a waste of money and it's horrible stuff.
+
+Speaker 1  44:09  
+No, I'm waiting for the new Naked Gun remake comes out first.
+
+Unknown Speaker  44:17  
+That is all I'm waiting for. As far as
+
+Unknown Speaker  44:21  
+I have no drastic part, guys. I
+
+Speaker 1  44:23  
+probably will, yeah, what is it like? $50 to go to the movies and get some popcorn and stuff.
+
+Speaker 5  44:31  
+So, yeah, basically you have 60 for food. Yeah, yeah.
+
+Speaker 1  44:35  
+All right. Well, everybody, have a great day and I'll talk. I'm sure it won't be next week before I talk to you again. But okay, all right,
+
+Unknown Speaker  44:45  
+bye, everybody. Bye.
+
+Transcribed by https://otter.ai

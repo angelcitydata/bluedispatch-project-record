@@ -1,0 +1,1111 @@
+Unknown Speaker  0:00  
+Risk.
+
+Unknown Speaker  0:02  
+Well, thank you. I just like to count.
+
+Unknown Speaker  0:06  
+Definitely count. We've started a recording. Okay,
+
+Unknown Speaker  0:12  
+for standard I'll do quick update, or as quick as I can.
+
+Unknown Speaker  0:18  
+So we did soft open Friday, meaning the app was published. The app is on the App Store,
+
+Unknown Speaker  0:29  
+both on Apple and Google, so Android and iOS,
+
+Unknown Speaker  0:33  
+you can download
+
+Unknown Speaker  0:36  
+and then
+
+Unknown Speaker  0:39  
+we put up
+
+Unknown Speaker  0:42  
+a an update that was approved,
+
+Unknown Speaker  0:46  
+yes,
+
+Unknown Speaker  0:48  
+so you could download, we're now at 1.5 point oh, it was some little things here and there. Mostly the notifications weren't part of the one point 4.7 that was originally approved and pushed up. So the notifications are the big new feature that's attached to the to the 1.5
+
+Unknown Speaker  1:10  
+release,
+
+Unknown Speaker  1:14  
+because we had that in 149
+
+Unknown Speaker  1:16  
+but 149 wasn't pushed, you know, out the store to the public, right? Right? So it was part of 1.5
+
+Unknown Speaker  1:26  
+that's been up and working. I'm doing some tests, but mostly right now I am writing up a test plan for you,
+
+Unknown Speaker  1:35  
+or anybody on your side you'd like to run through the test plan of the app.
+
+Unknown Speaker  1:43  
+Hopefully I can get that wrapped up and sent out tomorrow
+
+Unknown Speaker  1:47  
+before in the day. Tomorrow, I am all Thursday and Friday, and Thursday is Christmas, and I am also out Friday. Jake is out today and the rest of the week, we're both back at it Monday.
+
+Unknown Speaker  2:04  
+So we'll be doing
+
+Unknown Speaker  2:07  
+a lot of the server testing and repointing servers, and try to get us and, well, basically get real, real tests, meaning the live version of the app,
+
+Unknown Speaker  2:21  
+meaning the live version of the app
+
+Unknown Speaker  2:23  
+connected to your production server connection, connected to the production Linux API server. So we will try to coordinate with you when we do that, because the data is going to be live. You know, in your live production world, make that switch for,
+
+Unknown Speaker  2:44  
+I don't know, however long it takes us to run a couple tests, you know, maybe an hour or so.
+
+Unknown Speaker  2:50  
+And then we'll switch it back to pointing at Dev.
+
+Unknown Speaker  2:54  
+Okay. We may do this twice, depending on if we find something that we need to, you know, look at.
+
+Unknown Speaker  3:00  
+But otherwise, we should just need to do it one good time.
+
+Unknown Speaker  3:05  
+I don't see any issues, but
+
+Unknown Speaker  3:08  
+I feel stupid going live without testing these digital server. You know, I guess that string of events that's supposed to happen. So we are definitely going to test that live. And then, yeah, it's, it's head on, just
+
+Unknown Speaker  3:25  
+testing and maybe messing with anything that you know the tests find that needs to be changed or fixed. And we're still right on path for the real go live January 16, which realistically, all we have to do is make accounts, you know, turn on accounts, and people will be able to sign in. Yep,
+
+Unknown Speaker  3:50  
+alrighty, um, I
+
+Unknown Speaker  3:52  
+think that's pretty much what I have. I did see your, at least the first item on your agenda the clock in and it clocked you out. It's, it's not every time, though, that's the weird part, like, and I'm not forced closing. So I'm not sure what's triggering it to clock me out. Yeah, I don't know. I'm currently clocked into one right now. I've been clocked in for an hour and 38 minutes. It says I'll continue with this one for a while. I might try. I've actually had it happen once to me once, and I couldn't recreate it, and wasn't sure exactly what chain of events caused it.
+
+Unknown Speaker  4:34  
+So I think I know. So it happened to yesterday, which is that snapshot that I showed you, where you can literally see me clocking in twice,
+
+Unknown Speaker  4:43  
+and then today that I took a job this morning, and it did the same thing.
+
+Unknown Speaker  4:51  
+Now I was it was open in the background, but I was doing other things on my phone, so I don't know if that had anything to do with it. But then.
+
+Unknown Speaker  5:00  
+And after I clocked out of that job, took a different job.
+
+Unknown Speaker  5:04  
+That one kept me clocked in the entire time. So I don't know what could be. Then the other thing I need to check on that I haven't been able to is talk to Steve. Steve has been doing pointing servers, repointing service, we only had one Linux API server before. Now we have two, because we wanted a dev version, you know,
+
+Unknown Speaker  5:27  
+and a live version. So he's been, you know, repointing that stuff and clearing his little database since, and doing a bunch of that type of stuff at the end of last week and yesterday, at least, I know, I don't know about today.
+
+Unknown Speaker  5:42  
+So I'm wondering if this has happened when you know when he's messing with something in the middle of that. Yeah, I'm I would think so,
+
+Unknown Speaker  5:53  
+because I can't recreate it perfectly.
+
+Unknown Speaker  5:57  
+I'm going to go with that until
+
+Unknown Speaker  6:01  
+if it keeps happening during our testing after Christmas and definitely the first week of January, then we know it's something we absolutely, you know that's absolutely a problem, because we should be done making server changes about them, except the repointing for testing. But other than that, those windows when we're doing that we should be done with the server, crazy stuff that would cause something like this. I'm sure he's gonna want to clear his database once or twice before we're finished, and definitely the day before, you know, that'll be the thing. We'll clear the database and get it completely ready to go live.
+
+Unknown Speaker  6:41  
+You know the day before, yeah, okay, that kind of makes sense. The one that I had also this morning. So I went to clock in to it again, and it said it was inactive. So I just removed myself from the job.
+
+Unknown Speaker  6:56  
+But it wasn't leaving my job area.
+
+Unknown Speaker  7:00  
+And it kept saying, trouble fetching job. That's the only time I've ever seen that happen. But that was the same one that it clocked me out of. So it very well could have been like, server, weird server, stuff going on in the background. He okay, but I don't know. I haven't talked to him today.
+
+Unknown Speaker  7:22  
+You know, absolutely, when you see them, write down what you were doing, take screenshot, you know, with your phone.
+
+Unknown Speaker  7:29  
+You know, let us know, because we want to, we do want to chase down any, any problems, yeah, okay, yeah, that's just what I've been doing. Is just trying to test different, every different scenario that I can think of
+
+Unknown Speaker  7:42  
+the
+
+Unknown Speaker  7:43  
+other thing I noticed is the
+
+Unknown Speaker  7:47  
+so I clocked in and out of the one today, the afternoon one, but I've not seen any of my I'll log in here really quick. Any of my pins, and I know my locations on otherwise I wouldn't be able to use the app,
+
+Unknown Speaker  8:04  
+not seeing your pins, yeah? Like my clock in, clock out,
+
+Unknown Speaker  8:09  
+anything in between
+
+Unknown Speaker  8:12  
+your screens, not sharing if you think it is. Yeah? Nope, I know. Sorry. I was trying to log in real quick.
+
+Unknown Speaker  8:21  
+I
+
+Unknown Speaker  8:24  
+um,
+
+Unknown Speaker  8:26  
+this was the one.
+
+Unknown Speaker  8:38  
+Oh, it should have pinned. And also, when I clocked in, and when I was like, in the job, you could see it had the pin, like, this is where you started, or something like that. And it was like, right around here. But when I clocked out,
+
+Unknown Speaker  8:52  
+I don't have any information here,
+
+Unknown Speaker  8:58  
+second once, this was the 23rd so today, yeah, I tested it yesterday, and I also had the same result where I couldn't see my, you know, clock in, clock out, pinpoints,
+
+Unknown Speaker  9:11  
+cow town range.
+
+Unknown Speaker  9:13  
+No, that was my morning job, do the bell and reams.
+
+Unknown Speaker  9:19  
+That one, I know, was successful. That's this top one. That was the one I was having issues with this morning. I don't see a Oh, Bell and reams. Yeah, there you go for fake blue ink.
+
+Unknown Speaker  9:40  
+Doo doo doo doo doo doo doo
+
+Unknown Speaker  9:53  
+go see
+
+Unknown Speaker  9:56  
+if we got a location key. I.
+
+Unknown Speaker  10:04  
+We do not, and
+
+Unknown Speaker  10:07  
+you definitely clocked in and out, both in and out from the app. Yes, I did, yep,
+
+Unknown Speaker  10:14  
+you can tell, because it's the data user, but I definitely did it on the app. I just thought it was weird,
+
+Unknown Speaker  10:21  
+and it happened to be yesterday too. Doesn't have the look, yeah, it doesn't have the location. So that's the I get a token of this just as long as and letters that lets the system know where on s3 it is. And I don't have it for that job, which the maps
+
+Unknown Speaker  10:38  
+definitely not going to work without that, because that's where it gets that big, long list of coordinates. List of coordinates. Sure get that. But you know right when you clock in on the app, and then on your app, you can see the the green pin. So I know it. It knew where I started clocked in at. That's just because the app knows. Doesn't mean file maker knows until you clock out. It doesn't send anything to the API. It just lives on your phone until you clock out. Gotcha.
+
+Unknown Speaker  11:09  
+Otherwise it would,
+
+Unknown Speaker  11:13  
+it would be, you know, just more and more calls and calls coming from the phone, right? Um,
+
+Unknown Speaker  11:21  
+it's weird, though, where is what am I looking for? Okay,
+
+Unknown Speaker  11:25  
+I've got a job number or job ID, so with that, I can
+
+Unknown Speaker  11:32  
+talk to Steve and see what happened. Okay, do
+
+Unknown Speaker  11:51  
+me, oh, are you still writing something, mumbling so that you know, yep, oh, wait. Do
+
+Unknown Speaker  12:03  
+cool, okay, okay, the the Contact Us that where you can email us.
+
+Unknown Speaker  12:11  
+Is that turned off right now, or is it just not redirecting to our info at Les email? I know you might not know the
+
+Unknown Speaker  12:21  
+thing about the emails, but you might be able to tell me if it's just turned off.
+
+Unknown Speaker  12:27  
+The contact les button in the script, I mean, in the app, Yes, yep, that just opens your email and makes a yes email to info at Blue dispatch.com what's happening with info at Blue dispatch? Calm, I don't know. You'd have to talk to Jeff. Okay. Okay, I was, I was told at one point, I don't think it was from you, though, that they were just being, like, redirected to Les, the info at Les. But I tested that and it did not come in. So I wasn't sure. Wanted to make sure that
+
+Unknown Speaker  13:03  
+it was still functional to do with us. Yeah, okay,
+
+Unknown Speaker  13:08  
+no worries.
+
+Unknown Speaker  13:12  
+Really, the app just calls the mail it app on the on the phone and says, you know, here's the body and the subject and the to address kind of thing so it doesn't really know what happens to it from there.
+
+Unknown Speaker  13:27  
+Gotcha, okay, control over what happens from there.
+
+Unknown Speaker  13:32  
+I guess I'll get with Jeff on that, or Joe, yeah,
+
+Unknown Speaker  13:37  
+access, either get them to redirect forward or get access to info at Blue dispatch.com yep, that's
+
+Unknown Speaker  13:47  
+what it's going to be. Because we're right. We've got a no reply at Blue dispatch.com that we're setting up to send a notifications, email notification, you know, everything's everything around the app in the system should come and go to Blue dispatch, calm,
+
+Unknown Speaker  14:04  
+make yourself a nice brand there.
+
+Unknown Speaker  14:07  
+Gotcha, yeah, so we'll need to do that soon, yeah. Otherwise, we won't get anything
+
+Unknown Speaker  14:15  
+the other Oh, this part, this is kind of weird. It'll be weird to explain also so my past jobs? Yep,
+
+Unknown Speaker  14:25  
+it kind of updated
+
+Unknown Speaker  14:28  
+since earlier today and yesterday. So, for example, yesterday, like it was saying that my last job was April 8, 2025,
+
+Unknown Speaker  14:37  
+and all of my hours were zero, which is not true.
+
+Unknown Speaker  14:42  
+But then I noticed today my
+
+Unknown Speaker  14:47  
+my, let's see, my most recent job was, you know, the December 23
+
+Unknown Speaker  14:53  
+and my hours are there, but I clocked out of that bell and rooms one, and it went.
+
+Unknown Speaker  15:00  
+To the top, and it still says, I
+
+Unknown Speaker  15:03  
+wonder if I should take a picture of this. But, you know, Thursday, April 3, 2025, fake blue na to NA, zero hours, zero miles.
+
+Unknown Speaker  15:14  
+Just kind of
+
+Unknown Speaker  15:16  
+weird,
+
+Unknown Speaker  15:19  
+like I don't I don't know how else to explain it.
+
+Unknown Speaker  15:24  
+It's better than it was earlier, because earlier, my most recent job was April 8 of 2025,
+
+Unknown Speaker  15:31  
+and I kept saying na to NA, which is the timeframe, yeah, and then
+
+Unknown Speaker  15:42  
+no. Hours, no miles, jobs too. It's weird, but I don't know. So something did happen within the last two hours, maybe three, where it updated, at least
+
+Unknown Speaker  15:56  
+it's more accurate right now,
+
+Unknown Speaker  15:59  
+but the very top being like the very, very top one, Thursday, April 3, 2025
+
+Unknown Speaker  16:06  
+and then after that, it's Tuesday, December 23 2025
+
+Unknown Speaker  16:13  
+well,
+
+Unknown Speaker  16:15  
+that
+
+Unknown Speaker  16:18  
+shouldn't be True. Might be closer than you think, because sometimes when,
+
+Unknown Speaker  16:24  
+when he wants to clear his database, Steve does I quote, unquote, clear our side, which really means I go clear the officer, clear the booking from a bunch of jobs
+
+Unknown Speaker  16:39  
+so that we don't get mismatching and they keep in sync. But I doubt I deleted
+
+Unknown Speaker  16:46  
+that many, you know, that big of a time span,
+
+Unknown Speaker  16:51  
+yeah, well, I don't think that they were
+
+Unknown Speaker  16:55  
+see. I want to see if that even matches up at all. There
+
+Unknown Speaker  17:01  
+it is. I just don't know why this one is at the top.
+
+Unknown Speaker  17:05  
+Oh, oh, I remember when that happened. That was a canceled job, though, that doesn't make sense.
+
+Unknown Speaker  17:15  
+I have no idea.
+
+Unknown Speaker  17:18  
+I'm looking at mine. I've got this one
+
+Unknown Speaker  17:22  
+does have zero hours worked on my on the database side too.
+
+Unknown Speaker  17:29  
+I guess I never actually finished that one. I don't know how that one is completed.
+
+Unknown Speaker  17:37  
+I'd have to look, oh no, is we're completed to zero. So why is it showing it okay?
+
+Unknown Speaker  17:43  
+And like this one,
+
+Unknown Speaker  17:47  
+yeah, like, so this one, this December 17 one, it's in my past jobs,
+
+Unknown Speaker  17:55  
+but I'm not sure why it's it's also most of mine. I don't know.
+
+Unknown Speaker  18:02  
+Okay.
+
+Unknown Speaker  18:05  
+One thing I haven't checked yet is like, seeing what, yeah, and I haven't checked because I know I felt like someone was weird with the past jobs, but seeing if, like, the cancelations, you know, show up correctly, the C fours and, yeah, C sixes.
+
+Unknown Speaker  18:22  
+But I will see sixes. They need to see
+
+Unknown Speaker  18:25  
+those they get paid for. So a c4 would be a cancelation that they actually get paid for, and a c6 also is one that should be in past jobs. Just those two, though
+
+Unknown Speaker  18:39  
+C fives do not because we charge the customer, but the officer doesn't get paid
+
+Unknown Speaker  18:45  
+four and six. But I'll test that
+
+Unknown Speaker  18:49  
+soon. As soon as you know, this looks a little more
+
+Unknown Speaker  18:53  
+accurate. It's better, though, than it was earlier. So I'll give it that.
+
+Unknown Speaker  18:58  
+Let's see.
+
+Unknown Speaker  19:01  
+Oh, um, well, we have,
+
+Unknown Speaker  19:04  
+we have, yay,
+
+Unknown Speaker  19:06  
+you're welcome. Merry Christmas, yeah, sorry, um, let's see clocked out. Oh, the job name. Now the job name, oh, sorry, oh, wait card for that. I put you on
+
+Unknown Speaker  19:21  
+it
+
+Unknown Speaker  19:24  
+just today, though, so don't feel bad for not seeing it.
+
+Unknown Speaker  19:28  
+Oh, no, I did see it, actually. You said that this morning. Yeah, I was curious, though. So you know, you said that that's what they'll see on the web app.
+
+Unknown Speaker  19:40  
+No, the job name is what they'll see on the native app. The actual address is what they see.
+
+Unknown Speaker  19:47  
+Okay,
+
+Unknown Speaker  19:51  
+so I'm wondering, so back when it was in dev, or I know that I'm in dev right now, but you know, like you couldn't search here, and you couldn't read.
+
+Unknown Speaker  20:00  
+Write it, yep, but now you can, because now you can. So I'm wondering,
+
+Unknown Speaker  20:07  
+the problem is, I need you to be able to to change that for now, because they can't, because that's what they see on the web app.
+
+Unknown Speaker  20:17  
+I want to cut that off again, like it was for in dev, so that you can't click into the street and city and stuff. But we can't do that until we bring the web app down.
+
+Unknown Speaker  20:32  
+This is, this is what they'll see in the native app, correct.
+
+Unknown Speaker  20:38  
+Okay, so for the time being, they're just, we're just gonna have to get like you. You may have to type it in three times, yep.
+
+Unknown Speaker  20:46  
+And then when we get all switched over, then they'll pin it, type it,
+
+Unknown Speaker  20:53  
+and that's, you know, pin it,
+
+Unknown Speaker  20:56  
+okay.
+
+Unknown Speaker  20:58  
+And then they'll
+
+Unknown Speaker  21:00  
+Yeah, that address the street, city and stuff will come from the map, wherever you pin it. But it's not actually doing anything but giving you something to look at. God, okay, cool.
+
+Unknown Speaker  21:17  
+Oh, now this only happened one time, and I cannot recreate it. I don't know how that happened. If you don't have video proof it didn't happen. Well, I gotta sniff
+
+Unknown Speaker  21:29  
+it, yeah.
+
+Unknown Speaker  21:31  
+So where was it? Okay, so Christine typed in, she pinned it,
+
+Unknown Speaker  21:36  
+and she hit save. Let me bring this over. Sorry. So she, you know, clicked here, typed in rural and baseline, saved it as she pinned it, and it came up street Tempe.
+
+Unknown Speaker  21:50  
+Was super bizarre.
+
+Unknown Speaker  21:53  
+I tried multiple addresses. It probably didn't know
+
+Unknown Speaker  21:58  
+if you were using the pin mechanism. Yeah, it,
+
+Unknown Speaker  22:03  
+it may not know, because where you drop the pin, it may not know it's a street, or you may have put it exactly at the intersection, and it just goes, hell, I don't know. Well, she typed in rural and baseline, and then, you know, like, selected it from that drop down, selected from the drop down. Oh, yeah. And it gave her Tempe as a street name, obviously, we wrote over it, but that's the only one that's done that. I just thought that was have to talk about that. Okay, well,
+
+Unknown Speaker  22:35  
+okay, I guess notoriously easy to deal with their customer service I can imagine, yeah, can imagine,
+
+Unknown Speaker  22:45  
+get back to my gender, already
+
+Unknown Speaker  22:53  
+talked about that.
+
+Unknown Speaker  22:55  
+Oh, this was weird. Okay,
+
+Unknown Speaker  23:00  
+which one was that?
+
+Unknown Speaker  23:06  
+This one? Okay, so
+
+Unknown Speaker  23:10  
+UTC, time Correct?
+
+Unknown Speaker  23:15  
+Um, that no, that should be what it thinks the job location time is,
+
+Unknown Speaker  23:23  
+if that's even weirder, because the reason why I asked was I clocked out at 859, and at first I was like, oh, that must be UTC time. But I'm like, No, that's not minus seven. That doesn't make any sense.
+
+Unknown Speaker  23:38  
+But that's the time I clocked out so and this is in Peoria, Arizona, so That's even weirder.
+
+Unknown Speaker  23:47  
+Can you click on the little arrow that goes to the job location? Sure.
+
+Unknown Speaker  23:57  
+Okay, you do picked on there. Yeah. Yeah.
+
+Unknown Speaker  24:02  
+Is this in dev or broad Dev? Oh, so Dev is, yes, it's seven hours behind you because, remember, it thinks the server is UTC, but the server is not. The server is in Phoenix time. So it's taken the offset, which is seven hours. That's not seven hours
+
+Unknown Speaker  24:24  
+from 859, 59 minus seven is one, yeah, oh,
+
+Unknown Speaker  24:30  
+okay, so then my
+
+Unknown Speaker  24:33  
+converters,
+
+Unknown Speaker  24:36  
+so I have to add seven.
+
+Unknown Speaker  24:39  
+Oh, sorry,
+
+Unknown Speaker  24:42  
+yes, if you want to get because this is just on dev, it'll show that will show 859, in 51 seconds
+
+Unknown Speaker  24:50  
+once we hit production. Because then it really is UTC the server really is UTC time.
+
+Unknown Speaker  24:59  
+And.
+
+Unknown Speaker  25:00  
+You so that clock in and clock out time is the offset hours
+
+Unknown Speaker  25:06  
+my or UTC time minus the offset hours in production.
+
+Unknown Speaker  25:13  
+Okay, the problem, the problem here is your dev servers is, is local time to Phoenix, not UTC, but the calculation is assuming that it's UTC time.
+
+Unknown Speaker  25:27  
+Okay, so once you go live, at least the Arizona ones will make sense, but yes, you're still going to have to do some math when you
+
+Unknown Speaker  25:38  
+when you deal with different states, no different time zones?
+
+Unknown Speaker  25:42  
+Yeah, that's fine. But is this gonna is this always in?
+
+Unknown Speaker  25:48  
+Let's see I'd
+
+Unknown Speaker  25:50  
+be able to answer that question here.
+
+Unknown Speaker  26:02  
+I So, oh, I guess I'll wait on the question, when will that switch over when we go to the native
+
+Unknown Speaker  26:10  
+or just when you when we go live? I mean,
+
+Unknown Speaker  26:15  
+well, I mean, it's, it's, yeah,
+
+Unknown Speaker  26:19  
+because right now, the native app isn't calling the production server, but the scripting is already there and ready the process.
+
+Unknown Speaker  26:31  
+Okay, this
+
+Unknown Speaker  26:40  
+is going to be confusing till the end, isn't
+
+Unknown Speaker  26:43  
+it just a little bit, but I'm sure we'll get the I'll get the hang of it. I just yeah, it won't, it won't matter a ton, you know, because once we go to production, it should be correct. But yes, right now, again, since it thinks your dev server is UTC but it's not it's going to be the offset of the current time there in Phoenix. So that's seven hours for you in Phoenix. Yeah, job that is set in that time zone will show seven hours behind when it really is.
+
+Unknown Speaker  27:22  
+Does this? Does this go to military time, if it was, you know, later in the day?
+
+Unknown Speaker  27:30  
+I believe it does. I'm pretty sure it does 9090,
+
+Unknown Speaker  27:34  
+something percent. I can check, yeah, I keep trying to test
+
+Unknown Speaker  27:39  
+it, but it's apparently I'm not late enough
+
+Unknown Speaker  27:45  
+ever. Yeah, it would have to be an o'clock at night, eight o'clock at night, your time. Yeah, I'll
+
+Unknown Speaker  27:52  
+try to remember that tonight.
+
+Unknown Speaker  27:56  
+Oh, sending notifications. Tried to send one to myself, it
+
+Unknown Speaker  28:02  
+wouldn't have worked until one point, until you download and install 1.5 point oh, I should have that though. Let me open your app,
+
+Unknown Speaker  28:12  
+go to Account app detail,
+
+Unknown Speaker  28:17  
+and it should set the top app version 1.5
+
+Unknown Speaker  28:22  
+I am 1.5 point oh.
+
+Unknown Speaker  28:35  
+Yeah, I saw, I mean, I know I saw you do it the other day. So I was like, Oh, I'm gonna test it. And then I was like, dang it,
+
+Unknown Speaker  28:43  
+that is in
+
+Unknown Speaker  28:46  
+dev. Yes, yes, because I don't think I've moved that functionality to prod yet.
+
+Unknown Speaker  28:55  
+I was in there, but I was closing it to go look at the time stuff and production. Sorry, I will go back. You move too fast, sister, all right, and I do. I've got a hard stop at the top of the hour. I'm fine. That means I got another 32 minutes, but I'm almost done. I only have one other thing on there. Okay.
+
+Unknown Speaker  29:18  
+Oh, two.
+
+Unknown Speaker  29:21  
+Dashboard.
+
+Unknown Speaker  29:24  
+Find a job to myself.
+
+Unknown Speaker  29:42  
+Just it
+
+Unknown Speaker  29:47  
+in here too. This is going to be a talk to Steve,
+
+Unknown Speaker  29:53  
+because that's where the problem is. When it calls there, it's not.
+
+Unknown Speaker  30:07  
+Time by looking at the script Run
+
+Unknown Speaker  30:18  
+a
+
+Unknown Speaker  30:30  
+back here.
+
+Unknown Speaker  30:39  
+Jason, ready,
+
+Unknown Speaker  30:44  
+that's correct.
+
+Unknown Speaker  31:13  
+He should have failed.
+
+Unknown Speaker  31:17  
+Okay, yep,
+
+Unknown Speaker  31:20  
+this is a talk to Steve like I said. He's been playing with servers and
+
+Unknown Speaker  31:25  
+doesn't look like I've got a good account token.
+
+Unknown Speaker  31:29  
+Okay,
+
+Unknown Speaker  31:32  
+last, well, almost last
+
+Unknown Speaker  31:38  
+job in really quick
+
+Unknown Speaker  31:56  
+okay?
+
+Unknown Speaker  32:03  
+I think so the next thing I'm going to show you, I think, is only,
+
+Unknown Speaker  32:08  
+the only issues are with a vehicle and the hold still doesn't work. It like half works if you take it on and off, yeah. But
+
+Unknown Speaker  32:18  
+only Okay, so you can see it,
+
+Unknown Speaker  32:22  
+but
+
+Unknown Speaker  32:24  
+I take it off. Would you like to refresh? Yes, I do.
+
+Unknown Speaker  32:31  
+Looks like it worked, but it doesn't actually take it off.
+
+Unknown Speaker  32:36  
+But if I can put it on and it works, it's just taking it off.
+
+Unknown Speaker  32:46  
+Well now if I refresh all it does work, but I just wanted you to see it looks the problem is like it just looks like it's going to be taking it off,
+
+Unknown Speaker  32:58  
+but it doesn't
+
+Unknown Speaker  33:03  
+uh, if you're going by the dashboard, then you would have to, like, refresh the dashboard screen to see it change there.
+
+Unknown Speaker  33:22  
+See it still doesn't take it off. The reason where it was, how I how we found it was, it just wasn't taking it off of the job assignment details, yeah,
+
+Unknown Speaker  33:38  
+see they're still they're both still clicked,
+
+Unknown Speaker  33:43  
+yes, ma'am, okay, and then
+
+Unknown Speaker  33:48  
+the last thing was Jasmine
+
+Unknown Speaker  33:53  
+emailed and said that they enabled another security software on the dev server, and I tested it, and I still got that green
+
+Unknown Speaker  34:03  
+good, you know,
+
+Unknown Speaker  34:08  
+this, sorry, green lock. Is there anything else that that you
+
+Unknown Speaker  34:14  
+I didn't know I like, changed sometimes, and like, put in a job just to, like, make sure it was, you know, staying and remembering it. But is there anything else that I should be doing
+
+Unknown Speaker  34:26  
+as far as testing the server?
+
+Unknown Speaker  34:32  
+No, not exactly. Well eventually, right being a hold of me so that I can do the the web and app
+
+Unknown Speaker  34:40  
+connection tests.
+
+Unknown Speaker  34:44  
+Okay, that's what I thought I just wanted to, yeah, just, I just want you to do something, basically the
+
+Unknown Speaker  34:52  
+with security changes being made, you're either not going to be able to, you know if they change something that that causes an issue, it's going.
+
+Unknown Speaker  35:00  
+To either be you can't connect, period,
+
+Unknown Speaker  35:03  
+you
+
+Unknown Speaker  35:05  
+maybe can connect, but the SSL certificate is red, meaning the Little Rock lock will be read and it's not encrypted properly, but it shouldn't let you connect, if that's the problem, and then another one
+
+Unknown Speaker  35:20  
+could be the connection user doesn't have access to change the files, to edit the files, so that's why I told you to connect and do some changes. Make a change or two, just to make the user still has read write access to the file.
+
+Unknown Speaker  35:38  
+Perfect. So that's pretty much what you can do. And then again, I have to test the, you know, the websites, web apps, and native app connection,
+
+Unknown Speaker  35:49  
+perfect. Okay, that's, that's what, that's what I did. So that's good. I just wanted to confirm that.
+
+Unknown Speaker  35:55  
+And then
+
+Unknown Speaker  35:58  
+that's all that I have Tom, did you have anything else to add?
+
+Unknown Speaker  36:05  
+No, I just basically, kind of what you were talking about on the server is that it should be ready to
+
+Unknown Speaker  36:14  
+push everything over to it. So I don't know what the plan is on that.
+
+Unknown Speaker  36:20  
+Okay,
+
+Unknown Speaker  36:21  
+I don't know for now,
+
+Unknown Speaker  36:25  
+to my knowledge, our plan is
+
+Unknown Speaker  36:30  
+finish testing and go live on the current server and then pivot to look into, you
+
+Unknown Speaker  36:39  
+know, any more testing we need to do on the second server and make that one production once that's completely signed off. That was the last time I spoke to Joe about it. That's where we were.
+
+Unknown Speaker  36:51  
+He's not here, so
+
+Unknown Speaker  36:54  
+no, but I sent an email saying that we would be done
+
+Unknown Speaker  36:58  
+with everything as far as Monday.
+
+Unknown Speaker  37:03  
+Yesterday,
+
+Unknown Speaker  37:05  
+okay, I don't know I talked to Joe last Thursday's, last time I've talked to him. So if there's been development, yeah, I think it was all that same day. I think it was all that same day that, yeah, I think he talked to you later after, because, of course, we need it this time. So,
+
+Unknown Speaker  37:21  
+yeah, I mean, we can, you know,
+
+Unknown Speaker  37:24  
+whatever Joe wants to do if there's been changes
+
+Unknown Speaker  37:29  
+Joe gives me, and we'll
+
+Unknown Speaker  37:32  
+adapt if we have to,
+
+Unknown Speaker  37:34  
+okay, because if we go live with the current server.
+
+Unknown Speaker  37:39  
+One, it has all those vulnerabilities on it to
+
+Unknown Speaker  37:43  
+there's going to be downtime correct to switch over to a new server.
+
+Unknown Speaker  37:51  
+Yes, there's, there's not much, but there is downtime.
+
+Unknown Speaker  37:56  
+Okay,
+
+Unknown Speaker  38:00  
+What's the ETA? If we do it that way, then what's the eta to push it over to the new server?
+
+Unknown Speaker  38:08  
+If, if we go,
+
+Unknown Speaker  38:11  
+I would say,
+
+Unknown Speaker  38:13  
+truthfully, in a matter of
+
+Unknown Speaker  38:18  
+a couple weeks, I guess it would be, I would,
+
+Unknown Speaker  38:23  
+I would like
+
+Unknown Speaker  38:28  
+a good month from
+
+Unknown Speaker  38:30  
+a month of no changes
+
+Unknown Speaker  38:33  
+on the server before we, you know, before we go live with it. So if that month starts now, then that's what a week after go live,
+
+Unknown Speaker  38:45  
+we could be prepared.
+
+Unknown Speaker  38:50  
+I doubt we'd want to do it that fast, because Bonnie's going to have to again. There's will be some downtime. So Bonnie's got to find when that's going to be and I'm sure there'll be some planning behind that.
+
+Unknown Speaker  39:04  
+Yeah, I don't think Bonnie's gonna be thrilled about there being downtime, you know, because when it's when's that gonna be, and that's gonna cost her,
+
+Unknown Speaker  39:13  
+you know, more money to do it that way.
+
+Unknown Speaker  39:17  
+Yeah, I
+
+Unknown Speaker  39:21  
+it may, you know, that's a that's a discussion we can all have. Because I think, I mean, correct me if I'm wrong, I don't know the when the least traffic is. But typically, if you're going to cause an outage, you want to do it when there's not that many people impacted, exactly. So that's typically going to be early, early weekend mornings.
+
+Unknown Speaker  39:45  
+So currently, have a, have an advantage being on the East Coast, because I can, you know, start it at seven o'clock my time, which is four in the morning there, which is probably what, that's what we've done in the past when we want downtime. Yeah.
+
+Unknown Speaker  40:01  
+Is I do it really, you know, first thing in the morning, my time, which is middle tonight, there in Arizona,
+
+Unknown Speaker  40:07  
+okay, well, I mean,
+
+Unknown Speaker  40:12  
+is it
+
+Unknown Speaker  40:15  
+having people work on the weekend? Is that going to be more of a financial impact?
+
+Unknown Speaker  40:22  
+Yeah, you it can be, usually our, our off times are, are more expensive per hour,
+
+Unknown Speaker  40:32  
+okay, unless we do an outage
+
+Unknown Speaker  40:36  
+during the week. I mean, I don't know. Is it like an like an hour, or is it, like, how long do you think the outage would be? Um, the
+
+Unknown Speaker  40:49  
+problem with an outage is, we, you always plan it to be, right, yeah. You always plan like, okay, there's not going to be any issues. But if there's something significant that happens, it could.
+
+Unknown Speaker  41:02  
+I mean, I've seen stuff that was like, Oh, we're gonna do this in 15 minutes. Yeah, five hours later, there's still offline. Yeah, that that definitely shouldn't be if we, if we move over and it work, we move right back. That's we just turn actually, because the reason for the downtime is we have to move the database while we do that. Repointing and moving the database means we can't have anybody on it, obviously. So that's why it's got to come down. So the time actually is the time it takes us to move it. Move those files from one server to another, because they're currently about the whole system together is like 17 gigs. I think
+
+Unknown Speaker  41:47  
+that's far from huge.
+
+Unknown Speaker  41:49  
+But if we had a good, fast, you know, robocopy, something process to go from one server to the other, that would be great, and it would take less time, because that's most of the time. I would say we need literally 15 minutes, 10 to 15 minutes outside of the moving of the files. That is by far the biggest variable in time.
+
+Unknown Speaker  42:16  
+So Ashley, to answer your question officially, I would usually ask for two hours if things go right, it's under 30 minutes.
+
+Unknown Speaker  42:32  
+Sorry, weird.
+
+Unknown Speaker  42:35  
+That is weird. Okay, that's, I mean, even two hours like downtime during the day when wouldn't be too bad. I don't think if it was early enough. And like I said, I could do it first thing in the morning my time, which makes it pretty much middle of the night for you guys. Yeah, once we hit about 6am
+
+Unknown Speaker  42:54  
+once we hit 6am our time, that's when a lot of jobs start.
+
+Unknown Speaker  42:59  
+I'd say that's like the first wave. That's when Becky gets on.
+
+Unknown Speaker  43:06  
+Yeah, man, I could probably start as early as you know, just after six. Would my time, which would be for your time? Yeah?
+
+Unknown Speaker  43:19  
+Okay. Do
+
+Unknown Speaker  43:30  
+so what do you need? What do you need from us? Are we just
+
+Unknown Speaker  43:35  
+anything,
+
+Unknown Speaker  43:37  
+not necessarily, unless the plan has changed. Like said, That's the plan that I am, you know, working and rolling forward with right now is going live with our current server
+
+Unknown Speaker  43:49  
+and and then moving to the
+
+Unknown Speaker  43:53  
+Pro two server
+
+Unknown Speaker  43:56  
+when we can, you know, sometime after go live,
+
+Unknown Speaker  44:01  
+like I said, it could be ready as quick as, you know, a week or so after go live, if we wanted it,
+
+Unknown Speaker  44:10  
+okay, so you just wanted a month that's no more changes, right? Yep, yeah, I need, I need to see, you know, backups happen, and all different types of connections happen and
+
+Unknown Speaker  44:23  
+and some stuff, you know, only runs once a week or something. So to get a couple iterations of it, you want it to be nice and stable, at least for a good month.
+
+Unknown Speaker  44:34  
+And
+
+Unknown Speaker  44:36  
+as of right now, there's no more changes that are that need to happen on the AWS too.
+
+Unknown Speaker  44:44  
+No,
+
+Unknown Speaker  44:46  
+I could verify,
+
+Unknown Speaker  44:51  
+okay,
+
+Unknown Speaker  44:54  
+so I can get,
+
+Unknown Speaker  44:56  
+I do have some files over there. I can take more modern.
+
+Unknown Speaker  45:00  
+Copies and push them over there,
+
+Unknown Speaker  45:03  
+and we can, you know, run whatever tests we need to run when, when we can we're not already testing the
+
+Unknown Speaker  45:14  
+the multiple environments we've already got
+
+Unknown Speaker  45:22  
+that would be that would be playing there.
+
+Unknown Speaker  45:28  
+Okay,
+
+Unknown Speaker  45:32  
+hello, sounds good.
+
+Unknown Speaker  45:36  
+Tom, I don't know if you saw or were looped in.
+
+Unknown Speaker  45:41  
+Steve did make yet another new server. So another Linux because we only had one Linux server, because we were just development. We, you know, we didn't have a production
+
+Unknown Speaker  45:52  
+so he's made, he made, actually the one we were using as developer, as development Linux server. He made that the pro that's going to be prod, and he's spun off a copy, you know, a new instance that's going to be our dev moving forward, once we've once we've gone live. Didn't
+
+Unknown Speaker  46:13  
+know anything about that.
+
+Unknown Speaker  46:16  
+So is that the what He wants us to do, all of our changes on and hardening of it,
+
+Unknown Speaker  46:22  
+I would say the dev one, probably I can, I can triple check that, but, yeah,
+
+Unknown Speaker  46:30  
+okay, we just need to get access to it. And that also reminds me when we started all this.
+
+Unknown Speaker  46:38  
+At some point, we were told it was going to be a Red Hat Linux and not an Amazon
+
+Unknown Speaker  46:45  
+iteration of Linux.
+
+Unknown Speaker  46:48  
+Yes, that's what they are. It should be no, they're Apple, or they're
+
+Unknown Speaker  46:53  
+AWS, not red hat. Oh, I didn't know about Red Hat, but I I knew they were AWS Linux. I thought that's what was planned. It
+
+Unknown Speaker  47:02  
+was not Red Hat.
+
+Unknown Speaker  47:04  
+No, we were, we were under the impression it was going to be red hat,
+
+Unknown Speaker  47:09  
+but there whatever AWS is, version of it is, yeah, oh, I bet you it's a highly configured version of Red Hat. Is probably what it is,
+
+Unknown Speaker  47:22  
+I don't know, because I know some of our stuff doesn't, isn't working well, well after, after, check with
+
+Unknown Speaker  47:31  
+Michael and Jasmine on that, because
+
+Unknown Speaker  47:35  
+they're asking me about it.
+
+Unknown Speaker  47:39  
+Yeah, they probably, I would think they'd,
+
+Unknown Speaker  47:44  
+you know, that most big tools out there would would have a setup for a, you know, AWS is Linux. It's got to be pretty common. But I can, I can ask,
+
+Unknown Speaker  47:55  
+I can ask Steve, you know, yeah. I mean, there's different stuff. I mean, like, yeah,
+
+Unknown Speaker  48:02  
+you know, the tools, and then you have the hardening, the CIS hardening standards.
+
+Unknown Speaker  48:10  
+So, yeah, that's fine. I was just wondering,
+
+Unknown Speaker  48:13  
+yep, that's that's really out of my wheelhouse, and I'm more than happy to, you know, connect you with Steve, who is the person who knows that stuff. I can barely Linux machine truthfully
+
+Unknown Speaker  48:29  
+and give it commands.
+
+Unknown Speaker  48:31  
+I mean, not a Linux
+
+Unknown Speaker  48:35  
+All right, fair enough.
+
+Unknown Speaker  48:38  
+But, um, yeah, I can. I can let Steve know you have some questions. Okay, cool,
+
+Unknown Speaker  48:45  
+alright. Thank you. You're very welcome, sir. Bye, bye. Do you have anything Miss Ashley, Nope, we're good. I'm good, righty, then,
+
+Unknown Speaker  48:56  
+well, then you two, have a great, great day and a Merry Christmas, in case something catastrophic happens tomorrow.
+
+Unknown Speaker  49:06  
+Thank you. You too
+
+Unknown Speaker  49:08  
+good. One. Bye.
+
+Transcribed by https://otter.ai

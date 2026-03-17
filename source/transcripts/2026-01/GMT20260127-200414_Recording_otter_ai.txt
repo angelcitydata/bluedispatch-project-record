@@ -1,0 +1,1252 @@
+Unknown Speaker  0:02  
+Right? We're up.
+
+Unknown Speaker  0:04  
+Welcome to another great week and another meeting here.
+
+Unknown Speaker  0:12  
+So I guess my updates are pretty simple. We've tried to
+
+Unknown Speaker  0:21  
+deal with any emails or anything that's come from Ashley or Joe since we've gone live. So that's there hasn't been many I've actually been fairly shocked that's in, in my opinion, this is about as smooth of the launches I've ever seen, unless you guys are just sitting on a pile waiting to dump it on me at once.
+
+Unknown Speaker  0:45  
+Nothing yet, but don't jinx us. Brian, yeah, I know, just throwing that out there and jinxing everything I know.
+
+Unknown Speaker  0:54  
+So there's that today. We did do the redirect. We changed the FileMaker production server from the instance called Pro one to the instance called Pro two. File maker pro one to Pro two.
+
+Unknown Speaker  1:09  
+That went off pretty easily. Files removed. It's up and running.
+
+Unknown Speaker  1:15  
+You know, of course it takes, when you change the DNS record, it took 10 minutes to propagate the entire internet, I guess, you know, before, before the DNS, the admin dot blue dispatch com would work for us, but it did, and it has been did some quick testing to make sure I could access all the web apps. The native app file maker had Ashley do some, you know, test, make sure that things look like they were working. They definitely do
+
+Unknown Speaker  1:44  
+look like they're working for us. So that is up and running on the new server.
+
+Unknown Speaker  1:51  
+I think there is still maybe a question or two about what we're going to do with what is called Pro one. I'll make a pro one, if we want to make that the new dev server, or if we're going to continue to do development on the in house server there at Les, but that, I think that's something that needs answering this second, unless gender SEC has a different opinion, but it will need to be answered at some point, I guess.
+
+Unknown Speaker  2:23  
+But that's, that's where I am, that's, that's pretty much what I've got. I've been,
+
+Unknown Speaker  2:29  
+been working on some other things here and there, but, but this seems to be what we're doing here. I've got, we've got that moved over. So we're ready for for Ashley unless, actually, unless gender SEC has something they like to go over first before we
+
+Unknown Speaker  2:48  
+get to Ashley's list.
+
+Unknown Speaker  2:53  
+Nothing for me, just I can confirm that.
+
+Unknown Speaker  2:57  
+You know,
+
+Unknown Speaker  2:59  
+obviously it's everything is fine since the cutover, but I think that
+
+Unknown Speaker  3:05  
+Tom correct me if I'm wrong, but I think we will have a conversation with
+
+Unknown Speaker  3:14  
+Les to determine what the Use of pro one will be,
+
+Unknown Speaker  3:20  
+and then we can, if we do that, use that as the new dev, then we can make sure it's cleaned up so there's not a
+
+Unknown Speaker  3:30  
+disk issue like there currently is. But that would be the only thing I'd add for this,
+
+Unknown Speaker  3:36  
+unless time had something.
+
+Unknown Speaker  3:39  
+I don't know anything, not yet. Anyways,
+
+Unknown Speaker  3:43  
+okay, well, my question for you guys, this is something that Brian and myself and even Jeff here we're discussing is in regards to offloading backups, and what our initial thought process is, and it's something that we're still kicking around, is taking those backups offsite, in them, and actually putting them on our server here locally. And we just wanted to see what you guys thought, if there's a if there's a better procedure, if there's a better process in general, or it sounds like at least the pro one, should we use that as a dev?
+
+Unknown Speaker  4:17  
+We think it's a good idea to move forward and off site. You know these, these backups onto our physical server here.
+
+Unknown Speaker  4:27  
+So the problem is, if you pull the backups and you store them locally,
+
+Unknown Speaker  4:32  
+what happens when that on prem solution shits the bed,
+
+Unknown Speaker  4:38  
+then all your backups are gone, right, right? And
+
+Unknown Speaker  4:41  
+then if you store them,
+
+Unknown Speaker  4:45  
+you know, like Iron Mountain or something, then you have the cost of the courier to take it there, and the storage there.
+
+Unknown Speaker  4:55  
+So those are a couple of challenges.
+
+Unknown Speaker  4:59  
+One.
+
+Unknown Speaker  5:00  
+Thing that we're we can do, and
+
+Unknown Speaker  5:03  
+think we're doing it for the most part,
+
+Unknown Speaker  5:07  
+I need to verify if it's on all the servers and everything is
+
+Unknown Speaker  5:11  
+backing you guys up through a Cronus,
+
+Unknown Speaker  5:19  
+and then that's stored in the cloud with a Cronus,
+
+Unknown Speaker  5:24  
+okay, yeah, and it's something that we were kicking around, and, like I said, as long as it's off site, something that we can get access to. I mean, you make a good point. I mean, if our server here locally, you know, goes down and that's it. I mean, we lose everything. So, I mean, if you guys have something in place already for backups, maybe we can make that transition that route instead, but it's just something that we've been brainstorming, nothing that we've locked in. But that's why we welcome your guys's thoughts. Yeah, Joe, that would meet my recommendations. Just fine. It's okay. I just it's it's pretty standard to make sure, you know, physically, you have backups, physically in a different location. And, you know, case on nuclear strike or whatever, right?
+
+Unknown Speaker  6:07  
+So, yeah, we can with a Chronos, it could reach out and touch everything to where we could
+
+Unknown Speaker  6:13  
+back up your entire environment,
+
+Unknown Speaker  6:16  
+all the way from AWS, all the way down to your desktops and emails that are in your desktops, all right? So that that'll be something that we'll discuss with Bonnie, then see if she wants to go that route. And, I mean, it makes sense from our perspective, but at that same time that we discussed that with her, we'll probably address the pro one server. I don't see why we wouldn't make that adapt at this point, honestly,
+
+Unknown Speaker  6:41  
+yeah, it's, I mean, it's really, it's a business slash money question, you know, it's, it's not free, it's not very it's not going to be too expensive if it's being used as a dev server, because it's not going to be handling, you know, a lot of traffic. You're talking about the dev server and AWS, yeah, the pro one, yeah. So it was my understanding that we're going to use that as testing for, like, when we roll patches and all that stuff out, because otherwise,
+
+Unknown Speaker  7:11  
+the production server, you
+
+Unknown Speaker  7:14  
+know, in the vast majority of the time, there's no issues with rolling out
+
+Unknown Speaker  7:20  
+updates, but sometimes it could get a little Western, and then you crash the whole system, which is in the bad category of things.
+
+Unknown Speaker  7:28  
+So I thought that we were, the goal was to use the dev server
+
+Unknown Speaker  7:33  
+as doing the patches and testing them, and then if they're all good, then we push those out to production.
+
+Unknown Speaker  7:39  
+Yep, that's that's fine with me. Yeah, that's a good plan. It makes, it makes the most sense, absolutely, to be pragmatic about it, yeah, which kind of feeds into the
+
+Unknown Speaker  7:51  
+change management I don't know if
+
+Unknown Speaker  7:55  
+Joe or Brian or Ashley, if you guys are familiar with the change management programs and how they're run? Oh, I
+
+Unknown Speaker  8:03  
+definitely am. Yeah, I think
+
+Unknown Speaker  8:06  
+that, I mean, it, just feed all into that, and just to make sure things are
+
+Unknown Speaker  8:13  
+any issues are being addressed or documented and things are being pushed along.
+
+Unknown Speaker  8:20  
+Okay, perfect, yeah. I think that's a good approach. Like I said, I mean that if that's the plan, I mean, we did have that in place anyway, so, I mean, we'll just keep that as is, and then we'll get in touch with bond in regards to the backups, if she wants to go that route with you. Tom I mean, we'll, we'll move forward with it. Okay, yeah, I think that's going to be your most economical.
+
+Unknown Speaker  8:41  
+And
+
+Unknown Speaker  8:42  
+we already made sure that a Cronus is we're only using servers inside the US.
+
+Unknown Speaker  8:48  
+Okay, so it's even better,
+
+Unknown Speaker  8:52  
+cool. That's all I got from my end. I think, think we're ready for Ash. Then,
+
+Unknown Speaker  8:59  
+Miss Ashley, Hey, how are you?
+
+Unknown Speaker  9:03  
+Wonderful. Not much has changed in the hour and a half.
+
+Unknown Speaker  9:07  
+Fair enough.
+
+Unknown Speaker  9:12  
+My list is kind of long, so I'm like, I wanted to start the ones that I really wanted to go over so I don't run out of time.
+
+Unknown Speaker  9:20  
+Okay,
+
+Unknown Speaker  9:28  
+stuff and like FileMaker, I don't know if you want me to go over the app first or FileMaker first, or if you don't, if you even care of the order, whichever you you find more useful to you.
+
+Unknown Speaker  9:42  
+Mm, gonna go a little bit out of order. Apologize. So real quick. Okay, Thursday, so Thursday in FileMaker, apparently, is still not working.
+
+Unknown Speaker  9:54  
+I
+
+Unknown Speaker  9:56  
+as of yesterday,
+
+Unknown Speaker  9:59  
+yeah.
+
+Unknown Speaker  10:00  
+I think I just fixed what the problem was right before this meeting. Okay, okay, did it seem to be working on
+
+Unknown Speaker  10:11  
+on the but not on file maker? Yeah, it def, it's definitely file maker, okay, yeah, yes, I think I fixed that. And I was I tested it at least myself, and it was working, but
+
+Unknown Speaker  10:24  
+having it tested by someone else would obviously make me feel better, yeah, can I ask a question really quick, sure, of course, right. So this used to be right, so, like it
+
+Unknown Speaker  10:38  
+would be dev server one or AWS, you know, one, then the file maker that's here, and then this one was the dev or the testing one. And I used to be able to tell the difference by these things on the bottom right, are you? Do you think you're showing your screen? Oh, yes, I do. Sorry.
+
+Unknown Speaker  10:59  
+Hold on, look.
+
+Unknown Speaker  11:01  
+I something.
+
+Unknown Speaker  11:02  
+Look, guys, no, right here, sorry, down here. So this used to be whatever
+
+Unknown Speaker  11:08  
+it was, come through. Oh, you can't see it. There we go. Now, I see just there,
+
+Unknown Speaker  11:15  
+down here. So under the Les scheduler. So right, and before we redirected it. One, that's how I used to be able to differentiate and tell the difference. This was, you know, pro the dev server one, this is the in house, and this was
+
+Unknown Speaker  11:32  
+the server to the testing one. This is the, maybe
+
+Unknown Speaker  11:36  
+it'll still do the don't do, yeah. This is, so this is the testing dot blue dispatch, calm, but this bottom part changed. Can I change that so that I
+
+Unknown Speaker  11:47  
+like? I guess I could just tell you the order, but it just gets kind of confusing. You can't hear. Okay, that's okay, you what I recommend is get used to entering in a different way. So go file,
+
+Unknown Speaker  12:05  
+yep,
+
+Unknown Speaker  12:07  
+and show hosts or hosts, yeah,
+
+Unknown Speaker  12:13  
+and then show hosts.
+
+Unknown Speaker  12:16  
+Or here are your favorites, and you can name those. Go ahead and hit cancel on that screen. But I that
+
+Unknown Speaker  12:24  
+screen, but so on the left there, yes, yep, you can right click on one of those
+
+Unknown Speaker  12:30  
+and edit favorite.
+
+Unknown Speaker  12:34  
+Okay, so this one is testing at Blue dispatch. That's the yeah AWS two, because it was, yeah, yeah. You can rename that whatever you want there on the second box, whatever helps you. That one shouldn't be active, right? And I don't think actually, yes, it probably is. It's probably still pointing at what's now prod, so we need to it is, that was the next thing I was going to tell you, because I was, I just wanted to see if it was still working. And then I working as we're just, we just,
+
+Unknown Speaker  13:06  
+I guess we would eventually point that to pro one, which if that's going to be Dev. So yeah, and then you can right click on that one. You can name them what you want. And that way, if things change, you can change the name here. You can't change it on screen, but yeah, so you're saying don't set my my default as favorites. That would that because I, or do I have to go to File every time and go to host. I'm just gonna remember the order, or just take this one off my favorites, and I can still find it, obviously, just because of how much I get in, go in and out, like, that's gonna get confusing, okay? That was the other thing I was gonna say, though, was that if we could somehow, when I click into it, because I can obviously see, it's tested into blue dispatch, but once I'm in there, like, I don't, I can't tell, and it doesn't say, you know, yeah, on dev. So they should on the site detail screen, which is the first screen it should drop you in if it's not, if it doesn't, if it's not, on production, yeah, this one's taking you to production right now. It shouldn't, but it is right so, but all you're still saying, yeah, all the other ones will have the big red, you know, this is a dev version or whatever. So this, yeah, this is going to production right now. We have two URLs that are pointed at the same machine,
+
+Unknown Speaker  14:30  
+right? Yeah. So I just hope when we change that can is this one will say dev again, correct? Okay, good. That's what I needed to say, just because,
+
+Unknown Speaker  14:42  
+you know, I'm in and out of both of them, and I don't want to, yep, that's why I put that, those big red letters there. But yes, Steve, to switch that testing DNS to over to pro one. Thank you.
+
+Unknown Speaker  14:59  
+Okay, I.
+
+Unknown Speaker  15:00  
+Um, I just wanted to make sure that Thursday works really quick.
+
+Unknown Speaker  15:04  
+No worries.
+
+Unknown Speaker  15:18  
+Yep, okay, that's good. It wasn't un clicking last time, yeah, yesterday. I mean,
+
+Unknown Speaker  15:24  
+okay,
+
+Unknown Speaker  15:26  
+this one's weird. Okay, so virtue, he's an officer,
+
+Unknown Speaker  15:31  
+and he was having issues where. So he claims that, you know, the job would be in his, my jobs, and as soon as he'd get to the job, it would disappear from his my job. So I went in to test it right? So I put him on a fake job,
+
+Unknown Speaker  15:48  
+and kind of let some time go by, and I called him back, and he was like, it is still there. He's like, but when I try to clock into a job, this is what it says to him. It says,
+
+Unknown Speaker  16:01  
+After you tried to clock into it says you cannot clock in because you're clocked into job. 786106,
+
+Unknown Speaker  16:08  
+here's the weird thing, though, like, a that job doesn't exist. Like, that's one too many numbers. We don't have that job. And I've never seen
+
+Unknown Speaker  16:20  
+that, that air quote before have you, and is there a way to find out what job these quote, unquote clock didn't do because I couldn't find it? Yes, you want to stop your share. Okay, I will share my
+
+Unknown Speaker  16:35  
+unneededly massive screen here. So here is the admin console for the Linux box, the API, okay, and I went here to completed jobs, because I started in active jobs, but I didn't see it. So I went to jobs. And I searched that job number 786106,
+
+Unknown Speaker  16:56  
+and there it is. Bill virtue worked it.
+
+Unknown Speaker  17:00  
+He clocked in.
+
+Unknown Speaker  17:03  
+He clocked in. The 25th at 7:01pm
+
+Unknown Speaker  17:07  
+and then
+
+Unknown Speaker  17:09  
+if I come
+
+Unknown Speaker  17:12  
+into FileMaker to see what that job looks like in FileMaker,
+
+Unknown Speaker  17:18  
+I can tell you
+
+Unknown Speaker  17:20  
+786106, 786106,
+
+Unknown Speaker  17:24  
+so that was a job at North Felix road and Tommy Joe way in Florence.
+
+Unknown Speaker  17:33  
+He clocked in at 1339,
+
+Unknown Speaker  17:37  
+I'm sorry. He clocked in at 1901, which is 7:01pm, like I'm saying here. And he clocked out on the 26th at 1339,
+
+Unknown Speaker  17:50  
+that
+
+Unknown Speaker  17:52  
+completed job. The Work date was 125,
+
+Unknown Speaker  17:56  
+2026
+
+Unknown Speaker  18:01  
+why does it say customer name, tell site that, oh, maybe,
+
+Unknown Speaker  18:07  
+okay. I just had one question though, because when you go to like his job assignments, like everything, there was everything had hours that needed to So how was it not
+
+Unknown Speaker  18:20  
+hours?
+
+Unknown Speaker  18:25  
+Oh, where is hours on this screen? Do I even have it?
+
+Unknown Speaker  18:30  
+BASE HOURS work 10,
+
+Unknown Speaker  18:33  
+and if I go under the virtues, record and look on the
+
+Unknown Speaker  18:40  
+fifth, right there, right there, North Felix road. There's the job
+
+Unknown Speaker  18:48  
+10 hours. That's when he clocked in. That's when he clocked out.
+
+Unknown Speaker  18:53  
+This job. It's got the, you know, the location stuff on the map. It
+
+Unknown Speaker  18:58  
+looks like a, just a completed job to me. I know. I'm just curious why it still said it was clocked into it. Because when, when all this was going down like he was clocked out already?
+
+Unknown Speaker  19:09  
+When did, when did you have this conversation with him? Was it today? No, it was yesterday. I can go into his the mod log for my fake ones, and I'm dead, then he might not have been clocked out yesterday when he talked to you because he clocked out at 1:39pm
+
+Unknown Speaker  19:26  
+this was, let me see when this was created, because it was,
+
+Unknown Speaker  19:30  
+yeah, I could
+
+Unknown Speaker  19:33  
+the one in question I created at
+
+Unknown Speaker  19:37  
+142
+
+Unknown Speaker  19:40  
+our time.
+
+Unknown Speaker  19:41  
+Oh, the fake one, yeah, I'm not looking at that one, but the fake one, the fake one, was the one that he wasn't able to clock into, yeah, 10 minutes about, but that was the one he wasn't able to clock into because it said he was still clocked
+
+Unknown Speaker  19:59  
+in mm.
+
+Unknown Speaker  20:03  
+Show,
+
+Unknown Speaker  20:07  
+well,
+
+Unknown Speaker  20:10  
+my next I'm wondering
+
+Unknown Speaker  20:13  
+this was because the last modification to this was made by the app at 8:39pm
+
+Unknown Speaker  20:20  
+inch.
+
+Unknown Speaker  20:35  
+It looks like someone messed with it from the officer web app also, yeah,
+
+Unknown Speaker  20:49  
+question there was guess, because we can't get into and then FM better forms happen. Yeah, he tried to clock out on FM, better forms.
+
+Unknown Speaker  21:01  
+So that's when the clock out happened. So
+
+Unknown Speaker  21:04  
+it
+
+Unknown Speaker  21:06  
+it was still clocked in, as far as the API server was concerned, because he clocked in on the native app, and then he tried to clock out on the web app. So it never told the API server.
+
+Unknown Speaker  21:20  
+And we can't do different parts of the same job on different apps. This will go away once we turn off the off the officer web app. But for now, all you can do is tell them not to you can't make them, you know, yeah. And so when I was trying to find that job that 786, 106,
+
+Unknown Speaker  21:42  
+is that different than job ID? Because I was trying to search the job ID and job location detail,
+
+Unknown Speaker  21:49  
+that is the job assignment. Is that a way to search that? Because I not currently. I don't think unless, okay, I don't think so. I've never, yeah, it's not here, yeah, I certainly
+
+Unknown Speaker  22:05  
+okay,
+
+Unknown Speaker  22:07  
+but I can search it on,
+
+Unknown Speaker  22:10  
+on this, that others, the other, first site you showed
+
+Unknown Speaker  22:14  
+me my screen. Sorry, I can't see, yeah, that one, the problem is, this one's not necessarily going to give you more information that you need, at least I could see the address, so that could have at least narrowed it down a little bit. This is the address, yeah, this is the address where they clock content, yeah, the but the date address, yeah, I just had no idea, and I was searching for job ID, so that clears that up. Um, he didn't tell me that he had problems for his job last night. So
+
+Unknown Speaker  22:47  
+that seems like a good mod log. It looks like he clocked in on the native app, and then he clocked out on the web app, which told FileMaker that he clocked out, but he never actually did clock out, as far as the API is concerned.
+
+Unknown Speaker  23:08  
+Okay, so that
+
+Unknown Speaker  23:17  
+that would have been me like trying to clock him out of that job because he was, I just assumed it was that one but,
+
+Unknown Speaker  23:26  
+and then he was still just getting that same error. And I was just like, I'll ask tomorrow, because I was, and this is, this is where the API was finally told that he was clocked out even 30 9pm
+
+Unknown Speaker  23:41  
+UTC, right?
+
+Unknown Speaker  23:44  
+Oh, that should be, I think that's UTC, because I wasn't working at 839,
+
+Unknown Speaker  23:52  
+I'm just saying that it was just kind of, it was weird. Maybe it was just a little glitch, like, I don't know. I've never seen that before, but that's why I wanted to bring it up. That's that will come up, and that the giving you the number is the whole point. So that Sure, so that you can, you know, use this admin portal and stuff and try to track down the job. But if the system thinks they're clocked into a job, it won't let them walk into another one. And that's what happens when it stinks. That's happening, yeah? Gotcha.
+
+Unknown Speaker  24:23  
+Cool. So next one, cancelation, bulk email. Those aren't getting emailed out to the officers or us,
+
+Unknown Speaker  24:32  
+just from the bulk from, like reoccurring job detail, yep, okay, I can
+
+Unknown Speaker  24:42  
+look into that one I
+
+Unknown Speaker  24:46  
+want you it
+
+Unknown Speaker  24:49  
+is here,
+
+Unknown Speaker  24:51  
+right? There's a button that appears here when I cancel a job, right? Oh, yeah, cuz you don't cancel that one. No, no, no. I.
+
+Unknown Speaker  25:00  
+This is the what sends it right when you check this box, yeah, yeah, that should,
+
+Unknown Speaker  25:07  
+and it did cancel them and it check marked it also, it looked like it worked, but I know it didn't, because I
+
+Unknown Speaker  25:13  
+well it did, didn't send the email, right? But, yeah, that's important. Yep,
+
+Unknown Speaker  25:23  
+okay,
+
+Unknown Speaker  25:28  
+cancel email. Where's my schedule? Interesting?
+
+Unknown Speaker  25:31  
+If you want
+
+Unknown Speaker  25:59  
+voice, okay.
+
+Unknown Speaker  26:02  
+The
+
+Unknown Speaker  26:04  
+Oh, are we you're good, right? No, no, we're good. I'm listening. Okay, so the inviting share again, is that going to help you? Oh, sure. 54645,
+
+Unknown Speaker  26:30  
+hmm, wish I could show I'm trying to think of who to show you what. I'm not gonna
+
+Unknown Speaker  26:35  
+this still might work. I don't think it'll mess anything up. You know, you told me that the email was attached to the
+
+Unknown Speaker  26:42  
+when I'm sending a new invite for the native app,
+
+Unknown Speaker  26:46  
+it's attached to email at on the officer record, right? Well,
+
+Unknown Speaker  26:53  
+okay, I'm just going to show you something. Maybe I'm wrong. I don't want to do this.
+
+Unknown Speaker  27:00  
+There was someone I knew that it wasn't going to mess
+
+Unknown Speaker  27:05  
+up. Let me think, search my name.
+
+Unknown Speaker  27:15  
+Oh, that's weird. You don't have one. I do i Oh, I should have two officers. I don't know where the other one went.
+
+Unknown Speaker  27:24  
+Well, can I, can I set you up on this one?
+
+Unknown Speaker  27:30  
+Okay, so I'm gonna send you the activate your phone number.
+
+Unknown Speaker  27:36  
+There's, there's no email button there, where, so where. So like button, I can change the label to email, but that's what it does.
+
+Unknown Speaker  27:45  
+What? So, okay, so I allow your login and I invite. My first problem is it doesn't look like it does anything. And so some people are creating it twice, like hitting invite twice, so it's creating two, and then that locks them out. The
+
+Unknown Speaker  28:01  
+phone number.
+
+Unknown Speaker  28:05  
+Hope you saw that, yep. So where's the how do I email you?
+
+Unknown Speaker  28:11  
+You know the
+
+Unknown Speaker  28:14  
+well, just done. Oh, okay. So there's just no way for me to tell that it sent you something. I can make a, I can give you a dialog screen that says, you know, invite sent. That'd be nice, because people are so what they'll do is they'll hit it twice. So they'll do it twice, because you actually have to click out for it to show up. And then once there's two active ones here, they can't the person, the officer, can't get it problem, yeah, and anytime I find it, you know, I try to, I'll correct it, but it's too hard for me to know what other people are doing
+
+Unknown Speaker  28:48  
+without them telling Yeah, I can make a screen that says that something was sent. So did you get an email? Give me a second. Okay. No worries. Our system is
+
+Unknown Speaker  29:01  
+so slow.
+
+Unknown Speaker  29:03  
+Okay?
+
+Unknown Speaker  29:06  
+I have not yet, okay, because I guess it's hard for me to test because we, it's not like we get a copy. So I just wasn't sure.
+
+Unknown Speaker  29:21  
+Yeah, I can, I can look at it. I don't know.
+
+Unknown Speaker  29:26  
+I'm I'm not getting one. Should be going to do be at Angel City data.com,
+
+Unknown Speaker  29:35  
+and I have not received it, so I'll look at that again. Yeah, okay, thank you. Yeah, it's last time, and I'll make a message that says, you know, message was email was sent,
+
+Unknown Speaker  29:47  
+invite, you know, that's fine, perfect. Just something that
+
+Unknown Speaker  29:52  
+gives them sad, you know, shows them it's working.
+
+Unknown Speaker  29:57  
+See, let me know when you're ready. Do.
+
+Unknown Speaker  30:00  
+Uh, they can also see, just to let you know, the invite status is active, right? So if that's active, then they're active. There's no reason to make another one, right? Well, what they're doing, though, is so like, if I when I did this, it doesn't show active till I click right outside of it, and then it pops up, yeah. And so they're thinking, Oh, it didn't work. And then they go back in and do it again before they click outside of here, which I realize is kind of a training thing, but also,
+
+Unknown Speaker  30:33  
+yeah, it's just happening like it is, is what it is.
+
+Unknown Speaker  30:37  
+Yeah, it's a calculation. It might, you know, it takes a refresh or some action to Yes. Calculate Exactly
+
+Unknown Speaker  30:47  
+Okay. I can make those changes cool.
+
+Unknown Speaker  30:51  
+Native app invite. I
+
+Unknown Speaker  31:03  
+A success message.
+
+Unknown Speaker  31:14  
+Sure send an email.
+
+Unknown Speaker  31:20  
+Successfully.
+
+Unknown Speaker  31:23  
+Okay,
+
+Unknown Speaker  31:25  
+cool.
+
+Unknown Speaker  31:26  
+Is there a way for us to send, like a mass
+
+Unknown Speaker  31:32  
+register, the phone numbers for our Texas officers that are active?
+
+Unknown Speaker  31:37  
+Um,
+
+Unknown Speaker  31:42  
+and to not
+
+Unknown Speaker  31:46  
+currently for you guys. I mean, it's something I could, you know, program a way to send it out in mass pretty quickly.
+
+Unknown Speaker  31:57  
+I fear sending out. I don't know how many this will be, but I fear sending out a bunch of emails, you know, really fast,
+
+Unknown Speaker  32:07  
+because it will, you know, you may have problems with something or somebody thinking you're spam, your your provider, or Somewhere in between,
+
+Unknown Speaker  32:21  
+you usually want to use, you know, some type of Constant Contact or MailChimp, you know, something like that, to to send out mass blasts. I don't know how many officers they are, but
+
+Unknown Speaker  32:34  
+I could slow it down.
+
+Unknown Speaker  32:36  
+Only had it send an email every minute or two minutes, something like that.
+
+Unknown Speaker  32:42  
+Folks, you're saying that if you activate all the phone numbers, it's going to send an email with the phone numbers like, right? Well, yes, yeah, but I was, but my question was, you know, making them active is going to trigger the email, and that's what's going to
+
+Unknown Speaker  32:59  
+slow it down or flag us. Yes, if I do that in a bulk manner,
+
+Unknown Speaker  33:05  
+in general, with you guys doing it, you know, daily, how you need to do it to get officers on boarded? No, that's not a problem. But if I gotta, you know, send 1000 or something, and I do it in a couple seconds, then, yeah, something might, you might get flagged.
+
+Unknown Speaker  33:22  
+I can just slow down the process, you know, put a
+
+Unknown Speaker  33:27  
+put a minute pause or something in every rotation of the script. Okay, yeah, because I mean the other the alternative, it seems like, would be going one by one and inviting each active officer in Texas individually. Yeah,
+
+Unknown Speaker  33:43  
+um, how will I know which ones I mean? Because I've already,
+
+Unknown Speaker  33:49  
+we already made did we do it for Texas? We I just did it for everybody that was on the officer web app. Yeah, and I don't know if we did Texas, to be really honest with you, initially, and it wasn't just officer web app. It was like, yes, it was on it, but they had to be registered, so if their invite status was invited, still it didn't, didn't work, correct? Yeah, I don't think we did. Texas,
+
+Unknown Speaker  34:14  
+all of them.
+
+Unknown Speaker  34:16  
+And you know, as they've been coming in, new ones, those ones are getting them, but we had
+
+Unknown Speaker  34:23  
+a lot to identify which ones you want me to Yeah,
+
+Unknown Speaker  34:29  
+yeah, it would be more of a one at a time thing to give me a way to identify which ones you want you know.
+
+Unknown Speaker  34:37  
+So what if I like sent you
+
+Unknown Speaker  34:41  
+agencies would that be? But, I mean, I'm just trying to think of a way, because one by one, like, I don't have that much. It was agencies and all officers that have a status of active for that agency. Yeah, you want it sent out to no exceptions I can do. Okay, that's, that's a way to get me to a list. Yeah.
+
+Unknown Speaker  35:00  
+Okay, another way if, if you want the list to be more particular, you can know it's been a long time, but you remember how to send a snapshot link. Yes, I do. So you can do get a whole list of ones that you want that to happen to in the list view there, and then make a snapshot link and send it to me. So, yeah, I either need to know the factors that I'm going to use, like everybody in this agency that's active, or a snapshot linked list.
+
+Unknown Speaker  35:35  
+Sorry, no, no, you're good.
+
+Unknown Speaker  35:40  
+Okay.
+
+Unknown Speaker  35:46  
+Oh,
+
+Unknown Speaker  35:47  
+sorry, someone talked to me right at the very end. Was there a question or just what we had just gone over and what I should do? Okay, I was making sure I didn't miss anything. You have two options. Yep,
+
+Unknown Speaker  36:00  
+I'll do the snapshot that that'll work, Yep, yeah, that'll work for me.
+
+Unknown Speaker  36:09  
+Oh, notes, notes on app.
+
+Unknown Speaker  36:12  
+I mean, they're working not, not if they put them in the old app, though, but they because they were, they were telling me that the officer notes weren't showing up. And I was like, that's where they are for me.
+
+Unknown Speaker  36:26  
+But the one thing that they aren't doing is
+
+Unknown Speaker  36:31  
+they're not they're not getting emailed to us.
+
+Unknown Speaker  36:35  
+That's correct. I didn't.
+
+Unknown Speaker  36:38  
+Stacey uses those a lot for like, hours.
+
+Unknown Speaker  36:41  
+Is there a way to turn that back on? That feature? Don't think that was ever a feature that it was in. It was for the old app.
+
+Unknown Speaker  36:52  
+I can,
+
+Unknown Speaker  36:54  
+don't I mean, I believe you, but I don't remember that, and that's fine. I mean, we can.
+
+Unknown Speaker  37:01  
+So every time an officer leaves a note you want an email to info,
+
+Unknown Speaker  37:06  
+yeah, I'm trying to
+
+Unknown Speaker  37:10  
+see what they looked like. I
+
+Unknown Speaker  37:13  
+don't know if that would help. I don't even know if that would help you find it or anything.
+
+Unknown Speaker  37:25  
+Oh, here like
+
+Unknown Speaker  37:28  
+on my other screen. Hold on, it looked like this, not seeing
+
+Unknown Speaker  37:33  
+it's been a long day. Brian,
+
+Unknown Speaker  37:36  
+sis, one officer notes entered from app. This is what it used to look like, and they would just have their notes right here.
+
+Unknown Speaker  37:45  
+Okie dokie,
+
+Unknown Speaker  37:47  
+thank you.
+
+Unknown Speaker  37:49  
+And it also just so you know, it wasn't sent. So, like, if they did it, I don't know how it would work with the new app exactly, but if they didn't make any changes to it, it wasn't sending. It, like, twice.
+
+Unknown Speaker  38:02  
+Remember that?
+
+Unknown Speaker  38:05  
+Well, on the native app, you, you make a note, and I know it's not changes, because it's not just one field. You make a note, you send it. You I know. I know you send it. So, yes, you would get an email every time they made a new note. There is no editing notes. I know I get you. I was thinking about it as I was saying it out loud, you get an email for every note they sent. If they send 10, and you get 10 emails, I hear you.
+
+Unknown Speaker  38:34  
+If
+
+Unknown Speaker  38:36  
+I get any feedback, I will let you know, but that's what they wanted
+
+Unknown Speaker  38:40  
+do.
+
+Unknown Speaker  38:48  
+Um, the other non email to us.
+
+Unknown Speaker  38:51  
+Notices locked up in four hours.
+
+Unknown Speaker  38:57  
+Sorry, which one
+
+Unknown Speaker  39:02  
+call? Clocked out loud. Are
+
+Unknown Speaker  39:05  
+you
+
+Unknown Speaker  39:08  
+starting to break up?
+
+Unknown Speaker  39:10  
+I heard clocked out and then that was all
+
+Unknown Speaker  39:16  
+for hours. Can you hear
+
+Unknown Speaker  39:20  
+you're still working up. Sounds like you're talking about the an email for clocked out under four hours.
+
+Unknown Speaker  39:32  
+Yes. Can you hear me yet? Now, Johnson, hold on.
+
+Unknown Speaker  39:38  
+I'll see you soon.
+
+Unknown Speaker  39:41  
+Oh, yeah. I.
+
+Unknown Speaker  40:31  
+I wonder what happened.
+
+Unknown Speaker  40:34  
+I don't know. Yeah,
+
+Unknown Speaker  40:39  
+long, awkward pause. Can you hear me? Yes, there you are. You can't Okay, I don't know what happened.
+
+Unknown Speaker  40:49  
+Good, Lord, sorry. Um, clocked out less than four hours. That's what I was trying to that was, get out smooth. Good okay.
+
+Unknown Speaker  40:58  
+Think I just,
+
+Unknown Speaker  41:00  
+I just fixed that. Turned it back on. It was just off.
+
+Unknown Speaker  41:04  
+Thank you.
+
+Unknown Speaker  41:09  
+Oh, then this, this next one. You might hate me for this, but maybe not. I hope it's not. I'm sorry.
+
+Unknown Speaker  41:18  
+So currently I should share my Oh, am I still sharing my screen? Yes, I am.
+
+Unknown Speaker  41:24  
+Yes, alrighty. So currently, job name, this is pointed. This is what the app sees, right? Yes, that's correct, yeah, okay,
+
+Unknown Speaker  41:36  
+um, I don't know it what's best, if we should just get I know that I had you add this. And
+
+Unknown Speaker  41:45  
+since now, you can type over this if you want to right, if it pins it weird, keeps the Latin lawns the same. But you can type over this to say whatever you want
+
+Unknown Speaker  41:55  
+is, can we have the app pointed towards the street one?
+
+Unknown Speaker  42:00  
+Well, I was, I was going, I'm sorry, I know I know for for the officer web app,
+
+Unknown Speaker  42:07  
+oh,
+
+Unknown Speaker  42:09  
+I was going to lock those back up eventually, once we know we're no longer using the officer web app,
+
+Unknown Speaker  42:17  
+lock, sorry, lock it so meaning you can't type over it, correct, correct. Yes, you're allowed to type over it now, because it's, it's absolutely needed for the web app, because that's what they see.
+
+Unknown Speaker  42:32  
+But
+
+Unknown Speaker  42:33  
+it will,
+
+Unknown Speaker  42:36  
+it will mess up
+
+Unknown Speaker  42:39  
+what you type there, what's the benefit for having it locked? Because changing it from what comes from the the Google Maps API could mess up some of the mapping,
+
+Unknown Speaker  42:54  
+especially the the officer's ability to
+
+Unknown Speaker  43:00  
+touch
+
+Unknown Speaker  43:02  
+like, were they in the native app? Yeah, I get to touch the amount of miles between you, okay, sites, and it brings up directions for you in maps.
+
+Unknown Speaker  43:12  
+That is not I get you. So using an address,
+
+Unknown Speaker  43:15  
+okay? So since I know that now and that will be locked. Can we have dashboard look at job name? Then yes, and that, that has been my plan. I Okay, because right now, because we still haven't, or at least, I don't know if we are at a point where we have more on the native app than we have on the old one,
+
+Unknown Speaker  43:38  
+because I can only show one of them on the dashboard. I can tell you through looking at mod logs, that there's still a lot of them looking at the old one, yeah, I can also give you more space on the jobs name so that you can, I mean, right now, you could put, you know, hit return and type in Surprise Arizona, you know, you could type in the whole address In the job name,
+
+Unknown Speaker  44:01  
+but I can make that field a little taller so that, you know it looks like to your users, that you can do that if you would like to put more information in there.
+
+Unknown Speaker  44:12  
+Yeah. So the one thing, okay, the other problem with that, so, like, let's say you did direct, you know, the dashboard to show this job name, it doesn't, it doesn't show Surprise Arizona.
+
+Unknown Speaker  44:26  
+It doesn't on the app either. Yeah, correct. So, so you're saying, if I wanted that to happen, since this would be locked, I would have to do the address and then space Surprise, Arizona, you're gonna love that.
+
+Unknown Speaker  44:47  
+Um,
+
+Unknown Speaker  44:56  
+is there okay? Is there any way to have job? Name?
+
+Unknown Speaker  45:00  
+Pull the city and state.
+
+Unknown Speaker  45:03  
+I know I'm asking a lot. I'm just just throwing it out there. Just
+
+Unknown Speaker  45:09  
+curious, sure,
+
+Unknown Speaker  45:11  
+sorry. I'm not trying to be a pain. I'm just
+
+Unknown Speaker  45:19  
+anticipating problems because, you know, like, it doesn't say the city and state on the
+
+Unknown Speaker  45:27  
+on the app or in FileMaker, if you redirected it to job name, I just don't see. The other problem that you'll find with that is if I do, even if I do, pre load the city and state into the job name. It's going to be based off of what returns from Google. And definitely some certain areas where
+
+Unknown Speaker  45:51  
+an where, like, for some reason, an address and the actual city don't mint, don't match. It happens, I get to definitely happens around here.
+
+Unknown Speaker  46:03  
+My technical address is four Oaks North Carolina. But everything around me is, it's actually my postal address. So if you send me mail, it's Benson, North Carolina, but the physical address of my house is four Oaks North Carolina. Now my mailbox is at the end of my driveway, but technically it thinks it's not city. I can see that problem. Yeah, like Levine and and there's going to be a few instances where that will Yes, cities and counties overlapping and county islands. Yeah, there's a lot of it. There's a lot of it, Phoenix up around
+
+Unknown Speaker  46:46  
+desert horizon. Precinct addresses Scottsdale, and it's actually Phoenix.
+
+Unknown Speaker  46:55  
+When I worked up in that area, I got that all the time, they were like, Oh, well, you're Phoenix. I'm like, yeah,
+
+Unknown Speaker  47:01  
+oh,
+
+Unknown Speaker  47:03  
+all right, see you later. You
+
+Unknown Speaker  47:06  
+don't want my help, fine.
+
+Unknown Speaker  47:10  
+Yeah, so let me see. Let me see if I'll run it by other schedulers to just see what they what they think i
+
+Unknown Speaker  47:21  
+i I still think, though, that I would like dashboard to
+
+Unknown Speaker  47:25  
+job name,
+
+Unknown Speaker  47:30  
+I'm not
+
+Unknown Speaker  47:32  
+especially when you go to lock this.
+
+Unknown Speaker  47:38  
+Or we wanted, we just wanted
+
+Unknown Speaker  47:41  
+the one on one and mile post,
+
+Unknown Speaker  47:46  
+where, if I that on a map, say the 101 and mile post, whatever it's going to say the specific point that I picked, and it's going to be it's just hard to research and do things
+
+Unknown Speaker  48:00  
+and explain it to stay consistent. It's hard to explain. Now, I could say,
+
+Unknown Speaker  48:11  
+should be another user training thing, but
+
+Unknown Speaker  48:15  
+on the dashboard, I absolutely
+
+Unknown Speaker  48:18  
+sorry, could show the job name, but when you mouse over it, the tool tip could show the full address from there,
+
+Unknown Speaker  48:28  
+if that you're saying
+
+Unknown Speaker  48:32  
+what you're saying. So I'd like hover like it does now, exactly. Don't hate that, actually.
+
+Unknown Speaker  48:40  
+Okay.
+
+Unknown Speaker  48:44  
+I guess I'll wait on the I'll give you a for sure answer. Next time I speak with you, I just don't want to make you do work and then find out that I found another issue to it. You know what I mean? Yeah, okay.
+
+Unknown Speaker  48:59  
+A quick update on the the Bubba Swan thing, you know how he wasn't wasn't showing his settings correct. So Lester also had the same issue.
+
+Unknown Speaker  49:12  
+The only difference is, is when he was initially the very, very, very first time that he tried to get into the app. It did initially prompt him for all of those, but then it logged him out, and when he went back in, it only prompted him to do
+
+Unknown Speaker  49:32  
+location and his settings. I had him take a picture of it looks exactly the same. It's also iOS.
+
+Unknown Speaker  49:41  
+I do know that it's a personal phone. There's no MDM, there's no v
+
+Unknown Speaker  49:49  
+I wrote it down, but there's, it's, it's not, it has nothing to do with his
+
+Unknown Speaker  49:55  
+VPN and device management like that's, it's not, has nothing to.
+
+Unknown Speaker  50:00  
+Do with his work. So they're both personal phones. I know it doesn't help us. The only thing I haven't been able to try yet is, like
+
+Unknown Speaker  50:09  
+doing it from my phone on their account. So that's the last thing that I need to try. I just wanted to kind of update you on what I had learned so far. Yeah, that's so far, it's specific, and it's going to be really hard to
+
+Unknown Speaker  50:24  
+provide tech support for, you know?
+
+Unknown Speaker  50:31  
+I mean, I guess if we,
+
+Unknown Speaker  50:33  
+if we can get
+
+Unknown Speaker  50:36  
+screenshots of, let me see Settings General
+
+Unknown Speaker  50:44  
+about
+
+Unknown Speaker  50:50  
+that'll tell us the serial number, the model name, the OS version and such. You know, to give us that information,
+
+Unknown Speaker  50:59  
+you just so you know they both were on the most up to date version. Do you know that
+
+Unknown Speaker  51:05  
+we're both six two? I just
+
+Unknown Speaker  51:09  
+thought it was weird that Lester's initially prompted him. I don't know why it signed him out and made him like, re,
+
+Unknown Speaker  51:16  
+log in and like, authenticate, but it was, it was one day work, the next day it didn't. So
+
+Unknown Speaker  51:27  
+I'll keep you updated. I don't know
+
+Unknown Speaker  51:31  
+quickly about the users that were getting that error. Right? We had that Zoom call
+
+Unknown Speaker  51:41  
+the error where it's like, would they put an officer on and take it off and you were like, in Christine's computer to watch it? Yes, yes. Okay, so things that I've found out
+
+Unknown Speaker  51:54  
+is, see,
+
+Unknown Speaker  51:57  
+it's hard to tell if it's job specific or if it's linked to the officer, I'm almost leaning towards job, because it happens a lot on SRPs
+
+Unknown Speaker  52:09  
+and bnfs. I've noticed that
+
+Unknown Speaker  52:13  
+pattern so far different SRP jobs, but like for example,
+
+Unknown Speaker  52:19  
+there's a BNF job 59th in northern the
+
+Unknown Speaker  52:24  
+reason why it's hard to tell if it's a job or the officer is because it's usually it's been the same officer, right? And they're on the same like, reoccurring job, and so it's hard to be like, is it the reoccurring job, or is it that officer on that reoccurring job like i That part I haven't quite nailed down yet, but I just wanted to so I would say between the online admin console, where you can do some extra research, there
+
+Unknown Speaker  52:54  
+little i button I gave you, yeah, that's on my list at talk to you about too. But yes, that should tell you what it thinks it's, what state it thinks it's in. So if you know, if you're trying to unbook, let's say unbook A job. But according to the API server, it was never booked. It doesn't know, then you might get an error, because there's nothing for it to unbook.
+
+Unknown Speaker  53:22  
+Um, same with you try to
+
+Unknown Speaker  53:27  
+book onto a job that it thinks is completed.
+
+Unknown Speaker  53:34  
+You know, already done with stuff like that.
+
+Unknown Speaker  53:39  
+So that one is booked and ready for clock in. Yeah, and this was the job. So she had taken Whitehead off of it and got that,
+
+Unknown Speaker  53:48  
+that error message. And for the 28th and the 29th she got it for both.
+
+Unknown Speaker  53:55  
+Then she, this guy took it.
+
+Unknown Speaker  53:58  
+So it's maybe your theory would be, check the eye before you do it, to see where and but she would have, would she have to check the eye? Because I've never had it happen on my computer, right? Um, so it's like, I probably will never get that issue. Or you should static. I should, okay, yeah, if, if the problem is the job's not in the state that it thinks it should be in. If that's the problem, yeah, that's the problem. It shouldn't matter whose computer is doing this function. I just think it's weird that I've, I've literally never had it happen. And she has it multiple times. She has it multiple times a day.
+
+Unknown Speaker  54:39  
+You do a lot of, you know, yeah, outline booking and unbooking still, yeah, yes, I do. It would be, it would be very strange,
+
+Unknown Speaker  54:49  
+I if I just coincidentally never picked the right person. I mean, maybe. But I,
+
+Unknown Speaker  54:55  
+yeah, I still, I'm still taking notes on everything I can to find patterns. But the.
+
+Unknown Speaker  55:00  
+Only other thing I could think of, if it's not the API job status and the FileMaker job status not meshing, the only other thing I could really think of would be if some type of permissions issues
+
+Unknown Speaker  55:16  
+coming from her computer. But I mean, stop me if I'm wrong Tom or Darren, but that that should probably be an all or nothing if it's blocking her from
+
+Unknown Speaker  55:28  
+from calling a specific URL, that it should always do it, you know, it should be an always on or always off type of situation, typically. Yeah, the intermittent problems are always the fun ones to Yeah, to figure out.
+
+Unknown Speaker  55:42  
+Oh, go ahead. No, I was gonna say logs, but
+
+Unknown Speaker  55:48  
+we don't have the logs.
+
+Unknown Speaker  55:51  
+I mean, we have, we have, like, the mod logs. And the officers were, like, officially on it, you know, it was on their app. It was,
+
+Unknown Speaker  56:00  
+you can see in the mod log, when it's, you know, Whitehead was put on there, the only people that it's happened to, though, are under the permissions users. So it's been like Christine, Jessica Tyler, I don't know about Sean,
+
+Unknown Speaker  56:14  
+but all of those that's never happened to me, or Becky, which we have different permission. So that is a link. I just don't know. It's just not every time, which is weird. It's not every person, right?
+
+Unknown Speaker  56:26  
+That would be obvious. I mean, even the the file maker permissions are just like I was describing for, you know, the network position permissions, it would be an all or nothing. They would never let them do it, or it would, or should always let them do it. If that's the, you know, the factor that we're looking
+
+Unknown Speaker  56:43  
+at. I don't, I don't know of a intermittent type scenario. We should just do it or not. You know, it should give her that problem every single time or never.
+
+Unknown Speaker  56:56  
+That's,
+
+Unknown Speaker  56:58  
+that's an odd one. I don't, have a good thing to tell you until we can, you know, pinpoint the series of events that lead us there when she started having this issue, like the very first time it was you, you, what did you? You silenced it, and that was only happening to the user permissions. What exactly did you silence? I silenced that message.
+
+Unknown Speaker  57:28  
+Oh, you just, like, picked the message that it was showing, and then, okay, yeah, I was thinking maybe piece of code that that shows a message. So it was still happening. I'm sure it just wasn't telling you
+
+Unknown Speaker  57:39  
+interesting, but that I, I had silenced that because we were still like repointing servers a lot in development. And, you know,
+
+Unknown Speaker  57:50  
+trying to, trying to think that file maker and the API server would be in sync while we're doing all those, you know, flipping around and changing was, was not going to happen. So knew you would get that message a lot.
+
+Unknown Speaker  58:04  
+That's why I silenced it and let it I never got the message. It was only on the users permissions, but silencing it did work for for that instance. But
+
+Unknown Speaker  58:17  
+all right, well, that's, that's
+
+Unknown Speaker  58:20  
+most of my list. There's two things I didn't go over, but I don't necessarily need it today.
+
+Unknown Speaker  58:25  
+Okey, dokey. That's
+
+Unknown Speaker  58:30  
+That's great.
+
+Unknown Speaker  58:31  
+A couple of items to look into,
+
+Unknown Speaker  58:37  
+including, let's see, I've got the bulk cancelation emails, the native app invites showing a success message so you know you sent them, and ensure that those emails are sending successfully
+
+Unknown Speaker  58:53  
+and pointing Testing. Dot blue dispatch.com, to file maker pro one
+
+Unknown Speaker  59:02  
+and the notes getting emailed, and then the less than four hours, and then the officer notes, sorry
+
+Unknown Speaker  59:10  
+if you already said that,
+
+Unknown Speaker  59:15  
+sending
+
+Unknown Speaker  59:18  
+email
+
+Unknown Speaker  59:22  
+the less than four hours one should already be fixed. Oh, that's right, that was just silence. So I just turned that on. You know, when I say silenced, I I disabled the code that sends the email, yeah, so I just turned that back on cool. So then the notes, just notes on the officer app. Yeah.
+
+Unknown Speaker  59:43  
+To info
+
+Unknown Speaker  59:45  
+at Blue dispatch. Okay,
+
+Unknown Speaker  59:52  
+Brady
+
+Unknown Speaker  59:55  
+testing
+
+Unknown Speaker  59:57  
+blue dispatch.
+
+Unknown Speaker  1:00:10  
+Row, okie, doke,
+
+Unknown Speaker  1:00:14  
+Joe or I don't doesn't look like Amanda's here anymore. We have any thing else to add. You guys had a chance to
+
+Unknown Speaker  1:00:25  
+go over the the
+
+Unknown Speaker  1:00:28  
+wish list stuff, yes, yeah, and we got that. Ash has that prepared for you. We went over it, and we were just cross referencing a lot of stuff, but we'll have that over to you probably even today. Yeah, sorry. I was supposed to send that. I will send that. I will send that. No worries whatsoever, like I told you earlier, Joe, I'm off for the next three days anyway, so I will be back at it Monday morning next week,
+
+Unknown Speaker  1:00:53  
+and I'll I'll look that over and and we'll see what. We see what's going to happen.
+
+Unknown Speaker  1:01:00  
+Awesome next
+
+Unknown Speaker  1:01:02  
+alrighty, that is all I've got. If we don't have anything else, I will talk to you guys next Tuesday, if,
+
+Unknown Speaker  1:01:12  
+if nothing's going wrong on Monday that needs my attention. Awesome. We appreciate it. Brian, enjoy your vacation. Oh, I am going to try. I'm going to throw away a lot of stuff. Joe,
+
+Unknown Speaker  1:01:23  
+about 20 minutes from here, and we're gonna do it,
+
+Unknown Speaker  1:01:28  
+Joe, you need to call me. Oh yeah, I'll definitely will.
+
+Unknown Speaker  1:01:32  
+Tom All right, guys, I'll cut off the recording before we do this. You're.
+
+Transcribed by https://otter.ai

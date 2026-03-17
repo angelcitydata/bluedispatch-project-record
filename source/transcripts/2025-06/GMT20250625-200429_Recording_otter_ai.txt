@@ -1,0 +1,733 @@
+Unknown Speaker  0:02  
+Um, yeah, we're here today start some discovery and talk on what we want to do with this native app version of the officer app.
+
+Unknown Speaker  0:13  
+So that's what we will be discussing. Of course, we have, you know, the PWA web version already running, so that should be a pretty good template for us to work off of. And we'll, you know, start to discuss here today what changes or new features you would like from that moving into the native app. But before we get too far into that, Jake is very excited and has been working hard on proof of concept for you guys.
+
+Unknown Speaker  0:44  
+I do want to point out, this is a proof of concept of a couple features. So this is not a fully running app. And, you know, it doesn't create jobs, it doesn't book, it doesn't do really that much. We just wanted to prove to ourselves and to you guys that we knew, the main reason for wanting to go ahead with the native app now had to do with the GPS stuff. So we wanted to be able to be sure that we can deliver a better experience and not have the pitfalls that we found with PWA and and GPS, be able to show that that can be done, what that'll look like, and one or two other specific features I asked Jake to look into for this demo. So that's what we did. It's just a demo of those things, but this is a real native app that obviously hasn't gone, you know, through the store or anything yet, but is in the simulator on his computer, and it should look, these features should look very similar to what you're about to see when we do actually do it in the app. And then, before I turn it over to Jake, I just want to say the answer to our, you know, to our question is yes, we absolutely can do it. No, it doesn't have the pitfalls that we see with PWA, and yes, it looks and acts better. So with that, I will turn it over to Jake. Yeah, thanks, Brian.
+
+Unknown Speaker  2:10  
+Okay, so I'm going to reiterate this is not blue dispatch. This is just a perfect concept.
+
+Unknown Speaker  2:18  
+I'm going to show you a couple of things
+
+Unknown Speaker  2:22  
+the PWA that we're using, we all know we are able to capture locations, but as soon as the app goes to the background, meaning they go back to their home screen and do anything else that human beings do on their phone, they we stop Losing or we stop getting those location updates. And so what I've focused on for this particular demo is mostly that, but Brian also wanted me to get a hold of some notification stuff, because I know we've been talking about doing actual, you know, push notifications like you see in typical apps. So I have a couple things to show you there. I'm going to split this demo into two parts. First, I'll demo the,
+
+Unknown Speaker  3:10  
+well, three really. The first is, you know, because we're building a native application, we are actually getting down to the metal of the phone, which means that we are now interfacing directly with,
+
+Unknown Speaker  3:25  
+in Apple's example, iOS,
+
+Unknown Speaker  3:28  
+and we are actually messing with iOS settings, which is normal for apps, but it's not anything like a PWA. We're actually getting down to the bare bones, which means we get exposure to, like, a whole lot of really cool stuff. Today's demo is just a couple things, so I'll show you those permissions, I'll show you some GPS stuff, and then I'm going to show you notifications. So let me share my screen here.
+
+Unknown Speaker  3:54  
+Okay, so you can can you all see this phone here? Yes, all right. So this is the iOS simulator. Ships with Xcode.
+
+Unknown Speaker  4:05  
+It is, for all intents and purposes, a phone. It does not have cell connection and it cannot receive notifications. So I'm going to move somewhere else for the notifications part of this demo. But it is, you can see, I mean, this is the iPhone, right? I can open up Safari. I can navigate the web. I can do some of this stuff.
+
+Unknown Speaker  4:29  
+I can open up maps right now, I have the X code ships with this really cool thing that lets you test location stuff where, if you look here in this drop down,
+
+Unknown Speaker  4:40  
+I have a couple of pre made sort of routes for locations. This is to simulate movement around a city. So right now I have it set to city bicycle ride, but I could also do like freeway drive or a city run, you know, those kinds of things. So you're seeing,
+
+Unknown Speaker  4:55  
+I mean, this blue.is somewhere in Northern California around the Apple campus.
+
+Unknown Speaker  5:00  
+Um, that obviously wouldn't be the case in the actual application. It would be wherever the user's phone is, but I didn't want you to get thrown off by that, so I will open up the application here,
+
+Unknown Speaker  5:14  
+and what we have is just a quick welcome screen. Brian and I have kind of talked about it for the new app, we're likely going to do
+
+Unknown Speaker  5:24  
+a user onboarding experience that walks them through, you know, sort of some quick how to
+
+Unknown Speaker  5:32  
+it's a nice way to get users into the app, as well as encourage them to allow the permissions that we need for the app to work properly. And so as I swipe through this,
+
+Unknown Speaker  5:46  
+this onboarding you can see here I've got location tracking, and right here it says location access is enabled. And then I have this location settings button here, if I click it
+
+Unknown Speaker  5:57  
+and I open up the app, you can see here, location is set to Always. If I set that to never, and I go back to the app, you notice now it says we don't have it. You need to allow it. So I'll go back to settings,
+
+Unknown Speaker  6:15  
+and I will say, always allow. And when I go back, location access has been enabled right. The same applies to notifications. You notice here I've got a big green button. If I go to the notification settings and I disallow it, well now I can't continue. So I wanted to show this to you, because we are able. I think part of our onboarding, we really need them to enable location, even though we're only tracking them while they're clocked in, which I'll show you here in a second. We do need that option toggled on, otherwise the app is not going to function as you would expect it to. So part of onboarding is going to be making them walk through that and and toggle these settings on. Now, I've already run the app in the simulator. If I were to delete it
+
+Unknown Speaker  7:11  
+like this, just like you would a normal application, and go back
+
+Unknown Speaker  7:17  
+and reinstall it, which is you can see in the window in the background, it's going to do some things.
+
+Unknown Speaker  7:24  
+What? What is going to happen when they open the app for the first time? Is going to be different. It's going to show allow location access, so we can give them a message of this is where we can say we only track you when you're clocked into a job, or whatever we want to say, and then we let them allow location. And this is where they actually this is a system level UI that pops up. I can say Allow while using, and then always allow. And then, boom, that now is enabled. The same for notifications. I'm going to allow it. And you can see a notifications have been enabled. And now I get this continue button, so that's how we'll encourage them to to enable the correct permissions for the app to work properly. When I click continue here,
+
+Unknown Speaker  8:12  
+it's going to take me to this little home screen. It's got a few things. Here we see a start tracking button. I'll get there in a second, a recenter Map button and then a reset onboarding. That's just for my testing.
+
+Unknown Speaker  8:25  
+So right now, we can kind of see that the user it looks like is stopped at a stoplight,
+
+Unknown Speaker  8:35  
+which isn't great for demoing, I guess. But whatever, we'll start tracking. So I'm going to I'll start tracking here in a second. I also have these other tabs down at the bottom. This is a location history, so it's going to track all the locations throughout the time that they're clocked in. And
+
+Unknown Speaker  8:51  
+then I have a developer page that's just for our team to be able to to look back on some of the packages that I'm using for this app. So let's, gosh, I wish we weren't stopped at a stoplight. Let
+
+Unknown Speaker  9:04  
+me just start tracking. So you can see here the map kind of recenters itself and
+
+Unknown Speaker  9:10  
+users still sitting at that stoplight. But in the background, we can see that we we have. You can see here permission status is granted, and we have, we do have a location. So if I were to move around the app, it's going to persist. That's fine. I can put it away and, gosh, please go away from the stoplight.
+
+Unknown Speaker  9:37  
+Let's do this. Let's go like this. I'm gonna do just sorry guys, the the simulator runs in a loop on the locations that it goes through. So I'm gonna go ahead and reset that loop like this
+
+Unknown Speaker  9:54  
+and reinstall.
+
+Unknown Speaker  9:57  
+Obviously, users won't have to do this. Um.
+
+Unknown Speaker  10:01  
+Yeah, it's, it's just the simulator. So let me get through that, and then we'll be good.
+
+Unknown Speaker  10:07  
+Here we go.
+
+Unknown Speaker  10:09  
+All right, so I'm gonna allow those, those settings again.
+
+Unknown Speaker  10:18  
+Okay, all right, there we go. See now we're now, we're actually somewhere, and we're kind of moving around. You can see that the pin is floating. So I'm going to say, start tracking. You can see we drop a green pin on the map. And you can see that we're on a bike ride. We're going around the Apple campus. It looks like I can use the app, you know. However, I want to jump around in different areas. The dot continues to move. If I go to my home screen, I can do anything I'd like here, go into Contacts, look at somebody just using the phone. Essentially, I can even go to maps, and you'll see
+
+Unknown Speaker  10:56  
+we're in the same place on maps that we are in the app, right? Because that is the location, quote, unquote, of the phone. I also want you to just look at the weird looking terminal in the background. You can see that we're getting locations here in the app, even though the app is in the background, technically. So I'll go to my calendar, pretend like I'm creating an event, maybe open messages just using the phone. And then when I get back,
+
+Unknown Speaker  11:27  
+you can see a blue line has been following me this whole time, and if I were to stop tracking. Now,
+
+Unknown Speaker  11:38  
+notice that my route looks like that if I go to history now, on the bottom tab, you can see a session, which you can think of this as, like their clock in session, and when I open up that session, here's all the locations that were grabbed for that session. This is everywhere the user went, and every minute and second of that session. So I know that before we had said, can we track them in real time? The answer on a PWA is no. The answer on a native app is absolutely we can. And here's what that looks like. So that is just proof of concept. We can track them in the background. If I were to start tracking again, it's just going to drop a new green pin. It's not going to get rid of my old session. It's going to leave it there.
+
+Unknown Speaker  12:28  
+And let's just say they clocked into multiple jobs, you know, one after the other. I know they're not technically allowed to do that, but let's just say they did, and we wanted to make sure we had the location for both. We get all that, and I will just stop the tracking.
+
+Unknown Speaker  12:44  
+And you can see here in history. Now I have two sessions, right? I've got this shorter one and then the longer one from earlier. So the other thing that's happening, and you're not seeing it on this, on this simulator, because simulators can't receive notifications, but let me try.
+
+Unknown Speaker  13:07  
+Let me try to get this up on my actual phone so that you can see that.
+
+Unknown Speaker  13:21  
+There we go.
+
+Unknown Speaker  13:24  
+All right. So you can see here, these are actual push notifications. So what these are right now the app the way that it works. I'm going to open it on my actual phone here
+
+Unknown Speaker  13:38  
+make sure that I'm good to go and I am okay. So you can see this maps in a different place because I'm sitting in my house. It's not in California on a bike ride, the tracking would work the same, but it's going to be boring because I'm just sitting in one spot. But what does happen is when I click the start tracking button,
+
+Unknown Speaker  13:59  
+I'm going to get
+
+Unknown Speaker  14:02  
+a notification blue dispatch has started tracking your location, right?
+
+Unknown Speaker  14:08  
+If I were to stop tracking,
+
+Unknown Speaker  14:13  
+I get another notification that says, blue dispatch has stopped tracking your location. So we can do things. This is just a demo that we are able to do things like, hey, when the time is approaching 10 minutes, 15 minutes, whatever of a of
+
+Unknown Speaker  14:29  
+a job, we're able to send an individual officer a notification stating that that job is ready to start. The other and that comes from the device, right? The device knows when the job is going to start, and it just reminds them there's another thing that we'll be able to do which is pretty cool as well, and
+
+Unknown Speaker  14:49  
+that is I'm going to show you. It's going to look kind of dorky and nerdy here, but this is postman. This is how we test a lot of API stuff. I'm just showing this.
+
+Unknown Speaker  15:00  
+To you, because this is going to illustrate that we are going to be able to send actual push notifications from either FileMaker or the agency app or the client app to individual users. So you can see, this is in the background. This is the notification I'm going to send. It should have a little mailbox called postman notification, and then it's got a body here, and this is what it'll say. You notice here too. It's got sub ID. This is going to an individual user, so let's just put it into context. If you were sitting on like an officer's record and needed to send them a notification through the app, we can do that by including their sub ID here. And Brian and I will work out programmatically how that works for you. It would just be like a button.
+
+Unknown Speaker  15:46  
+So when I send this, let me just pull up this again and send.
+
+Unknown Speaker  15:54  
+Okay, so if I pull down here, look at that. There it is. So there's a notification. This message came from postman. We can send any from any app, like FileMaker or agency client apps. That's this message right here. If I were to change that to some exclamation points and send it,
+
+Unknown Speaker  16:15  
+there you go. There's the exclamation points. So this will be pretty nice for, I think, for agencies and, you know, app level logic, to be able to send individual officers a either a message or a reminder of a job or anything like that. We can also send to everyone
+
+Unknown Speaker  16:35  
+that has the app installed. So if there's an update, or, Hey, we've added some things to the frequently asked questions, or whatever there is we can send to everyone, and we can also target groups. So we could get down to like the agency level. You know, we only want to send this notification to like the Maricopa. PD, for example, we could do that. So those are the two things that I wanted to show you was also I want to, I just want to add on to that notification the specific use case that I gave Jake when I asked about the notification stuff is, is possible through what he's done, which is something like,
+
+Unknown Speaker  17:18  
+basically An an app triggering a notification to send to another user, like an officer clocks in, and he did not clock in within the geo fence of the site, yeah. What an area within the site where we think he should be when he clocks in that could send a notification to the agency app, if we have, you know, an agency app or on to the website, you know, for the agency, where they can see that type of notification. So that was, that was one of the things in the school, RFP, I know, was being able to notify administrators at the School of certain, you know, triggers certain activities.
+
+Unknown Speaker  18:00  
+So that's definitely something we can do here. So in a way, the you know, apps can talk to each other. It's not just the officer. App can tell the officers a notification about something going on on his own phone. No, it can tell another administrator something going on on an officer's phone. Yeah, totally. I mean, we're able to the, kind of, the cool thing is that, if this, again, we're, like, sort of in the nerdy part of this, but there's this push data thing, this right here can be whatever information we want. So we could gather contextual information about where the officer is. We can, you know, job information. We could even, I mean, we could include like if we were to send out a notification to an administrative administrator when an officer clocks into a job, when the administrator taps that notification, this is the data that gets used by the app, and what we could do is route them automatically to that job detail screen so that they can get right to it, so they don't have to go in and search for it and then look. So those kinds of things are all, are all possible here.
+
+Unknown Speaker  19:10  
+And that is essentially what I've got. Any questions,
+
+Unknown Speaker  19:17  
+that's fantastic.
+
+Unknown Speaker  19:19  
+It's gonna, I think it's gonna work really
+
+Unknown Speaker  19:23  
+well. All right. Well, thank you very much, Jake, I agree. It's it's fantastic. And this absolutely proves that,
+
+Unknown Speaker  19:33  
+you know, going to a native app is going to cure the shortcomings that we currently find on the PWA, which, again, was kind of one of the main, one of the main points of moving to this now. So great. Thanks much. Sure, sure, of course, thank you for that. Alright, so then to
+
+Unknown Speaker  19:56  
+to Les team,
+
+Unknown Speaker  19:59  
+do.
+
+Unknown Speaker  20:00  
+You have a place you want to start, as far as
+
+Unknown Speaker  20:05  
+you know, as far as discovery here would be, like I said before, let's start with the
+
+Unknown Speaker  20:11  
+current PWA officer app. We're going to build that, but in a native app capacity, is there more features that's not included in there that you think you need or want changes to features? I think that's a good place to start for us. So we're not starting from the beginning because we have something.
+
+Unknown Speaker  20:37  
+Joe's on deck.
+
+Unknown Speaker  20:40  
+Joe, yeah. So what we sent yesterday over to you, Brian and Jake, both of you, was basically what we were brainstorming, what we came up with in regards to what we what we currently have in the app, and kind of what we want to remove. Did you guys have a chance to take a look at that, at
+
+Unknown Speaker  20:59  
+all some of it, yeah, yeah. I mean, it's relatively short, so, I mean, some of the improvements, or some of the changes that we would want was, you know, for instance, the favoriting, the favoriting icon, that heart icon, that we currently have, kind of just doing away with it, if we couldn't improve upon it. And I know that was something Ashley brought up and wanted to,
+
+Unknown Speaker  21:19  
+want to talk about a bit, right? Ash,
+
+Unknown Speaker  21:22  
+yeah, I was thinking either, because, currently, if you hard something, it's just that particular job. So if, if that's really all that it's going to do, if we can't improve that or make it, you know, remember that you like that job and and suggest it when it gets scheduled again, then possibly removing that.
+
+Unknown Speaker  21:42  
+What would that mean? So you like the job and you want to be notified when it gets scheduled again. Is that like? What constitutes the job? Is it the client, the job, location, the settings of the job? What exactly do we like about the job?
+
+Unknown Speaker  22:02  
+Well, that honestly could be any one of those. Some people like location. Some people, you know, do like just working for Talis, it's, I could, I could make a list of, you know, different
+
+Unknown Speaker  22:13  
+criteria. That'd be great, because we can do that like a, almost like a curated feed of, you know, hey, I love working for this client. I like working here. I like working jobs that are between this time and this time, you know what I mean, that kind of stuff. We we can do that.
+
+Unknown Speaker  22:34  
+Yeah, awesome. Some requests for officers. Oh, I only want to work if it pays this much money, that's right, you know, want to work the west side of town. I don't want to work the east side of town, you know. So I don't want to see all these jobs. Yeah, yeah,
+
+Unknown Speaker  22:51  
+yeah, that, I mean, that plays into what Bonnie and I were talking about in regards to search functionality. Just, just having that revamped, just giving the ability for the officer to literally type in things like, you know, a certain pay or a certain even zip code, or, you know, even just, you know, just that kind of functionality where it's it's pretty in depth, something like that. Yeah, I think so. I think when we first designed your filters on the officer app. We weren't totally sure how they might use it, and now I think we're we're getting there. I think that all of that is totally doable. I don't necessarily know that it needs to be favorites, though. I think what we could do is just set preferences in filters on on the the app's home screen, and then they could just quickly set those filters or set it and forget it. Kind of a thing where they set their their preferences and then that those are the types of jobs that they're shown,
+
+Unknown Speaker  23:51  
+right? Yeah, I think that'd be perfect, because I think the current favorites functionality was more meant for
+
+Unknown Speaker  24:00  
+your favorite it so I can easily find that job again later, once I decide if I really want to take it, you know, talk to my wife and see if I have anything else I'm doing Friday that I don't know about yet. I think that was the original thought behind it. But if that's not, you know, if that's not adding value, then yeah, let's, let's drop it and do something that's going to add more values. Yeah,
+
+Unknown Speaker  24:24  
+I agree.
+
+Unknown Speaker  24:26  
+Okay, great. I think one of the issues that we saw, but I think this is more in regards to the PWA, as opposed to a native app, was in regards to having that scrolling issue that a lot of our Android guys were running into. Yeah, I think, I mean, that's gonna be taken care of, obviously, with a native app. Yeah, I'm assuming, yeah. I mean, so you can even see, let me just pop this open really quick. Again,
+
+Unknown Speaker  24:49  
+we because we're using an actual at like, see this, this stuff, this, this behavior. When I'm scrolling here, I'm actually pulling and dragging the screen down. I.
+
+Unknown Speaker  25:00  
+That smooth. You know that that's all iOS, and the same applies to Android. So we are not in a web, technically in a website, we're in technically in a native app, so that scrolling behavior will be what they're used to in their platform of choice.
+
+Unknown Speaker  25:16  
+Perfect. Yeah, I think that was definitely an issue that we were running into it, like I said, at least with Android guys, but at least we know what at least we know it's that's going to get taken care of. I think another big element was in regards to, I know we've already covered push notifications, and what's nice about that is they're so robust that we it's kind of limitless in what we can do with that, which is really nice, yes sir. But I think one of the big topics that we wanted to cover was in regards to geo fencing as well as geo location. Now, the way that we kind of thought about it was in regards to on our end, when an officer is in a job in a certain radius, let's say that radius is two miles, and let's say they that job moves. Do we have the possibility or the capability on our end where we can move that that center of radius to that new location in real time, just so it follows that officer as they move.
+
+Unknown Speaker  26:08  
+I think I need more information there, but I think the answer is yes, that's going to be a little bit harder. We've already just, I mean, we've discussed before with GPS in general, and it's probably going to still remain fairly true in the native app. And that's, you know, sometimes you have your job location is not a an address is not a place. It's the southern border of Yuma or, you know, some parade route that goes, you know, 10 miles through town. And that's that's a lot harder to geo fence and decide if they're within, you know, a certain radius, because you don't have a single point to start with. We can still track them, you know, as they move around. That's not a problem. But trying to decide if they're within a certain area really gets interesting when that area is like you're suggesting moving or if it's not a single point, you know, if it is just the entire southern border of the US along Yuma,
+
+Unknown Speaker  27:10  
+that's something that using geofencing in might get some mixed results.
+
+Unknown Speaker  27:18  
+Yeah, and the reason why we ask that is because we like the idea of making it possible where, once an officer actually reaches that radius, as soon as they they pop in there, it would automatically clock them in, and when they would leave, it would automatically clock them out. And so that's the reason why we were putting such a big emphasis on that actual radius or that. Yeah. So that's a that's a good point. However, that would mean the apps tracking their location all the time, not just when they're clocked in, yeah, and that's that becomes a privacy issue pretty bit, pretty fast. And also,
+
+Unknown Speaker  27:56  
+even though it works while it's in the background, GPS tracking, even on a native app, does not work when the app is closed, when it's simply not open at all. And that's going to be for any app on your phone. Yeah, it does not track you if the app is closed completely. The only exceptions would be Apple's native native like maps, reminders and stuff. Yeah, we can't there's no physical way to do that
+
+Unknown Speaker  28:22  
+there, of course, if it's tracking them all the time, if the app has access to their background and location all the time, and we're actually using it,
+
+Unknown Speaker  28:31  
+then yes, we can do that, but that's sort of a business decision that you know you guys would need to make.
+
+Unknown Speaker  28:37  
+You know that that I thought, was sort of a differentiator for you, but I can certainly see the argument for being like, Hey, we're going to automatically clock you in when you get to the you know, location that the job is. That sounds nice, but again, that also means you'll be tracking them even when they're not on the clock, even when they're not working for you, on, you know, anywhere they go, potentially you you're tracking where they are, and, yeah, that, like he said, That's kind of a business decision if you want to kind of have that relationship with your officers. So what is the
+
+Unknown Speaker  29:10  
+what is the advantage of having geo tracking that or geo fencing? Well, because again, when they now, when they when they clock in, number one, we can tell you if they're in or out of a fence, and while they're clocked in, if they leave a fenced area, if they leave a specified radius, we can notify you. We could even clock them out. When they leave the radius, it's clocking them in. That's really the hard part. Yeah,
+
+Unknown Speaker  29:36  
+yeah, because that's the problem. They're not clocking in, they're not clocking out. Well, what we
+
+Unknown Speaker  29:42  
+so we technically do have their local the app has their location. We're just not doing anything with the data.
+
+Unknown Speaker  29:49  
+So what we could do is, when they get to the area that the job is, we could send them a push notification and just say, clock in, and they tap it, and then they clock in. So.
+
+Unknown Speaker  30:00  
+And you know that way we remind them, in order to know if they're entering that fence location, we have to be tracking it. We, we, we tech. Technically, the app does know where they are all the time. The we do not. We are not recording any of the information, but the app knows so you know it. We technically could do that,
+
+Unknown Speaker  30:23  
+you know, if we wanted to truly shut off background track. That's an app level thing. You know what I mean by we're not we don't track you unless you're clocked in, is we don't do anything with your location data. When you're not clocked in, it's only when you're clocked in. The app itself does have permission at an iOS settings level to it has access to their location at all times. So that's it. I know it's a little confusing, but, but that's, that's the truth. We absolutely could do that. It's just you'd want to be, you know, make sure that you tell them that that's all,
+
+Unknown Speaker  31:03  
+yeah. That's yeah, like you said before, I think that's, that's absolutely a business decision. Personally, me, I see that as a big privacy issue. I wouldn't want
+
+Unknown Speaker  31:18  
+any, any company that owns an app that I have to know where I be able to, I mean, know where I am at any given time. That's, I think it depends on the state admission from the company and the explanation of why the locations there. Like I have a weather app that's not the regular Apple app that does have access to my background location all the time. But I want it to because I want it to know. I want to know, really, if there's, you know, a tornado coming or whatever.
+
+Unknown Speaker  31:45  
+So you know, the app, once they give that, always allow permission the app itself, the the framework of the app, knows their location all the time. Les does not
+
+Unknown Speaker  31:59  
+right? Does that make sense? Those two things are separate. So we can tap into that location, wherever you guys think makes the most sense. But I'm just, what I'm telling you is we could do it. What's your what's your proposing, like, clock them in automatically. We 100% could do that.
+
+Unknown Speaker  32:18  
+It's just, we just need to decide what the parameters are of when, because once they're clocked in, we're tracking them. You know what I mean, we are we are actually recording the latitude and longitude into a database somewhere that somebody else could see
+
+Unknown Speaker  32:32  
+when they're not clocked in. The App technically has their location, but we don't see any of it, and it's not getting recorded anywhere. Does that make sense? Yeah,
+
+Unknown Speaker  32:43  
+yeah, absolutely. And then again, where we could get into the choppiness of how to clock them out, if job is not a single point, so having a moving geo fence
+
+Unknown Speaker  33:00  
+to automatically clock them out. Could, could be inconsistent. I would think, I think push notifications is a better option there where, if, yeah, you know, if they get into the area where a job is supposed to be and it's within an acceptable range, we can say it looks like you've arrived. Yeah, do you want to clock you want to clock in? And they just tap it, and then they, it goes, takes them straight to the job, and then it clocks them
+
+Unknown Speaker  33:26  
+in, yeah, tracking you,
+
+Unknown Speaker  33:30  
+yeah, yeah. And that's, that's the thing is, like it, you know, you have to just be confident in your messaging there and and if you are, and you can explain it, which I think we can, we can say, like, listen, the app needs your location, but we don't do it, literally isn't. It's not getting written anywhere. The app knows where you are, and that's just for convenience. But we don't. We never do until you, until you clock in, and then that's part of your job.
+
+Unknown Speaker  33:57  
+So, you know, it's but it is. It is a tricky thing. There's, there's whole departments at companies that come up with the verbiage,
+
+Unknown Speaker  34:06  
+yeah, that's a legal nightmare, but, but, yeah,
+
+Unknown Speaker  34:10  
+yep, interesting.
+
+Unknown Speaker  34:14  
+Wondering how the competitor gets away with it.
+
+Unknown Speaker  34:19  
+Well, they probably do what, what we're something like, what we're recommending is, you know, basically, or, or the app, you can do something where, when they clock out, we totally kill the background process. But what that means is that they then have to re approve the location settings every time you know what I mean. So So there's, there's, there's ways to do it,
+
+Unknown Speaker  34:48  
+but
+
+Unknown Speaker  34:50  
+it's comes down to how you want to do it.
+
+Unknown Speaker  34:55  
+I just wanted to show you it's possible we absolutely can track them in the background.
+
+Unknown Speaker  35:00  
+When the phone is not when the phone's off,
+
+Unknown Speaker  35:05  
+it technically, we can track them if there's no network signal to because it's not coming from the cell towers. It's coming from satellites. It's the GPS. Just like if you have no service, your maps, like your your.on the map still shows up in the right place
+
+Unknown Speaker  35:22  
+there's really the phones pretty much has a location all the time.
+
+Unknown Speaker  35:28  
+So it is absolutely possible. It just comes down to how you want to do
+
+Unknown Speaker  35:35  
+it that answer your questions. Joe, I think for the most part it does. I know we got to do a lot of,
+
+Unknown Speaker  35:42  
+you know, internal discussions in regards to how we want to nail down this geo tracking, because I know the big issue that we're running into and and we know this route will solve it, as just a lot of our officers either not clocking in on time, clocking in late, clocking in too early. And we're, we know the geo location will will solve most, if not all of these issues. I just think it's going to come down to how. How do we want to kind of launch that? Here's what you could do, yeah, the officer, if the officer gets there 15 minutes early and wants to sit and smoke a cigarette, need a sandwich before he starts his shift,
+
+Unknown Speaker  36:21  
+yeah, I don't think I would automatically clock them in what I would probably do. And just that makes the most sense, while it respects privacy, is,
+
+Unknown Speaker  36:32  
+is, is a time based notification, not a location based notification. So, so, hey, it looks like your shift starts in 10 minutes. There's no problem with that, because there's no like, Oh, hey, we've noticed that you've arrived. It's just hey, your job's supposed to be in 10 minutes. Then what we can do is, when they open the app, you know, we there's a button for them to clock in. We could if you want, hide the button or disable the button if they're too far from where they're supposed to clock in, but that's in the app. They're now in the app, right? So, so we could do something like that, there's you can get pretty creative with this. I would recommend doing a time based notification as opposed to a location based notification, because it's just going to be something that reminds them, like, oh yeah, they have access to my location, you know what I mean. But when they're clocked in, it's, it's sort of assumed, like, obviously, you know, I'm on the job. So,
+
+Unknown Speaker  37:28  
+yeah, I mean, I like that button idea. Actually, that one sounds pretty clever. Yeah, we can say, you know, confirm clock in that way, they can't accidentally hit the clock in button, right? We just have a little secondary button that goes, Are you sure you want to clock in? Yes, and there you go. Yeah. We could absolutely also do a mix, you know, shoot them a notification your job starts in 10 minutes, and the book or the clock in button isn't there or is disabled in some way until they entered the geo fence area.
+
+Unknown Speaker  38:03  
+Yeah, I think that could work, actually, yeah. Like, we don't, don't send the notification at all, like, so it is time based, but we also know it's sort of location based where, hey, it's 10 minutes before and they're not in the geo fenced area, we don't send them a notification at all, you know what I mean, and if they are then we do.
+
+Unknown Speaker  38:24  
+Yeah, I think that might work. What do you think? Bonnie,
+
+Unknown Speaker  38:28  
+I think that's the really good a really good
+
+Unknown Speaker  38:32  
+option, yeah, yeah. I think that might do it. I think we'll be able to discuss a little bit more internally, but I think that might be the answer, just hiding that button and not making it available for them to clock in too early, because I'm telling you that they will, if they, if you let them, they'll do it. They'll do it. They'll sit there, and they'll find a way around it, if they can. Yeah, you just tell us what the you know parameters are. We don't want the button to show up until whatever, 15 minutes before, 20 minutes before 10, five, whatever, and, and it won't show up unless they're there, right? We absolutely, yeah, we absolutely understand you, Joe, I think we told you the story before, we had a prior client where we started a time entry system, and it turned out that people were, like, clocking into a job, and they were actually sitting, you know, 10 miles away at a bar. No, they were on a boat. They were on a boat.
+
+Unknown Speaker  39:26  
+They were on a boat fishing in the Pacific Ocean and saying they were on the job. Yes, I'm doing right now, actually,
+
+Unknown Speaker  39:39  
+yeah, that's, that's something we've dealt with before. Um, but yes, I think, I think what we're talking about here with notifications and hiding the button, that's, that's a lot to me. That's a lot less scary as far as privacy and legal stuff is concerned,
+
+Unknown Speaker  39:57  
+then, then really tracking where they are in.
+
+Unknown Speaker  40:00  
+Deciding when they enter a junior fence and then just clocking them in. I think that's that's wrought with potential legal problems. Yeah, it sounds, it sounds like it'd be great, until you start going like, Well, wait a second, what if you know, yeah, and you guys should have a privacy statement to you already sort of do in your FAQs, you know? But the reality is, they have the power. They can either allow the app to get their location or not, but that's also you can either choose to use our app or not. You know what I mean? Because we do have to have it when you're clocked in. We do have to have it if your agency requires it, right? So,
+
+Unknown Speaker  40:39  
+yeah, I think it's a good move now with this, I guess, in theory, it would work as well when they're clocking out, right? We would have a button until they're allowed to actually clock out. Yeah. I mean, that's you tell us, like, if you want the button to show up at the time they're supposed to clock out, or within a grace period of, like, 10 or 15 minutes, we can do that if you want it to disappear after they've left the area. I don't think I'd recommend doing that, but we could do it,
+
+Unknown Speaker  41:07  
+you know, but yeah, time based totally,
+
+Unknown Speaker  41:13  
+yeah. Now when they leave the area,
+
+Unknown Speaker  41:17  
+for sure, but you know, we don't want to
+
+Unknown Speaker  41:21  
+just want to be able to check such a problem with anybody clocking in and clocking out. Right now, it's like, what's the right answer? Well, again, we can do a, you know, if they leave the geo fence, we send a notification. You know, hey, you left the area and you forgot to clock out. Oh, there you go. And you know, that doesn't mean that they have to clock out, but that definitely means you're putting, you know, that that person's making a conscious decision to not clock out well. And that could also be time like that. Could also be time based, right, like even, even if they are at the location, but they're 15 minutes over, yeah, time. We could say, hey, you know, this job ended 15 minutes ago. Are you continuing on? Yeah, yeah. Are, you know, yeah, if they have to leave go use the restroom or something like that, or grab right, right? Well, I mean, this geo fence is probably going to be a couple miles, so that shouldn't, you know, that shouldn't really be a deal
+
+Unknown Speaker  42:16  
+if they just go into the bathroom. They shouldn't have to go that darn far,
+
+Unknown Speaker  42:21  
+because the geo fence stuff, because you got to think of the different types of jobs that that your your officers do, you know, sometimes the job really is, you know, sit at one intersection and probably a couple 100 yards would be fine for a geo fence. But you know, if they're watching a warehouse or a mall or something, and they're going to be driving around the parking lot all night and stuff. Then, you know, you need a bigger geo fence, and that's probably what we would go with. More of that type of theory of their they're watching a little bigger area.
+
+Unknown Speaker  42:55  
+Have you guys thought about how long it's going to take to build? I talked to David a little bit yesterday about it that,
+
+Unknown Speaker  43:02  
+um, we are. We were looking at when Joe said that they,
+
+Unknown Speaker  43:12  
+if we did, if you guys did get this contract for Department of Education, that they might want to start using it in October. We looked at that as
+
+Unknown Speaker  43:23  
+deadline, but one that we might try to hit. We have no idea they could start August 1. Yeah,
+
+Unknown Speaker  43:32  
+we're going to try as quick as we can.
+
+Unknown Speaker  43:36  
+And like I told Joe before, you know, truthfully, we need to finish probably a good month before we actually go live, because we want to do some really good beta testing. And we're just not sure how long it's going to take the approval process at either Apple or Google. You know, you got to give them some time to go through the approval process. So, yeah, I'd say budget at least a couple weeks for that. Yeah. So we're talking, you know, we're shooting for, like, middle of September in order to hit a, you know, beginning to middle of October. Go Live was what we were hoping to hit. And that's still moving pretty fast and hard. Okay, yeah, okay,
+
+Unknown Speaker  44:28  
+you know, it might take a little less. It hopefully should take a little more. You know, we try to hit our deadlines,
+
+Unknown Speaker  44:36  
+but we're we've kind of pulled all hands on deck. We've got at least two other, you know, web stuff, people that are going to be coming on and helping with this, both on the API controller, which is going to be kind of the database, heart and soul of the app.
+
+Unknown Speaker  45:00  
+App that sits up on a server, and the actual app, like Jake is, you know, is going to be working on those so we, we're looking at two people on the app itself, and one person doing the guts on the server to run this. And then, of course, also me still doing what's needed in FileMaker to support this and managing it.
+
+Unknown Speaker  45:26  
+And that's, I think that's the resources we need to push with we brought in anymore, you're really going to get diminishing returns, and that's about as fast as we can push. And still, you know, work solid, work, efficient and give you what you need.
+
+Unknown Speaker  45:44  
+Yeah.
+
+Unknown Speaker  45:47  
+Were you hoping for a faster turnaround than I don't know
+
+Unknown Speaker  45:52  
+how long it takes to build on these, yeah,
+
+Unknown Speaker  45:56  
+but hopefully, you know, since you've already got it, and realistically,
+
+Unknown Speaker  46:03  
+the the less you want to change from the burnt app we have, the faster we can do it, because we have a template of what we're doing. You know, it's a lot less questions and a lot less adding and changing of things. If we're like, Okay, we just want to make this again, but in a native app, that's that's the quickest way to do things. So we already know we want to add because obviously the PWA doesn't have geofencing features. So we already know we want to add that. We know we want to add these notifications to the features that we have already if you guys, you know, the more you guys come at us with new features, the longer it'll take. But I think we can. I really feel good. Jake, stop me if you disagree, but I feel good about hitting the deadline that we're talking about with the feature set that we're looking at right now. Yeah, I feel pretty good about
+
+Unknown Speaker  47:00  
+that. It'll be, it'll be fast and furious, obviously, but you know, I do think we can do it.
+
+Unknown Speaker  47:08  
+Okay.
+
+Unknown Speaker  47:13  
+Okay, sounds good,
+
+Unknown Speaker  47:16  
+yeah. And I think that was the reasons why we were trying to keep our want list relatively short and concise as of right now, at least, just so we can, you know, speed up the process on our end, without overloading you guys with tons of new features or anything like that. We're trying to keep it cohesive and just as streamlined as possible at this point, just to get it up and running. And then obviously, down the road, we'll be able to add more things that we we think of and whatnot, absolutely and that. And bottom line is that actually makes you guys look good, you know, if you put out something and then you never update it with new features, right, right? Yeah, doesn't look as impressive as, oh, look, they added this new feature. Every once in a while, people like the new features. So, yeah, we keep evolving, right? Keep growing and making this happen. You know, yeah, they want to see that same fresh every time. Yeah,
+
+Unknown Speaker  48:05  
+absolutely, I totally agree. All
+
+Unknown Speaker  48:09  
+right, did was there any other like feature you could think of? I think the other list, or at least the last thing on the list that I have, I'm sure Ashley has a couple. But from my perspective, I think one that we needed was a pop up where, when an officer takes a job, just to confirm that they are taking the job, because there's been times where some of these guys are taking them in an accident for whatever reason. But the adding that feature, I think, would be, yeah, that's easy peasy. Totally fine. Yeah, I saw that in your in your list, similar to the clock in confirmation? Yeah, yeah. That's what I was thinking. You really, really want to book this, right? You actually have to show up, right? Are you double, triple? Sure? Yeah,
+
+Unknown Speaker  48:56  
+totally. But I, I think for my list, that's, that's all I have, at least for the immediate stuff. Ashley, I don't know if you had anything else that you wanted to add to the list or anything that we might have missed. Yeah, I was going to bring up the confirm button. But also, and I know we had talked about this in the past, but having the ability to either by, you know, turning the phone or zooming in just to make you know the contact number larger. That was something you said we could do on the native app, the contact phone number, or just job details, like anything that they're trying to read. Yeah, we've been exploring actually making a job detail screen, whereas right now, everything's sort of just on cards on a list
+
+Unknown Speaker  49:40  
+that would leave a lot of room. The other thing that I'm, I'm, I've kind of been
+
+Unknown Speaker  49:46  
+considering,
+
+Unknown Speaker  49:49  
+is splitting now that we're in a native application, we get access to a lot more cool stuff. And so
+
+Unknown Speaker  49:57  
+one thing I've been looking at, um.
+
+Unknown Speaker  50:00  
+You got your old stuff here, and this is kind of what we're thinking for the new native app,
+
+Unknown Speaker  50:07  
+was possibly being able to have the actual location sitting in a map, because it's much easier to do on on iOS. The other thing that we're looking at is splitting the actual job card into different areas so they could swipe on the actual job card and look at different things and focus on things
+
+Unknown Speaker  50:26  
+one at a time. And so, you know, the way that I was looking at splitting it was just overall, just details like date and time, pay the job requirements, the location, the notes. They would swipe over or tap the Notes button, and they would see all the notes right there. And then actions we could give them, either, you know, Add to Calendar, or, you know, set a reminder, or whatever we can think of, and we can have as many of these as you want, contact information, whatever. And and then that could be displayed a lot bigger, instead of trying to to shove it all into one little, tiny window like this. Now we actually have the ability to, like, have pages that they can swipe through. So that's that was sort of just an exploratory thing that I was considering. But if, yeah, if there's information that should be bigger, we can absolutely do that. Nothing I'm concerned about that is, like, that map is beautiful and everything, but if they've got 100 things to scroll through, yeah, we could. We could make it its own, like, you know, we could make it its own area, like, where, you know, location could be an area here, and if they want to go there, they can, okay, you know what I mean, we could do something like that. But I agree with you. I don't necessarily know that the map should be up front and center all the time on every single job, because there's a lot. So, yeah, no, agreed.
+
+Unknown Speaker  51:49  
+Okay, but that's that's the the ability to swipe through different areas on one job card is something new that we get with moving to native application, okay?
+
+Unknown Speaker  52:03  
+And we can absolutely say, if we want, you know, there's, there is no swiping, there is no more information unless it's a job they're booked on. Cuz, yep, of the information like that contact information they don't see unless it's, it's currently in their buy jobs list, meaning it's a it's a job they're already booked on. So while they're until they book maybe they only see one little chunk of information, and they can't do any of that swiping, or nothing that's only on jobs that they're booked on, or even jobs that they're actively working on. Only you know, you can hide it until they're actually working, if you want.
+
+Unknown Speaker  52:44  
+Yep.
+
+Unknown Speaker  52:50  
+Yeah. I know we talked a lot about all the notifications that we could do, but specifically, I just wanted to bring this up when new jobs are added to the dashboard, having that be a notification to all officers that we've added jobs every time jobs get added,
+
+Unknown Speaker  53:10  
+yeah, to the dashboard or to the Job List. I think if you're an officer, that it gets redundant after a while, because they might be adding 20 a day, and they'll begin notified 20 times a day. That might be, that
+
+Unknown Speaker  53:24  
+might be crazy. I could see that getting irritating for the officers. Plus we have to have, we have to have a pretty intense tree of to figure out what officers get that notification for what jobs. Yeah, you know, because we definitely don't want to send every officer that uses the app, you know, every job. So we have to have some type of decision tree to say, Okay, who gets notified about what jobs?
+
+Unknown Speaker  53:54  
+I think if anything, that should be something in file maker at the maybe the reoccurring job, or even the job assignment level, where you can pick, say, an agency or something, and say, Yeah, send out a notification to everybody at this agency. Yeah, we want to prioritize Maricopa or whatever in this we want to prioritize Maricopa for this job. You know, maybe because nobody's booked it, and the job's tomorrow, you want to send out a notification, hey, you know, this job's open. I think that kind of a little more manual notification in that instance would work better.
+
+Unknown Speaker  54:33  
+Okay, okay. But the only other thing I had is more of a question regarding the geo fence radius, because, as you said, some are just in one spot. Others could be striping, you know, down the freeway where it falls outside of that, you know, let's say three mile radius. How much flexibility do we have to either move that radius or enlarge that radius? Um, well,
+
+Unknown Speaker  54:58  
+I was thinking.
+
+Unknown Speaker  55:01  
+Mean, I mean, we could, by say, recurring job level, even we can set a different, you know, we could say, by default, it's always two miles. But in FileMaker, you could change it,
+
+Unknown Speaker  55:16  
+and that would, you know, that would widen or shrink even that default radius, you guys can kind of set it how you like it,
+
+Unknown Speaker  55:25  
+as for doing it kind of in real time. Moving targets, that's that's a lot harder. I would think,
+
+Unknown Speaker  55:36  
+Jake, do you have opinions on a moving geo fence down, like a route or something that sounds No, yeah, you, you wouldn't it. Probably want to do it that way. You'd probably want to have just a center point with a large radius. Yeah, if they're, if you know they're going to be moving, you might just have to make a larger radius and pick a point in the in the center of their route, as the, you know, as the center of the geo fence radius?
+
+Unknown Speaker  56:03  
+I agree. I don't, I don't think a moving geo fence radius is, is,
+
+Unknown Speaker  56:09  
+is, yeah, it's something that we can do. Well, it's something anybody could do. Well, it's just
+
+Unknown Speaker  56:17  
+No, yeah, it there's a location and a radius from the location. Yeah, usually, usually, if somebody does something like that, then the center, the moving center point is the phone, is the person, but that's not what we're looking at here. That's right. It makes no sense to make the center of the radius of the officer,
+
+Unknown Speaker  56:41  
+but that's about the only way we can do a moving radius like that.
+
+Unknown Speaker  56:48  
+Does that answer your question?
+
+Unknown Speaker  56:51  
+Um, yes, thank you. And that's all everything else on my list we have gone over.
+
+Unknown Speaker  56:58  
+Wonderful
+
+Unknown Speaker  57:00  
+anybody else have any questions, thoughts that they want added here? This is great. This is the the best discovery meeting I've ever had. I've got like, four or five points I've written down here because we have something sturdy to start with,
+
+Unknown Speaker  57:17  
+and we want to move fast so we're not adding a lot. Yeah, it helps, helps a lot. Yes, that's going to help us move fast a lot by not adding and changing too much from what we already have so we know exactly what we're building. Does this mean that you guys are going to get started on it right away? Yeah, that was, that was the idea that the proof of concept was just to, kind of,
+
+Unknown Speaker  57:41  
+you know, quiet any concerns that there might be about the GPS stuff. I'm ready to start now. So let's do it cool.
+
+Unknown Speaker  57:51  
+All right. Well, we will push forward full speed
+
+Unknown Speaker  57:56  
+on the native app, and then, yeah, and all the client portal, and the stuff we were going to be doing to the agency portal because of the client portal, that stuff is kind of on hold for now. Some of that may move up quickly, though, if you do, if you do get this contract,
+
+Unknown Speaker  58:20  
+we again, we don't have creating jobs through the agency portal, and all that kind of stuff is not in place yet. So if you do get this job for Department of Education, that might have to move, that might have to move up in the in the priority order,
+
+Unknown Speaker  58:38  
+which we can flex too. I mean, if that's something, we can flex, and is that going to take a long time to build that part depends on the requirements I you know, if we kept it pretty simple just to satisfy the RFP, then no, if we, if we made it super complex, then, I mean, you know, more complexity adds more time. So, so I think if it was like, Oh, we got to get this that done and in place by August, it'd be like, well, let's get them the simplest version of it that we can the minimum requirements for the RFP, and then we can, we can enhance it after that, you know, Okay, Amanda, do you have any any requirements or anything, before we get this thing started? Like, no, I'm no, I'm locked in with you all. And the list that we sent over to Joe, there's so much more that we can do, and it's exciting. I love looking at the demo. I'm, yeah, I'm thrilled. Like, send me over as a tester. I'm ready to go. Awesome,
+
+Unknown Speaker  59:36  
+awesome. I'm just going through the list one more time.
+
+Unknown Speaker  59:42  
+I'm seeing current manual geofika confusion for hours, work teams can automating. Yeah, we talked about that discussion on optimal geofencing complete one to three miles. I think that's probably reasonable.
+
+Unknown Speaker  59:55  
+You know, one to three seems right. If it's a huge location, like at the border.
+
+Unknown Speaker  1:00:00  
+Something you know that could change
+
+Unknown Speaker  1:00:03  
+native app will allow dynamic movement of radius pins for jobs that change locations. I'm not certain we answered that question that we might have, yeah. I think the our answer to that was pretty much no, yeah. Well, the location, the location doesn't effectively change, right? It's just a it's just the the radius can get bigger or smaller.
+
+Unknown Speaker  1:00:27  
+Automatic clock in. Yeah, we talked about that. I think, like pretty much
+
+Unknown Speaker  1:00:32  
+everything on this list we've discussed, we we did discuss some, like, competitive differentiators, and threw them out there, but I don't want to hold up any time. And two of them that any time. And two of
+
+Unknown Speaker  1:00:44  
+them that we just talked about, two of them were offline functionality, because sometimes the jobs put them out in rural areas, and if they don't have that internet capability, is that, can that be a core feature, even without internet, as long as this doesn't take away from time frames.
+
+Unknown Speaker  1:01:00  
+And then another one we were, we kind of threw out there was, like the integration, like, with Apple Watches, you know, the various features on the smart watch, the clock in, clock out, like, just throwing that out there, like, we want to set ourselves apart from the other app, right? Yeah, small, but that's big.
+
+Unknown Speaker  1:01:16  
+I would say the offline capability is definitely something we can do, but that will definitely add development time. Yeah, and I don't want to take Yeah, true offline, but that absolutely is something that, you know, we can target for. One of the first updates I'm looking at it, what I'm trying to be really smart about how we're setting up the data structure for the app at the beginning. And so it has been a in recent days, an obsession of mine, sort of like, yeah, it's, I know, it's like, I'm laying in bed at night going, like, how could I do this? And and I am going to set the foundation and the framework for being able to do that up front. Now, could that be a thing that is done when the rest of it's done? Yeah, it could. It sort of depends.
+
+Unknown Speaker  1:02:17  
+At the very least, even if it's not ready on launch day, the the foundation will be laid so that we're not having to rip out any, you know, plumbing to make that happen. And that's and that's exactly why I kind of wanted to share and since we're in a foundational mood, the other thing I wanted to kind of throw out there, too was maybe we're looking it'll probably come with it, because it is a native app like the AI powered predictive staffing, like recommendations for optimal officer placement on historical data, things like that, just having that foundation for that. Another piece that we've heard from conferences is like, real time officer wellness checks. So for example, like, if I'm out on patrol and they haven't heard from me for a long time, right it, they're gonna, they're gonna call me and they're gonna do a welfare check on me and ask me if I'm okay, and I have to verify, just, like, just thinking, what that looks like, Is there, like, an automatic ping or something, if they don't respond, like, I, I'm just, we're, this is not there's just things. And the throw out there officer wellness is huge. Yeah, I love that idea. Well,
+
+Unknown Speaker  1:03:19  
+well, we can send, we can send notifications on any type of timer,
+
+Unknown Speaker  1:03:25  
+if you haven't heard from them, and then touching the notification, you know, maybe that's enough to say, okay, they're there. They're comments. They've touched the notification,
+
+Unknown Speaker  1:03:35  
+you know, actually breaking into or, you know, getting into the health app on their iPhone to see if their heart rate is okay. You know, I think that's way too far. Well, it's definitely so, you know, crazy. I was showing Brian the other day part of the framework, one of the one of the pieces of the framework that we're using here is called Expo, and it is the bridge between the language I'm writing this in, which is called React Native. And the actual, the core of like, the guts of the iPhone and and expo actually does have, like, a pedometer, like it can get into the pedometer of the phone, which is wild. So I was like, joking with Brian. This is an exaggeration, but I was joking with Brian. I was like, hey, if the officers want to count their steps, their steps on a job, we totally can do that.
+
+Unknown Speaker  1:04:26  
+I'm not saying that's something we should do, but I am saying that, like, there are things we can do for sure going forward, that that that do focus on wellness and safety. Yes, I've been thinking a little bit recently
+
+Unknown Speaker  1:04:41  
+about, you know, when's the last time you took an Uber?
+
+Unknown Speaker  1:04:46  
+Oh,
+
+Unknown Speaker  1:04:48  
+yeah, I did lift, but, yeah, it's just okay. So lift or Uber, you know, the security thing, like the, so, if you're, if you're on a ride, there's actually, like, a there's, you know, a little like, if you're not feeling safe, you can tap this and.
+
+Unknown Speaker  1:05:00  
+Yeah, yeah. We could. We could do stuff like that where, you know, it automatically takes an action if they, if they do something right. We can do things like that. I would say for wellness checks, we send them notifications. We can have it even a check in button, you know, just like, you know, just let us know you're okay, kind of a thing, and that logs it and we're good. And then if they haven't done that in a certain amount of time, we can certainly, you know, fire off another activity. So I think, I think what we should do that all that doesn't require really much foundational work,
+
+Unknown Speaker  1:05:34  
+the the offline data stuff does. And so what I would say is, let's get the rest of it kind of wired up and working. And then if we want to do a whole round after we're launched, of like health focused or security focused updates, we can absolutely do that. I love it because Bonnie that is just that's the way we can set ourselves apart from these other just very basic competitor apps that are out there, and be able to market that is going to be incredible. It's just so topical. It's awesome. Yeah, I mean, I love that you're bringing it up. It's a it's a huge focus for a lot of different companies. And I do want to say that we absolutely can write an Apple Watch app that does communicate with this app. So
+
+Unknown Speaker  1:06:16  
+basically, I'll try that out for you too. I'll be testing that I've seen the Apple watch on your wrist. I know, I know you try already notifications. If they have their Apple Watch connected, if you send a notification to their phone, they're going to see it on their app, on their their watch already, and be able to interact with it in some way, just default, but being able to clock in and clock out. Yeah, that's something we could look at just just throwing it out there. I'm a pie in the sky kind of person, really, really big, and sometimes you have to bring me back. But I also want to give les the biggest right, like advantage or in competitive because these guys don't, I don't, I don't feel like they think like that. They just want to sell tracking. And we want this long term, and we want to build on this, yeah, and then to answer your, your AI questions,
+
+Unknown Speaker  1:07:03  
+as for scheduling and stuff, that information comes from what you have already in FileMaker or and are going to continue to collect. It doesn't necessarily need much of the native app to say, you know, what's a good officer to put on this job based off of jobs he's taken in the past and stuff like that. That's something we can work on, definitely down the line. Yeah, I remember earlier, I think it was after Bonnie went to a convention. She asked specifically about, you know, can we use AI to try to determine when, when officers are burnt out or tired? Yeah, of course, that. And at that time, and my answers might change a little bit now that we're moving into a native app, but not a lot, because it still comes down to the fact of we don't know what they're doing when they're not working for us, when they're not working for Les so it's very hard for AI or anybody else to determine if they're burnt out, if we only know a very small piece of their work schedule. Yeah, data sets are at relatively limited. Yeah, the data sets really little. We don't know what their normal shifts are. We don't know when they're on vacation, you know? We don't know. Maybe it might track their heart rate and our heart rate is beating different. Like said, if you if we want to get into the health thing, the health app and health functions, you know, maybe
+
+Unknown Speaker  1:08:26  
+their phone it picks up the movie.
+
+Unknown Speaker  1:08:29  
+That would be wild.
+
+Unknown Speaker  1:08:31  
+So we've done a lot of pilots with ASU. I'm speaking from the PD hat. We've done a lot of pilots with ASU on wearables. So we've put wearables on our recruits in the academy, and we've watched them go through the entire, you know, months trying to figure out where their higher stress levels were, assessing all of those items. And just, here's just a fun example. So recruits were more likely to be under significant levels of stress, debriefing their sergeant after a scenario, rather than being in a scenario, even if they were told absolutely down,
+
+Unknown Speaker  1:09:06  
+you don't have time to be stressed in a scenario, right? Stress about it when you have to tell your boss absolutely so it's just, it's happening. They're exploring with them, right? They're wanting to use a lot of the virtual realities, and they're, they're they're assessing the perspiration and the fingertips and the heart rates, and when they look at the scenarios where their eyes are tracking, like Bonnie said, like, where did they shoot in that scenario? Were they even using the, you know, their their sites? Like, it's incredible. So it's coming. I don't know if we're here here, but we just wanting to just know where the officers, the PDS focus are when we go to sell them on these items, right? Because these are the things like, can they we may not need AI here for that, because we already have the data sets for the predictive staffing, but does it easily plug into something that they already have that could help them with the early intervention for an officer to detect burnout, right? That's how they think here. So if we can just.
+
+Unknown Speaker  1:10:00  
+Like, I don't know, like, make that connection, and then we just, we just optimal, just optimal. I mean, yeah, great. And I'd love to shoot for all of that when it comes to competitive edge, though, I don't want you to overlook what we already have absolutely I've seen ODM, what you have already developed and what we are developing, yeah, for sure, looks and feels and works 100 times better. But I love, I love the focus on officer wellness and safety, yeah, and so, so, like going forward, I do think we should look for hooks into that. And okay, and see, I mean there, there's stuff that it would be, you would be a far reach to do, meaning, very expensive, and you know, in terms of hours to do
+
+Unknown Speaker  1:10:47  
+that might not move the needle much, but there are other things that might be, like, pretty low hanging fruit that we could do that. Like, really in your marketing, you could be like, listen, there's, there's other services that that handle this. But nobody cares about officers more than we do. And here's the proof. You know, I love that. I think that's awesome, awesome. Okay, well, that's all I have. I promise I'm making this meeting longer. So no worries. No, that's great. And we, we like to hear the we like to hear the wish list. I have one more wish, but
+
+Unknown Speaker  1:11:21  
+one more plan this guy. Mention it
+
+Unknown Speaker  1:11:26  
+to David, eventually, I would like to see this app go like Uber, so that clients will be able to order officers off the app, or off
+
+Unknown Speaker  1:11:35  
+of an app. I'm sorry, you were kind of, you kind of garbled up there. I didn't quite hear what you said, Bonnie, I'm sorry. So kind of like, Uber you can order a car. I want the public to be able to order an officer off the app. Oh, yeah, yeah. That would be, yeah, that would be the customer app, pretty much, yeah. So they'll be able to, like, go in and just say, okay, you know, blah, blah, blah, and an officer will be assigned, or not. Absolutely, absolutely, yeah. I mean, there's a lot of, there's a lot that goes behind that, but there is, but that's, that's not undoable here, like it. I mean, this is as long as it creates the job assignment in the background, and we can pick that up in the app, then, yeah, that's that. That's doable. So I would say, Bonnie, yes, that's absolutely doable. That's absolutely kind of part of the plan and
+
+Unknown Speaker  1:12:26  
+and we're looking at, we're looking at, eventually, at some point, I'm thinking, at least three apps, three actual native apps that they download, you know, one for officers, one for customers, and one for administrators.
+
+Unknown Speaker  1:12:41  
+So that, you know, right now we're, we're looking at pushing out an agency website that they can work with, but it's, it's absolutely conceivable that we would want a native app for that part. That piece also
+
+Unknown Speaker  1:12:56  
+So, and that's, that's part of the requirements I saw for the Department of Education, they just said, you know, mobile application that they can do this type of stuff, administrative stuff on and we can quickly make, you know, basically another PWA or something for the agency stuff to meet that requirement at the lowest, lowest level, quickly. But we would absolutely have our eyes on moving that into a native app at some point. If you know, if we continue to grow it, it's needed,
+
+Unknown Speaker  1:13:27  
+we made that sound a lot more easier than I thought it would be. So thank you. Well, well, you know, Don't thank us yet, because that means we got to build a whole client app, or customer app, which is gonna it. I think the features of it will start to show themselves pretty clearly after we get through this process. But just be rest assured that, like, what, what you're saying, is definitely possible in this it's just, let's get there, and more, more than possible, it's, it's all on our roadmap. You've, yeah, we've, we've laid this out. You've laid out your, you know, your need for this type of stuff. And we've got that roadmap in mind, maybe not the most detailed, but we know, you know, we want to make this app. We definitely need these features and this type of stuff to be able to happen moving forward at some point, so that that is our roadmap.
+
+Unknown Speaker  1:14:17  
+I know we've jostled around the priorities of some of the pieces here, but it doesn't change the roadmap overall. These are absolutely things that we plan to be able to do for you guys.
+
+Unknown Speaker  1:14:31  
+Lastly, I don't suspect, I mean, you guys pretty much know everything that's going to go into this app, and I really don't see there having to be a lot of discussion. And you might have a question here or there, and I don't think so. Like these meetings for the app, I don't think they, I mean, I don't know Amanda, because I think they pretty much have a good handle on what needs to be done we do. I mean, we can, we can basically schedule stuff with you when as we're getting things done, or just a regular thing, it doesn't have to be long.
+
+Unknown Speaker  1:15:00  
+Like, hey, this is what we're doing right now. But I don't think we need to do like, weekly one hour or bi weekly, or whatever, one hour sessions, just because we know what we're building. You know what we're building. I do think we should probably have like, milestone meetings. But other than that, I don't know if we need to waste your time. Oh, that was, that was perfect timing, because I was going to ask you, as we conclude, do we need to still have the Thursday meetings, and what does that look like? What's the cadence that we want? So for this, I would say we can come up with maybe Jake and I can come up with a couple of milestones in the development and have those update meetings there to show you what we've been doing and that we've hit that milestone. And okay, then maybe we, I don't know. I feel like we probably need to keep the Tuesday meetings for now,
+
+Unknown Speaker  1:15:54  
+uh, until Ashley's list is cleared up and she's, you know, not having things for us. Yeah, I like that. So hold on the customer. Maintain and keep the Tuesdays to continue to check in with the fixes challenges and bugs, and then have milestones as you guys will present as needed for the native app. That's correct, that's that's my recommendation, at least perfect. Bonnie, are you okay with that? And team, Yep.
+
+Unknown Speaker  1:16:25  
+Awesome.
+
+Unknown Speaker  1:16:27  
+Okay, so then this week is fried, was traditionally going to be a Friday, right? I'm off on week, sorry. Or was it Thursday this week it was going to be a Friday. Okay, so we're all going to agree. We're going to, we're going to cancel the Friday. Okay, Friday is canceled, but we will resume on Tuesday, and then you guys will send us an email letting us know what you think for milestones. Ashley, work with you. Yeah, let us, let us, kind of get our project up and running. The milestones will probably be a little more dynamic then it seems like they should be like, when, when we have stuff that's that is kind of nice to show. It'll be like, Hey, we have something ready for you. If we try to set up, like, hey, two Tuesdays from now, we're going to have a meeting. It's going to be hard to say, like, what will actually show at that meeting? You know what? I mean? I was going to say, these milestones are not going to be dates. They're going to be milestones in the development. Yeah, that's right, once we get this, prepared to show to you, not like you said, not two Tuesdays or something so, but I'm going to start. I'm going to create the project like tomorrow morning. So we're we'll get started ASAP. We already have the other developers that we're going to be bringing in. They've already been kind of prepped on what's going on and what we're going to need from them, so we should be able to get them moving fairly quickly, also probably not tomorrow, because I want Jake to lead the app development, which means he kind of needs to get some of his ducks in a row before we bring in the others, but they'll be coming in and starting rather soon.
+
+Unknown Speaker  1:18:15  
+Fantastic.
+
+Unknown Speaker  1:18:18  
+All right, we have everything we need. That's a close.
+
+Unknown Speaker  1:18:22  
+Yeah, right. Great, fantastic meeting. You guys are brilliant. Thank you, of course, thank you. All right.
+
+Unknown Speaker  1:18:32  
+Have a great weekend, since we're not going to meet Friday,
+
+Unknown Speaker  1:18:37  
+gentlemen, gift of time
+
+Unknown Speaker  1:18:41  
+bye.
+
+Transcribed by https://otter.ai

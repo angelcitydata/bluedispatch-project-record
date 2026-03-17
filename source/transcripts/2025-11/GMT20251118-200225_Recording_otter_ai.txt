@@ -1,0 +1,739 @@
+Unknown Speaker  0:00  
+Recording.
+
+Unknown Speaker  0:02  
+Okay,
+
+Unknown Speaker  0:04  
+so our updates, we'll start with, we have been absolutely busting butt and got a good amount of stuff done on the native app
+
+Unknown Speaker  0:18  
+last week, and so far this week.
+
+Unknown Speaker  0:23  
+So we have, we have notes running
+
+Unknown Speaker  0:27  
+from the app so officers can write notes, multiple notes, on a job, if they'd like. Those are synced over into FileMaker. That's all running. I'm starting. I haven't quite finished yet, but I'm making the, you know, screen and stuff, so you can view all the notes properly in FileMaker on the job detail or the job assignment detail screen. There's a new tab there, actually there's two new tabs.
+
+Unknown Speaker  0:53  
+So that is, that is up and running. Then we've been getting photos. We're very close on photos. That's what we were working on when we stopped to come here. So we have photos uploading on the app. They're getting to the API, and we're getting the records in FileMaker. So now we just need to get the call to the s3 to
+
+Unknown Speaker  1:19  
+so you can view the photos in FileMaker. But that's all running on the app. It works nice and smooth. You can, you know, hit add. You can either take pictures with the camera and upload them, or you can select photos from, you know, your photo library on your phone and upload them.
+
+Unknown Speaker  1:38  
+So all of that's, you know, kind of up. And we're trying to wrap that up right now.
+
+Unknown Speaker  1:44  
+We just stopped to come in here to talk to you guys, and then we'll get back to that. And that should be wrapped up and pushed to the next test flight version soon. That's just from app to file maker, not file maker to phone. Right, correct. It shouldn't go, right? We're not sending photos to all, not photos, but I was thinking like PDFs and possible things, instructions, yeah, that might have detachments, another phase or piece that's not in our that's not in our spec for this right now. I mean, we have officer instructions, but that's just a text field. You know? You can type out what you can do it, we can do it, but we were, we're also trying to be targets, like aware of yes, so yeah, we're trying. We're trying to get this so you can go live as fast as possible. And I'd like to not add features if we can, for now. I mean, once, once we're live, obviously we can continue to add features, but
+
+Unknown Speaker  2:41  
+I think last time or time before when we met, you know, Bonnie was having questions about timeline and when we're going to be going live. So I don't want to add anything to our current timeline, if possible. Yeah, no, you're good. I was just double checking, yeah,
+
+Unknown Speaker  2:58  
+yeah. And talking about that, actually, Brian, speaking of timeline, not to interject here, but that's something that I know we wanted to cover from our end, when we get around to it, as a firmer timeline, you know, a date range that we can actually foresee and kind of plan on for launch. That's something that Bonnie wanted to update on seeing as the backup servers up and running again, and you guys have made tremendous progress from what we saw on the native app, from all the pushes, yeah, yeah, wait, yeah, wait, wait till you wait to see the next push.
+
+Unknown Speaker  3:32  
+I did want to show so we
+
+Unknown Speaker  3:35  
+another part of what we were doing is getting the administrative stuff for the app working in FileMaker for you guys. So now, when you book an officer in FileMaker,
+
+Unknown Speaker  3:49  
+he gets booked on the app. You know, he'll, they'll, they'll see the bookings happen on the app. So it'll move, you know, into my jobs for that officer, even if he didn't click the button, he or she didn't click the button on the on the app. It was, you know, it's, it's still actually booking them.
+
+Unknown Speaker  4:06  
+Currently, it is, it is validating. So what I do is, when you book in FileMaker, I look and see, does the officer that you booked have a,
+
+Unknown Speaker  4:18  
+have a native app, you know, account on his record, and is it set to allow login. If that's true, then, you know, it tells the app that an officer was booked. If it's not true, then that means the officer is not using the app, and it's most likely going to be, you know, ODM, or whatever that you're booking. And we don't want that to clutter up the app space anyway, so it won't be pushing up to the app when you book those it also won't be pushing up to the app if you book a job that is set for non billable, because we're not showing non billable stuff on the app. So we don't want to waste waste any space on that database setup for the.
+
+Unknown Speaker  5:00  
+Types of jobs.
+
+Unknown Speaker  5:03  
+Also, if you unbook, so if you, you know, clear an officer off of a job in FileMaker, it will unbook them on the app and show back up in, you know, the list for other officers to take it. So that's there.
+
+Unknown Speaker  5:21  
+Also did clocking out. So when you click the clock out in the job assignment and file maker, it will clock them out of the job on the app also, and do all the things that clocking out does, like wrap up all the GPS stuff and send it and, you know, all that kind of stuff still happens. We, we kind of discussed, but decided not to, not to allow you to initiate a clock in from the FileMaker. And the reason behind that is we thought we would have a lot of problems with Apple if we told them there we were providing a process where you could initiate a process that started tracking, that started tracking them via GPS? Yep, so they have to be able to clock in so that they can say, yes, you can track me. We will get straight up denied if we try to do that. That's like a major privacy concern.
+
+Unknown Speaker  6:19  
+So let's say an officer does forget to clock in via the app, and then obviously they can't clock out. So we are entering their hours, then they have to wait for the next day when the pay date is is ran for it to show up in their app.
+
+Unknown Speaker  6:40  
+Maybe, yes, probably that's, that's we haven't that is one of the last things we have to do is this. The last two things we really have to do, as far as new pieces that we haven't done yet, is showing past jobs right now. Once, once you clock out of a job, it kind of disappears off your screen. You don't see it anymore, you know. So obviously we have to show pet jobs that they've worked.
+
+Unknown Speaker  7:05  
+So we can kind of answer that question when we get to that. And then the other piece is notifications. We've started it because you have to get approval and such with Apple and Google over that kind of stuff. But the notification stuff is the other new piece that we haven't wrapped up yet. That's not to say we're finished with everything else. That's to say, as far as new development, you know, new pieces of it, those are the last two things we have. Once we're finished with those, then it's all polishing and fixing certain scenarios and all that kind of stuff. You know, what happens if they force close the app when they're not supposed to, and that's going to make things fail. But of course, we want it to fail as gracefully as possible. So right now, it's not, it's very graceful. So, you know, things like that, we still have to, we still have to polish up and clean up. But as far as the new, new features, features that we're developing and such, we really only have those two pieces left.
+
+Unknown Speaker  8:04  
+So that's, yeah, we can't let you, we can't let you clock them in and force the app to start tracking them. That's, that's a huge privacy concern. They have to be the one to say, Yes, I'm clocking in and you can start tracking my whereabouts.
+
+Unknown Speaker  8:22  
+The other feature, or the call that you're going to get from file maker
+
+Unknown Speaker  8:29  
+is a reset, and that's going to be a, you know, they did clock in, but maybe they close their app, maybe they did something else that, you know, broke the chain of events that we need, and it will reset the job like they never clocked in. It'll take it right back to where they just just booked.
+
+Unknown Speaker  8:49  
+Did want to discuss with you
+
+Unknown Speaker  8:53  
+on a couple of these calls, actually, what type of bumpers and validation we want to put into place? We don't want everybody
+
+Unknown Speaker  9:03  
+at Les, whenever they want to easily be able to click these buttons and have this stuff happen on the app, especially the reset ones.
+
+Unknown Speaker  9:12  
+So it might be a,
+
+Unknown Speaker  9:16  
+you know, user level, certain people are allowed to do it. But then we always also, I don't know if we're going to want to add a, you know, if it's this situation, we don't let them do it. Even if it's this situation, we don't let them do it, you know, a couple of bumpers to help us out there to because if I just make it, you know, a button you click on, and it happens with
+
+Unknown Speaker  9:37  
+somebody's going to do it erroneously again and again. So we got to put some type of bumper, some type of, you know, at least a dialog box that says, you know, this is going to happen if you continue. Are you sure kind of thing?
+
+Unknown Speaker  9:53  
+But we'll, I'll, I'll get with you, Ashley, and we can kind of discuss the want those bumpers to be. And.
+
+Unknown Speaker  10:00  
+Validations to be to allow you to reset a job, to allow you to
+
+Unknown Speaker  10:04  
+unbook a job, you know, that's going to be affecting the app, okay,
+
+Unknown Speaker  10:10  
+but that was okay. Was a good amount of work to make sure that you guys can administer the app, which you absolutely have to be able to, you know, you got to do stuff on your end. So
+
+Unknown Speaker  10:21  
+those are the calls we have prepared. There's actually also a get status that just returns to us what status that job is in on the app, where it thinks it is and, you know, in the list of processes that happen.
+
+Unknown Speaker  10:37  
+But that is just kind of used in conjunction with the calls to help with validation. I don't think we're necessarily going to give you a button that's going to do anything that it's just going to be part of the other stuff. You know, if you go to clock out, first thing I'm going to do is get status and see if something's clocked in for that job
+
+Unknown Speaker  10:57  
+before I let you clock out. So that kind of thing.
+
+Unknown Speaker  11:02  
+Um, okay,
+
+Unknown Speaker  11:04  
+that is mostly what we've been working on. We can kind of show you some of that, if you'd like, or you guys can poke through it yourselves, or if you really want, we can make a plan for some day here soon to, you know, sit and do a real demo. You know, if you, if you would like to have Bonnie or anybody else in on that we can, we can do it that way,
+
+Unknown Speaker  11:29  
+but that, that's up to you guys.
+
+Unknown Speaker  11:32  
+Once we push again to test flight, you'll be able to see and test it yourself.
+
+Unknown Speaker  11:39  
+I mean, we can show them how it works, if you want to, that's what I'm offering. If they want to. Yeah, why not? Yeah. All right, Jake, you want to grab the screen and show a couple things? Sure.
+
+Unknown Speaker  11:55  
+Let me do that.
+
+Unknown Speaker  11:57  
+I understand that this isn't a high volume.
+
+Unknown Speaker  12:03  
+What you speaking?
+
+Unknown Speaker  12:06  
+Sorry? Oh, we weren't supposed to hear that. Something's not high volume. Brian,
+
+Unknown Speaker  12:13  
+I'm managing too much. I'm sorry. People
+
+Unknown Speaker  12:18  
+have multiple desktops open. Okay, here we go. Think,
+
+Unknown Speaker  12:23  
+yeah, can you guys see the phone? Yep, yep.
+
+Unknown Speaker  12:29  
+Okay.
+
+Unknown Speaker  12:31  
+So if I go to, you know, I'm not going to pick today's job, but next week here, this is a, this is a job.
+
+Unknown Speaker  12:41  
+What I can do now is these two buttons on the top right hand corner
+
+Unknown Speaker  12:47  
+notes being the most right hand, you know, I guess, like the
+
+Unknown Speaker  12:54  
+Oh yeah, there is sorry, being the right most button that's going to pull any existing notes that are in FileMaker or have been left by someone else on the job, or this office, or whoever. And all they have to do, if there's nothing there, they just click into this no field at the bottom. They can type whatever they
+
+Unknown Speaker  13:15  
+like.
+
+Unknown Speaker  13:17  
+Grow with them as they type super long notes, so no worries about long stuff.
+
+Unknown Speaker  13:28  
+And then they submit that, and that's going to go to file maker. So that's in file maker. Now,
+
+Unknown Speaker  13:37  
+as notes get left, here's another note, short one,
+
+Unknown Speaker  13:44  
+you're going to see them in chronological order from going from the oldest at the bottom to the newest at the top. So that's kind of how it works. Does scroll so if, if the list is really long, it'll scroll for them. It also does support
+
+Unknown Speaker  14:02  
+age breaks. So I can do stuff like this. Here's a new line in case they want to emphasize things using returns. It doesn't, it doesn't take any of those returns out. It leaves them alone. So you can see here, right? So kind of nice.
+
+Unknown Speaker  14:22  
+Those should all be in this job, attached to FileMaker. Now, the same applies to photos. So if I open up photos and I have no photos in this job, I just see this little plus, I can click it, and then you see this. This tray sort of glide up from the bottom. I could click the camera, but it doesn't work on the simulator, because there's no camera on the simulator. So it works on the phone, or I can pick my my library, which is right here, and it pulls up any images that are on the phone, and they could select one or multiple.
+
+Unknown Speaker  15:00  
+Then when they put them in, they're not uploaded yet. That's why you see this button turn blue. They click this button, you're going to see the loading state. And it sometimes takes a little you know, there you go. It's done. So those all got uploaded. If I click into photos again, you know, we're going to see the photos that I just put up there.
+
+Unknown Speaker  15:22  
+And that's pretty cool. I don't know it, Jake, but we discuss
+
+Unknown Speaker  15:28  
+until you click submit, you can delete. I haven't done that yet. Eric, so yeah. So if they were to go in and pick a different photo that hasn't been synced to the server, this one right here, I'm going to make it to where they can sort of tap it and hold it and delete it if they want to, although, if they don't click Submit, when they put this modal away, yeah, they're gone. That's not going to be there anyway, yeah.
+
+Unknown Speaker  15:55  
+So, so that's how that works. So the point is, you have to submit to have them go to FileMaker, but you can delete them
+
+Unknown Speaker  16:07  
+until you hit submit. Once you hit submit, you can't delete them because they're but we definitely wanted to give them away in case they accidentally tapped on a photo that they didn't want to send. You know, to be able to to be able to clear it before they send. Yeah, once they send, though it's, it's gone, it's yours, and they can't, they can't delete it. Yeah,
+
+Unknown Speaker  16:29  
+exactly other updates.
+
+Unknown Speaker  16:33  
+There's been a lot of just efficiency stuff, making things work better,
+
+Unknown Speaker  16:39  
+taking out some recursion that was happening that was slowing things down. We've drastically improved the map and how it works. So I can't show it to you here, because, well, I suppose I could, but it's, well, let's try it. It's a simulator, but let's try it. So if I clock into this job,
+
+Unknown Speaker  17:02  
+yeah, okay. It does on the simulator, great. So notice how it orients the map with the direction that the person's going. That red pin should not be there. Again, this is a simulator. I don't know what it's doing, but you see how the map turns it also focuses on where they are before we had basically if they were a little too far away from wherever the
+
+Unknown Speaker  17:25  
+job was, it wasn't focused on where they were, and it was kind of confusing looking. So now, now it, it, it stays centered on where they are until they clock out,
+
+Unknown Speaker  17:37  
+and then we're done, right? And then they can, they can move around if they want to.
+
+Unknown Speaker  17:45  
+So that's an improvement that we've made. We've also got, officially gotten real officer data coming in here. So this is pulling from my officer record, except for the picture, which I will do probably later today or tomorrow. Personal Info is pulling from file maker. So if I were to, you know, come in here and say.net
+
+Unknown Speaker  18:09  
+that's going to update that that now shows in file maker. So if I go back to this page, it's going to say.net
+
+Unknown Speaker  18:16  
+so yeah, we here on this personal info page. The only thing we're letting them change is their email address, because the phone number is tied to the account. That's what they use to log in. So changing that is not simple. So we don't let them change that, and we just don't let them change their name, because it's their name they should, you guys should have that properly. If they want to change it, they can call you and you can change it in file maker, of course. But we're only letting them change their email, and then we're, we're going to also be working on
+
+Unknown Speaker  18:50  
+the availability, you know, kind of setting stuff to make sure that they can change that stuff wouldn't changing their email pose a problem if they're connected to the agency app or the agency site,
+
+Unknown Speaker  19:04  
+yes, no, yes and no. So it's no because the agency app is looking at, you know, when you go to the Web Account tab and you mail there, that's what it's looking at. So if they change their email here, it changes it in their officer record up top, where it says email, but it doesn't change it in the web log
+
+Unknown Speaker  19:30  
+or the web site login. So there, they would have to call you guys to change it there, and basically you'd have to delete their website account and create a new one, yep. Okay. You can see here, if I go, if I do change my email,
+
+Unknown Speaker  19:46  
+you see a change in the background to Doc, but the website I'm still registered is.com
+
+Unknown Speaker  19:54  
+Yeah, gotcha. So it's not messing with their account, but you'll.
+
+Unknown Speaker  20:00  
+I either want to be notified that they've changed something so that you can do that. You know, I don't know if we should automatically. No, I have it I have it disabled. I have it disabled right now, but
+
+Unknown Speaker  20:11  
+when they make these changes on the app, Ashley had requested that they get an email at info.info@les.net,
+
+Unknown Speaker  20:21  
+so and that that will be happening, I just disabled that bit of code while we're testing, but I'll turn it back on. Obviously, before we go live, I didn't want them to get 500 emails while we were testing. You're Yeah. Brian gets notified every time I do yeah. Jake and Steve are doing all of their testing as me. So I get all the job reminders,
+
+Unknown Speaker  20:44  
+all day, all night, every day
+
+Unknown Speaker  20:48  
+in my email. Yeah, it's, it's awesome.
+
+Unknown Speaker  20:52  
+So those are the updates that we've made just in the last week. I mean this, there's the photos and notes were significant. So we're, I mean, when you guys talk about timeline, I think we'll, we'll get a better idea of that together, but we are very close here. So, yeah, could you go back to, like, the account profile, and let's, let's go to work info. I just want to make sure there's nothing else from the officer screen and file maker that you think they would need to see right now, they can't change any either of these three things, but they're just viewing them here. That's their badge number, the agency they're attached to, and the years of service is a calculation based off of the agency start date in the officer detail screen, yeah, if I were to do not les is start date, but the agency start date, like I just changed in FileMaker, and I think I actually have to read,
+
+Unknown Speaker  21:49  
+but so that's, that's just a calculation of that, if there's anything else you guys would like to see on that screen, or you think they should be able to see on that screen, I mean, let us know,
+
+Unknown Speaker  22:01  
+and we can add it same with the availability screen. So the availability screen right now is just that, you know, days of the week, they can turn on and off their availability. And we're going to be adding the POV,
+
+Unknown Speaker  22:15  
+which for that, the traffic and security switches for that.
+
+Unknown Speaker  22:21  
+And I wanted to ask if you guys wanted the languages on there so that they can turn on or off. You know, if they speak Spanish or French or whatever, I see that you have that in your system, but I don't know if you want them to be able
+
+Unknown Speaker  22:38  
+to to flip that on and off
+
+Unknown Speaker  22:41  
+right now it doesn't change what jobs you see based off of language at all, but I don't know if you wanted them to be able to kind of self report that they speak a different language.
+
+Unknown Speaker  22:56  
+Good question. I'm
+
+Unknown Speaker  22:59  
+trying to think of a scenario where they would it honestly doesn't come up often,
+
+Unknown Speaker  23:06  
+but I'm not saying, though, that it wouldn't in the future, and that's kind of where I need to think about it. But it's fine, yeah, like I said, if, if you come up with something else that you already have on your officer detail, so if it's not a new piece of information you want to start tracking necessarily, but if it's something you already have in FileMaker and you think that they need to be able to see it and or change it, let me know, and we can, we can add it to that section. It's pretty quick and easy now that we have the structure, as long as it's not something new that we're not tracking at all in FileMaker, yeah, gotcha. As long as we're just saying, Yeah, we also want to see this on the app that's quick and easy.
+
+Unknown Speaker  23:44  
+And then there is the conversation of
+
+Unknown Speaker  23:49  
+branding in the icon you guys had that I saw Amanda sent a message, I think, email, like yesterday, that you guys might be prepared to
+
+Unknown Speaker  23:58  
+talk about the icon and what you did? You like the three choices we gave? Or do you guys have a fourth choice?
+
+Unknown Speaker  24:08  
+I think, I mean, we did talk it over, but I think von needs to make the final decision still. But, I mean, we have narrowed it down to what we what we want. That's it. Really. It's up to her. So when she, once, she makes that decision, we can get that over to you, but that that shouldn't take long, probably end of this week, maybe, okay,
+
+Unknown Speaker  24:27  
+yep, yeah, once that decision is made, we can, you know, we can get that icon pushed in there. If it's one of the three options we gave you, we already have it prepared, and we don't have to do any, you know, messing with the image to make it look good as an icon button or whatever. You know, we've already got that, so it's
+
+Unknown Speaker  24:45  
+definitely quicker.
+
+Unknown Speaker  24:48  
+Can you show Jake the
+
+Unknown Speaker  24:51  
+login screen? Yeah,
+
+Unknown Speaker  24:57  
+so we just added the little lightning bolt there.
+
+Unknown Speaker  25:00  
+There
+
+Unknown Speaker  25:03  
+in
+
+Unknown Speaker  25:05  
+again, to try to keep things moving forward at as brisk speed as possible. I don't want to do too much here, but if you guys would prefer that lightning bolt be bigger or the words blue dispatch under it, that might be something that can be done pretty fast. I don't have that logo, though, so they have one that's vertically stacked. I could,
+
+Unknown Speaker  25:28  
+I mean, I could probably cut it up and make it but, yeah, we have those. We have those vector files. We could cheat over to you if we needed to resize it or do something different to it. Okay, that sounds good. Yep. So,
+
+Unknown Speaker  25:42  
+and that'll, that'll kind of be the login screen
+
+Unknown Speaker  25:47  
+right there. So that's kind of the branding conversation there. The rest of the app is, is pretty branded already.
+
+Unknown Speaker  25:56  
+And, you know, looks the same as it has, but I personally think it
+
+Unknown Speaker  26:02  
+looks great the one thing it was hard for him to show on the simulator when he was clocked in, is, as you're moving around, if you turn to the left, the whole map turns to the left for you. It's really cool, you know, like, if you're walking around with with maps on, you know, with Apple Maps on, it'll it'll turn with you and everything, so that you're always kind of facing forward, and it knows which way is forward as you move. That's cool. So that type of stuff was really cool,
+
+Unknown Speaker  26:34  
+and that's mostly what I've got.
+
+Unknown Speaker  26:38  
+Ashley, I did see you. You You said you've tested on that new the new AWS server is, is Ginger SEC finished with all the changes they want to make. Yeah. So she said that she finished all the patches. Is what she called them, like security patches. So I tested
+
+Unknown Speaker  26:59  
+that this morning, and I did get the green lock on pretty much all the sites, and I added some jobs
+
+Unknown Speaker  27:07  
+through the, you know, the UI. But then I also made changes on the dashboard. I was trying to think I was going to ask before I gave them any sort of green light, like, if there's anything else that you could think of that. Yeah, the other things we would want to do, and it's it was harder, things that I can't have you test necessarily, but okay, we need to take dev versions of the web apps that we have the agency and the officer one, and point it to this and make sure that that connection still works. And then I'm going to have Steve real quick point the API for the native app to it and make sure that that connection still works and such. So there is, there is more that needs to be tested, but
+
+Unknown Speaker  27:54  
+the green lock and the SSL that was the problem we were having before, so that's a very good sign,
+
+Unknown Speaker  28:02  
+yeah, I would say that's a very good sign that the other ones will work. But I definitely would want to test them before anybody gets gives an ultimate green light, absolutely okay. Do you know? Because I was going to email them sometime after this call, just to give them my updates and what I've learned. Do you have like, a, maybe
+
+Unknown Speaker  28:22  
+a, not eta, but you know what I mean? Yeah, on when you'll be ready. Yeah, I
+
+Unknown Speaker  28:30  
+could probably do it tomorrow.
+
+Unknown Speaker  28:33  
+Very packed for the rest of my day today,
+
+Unknown Speaker  28:37  
+but it doesn't take me long, as long as things work, realistically, all of this, all three of those testing scenarios, will probably take 3045, minutes, as long as we don't run into problems. But if we run into problems, then that's that's a failed test. And we'll call you and tell you that. But I could probably do it tomorrow morning, because I can all of them accept the native app. I need Steve's help on that one.
+
+Unknown Speaker  29:05  
+Awesome. Okay, cool.
+
+Unknown Speaker  29:10  
+I
+
+Unknown Speaker  29:11  
+think that's about it for the updates, unless
+
+Unknown Speaker  29:15  
+So Joe, you'd like to, you'd like to have a timeline conversation, um, yeah, that's what Bonnie's looking for. I know, last time we talked about it, it was, you know, beginning of the year, but we kind of need a hard, a hard date so we can plan around that and then. So,
+
+Unknown Speaker  29:33  
+yeah, that's why we're we're reaching out to you
+
+Unknown Speaker  29:38  
+again. It gets, gets difficult because there's pieces that are out of our hands, both,
+
+Unknown Speaker  29:46  
+both, of course, we're going to want you guys to test thoroughly, and then we got to hand over to Apple and Google, which we have close to zero control over.
+
+Unknown Speaker  29:59  
+I gave.
+
+Unknown Speaker  30:00  
+30 days for the Google, Google and Apple section, just kind of off the hip, because it could take two or three days. It could take 30 days, you know, and anywhere in between those, I think 30 days is a is a great guess for, you know, to make sure you have enough time.
+
+Unknown Speaker  30:21  
+I would say,
+
+Unknown Speaker  30:28  
+plus, we got a bunch of holiday I don't
+
+Unknown Speaker  30:34  
+want to put you on the spot, but Jake, are you taking any big vacations this year?
+
+Unknown Speaker  30:39  
+I'll be. I'll be out like Christmas week, probably Christmas week, yeah, sometime in there. I haven't booked anything yet, but okay, so probably that that whole week of Christmas, likely, likely, okay, that's not, that's not terrible.
+
+Unknown Speaker  30:56  
+I mean, I might take one or two days extra during that week, but Okay, so we're not talking two weeks or or right now, no, but if I do, if that does happen, I'll make sure that, like, I have everything I need to push, push.
+
+Unknown Speaker  31:12  
+So I would like to get it to Apple and Google, say, the end of the second week of December, that gives us a little over three weeks,
+
+Unknown Speaker  31:29  
+but you need a lot of testing. Yeah, the problem with that is that's time for us to code. That really doesn't give you guys much time to test before we hit that button.
+
+Unknown Speaker  31:41  
+Safer would be we push to Google and Apple the end of the first or second week of January, but we could push it a little harder,
+
+Unknown Speaker  31:55  
+depending on, depending on how, how thoroughly and how fast you guys can can test on top of our testing. I mean, we test as we go along, and would continue to test, but I like to get green lights from you guys before I consider anything finished. So I mean alternative when I say testing, that's what I mean. We can also release to a pilot group of officers through test plan. True. Did you hear what Jake said? Not really.
+
+Unknown Speaker  32:23  
+He said, Yeah, we could do a pilot group. We can give test flight to a couple officers
+
+Unknown Speaker  32:32  
+at some point here, pretty much whenever you guys want, we can start the testing. So, yes, so today's the 18th or Tuesday. So what I what I heard is that in you need two weeks
+
+Unknown Speaker  32:47  
+to the two weeks or three weeks more to do what you're working on right now. So the second week, I was in the second, yeah, the second week of December, which is the eighth for December, 8 would be when you guys, that week is when you it's what I'm hearing, is, would want to then start the clock on the 30 day, Google, Apple review at the end of that week. So the 12th,
+
+Unknown Speaker  33:12  
+really, we probably start the clock the 15th, because we probably submit the 12. That's the third week. Yeah. So we'll submit, I said, the end of the second week, which would be the 12th submit, then Google and Apple isn't going to do anything over the weekend either.
+
+Unknown Speaker  33:28  
+And I don't know, and that Christmas season very well may slow down their approval process too. I don't know. I have no idea. You know, right when they were
+
+Unknown Speaker  33:41  
+so at the count of the holiday. I'm looking at the calendar that puts us at
+
+Unknown Speaker  33:46  
+the week of January 12, if they that they should have a response to us.
+
+Unknown Speaker  33:53  
+Yeah, 30 day mark. Yeah, 30 day mark. So that's the way, most likely what's really going to happen is they're going to get a response, probably within a few days. The problem is, they are most likely not going to accept the first go. Okay,
+
+Unknown Speaker  34:10  
+if you want to bet money on it, yeah, you're, you're probably going to come out ahead. They and if we and if we want to pilot, tell me how that works, so we wouldn't stall for those four days, it wouldn't just be quiet. Then you would be saying that in that time period when it's sent to Google and Apple, that in that timeframe we would have a handful Ashley and Joe would pick whatever officers they want to do test and pilot testing during that 30 day timeframe between December 12 and January 12. Is that correct? Yes, they would use test flight just like you guys are now, we would just get them on the test flight program. Yeah, and Ashley, what do you guys think about that? I mean, obviously we have to finally as a timeline with Bonnie, but just as a hypothetical, what do you what you guys please tell me what you're thinking. I feel like I don't want it to slow us down, and I'm.
+
+Unknown Speaker  35:00  
+Worried that might do that, having a test, you know, a group, I almost feel like, Yeah, I think so at least. What do you think, Ashley, I kind of agree, just because of experiences that we had in the past last time. If we do do that, I do, I would recommend having me thoroughly test it for at least a few days, because otherwise I'm just gonna get,
+
+Unknown Speaker  35:21  
+I just, I know what to test for, what to look for, just so I don't get,
+
+Unknown Speaker  35:27  
+I kind of agree. I mean, I could see it being beneficial, but I could also see,
+
+Unknown Speaker  35:33  
+you know, oh no, that's great with with a pilot program with a couple officers, you're gonna get a lot more feedback than you are bugs issue, you know, they're,
+
+Unknown Speaker  35:43  
+they're not going to be testing for bugs. They're going to come back going, you know, oh, this is fine. But what I would really like is, you know, yeah, they would, and we're not, we're not looking for more feature requests at this point. Yes, okay, so that's just internal testing so we could do, Joe, Ashley, me, whoever else they want. We internal test during that block of time why we're waiting for people. And I agree that makes more sense. That makes a lot more sense and and my worry is that from what it sounds like timeline wise, it's almost like we would launch in February. And I know Bonnie, that's going to be a no go for her. There's no way. Yeah, I agree. That's too far. Yeah, far for her way too far. So it's got to be in January,
+
+Unknown Speaker  36:30  
+okay? I mean, you guys can, I mean, technically, start testing. Yeah, start testing right now.
+
+Unknown Speaker  36:38  
+May I ask a question? So are you all, and you don't have to answer me. I just want to put this out there so I know then previous calls you've had conversations about resources and what's available and what's not. Have you guys been given the green light to because we want to have a January go live date? Have you been given the green light to make us a priority? Not that we're not a priority.
+
+Unknown Speaker  37:01  
+You are a priority. It's, it's about, it's about finding people with the skill set, the people that have the skill sets we need. You guys are all devoted to you, almost 100%
+
+Unknown Speaker  37:11  
+Jake, okay, so what's the tightest line that we can take back to her to get her to sign off on? You guys have to help us, because she she's not going to take February as an answer, yep,
+
+Unknown Speaker  37:24  
+I would say the tightest. You know, if, if a lot of stuff goes right, we could go the first week of January, but realistically, the second week is probably
+
+Unknown Speaker  37:37  
+more to the point. Also, you gotta remember when it comes to these apps and submissions with Google and Apple, we can't, we can't make changes on the fly like we can with file your current and the websites. You know, everything we have, we have to find bugs, we have to fix them, and we have to resubmit a new version. Is no just, you know, we make changes and then you immediately see it like we do on the website, right? That's not how this the process is. We release,
+
+Unknown Speaker  38:13  
+we identify any bugs. We have a test flight version that goes out to you guys you test to make sure the bugs that have been identified are squashed, and then we push that version that's been in test light into a submission to Apple and Google. That's, that's and then they it's subject to their review. Yeah.
+
+Unknown Speaker  38:33  
+And also, as we discussed last time, we can talk, you know, maybe you can push this or discuss this with Bonnie. Also, there is a chance, probably a decent chance, actually, that we may get approved by Apple and not by Google. You know, Google may take another two weeks, three weeks past iOS, Apple is relatively easy to get through Google's okay. So if that were to happen, that's good that you put that out there. Do we go live with Apple and we just are hold with Google? Or is that something that we need to as a
+
+Unknown Speaker  39:10  
+plan in place like we're Bonnie's okay to go with Google, but the droids can't like is that something a decision that we need to know now so that we can put that in our pocket? Yeah, basically, if Apple goes first, we can have that live first people with Android. Would, you know, you also got to remember, we're not taking away the current officer web app that they're using, right? So you know that there's no reason why they can't continue to use that while, you know, while we finish up with Google or something. But that very well may be what happened. There could be a couple week lag between when we get approval between the two, because they're not in company and there's not the same approval process. We can do it. We can, we can talk about that. So you said, second, we'll, we'll ask her what she thinks about that.
+
+Unknown Speaker  40:00  
+I'm pretty sure, based on what you just said, that there's no downtime. They can still use the web. That should be fine. I don't think that's an issue, but we just want to make sure everybody so when you guys get that response, you know exactly what you do, and we don't have to wait for a meeting and we don't have to add any any time we already know our action item. Yes, direction, okay, so second week in January puts us, I'm looking at the calendar, um, the President's Day, right? Is that a holiday mercy, actually? Oh, my goodness, we okay. No, no, okay. That's Martin Luther King Day, and that's the 19th, but that puts us at the 12th, the 13th. So, um, just so we're all back. How much longer do you guys need today? Is the 18th.
+
+Unknown Speaker  40:43  
+And so I'm going to work this week through. I'm working backwards, so I'm trying to look so if January, the week of January 12 is when we want to go live, you want me to put the 16th, because that's the second week.
+
+Unknown Speaker  40:56  
+Yeah, whatever the Friday is at the end of the 16th.
+
+Unknown Speaker  41:00  
+January. 16. Okay, 16th. January 16, right. Work backwards, all right. So we'll put in a gap for the submission to Google and
+
+Unknown Speaker  41:12  
+Apple. Okay, so what date, then does that put us at? See, one two. Wow, that's is that the week of Christmas that you submit to Google and Apple? Like I plan to, I'm hoping to submit to to Google and Apple the 12th of December. Okay, okay, good, good. Okay, those are lucky numbers that will play the lottery, 1212, 25
+
+Unknown Speaker  41:44  
+Yeah. Okay, so in my experience, going live is usually been better on a Tuesday or Thursday. Do you guys not have that same Do you have that same experience, just because maybe that's our culture, that might be just our culture, because, you know, government, consumer facing application, this is something that people use to make extra money. So
+
+Unknown Speaker  42:05  
+you're right, those trends are true in these kinds of scenarios you have. It's a group of known users
+
+Unknown Speaker  42:13  
+and teaching me thank you again. And Amanda, that trend tends to be true with changes to
+
+Unknown Speaker  42:22  
+to websites and such, because if you put it out on a Tuesday, you get feedback, you can make fixes and put out the fix by the end of the week, by Friday, with a native app. That's probably not going to happen, because we have to go through the entire submission process every time we do an update. Now granted once we get the initial the initial one through, and we're on the app stores. You know, every time we do an update, the submission process is easier and quicker, because we're we know we're already an existing app that we're just updating. But it's not nothing. It's not, it's not going to be subject to decline. They know, yeah, absolutely. So Okay, and so my other question would be, Okay, so today's the 18th we are planning to submit on 1212 When do we want to start? Is it after 1212 that you start testing internally with us? No, no, I want you. I want you testing now, testing last week. Okay, okay, so we know some bugs test mode. Yeah, I'm, I'm gonna make a Trello. I'm gonna make a new list on Trello for you, Ashley, and for your team, period. And we start running some some bugs and such through there. We obviously know of some that are existing. Some are bugs. Some are just we, we wish it worked a little better, or, as I said before, we wish it failed a little more gracefully. Some are just going to fail. Like I said, if they close the app while they're clocked in, you just can't do that. So we got to figure out a way for that to fail gracefully. They throw their phone into a river, or it gets broke. You know, in the middle of of a job. We have to have graceful ways for this stuff to happen. Well, we do in the dev ops layer, yeah.
+
+Unknown Speaker  44:08  
+We can sever, yeah, the the session, but it's not like the user can do anything about it, yeah. So, so, like I said, it just that's doing it gracefully, like I said, okay, okay, and then Okay, so we'll be start testing right after this. We'll keep our weekly appointment or our weekly sprints. That we have going on is January 16, a, yes, it's a go live. But is it a soft roll out, like we're quietly like, Yay, or recommended to go hard and fast? That is definitely up to you guys. That's the day I say. Anybody can go on to the Apple Store, find this app, downloading it and install it into their phone. I still have to get a hold of you to have an account, to log in, yes, but, but anybody can get it. So it's up to you.
+
+Unknown Speaker  45:00  
+How hard or slow you'd like to roll it out to your officers. Yeah, guys, control when the accounts are created, you have to do it in FileMaker. If you test it and you really love it and you're happy with it, then file go nuts. Yeah. Okay. And then as we get closer to that submission date,
+
+Unknown Speaker  45:19  
+the last week, week and a half, I may want, at least with Ashley. I may want a daily meeting, just 1520 minutes. What have you seen, Ashley? You know, did the fixes that we did work for you, right? Right? You know, right? As we push that last few days to a week up to the end, yeah, we might be speaking every day. Keep
+
+Unknown Speaker  45:42  
+it short and sweet, just kidding.
+
+Unknown Speaker  45:45  
+We'll try to make it as short and sweet. I know I'm just kidding. Okay, to work with Ashley also to plan there's another side of this other than the app itself. The other side of it is all of the changes that we've made in the development version of FileMaker has to be pushed into the production, and that's a little bit of a process, because certain things are going to be done differently for the app than they are for your current web app,
+
+Unknown Speaker  46:17  
+and it's kind of overriding. So we have to figure out how we're going to do like the map. The
+
+Unknown Speaker  46:25  
+current app just uses a physical address. The app is going the native app is going to be using coordinates and such. Well, once we push that file maker functionality into production, you're just going to be using the coordinate stuff, and that's not going to necessarily help the web app as much. So there's going to be a little bit of business training
+
+Unknown Speaker  46:46  
+to run this gap as we change over, so that you can, so that you, you guys, can do things in a way that is going to work for both apps, until the current web app gets, you know, gets moonlit, is done. It's not set,
+
+Unknown Speaker  47:03  
+so there's going to be an overlap period, definitely,
+
+Unknown Speaker  47:08  
+and that's going to be down to
+
+Unknown Speaker  47:11  
+business rules and user stuff. You know, it's not really anything we can program. You guys are just going to have to know how to make sure that it shows up on both properly.
+
+Unknown Speaker  47:25  
+Okay,
+
+Unknown Speaker  47:27  
+it's true
+
+Unknown Speaker  47:29  
+before I forget. Can you please send us a new les projects, timeline, overview, an updated one?
+
+Unknown Speaker  47:37  
+Thank you.
+
+Unknown Speaker  47:41  
+Sure I can do that, and then I will send out, like a little graphic or whatever, just confirm, just so we can show it to Bonnie without all the the narrative. I don't want to give her a headache of just the start date and, you know, like testing internally, submission date, just something very high level that just just double check me before we send that over to her so she can see that, yep, and I can kind of rolling back to a very previous statement here in the conversation while,
+
+Unknown Speaker  48:12  
+while I don't have any more programming resources that I can throw at this, as far as at this point, it wouldn't matter. But as far as the native app is concerned, I do have more resources I can throw in for some to help with some testing from our end. So you may, you know Joe, I think you kind of run the like the Apple stuff, the Apple account, we may send you a couple email addresses that we would like you to add on some other members of our team so we can help with testing. Yeah, absolutely. Throw on another person or two to help well, also test this so you guys in the name of like, resourcing and all that, adding people to this team right now wouldn't really have anything. However, I've been working weekends on this stuff, so we are throwing everything we can. Okay, thank you for that. Yes, Jake Steve and a lot, and myself, them more, but myself, we've all been working weekends, talking, testing the last couple weekends. We absolutely have, and we're, yeah, we're not, we're not slowing down. Actually, poor Jake was sitting in Dallas at a layover between flights, working on our way here Sunday.
+
+Unknown Speaker  49:28  
+Well, I'm glad you guys made it, and thank you, and we'll pass that along. We appreciate we're really throwing we're throwing the kitchen sink at it, but yes, at this point, we're way too close to the end to bring in another person coding, development wise, it would just introduce tons of chaos. Yeah, there's no point in that, but I can offer some more resource to help us test and identify things, bugs and scenarios as fast as possible. You guys, I mean, I call it, I call it testing. And of course, you you'd help with the testing part. But more to the point.
+
+Unknown Speaker  50:00  
+Point I need you guys to yay or nay features. You know, is this ready? Yay or Nay? I don't. I don't consider anything green lit until you know someone from the LDS team says, Yay.
+
+Unknown Speaker  50:15  
+Okay. Joe, Ashley, did I miss anything? I think you got it covered. Amanda, okay, all right. And I'll, before things get crazy, I'll, I'll see if I can put this together so I can send this out so everyone can take a look at
+
+Unknown Speaker  50:29  
+it. Yep, that's, that's, that's good with me.
+
+Unknown Speaker  50:35  
+We've, yeah, we're at 53 minutes here. I did see in your agenda. Miss Ashley, something about a customer site. Did we? Were we wanting to get back to that conversation today?
+
+Unknown Speaker  50:54  
+We can, we can wait. I think, wanted
+
+Unknown Speaker  50:59  
+to run for a different client, that we're
+
+Unknown Speaker  51:03  
+possibly
+
+Unknown Speaker  51:06  
+just kind of more of a features question that one, I can definitely wait until next time.
+
+Unknown Speaker  51:15  
+Let's see. I mean, a lot of these, none
+
+Unknown Speaker  51:19  
+of these are going to kill me if I don't know right away or like they're not pressing
+
+Unknown Speaker  51:25  
+there was one thing I wanted to ask though, really quick, because,
+
+Unknown Speaker  51:30  
+okay, so on the agency site, right? Or the agency, yeah, that's what I want
+
+Unknown Speaker  51:37  
+to say. So let's say you're a let's say we had a client who wanted to utilize just that portion of it, so it would be non billable,
+
+Unknown Speaker  51:47  
+and they're putting out jobs. They have a list of they're not officers, so like quote, unquote officers, but
+
+Unknown Speaker  51:56  
+people that they are staffing to fill positions
+
+Unknown Speaker  52:01  
+I know in FileMaker, we have a way that I could go to
+
+Unknown Speaker  52:06  
+the list of officers and send like mass emails to
+
+Unknown Speaker  52:11  
+is there a way we could put that into the
+
+Unknown Speaker  52:14  
+that non, that internal portion of the agency site? Let me know if that does not make sense the way that I said that you want to be able to select multiple officers, whoever they are, from a list of officers and send out a bulk email from the agency app, correct? Yep.
+
+Unknown Speaker  52:37  
+Is that? Is it doable? Of course,
+
+Unknown Speaker  52:42  
+is it quick and easy? Not necessarily. I'm also,
+
+Unknown Speaker  52:47  
+I would be,
+
+Unknown Speaker  52:50  
+if I was you guys, I would be a little worried about
+
+Unknown Speaker  52:55  
+because anything that's done from there, the email would be coming from Blue dispatch, com.
+
+Unknown Speaker  53:02  
+Well, that would be coming from 10 seven, les.com,
+
+Unknown Speaker  53:06  
+but hopefully we can get the email stuff moved over to Blue dispatch. So if their internal jobs, they're not using the native app, they're not using the web app. This isn't billable. I don't know if, I mean, that's, that's not a technical question. It's a, you know, a business question. Or do you want these emails coming from Blue dispatch calm,
+
+Unknown Speaker  53:34  
+which is where they would come from,
+
+Unknown Speaker  53:37  
+okay, yeah. And, I mean, this is a very early stages. This was just and they wouldn't be using us as, you know, like it's not a normal off duty situation.
+
+Unknown Speaker  53:49  
+But I just knew that we had that function in FileMaker. So, yeah, you do and can we do it from the web app? Absolutely? Yeah,
+
+Unknown Speaker  53:59  
+it's
+
+Unknown Speaker  54:01  
+it. Absolutely can do it, just know, like I said to me,
+
+Unknown Speaker  54:06  
+that would seem odd to have scenarios like that come from Blue dispatch, calm as far as the emails are concerned, because you guys said your guys really have nothing to do with you guys have nothing to do with what's going on almost you know, they're not off duty jobs that you guys are running, that you guys are scheduling for. I don't know why you'd want your name attached to it.
+
+Unknown Speaker  54:28  
+Yeah, they would just be utilizing our platform to schedule their own things. I don't know exactly what they're scheduling, but you know something along those lines. But I guess my next question would be, if, if, if, let's say we decided to do that, and we wanted to do that,
+
+Unknown Speaker  54:44  
+would we have to put the contacts in into file maker, or would be officers in file maker? Yeah, current. I mean, if, if we need people section of the agency app.
+
+Unknown Speaker  55:00  
+Of that's going to be using non officers, and we make a, you know, a whole new section in FileMaker to attract these people. You know, that's that can be done. But you're, you're talking about, you're talking about adding a whole new module, basically, into the agency app, and a whole new module into file maker. Yeah, that's what
+
+Unknown Speaker  55:20  
+I figured I and at this point, I mean, we could add them into the officer area, and then, you know, the rank, have a different rank, that's maybe, yeah, shows that they're not an actual they're not an officer. But if we put them So, we'd have to put them as active
+
+Unknown Speaker  55:36  
+for them to show up. Correct.
+
+Unknown Speaker  55:40  
+Yes, that's correct, yeah, okay. These are just questions that I'm going to bring back to her. I just wanted some clarity on in. You know, this could come back to, I know we just tossed a field on there that says unit, but that could be something, you know, if we nail down a little bit more what that field means and can, and can start to use it. We could use that as, yeah, I have used it actually for, like, officers that I'm I'm literally just adding so I can give them access to the site, so they can demo it themselves. That we could use that field to kind of denote these people that aren't really officers or, you know, whatever. But we need to be able to
+
+Unknown Speaker  56:20  
+to access them through this, through the agency app,
+
+Unknown Speaker  56:24  
+but in the end, that's still an officer record. You're not going to be able to get away from that unless you make a whole new module, you know, whole new section of the database. That makes sense. Okay.
+
+Unknown Speaker  56:39  
+Yeah. I mean nothing else
+
+Unknown Speaker  56:44  
+that I have on my list. Can't wait. There's definitely other things on my list, but not, yeah, if we want to try to hit this timeline we just discussed, we're going to have to throw everything else, yeah, aside for now. That's not absolutely you know, you can't do your job unless we fix it. If it doesn't meet that criteria, then it's got to be set aside for us to try to hit this,
+
+Unknown Speaker  57:11  
+this deadline, to try to move forward, we need to definitely all me, Jake and Steve cannot be working on other things.
+
+Unknown Speaker  57:30  
+Okay, is there anything else?
+
+Unknown Speaker  57:38  
+Oh, Ashley, anything I don't, I don't have anything on my end. I think we're, I think we're good to go, guys,
+
+Unknown Speaker  57:46  
+alrighty, then sounds great. And
+
+Unknown Speaker  57:51  
+I'm sure we'll be in contact. So both Jake and I are returning home Thursday, and we're so we're not working. We're going to be on airplanes all day, okay,
+
+Unknown Speaker  58:04  
+but we, we are here. We're doing other things, but we are here until Thursday, and least I'm working Friday. You're working Friday. Some, some, yeah, might be a little choppy Friday, because, yeah, but we'll probably work over the weekend, but Thursday, we're going to be, you know, in airplanes. And I don't know about you, I get home, I get home at like, well, I get land in the airport just after 10 o'clock at night Thursday, and then I got an hour drive to my house and blah, blah, you know, probably be almost midnight before I actually get home. Yeah, so we're both in that boat for Thursday. So okay, Friday, we may not be, we may may not be top, top of our game, but we're going to be working over the weekend. But
+
+Unknown Speaker  58:48  
+just to let you know, Thursday, we're off the grid. We're on airplanes. Okay? We appreciate it, guys. Yeah, travel safe. Absolutely. I'm sure we'll, we'll talk, and I'll be trying to send the updated deadline or timeline document for you. There. Amanda, okay, thank you. About this recording when I can,
+
+Unknown Speaker  59:15  
+yeah, and we'll just barreling towards it. Can I ask a quick favor? Can you throw I just, I want to do a little image to send. Bonnie, can you throw up on the screen really quick, so I can snippet the what that, the what we were doing earlier. Jake, just so I can put that when I put the little image together on the timeline,
+
+Unknown Speaker  59:34  
+take a second. Yep.
+
+Unknown Speaker  59:38  
+Sorry. I have 15 desktops open? No, I do too. 1234, and then 51 I have three giant monitors that work on and right now I'm working laptop screen, and I'm just pulling out my air right? I feel the same way. Have 120
+
+Unknown Speaker  59:55  
+inches worth of screen. Alright? What do you want to see? Amanda, that's.
+
+Unknown Speaker  1:00:00  
+Awesome. I just want that. I just wanted to, just wanted to see that that's it, that way. I can put it as, like the launch, just something cute and small, and I can shower. That's perfect. I didn't catch it over there. So thank you awesome. We appreciate it, guys. Alright, guys, thank you so much. Have a good one. All right. Thank you. Bye, bye, bye.
+
+Transcribed by https://otter.ai

@@ -1,0 +1,967 @@
+Unknown Speaker  0:00  
+Else,
+
+Unknown Speaker  0:02  
+all right, so as usual, we'll start with some quick updating.
+
+Unknown Speaker  0:07  
+I know Jake and Steve ran hard over the weekend
+
+Unknown Speaker  0:14  
+to get a new test flight out, although most of what they did was actually
+
+Unknown Speaker  0:21  
+bringing Android up to par with iOS, so that they they're the same now, and we can, you know, move forward with with both.
+
+Unknown Speaker  0:37  
+So that that was a big thing. They a big push. They were doing now that they've got the all the keys and everything they need for Google so they can push it up to Google plays test environment, stuff, you know, kind of like we're doing for iOS. So I know they were working on that hard,
+
+Unknown Speaker  0:54  
+and did get a new version on test flight over the weekend. Actually, they looks like they did it a couple times, because I kept getting emails.
+
+Unknown Speaker  1:05  
+So we have that up, and we can, of course, continue to test on that. I did want to
+
+Unknown Speaker  1:13  
+show
+
+Unknown Speaker  1:16  
+see if I can see which one it is here. It's going to be this one right here. So let me share my screen
+
+Unknown Speaker  1:25  
+couple things that you actually can see that we've
+
+Unknown Speaker  1:30  
+worked on. Oh, we don't need you.
+
+Unknown Speaker  1:33  
+Okay, so this is my phone here,
+
+Unknown Speaker  1:38  
+and my daughter being kissed by dolphins in the background. It's a cool that is the app as I was looking at it. So I've booked this job for today at my address for fake customer.
+
+Unknown Speaker  1:54  
+We do have, so
+
+Unknown Speaker  1:57  
+we're going to this is also the same job here in FileMaker, your FileMaker system. So I want to clock into the job.
+
+Unknown Speaker  2:07  
+Boop, I'm clocked in. And you can see there's a clock in time right here.
+
+Unknown Speaker  2:13  
+So that Job was clocked in.
+
+Unknown Speaker  2:16  
+It shows here now on the system. So we can start looking at that type of stuff.
+
+Unknown Speaker  2:23  
+Did that change from even like earlier today? Yeah, like a couple hours ago? That's something I was going to talk about later. I can wait. I was just curious. Sorry. No, it shouldn't have not since the last time you got an email saying that they pushed out.
+
+Unknown Speaker  2:40  
+Now some of the background stuff we can change in real time, but the the main app stuff, no, it. We have to do a new push to test flight, and you have to, you know, do a new install to see any changes.
+
+Unknown Speaker  2:55  
+So, yeah, we can clock in it gives me a clock in time
+
+Unknown Speaker  3:02  
+that is an interesting clock in time. So that is, what? Seven hours behind
+
+Unknown Speaker  3:09  
+me here.
+
+Unknown Speaker  3:12  
+Yeah, that's, that was one of the things I was gonna say too, because I clocked in at 8:30am and it clocked me in at like, 1am something, yeah,
+
+Unknown Speaker  3:22  
+I have to look, I don't know, because I was working on getting a lot of that stuff going, trying to figure out I was working on that Friday, trying, basically, trying to figure out if the time zone in question is in daylight savings or not.
+
+Unknown Speaker  3:44  
+And again, since two states don't use daylight savings
+
+Unknown Speaker  3:49  
+and the rest do, I have to figure out if that particular time zone, you know, where that particular time zone is, and if it uses daylight saving, if they do the daylight saving switch or not, to figure out the exact offset.
+
+Unknown Speaker  4:05  
+This one's probably
+
+Unknown Speaker  4:10  
+and it's the times are probably not going to work here on dev, because the programming is assuming that the server time is UTC.
+
+Unknown Speaker  4:20  
+And in the case of Dev, it's not, it's Arizona time.
+
+Unknown Speaker  4:26  
+So it knows that I am
+
+Unknown Speaker  4:33  
+five hours, I think behind UTC,
+
+Unknown Speaker  4:37  
+and it's thinking your time, which is 1pm is UTC, so it's going five hours minus that
+
+Unknown Speaker  4:44  
+or four hours, I'm sorry, that's why it's at nine o'clock, because it's assuming that the server is using UTC time, which it will be on production,
+
+Unknown Speaker  4:52  
+but it's not on your dev server,
+
+Unknown Speaker  4:56  
+so it is actually correct. It's four hours behind the server time.
+
+Unknown Speaker  5:00  
+Which should be UTC when we're in when we're in production. So that is correct.
+
+Unknown Speaker  5:07  
+And I can clock out
+
+Unknown Speaker  5:12  
+and it should give me the clock out time. It was 20 minutes ago when I was testing. There it is,
+
+Unknown Speaker  5:18  
+and it's giving me the clock out time. Also
+
+Unknown Speaker  5:21  
+that's moving into FileMaker. I do notice that it still says clock in here this, you know, something Jake is also aware of. We'll work on that, because you can still see it here, and it looks like you can clock back in, but you can't. So
+
+Unknown Speaker  5:37  
+we need to,
+
+Unknown Speaker  5:38  
+we need to work on getting that correct. But I did want to show you that it is moving the actual clock in time. Now, when you clock in and the clock out time here into file maker. We're also in the middle of working on, in fact, I'm meeting with Steve as soon as we're finished here to discuss with him.
+
+Unknown Speaker  6:00  
+We've, we've got most of the stuff in place. We just need to get it running properly, which is a couple things that you're going to be able to do from FileMaker, like clock them out right now. You know, this just kind of sets a timestamp here, but it doesn't actually clock them out of the app. We want it to do that. So we're going to give you away. We're working on that call right now. Same with we're going to give you a way to basically,
+
+Unknown Speaker  6:28  
+so the calls are from file maker. Looks like they're going to be
+
+Unknown Speaker  6:33  
+clock out the officer.
+
+Unknown Speaker  6:37  
+Unbook The officer.
+
+Unknown Speaker  6:41  
+So basically, when you unbook them here, we're going to clear it from the app, also the app environment, and then clear and refresh the job. So basically, if there is an officer, we're going to unbook them. If there's a clock in, we're going to clear that. We're going to act like nobody ever touched that job, we're going to take it back to fresh. So these are the functions you're going to be able to do from file maker, we are going, I guess, Ashley and whoever else you'd like to be involved in that conversation. We're going to have to discuss the guardrails on those when, when you can and can't do that and that kind of stuff,
+
+Unknown Speaker  7:20  
+because you guys definitely need those features and need those abilities, but giving you those abilities is ripe with user malfunction, impossibility for user malfunction, so we need to discuss what guardrails we want to put on that type of functionality.
+
+Unknown Speaker  7:38  
+So
+
+Unknown Speaker  7:40  
+that is kind of what I've been working on again with all the time stuff, because I had to take these clock in and clock out times and make them make sense as they come in. And like I said, that's what it's doing, is it's deciding
+
+Unknown Speaker  7:54  
+how well it's looking at the offset hours, which is actually collected at the location level. You don't see it, but based off the time zone and the zip code, or the latitude longitude, we're deciding how many hours you know before UTC it is,
+
+Unknown Speaker  8:11  
+and it just minuses that from the UTC time, which is going to be the server Time.
+
+Unknown Speaker  8:19  
+We also, I was also able to figure out how to
+
+Unknown Speaker  8:27  
+how to decide if a place is in daylight savings or not. So if you make a new job and find a Phoenix address, or, you know, somewhere near you guys, the time zone should say America, Denver. Now, I think, or maybe Phoenix, one way or the other, it's Mountain Time is now, and it knows that, and it knows how many hours difference it is from UTC because it knows you guys don't switch. If you do the same thing for Denver, it'll show the same time zone, but it'll be a different offset,
+
+Unknown Speaker  9:00  
+because they do change time. So it can be a different depending on the date
+
+Unknown Speaker  9:06  
+we I also added and went ahead and pre loaded some for you for the next couple years. But here in the settings, we're going to have time change days,
+
+Unknown Speaker  9:18  
+and this is where I've got you up through 2030
+
+Unknown Speaker  9:23  
+the two days a year when time changes and then whether it's going into
+
+Unknown Speaker  9:29  
+daylight savings time or not.
+
+Unknown Speaker  9:32  
+Basically, the one at the beginning of the year is daylight savings time, and the one at the end of the year is not.
+
+Unknown Speaker  9:39  
+So. Like I said, I've got you through 2030 but here you guys are going to be able to create more. Right now, I don't think the plus button is working. Now, it's still looking at something else, but I'll finish with that. But I had to get these into place to make sure it worked. So it's actually looking at the date range and seeing, depending on what date it is. Right now, when something's happening,
+
+Unknown Speaker  9:59  
+it'll know.
+
+Unknown Speaker  10:00  
+Know which time zone and if it's daylight savings or not, dependent on location.
+
+Unknown Speaker  10:07  
+That was really fun. In case you were wondering I was that was all the boatload of
+
+Unknown Speaker  10:15  
+fun. So
+
+Unknown Speaker  10:18  
+I think that is mostly what I've been working on, they've been working on some more stuff. But like I said, a lot of it had to do with getting
+
+Unknown Speaker  10:29  
+getting Android up to speed, to where Apple was.
+
+Unknown Speaker  10:35  
+And I don't know if you noticed when I had clocked in, it was like showing how long I had been clocked in. It was actually running a seconds timer,
+
+Unknown Speaker  10:46  
+so that they also worked on that, getting that in there. And I tested that
+
+Unknown Speaker  10:53  
+for an hour today, walked around my house, I put the app in the background, you know, all that kind of stuff, and went on about my work and my day, and I think I left it logged in for like an hour and a half, and then I clocked out, and it was it was working. So that is some updates on what's been going on there.
+
+Unknown Speaker  11:15  
+Also, I can say we got
+
+Unknown Speaker  11:18  
+the the
+
+Unknown Speaker  11:20  
+status. Yay for the phone number that goes along with the SMS, and that's been that's been propagated as we speak, it should be ready to use maybe today. I haven't really had a chance to talk with Steve today. I've been really busy, but when I talked to him after this meeting, I'll ask again on that status. But no, it's been approved. So we're we're about ready to actually start sending text messages with the confirmation codes,
+
+Unknown Speaker  11:51  
+instead of it just generating one locally so that you can get into the app. So that stuff's ready to start testing very soon.
+
+Unknown Speaker  12:02  
+But I think that is mostly what I've got. As far as the native apps concerned.
+
+Unknown Speaker  12:13  
+The native app that you're on, the version, is one point 1.0
+
+Unknown Speaker  12:18  
+the version I'm on of the on the iOS,
+
+Unknown Speaker  12:22  
+yeah, yeah, the Yeah, no, should be, let me see, cuz
+
+Unknown Speaker  12:29  
+maybe I think that's what we're on. Yeah, we're on 1.1 right now. Yeah, point 1.0,
+
+Unknown Speaker  12:35  
+and 18 in parentheses. So build 18,
+
+Unknown Speaker  12:41  
+that's the version I'm I'm on.
+
+Unknown Speaker  12:46  
+Oh yeah, when you go to test, yeah,
+
+Unknown Speaker  12:49  
+that is the version of that all
+
+Unknown Speaker  12:53  
+so that, I think, is my updates there. We haven't been really messing with the agency app, so no need to give an update there
+
+Unknown Speaker  13:07  
+and then.
+
+Unknown Speaker  13:09  
+And then server fun. I see Tom is here.
+
+Unknown Speaker  13:14  
+I've,
+
+Unknown Speaker  13:16  
+I don't know if I'd call it working with Michael. Michael's been trying, things I'm assuming, and he emails me every once in a while and asks me to test. So far, those tests have not borne a an encrypted connection with FileMaker. I guess Tom can speak further on, an update of that that I can
+
+Unknown Speaker  13:40  
+well, as far as that goes, if it's We've wasted enough time trying to fix it, we might as well just blow up dead and start all over.
+
+Unknown Speaker  13:50  
+Yeah, that was kind of my, my recommendation last week.
+
+Unknown Speaker  13:56  
+Well, the recommendation I had when we first started doing these updates, is we do a few at a time, test everything, make sure it works, and then proceed through all the updates and fixes.
+
+Unknown Speaker  14:10  
+But
+
+Unknown Speaker  14:11  
+from what I understand, instruction was given to do everything at once.
+
+Unknown Speaker  14:17  
+The problem is with that is now we don't really know what broke the system.
+
+Unknown Speaker  14:21  
+So we could we've already wasted
+
+Unknown Speaker  14:25  
+what three weeks, two, three weeks trying to test and figure out what broke everything.
+
+Unknown Speaker  14:32  
+So
+
+Unknown Speaker  14:37  
+at this point, I would say, just blow it up, start all over, and
+
+Unknown Speaker  14:41  
+we're just going to do three or four at a time and test everything, make sure it works. And I don't know whether we do that with you, Ashley or Brian, or who would we do that with? Just so we could speed this up,
+
+Unknown Speaker  14:53  
+either of us, really, Ashley could, because realistically, once we once we get it, I'm.
+
+Unknown Speaker  15:00  
+Often we know we have a good encrypted
+
+Unknown Speaker  15:04  
+connection with FileMaker and with the web app, and it gets handed back to ginger sec to do what you need. Ashley has access to
+
+Unknown Speaker  15:15  
+has access to that. It's just
+
+Unknown Speaker  15:18  
+Ashley. It's just the the
+
+Unknown Speaker  15:21  
+host at testing dot blue dispatch.com, you know, we'll still have the same DNS name. So the test that they need from you is really, realistically, just open it up and see if you've got a green lock in the top right hand corner. When you open file makers, when you open your system in FileMaker, it should have a green lock at the top right, like it does in our current Dev and production version.
+
+Unknown Speaker  15:49  
+If it's red, then that means it's not encrypted, and we're having a problem. And if it's yellow, that means, usually, that you're you're connecting by IP address instead of DNS, but we're not going to give you the IP address, so there's no reason you should be connecting like
+
+Unknown Speaker  16:09  
+that. Well, some of the, some of the fixes and stuff are performance, so
+
+Unknown Speaker  16:15  
+we'll just, like I said, we'll just work on
+
+Unknown Speaker  16:18  
+at most. We'll do five patches or five fix fixes at a time.
+
+Unknown Speaker  16:23  
+And then it's a lot easier to manage. You know, that small amount
+
+Unknown Speaker  16:28  
+absolutely so this, I say, blow it up, let us know when we're ready
+
+Unknown Speaker  16:36  
+to get rock and roll on. On the new one
+
+Unknown Speaker  16:39  
+is that, is
+
+Unknown Speaker  16:41  
+that okay with you? Joe Tom, I was going to talk to you about that, did Bonnie already talked to you about giving the okay on that, just because I was going to reach out to her on that, because I know it's going to take about four hours of development time or setup time, I should say, but I don't, if you've already gotten to her, then we're good to go. But if not, I want to clear that with Bonnie first, because it is going to cost us about four hours.
+
+Unknown Speaker  17:08  
+Okay? I mean, right now it's costing us more than four hours trying to troubleshoot. Okay, so, you know, I'll reach out to her. I mean, she's out of the country right now, but it shouldn't be a problem. But, I mean, I can get that answer probably before end of the day today. Okay, yeah. I mean,
+
+Unknown Speaker  17:26  
+if not, we need to have another working session and just get it done. Because, like I said, this is,
+
+Unknown Speaker  17:33  
+I mean, I've been through where stuff gets broken every now and then and it fixes it, but apparently file maker is like fine china, or you look at it wrong and it breaks.
+
+Unknown Speaker  17:45  
+It can be absolutely, yeah, okay.
+
+Unknown Speaker  17:49  
+I'll get that clarified with Bonnie. I'll reach out to her, and then, as long as she gives the Okay, then, um, yeah, we'll blow it up and start fresh.
+
+Unknown Speaker  17:57  
+Okay? And then I'll talk to before we blow it up. I'll just verify with Michael. We'll
+
+Unknown Speaker  18:04  
+go from there, and then after that, we'll just work with Ashley, I guess to as we roll through our fixes,
+
+Unknown Speaker  18:12  
+we'll just focus on the critical and highest first, and then go from there.
+
+Unknown Speaker  18:19  
+Okay, yeah,
+
+Unknown Speaker  18:23  
+I'm sorry. You got something else Tom,
+
+Unknown Speaker  18:26  
+yeah, go ahead. I was just gonna say, you know, okay, Joe gives me the Go ahead. I will work with Steve and get that one, you know, blown up, nuked, make a new instance, get file maker server reinstalled on it,
+
+Unknown Speaker  18:43  
+the SSL reinstalled on it, copies of your database files over there. So we have some to test with and get it all up and going.
+
+Unknown Speaker  18:52  
+I like I said, it should take about four hours, but I don't know. Calendar wise, I've I've got to be able to get time with Steve and pull him off of, you know, native app stuff to do it, but we should be able to do it the next few days of getting approval.
+
+Unknown Speaker  19:14  
+Okay? So,
+
+Unknown Speaker  19:16  
+yeah, I mean, like I said, let me check with Michael and seeing that maybe we just
+
+Unknown Speaker  19:21  
+hopefully he's got something up his sleeve, or somebody I've
+
+Unknown Speaker  19:25  
+been kind of out of pocket too. I just kind of got looped into this, because there's, it seems like things are getting misconstrued.
+
+Unknown Speaker  19:35  
+All right.
+
+Unknown Speaker  19:37  
+Then I do have another question, and it might already be addressed, but I'm just coming into these meetings. Is there multi factor for the officers and administrators set up on file maker and all that
+
+Unknown Speaker  19:50  
+on file maker? No, there, but officers don't sign on to file maker. Well,
+
+Unknown Speaker  19:59  
+whatever.
+
+Unknown Speaker  20:00  
+All right, yeah, multi factor.
+
+Unknown Speaker  20:06  
+It's um yes. So the native app, they're going to be signing in with their phone number and getting a text message with a code, and that's how they get in. Okay,
+
+Unknown Speaker  20:16  
+okay, cool.
+
+Unknown Speaker  20:19  
+All right,
+
+Unknown Speaker  20:23  
+yeah, without that's fine, cool,
+
+Unknown Speaker  20:28  
+alrighty.
+
+Unknown Speaker  20:30  
+I think that's the end of my updates. Unless there's something else you'd like an update on, Joe,
+
+Unknown Speaker  20:38  
+I'm looking through everything right now? No, I think you've covered the basis for right now. Brian, like I said, I heard I'm actually reaching out to Bonnie right now, so I'm waiting for her to respond to me regarding that new spin up of the server. But I should be, I should be hearing back pretty soon here.
+
+Unknown Speaker  20:54  
+Okie dokie, I'm
+
+Unknown Speaker  20:58  
+sure that's something we could spin up too if it's going to be an issue. Do you guys have to install FileMaker? Yeah, we have configure FileMaker.
+
+Unknown Speaker  21:09  
+Like you said. It's like fine china. You want us to install that?
+
+Unknown Speaker  21:15  
+It's all right, yeah, to
+
+Unknown Speaker  21:18  
+my security branches is very troublesome that it's so finicky and
+
+Unknown Speaker  21:26  
+so easy to break.
+
+Unknown Speaker  21:30  
+But it is what it is.
+
+Unknown Speaker  21:38  
+Okay? Well, then if that's everything you need an update on Joe, Miss Ashley, are you ready for your
+
+Unknown Speaker  21:48  
+your list, your turn?
+
+Unknown Speaker  21:50  
+Yes, I am. Yeah. Okay. So the reason why I was asking what version you're on is so when I clock in on the native app,
+
+Unknown Speaker  22:02  
+so I hit clock it. I know that it worked because I can see it in file maker. I'll
+
+Unknown Speaker  22:07  
+share my screen, but
+
+Unknown Speaker  22:10  
+I can't show you my app,
+
+Unknown Speaker  22:14  
+but mine, mine still says clock in. So I hit it and it doesn't. It didn't give you that bread where it started counting the time and everything like yours did mine just says, you know, just almost like I didn't do anything. I know that I did, though,
+
+Unknown Speaker  22:31  
+but it still just says, clock in and there's no way for me to clock out through the app. Yeah,
+
+Unknown Speaker  22:39  
+that's why I was curious if it had changed, because I believe Joe said that as well. Yeah, I'm looking at it right now, and it's the exact same issue where we I'm on a job right now, and it's showing clock in, Brian, but there's no way for me to clock out. And I probably clocked in, gosh, three, four hours ago,
+
+Unknown Speaker  22:56  
+clocked in at 1:31am
+
+Unknown Speaker  22:58  
+I'm
+
+Unknown Speaker  23:00  
+kidding, because your TC, I was like, Wait,
+
+Unknown Speaker  23:06  
+future, we're in the future.
+
+Unknown Speaker  23:09  
+We were way behind.
+
+Unknown Speaker  23:12  
+Okay, so I'm just curious, is that something I should bring up to Jake, or do you think he knows? I just don't know why it would be different for our phones versus yours. I don't know I can talk to Steve. I know he has been,
+
+Unknown Speaker  23:27  
+he has been messing around with the API stuff in the background, and I don't know if your your user has a session.
+
+Unknown Speaker  23:37  
+I'm not on that admin, that online admin console he showed you, yet,
+
+Unknown Speaker  23:44  
+I need to have them put me on there. The problem is, currently, I
+
+Unknown Speaker  23:49  
+mean, we're going to put some type of authentication to get you in there, but currently it's just a white listed list of IP addresses,
+
+Unknown Speaker  24:00  
+and most people like myself, we don't have a static IP. It can change.
+
+Unknown Speaker  24:07  
+Oh, okay,
+
+Unknown Speaker  24:09  
+so
+
+Unknown Speaker  24:11  
+that is why I don't have access to that yet. And otherwise I would look it up. I would look up your session and see what is going on with your session. And this is exactly the type of situation where, or possibly the exact type of situation we're talking about that we need to give you tools in FileMaker to deal with that I'm going to be working with Steve on right after this is
+
+Unknown Speaker  24:35  
+giving you a way to clock out people or just clear the job, you know, completely, because something has just gone wrong, and you just want to clear it and start over, yeah? Because now if I wanted to clock out, I actually can't correct, like, I wouldn't be able to test tomorrow until someone on the backside wipes this job. Okay,
+
+Unknown Speaker  24:55  
+like I said, we want to give you the tools for you to be able to do that in FileMaker. Yeah.
+
+Unknown Speaker  25:00  
+Wow.
+
+Unknown Speaker  25:01  
+Okay, how do I request someone to do that? Are you able to or should I send someone an email? When I talk to Steve, I'll ask about that perfect.
+
+Unknown Speaker  25:11  
+See this O data user. Is that kind of like FM better forms? Yep, we're using O data
+
+Unknown Speaker  25:20  
+for the native app. So that means the native app did it. That makes sense. That's what I figured. I just wanted to double check. Said I hadn't seen that.
+
+Unknown Speaker  25:30  
+It doesn't have popped out. Oh, we talked about that.
+
+Unknown Speaker  25:42  
+Is it pinning in like it's supposed to? I saw that yours had pins, and I know that you showed us pins,
+
+Unknown Speaker  25:48  
+but when I went to like, agency and and then here I just, I wasn't able to see anything. Are you in dev or live right now? I'm in dev right now. Okay, it, it does that when the job is over. So because you can't clock out, it's not sending the link with that package of stuff, and it you locking you clocking out there isn't going to do it either. It's got to be clocked out through the native app environment. So, so what it okay, I get to Interesting.
+
+Unknown Speaker  26:22  
+Okay,
+
+Unknown Speaker  26:24  
+these are the types of scenarios we're trying to get you tools to deal with. Yeah.
+
+Unknown Speaker  26:29  
+I also noticed on the agency app, when I was in there that, like all of the release I know it's in dev, so that's probably why, but all the release buttons are back.
+
+Unknown Speaker  26:41  
+I just wasn't sure if that was something you guys are aware of. Buttons are back, yeah, um, you know, like you can release a job. Yeah,
+
+Unknown Speaker  26:52  
+that's supposed to be gone. I thought you mean it's, it's showing in places it shouldn't. Yes, yes for the agency, yeah, okay.
+
+Unknown Speaker  27:02  
+I know it's been a while since we've even talked. I haven't touched that. I don't know why that would why? Yeah, there we have that since before the conference.
+
+Unknown Speaker  27:14  
+Right now, I just happened to be in there because I was, you know, just trying to see if it was recording my stuff, which it wasn't now, I know why, but I just saw that those release buttons are back. And I was like, Oh, that's interesting, because they weren't there before.
+
+Unknown Speaker  27:30  
+Do you want me to show you? Or you know what I mean? Oh, I know what you mean. Okay. Agency, app, Dev,
+
+Unknown Speaker  27:39  
+release, job buttons showing in wrong place.
+
+Unknown Speaker  27:58  
+I feel like you, we kind of already answered this, but I'm just in case it's something that's different,
+
+Unknown Speaker  28:06  
+the notifications for dev are off as well. At least they are for for my jobs,
+
+Unknown Speaker  28:13  
+like I got a job reminder,
+
+Unknown Speaker  28:17  
+yeah, again, it's going to be, it's based off the same, the same thing we just talked about, as far as the clock in and clock out, it thinks the server is using UTC time because prod will be,
+
+Unknown Speaker  28:29  
+yeah, okay, that's what I figured you're gonna say, just be getting them at the wrong time, yeah. I was well made Yeah. We had Yeah. I'm not even gonna bring the next one up, because that is, I think, an anomaly. I think it was a user error, but we had one that came in at an incorrect time for an actual officer on production, but it was one of those ones where he remember, he added them for October instead of November, and then he went in and manually changed the times. Yeah, I'm thinking it's that, because that's the only one I found that was incorrect. Okay,
+
+Unknown Speaker  29:05  
+but I'll keep an eye on that.
+
+Unknown Speaker  29:09  
+I was also curious. So when Jake pushes, like, a new version for test flight, does that like, erase
+
+Unknown Speaker  29:16  
+some of our jobs? Like, if Joe and I, for example, took jobs yesterday and they're not there anymore. Is that because you guys just released them from the back end or pushed a new version?
+
+Unknown Speaker  29:28  
+It could be because the realistically, just the test flight, updating the version shouldn't make jobs disappear.
+
+Unknown Speaker  29:38  
+But if we clear out something in the back end or something, it absolutely could. I feel like that's probably what happened, just because we were able to clock in today to a new job. So if there's no way for us to do that via Apps over the weekend while they were doing all that work, yeah.
+
+Unknown Speaker  30:00  
+We did it Monday. But still I it had to have been that I think,
+
+Unknown Speaker  30:07  
+Oh, I kept getting, I keep getting this message when I sign into dev. Ever seen that
+
+Unknown Speaker  30:15  
+doesn't seem to restrict me, like if I hit no or yes, no, I meant yes. It just goes to here. You know, it takes me to dev, but
+
+Unknown Speaker  30:28  
+yesterday, why? That's back. It's annoying, but
+
+Unknown Speaker  30:33  
+I don't want to look too much into it, because, truthfully, I'm, I'm getting close to be ready to
+
+Unknown Speaker  30:40  
+push the a lot of the dev work, or all of the dev work that we've been doing in dev up to production, and then I will be wiping these files and bringing new backups to dev, you know, basically cleaning dev out and getting new files for it.
+
+Unknown Speaker  30:56  
+But I need to get the work we've been doing in dev up to production first. Yeah, all right, I just wanted to bring it up in case you hadn't seen it before. I'm sure you've seen it before, but in case it was more than than I thought it was.
+
+Unknown Speaker  31:11  
+Dev, you're fine. Just hit yes, just Dev, yeah, I know
+
+Unknown Speaker  31:17  
+you didn't update me on this, but it, it it is. This is working the read only. He did get that one fixed. Yep. And I just
+
+Unknown Speaker  31:27  
+want to make sure I get this right. So you know you can, like, move the pin right if you want to. So you click it right, and then you click wherever you want. You don't, like, drag it. That's not an option. Correct. Correct.
+
+Unknown Speaker  31:44  
+And that's good.
+
+Unknown Speaker  31:46  
+And of course, this will just have to be a business rule kind of thing for you guys. But you're going to want to if
+
+Unknown Speaker  31:54  
+it's you know, if it's possible. Basically, the best is type the address at the top and pick from the list. Yes, understand that's not always an option, but if it is, that's the best way. That's the better way. Yeah, absolutely, yeah. And honestly, we only would really do this if, for example, like, it's a mile marker, or if it's on a corner, but one size Chandler, one side's Mesa, or, you know, something like that, where we need it to be very specific, that would probably be the only reason why we would use that
+
+Unknown Speaker  32:37  
+on there twice So the schedule or the locking screens. Can we secure? I don't know what your rest of your week looks like, maybe like Thursday sometime in the morning for you to be able to
+
+Unknown Speaker  32:51  
+log in and see someone else's screen do that,
+
+Unknown Speaker  32:58  
+or next week, just whenever you're free, it's just becoming a nuisance, especially for people that are working on emails when they're, you know, in and out of different screens, putting in jobs, working quick. That seems to me, when they notice it acting the worst. Certain computers are seem to act
+
+Unknown Speaker  33:18  
+up more than others, but
+
+Unknown Speaker  33:22  
+see, Thursday. Currently,
+
+Unknown Speaker  33:27  
+I just have our standing team meeting from 930 to 10am Pacific Time. So 1030
+
+Unknown Speaker  33:34  
+1030 to 11 year time. Other than that, I'm free. So if you want to find a time outside of that you let me know.
+
+Unknown Speaker  33:58  
+Notification, oh, this is what
+
+Unknown Speaker  34:04  
+I was just talking about, the anomaly. One never mind on that assets for a job. I know we had talked about this a while ago, and that's why we ended up putting in the officer notes area. But
+
+Unknown Speaker  34:20  
+do you think in the future, or with the native app, we'll be able to add assets to, for example, like we have an HOA, and they have, you know, that's in the specs, okay, it will be something we can do. Yes, okay, just wanted to bring that back up.
+
+Unknown Speaker  34:40  
+Oh, the report. Wait, I talked about this a what little while ago. It's not a huge deal, but I just wanted you to see.
+
+Unknown Speaker  34:47  
+What was it?
+
+Unknown Speaker  34:54  
+Oh, it's officer job sort that's the ones remember when you click.
+
+Unknown Speaker  35:03  
+On
+
+Unknown Speaker  35:11  
+you click Casa Grande, and it clicks Avondale for you.
+
+Unknown Speaker  35:15  
+But also, it's not just those two. It's like, if I click central Iz, it
+
+Unknown Speaker  35:22  
+clicks Bisbee. I don't know what the rhyme or reason exactly is, but I thought I dealt with that. Cottonwood
+
+Unknown Speaker  35:32  
+clicks
+
+Unknown Speaker  35:33  
+look like it clicks a dot. I think, yeah, or action, sorry. Coolidge clicks a dot. Glendale clicks action
+
+Unknown Speaker  35:42  
+and Apache Junction, it's still doing that in production. Yeah, yes, in production. I know I'm in dev right now, but that's where I was testing it was in production. Do you want me to get out and just make sure late now you've already clicked on it? Well, I, I honestly am out of i I'm done with my dev stuff. Anyways, I try to get out of it quickly, because if I accidentally take a phone call, you know, you can see where that would get bad. Oh yeah,
+
+Unknown Speaker  36:09  
+yeah. So anyway, so that's I just wanted you to know that it's still,
+
+Unknown Speaker  36:15  
+yeah, it's like triggering other ones. I thought, No, I know, I know what the problem is, but I thought, I thought I'd fix that. I'll look at it again.
+
+Unknown Speaker  36:27  
+Another thing with reports, and maybe
+
+Unknown Speaker  36:31  
+this is going to sound very confusing when I say this out loud.
+
+Unknown Speaker  36:36  
+Okay,
+
+Unknown Speaker  36:38  
+so reports, hold on.
+
+Unknown Speaker  36:44  
+So like job. So, for example, I was trying to pull up job count by day, and I select the site which is all like, and then down here it gives me what's under all. But it actually pulls up literally
+
+Unknown Speaker  36:59  
+all like Texas,
+
+Unknown Speaker  37:02  
+Arizona, any state, all states, not just these agencies.
+
+Unknown Speaker  37:08  
+Oh, so the selection there means nothing. It No, I mean it means so, like, here, yeah, you mean, yeah, yes. Now if I, but if I'm assigning a job, like I'm creating a job, and I go to site all, I can only assign these agencies yet, if I'm pull a report per all, it pulls everything which is what I wanted, I wanted. All I didn't want just these ones. But it's a little bit confusing as to, I wasn't sure what it was going to pull. If it was just going to pull. You know, these jobs that fell within that start and end date? Wait a second. One, one thing, yes. Here, let's,
+
+Unknown Speaker  37:50  
+let's see
+
+Unknown Speaker  37:52  
+we can go by agency.
+
+Unknown Speaker  38:02  
+Okay, there's 10 agencies assigned to cite all.
+
+Unknown Speaker  38:10  
+They should not be
+
+Unknown Speaker  38:12  
+okay. The only agencies should be assigned to all,
+
+Unknown Speaker  38:17  
+okay. So
+
+Unknown Speaker  38:20  
+the only reason, okay, I'll tell you why that we did that. The only reason we did do that is because, for example,
+
+Unknown Speaker  38:29  
+tactical elite. He works in every single state, almost. So, you know, we would have to have, we would have to create him as an agency in
+
+Unknown Speaker  38:43  
+all all the states.
+
+Unknown Speaker  38:47  
+Does that make sense?
+
+Unknown Speaker  38:50  
+I mean, I absolutely can change this, but if you have a better,
+
+Unknown Speaker  38:55  
+maybe suggestion for me, because that
+
+Unknown Speaker  39:01  
+it's like, it's ugly. It does often, like, off to the officers there. Also, we use them, you know, California, Virginia, like, just everywhere. So it's not something that, you know, they're not just California,
+
+Unknown Speaker  39:16  
+yeah, because they're,
+
+Unknown Speaker  39:19  
+I think the bigger thing is they're not really agencies. They're not they're more like, then, you know, like subcontractors, yes. So how would you suggest we do that then, because we like, Yes, I could, you know, pick an agency in California, but to know who we're scheduling, it like, who we're using, I don't know. It's just kind of a mess because, because,
+
+Unknown Speaker  39:45  
+when it comes to, like, the app and stuff, you know, if you,
+
+Unknown Speaker  39:50  
+if you, if the agency is off duty, officers Inc,
+
+Unknown Speaker  39:54  
+then,
+
+Unknown Speaker  39:57  
+and it's set to the site is all.
+
+Unknown Speaker  40:00  
+Well, then
+
+Unknown Speaker  40:02  
+it's not going to show up on any officers
+
+Unknown Speaker  40:05  
+app, unless that officer happens to be assigned to agency off duty officers. Inc,
+
+Unknown Speaker  40:13  
+yeah, well, these ones in particular,
+
+Unknown Speaker  40:17  
+they just, we don't get their officers like they invoice us, right? So we pay
+
+Unknown Speaker  40:24  
+this person. He sends us an invoice, and then they he pays the officers. Kind of
+
+Unknown Speaker  40:30  
+feel so an officer for if the job is assigned to that agency or is assigned through dbson Security,
+
+Unknown Speaker  40:39  
+you
+
+Unknown Speaker  40:41  
+that officer is not going to be using the app, that office is not booked in your system.
+
+Unknown Speaker  40:49  
+You have no idea who the officer is, really, exactly, yeah. I mean, we get in, yeah. Like, as far as, as far w9 Yeah. Like, not that part, yeah. As far as FileMaker, the system is concerned. You have no idea who the officer is, right?
+
+Unknown Speaker  41:06  
+I know it's it's messy, and you know, I knew that. I know so
+
+Unknown Speaker  41:15  
+I got nothing for you off the top of my head on that we'd have to really sit down and figure out how we want to handle that that's almost,
+
+Unknown Speaker  41:25  
+I really don't want to but it's almost sounding to me like another whole module in FileMaker, you know, for like, you click on the top navigation in the top left, and then you have, you know, Vin, yeah, I get what you mean like,
+
+Unknown Speaker  41:39  
+because we want to make sure that any jobs that are like this are not going to show up on the officer app when are not going to probably you're not going to give any of these eight, these agencies, quote, unquote here, access to the agency app to use correct
+
+Unknown Speaker  41:57  
+now, I mean
+
+Unknown Speaker  42:00  
+stuff
+
+Unknown Speaker  42:02  
+I think down the line they, they maybe, let me think, are they going to have officers assigned to them? I mean, I mean, I think down the line they could, I I think some might keep their,
+
+Unknown Speaker  42:15  
+you know, invoicing structure that they have. But there's, I don't think there's a reason why,
+
+Unknown Speaker  42:22  
+why they couldn't
+
+Unknown Speaker  42:25  
+maybe I'm wrong. But the way to do this would be
+
+Unknown Speaker  42:30  
+make a new site. Instead of using all for these site called, you know, vendor, or I don't know something,
+
+Unknown Speaker  42:40  
+okay, attach all of these agencies that you want in this way to that, because when you pick all there, and then you run a report, it's looking Yeah, that word all, and if it sees all, then it goes, Okay, you want everything.
+
+Unknown Speaker  42:56  
+Okay, create a new site. I can do that. But that list at the bottom there is looking for every agency that's whose site is all so it's I could see how that would be confusing, but all was supposed to be used to allow you to search for all everything, yeah, and that's what I want all to do. And I knew that this, I knew why this was happening, but, you know it's like,
+
+Unknown Speaker  43:21  
+but I can definitely create a new site and just move these over and remember, it's, it's just kind of a general business rule, when we discussed sites, that a site is a state. It's not, yeah, it's not in stone.
+
+Unknown Speaker  43:37  
+Okay? You know, you all you really have to remember is the
+
+Unknown Speaker  43:42  
+biggest thing for sites is
+
+Unknown Speaker  43:46  
+an officer that's assigned to an agency that's assigned to a site. When the agency, or you guys, say that this job is allowed to be taken out of area, it's going to be offered to all officers under that site.
+
+Unknown Speaker  44:02  
+So that's the biggest thing that the site is up to.
+
+Unknown Speaker  44:07  
+Okay, so if you want to make, you know, four sites for Arizona. You know, one, Arizona zone, one, zone two. You know, you could, we just decided to go with states because it, you know, geographically, and in your brain, it sounded reasonable, yep, okay. Officers don't tend to take jobs from a different state than they, you know, work, yeah, and are signed in. And
+
+Unknown Speaker  44:31  
+here, it doesn't sound like they still these officers aren't necessarily. It's just this vendor, this in between a man that is working in multiple states. So, yeah, I would, I would say, make a site called vendor or subcontra, whatever you want to call these, this group of of companies here, and then assign all of those agencies to that site. And I think that would help with your reporting.
+
+Unknown Speaker  44:56  
+Perfect, perfect. I like that. I can do that. That's easy. Yeah.
+
+Unknown Speaker  45:00  
+Let's see
+
+Unknown Speaker  45:06  
+the hold the whole thing that's that's an old one.
+
+Unknown Speaker  45:11  
+The reoccurring old trigger still doesn't work. But yeah,
+
+Unknown Speaker  45:17  
+the other thing we don't have to do right now, but during one of our meetings, we had discussed,
+
+Unknown Speaker  45:24  
+possibly, if it, you know, when it expands
+
+Unknown Speaker  45:28  
+to a larger amount of jobs and things that we're doing, being able to break it up by regions, is that something that's doable? You brought up that word and decided that
+
+Unknown Speaker  45:42  
+right out of time. So what region means? Oh, reach so, like, like, if you took the United States, for example, and you had, like, northwest, you know, Midwest, East Coast, like, I don't know how we would be breaking it up, but being able maybe to assign either certain jobs or
+
+Unknown Speaker  46:08  
+to different regions. So what we just discussed, you want, yeah, change. So we do want an officer to be able to work in a different state. No, no so because we were talking about, you know, possibly having multiple people, like, for example, scheduling
+
+Unknown Speaker  46:29  
+or accounting, even
+
+Unknown Speaker  46:31  
+they they only work in for one region, right? So they only want to pull the jobs that are on the East Coast, or, oh, you know, in the southwest. Scene by No, no. This is schedule. This is administration, see, by region, yes, yes. And you want to, sorry, or if you, if you hire some people and place them somewhere in New York that they only see the northeast, yeah, or on the northeast for you, or, you know, something like that, yes, and I know that that's, you know,
+
+Unknown Speaker  47:05  
+yes, yeah. We would just make another level above site, and sites would have to be assigned to a region, and then we set the privileges up to, you
+
+Unknown Speaker  47:19  
+know, to only allow them to see that region when they're looking at the dashboard or making jobs or availability. We'd have to go through all of those areas and most of the loading screens and add that criteria.
+
+Unknown Speaker  47:34  
+But it can be
+
+Unknown Speaker  47:39  
+done.
+
+Unknown Speaker  47:42  
+I think that's that is all I have.
+
+Unknown Speaker  47:48  
+Okay,
+
+Unknown Speaker  47:51  
+alrighty.
+
+Unknown Speaker  47:55  
+Joe, Amanda, anybody have anything else before we wrap up? Yes, we're going to be just quickly Brian, we're going to buy, did give the okay to go ahead and spin up that server so we can get started on that? Okay? I'll talk to Steve and see if we can get time tomorrow or the next day. Okay to do that so we'll blow that up and get it back to last known goodness,
+
+Unknown Speaker  48:22  
+okay, yeah, fingers crossed on this one. So other than that, that's all I got for you, unless Amanda got anything or Lori,
+
+Unknown Speaker  48:29  
+nothing for me. Lori, anything from you?
+
+Unknown Speaker  48:35  
+Lori, Lois,
+
+Unknown Speaker  48:39  
+no. Lois, she's already checked out. Brian, well, if she does have anything, we'll reach out. Reach out to you. No worries. Yeah, I talked to her earlier today. She has already had her chances
+
+Unknown Speaker  48:47  
+to complain.
+
+Unknown Speaker  48:51  
+Alrighty, well, you know, it takes a little while for this to process, but I'll send out the share of the recording later. Awesome. Yeah. Lori, flat out left. She was like, No, really, I am. She's over. She's over. Brian
+
+Unknown Speaker  49:06  
+already. Well, that's it. That's it. I'm sure we'll talk at some point going towards the end of the week. Awesome. We appreciate it like always. Yeah. All right, thank you
+
+Unknown Speaker  49:17  
+guys. Bye.
+
+Transcribed by https://otter.ai

@@ -1,0 +1,895 @@
+Speaker 1  0:00  
+Let me. Let me check in with him. Give me a second. No worries. Do
+
+Unknown Speaker  0:38  
+Yeah, no, hi, Reg,
+
+Speaker 1  0:43  
+okay, yeah, it looks like they might not be joining us today, guys. So I think it's going to be us. And obviously I think you guys got the word doc right, Jake and Brian that Ashley sent over to you as a reference point. Yes, sir. Yes. Awesome. Alright, guys, well, and with our new format, our new old format is what I call it. I think we just go right into fixing these bugs that are high priority. Alrighty.
+
+Unknown Speaker  1:09  
+Then Miss Ashley, yeah, hey,
+
+Unknown Speaker  1:19  
+okay, so see,
+
+Speaker 2  1:26  
+actually, yeah, I was going to say, Jake, do you want to jump right in? It's the GPS, right? Ashley, is that our first one?
+
+Speaker 3  1:32  
+Yes. Okay, so the, yeah, the GPS stuff, we, we had Jake look at it for a while. We passed it on to better forms as a platform to have them look into it for us. And what they've come up with, truthfully, is isn't great.
+
+Unknown Speaker  1:57  
+They have an option that would require a
+
+Speaker 3  2:01  
+shortcut file, in addition to the blue dispatch file, be installed on all the officers phones that they would be able to push notifications to where an officer would then touch the notification, and that would bring the app to the front, which allows the GPS to work. I really don't like that option, but technically it would work. The other one we were looking into a capacitor wrapper, which is a possibility. However, in order to have a capacitor wrapper, it has to be approved. The app has to be approved through the stores, and in my opinion, that's one of the big things we were trying to get around was having to go through the store. If we're going to go through that process of dealing with the stores and approval and everything for download, then we should be looking at an internal app, which I don't know if we want to start right now. If we'd want to start at all, it's going to come down to how, how big this feature really is. You know, for, for the release of of, I guess agency is really where it's it's being viewed,
+
+Speaker 2  3:25  
+it's that. It's definitely pretty significant. So I'm, I can't speak for Bonnie and Becca, but I'm, it's pretty significant. I get that we were going to need to look at, was that mean, was that entailed?
+
+Speaker 3  3:41  
+And, well, an internal app is, is a native app, which is, you know, like most the apps on your phone that you go and download, yes, and we're talking about that's that's in a lot of ways, not completely rewriting, because there's a decent amount of the current officer app that we can use, but you're talking about writing an internal app having to go through the approval process for every update and every release with both Apple and Google,
+
+Speaker 2  4:17  
+and really quick. I'm sorry. I'm so sorry. There's a little bit of delay. So please forgive me, just because I don't think I was there for that decision. Why we didn't go that route to begin with? Was it time and cost?
+
+Speaker 3  4:30  
+It was time. I don't know how much of it was cost, but it was definitely time when we got started on this, you know, on this project in general, with the web apps and such, we were working on a really tight timetable. Bonnie was asking for things within a couple months to be able to put in an officer's hands at like the beginning of the year, and a native app from scratch. We were off the top of our heads. Was pretty sure it would take a year, maybe a little more, and that was just not, you know, not what Bonnie needed at the time. She needed something much faster. That was one of the biggest reasons why we suggested a progressive web app in the first place. Also, when we originally did the officer app, the GPS feature was not a request that actually came later when we started on the agency app, when we were looking for, you know, features that they needed for the agency app, Bonnie had come up with this GPS request. And we were like, okay, we can do it. And we did. But of course, immediately after that, both Google and Apple changed their policies on the phones on this, truthfully, they could change back. They could do, you know, we just have no no control or no sway over those decisions with Google and and apple,
+
+Speaker 2  6:01  
+but right, let me ask you this, had the GPS components been a requirement from the start, would you have gone to the the native app to begin with?
+
+Speaker 3  6:10  
+Yeah, likely, yeah, likely. We would have pushed harder, but I still don't know if that would have been the decision.
+
+Unknown Speaker  6:18  
+Yeah, it was
+
+Speaker 3  6:20  
+still September, October, right, starting this, and she's like, I want something January.
+
+Speaker 4  6:27  
+Well, actually, it was tighter than that. We started the app, and we started to discover why, yeah, and we were ready for beta testing in September, so a little over a month, which is this would be 100% undoable. So it was just a time constraint, really, that that that pushed that decision.
+
+Speaker 2  6:53  
+Okay, let me ask this, what is the potential proposed time frame if we were to go in the direction of the native app. That's question number one. Question number two is, if we remained with our progressive web app, or if we actually the shortcut piece? One is that, tell me the number option?
+
+Speaker 3  7:10  
+PWA, yes. Oh, the shortcut piece. That's a, I mean, that is an option, but, but
+
+Speaker 2  7:16  
+what is that? Okay, so I was gonna say, yeah. So really we have, based on what I'm feeling is that we have PWA stay with what we have current option. It doesn't sound like there's a lot of confidence behind the shortcut one for longevity purposes. Am I? Am I?
+
+Speaker 4  7:35  
+Well, it depends. I mean, you guys, that decision, it what it would require, okay, is if the is, if the app is in the background, then the every whatever specified amount of minutes, five minutes, whatever it is as those that time goes by, notification is sent to the device that the user sees at, like the top of their screen, or on Their lock screen or whatever, and they have to tap that notification, which then wakes up the app, which then, obviously, now the app is awake, which means it can grab the GPS. So that is the option, and it would happen every five minutes, or whatever. You know, whatever you guys deem to be reasonable. The reason that works is because the app resumes in the foreground, and thus is allowed by the operating system to capture the location that that is the only option that we have with the app as it stands right now. The second option is to try to wrap the app in something like capacitor js, which technically makes it a native application, albeit not really. It's kind of a workaround to get that native application onto users phones, you would either have to deploy it via the apple enterprise app store, which is a another app store that business apps are deployed to, but that doesn't seem like a very reasonable place to put it for something like this, because these are just offices. It's not like your employees who would be downloading this, so more likely, it would have to be distributed through the the actual app store, like what you see, you know, when you open up your phone. And in order for that to happen, it would have to pass through all of the, you know, the approval process. Now, that's not like insurmountable, you know, in terms of the approval process, it's a pain, for sure, and it requires management. But my opinion on that is, if we're going to wrap the thing and make it a native app, we might as well make it a native app. Yeah. I mean, we, you know, we. Have, like the world's best proof of concept. In that case, you know what I mean, where it's like we have a working app and we can just build we know exactly what the spec is for a native app, which makes our lives a lot easier. But there is a timeframe that comes along with that, and how long that would take is in the sev at least several months. Okay, so, yeah, we're talking like could be six months.
+
+Speaker 2  10:31  
+So I think what we need to see are the pros and cons of each of these and the estimated time frame so that we can present and let Bonnie make an educated decision on what she feels is the best approach. And so
+
+Speaker 3  10:43  
+also, we definitely another part of that decision, if you decide to go the native route, is what we do about the client portal. We may be able, you know, we're working to find more, you know, more co workers, more workers to help be able to offer more hours per week, but standard, we can't work on both of them at the same time.
+
+Speaker 4  11:12  
+I Well, it would be irresponsible to to be honest. So, you know, responsible too we could, but it would not be smart. So what Brian's trying to say is, if we were going to do that, we would want to either prioritize, right, the officer app and then make, like, small, incremental advancements on the the customer portal, you know, where it's like, hey, we could, we could put a handful of hours every week towards the customer portal, and we'll get it done in time with a focus. And, you know, while keeping our focus on the officer app, or we go, No, we're going to focus on the, you know, the customer app. You know that we've been kind of in discovery for and we then only spend a handful of hours on the on the native app, you know what I mean.
+
+Speaker 2  11:56  
+So I recognize all of that we're going to pull from resources and have to allocate in other places, I completely see that I have to be able to present this to her and let her know what she the best information. So can you guys and let me know when you can the three, the three pieces that we have. We need the pros and cons, and we need to be able to present that to her, and then we Joe and I can we? Can we can roundtable that with her and share so I just, I'm thinking longevity. I'm thinking, what's the best for the infrastructure right now? So because this is going to continue to grow and build upon so we, we just need that from you guys. I'm jotted notes, but I clearly don't know it as much as you guys do. And then we'll sit down with her right away and let her know that this is these are the these are the options that we have.
+
+Unknown Speaker  12:44  
+Yeah, and I'll tell you what, too.
+
+Speaker 4  12:48  
+If there is a plan to take this to the market later, meaning it's not just law enforcement specialists who are administering this thing, you're going to want that probably anyway,
+
+Speaker 2  13:04  
+yeah, and that's in that Jake, you and I are vibing, because that's exactly what I'm thinking. If the future of this is an off the shelf product that can be sold for tracking in different environments, we need to set the foundation now, but, but I want to be able to share with her and explain, like, what? What are the pros and cons of of each of those? Right? So she, she clearly understands each of these respective points.
+
+Speaker 3  13:27  
+Yeah, so I'll, I'll get, all right, I'll get a document together. Okay, I might be able to get it end of day tomorrow, but if you're going to write something down, let's say Thursday, perfect.
+
+Speaker 2  13:37  
+All right, yep, you know me. You are you watching?
+
+Speaker 3  13:41  
+No, ma'am. I just haha. You were up to.
+
+Speaker 2  13:47  
+Thank you. All right, so that's our GPS piece, okay, all right, Joe,
+
+Speaker 1  13:52  
+you were I got a quick question, yeah. So in regards to the six months, so that six, six plus months, let's say, is a ballpark what we're looking at, and Brian and Jake. You guys know how Bonnie is. We want things quick and fast. So with that six month mark, with the native app, are we looking at? Well, I'm just trying to piece this together here.
+
+Speaker 4  14:15  
+It might be less than that, Joe. I'm just trying to be as I can, about, like,
+
+Speaker 1  14:21  
+no, of course. But I mean, that's, that's going to be the sticking point for her, and we're aware of that, but I think now is this roughly going to be, I'm assuming it's going to be roughly the same hourly rate that we'd be looking at as
+
+Speaker 4  14:34  
+well, right? Oh yeah, it's the same hourly rate for sure.
+
+Speaker 1  14:38  
+And this is what we've see. That's going to be something that we're I mean, like I said, when you guys present this stuff or shoot it to Amanda, we can, we can definitely review that, but I'm just trying to figure out how she's, how she's going to want to approach this. I mean, it's kind of, we're kind of just stuck into a corner at this point. We kind of don't have an out, so we're kind of forced into it in theory,
+
+Speaker 4  14:58  
+yeah, we don't want, they don't want. Do that that, yeah, obviously that's not
+
+Speaker 1  15:02  
+our goal, right? No, no, of course not. But the GPS is going to be crucial, though, because there's just from, you know, the departments, as well as the customers, things like that. That's going to be something that I know is, is vital for us.
+
+Speaker 3  15:16  
+You know, it is still working on the clock in and clock out, that is, you know, that's that's still happening no matter which method we use. Just to toss that out there,
+
+Speaker 2  15:27  
+thank you for sharing that, because that was going to be my next question. So it doesn't. I just want to make sure it doesn't sound as though we're going to stop all of the GPS. It just means it's going to be limited. Right to make a decision on going the native route, which sets the infrastructure for the product in the future, right? It just makes it limited to what we have. It doesn't mean we don't get it. That's what I'm hearing, right? Yes.
+
+Speaker 3  15:48  
+And truthfully, if they keep their phone open and keep that up in the foreground, it'll continue. It'll work.
+
+Speaker 4  15:55  
+Yeah, it does work. I've tested many, many times. It's just when they put it away, which is a reasonable thing for them to do, okay, like we I would never say, I don't know if you guys remember, but back when the iphone four, I think is what it was, came out, they had all those antenna problems, and Apple, like, made one of the biggest, stupidest mistakes, because basically, they were like, well, you're holding it wrong. Well, that's not a reasonable answer. You know what I mean. So, so I would never say, like, it's reasonable to say you can't use anything else while you're, you know, using our app, that's not reasonable. And we are not trying to force you into making a decision to go with a native app. We are simply working within the parameters that we have when it comes to what we're able to do with a browser based application, and that is what this is. And we made the decision to go with a browser based application, which is the PWA, because we were in such a crazy time crunch, we never could have gotten it done in the timeframe that we got this done in ever I don't think anyone could. So, right?
+
+Speaker 2  17:04  
+Yeah, and I don't feel that way, Jake, I don't feel that that's what's being presented here. That's why I think that we just need to have it outlined to the best of your ability, and then we can share with her that it isn't stopping. It is still will have a feature, but this might be the best approach, or we she may want to just do the app in the background, right, or the capacitor wrapper or, but we need to show her that's, that's, that's our due diligence on our side, yeah, show long term and what's the long game, right? Because, yeah, shortcuts don't always get us there,
+
+Speaker 4  17:35  
+yeah, to be honest, with a capacitor wrapped application, that is, if we if, let's just, like, really look out on the horizon here so we have this PWA, we could wrap it in capacitor. Okay, that is going to take us sort of into the ballpark of native app, but not totally, all right, which means that we get all the drawbacks and very relatively few of the of the benefits. That would be something where it's like, Hey, this is a good idea. If we never plan on building a native app that's going to be distributed to like a wider audience, right? If distributing an app to a wider audience is in the roadmap,
+
+Unknown Speaker  18:18  
+then a native application makes more sense understood.
+
+Speaker 4  18:22  
+If this feature is like a deal breaker, you know what I mean, if it's not, then the PWA totally works. But if it is, I just, you know, I want, I want that out there. And we will give you, Brian, you can, we can, you know, Zoom about it, or whatever, but we'll give you a document that kind of outlines all this stuff.
+
+Unknown Speaker  18:38  
+Thank you. Thank you. I appreciate that. Sure.
+
+Speaker 2  18:43  
+All right, with the click the Check login and log out for the GPS. What's happening with that component of it right now?
+
+Speaker 3  18:54  
+It works? Yeah, it's not working in production because we haven't pushed the dev code over to production yet, because we were waiting for an answer on this. So with, you know, with this, at least, decided that there's not much we can do with the PWA, you know, to change the functionality. The functionality as it works is working, has been tested thoroughly. And you know, whenever you guys want to make the call, we can push that Dev, the dev code, up into production. And that would be the GPS stuff as it stands right now, which means the clock in and clock out works, and as long as they have it in the foreground, it will, you know, it will track every five minutes. It also includes the the job search based off of agency settings, coding,
+
+Speaker 2  19:46  
+okay, Ashley, do you have questions on that component?
+
+Speaker 5  19:53  
+Not directly. I do have a thing I was going to bring up about punches, yeah. But. I specifically to that. Okay, so I was a good transition. I was thinking about the pensions when we were talking about the client side and how they're going to see when an officer clocks in and clocks out. Currently, though, when a clock officer clocks in and clocks out, let's say they accidentally make a mistake. I don't know why. No one's on the wrong day, so let's say something. They clock out on accident. They didn't mean to or whatever, and we go to fix their hours because we can't. We can't change this. So once they clock in and clock out, we can't manipulate that at all. We just give them the total hours, which is fine, except for I started thinking about a client and the pushback that we could potentially get, right? So if, you know, if this, if they see 728,
+
+Speaker 4  20:49  
+and, like, if the there's a discrepancy between the hours work and the actual clock in,
+
+Speaker 5  20:56  
+and then, yeah, being able to, you know, do something different with these. I don't know how it would work with clock in, but especially clock out, if, if there's a way to erase that, because then you could see the, you know, where they were at GPS wise, from clocking out, if I do it right now, you know, I don't know what that looks like.
+
+Speaker 3  21:18  
+Does. I think the best it does right now is, if you click on the little clock icon, it will override. I think if there already is a clock out time, but it'll override with the current time. Really, the reason we don't give access to that is, I mean, it number one, it's a button that the officer pushes, and you're timing that action. You know when that time happens. So you often don't want to give, you know, users at the staff level ability to manipulate that. But more to the point that is a very exact format, down, you know, down to every piece of it. And if there's an extra space, if there's anything that's not exactly that timestamp format you you run into problems.
+
+Speaker 4  22:07  
+You know it's, yeah, it's actually a wild the what the format that you see there is the number of seconds that have passed since January 1, 1975 1975
+
+Unknown Speaker  22:24  
+that is actually what is stored there.
+
+Speaker 4  22:27  
+Now we could give you a little converter, yeah, like a converter thing where you can write a time in there and we convert for you. But I would echo what Brian said there, which is, we'd want to be careful, because it, it, it's indicative of an action that an officer took. And I don't know how much value it holds, if it can just be overridden, but you know, and that that's not to say that you shouldn't do that. It's just like, make sure you think about that. That's all
+
+Unknown Speaker  23:01  
+okay. No, okay,
+
+Speaker 3  23:05  
+yeah, because you're seeing, Oh, what if there's a discrepancy that the customer sees? Well, what if there's a discrepancy that the officer sees
+
+Unknown Speaker  23:12  
+for someone? I mean, we could,
+
+Speaker 4  23:16  
+we could have, like, a reported clock in and clock out time that would show up on the client. You know that automatically inherit the the data from the actual clock in and clock out, but that can be adjusted that way. You're not messing with original data. Because that's the thing too, is if, if you change their clock out, it's
+
+Speaker 3  23:40  
+already, we already kind of have that. No, it's not. I have a log, a session log, for everything they log into.
+
+Unknown Speaker  23:46  
+Okay, all right. Well, that's good.
+
+Speaker 3  23:49  
+Every every log, every clock in and clock out, I have, I have in a time entry table,
+
+Speaker 4  23:56  
+and that field right there doesn't change the related time entry Correct? Okay, well, that's good.
+
+Speaker 3  24:05  
+So then, but that field right there is what the officer sees, what the agency sees, what the customer will see. You know, that's, yeah, the time entry field is just kind of a log in the background. Okay? But that's, I think that's your answer. As usual, the answer is, yes, we can do it. But are you sure you want do you want us to exactly?
+
+Speaker 5  24:32  
+Not wanting to make that kind of decision right now. I just kind of wanted to see where we stood. We might have to think of something before the client side, because I can because I can see how that would be an issue, but I'm not ready to
+
+Unknown Speaker  24:47  
+I understand everything
+
+Speaker 3  24:48  
+you just said. So yeah, and you can see the those time entry records I'm talking about. You can see those on the officer detail screen, really, yes, it's one of the tabs, time entry.
+
+Speaker 5  24:59  
+Oh. Oh, yeah, but, and it's yeah, those time
+
+Speaker 3  25:03  
+entries are the actual clock in and clock out time from
+
+Speaker 5  25:06  
+the app. Yes, yes, yes, I get that. Okay. Get through more this. This one is kind of, I didn't know if I should put it in app or scheduler, so bear with me. It's a little confusing,
+
+Speaker 6  25:26  
+so let's see from
+
+Speaker 5  25:31  
+so there's there's officer instructions, and then there's notes, especially in production, I tested it on both, so I'm going to tell you what I see on both and what's pulling and where it's pulling from. I guess essentially so when you create a job and you put stuff into the officer instructions, kind of like external notes. So I see the instructions on officer instructions, I see one thing on notes. I typically see the exact same thing doubled when I change it. So, like, let's say like, just for this one job, I want to change the external notes. So I'm not changing the officer instructions. I'm changing the external notes.
+
+Unknown Speaker  26:19  
+It changes the officer instructions
+
+Speaker 5  26:23  
+so it's it does expect. So on dev side, under the notes, you see the external which is what I did change. However, when I take that job from the app, the the email that I get, the confirmation email, is pulling. It doesn't pull from the external note. It pulls from the officer instructions.
+
+Speaker 3  26:49  
+The officer instructions is the external notes correct.
+
+Speaker 5  26:52  
+It is typically, but if I went in here and wanted to change maybe just, maybe just Tuesday is directing traffic or something. So I changed just this day, and someone does
+
+Speaker 3  27:06  
+the notification is pulling from the wrong one. Yeah, yes, yes. Exactly which notification? The notification the job detail, yes.
+
+Speaker 5  27:18  
+So when I it's pulling from the officer instructions and not from the external notes.
+
+Speaker 3  27:26  
+Okay, so when we book, yes, we send out a notification. Okay, I think that's me. I know that's me, so I'll Okay. I'll look at that. Okay?
+
+Speaker 5  27:43  
+And that made sense. I sorry. I didn't know how to explain it. It's like it's, it's showing one thing and pulling it from another.
+
+Speaker 3  27:50  
+Yeah, it looks like the notification is just pulling from the recurring level. And the Yes, and the job that you see is from the job assignment level on the app, which is that one is correct. I just need the notification to match that. That's easy. All right.
+
+Speaker 5  28:17  
+Oh, this is on there. So Jake on the dev so if I went to any job in on like the home screen and I hit map, it brings up Google Maps, but the address that it brings up is SM undefined
+
+Unknown Speaker  28:36  
+in your list. I made a Trello card for that.
+
+Speaker 4  28:39  
+That means freaking Google has changed their API again. Oh, that's what that means, because
+
+Speaker 5  28:46  
+it's awesome to work. It did used to work. That's why
+
+Speaker 3  28:50  
+I was like, well, and this is on the because when you click the button on my apple, it opens up maps, not Google, so,
+
+Unknown Speaker  28:59  
+and it works there, does it not?
+
+Speaker 3  29:01  
+No, it doesn't at all. I correct. I get SM undefined as the search address, the search value
+
+Speaker 4  29:10  
+hold up. Well, that's good. That means maybe the API didn't change. So, man, I wish you could share your phone screen so I could see that
+
+Unknown Speaker  29:23  
+I can get if I can, real quick.
+
+Unknown Speaker  29:25  
+Brian, Brian can,
+
+Speaker 3  29:29  
+in fact, I'm not positive, but I might have added that to the Trello card, but I'll pull it up one more time.
+
+Unknown Speaker  29:42  
+SM, undefined,
+
+Speaker 3  29:44  
+yeah, where it usually shows, you know, the different directions and such. It says no matching places found. So I'm going to take a screenshot real quick and slack this to you. I just, I just. It. It's easy to make happen.
+
+Unknown Speaker  30:03  
+Can you
+
+Speaker 4  30:08  
+S M, q equals s m plus,
+
+Unknown Speaker  30:14  
+there it is. I just slacked it to you in my screenshot here,
+
+Unknown Speaker  30:19  
+very slowly loading there and that.
+
+Unknown Speaker  30:22  
+That's Apple Maps that open.
+
+Speaker 4  30:26  
+Yeah, how weird, and that's only in development. Is that what you said?
+
+Speaker 3  30:37  
+I don't know, Ashley, is that development or Dev and prod.
+
+Speaker 5  30:41  
+I think it was just development, okay? I'll do it right now and look though,
+
+Unknown Speaker  30:49  
+no, they're the same.
+
+Speaker 5  31:01  
+No and in production, mine pulls up the exact address.
+
+Unknown Speaker  31:06  
+Whoa, they're doing the same thing.
+
+Unknown Speaker  31:13  
+Yeah, I don't know.
+
+Speaker 4  31:16  
+They're doing exactly the same thing. There's nothing different. Whoa,
+
+Speaker 3  31:26  
+so, yeah, you do have a Trello card for that, and I'm sure Jake will look into it for you.
+
+Speaker 4  31:35  
+Yeah, I will. That's a weird so does it work in all everything on production,
+
+Speaker 5  31:41  
+like every job, every job in production. Let me look at another one.
+
+Unknown Speaker  31:48  
+Oh, I'm dead. Oh, I wonder if the data is different. Hold on.
+
+Unknown Speaker  31:57  
+Yeah, no, all of the ones in production are
+
+Speaker 4  31:59  
+working, yeah. Brian, I think this is a data problem. Yeah, I think that's blue dispatch.fm. Better forms. Let me see something.
+
+Speaker 3  32:15  
+All right. Well, I want to be able to get Ashley on our way. And, yeah, if you need me to, you know, do something on my side, that's fine. We'll look into it and get this fixed.
+
+Unknown Speaker  32:25  
+Yeah, I think, I think I will,
+
+Speaker 4  32:30  
+yeah, it's because it's missing location search in the in the JSON.
+
+Speaker 3  32:34  
+Brian, okay, I'm not quite sure why it's, it's pulling the same VF as JSON.
+
+Speaker 4  32:41  
+I will look at it. It's not in there, though.
+
+Unknown Speaker  32:44  
+We'll look at it. What else you got? Miss Ashley,
+
+Speaker 5  32:47  
+hey, this one. I probably already know this too. Jake, not sure, though, in dev, the there's no there needs to be a space between the location and the city. Yes, I saw
+
+Speaker 3  33:01  
+that when I Dev and I don't see that lack of spirit, I see everything. I see space. No problem on all of mine. It's like the address, comma, the city, comma, space actually than the city.
+
+Speaker 4  33:16  
+I do too. It all depends on how it's entered into FileMaker.
+
+Speaker 5  33:21  
+Okay, um, just so mine on dev. I'm seeing it in like, just my past and my upcoming and all these jobs. My Home Screen, I believe, is good on production. It's on the dashboard and everywhere. So it's a little bit it's
+
+Speaker 3  33:39  
+in different areas. No, she's right. It's working on the home screen. But not Yeah, my job screen,
+
+Speaker 4  33:44  
+I'm on my jobs in dev, and it and it, and it's definitely, there's a space.
+
+Speaker 3  33:52  
+Some of the ones I'm seeing don't, and they seemed some of them do have a space, and some of them don't have a space, which says to me, you may be right.
+
+Speaker 4  34:01  
+It's, yeah, it's, it's a file maker thing, again, it's a data thing.
+
+Speaker 4  34:10  
+Because all that is showing let me see here, just so that I can
+
+Unknown Speaker  34:18  
+maintain my
+
+Speaker 4  34:20  
+Hey, Ashley, is that screenshot? Right there? Is that? Dev, yes, yeah. Dev, okay, one second. My jobs, and that is the church. Job dot location, and then, and then a space,
+
+Unknown Speaker  34:51  
+yeah, and then
+
+Unknown Speaker  34:54  
+let me see you've got job location, yeah,
+
+Unknown Speaker  34:58  
+yep. So.
+
+Unknown Speaker  35:05  
+I mean, I can force a space there. You
+
+Speaker 4  35:08  
+want me to do that like, literally, I'm hard coding a space in,
+
+Speaker 3  35:13  
+not necessarily, because I don't think all of them are going to be wrong
+
+Speaker 4  35:17  
+to do with. I think it's a data thing, how it's entered, Yep,
+
+Unknown Speaker  35:25  
+yeah, I can look.
+
+Speaker 5  35:26  
+Don't know how to advise, because it's, it's just strange. It's on all of my jobs. I don't know, I don't know why, but in
+
+Speaker 3  35:35  
+all of mine, I have, some of them do have that, and some of them don't, on the, you know, the my jobs list,
+
+Unknown Speaker  35:44  
+because I have some.
+
+Speaker 3  35:48  
+Let's see. This one was from December of 2024, and it's fine. It has the space and everything. But then I have August of 2024,
+
+Unknown Speaker  35:58  
+doesn't have a space.
+
+Speaker 5  36:00  
+Oh, so maybe it's when I like because my the ones I'm talking about are all newer ones, more recent? Do you think that has anything to do with it? Yeah, when it was created,
+
+Speaker 3  36:11  
+yeah, some of the more recent ones seem to have the problem. Yes. So I'm looking at May 9, 2025, May 6, some test ones I was doing. And yes, they, they do not have the space.
+
+Speaker 5  36:32  
+Okay, we can look at, I don't know if this is happening on yours too, but as I'm looking at it, my job's like, I'm missing this tab.
+
+Speaker 4  36:44  
+I am, no, I am too, and I don't know why. So I'm okay. That's new, because I saw it earlier today. It certainly is
+
+Unknown Speaker  36:56  
+cool. So I guess even I don't
+
+Speaker 3  37:02  
+and why is there a drop down now on there?
+
+Speaker 4  37:07  
+Shouldn't there? Shouldn't be that there's something, there's something,
+
+Unknown Speaker  37:10  
+board, invoices, contacts, documents, yeah,
+
+Speaker 4  37:12  
+no, if you refresh or force quit your app, it should, it should disappear.
+
+Unknown Speaker  37:19  
+Your mind disappeared. I still want the tabs.
+
+Speaker 4  37:21  
+It's weird. No, no, I don't either. I am looking at that right now.
+
+Speaker 5  37:35  
+Okay, no space, no word, no update. This is still an ongoing problem. When we already know about though, the favorited job thing, it still lets me take them, even if they're canceled.
+
+Speaker 4  37:51  
+So an update on that, hey, check to see if your tab is there. Now it's there. It's there.
+
+Speaker 6  37:59  
+Cool. Um,
+
+Speaker 3  38:06  
+you can still take a job that was canceled because you favored it. Yes, um, should be clearing the favorite list when you cancel.
+
+Speaker 5  38:20  
+Yeah, I just tried it right before the call, about 30 minutes let me so it's weird though, because it let me take it. We got the confirmation email. However, it wasn't obviously in any of my job tabs, because it's canceled. It's not real, but it's a misleading, because at the top it says success, and I'm like, sweet, but you know, it's not real.
+
+Speaker 3  38:45  
+Yeah, well, I mean, if you're, if you're literally sitting on the app and saying, you know, cancel on file maker and then hitting book, yeah, that's not gonna work. That's not gonna work. It's gonna need, you know, a second. They're gonna have to refresh after it's been canceled. Yes, you know the if you're, if you're really sitting there, it's not going to be that quick and immediate.
+
+Speaker 5  39:07  
+I'll give I'll retry it. And next, you know, when we're off, and see if it, if that makes a difference.
+
+Speaker 3  39:13  
+I guess, Jake, maybe in the booking process, we can check live to see if the job has been canceled, and then return to them. At, you know, hey, you couldn't book this job because it's been canceled. You know, please refresh or something.
+
+Speaker 4  39:30  
+So that would be in the FileMaker scripting, I agree. And yeah, that's you would either send back a
+
+Unknown Speaker  39:40  
+success or or a error.
+
+Unknown Speaker  39:44  
+Okay? I'll just, I'll work with you to make sure I'm sending
+
+Speaker 4  39:47  
+back to you. Yeah, I will have to look at, like, where it's sending from, because I don't totally remember. I don't remember if it's like, yeah, sending from FileMaker or coming from in the utility hook chain. I don't remember, but we can, we can look at it.
+
+Speaker 5  40:00  
+Okay, talked about this one last time, Brian, the unbook button. I know you're working on that.
+
+Speaker 4  40:10  
+You know, what's weird is that it is firing a hook, Brian to unbook the job.
+
+Unknown Speaker  40:17  
+Oh, that's even more fun
+
+Speaker 4  40:20  
+from from where I'm sitting, it's doing the app is, is sending a message to FileMaker, like, hey, I want to unbook this job,
+
+Unknown Speaker  40:29  
+but the unbook doesn't do anything.
+
+Speaker 3  40:33  
+No, it's it may be doing that. But then the unbook button isn't disappearing or graying out or anything. That's yeah.
+
+Speaker 5  40:42  
+Usually it says, like, you know, request processing, and then we get that email and those two steps aren't happening.
+
+Speaker 4  40:49  
+I see what you're saying, yeah, yeah. Unbook. Let me see unbook job is unbook requested? Yeah.
+
+Unknown Speaker  41:02  
+I see why. I see why. Okay, do
+
+Speaker 4  41:24  
+know. Okay, I see why. I just have to. I'll have to do some work
+
+Unknown Speaker  41:32  
+to fix it, jobs not in order.
+
+Speaker 4  41:36  
+By Date. That's it's on my it's on my staff. Okay, yeah,
+
+Speaker 5  41:42  
+that's good. The 408, that's something we've talked about a lot the past jobs. These are just all things we need before we can push Dev.
+
+Speaker 4  41:50  
+It is all on my plate. Yeah,
+
+Unknown Speaker  42:01  
+I think that's it for, oh,
+
+Speaker 4  42:05  
+the clock in button not showing if it's like after midnight. Yes, yeah, I think I fixed it, but I need you to test it for, just stay
+
+Unknown Speaker  42:15  
+up till midnight. Okay, I can do it. Well,
+
+Speaker 4  42:19  
+it's either me, and midnight for me is 3am so
+
+Speaker 5  42:23  
+good chick, I can do it. I'll test it.
+
+Speaker 4  42:27  
+What it's doing. Let me just like, walk through the logic of what it's doing, though, just to make sure that it sounds right to you, we are showing the clock in button if I'm going to read you exactly what it says, clock in, okay, so if the job is not active, meaning they're not obviously, clocked in. If the job is not complete, and if the job, the date of the job is the same as today or yesterday. Okay? Those are, those are the parameters that I'm using.
+
+Speaker 3  43:11  
+Okay, those are the same parameters I'm using on the file maker side as to, you know what she's on the list for the data.
+
+Speaker 4  43:17  
+Okay, well, then that's the reason I wanted to go over that is because I don't want you to stay up to midnight. Stay up to midnight and have my logic be bad so that,
+
+Speaker 5  43:27  
+no it that makes sense to me. So I will. I'll let you know. Okay, that's it for app. I think positive. Everything else we've already gone over haven't had anyone seen other people's
+
+Speaker 4  43:41  
+profiles that is so worked, that makes me very happy. That was freaking me out.
+
+Speaker 5  43:48  
+And, I mean, it was fixed on both production and Dev, right? We're not going to have that same issue.
+
+Unknown Speaker  43:54  
+Yeah, yeah, yeah. It's, it's mitigated,
+
+Unknown Speaker  44:00  
+perfect. And what? Agency now,
+
+Unknown Speaker  44:06  
+you know, I saw some of these on fellow cards. So,
+
+Speaker 5  44:15  
+so I so, you know how if I'm on the agency side, and I feel like this did used to work. So I pretend like I was in the agency, and I hit, what was it? Release? Release? Yes, exactly. So what it did was it did mark it out of area for me. That was nice, but I didn't get that notification via email that it was being released to us. And I felt like at one point I did, maybe I maybe I'm wrong
+
+Speaker 3  44:44  
+writing that notification. So, no, okay, um, like that notification.
+
+Speaker 5  44:52  
+I think maybe, yeah, I think maybe only because I mean,
+
+Unknown Speaker  44:59  
+trying. Coaching John,
+
+Speaker 3  45:00  
+we'll, we'll see how you feel about all these email notifications when you got 2500 jobs a day.
+
+Speaker 5  45:07  
+Yeah, my concern is, like, so for, for the most part, you know, so like, if we have it, you know, in if we put an officer on there and out of agency, if they release it, but the officers, like, generic, right, like page meeting or something we need to know to, you know, take that officer off of it so that other people can see it. I don't know if that makes sense, and there's not a lot of times that will happen, but,
+
+Speaker 3  45:36  
+yeah, I mean, it's simple for me, if you want an email notification, when that and you
+
+Speaker 4  45:41  
+get one, yeah, you get one. It's a lot, like, when I forget what it was, but there's like a genie, like a show with like a genie in it, and they like, the genie is insanely specific, like, if you don't ask it exactly what you're looking for, it totally goes anywhere all your wishes. And I feel like that's, that's email notifications. Thing is like, Okay, I will email you every time anyone does anything, no.
+
+Speaker 5  46:10  
+And maybe at some point we won't need that, because we'll have it, you know, down. Because with Dev, it's, you know, if we don't have this clicked, we don't need to have, you know, an office or a sign it's so it may change. It was all I'm saying. But for right now, it just be nice to know that they have given it back. Let's see, oh, the having that back button that we talked about, the quick look, yeah, was, was there a Trello card I can add that to, or did you want me to just email it to you?
+
+Speaker 4  46:45  
+No, no, definitely put it in a Trello card. And I don't, I do not want all the email notifications. Okay, no. I mean, I don't care if you email me, it's all good, but it'll get it's easier for me to track it if it's in Trello. Gotcha and assigned to me, please, right,
+
+Speaker 5  47:07  
+see that I have it all, at least, all that I could think of that we wouldn't perfect.
+
+Speaker 4  47:12  
+Yeah, that, I mean, I'm looking at it right now. It looks reasonable. Oh,
+
+Speaker 5  47:19  
+this is already been talked about, but on agency under jobs completed, having a default with the most recent at the top, yep. Okay, this is the one I saw, the trailer card that Brian made because, you know, I was, it was staying on my agency, even though I was taking off.
+
+Speaker 3  47:40  
+I've already, I've handled that for moving forward today, I was, it's a pain in the butt to try to test. So I'm I haven't 100% tested. That's why I haven't assigned you a card, a Charlie card yet to test. Okay? What was happening, Jake is when, when a job is canceled or an officer is cleared off of a job. It wasn't clearing out the officer's agency ID field. Oh yeah, so it still thought an officer from another agency had that job. I gotcha So, but I'm clearing it out now on cancel and and I'm trying to find everywhere that you can change the officer assigned so that I clear
+
+Speaker 4  48:23  
+that, yeah, that's the thing is that there's so many places where this I know
+
+Unknown Speaker  48:30  
+I'm trying to find them all and test that I got them all,
+
+Speaker 5  48:34  
+okay, and this, this one, I feel like we figured out it's Just it had to do with us assigning an officer and not taking it off hold for bulk. Okay, I guess I should maybe move this. I put in an agency because it's technically affecting my agency side, but I think that was a scheduler thing.
+
+Unknown Speaker  48:55  
+I'll move it. Sorry. That's all right.
+
+Unknown Speaker  48:59  
+That's it for agency. Yeah. For
+
+Speaker 5  49:14  
+a GT. We're gonna once you know, most of those are fixed, we're gonna push production just with how GPS is now, correct?
+
+Speaker 3  49:24  
+Yeah, that's a decision that you guys need to make, but that's, you know, that's what I would recommend. I mean, because that was the only thing holding us back from doing that push, was the GPS stuff. And now, I know it's not where we wanted it to be, but we've got our answers on our options there. So I would recommend pushing it guys. I think we'll do that.
+
+Speaker 5  49:47  
+Yeah, there's a few things I think we should switch, like maybe the Book button and, you know, the job orders and things like that. But
+
+Speaker 6  49:59  
+I'm. Will be.
+
+Speaker 5  50:11  
+Oh, I was curious scheduler side now, sorry, Brian, did you get my email about like where Lori was when she made changes or the two sites that she went to, if not sites two areas in the UI that she went to right before we lost all the locations in scheduler she
+
+Unknown Speaker  50:32  
+was searching here
+
+Speaker 3  50:36  
+is what I saw searching here on job location, yes, yeah, I'm not. I kind of feel like I know how she could do it, but I don't know how she could do that. So, so you guys have, you guys have a lot of rights, you know, and privileges in this system, and if you So, if you're in there, when you search, when you guys go into find mode, it opens up the top for you so you can do more advanced finds. Well, part of that is if you go into like the street address and on a Windows, you hit control and equals instead of just equals, then you are replacing all and it should bring up another little screen that you would have to hit okay on. But if you hit on okay on that, it's going to replace every record in the found set that field with whatever is in the field that you're looking at. So if you click in the street one and hit control equals, it'll bring up another screen. If you hit, okay, it will put blankness into every single street, one field within the found set of records you're looking at.
+
+Speaker 5  51:51  
+Now, would that have those shown in a Mod Block? Because I didn't see, I mean, I went to the two locations she went to, and I couldn't tell that she clicked anywhere.
+
+Speaker 3  52:00  
+Well, I don't know if that would work in the mod log. I'm not sure. I've tried it and it did work, and I've tried it and it didn't work. I didn't think it'd be much of a thing, because who knows how to do that, that that wasn't something you know, replacing large chunks of records with the same value was not a was not a process that I taught anybody.
+
+Speaker 5  52:35  
+I doubt she I don't think she uses the equal sign to search any like I don't think she does advanced searches like that, at least not purposefully. I don't think, I guess I shouldn't speak for her, but I don't think so.
+
+Speaker 3  52:48  
+And other than that, and you're right it, I'm not sure. No, I couldn't figure out how she did that specifically.
+
+Speaker 5  52:57  
+And mod log just tracks by location, not by person, right? So you can't see all the steps Lori's taken or clicks Lori did. It's per
+
+Speaker 3  53:08  
+screen, right? Per Well, it's per record per screen, right? It would be on the locations that she changed or on the And what's funny is she the what was cleared out was not the job locations. They were still fine. It was the job assignment records. So she would have had to have done that on a like the job assignment detail screen,
+
+Speaker 5  53:30  
+like going in here, going in here, and then going in here,
+
+Speaker 3  53:34  
+yeah, kind of thing. She would have had to been in here when she did it,
+
+Speaker 5  53:38  
+and then did a search. See, yeah, that's, that's the part. I don't quite guess, but
+
+Speaker 3  53:44  
+I'm not, I'm not sure. I just saw she was the modification user at one time on all those records. So I had to, have to come to the confusion that it was something Lori was doing at that time. What that was, I'm not sure if we can figure it out, I can try to put some bumpers on it. But other than that, I'm just kind of throwing spaghetti at the wall and seeing what sticks.
+
+Speaker 5  54:09  
+Is it weird that it it just went from today forward versus all
+
+Unknown Speaker  54:14  
+that's just whatever she was looking at.
+
+Speaker 3  54:17  
+She was looking at that found set of today forward, she wasn't looking at everything, because, like, if you go back to the job location detail screen there, so you're looking at 67,897
+
+Unknown Speaker  54:35  
+records right now. But there is 68,061
+
+Speaker 3  54:40  
+total in that table. So basically that you know one of number, that's what you're looking at, that's the found set that you're currently looking at. So the found set she was looking at was today, forward of job assignments, not all of them. When you do. Change like that. It's only going to happen to the found set that you're looking at
+
+Unknown Speaker  55:08  
+already. Okay, moving on. Okay.
+
+Speaker 5  55:15  
+So this is the two parts. Let me do the first part. First is, can you think of any reason why this Jennifer
+
+Unknown Speaker  55:26  
+polar flash name
+
+Speaker 5  55:29  
+so she didn't get that clock out, reminder, email notification. She clocked out an hour and nine minutes late. The Predator is just one hour, right? Yes. Can you think of any reason why she wouldn't have gotten one?
+
+Unknown Speaker  55:49  
+Um, well, it could have been.
+
+Unknown Speaker  55:54  
+Is she in a different time zone than you?
+
+Unknown Speaker  55:58  
+No, it's Phoenix. Then I minutes,
+
+Speaker 3  56:03  
+we would have to verify that the email address we have on her officer account works. What has she get? Other notifications?
+
+Unknown Speaker  56:15  
+Yeah, well, she gets, like, the job,
+
+Speaker 5  56:18  
+the when you take a job, she gets those. I just
+
+Speaker 3  56:22  
+the other thing could be, I'll look, I don't. I think we're running that every 10 minutes process that looks so it could have looked and said, you know, like you said it was an hour and nine minutes. So it looked and it said, Is it over an hour? No, it's exactly an hour, so I'm not sending a notification, and then 10 minutes later, she's clocked out. You know, when it tries again? We can shorten that to five minutes, if you'd like. You know that when that server process runs that sends out those notifications?
+
+Speaker 5  56:58  
+Yeah, it was literally an hour and nine minutes, all right, so maybe that is it.
+
+Speaker 3  57:05  
+Maybe, yeah, like I said, if you guys want to request, we can shorten that time period from 10 minutes to, you know, five if you want or something. But that's just the server process is running every 10 minutes, not at all times, you know.
+
+Speaker 5  57:22  
+And then so every time Stacey runs the pay report, and then sometimes when mercy that's missing hours, it says she made a modification here, which I know she did. But is there a way for those not to affect the modification, no.
+
+Speaker 3  57:42  
+Well, when she runs the report, it shouldn't, but, but when she hits the set paid date, you know, the like that button for setting the paid date on the officer pay report that one is doing a modification, and there's no way I can stop it from, from, you know, from tracking that it is doing a modification. You're you're changing that paid date record or value on the records. Okay, that makes sense.
+
+Speaker 5  58:17  
+I'm going to come back to this one because I want to make sure that that I have all the information.
+
+Unknown Speaker  58:41  
+So this, I guess I'll come back to this one too,
+
+Unknown Speaker  58:48  
+so I can add to my last response that,
+
+Speaker 3  58:53  
+or, you know, Joe's request, I don't know, a week or so ago, I am basically making a new calculation field that the mod log is going to use that's going to be tracking more things. Payroll, pay date is one of those things. So you won't just see an empty mod log, because it doesn't know what was modified. It will now know when that's modified, and say, you know before and after, I'll get busy.
+
+Speaker 5  59:24  
+Okay, I feel like duplicate and correct me if I'm wrong and maybe I didn't see it, or it just wasn't on that one that I was looking at. But when, like, we duplicate a job. So like, you know, we pick a job, we hit duplicate, we change the date that doesn't show up anywhere on the mod log. So it's hard to figure out where that one came from when it was created.
+
+Unknown Speaker  59:47  
+Well, that should make a new one.
+
+Speaker 3  59:52  
+You may it. I know you're hitting a duplicate button, but it's actually making a new job record. So there's nothing to compare it to. To say that.
+
+Unknown Speaker  1:00:01  
+Oh, now, when you go and change the date, it should log that,
+
+Speaker 3  1:00:07  
+okay, but the initial creation of it doesn't necessarily, because that's not a modification, that's a creation, okay, um, and you've already got a creation date and user. You know that's that's tracked already.
+
+Speaker 5  1:00:39  
+Did not let me click between screens. I'm curious if it would be helpful, because I personally can't create this, and I've tried and I've tried. I'm curious, though, since it happens to Christine's computer, a lot, would it be, would it be beneficial? Like, could you see why it's doing it from the backside, if you were
+
+Speaker 3  1:01:02  
+on her about from the backside. But if I'm, if we're on a Zoom meeting, and I'm looking at her screen on a show and we talk, and I'm, maybe I take control of her computer and I click around, I might have a better, a better chance of figuring it out. Okay?
+
+Speaker 5  1:01:16  
+I mean, hers is the best bet. It happens to her almost daily, and I feel terrible. I just, I've tried to mimic everything that she's doing, and I just can't get it to do it online. So I was curious
+
+Speaker 3  1:01:27  
+if it's most likely a computer configuration, something on her computer, the way she's got her OS configured, or the way she's got her file maker configured. That's why, okay, doesn't happen for you and it doesn't happen for me.
+
+Speaker 5  1:01:41  
+Yeah, okay, so maybe that would be beneficial, though, because I, I feel like I, I just can't do it. I can't figure it out. I don't know how it's happening. So I was wondering if it's just yeah, her computer, so be able to schedule that sometime.
+
+Unknown Speaker  1:01:57  
+Collapse and dashboard. That's still a problem. Thank you. Jake,
+
+Speaker 5  1:02:10  
+so I added Sean, he's a new hire on and I went to reset his passwords. I was right there. I was watching him. We get to get to the first two, we get to BF helper, and it does the exact same thing that Marissa did, where it just goes in circles. It has that button at the bottom where you can click, which we did not click, don't worry. But that was kind of my Oh, it's going to happen again. It let him once we hit cancel on that one. It let him reset for mod log, but BF helper is not letting him reset it. I've I tried going in and, you know, un clicking the Allow Access box and
+
+Unknown Speaker  1:02:50  
+featured had time to Refresh and Reset.
+
+Speaker 3  1:02:52  
+Jump on a zoom and I can look at it, but just me sitting there fixed it for Marissa. We'll see if just me sitting there fixes it were for Sean, yeah,
+
+Speaker 5  1:03:02  
+but you, but you were the one who unclicked That and re clicked it, and it worked for you. But I'm curious why, when I unclick it, it doesn't work for me.
+
+Speaker 3  1:03:11  
+Yes, you've got the privileges, but I've, yeah, maybe I'll, I'll look at your privileges real quick, but I know I did when we were looking at Marissa, yeah, I'll give it a quick second look to see. But other than that, I might need to again, sit on a zoom and see you clicking the button. See what you know, all that stuff that happens.
+
+Unknown Speaker  1:03:35  
+Perfect. See what we got going. Okay,
+
+Speaker 5  1:03:40  
+How crucial is it for him to be working without BF helper?
+
+Unknown Speaker  1:03:45  
+Him having a password in that?
+
+Speaker 3  1:03:47  
+Um, basically that just if it's just BF helper, because, usually, because you said it worked on too, but then it stopped on helper, which means it's not working on
+
+Speaker 5  1:03:56  
+mod log, but it once we hit cancel it. It took us to mod log. It let him reset that too. Oh, so that one worked. I it was just BF.
+
+Speaker 3  1:04:04  
+Technically, the only thing he wouldn't really be able to do is see or modify or delete the web accounts,
+
+Unknown Speaker  1:04:12  
+which he can't do anyways, as a user.
+
+Speaker 3  1:04:16  
+I think he can. I don't think he can delete or modify them, but I think he can see them, but he wouldn't be able to. Can He send them access? Could he send them? No, okay, so I don't think that. Yeah, I don't think he can. That would be considered modifying, and it won't do it Gotcha.
+
+Speaker 5  1:04:32  
+Okay, so we'll schedule that sometime. I don't know if I should bring this up or not, or I saw the Trello card, so I'm not sure it's probably in progress. But the turning the app on and off, the, you know, letting it work, letting them log in only when they're set to inactive, though, like the other way works. If I just, you know, did a. A UN clicking way.
+
+Speaker 3  1:05:02  
+Yep, the inactive, yeah, it's a Trello card. I thought, I can, I mean, of course, it's not going to kick the person off if they're on the app at that second. No.
+
+Speaker 5  1:05:19  
+But he was able to, like, force close it and then open it back up a few times and it let them back in. Not when I changed it through here, but when I when the status Yeah,
+
+Speaker 5  1:05:39  
+for the correspondence record every all of the areas work, except for the cancelation area. So when we send the cancelation email notifications, those aren't popping up in there. Cancelation hours needed, I don't. I haven't seen any of those notifications, at least in the in this area, cancelation and then the clock out early.
+
+Unknown Speaker  1:06:14  
+Those one those three areas
+
+Speaker 5  1:06:17  
+aren't populating. I don't know the right word for that?
+
+Unknown Speaker  1:06:22  
+Okay, I can look at those and see what's
+
+Unknown Speaker  1:06:27  
+if or what the issue is there.
+
+Unknown Speaker  1:06:33  
+Yeah, that's all I have.
+
+Speaker 6  1:06:41  
+That's I'm
+
+Unknown Speaker  1:06:54  
+just noting that last one
+
+Unknown Speaker  1:07:13  
+Okey dokey. Joe, do we have anything else we want to go through?
+
+Speaker 1  1:07:19  
+No, I think that's it, fellas, like I said, I know. I think it's Thursday. Is our next meeting, right? This week? Correct? Yes, that's right, of course. Okay, make a note of that. But no, I think if Ashley covered all the ceiling issue that we got on top of our our list, I think we're good to go. I mean, I know we'll be looking out for that paperwork or that document that you and Jake then have put together for us regarding that native app. But I think that's it. I think that's the priority for us at this point, is to look at that and go over that and make a decision.
+
+Speaker 3  1:07:53  
+Alrighty, then we'll I'll try to get that prepared and get it to you as soon as I can. Okay, that'd be great. Definitely. I feel very confident before our meeting Thursday, I said, I think I can get it to you by end of day tomorrow. But like I said, if, if Amanda's writing down due dates, which she was i i wanted to give an extra day.
+
+Speaker 1  1:08:13  
+No, of course, absolutely, we get it. All right, fellas, I think we're good, awesome. All right. All right, guys, we'll see you Thursday,
+
+Unknown Speaker  1:08:21  
+Yep, see you. Thursday, See you, bye, bye, bye.
+
+Transcribed by https://otter.ai

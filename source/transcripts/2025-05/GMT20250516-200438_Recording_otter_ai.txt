@@ -1,0 +1,337 @@
+Unknown Speaker  0:00  
+Be on the call either.
+
+Speaker 1  0:03  
+No problem. Awesome. Thank you. Okay, well, without Jake, so we, we had a meeting this week Brian in regards to the meetings that we're having, or two meetings that we're having a week right now. And so I just wanted to kind of start out the meeting with what we're looking at here. So we're kind of looking to restructure our meetings, kind of like how we originally intended, where Tuesdays were going to be solely our fixes, bugs, things like that, and then Thursday or Fridays were more of the showcasing new things. You know, for instance, you know, any update from Jake with the GPS or how the reports are going for the agency side, yep. And so we kind of feel like that kind of got away from us. So we're trying to, we're trying to really narrow that back down again.
+
+Unknown Speaker  0:49  
+That's, that's great,
+
+Speaker 1  0:51  
+yeah, I think it's, I think it's better. I think it kind of just got convoluted and kind of meshed together after a while. And so we kind of want to keep those two separate. So what we're planning on doing, and what we're going to do starting next Tuesday's meeting, is we're going to have Ashley send you her list that she normally has on her screen when she's presenting to you. She's going to send over the highest priority, the most salient, you know, pieces that we need for Tuesday's fixes, and kind of give you and Jake a heads up, you know, so you guys can be working on those so by the time that Tuesday meeting comes around, we can go ahead and kind of reconvene and see how those fixes come along, and kind of how the progress on those fixes are at that moment, at least, that's and I think we're going to do is actually, We'll send her list probably Wednesday at the latest. And you guys will have some time out, obviously from Wednesday to obviously Tuesday. Yeah, exactly. And so that'll be the process, at least moving forward for Tuesdays. And like I said, on Thursday, Fridays, that's going to be more of the showcasing stuff I know, at least as of right now, there's not a lot of new things to present, as far as you know, how things look. But I think we could save, you know, things like, I said, GPS, how they you know, reports are looking, things like that for Thursday, Fridays, like, like, kind of like I said, you know how we originally intended,
+
+Speaker 2  2:16  
+how we were having planned for these to happen? Yes, exactly.
+
+Speaker 1  2:20  
+And they were going well for a while. They really were and like I said, I think just, we kind of just got, got everything mixed up. So at least, you know, you can pass that on to Jake, or if he watches this recording, at least he gives him a heads up.
+
+Speaker 2  2:34  
+Great, yeah, I'll make sure he knows. Fantastic.
+
+Speaker 1  2:38  
+So that's probably the biggest thing I have, from my perspective, at least. I mean, obviously I sent the agenda earlier for you guys to take a look at as well. And so this time around, is what I did, is Ashley and I looked through it, and we kind of broke it apart where we have specifically officer app scheduler issues that are on the agenda. And then finally, the agency app. And so I think what we'll do then Ash is we can start going through each specific area. So if we have anything for officer app, let's knock those out with Brian, and then continue forward scheduler and agency side, which obviously probably will save for Jake.
+
+Speaker 2  3:18  
+So mostly, yeah, but I'm happy to, I'm happy to take that stuff. I may not have an answer for you, but I I can take it down and, you know, get a task prepared for Jake. Yeah, he is. He's looking to to get back on to the stuff for you guys next week. Like I said last meeting, he's been he had a couple other deadlines on some other projects that he had to deal with and get prepared. So that's he hasn't really been looking at stuff for you guys much this week,
+
+Unknown Speaker  3:54  
+but he's looking to get back on next week
+
+Speaker 2  3:58  
+to starting on this list, because he's got a nice list sitting on Trello already, and I've I'm still adding to it. Yeah, no, yeah, absolutely. Guys are about to start adding more.
+
+Speaker 1  4:08  
+So, right, exactly, and that's why we want to do we included that in the agenda, just to get some clarification as to if it was a short term thing with Jake, as far as being pulled away from us, or, you know, how that's going to impact any of the future development, anything like that.
+
+Speaker 2  4:24  
+Yeah, it was, or it is, you know, a short, short term thing for a couple projects he needed to wrap up. We've also the gentleman. His name is Jeremy that that prepared the map stuff for file maker for us. We're actually, he's, he's asked for some more work from us, so we are getting him prepped and getting him into some things. I think he's going to help us out. He's also a, you know, did talented and experienced web developer. Or we're trying to get him a little up to date on the specific platform, the FM better forms that we use with you guys, but it he knows web development in general, and JavaScript and all the language that we use for processes. So it shouldn't be too hard to get him up to speed. And so you might have use of two people for web development. So it's not, it's not all Jake. We right. We can't monopolize 40 hours a week of Jake's time. So we've got another person that's going to help us out, and we'll be able to spread that work kind of between the two of them and and, yeah, hopefully that'll that'll mean when Jake does have other projects, that the web development doesn't come to a stop. Okay, great. And I've already handed I talked to Jeremy yesterday, and he's going to help out. He's he's going to be looking at some of the report from agency stuff to get help get that over the finish line for us. So I just have to get him. I downloaded some backups of your files yesterday, and I'm just cleaning them up some before I hand them to him. He doesn't need, he doesn't need all of the you know, records and information that's in there. So just for you know, privacy concerns, I'm cleaning that up before handing it over to him so he can do some development on there for us. That being said, he is, he is under contract with Angel City data, so any you know NDA or contract you guys have with ACD will extend any work he does. Great.
+
+Speaker 1  6:48  
+Yeah, fantastic. It's great bringing another member on, just to kind of ease things for Jake and even for you, Brian, like I said, I'm sure that helps you as well, and helps us keep moving, keep chugging along.
+
+Speaker 2  6:58  
+It does. It's I've noticed with with Amanda coming on is wonderful, but some of the project management stuff that we kind of at the beginning, we were thinking, we don't necessarily want or need all of that, because we're trying to move fast. Now, we're trying to put some more structure on that's fine, but that means that's more of my time in project management and less time I can spend developing. So yeah, having someone take some of that off my plate is is wonderful. Of some of the development off my plate.
+
+Speaker 1  7:33  
+Yeah, if Jeremy can help that out with you guys, I mean, that's amazing, and obviously it helps us in the long run as well.
+
+Speaker 2  7:39  
+Yes, absolutely. So we'll be, you know, especially, I know we especially want once we start, once we finish discovery, and get on to starting the client app. You know, we want to kick up that burn rate a little bit, and this will allow us to do that, having a, having a third person helping us out, instead of just the two of us, we'll be able to offer you, offer you the probably about the same burn rate as before, or maybe even a little bit more. And otherwise we wouldn't be able to, because we've, you know, the boss is complaining that we're pushing deadlines for other clients, so this will allow us to to do that to keep a good burn rate for you guys moving Yeah.
+
+Speaker 1  8:22  
+Okay, awesome. I think on that note, Brian, if you have anything that you want to present to us, if you don't have anything to present to us, currently, we can jump right in with Ashley.
+
+Speaker 2  8:32  
+And not necessarily there was that with with Jeremy. I wanted to make sure you knew I was passing that stuff on to him. And also, so it won't be a surprise when you see his name on on invoices, you know he'll be there working. And I looked at a couple small things from Ashley's list, but I don't I didn't get too much. Whatever I did get to though, I'm pretty sure I've, you know, assigned the Trello card to her and asked her to test. So it's not, it wouldn't be a surprise. Gotcha?
+
+Speaker 1  9:12  
+Okay? Well, I think at this rate, then ash, if you want to take over for us and lead the way.
+
+Speaker 3  9:21  
+Okay, so want me to start with the app. I apologize. My notes are not in in that order, so I'm going to do my best.
+
+Speaker 1  9:33  
+You can always start with your your specific order that you have, but I think as you jump forward into the next section, whether it's agency or officer app, at least give us a heads up so we can note it on our end.
+
+Speaker 3  9:46  
+Okay, so regarding the app, one of the things that I noticed today was on the dev side when I hit like map, you know, so I can see the location of where the job is. It brings me to Google Maps, but it says SM, undefined on every job. So real ones, fake ones, wasn't doing that on the production side, but just something I wanted to bring up. I don't know what that means, but
+
+Speaker 2  10:15  
+so when you're when you're trying to get directions, basically on this is the officer app.
+
+Speaker 3  10:20  
+Yeah, office, like officer app. And then on the job, I hit that the button that says map, so it usually pulls up the intersection or the address, and it just says SM, undefined,
+
+Unknown Speaker  10:33  
+on every job, Dev,
+
+Speaker 2  10:39  
+when I looking at
+
+Unknown Speaker  10:49  
+shows error,
+
+Speaker 2  10:54  
+S, M, undefined. That doesn't tell you a lot, does it hopefully Jake knows what that means. Okay, okay, the
+
+Speaker 3  11:04  
+next thing I just wanted to show was, okay, shows different on both sides of the app. This one's the dev so this one was anything in my past, upcoming active today, if there's no space between the and then the city, and then on the production side, right now it was on the home as well. So like all the jobs just had no space right there.
+
+Speaker 2  11:37  
+Weird, nobody's been messing with it. I
+
+Speaker 2  11:53  
+Hello, can you hear me? Yes, oh, I'm noting. I'm writing. No problem.
+
+Speaker 3  12:16  
+Okay, these funds, these are already on our list. They're just, I won't go over those unless you have any updates on any of the other app stuff for dev that we had discussed previously, like unbooking the job, etc.
+
+Speaker 2  12:33  
+No about the only one I can think is the problem we were having with if a job was supposed to start like right before midnight, and then the person walked in right after midnight, they couldn't clock in because it was no longer today, I got that fixed so that it shows, but I need Jake to make a change, because the clock in button is still hidden, so it it shows, but you can't clock you still can't clock in. So that's still a problem, but I did, I did move forward on that, at least as far as what I can do in the back end. Okay. Thank
+
+Speaker 3  13:22  
+Okay, oh, and then the notes area, that's, I think, wraps up my app stuff, the notes area for the officers to be able to write into. And it, you know, comes into that tab and scheduler this one.
+
+Unknown Speaker  13:41  
+Yeah, yeah, I imagine, yeah.
+
+Speaker 3  13:49  
+You said save agency for for Jake. Or do you want me to go over it?
+
+Speaker 2  13:55  
+Um, you can go over some of that. I'll take notes and kind of and assign the task to him, I mean, or make the tasks for what problems there are if I don't know the fix?
+
+Speaker 3  14:06  
+Okay, okay. So at first I was confused. So I was seeing I'm Kingman. Also I was seeing Phoenix jobs on my dashboard. I cleared my caches. I didn't understand why, but I do now, so I realized that it's because I was, at one point, assigned to it, and then I was taken off of it, but it didn't clear from that agency, and it's not, it's supposed to be assigned to, you know, Maricopa Phoenix, I think it was, I don't know if you want to see so this is like a Buckeye job that I was on, but It was unstaffed because I gave it back, or whatever the situation would be, but it's still showing on kingman's page.
+
+Unknown Speaker  14:47  
+Okay, so when
+
+Unknown Speaker  14:53  
+I hope I explained that, okay, no,
+
+Speaker 2  14:55  
+you did what's what's happening is. I mean, I can say, Yeah, but really, it's file maker. What's what's happening is it's not clearing the officer's agency ID off the record. So I need to find all the ways that that could happen. Because it's not just, you know, if you clear the officer off the job, if you put another officer on the job, if you cancel the job, I guess it wouldn't show anyway because it's canceled. But is there any other scenario you can think of that would basically clear an officer, um, just cancel clear officer or assign other officer.
+
+Speaker 3  15:41  
+That is all that I can think of right now, but I can I'll give it some more thoughts. Sometimes things come to me
+
+Unknown Speaker  15:47  
+while I'm testing, so I'll Keep an eye out for it.
+
+Unknown Speaker  15:52  
+Second I
+
+Unknown Speaker  16:05  
+cleared
+
+Unknown Speaker  16:15  
+sound.
+
+Unknown Speaker  16:23  
+Our job canceled
+
+Unknown Speaker  16:34  
+one second here,
+
+Speaker 2  16:50  
+I'm sorry that my child just does not care if I'm working. She's like, I need to ask a question. All right, go ahead. Okay.
+
+Speaker 3  17:00  
+This next one, I'm also going to try my very best to explain. So I was Kingman, and I was looking in jobs and completed jobs, and agent, so I there was only two completed jobs, and that was fishy to me, because I I know that we had had, like, a lot of multiple jobs that were assigned to Kingman on all of these dates that you that I wrote down here. So I started doing some testing and thinking about it. I did figure out that So normally, normally, when I put a job on hold and I assign it to someone, it automatically takes it off hold, right? It turns into green and except, if you are putting in a job on the reoccurring level, and you bulk assigned so like, if I bulk assigned something, it stays on hold. So like, if someone initially did that and then decided to pull those off and put Kingman on or put whoever on, they would stay on hold. So I don't know if that's something that we can fix also, but it's that's why I think some of them weren't showing up. Because as soon as I took them off hold, they did show up. Does that make sense?
+
+Speaker 2  18:22  
+Yes, okay. And then do you want? Because the Well, the problem is, the problem is we want to be able to have an officer assigned and the job be on hold, but we also want the job to no longer be on hold when we assign officers sometimes and right computers don't understand sometimes. So I can, if the bulk of sign is not removing holds, I could have it do that.
+
+Unknown Speaker  19:01  
+But otherwise,
+
+Speaker 2  19:05  
+you might have to pay attention because you're because I can't say if the job has an officer assigned. It's not never going to be on hold. You know, various scenarios where you want that, so I have to be able to allow that, that scenario to happen. Okay, I like I can, if the bulk assign is not removing the holds, I can do that. I can set that up. I don't know if you always want it like that. You know, you might be bulk of signing. And then the job that's two weeks from, you know, the job assignment that's two weeks from now, maybe you still want on hold for now, because you don't know if that officer is actually going to take that. You're just holding it for them, you know.
+
+Speaker 3  19:53  
+I mean, we can leave it and it may just be a, I mean, it was good to recognize that maybe. Maybe it's a training thing, but anyways, that's how why some of them weren't. There's still some that I really so I've logged on pretty much every day that I have worked, and it always showed two, except for today, and I don't know why. All of a sudden I have four. So now I have the fifth and the seventh, but I am still missing a lot of these things.
+
+Speaker 2  20:25  
+Maybe Laurie ran the officer pay report and set those paid dates, which makes it complete. Maybe I was like those other two show up because they weren't technically complete until that happened
+
+Speaker 3  20:43  
+on like, I get what you're saying, I just, I still don't understand why. There's like three that I don't see. But
+
+Unknown Speaker  20:57  
+Kingman is a is Kingman
+
+Speaker 3  21:00  
+an officer I meant to be an agency. I'm so sorry,
+
+Speaker 2  21:05  
+but you found one so it is an officer, and that's interesting.
+
+Speaker 3  21:13  
+Like, I mean, I don't know, I can I keep digging. So I'm and I'm finding and learning new things, but there are some that I just don't.
+
+Speaker 2  21:21  
+Well, let's look at, yeah, and let's look at,
+
+Unknown Speaker  21:25  
+like this one, so like the 414
+
+Speaker 2  21:29  
+so click on one of those so I can see the job assignment detail.
+
+Unknown Speaker  21:35  
+No, no, you were right. Click on job assignments
+
+Speaker 2  21:39  
+and then select one of those. Yeah, so we can look. Okay, so it doesn't have a clock in and clock out time, and I don't, I could look in the background, but it might not have a paid date set by Lori's reporting. Those are the it's an either or one of those two have to be, have to be, before it's considered completed. Yeah, so if it doesn't have a clock in and clock out time, and it doesn't have a date from Lori's reporting, then it's not complete. This is considered complete. Needs one of those two factors to be considered complete. Gotcha?
+
+Speaker 3  22:19  
+Okay? I mean, I'll, and I was going to check other agencies such as something that I noticed, but that's how I came across the the put it on hold, because, like, if we put it on hold and then we assign, you know, Kingman to them, like the officers, and they're still on hold, it, you know, won't show up on their agency site. So that's something, well,
+
+Speaker 2  22:38  
+that's another thing, actually, yeah, that we're thinking about this. Yeah, I don't know how these like school, non billable jobs. They're not going to show up incomplete because the officers are not clocking in and out, and Lori is not setting the paid date, because there's no pay happening.
+
+Speaker 3  22:59  
+There's isn't there going to be a different tab, though, just for non billables, because we eventually won't be putting non billables in. It'll be put in by the agency. Yeah, yeah. So it'll have its own tab. So maybe
+
+Speaker 2  23:13  
+it'll have its own filter. Is it going to have its own tab or just its own filter? You know, adding it to the filters
+
+Speaker 3  23:19  
+there feel like it needs to, well, I don't know anyone else i i felt like it was separate. But maybe
+
+Speaker 2  23:26  
+because the problem with it having its own tab is, again, these are those tabs are statuses of jobs, not job types. So realistically, if you had another tab for non billable jobs, whatever they call them, internal jobs, whatever the label is, then that's all it would be. It would still be all of them, whether they're staffed, unstaffed, upcoming, active completed, they'd all be in one list. And that really kind of changes the esthetic and what's happening with those tabs at the top, I would think you would add it as a filter, you know, I just want to see internal jobs, or I just want to see external jobs, and then within that, I can see completed on staff, staffed, active. Least that's how I see it. I don't, I don't think adding it as one of those, you know, big square tabs at the top really makes much sense, because those are statuses. Everything else is a status of a job.
+
+Speaker 1  24:34  
+Yeah, I think, I think you're on something with that, Brian, but I do also remember Bonnie wanting it to be a tab, but I think we got to get some clarification there. Because I think what you're saying as far as a filtering aspect, I think that I think that's better. I think that's even more of an easier flow for somebody from the department to go ahead and click through and filter out. But we'll check with Bonnie on that, just to get some clarification there. Because. I do remember initially she did want that to be one of the tabs up top, but the way you're presenting it as well. I mean, it does make sense that as a filter, it seems more cohesive, I guess is the best way to put it exactly.
+
+Speaker 2  25:14  
+And as a filter, you can, you know, filter for just those type of jobs. And now I can see just those type of jobs completed, just those type of jobs unassigned, you know, and all the other filters that are happening work in tangent, there's a lot less of that if you have it as one of the top pieces.
+
+Speaker 1  25:34  
+Yeah, okay, yeah. We'll check Ashley. Now. We'll check with Bonnie on that, and we'll get back to we'll get some clarification. Okie dokie,
+
+Speaker 3  25:44  
+hey, I'm just checking to see if there's anything else agency wise,
+
+Speaker 2  25:48  
+and then actually, also, sorry, also Joe for kind of continuity we're already planning on the report side. We're going to have a filter in the report request to say, in this report, I only want to see internal jobs, I only want to see external jobs, or I want to see both. Okay, that's okay. That's specifically going to be needed. When we talk about the officers over hours report, if you're including your internal jobs in that they're probably going to get over that weekly limit pretty darn fast.
+
+Unknown Speaker  26:26  
+Yeah. I mean, you make a great point with that.
+
+Speaker 1  26:30  
+Yeah, we'll get some clarification there. But I mean, the way, the way it's sounding, I think it'd be better as as an actual filter from the agency side of things. But yeah, we'll get that answered for you. Sounds good.
+
+Speaker 3  26:46  
+Okay, the only other thing I had that is on the app or agency side was about GPS. So I don't know if you we can move on to scheduling, unless I
+
+Speaker 2  26:57  
+know Jake's looked at that some and I know we have passed the question to FM better forms, because that's the platform. And truthfully, we're at a point where a fix or an option would have to be, would have to be developed by them, or at least in tangent with them. So I know he's gotten some feedback from them, but I don't think he's had time to go over it or but maybe sometime next week we'll be able to speak options,
+
+Unknown Speaker  27:37  
+the GPS running in background and such, right?
+
+Speaker 3  27:41  
+Okay, this one I'll make really quick. This is on the scheduler side. This is a new issue. I've never seen it do this before,
+
+Unknown Speaker  27:50  
+so if I'm gonna just touch Darn it, my
+
+Speaker 2  28:00  
+you notice your cursor goes into the field automatically.
+
+Speaker 3  28:06  
+Yes, thank you. So I'll put myself on there, and then, normally, this thing expands right so I can see everything. But not, yeah, I have to, like, scroll all the way over.
+
+Speaker 2  28:19  
+Well, you can just make that window bigger, drag it in the corner. But yes,
+
+Unknown Speaker  28:24  
+it wasn't. It wasn't letting me do
+
+Unknown Speaker  28:25  
+that. Doesn't let you hold on, isn't it?
+
+Speaker 3  28:30  
+Is like and so I was, I haven't noticed it, obviously, I was off the last two days, but I asked the other girls, and they also are having this issue. It's a new one. So I just wanted to bring
+
+Speaker 2  28:40  
+it up. No problem. We can definitely that's not okay, that's not fun. So let's see select this goes back to recurring or goes to Job detail, and we load map, and
+
+Speaker 2  29:07  
+boop we can boop you and boop you. Let's, let's try that again. Okay, do
+
+Speaker 3  29:27  
+there. That's better. All right, thank you.
+
+Speaker 3  29:37  
+Sorry. Last thing real quick for the mod log. And okay, of course, it's not going to it. Oh, yeah. Okay, so the map kind of, is there any way to make the mod log when you're trying to look at it? This one's fine, because it's only right here. But some of them, you know, go down quite a ways. And I wasn't able to read what was behind this map.
+
+Speaker 2  29:57  
+No, I can't make a okay. Pop. Over go over top of a of a map, darn it. I can see I can't make that go over the map, but maybe I can figure out another way of handling that so that it presents better.
+
+Speaker 3  30:16  
+Okay, and while we're talking about wall dog, I promise last thing, any words. Is there a way for it to also capture internal notes so changes in there?
+
+Speaker 2  30:30  
+It is something I was thinking about, and I'm was, you know, deciding whether or not I wanted to suggest, but if you're going to ask Sure. So currently, the mod log is tracking modifications to anything we are tracking for the web apps. We're not tracking internal notes. We're not tracking comments on the officers and stuff. You know, there's a lot of things that is not being tracked for the app, so we can basically change or make a new field in every table that we track. And basically what I would do is I'd make a new field. I'd copy what we're already tracking, you know, that that calculation set up and then add to it. I had the mod log took about what I had estimated. So I didn't want to go over and start doing more hours on that without without approval. But if you would like me to we can maybe discuss, maybe make a Trello card or something, and kind of go back and forth to find a list of what we would like to add to be tracked. I can do that if, if Joe, you would like to approve that work? That's up to you.
+
+Speaker 1  32:04  
+Yeah, absolutely. I think, especially that Ashley's asking for it. I think that that'd be beneficial for us.
+
+Speaker 2  32:11  
+Okay, that's fine. Yes, we can. We can come up with a list of what we want to add, and I can make that change. It shouldn't really change anything that you see, except you'll see that it's tracking more things. But other than that, it's all background,
+
+Speaker 3  32:32  
+perfect, um, that
+
+Speaker 2  32:39  
+all it better be you promised me. You said,
+
+Speaker 2  32:49  
+yeah, that is All righty. So, so Joe, you want to, you want to, well, start or get back to the meeting structure we had originally done starting Tuesday, next
+
+Speaker 1  33:07  
+Tuesday, yeah, that's that'll be our plan. Starting Tuesday, we'll go ahead and start moving forward with strictly, just fixes, and, like I said, two or Thursday, Friday, those meetings will be reserved for, you know, other things, basically, like I said, GPS updates, like that,
+
+Unknown Speaker  33:24  
+yeah, any type of
+
+Speaker 2  33:27  
+infrastructure, environment conversations, we need to have that kind of stuff, exactly Thursday, Friday. That works for me. We do meet. We meet three times next week because we're got a customer portal follow up meeting Monday, and I'm going to be like, Ashley, I have a good, like, four pages of questions and such to go over on that based on the document in our other meeting before. So we've got plenty to go over there. And I've got extensions to my list today, and we I will start plowing through and getting those tasks created and either fixed in myself or assigned. So yes, again, just a heads up, you'll you'll start seeing invoice entries for Jeremy Brown, and I might bring back Joe gold, if I need to. He worked on some stuff a while ago for you guys. But just a heads up in case you need you see new names on the invoice or or, you know, in the modification on the record, or something. You're not going, Who the heck is this, right?
+
+Speaker 1  34:51  
+Yeah, well, we'll definitely make note of that. Brian, and from our end, I think for Tuesday's meeting, we'll have Ashley, even though it's a little late in the day, I'm. I'm sure she'll send you over at least her salient fixes for Tuesday, so it kind of gives you a heads up, at least to what to expect for Tuesday's
+
+Speaker 2  35:08  
+meeting. No problem. Sounds good.
+
+Speaker 1  35:11  
+Okay, I think, think it was nice and quick today. Wonderful.
+
+Speaker 2  35:15  
+Yeah, nobody else has anything we can have a quicker day. That's awesome. Get the weekend started. I don't know about you guys, but it's, well, I'm sorry, I was about to complain about how hot it's supposed to be here, but you're in Phoenix. It's gonna be hitting 90 this weekend here, and you're like, oh, spring routines.
+
+Unknown Speaker  35:37  
+Yeah, exactly.
+
+Unknown Speaker  35:41  
+You guys have a great weekend. Awesome.
+
+Speaker 1  35:43  
+Thanks. Brian, you too. All right, bye, bye, bye.
+
+Transcribed by https://otter.ai

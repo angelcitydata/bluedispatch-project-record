@@ -1,0 +1,730 @@
+Unknown Speaker  0:00  
+That's okay.
+
+Unknown Speaker  0:02  
+We, we kind of left it alone,
+
+Unknown Speaker  0:06  
+the app and the back end API and everything for the last couple of days, just because we didn't want to blow anything up while they were out there. So
+
+Unknown Speaker  0:15  
+that's, that's okay, no problem. Yeah, I think we're,
+
+Unknown Speaker  0:22  
+we were, again, hoping to get some type of feedback today. But in the absence of that, we'll still, you know, put our foot back on the gas, like Jake said. We We really did pause things starting Friday afternoon sometime,
+
+Unknown Speaker  0:38  
+to make sure that, you know that no changes were happening while they were trying to do demos. Yeah, and that was probably the smartest move, just just in case. Because, like I said, if there was something you guys definitely would have heard from us in some capacity. But I it sounds like it went well, at least, you know, the, you know, the early chirpings that we heard back from everybody so far, Yeah, seems like it went well, no issues, but there might be so well, I guess we'll have to reconvene on that. All right, that sounds good.
+
+Unknown Speaker  1:11  
+Well, then I will move forward with updating.
+
+Unknown Speaker  1:16  
+So like I said, we did kind of put a pause on things for this conference to run through. With that being over today, we did get Steve to clear out the the
+
+Unknown Speaker  1:30  
+API side of the database,
+
+Unknown Speaker  1:34  
+because you just end up with dirty data in there as you're making new records while you're testing and changing things, you end up with just records in different states and ugliness. So we cleared the records out of that,
+
+Unknown Speaker  1:48  
+and I'm going to clear out the tokens in the dev version of FileMaker. So if we want to show off the location stuff again, we'll we have to make a job actually run around like we did, you know, to make some location data in there to look, to look at. It's working real well, though, yes,
+
+Unknown Speaker  2:08  
+yeah, it's really cool. The only thing you can't do is force quit the app, because obviously that kills, kills the app from memory. So, but everything else works great. I guess you couldn't. I haven't tried turning the phone off, but I think that's kind of a no brainer,
+
+Unknown Speaker  2:24  
+yeah,
+
+Unknown Speaker  2:26  
+yeah. And I think it's pretty standard. I was thinking about that Jake, and thinking about,
+
+Unknown Speaker  2:34  
+you know,
+
+Unknown Speaker  2:35  
+Bonnie's hope that this is that this turns into, you know, Uber for off duty officers. And I thought about it, because I was like, well, on the Uber app, I can force quit it and come back and such. But then I realized, well, I'm not the one that's tracking. It's the driver. And if you ride around with an Uber driver and you notice they can't close their app while they're driving you on, you know, to your destination, they have to keep it open. So it's kind of more that point of view then that we have to think of the officers as, yeah, the Uber driver more than the Uber.
+
+Unknown Speaker  3:11  
+So that's, that's fine. I'm sure we'll come up. I mean, we can't help the fact that, yes, if you force quick the app, it's not going to
+
+Unknown Speaker  3:21  
+continue to track location. So we're going to have to come up with some process to, I guess,
+
+Unknown Speaker  3:30  
+clock out automatically if that's, you know, broken, basically, if it's closed,
+
+Unknown Speaker  3:36  
+you know, some way to
+
+Unknown Speaker  3:40  
+to more properly handle the situation than we are now, because right now, it causes big problems,
+
+Unknown Speaker  3:47  
+but we'll we're definitely going to deal with that at some point.
+
+Unknown Speaker  3:54  
+So yeah, that stuff is is ready. I know Ashley had a look at it all Friday, while we were showing Amanda. I don't know how much she showed you, Joe but, but Jake is right. It's, it's pretty cool. I was able to clock in and drive around here for a little while, and then, boom, we can see it on the agency app for that job after I clocked out. It's, it's, it's pretty smooth, and it looks
+
+Unknown Speaker  4:22  
+pretty nice. So that is the location stuff.
+
+Unknown Speaker  4:28  
+We are still going back and forth about the opt in stuff for the SMS campaign with them.
+
+Unknown Speaker  4:39  
+So
+
+Unknown Speaker  4:41  
+Joe, we think it would be best if we could get
+
+Unknown Speaker  4:47  
+on your current signup form,
+
+Unknown Speaker  4:52  
+maybe get a checkbox that you know says, I understand. I'm going to be getting SMS messages. You.
+
+Unknown Speaker  5:00  
+The I may be charged, you know, any standard data or text rates per, you know, my service provider.
+
+Unknown Speaker  5:07  
+And, okay, yeah, I can do that. Then have kind of a terms and service, or, you know, more information about the opt in process or policy, click on a link and take it over to Blue dispatch.com/opt
+
+Unknown Speaker  5:21  
+in.
+
+Unknown Speaker  5:24  
+Okay, yeah, okay, I can definitely make that happen, absolutely. So I think that will help us along in getting the required approval
+
+Unknown Speaker  5:34  
+for the SMS messaging.
+
+Unknown Speaker  5:39  
+Another piece of it seems to be in the description it was, we were kind of implying that we would be sending other notifications via SMS. So that's not correct, or at least it's not in our group of plans right now. So we removed that to make sure that
+
+Unknown Speaker  6:01  
+the that the that AWS and their providers know that we're only going to be using it for verification of a code to log in.
+
+Unknown Speaker  6:12  
+The any other notifications are going to be email and or,
+
+Unknown Speaker  6:17  
+you know, phone notifications, that'll be a different
+
+Unknown Speaker  6:22  
+approval, you know, campaign thing that we have to go through with Apple and Google, but, but that's not using SMS. So that is how we plan, at least for now, to do notifications.
+
+Unknown Speaker  6:38  
+We're going to see if this is enough. It should be, we hope, but we're going to see if this is enough. The last point that I could think of was I didn't know if there was going to be a problem that your sign up form was on off duty officers web, you know, a domain and this, everything else is on blue dispatch.com,
+
+Unknown Speaker  7:04  
+I don't know if that'll be a problem, but we'll see that would be the next step if we can't get it through with this is okay, let's all make sure it's under one domain.
+
+Unknown Speaker  7:17  
+I'm trying any way I can think of to not have to do the the
+
+Unknown Speaker  7:25  
+sign up form, to not redo the sign up form yet, because that is, that was part of the like Customer Portal proposal, and, you know, discussion when we were working on that, and we've Just thought of pushing that until after the native app.
+
+Unknown Speaker  7:44  
+I don't know if they're going to force our hand on that, but I don't know if it's worth moving your entire form that you have now and everything trying to get that moved over to Blue dispatch.com domain, or go ahead and make another one. Make one that you know, as as we would plan, would directly go into file maker, not just email you and that kind of stuff.
+
+Unknown Speaker  8:09  
+So I don't know more on that, but if you could get that, you know, checkbox and a link to Blue dispatch.com/opt,
+
+Unknown Speaker  8:16  
+in,
+
+Unknown Speaker  8:18  
+whatever nice wording you would like there, but it should at least say, you know, you're opting in for SMS notifications and,
+
+Unknown Speaker  8:28  
+you know, standard text messaging or data rates per your provider you know may happen.
+
+Unknown Speaker  8:36  
+Maybe, yeah, no, yeah, absolutely. I can knock that out for you. That's the pretty standard stuff there.
+
+Unknown Speaker  8:45  
+Then we have the new server on
+
+Unknown Speaker  8:50  
+AWS again, Jasmine finally got me access, like late Thursday or sometime Friday,
+
+Unknown Speaker  8:59  
+you know, open access so that I could connect with FileMaker and ping it and everything. But like I said, we were putting a freeze on everything. We didn't want to go changing dnss And doing a bunch of testing while they are while they're at that conference. So now that they're back,
+
+Unknown Speaker  9:21  
+we'll probably start that up maybe tomorrow.
+
+Unknown Speaker  9:25  
+Our testing of all the connect different connections that may need to be made to there to make that your production server.
+
+Unknown Speaker  9:33  
+And once we do all our testing and kind of validate everything
+
+Unknown Speaker  9:37  
+we can, we can come back together and discuss the finding for when we do want to make that production.
+
+Unknown Speaker  9:47  
+Okay, yeah, I think that's perfect,
+
+Unknown Speaker  9:50  
+all righty,
+
+Unknown Speaker  9:53  
+it's pretty much what I have for updates since we talked extensively Friday and have.
+
+Unknown Speaker  10:00  
+Pretty much froze programming since then.
+
+Unknown Speaker  10:05  
+So Miss Ashley.
+
+Unknown Speaker  10:08  
+Yes, hi, hey, Jake. Just
+
+Unknown Speaker  10:22  
+curious. On the native app. Are we going to be
+
+Unknown Speaker  10:27  
+adding the contacts
+
+Unknown Speaker  10:30  
+to the jobs? Yeah, yes, yes, of course, yeah, basically when,
+
+Unknown Speaker  10:38  
+like, last week of September or something. Brian was like, our priority is to get the location stuff done for the conference.
+
+Unknown Speaker  10:51  
+I kind of shelved working on anything else except for that. And so the the
+
+Unknown Speaker  10:59  
+job detail page that you saw the other day that's missing some stuff, like it just, it's just not there. So, yeah, that's in my plan.
+
+Unknown Speaker  11:08  
+Okay, I figured I was just make it check in fair question. Let's see. Oh, Brian, okay. So I found one more way that it collapses.
+
+Unknown Speaker  11:20  
+Yeah, I know it's, it's like the same thing, except for it's when I search customer,
+
+Unknown Speaker  11:26  
+and I go through the
+
+Unknown Speaker  11:29  
+I get to the screen, I'm guessing it sticks, because then I
+
+Unknown Speaker  11:34  
+yeah, you can already see it still says Job, yeah, where it should say customer and everything there on the left screen. Yeah. So that's a and I think it's the last way I've tried doing that in other areas as well. Just get out of here when I collapse on me. But,
+
+Unknown Speaker  11:56  
+yeah, I just wanted to bring that way up
+
+Unknown Speaker  11:59  
+Okey dokey. Sorry, I will. I'll see about getting that fixed up for you. Thank you.
+
+Unknown Speaker  12:07  
+The next one.
+
+Unknown Speaker  12:09  
+Okay, so I found out after we fixed that, found out that someone was using the collapse as a way to get two UIs
+
+Unknown Speaker  12:21  
+so that,
+
+Unknown Speaker  12:23  
+yeah. So there I we fixed it, and then all of a sudden they're like, he's all, can you show me how to get, how to collapse it? Because now I can't make it till I have two UIs open. And I was like, Well, that was on purpose, yeah, yeah.
+
+Unknown Speaker  12:38  
+So apparently, so he like, because we do, we filter through officers. So he'll like, go into here, and I don't know, pull up anyone who can work, like Tuesday and Monday and Tuesday, and then he'll get the list and just start calling officers. But then, you know, a company will call and make an order or what have you. Something happens where he has to get completely out of his list and lose his space. So he was having this open plus the other UI so he could search officers, put in jobs, etc. Do
+
+Unknown Speaker  13:13  
+you have
+
+Unknown Speaker  13:16  
+an idea, or maybe
+
+Unknown Speaker  13:22  
+a way around that, like I don't want it to collapse because it wasn't supposed to collapse, but found out that this was
+
+Unknown Speaker  13:30  
+a need that I didn't know. Was it's
+
+Unknown Speaker  13:36  
+or would it be? Could we add
+
+Unknown Speaker  13:41  
+phone numbers on there. I don't know if that would be,
+
+Unknown Speaker  13:45  
+can we add phone numbers onto the officer list view? Yeah, that too hard. No,
+
+Unknown Speaker  13:53  
+you might, yeah, that'll be the hardest thing we've ever
+
+Unknown Speaker  14:01  
+Yeah,
+
+Unknown Speaker  14:04  
+well, are we, I mean, you seem to got to have a nice size screen.
+
+Unknown Speaker  14:11  
+Does everybody else have a nice size screen that's working on this? Yes, we all have the same monitors. Okay, then it looks like we got plenty of horizontal space, I can just add phone numbers to that.
+
+Unknown Speaker  14:24  
+Which one just cell number?
+
+Unknown Speaker  14:27  
+Yes, yeah, I think so
+
+Unknown Speaker  14:30  
+if we have to get a different number for some reason, we can just go into their profile
+
+Unknown Speaker  14:42  
+and noted, Okay, this next one is a weird one. Okay, so there's a gentleman. I know there's a job that was.
+
+Unknown Speaker  15:00  
+On 10 Nine.
+
+Unknown Speaker  15:06  
+Have snapshots of it, but I just want you to see something. It's just not pulling on the pay report. And I don't know why
+
+Unknown Speaker  15:19  
+this phone tell me Okay, so Stacy added hours put in this you can see that the
+
+Unknown Speaker  15:30  
+pay report wasn't captured on the mod log. But another way I can tell is when I go into the officer detail job assignments and then scroll down to the ninth
+
+Unknown Speaker  15:42  
+ever ago, right here, this one,
+
+Unknown Speaker  15:46  
+I just, I don't understand why it's not pulling. It didn't pull that day that she, you know, pulled all these ones, but at the same time, it didn't pull after that either, like, you know, the next day.
+
+Unknown Speaker  16:01  
+Any ideas. Didn't pull po numbers no on the pay report. She ran the pay report this pay date, like you can see that it it's just not, there's hours in there.
+
+Unknown Speaker  16:18  
+But when she ran the pay report, it's not pulling on it.
+
+Unknown Speaker  16:23  
+I don't know why
+
+Unknown Speaker  16:25  
+it's not pulling on the pay report.
+
+Unknown Speaker  16:34  
+Let me
+
+Unknown Speaker  16:38  
+Oh, and I would take me a minute, because I'm in dev.
+
+Unknown Speaker  16:44  
+Um
+
+Unknown Speaker  16:48  
+wondering if it requires a
+
+Unknown Speaker  16:51  
+clock out.
+
+Unknown Speaker  16:53  
+I don't. I don't know, because there's so like, none of these are gonna, like, good year, for example, we're always invoiced on it, and you're never going to find a clock in and out on any of them, because they don't use our app.
+
+Unknown Speaker  17:08  
+So I don't, I can't think of a difference between, for example, this one and this one, it's the same.
+
+Unknown Speaker  17:17  
+That's why I thought I'd bring it up
+
+Unknown Speaker  17:20  
+and like, this one is literally the exact same job ish, but you know that one pulled click on the one that didn't pull again. So I can, because I need to get, yeah, of course, exactly what that I yeah,
+
+Unknown Speaker  17:37  
+I do Have. I
+
+Unknown Speaker  17:51  
+Your date was 10 nine
+
+Unknown Speaker  18:01  
+at Van Buren
+
+Unknown Speaker  18:04  
+and Bullard.
+
+Unknown Speaker  18:09  
+Bullard
+
+Unknown Speaker  18:13  
+got me to forward you the email. It has the screenshots of both of it too,
+
+Unknown Speaker  18:19  
+sure I sent that to you too, just in case.
+
+Unknown Speaker  18:42  
+Okay, I have noted,
+
+Unknown Speaker  18:44  
+okay.
+
+Unknown Speaker  18:57  
+Oh. I
+
+Unknown Speaker  19:04  
+a sample. So when we change the PO numbers, I understand why it's why it wouldn't track for
+
+Unknown Speaker  19:12  
+this one, but is there a way that the mod log can pick up when we
+
+Unknown Speaker  19:17  
+make changes here?
+
+Unknown Speaker  19:19  
+It should I just check that? Did you today? I tried it. I don't know if they do. I said it, should I checked that today that that was part of the things that are tracked for mod log, was the PO number on the recurring job level. Yeah, I
+
+Unknown Speaker  19:40  
+only noticed it because we
+
+Unknown Speaker  19:43  
+someone made changes, and we were trying to figure out when the, you know, PO number changed in there.
+
+Unknown Speaker  19:52  
+But I was okay, I can test it again,
+
+Unknown Speaker  19:58  
+if you want. Maybe there was a.
+
+Unknown Speaker  20:00  
+Maybe I didn't wait long enough
+
+Unknown Speaker  20:03  
+that should be pretty instantaneous. Well, I mean, you, you would still see your, you know, cursor spinning or something, until it finished traffic. Let
+
+Unknown Speaker  20:14  
+me do it all on that one.
+
+Unknown Speaker  20:22  
+Um,
+
+Unknown Speaker  20:27  
+while I do that, this next one, I'm just, this is just a question, because I honestly haven't seen it anywhere besides
+
+Unknown Speaker  20:37  
+his so far, I haven't looked I haven't looked too hard, but what is this? Oh, that's what it means. No, I was confused because you messaged me, Bubba mod log, and I'm like, Sorry, what
+
+Unknown Speaker  20:50  
+do you mean? You don't know what it means.
+
+Unknown Speaker  20:54  
+Yes, this, that's not a sentence, Ashley, I have no idea what you're talking my brain.
+
+Unknown Speaker  21:01  
+It made sense in my brain.
+
+Unknown Speaker  21:05  
+Okay. Now, what is this though? I and I tried looking at a few other officers, the week total hour booked is, is
+
+Unknown Speaker  21:14  
+a calculation. I don't know why that's in that I can, I can look and see why that's in the the JSON that gets checked, but that is a
+
+Unknown Speaker  21:25  
+that is a
+
+Unknown Speaker  21:27  
+calculation that we use to match against to see if they're over their agency's maximum hours booked.
+
+Unknown Speaker  21:40  
+So I'm not sure why that dude's booked for 83 hours in one week. That's probably because that
+
+Unknown Speaker  21:47  
+that particular calculation only works when a report is ran. It's not it doesn't work all the time. So it really makes no sense why it would be part of the mod log.
+
+Unknown Speaker  22:00  
+One of that Tyler did it is even a little bitter. There's nothing he could do
+
+Unknown Speaker  22:06  
+that I could think of.
+
+Unknown Speaker  22:09  
+He that he's not an account or anything. I don't know. I just thought it was strange. I tried looking for someone else that had that same thing, and I just couldn't find anything. Let me look, yeah, I have no idea why they would be on there.
+
+Unknown Speaker  22:25  
+Week total booked hours.
+
+Unknown Speaker  22:33  
+It's not in the
+
+Unknown Speaker  22:35  
+list of things that we track for mod log.
+
+Unknown Speaker  22:40  
+I have no idea why or how that would get in there,
+
+Unknown Speaker  22:44  
+either. I just was curious. I was like, I've never seen that, and why is it on his but,
+
+Unknown Speaker  22:55  
+oh, any update on the
+
+Unknown Speaker  23:00  
+clock in not showing?
+
+Unknown Speaker  23:06  
+Or did you is it fake?
+
+Unknown Speaker  23:09  
+I don't remember exactly. We go to a different day today is not a great thing to test it.
+
+Unknown Speaker  23:18  
+Okay? I mean, if it was,
+
+Unknown Speaker  23:21  
+if it was one of those that I said, it's most likely, you know, a networking problem or something, then it's most likely a networking problem. It knows. I mean, it's on everyone. So if they clocked in in the morning, like, let's say between after 12 and nine, I'm guessing 930 it's, it's a very like, between nine and 10.
+
+Unknown Speaker  23:43  
+It's capturing here, and it is capturing because I can see it in the mod log, but, oh, I think that's just a I need to the field might need to be a little bit bigger. And 930 seems to be the time, because once you hit 10, it's an extra character, it's an extra digit, and it's run out of space to show
+
+Unknown Speaker  24:03  
+Interesting, okay, but I don't know why I would have started doing that. I definitely didn't play around with the field size anytime recently.
+
+Unknown Speaker  24:14  
+I can just try, although, man, that field looks like it's an already a nice size.
+
+Unknown Speaker  24:22  
+Have a lot of room on that window.
+
+Unknown Speaker  24:29  
+I'll see what I can do about that. Maybe
+
+Unknown Speaker  24:34  
+it'll either be either
+
+Unknown Speaker  24:39  
+try to make those clock in and clock out fields a little bit bigger, and when I say bigger, I mean horizontally,
+
+Unknown Speaker  24:47  
+or maybe I can make the font a little smaller.
+
+Unknown Speaker  24:51  
+Okay, would that break your guy's eyes? If that font was a little smaller, I'll be okay. I'll let you know when I get feedback. But.
+
+Unknown Speaker  25:00  
+I think having it there, because right now, Stacy's having to go into the mod log, and this is worse to read, because you're like, trying to scan through all this information real quick. If you mouse over the time, the actual time fields, oh, sorry, I know what you mean.
+
+Unknown Speaker  25:18  
+Will it tell you the whole thing
+
+Unknown Speaker  25:22  
+you need, you don't need to click correct because I, I don't think so. Now, this is what happens when I
+
+Unknown Speaker  25:29  
+why that's not showing Okay, that should have a tool tip there.
+
+Unknown Speaker  25:35  
+But still, I can still try to make it bigger or lower the font or something, but for the meantime, that should have a tooltip there.
+
+Unknown Speaker  25:44  
+And I want to take a note, because again, I'm, I'm in dev, okay,
+
+Unknown Speaker  25:51  
+got
+
+Unknown Speaker  25:53  
+it.
+
+Unknown Speaker  25:55  
+And then the other one
+
+Unknown Speaker  25:58  
+we've already gone over to. It's just that I've been calling it a half hold. I don't know what to call it, but it's basically when you're,
+
+Unknown Speaker  26:07  
+you know, yeah, doing this, and it's like it looks and it's acting like it's not on hold, but it indeed is, until you like, turn it on hold again and then turn it off. Yeah.
+
+Unknown Speaker  26:26  
+Today. So I'm just,
+
+Unknown Speaker  26:34  
+yes, I have that on my list to look at. And the update is, No, I haven't.
+
+Unknown Speaker  26:41  
+Okay, perfect. That. I mean, I kept my list short today on purpose
+
+Unknown Speaker  26:49  
+because for IACP, yeah, plenty of time listening to what happened at the conference. I mean, I, I only know a little bit. I know that they, they had some internet. I don't know if it wasn't necessarily issues or if it was just lagging, which made dev lag a little bit so they at least for Saturday, I believe used production more than Dev, okay,
+
+Unknown Speaker  27:14  
+but I I mean, can you think so? I know that devs on the
+
+Unknown Speaker  27:20  
+server downstairs, and then the productions on AWS. If the internet was spotty, let's say, would dev perform
+
+Unknown Speaker  27:29  
+less well than production?
+
+Unknown Speaker  27:33  
+Because, I mean, I was trying to think about that, and there's a lot of variables, so yeah, there. I mean, I'd have to look at a map to see geographical difference. Which one's further San Francisco or Arizona, which one's further from Denver, but I'd say they're probably fairly close to the same distance.
+
+Unknown Speaker  27:52  
+The dev server is definitely weaker,
+
+Unknown Speaker  27:58  
+but has less traffic, yeah, then the prod server,
+
+Unknown Speaker  28:04  
+if the internet spotiness was them, there, it was them, yeah, then all bets are off. I have no idea. It's
+
+Unknown Speaker  28:14  
+the fault is there? You know? Yeah, I that's, I mean, that's the only thing that I know of that I can speak to on that other than we heard it went really well,
+
+Unknown Speaker  28:25  
+okay, good. I, I hope so, and I still look forward to hearing,
+
+Unknown Speaker  28:32  
+you know, any any feedback or thoughts, or,
+
+Unknown Speaker  28:36  
+you know, did they see wows or glazed over looks that nobody cared, or, you know,
+
+Unknown Speaker  28:45  
+not, that I heard it all. Alrighty, then,
+
+Unknown Speaker  28:50  
+well,
+
+Unknown Speaker  28:53  
+that's what we got from the list. And those were my updates. Joe, do you have any more thoughts, feedback, or something. You need an update on that? I didn't give no, I think, I mean, given the circumstances right now, I think we've covered everything, as far as the opt in length and things like that. I should get that over to you guys today, just if you guys want to review it, but it should be up before the end of the day, at least my end. So other than that, I think we're good to
+
+Unknown Speaker  29:22  
+go. Alrighty, did you get from just me telling you? Or do you want me to chat in here? The link the blue No, no, I got it. Yeah, I grabbed it. I already found it on online, so we're good there. So I got that, so I should be able to get it over to you soon here.
+
+Unknown Speaker  29:40  
+All right, that sounds great. We'll continue to work forward on everything we're working forward on,
+
+Unknown Speaker  29:49  
+and still look to get some
+
+Unknown Speaker  29:52  
+somehow it went from from Amanda or Bonnie or whoever else was there, whoever has time to tell us. Look.
+
+Unknown Speaker  30:00  
+Forward to it absolutely looks like they may have used the web app more than the other, I think the native app, Brian, I mean, just based on what I'm seeing in the back end, the data, oh, they used the web app instead of the native app. Well, I don't know. I mean, it's hard to say. I just know that I can see, for fact, that there's no routes at all,
+
+Unknown Speaker  30:26  
+which is funny, because I actually see one for a Denver address. There is an Elliot. There is a location as three token, what's But, what's the but I don't see a oh, now I do see a no. I don't see a clock in and clock in and clock out time. But I don't think we were necessarily job ID. Maybe I was maybe I did miss that one. I was looking through 775702,
+
+Unknown Speaker  30:55  
+yeah, no, there's Oh, that was me, dude, that was me. That was me demoing tell because the clock in and clock out
+
+Unknown Speaker  31:07  
+are in Cupertino, so
+
+Unknown Speaker  31:11  
+Okay, well, I don't think we have any routes from from them, from the weekend. Yeah, we we set one up Joe for Amanda, and told her, maybe so, that they had something that would be shown there where they were. Oh, okay, you know, we made one for Denver, and made the job location like the Conference Center. And told her, you know, maybe in the morning or something, just started at the hotel, and go have breakfast and do what, anything else that she's going to do for, you know, 30 minutes or something, and then clock out, yeah, so that they would be able to show yeah, that's and see here we made the location,
+
+Unknown Speaker  31:50  
+the the convention center, yeah, and there's no clock in or clock out, so I guess she didn't take our advice, yeah, there, Yeah, it wasn't utilized on huh? Yeah. I mean, I don't know if you've seen this or not, but it's very cool.
+
+Unknown Speaker  32:07  
+Basically, yeah, not yet, yeah. I mean,
+
+Unknown Speaker  32:11  
+cleared the database yet? Jake, I don't think he has. I'm pretty sure I can, I can clock in here to one of these. Gave him the Okay, well, no, I just mean, because of that, we can show Joe real quick, like, oh, yeah, yeah, yeah. The one I did go to Job, 775634,
+
+Unknown Speaker  32:32  
+yeah, here we go. So driving around Friday, oh, this is a job at Brian's house. And Brian clocked into the app, and you can see that he did that here. And then he walked around quite a bit
+
+Unknown Speaker  32:49  
+before he got in his car and then drove looks like this way up to
+
+Unknown Speaker  32:56  
+old Hardee's got himself some biscuits and
+
+Unknown Speaker  33:02  
+then drove around. And then you can see when he gets back to his house right here, looks like he parks in his driveway, and then, kind of like meanders around here for a little bit,
+
+Unknown Speaker  33:16  
+and then clocks out right there. Yeah, it is my garage. That was me tasting as I smoked a cigarette. And then
+
+Unknown Speaker  33:26  
+when I walked into my house, we're stalking you, Brian, that's what we're doing. Yeah, very, it is very, very cool. I like that. That is really cool. The the app shows them to
+
+Unknown Speaker  33:38  
+where, like, here's the job. And if I clock into the job that this phone's location is set in Cupertino, California. And so you can see here it's it's on the simulators, on a bike ride, and so it's moving a little bit. And I'll just let it kind of do it, do its thing this way. I don't think Joe's seen any of this yet, so now I haven't this would have been cool, because I just came back from Disneyland, that it would have been cool if I would've been able to test this myself, just to see how where I was going the entire time in Disneyland. Yeah. I mean, there's so much we have access to, like step count and like everything, so it's pretty good. And right up at the top right hand corner of that, yeah, is the distance from where your phone is to where the job location is. Yeah, you see that, okay, and that's on all of them. When you're on the home screen looking at jobs, you can see how far the job is from your current location. Oh, that's cool. That's super cool. Yeah, what 900 miles or something? Yeah, it's from California, Arizona, but yeah, and so what's really neat? I'll just let this run for a minute here, because in the background, it's gathering all these locations. You can see all this stuff getting printed in the background. That's our job ID that I'll look at here in just a minute.
+
+Unknown Speaker  34:58  
+But.
+
+Unknown Speaker  35:00  
+Where is it?
+
+Unknown Speaker  35:01  
+Yeah, boom. So I'll right here. You can see we're just like bicycling down the road. This is a preset thing on the on the simulator. You can see here, I'm on city, city bicycle ride, and so it'll just keep going around and around and around and around until I stop it. I was hoping that it would turn because that would be a little more interesting than a straight line, but whatever, I'll just clock out. So it's going to clock out, and then it's going to do a final sync with the with the API. And at that point, I don't think we have to do anything else, Brian, except for basically go to the the web app, right, and show it. Pretty sure that's always, yeah, so if I, if I load that job
+
+Unknown Speaker  35:46  
+here,
+
+Unknown Speaker  35:49  
+no, I think it's taken. Oh no, there it is. Boom, Yep, cool as that. That's awesome. There's what I just did. So it's, it's really cool. I wish they would have tested a little bit more, or just maybe they were nervous or something, I don't know, but, but it's, it's, you can see, like I can, well, I didn't know how much of the officer app would be a big deal. They were meeting with, you know, police captains and, of course, yeah, agency app was much more of a big deal. Yeah, look at this. So like Google Maps. Okay, so this is Google Maps. This is Apple Maps. Look at how on this is that is crazy. Okay, so, like, I can go and I can head over to the to the clock out point, which is right on the corner of it looks like Ontario drive there. And if I go in my Google Maps
+
+Unknown Speaker  36:43  
+and yeah, right there, right at the corner of Ontario drive. Yeah, that's awesome. That's so cool. Very neat.
+
+Unknown Speaker  36:53  
+So just thought you should probably see that, just because you haven't yet, I haven't, and that was awesome. That's pretty cool to see. I like that kind of stuff in general, and your guys' opinion, I've always wondered this. This is kind of a tangent, but do you guys use Google Maps more or Apple Maps more in general? Um, if I'm nor I've, I used to use Google Maps almost explicitly,
+
+Unknown Speaker  37:16  
+but recently I've been like, because Apple Maps is so deeply integrated to, like, my whole phone, like, especially with iOS 26 like, everything, my reminders have it on there. And it's just so easy to, like, just be like, Oh yeah, go. I'm just gonna head right there. You know, instead of copying it and going into Google Maps and everything so, and it's gotten quite a bit better, like, it's still not, I would say not as good as, like, Waze. But, you know, yeah, Waze is my go to for sure. I mean, I'm driving at least, but I was wondering, because I know I feel like it's, it's kind of suck it, especially with iOS 26 it kind of sucked us even further in to the ecosystem, just because everything's by nature, yeah, by design, I think. And to their credit. It's way better, like, way, way better than it used to be. So, you know, especially like you see here, you know, well, you saw the the Brian one, like, that's all Apple Maps. That's pretty cool. It's as accurate as it gets. Like, you know what I mean. So, not bad, not bad. Yeah, I use Apple Maps on my phone. Pretty much exclusively. I don't even have the Google Maps on my phone. But of course, if I'm sitting here on my computer and I need to look something up, it's Google Maps because, yeah, I almost never do I'm clicking, never open this like this and go, you know, I almost never do that. I just go to Google and pop it in. But anytime I'm on my phone, I'm using Apple Maps, essentially, if I'm somewhere I don't know, like, I was in Florida for my sister's wedding, and I did use Waze there, or Google Maps there, because I just, I guess it's, like, ingrained in me to, like, trust them a little bit more, but I bet you could probably just use Apple Maps there too. So, yeah, I use maps
+
+Unknown Speaker  39:05  
+the the time. I don't. I do notice that
+
+Unknown Speaker  39:09  
+the one thing that for me, the only thing that Google Maps tends to do better for is, in my opinion, is very new things. So like when my house was being built, it showed up on Google Maps before it did Apple Maps. Yeah, that's normal. Yeah. You know what's kind of weird too, is maps.google.com,
+
+Unknown Speaker  39:31  
+okay, so I'm gonna look for my new house here. Okay, so Google is like, Oh, you're in Soddy Daisy, Tennessee, right? And that's where this is. If I go into Maps and I look for the same thing,
+
+Unknown Speaker  39:49  
+Apple Maps is like, No, you're in sale Creek, Tennessee. Oh, wow. Don't know why, but I get that sometimes it's around here.
+
+Unknown Speaker  39:59  
+One.
+
+Unknown Speaker  40:00  
+App or the other seems to think everything's in Smithfield. And, yeah, yeah.
+
+Unknown Speaker  40:05  
+It's kind of fighting words though. Like, if you don't live inside, oh, yeah, like, you don't tell the people you live in cell Creek. It's like, no, no, I live in soggy
+
+Unknown Speaker  40:15  
+okay. It's like, it's a thing. So I have to tell people, like, look it up on Google Maps, not Yeah, I have the same thing. My address is four oaks, but
+
+Unknown Speaker  40:26  
+the neighborhoods on all four side of four sides of our neighborhood are in Benson. The golf course, right that I can see from my window, is in Benson. Every neighborhood around us is in Benson, but we're in four oaks. I don't know how don't get it all four directions is in a different town. So that is strange. That is kind of crazy. I don't understand that part of it that, I guess, like, I would think that, like a location is a location, period. But apparently townships would argue over Google Maps and Apple Maps. But, oh yeah, never do that. Never knew that until now. And now I have to explicitly say, like, no, no, we live in Saudi not.
+
+Unknown Speaker  41:07  
+But, yeah, that's, that's the big update on my end. I mean, there's a ton of other stuff, like booking jobs now totally works. Like, if I go, this is one of them in Denver, and this is for Sunday, and if I go book this job, it's gonna say, okay, yep, you booked the job. And then I go over to my jobs.
+
+Unknown Speaker  41:25  
+It's in there now, and it's gonna be, yeah, like, today's job is at the top, and then I've got this week, you know, here's stuff this week, and then next week is here. So looks good. It looks really good. Yeah, it's going well. And then one thing that we really thought might be a selling point that we told Amanda, we don't know, but we are keeping all of this location data with their time stamps and putting it eventually in what's called glacier storage on AWS, kind of a longer term storage, So it may not always be easily accessible right here on the website, and you won't ever see it on the website technically, but if there's ever an investigation or, you know, some type of legal thing, then look at this. You guys can call, you know, they can call you. You can call us, and we can go get this data, which has timestamps and Latin long for every right now it's every second, but we're gonna probably push it to about 15 seconds. Yeah, this is Brian's route from the other day. That is crazy. So we can absolutely pull this for an investigation purpose and say, yeah, that officer's phone, at least, was at this location at this time, at this time, 205 and two seconds, this is exactly where he was. That's absolutely a selling point. That's, that's phenomenal, and it's, and it's totally privacy aware. So like, right now I'm clocked out, right? And so the phone I technically knows where I am, but the phone always knows where you are, and that's why it can do things like the server doesn't. It's not telling the server. We have no idea. So until they clock in, this is the information we gather here on this black screen back here. That's what we get. But that only comes to us when they're clocked in. As soon as they clock out, that stream closes. So for the duration of the job, you can totally be like, well, you know, if there's some kind of court case or whatever, it's like, yeah. Officer overview was, you know, here's his exact position at that point in time. But for officers privacy, if he wasn't on the job, we have no idea where they were, yeah, yeah. That's awesome. That was really cool. It's pretty neat.
+
+Unknown Speaker  43:42  
+All right, so it's back to back to work, I guess, yeah, yeah, back after it, yeah. Now that conference is over and the the freeze is is heating up, and we'll be back at it. Yeah,
+
+Unknown Speaker  43:58  
+awesome, yes, sir. All right. Phyllis, well, I think, think we're done. I think we're wrapped up, cool. All right. Well, you enjoy the rest of your day, and we'll, I'm sure at least text message or email. I mean, before the end of the week, yeah, if you want us to text you, we can Brian and,
+
+Unknown Speaker  44:16  
+I mean, yeah, just give us. Give us the Okay, and we're all in.
+
+Unknown Speaker  44:21  
+Yeah. Brian is not opting in. I'm
+
+Unknown Speaker  44:26  
+used to click the checkbox I do not opt in.
+
+Unknown Speaker  44:31  
+All right. Everybody. Have a great day then and talk to you soon. Awesome. Thanks, guys. All right. Bye.
+
+Transcribed by https://otter.ai

@@ -1,0 +1,628 @@
+Speaker 1  0:00  
+Complaining that they're not able to clock in and out. It's just like not responding. They're not getting the you know, where the location pops up and says you're being tracked. You're not being tracked. So they're having issues clocking in and clocking out. I figured it was probably a network thing, yep, or where they're at, yeah. I just, I just feel like this week in particular has been just like an uproar of irritated officers being, not being able to clock in and out. I've tried turning on and off my Wi Fi, you know, being but I'm, I don't know, I don't know what the difference would be, or how I can better test it the
+
+Speaker 2  0:42  
+moment you click. Well, the way you would, you know, you really could test it. You can turn off your cell signal on your phone. Also, it should be like, right next, at least in my little control center. I've got the, you know, the airplane and everything, the Wi Fi, there should be a little green one that's supposed to look like a little signal tower, and it you can turn that off. It says cellular data. If you look at it close, you can cut that off. And that would be the same as not having a network connection it. Well, you got to also cut off Wi Fi, but you cut off those and that's no no signal, and, yeah, the the clock in is not going to work without a signal, you know, depending on how they get it, how they get to that screen that you can lock, You know, because you if your cell phone data is off, you can't even get to the screen that you can clock in on. So they're obviously going through some intermittent place and and they're having a hard time getting a cell signal. This might be a little better in a native app. But the fact of the matter is, if they're not online, they can't, you know if they, if they can't get a network signal, if they can't connect to the system at all, it doesn't matter what kind of app you're using.
+
+Speaker 3  2:13  
+Well, it might get so just to chime in there, the way that I'm kind of planning the data structure for the native app is there will be a go between database on the device, and that database will live in the in the devices storage. It won't be storing any like large files or anything. It's just basically JSON, and all activity is going to route there first and then, based on network connection, that data store will reconcile with FileMaker. So what that means is, if they're off line, the idea is that they should be able to work, and when they come back online, everything just sinks back.
+
+Speaker 2  3:17  
+Well, then ignore everything. I just said that.
+
+Speaker 3  3:19  
+Well, I just that's the plan right now. So, yeah, that's what I'm that's what I'm trying to shoot for, because I know y'all are going to want it eventually, and it's like, why not just, at least get us ready to do that? We could just set it up with a live connection to begin with, but I don't know, it feels like that's something we should probably factor in.
+
+Speaker 2  3:43  
+Okay, so Ashley, for your immediate answer, yeah, that looks like they don't have a network connection.
+
+Unknown Speaker  3:49  
+That's what it looks like to me. Okay,
+
+Speaker 1  3:53  
+yeah, they're able to see their jobs. They're able to get into the app. It's like they're trying to press clock in or clock out, and it's just not doing
+
+Speaker 3  4:00  
+anything for them. Nothing happens at all. That's what they say.
+
+Speaker 1  4:04  
+And it's just so hard for me to recreate it, not personally, but I'll try turning off my cell signal. I have not done that. I did Wi Fi for sure.
+
+Speaker 3  4:14  
+All that's going to do is tell you you're offline. So I think we might have some complainers that are, that are not hitting a button, no.
+
+Speaker 1  4:24  
+Okay, well, I'll keep testing, and I just wanted to bring it up, because I, I just don't know if, if it was coincidence, because we did bring Dev, you know, this week and this week, last week, but I don't know. I just thought I'd bring it up.
+
+Speaker 3  4:37  
+Yeah, if you, if you're trying it and it works, you're using the same code. They are all
+
+Speaker 1  4:42  
+right, well worth a shot this next one, though, I personally do get this one. This is a screenshot of my phone. It tells me that it appears that I'm offline. Check my network so we can get you back to work. But it doesn't actually so all I do is press ok. Okay, and it goes away, but it like, I'll press clock in, that that will come up. I press Okay, and it did clock me in, but it looks like it didn't. And so officers are, you know, giving us calls and be like it says that, you know, it's not letting me clock in, but it actually did. It just got covered up by this network, offline, but I do get this message often, so I don't know if what this one means. I mean I can read what it means, but what triggers that?
+
+Speaker 3  5:31  
+Yeah, so that's something we can look at. We just get a card for it and we can take a look.
+
+Unknown Speaker  5:38  
+Okay, I've seen it too, yeah, but it happens me,
+
+Speaker 1  5:45  
+okay, yeah. It happens when I'm, like, online or connected to everything,
+
+Speaker 3  5:50  
+yeah, and I was at, it's only happened to me once, and I was like, That's a weird fluke, but if you've seen it more than we should probably look at it.
+
+Speaker 1  6:02  
+So one of the guys that talked to me today, he just want to show you this one, because I've been testing looking at the pins, the reds and the greens, you know, just seeing what's showing up. But he was saying he was having a hard time clocking in or clocking out. I'm sorry, but how has this happened? How does he clock out twice? I don't know if you can see this, but there's a clock out, a clock out. And then if you look closely under here, there's a clock out under here. How did that happen? How does it do that? He was very upset, like, because he was like, I can't get it to clock out, but clearly it clocked him out.
+
+Speaker 3  6:40  
+And when you click those pins, what does it say
+
+Speaker 1  6:44  
+all the time and location, yeah.
+
+Speaker 3  6:47  
+So like, there you go. There's the actual walk out, yeah. And then there's, that's just a problem in the rendering. I think Jeremy needs to look at that. Brian, yeah. That's just that looks like Jeremy's not right? Those, those look like they should be that one should be green, the middle one should be blue, and then the last one should be red. I think that's just a color rendering problem, because this one happened at 3:41pm
+
+Unknown Speaker  7:14  
+and he popped in
+
+Unknown Speaker  7:17  
+at eight. Okay, so,
+
+Speaker 1  7:18  
+and I don't see anything in the mod logs that, like, showed me that he clocked out three times, or, you know, anything weird like that.
+
+Speaker 3  7:27  
+Oh, he didn't. He didn't, but there's no way to do that.
+
+Unknown Speaker  7:30  
+Yeah, I don't know of one.
+
+Speaker 3  7:33  
+Jeremy just needs to double check his color rendering. That's all, okay.
+
+Speaker 1  7:38  
+Did you notice anything with the GPS and pins, because I've noticed, like most of them, most of them have either both red or green or none. Don't know how the none happens, but I've seen this.
+
+Speaker 2  7:51  
+Did you guys find anything? Jeremy's the one that did it, and we'll, oh, I'll talk to him to to look at it
+
+Unknown Speaker  8:00  
+and see if we can get that fixed for you
+
+Speaker 2  8:04  
+before we completely change the way it works, or the new app. Oh, just Yeah,
+
+Speaker 3  8:11  
+it is going to be wildly different. Okay, in a good way.
+
+Unknown Speaker  8:18  
+Mileage, very
+
+Speaker 3  8:19  
+excited to show you guys what we're working on. Oh, good. Okay, wish we could do it today, but I'm gonna,
+
+Speaker 4  8:26  
+I'll just try to keep everyone calm for now.
+
+Unknown Speaker  8:32  
+Mileage, talk about that.
+
+Speaker 1  8:36  
+That is almost it for the app. The last thing I wanted to tell you, it was still notifying me, if I liked, into the the notes area and then didn't type anything.
+
+Speaker 2  8:50  
+I've tested that one, and it worked for you, but the notes were blank when you started. So yes,
+
+Unknown Speaker  8:58  
+yeah, I've tested that a bunch.
+
+Unknown Speaker  9:01  
+When did you test last? Maybe I couple.
+
+Speaker 3  9:05  
+What was that Friday? Yeah, I thought he did it on the meeting I did,
+
+Speaker 1  9:10  
+um, yes, I tested it after that. Let me go to just want to see if I get one right now.
+
+Unknown Speaker  9:17  
+In fact, I'll, I'll do the same thing.
+
+Speaker 2  9:22  
+Maybe look at the notes field in FileMaker and hit, you know, left and right on the arrow key to make sure there's not a space or a return in there. Yeah.
+
+Speaker 1  9:29  
+Okay, so here I'll show you. We just got one. I just did it entered notes, but it's it started blank and
+
+Unknown Speaker  9:41  
+missed this. Up. Okay,
+
+Speaker 4  9:52  
+nothing. I.
+
+Speaker 1  10:02  
+That sense, and all I did was click in and then click done, so that my keyboard goes away.
+
+Speaker 3  10:11  
+Yeah, I'm trying it right now. Well, hold on, I'm gonna go to a past job because I don't Oh, that's how I did it else. Well, yeah, let me see if I can find one with no notes in it.
+
+Unknown Speaker  10:23  
+I do not have any jobs with no notes,
+
+Unknown Speaker  10:29  
+no officer notes. Really, geez,
+
+Speaker 3  10:32  
+all my Yeah, well, for this, for the last month, hold on. I'm gonna, I'm I'm continuing to go back. There we go.
+
+Unknown Speaker  10:44  
+Interested on a current job. It did it too. Mine's doing it
+
+Unknown Speaker  10:49  
+too, yeah. Okay, so I'm not crazy
+
+Speaker 3  10:52  
+what in the world. Hold on. Let me really quickly do
+
+Speaker 2  11:17  
+and also Jake, that is not a rendering problem. I went and looked at the location records for that job she was showing us. It's in the JavaScript, there's three out, no the actual location records, there's three out type. There's no in.
+
+Speaker 3  11:35  
+There is no way for them to in the app. At least have more than one out. I mean, I'll look at it how, how deep do we want to go there? Just curious, just because of the new stuff we're doing, we want to go. I mean, I don't care. It's fine.
+
+Speaker 2  11:52  
+We want to figure it out if we I mean, as long as we don't have to reprogram half this, you know, half the damn app or something, I'd like to go after it, because that especially is going to be viewing if we put out the agency website, that's fine. It's looking at the same records, and the type is wrong, so it's definitely not going to render correctly.
+
+Speaker 3  12:21  
+I don't even know how they would make that happen, so I will not sure either. I mean, that's one of those things where it's like, I mean, I will do my best to try to recreate that, like I can recreate what Ashley just told me just now, no problem. But that's going to probably be a bit of a challenge, unless it's something really obvious. But that's okay. I will. I will look at it,
+
+Unknown Speaker  12:53  
+and right now I'm just trying to
+
+Speaker 3  12:58  
+get back to this empty notes thing. So one second, I'm trying to see if I can quickly fix that.
+
+Unknown Speaker  13:13  
+Yep, it's fixed. Okay. Do
+
+Speaker 3  13:27  
+Ashley, you may have to, like force quit and reopen the app. Okay, but I just tested it and it works. I other
+
+Speaker 1  13:49  
+than that, that's, that was the last thing I had on the apps. It's
+
+Unknown Speaker  13:58  
+not loading. I'll test it in just second.
+
+Speaker 1  14:01  
+So for okay, if someone clocks in and they clock out, then it moves from the active to the past tab. Is there a way to if hours are entered here, it moves through their past, or do we have to have a self entered
+
+Speaker 3  14:21  
+in and out. What it's looking for in the past
+
+Unknown Speaker  14:27  
+it's looking at the is
+
+Speaker 2  14:30  
+where complete flag, that flag, uh, checks the clock out, if it's clocked out, or if the payroll date has been set by Lori's team.
+
+Speaker 1  14:49  
+So see, that's interesting, because the reason why I asked is we had someone who had a job yesterday and he had. Hours in. There was this one, and he was, he asked to be removed from it. We were like, what? How does so we last night, she put the hours in. Didn't do anything here, so he was able to be asked to be removed from it.
+
+Speaker 4  15:18  
+But that was at like, 1050, no, that was that.
+
+Speaker 1  15:29  
+It was way. It was way past when Stacey would have done her payroll, her first pay. You know, you know what I'm trying to say.
+
+Speaker 2  15:42  
+Yeah, but Did she hit that button? And did she hit that button? Yeah, look, yeah.
+
+Speaker 3  15:48  
+But I bet you, if we go to that and look at, I wish we had the is work complete flag somewhere, because some, somehow, that flag is not, it's not a one, because that's the only way that that shows up there.
+
+Unknown Speaker  16:02  
+I mean, maybe it was.
+
+Speaker 1  16:06  
+I could ask her, I guess, what time she did the payroll, but usually it's right in the morning. So it just seemed weird that she was able to request to be removed from that
+
+Unknown Speaker  16:16  
+it's 623 is the date.
+
+Speaker 2  16:22  
+Yeah, and the, let's say the customer's name is
+
+Unknown Speaker  16:27  
+Aiken Gardner. A, C, H, E, N,
+
+Speaker 3  16:32  
+Hey, Ashley, while we're waiting for Brian, yeah, oh, do you make it? Could you make me a few fake jobs, please? Sure. Thank you.
+
+Unknown Speaker  16:42  
+Hey, I see
+
+Unknown Speaker  16:46  
+two jobs
+
+Speaker 2  16:52  
+or two job assignments at least. Excuse me. All right, one is 10 hours and one is 10.75 I thought it was like 9.5 is what I saw in there.
+
+Speaker 1  17:05  
+Yeah, it was 9.5 for yesterday's job.
+
+Unknown Speaker  17:14  
+Thank you. I need this.
+
+Speaker 3  17:17  
+You want different days? Yeah. Do you like daily and I guess, yeah, one officer and whatever helps you, yeah, start day to day and then give me, like, two weeks of jobs.
+
+Unknown Speaker  17:32  
+Like, yeah, I
+
+Speaker 3  17:44  
+do do, like, keys and agency car, I like to just test that a couple. Just, yeah, okay, there you go. This is your Maricopa, right? Yes, ma'am, yeah.
+
+Speaker 2  17:56  
+Is work completed? Is a one currently on that?
+
+Speaker 1  18:01  
+Probably because I clocked him in and out, though, to get it off of his Yes, he was like, wondering why I was still there. So I clocked him in and out so that it would go away. But then I started thinking, like, Why didn't it go away?
+
+Speaker 3  18:17  
+Is his ID still on it? Right? Yeah. So it's so that's why it's still there, because it is work. The complete work. Complete flag is one and,
+
+Speaker 2  18:28  
+yeah, it should be in past. Are you saying it was being shown in today?
+
+Unknown Speaker  18:31  
+It was when I talked to him this morning,
+
+Unknown Speaker  18:36  
+but it was yesterday. Yeah, the job
+
+Speaker 1  18:39  
+was yesterday. And I believe Jessica entered ours last night.
+
+Speaker 3  18:45  
+Was it also showing in the past jobs?
+
+Speaker 1  18:48  
+She did no, she didn't say it was showing in his past jobs. This is where she changed it. Yes, change it from 8.5 to 9.5 last night. I I
+
+Unknown Speaker  19:07  
+see Hey jobs. So
+
+Unknown Speaker  19:17  
+to show up on today, we're looking for
+
+Speaker 2  19:21  
+a is active of zero, is work complete of zero,
+
+Speaker 2  19:31  
+the date within the range and the is canceled is blank.
+
+Speaker 2  19:45  
+Yeah. I mean, Unless I see the flags different as the flags are right now, I bet you they're not showing up on his today,
+
+Unknown Speaker  19:55  
+in his past, they
+
+Unknown Speaker  19:58  
+could be showing up.
+
+Speaker 2  20:01  
+I cancel that one correct? You didn't select a cancel reason and all that.
+
+Speaker 1  20:06  
+No, no, I just show
+
+Unknown Speaker  20:09  
+up in his past. It is
+
+Speaker 1  20:10  
+now that I when I clocked when I physically pushed the like time stuff stamp, let me find it like when I
+
+Speaker 2  20:18  
+did click the little clock out button. Hit these.
+
+Speaker 1  20:21  
+Yeah, that moved it. But I just didn't understand why. You know, having that payroll date processed this morning, unless it was just right after I did it. Yeah, I'd have to look to see what time Stacy did it. But, um, okay, well, I'll test that again, and if it's an issue, I'll let you know.
+
+Speaker 2  20:43  
+Maybe I can mod log that when that date is set. I wasn't doing that because normally you don't mod log reports, sure. But since that particular button does do something and just does something important setting that date, maybe I can add that to the mod log routine so that you can see when that data set when, when whoever did it did it.
+
+Speaker 1  21:10  
+So having that, so typing in the hours that's not, that's not going to flag it as complete, correct. That's correct, right? OFFICER No. Oh so. Officer note, you remember when we put the exclamation point for hours that were over the you know what? They were scheduled, we put, like a red exclamation point, yes? Did we create one on on that same report, maybe in blue or another symbol, because I know that you aren't going to be able to put the whole officer note on there. There's just not enough room, probably. But would we be able to add another symbol so that Stacy knows, oh, there's an officer note so she can go and look.
+
+Speaker 2  22:00  
+That makes sense. Which report screen is that
+
+Unknown Speaker  22:04  
+it's the officer, pay report
+
+Unknown Speaker  22:07  
+officer pay Report
+
+Unknown Speaker  22:16  
+icon, if officer notes
+
+Unknown Speaker  22:28  
+and pop over to show notes.
+
+Unknown Speaker  22:37  
+Okay, thank you.
+
+Speaker 4  22:41  
+Do probably don't know that that's from last time mom talked about that
+
+Speaker 1  23:02  
+last time the ball. Bull cold that's on your list still right? Like when, when I both assign something, taking it off of triggering that.
+
+Speaker 2  23:11  
+Yeah, correct. That's still on my list. I haven't, okay.
+
+Speaker 4  23:17  
+Oh, this one mod log reopening.
+
+Unknown Speaker  23:21  
+I two on, okay?
+
+Speaker 1  23:35  
+This mod log never captures anything. There a way we can like, because sometimes I want to know, like, who made changes in this particular this is a bad example, but like, you know, because sometimes people will change this and refresh, or they're, you know, they'll do things, and I have no idea who, all I know is who did it last but I couldn't tell you anything else. So this mod log never captured anything.
+
+Unknown Speaker  24:04  
+Okay, thank you.
+
+Unknown Speaker  24:09  
+Absolutely occurring.
+
+Speaker 1  24:13  
+Oh, this one job, location, detail.
+
+Speaker 4  24:20  
+Now I actually,
+
+Unknown Speaker  24:24  
+we talked about that part last time, and I have not tested that.
+
+Speaker 1  24:34  
+I mean this capture it in here, but do you know if mod log is set to capture if we change it on here,
+
+Unknown Speaker  24:45  
+change the primary contact,
+
+Speaker 1  24:47  
+yeah, or even I believe it should Okay, and obviously it wouldn't if we changed it in here, because it's not changing anything. But can we make sure that when mod log does work? It's capturing these changes as well.
+
+Unknown Speaker  25:03  
+Yes, okay, so detailed and
+
+Speaker 1  25:29  
+oh, are you are you writing, or can I proceed?
+
+Speaker 2  25:36  
+Well, I was just looking so I do, oh, there's definitely some recurring jobs that have mod logs to them, almost 3000
+
+Unknown Speaker  25:49  
+log changes.
+
+Speaker 2  25:55  
+Let me see if I can find a recent one and point you to that job. And if you don't see anything to that screen, then that means there's a problem with the display, not the actual logging. Last one looks like it was on 617 by Christine.
+
+Unknown Speaker  26:12  
+It is going to be
+
+Speaker 2  26:15  
+second while I find something other than the ID that'll make sense to you? Oh, there we go. Boop. Boop. Boop
+
+Speaker 2  26:33  
+looks like a customer. Name of think safely, Inc, yeah, think safety. Start Date, 618, 18.
+
+Unknown Speaker  26:50  
+You said 618, 17. Sorry,
+
+Speaker 2  26:52  
+that's yeah. That's what the reoccurring record says, at least. Okay,
+
+Speaker 4  27:04  
+yeah, so why would that? Why would that
+
+Unknown Speaker  27:08  
+capture and not involve? I'm not
+
+Unknown Speaker  27:16  
+sure I'll do one right now,
+
+Unknown Speaker  27:18  
+specifically at what We're changing, maybe,
+
+Unknown Speaker  27:26  
+I don't know, I tried to. I
+
+Speaker 2  27:57  
+it's trying to change a lot of related records and you refresh all that. Yeah, does that show on the mod log of the job assignment that you changed the time?
+
+Unknown Speaker  28:12  
+Um, I will. I think it might,
+
+Unknown Speaker  28:18  
+well wait, let it. Yeah, let
+
+Unknown Speaker  28:19  
+it. I know. I know, I know, I
+
+Speaker 2  28:25  
+believe it is. That's probably what's taken, that what takes a while is it's pushing this change to every job assignment, going from now to the future for this job and and it's trying to make a modification log for every single one of those. Also, this is
+
+Unknown Speaker  28:46  
+taking a little longer. Does it usually take this long?
+
+Unknown Speaker  28:49  
+Things on the day
+
+Unknown Speaker  28:52  
+today, in general, it's been kind of just a slow day
+
+Speaker 1  28:58  
+or Yeah, and it may be, because the weird thing I also thought was, like, How did I miss that in the past? So I don't know if maybe it was capturing and isn't capturing now, because it's just been the last few weeks, two weeks, maybe, that I've added that to my list because I wasn't able to find something. Um, yeah, it, it did track in the job assignment details, but just not in the reoccurring job area.
+
+Speaker 2  29:24  
+Click, click there again. That's fine, that one, and then click the second tab that says Job, and then click on the little arrow next to the reoccurring date range. Yep, there we go. That's faster than going to job location and then to this one
+
+Speaker 4  29:40  
+just in case. Okay, yeah, so let's
+
+Unknown Speaker  29:43  
+just uncheck POV and
+
+Speaker 2  29:49  
+now click, don't hit refresh, no, we don't want to do that right now. Let's click somewhere else. Yeah, now go to the mod log. Didn't do. It, okay, I'll look into it. But obviously, either that or you can talk to Christine, because apparently she knows how to do it. Her name's on half of these.
+
+Speaker 1  30:10  
+Yeah, I because I tried testing like a lot of different areas, trying to change it, and I just couldn't get it to pop up on there that area.
+
+Unknown Speaker  30:21  
+So I will, I will look into that too.
+
+Speaker 2  30:24  
+Wrap that up. But yeah, it's, it's definitely working for some processes, because, like I said, we've got 2987 records, log records that are related to a recurring job. So something's happening.
+
+Speaker 1  30:38  
+But you said the most recent was the 17th. That is correct so and we, we make changes all the time, yeah, it would be very, very unlikely if no one made a change to a reoccurring detail from last Tuesday.
+
+Unknown Speaker  30:55  
+Let's see you still
+
+Speaker 1  31:02  
+need to talk about the dashboard collapsing, but that's going to be a different.
+
+Speaker 1  31:14  
+Call the bulk assignment on previous dates. Not bulk assigning necessarily, but just assigning on previous dates. I did figure out what's triggering it and preventing you from doing it. I don't know if you have already fixed that or found that out, but we talked about it last time where it wasn't letting me assign anyone to a previous state on certain circumstances. Do you remember that through bulk assignment? So that's what's triggering. So I did it both ways, where I put in a job for like, 610 and 611 and just went straight to the dashboard, and I was able to put myself on it, on both of them, but if I hit bulk assigned first, just on accident or yeah, I'm not saying mine wasn't on accident, but I could see people trying the bulk of sign, and then once you hit that, once you trigger that bulk of sign, then you can't put anyone on any job for those dates. And it gives me that tell site job in the background. But it's only when I hit bulk assign on previous dates. Okay?
+
+Speaker 2  32:24  
+Because bulk of sign is not supposed to assign to previous dates, sure, and it's definitely not supposed to cause an error.
+
+Speaker 1  32:32  
+Yeah, it just, I just noticed that anytime I accidentally hit that, or I was pretending like at least that was someone else who accidentally hit that, trying to save time, but that triggered it every time where I wasn't able to, even, you know, go back to those dates individually and add myself or anyone. Okay, let
+
+Speaker 4  33:02  
+me know when you're ready one second, yeah,
+
+Speaker 1  33:28  
+okay, this correspondence the clock out early or under four hours. Rather, that's a carryover from last time, but that's still not on there. Believe there's a Trello card, at least for that one, and, oh, for the customer.
+
+Unknown Speaker  33:52  
+You know the DocuSign is there? Yeah, your stories.
+
+Unknown Speaker  34:11  
+Is there a way to
+
+Speaker 1  34:15  
+I know that there's all, but is there a way to literally see all and not have learning. Have to search between Texas, Utah, you know, just random states.
+
+Unknown Speaker  34:26  
+If you leave it blank, then it won't take that into consideration.
+
+Speaker 4  34:32  
+It'll show us everything. Yeah. Okay.
+
+Unknown Speaker  34:40  
+Doesn't okay.
+
+Unknown Speaker  34:46  
+Okay, I'll test that I didn't okay.
+
+Unknown Speaker  34:52  
+That is, I think all of it,
+
+Unknown Speaker  34:58  
+all righty. Yeah, that's all we got.
+
+Speaker 2  35:01  
+That's it's adding to our list. Great. Like I said at the beginning, we're trying to do some other things, and we'll get back to this stuff. So any you know, anything that says user problem, as far as the officers or something are concerned, we'll we're definitely going to try to move to that first but sadly, you guys stuff on the admin console, as long as it's not completely preventing you from work, I think we're, we're kind of pushing it as second tier priority, unless Joe has a problem with that. That's kind of how I've been doing it.
+
+Speaker 5  35:41  
+I think the balance, as long as there's some kind of balance there, because we do want it to work efficiently, but at the same time, we know there's a lot coming up, and the change of direction is is obviously important to take an account as well.
+
+Speaker 2  35:53  
+Yep, yes. I try to balance. Try to get some time into it, absolutely and once I finished getting getting I got you the answers to those questions and stuff Friday, and then some yesterday, and some today. I've been working on a couple of graphics and visual representations of the system and such that you can add to, you know, add to the answers, because it does ask about that. And then, of course, just everything with trying to change the direction of the ship. But it should cool down a little bit here very soon. And well, not in general, but cool down this stuff so that I can get back to looking at some of that while I while I manage the rest of the team that's going to be moving forward, hopefully, with the the app and such, pretty immediately. So we will have that discussion tomorrow. Joe, I did want to tell you we have I talked to Chris, who is going to be the person on our team that's definitely the best with AWS. We're going to need to get on a zoom call with him, me and you to get the account set up for you guys, and then he can start, you know, getting you an instance ready and whipped up, and all that kind of stuff. I can send you over. The recommended specs I'm going to be giving him, if you'd like,
+
+Unknown Speaker  37:30  
+just email that over, but
+
+Speaker 5  37:32  
+yeah, please at least know what we're looking at, price wise, things like that, so we can, you know, factor that in our budget,
+
+Speaker 2  37:39  
+man, I I'd love to tell you, but good luck with Amazon, because it's not because there is a base price depending on how powerful, you know, how much memory, how much hard drive based all that kind of stuff that you give to the server. But the rest of it is based on traffic. And it's, it's not an easy equation, whatever their equation is so
+
+Speaker 3  38:02  
+sure, sure. Okay, AWS, like calculator site you can go on, but it's, I'm not gonna like, yeah, it's not necessarily great,
+
+Speaker 5  38:13  
+yeah, okay, if there's a way Brian, you know, to shoot me an email. I mean, even with just a ballpark, something that we can present to Bonnie, because obviously she's gonna want to have some kind of expectation as far as what we're going to be paying on this kind of transition and whatnot. I mean, like I said, it doesn't have to be completely accurate, but something that we know is feasible.
+
+Speaker 2  38:32  
+Yeah, yeah, I'll, I can, I can do that. And it's going to be, it's going to be, how, I don't want to say cheap, but a lot cheaper as we are developing and such, because that's not going to be getting a lot of the traffic, you know, as we we're testing it, getting it ready and then getting things moved over there. So, you know, the first month, maybe even two, is not going to be a very good telltale of what you're going to see, sure, but that's what we're looking at. Sadly, I looked, I could have swore AWS had a data center in LA but they do not Northern California. Closest one to you is like is in San Jose, I'm pretty sure, yep. So it's in Northern California. They have that one, they have Ohio, they have Virginia, and then they have one in Toronto. I'm not sure. I even thought maybe they had one in Austin, that would be closer to you. It's still not bad. We do ours up in Northern California, and I attach to it and do development work from Virginia, and it's not bad at all. So still coming from you guys, you should be fine in general cloud, the connection may be a little slower for you guys, because you guys are sitting in the same building with your server right now.
+
+Unknown Speaker  40:00  
+Know, but it should be faster for all of your users, okay, okay,
+
+Speaker 2  40:07  
+and it may not even be slower for you guys, because the machine is going to have so much more power than the machine you're working with now, so that may even it out, and it may end up about the same or even a little better for you, but it's definitely going to be better and faster for your users.
+
+Unknown Speaker  40:23  
+Okay, perfect.
+
+Speaker 2  40:27  
+So that's, that's what we're looking at. Now, again, I'll send you an email with kind of the recommended setup, and maybe anything I can get as far as pricing. But, yeah, pricing with AWS is, is a crapshoot, so, but I'll give you kind of some best guesses when I talk to Chris. Okay, that'd be perfect. I appreciate that. Brian, so that is our plan. Is one instance at first, when we go to push out the native app and such, when this development starts to get towards a completion, we are going to be recommending a second instance to run your web server, so that's going to run all of the background, API and database stuff that Jake is talking about needing for the native app. It can live on the same ish instance as your file maker, data engine, but I think it is I recommend that it's a lot better situation if it's its own. So we can talk more in detail about that later, if you'd like. But that's going to be my recommendations. And then I think we're going to probably once we've moved you guys over, actually use the server you're using right now as your production server for file maker. I think we might use that as our dev server, if you guys don't mind keeping that up.
+
+Unknown Speaker  41:55  
+Okay, all right,
+
+Speaker 2  41:58  
+but you definitely want a dev and a production server so that so that we're not playing around on your live system like we are now.
+
+Unknown Speaker  42:06  
+I mean, that makes perfect sense. That
+
+Unknown Speaker  42:09  
+gets very dangerous very quickly.
+
+Unknown Speaker  42:11  
+It really does so,
+
+Speaker 2  42:14  
+so that's going to be my recommendations in general. I'll let you know now, but I'll write all that out for
+
+Unknown Speaker  42:20  
+you. Okay, awesome.
+
+Speaker 2  42:24  
+All right, I think that's mostly what I have. That's not going to be, that's not just preparing for tomorrow, yeah, which we will be having
+
+Speaker 3  42:32  
+a lot to show you tomorrow. Yeah, we got
+
+Speaker 2  42:35  
+to show you. We've been doing some planning, moving around, some resources, like I said, kind of returning the ship into a different direction.
+
+Unknown Speaker  42:44  
+And it's gone well, though, yeah,
+
+Speaker 2  42:48  
+and so it's good. We've got some cool stuff to show you tomorrow, some ideas. And of course, we're waiting to hear you guys ideas too. You know, anything you need added or changed from what we have in the current app?
+
+Speaker 5  43:05  
+Yeah, absolutely. And I did send an agenda over earlier to you and Jake that that's just give you guys an idea of what we're looking at. I mean, right off the top of our heads, but I mean, we'll obviously discuss that tomorrow.
+
+Speaker 2  43:16  
+So all right, that sounds perfect to me.
+
+Speaker 5  43:20  
+Awesome guys. We appreciate it like always, thank you absolutely. Thank you. All right, we'll see you tomorrow. All right, bye, bye. You.
+
+Transcribed by https://otter.ai

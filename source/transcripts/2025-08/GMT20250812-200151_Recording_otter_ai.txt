@@ -1,0 +1,1204 @@
+Unknown Speaker  0:00  
+I will
+
+Unknown Speaker  0:02  
+start recording. And she asked that I
+
+Unknown Speaker  0:07  
+get the AI.
+
+Unknown Speaker  0:21  
+Hopefully that AI gets a little better over time, huh, Brian, I think as it learns,
+
+Unknown Speaker  0:28  
+I don't know, I'm always worried about what we're teaching. It just like, oh
+
+Unknown Speaker  0:33  
+yeah, I get a little nervous about it. I
+
+Unknown Speaker  0:51  
+me just think nobody likes thinking,
+
+Unknown Speaker  0:57  
+okay,
+
+Unknown Speaker  0:59  
+all right, so
+
+Unknown Speaker  1:02  
+hi, it's another Tuesday sprint meeting we have here.
+
+Unknown Speaker  1:08  
+I did want, before we get to Ashley, to go over a few things and show a couple things. So let me share the old screen here.
+
+Unknown Speaker  1:26  
+You out of the way.
+
+Unknown Speaker  1:29  
+You out of the way
+
+Unknown Speaker  1:32  
+and out of the way for now.
+
+Unknown Speaker  1:34  
+So
+
+Unknown Speaker  1:37  
+you so here, this is the dev version of the agency web app. I did want to show we've done some, I think, pretty cool things here, and it's going to help us and flat out, really be a necessity moving forward into the native app. And that is the location stuff. So as it comes down, we looked into kind of some of the issues we were having with mapping, especially on Apple Maps. And it really kind of comes down to
+
+Unknown Speaker  2:17  
+Apple Maps doesn't handle
+
+Unknown Speaker  2:21  
+as many odd scenarios as Google does, including um,
+
+Unknown Speaker  2:28  
+intersections, exits, stuff like that, Google just handles so much better than Apple Maps.
+
+Unknown Speaker  2:37  
+And in order to get the native app to really work well and work much better for mapping and such. We
+
+Unknown Speaker  2:46  
+are going to want coordinates instead of addresses. So we did this for the job creation on your agency as kind of a proof of concept and kind of the way it's going to work. But we want to take this functionality, and most likely, we're going to use it when we get to the customer portal, and we want to transport this functionality into file maker, so that when you guys are creating jobs, you're going to do it like this also, so we can get some good coordinates and a realistic peg on where we need to map to.
+
+Unknown Speaker  3:27  
+And currently it works like this. So we're looking at a new job we're creating, and I can come in here and I can just start to type an address, and it starts to type ahead for me, and I can find what I'm looking for and click on it. This is powered by Google, so it's going through, you know, all of its maps addresses to give you something. And I click on that, and it drops the peg right on that address. It shows the address that's been chosen here, and just a little check to let you know that it's verified that is an address that was selected that is verifiable through Google Maps, and we have coordinates for it. Course, I can zoom in
+
+Unknown Speaker  4:15  
+on that. And this is my house. This is where I am. That's my address. So
+
+Unknown Speaker  4:23  
+you can also
+
+Unknown Speaker  4:29  
+some stuff I noticed we were able to find like
+
+Unknown Speaker  4:38  
+Coleman Memorial Bridge in Virginia.
+
+Unknown Speaker  4:42  
+This is near where I grew up. I It's a bridge I know the name to,
+
+Unknown Speaker  4:47  
+so I was able to find that, click that, and boom, it put the marker right there in the middle of the bridge.
+
+Unknown Speaker  4:55  
+So that'll help with finding bridges.
+
+Unknown Speaker  5:00  
+It works well with intersections. What was that one? Was it South Scottsdale
+
+Unknown Speaker  5:11  
+and East Oberlin? Was that we were, yeah, that was one. Definitely
+
+Unknown Speaker  5:19  
+see it's not. Let me look at what it was,
+
+Unknown Speaker  5:23  
+so
+
+Unknown Speaker  5:25  
+it can come up with them. It's not always the best, but
+
+Unknown Speaker  5:33  
+I can go click on East Oberlin way over there.
+
+Unknown Speaker  5:37  
+And I don't know where
+
+Unknown Speaker  5:40  
+East Oberlin actually is, but
+
+Unknown Speaker  5:44  
+you can also, so it's, it's kind of a two, one or the other type of thing. I can either find the address here and click on it, or I can go around in the map and I can drop a pin.
+
+Unknown Speaker  6:00  
+Yeah, so if you drop that pin there, is there, then a way to
+
+Unknown Speaker  6:06  
+like pin it and then re
+
+Unknown Speaker  6:09  
+type in what you want, like scheduler to say for when it goes into file maker. I don't know if that makes sense.
+
+Unknown Speaker  6:16  
+I'm
+
+Unknown Speaker  6:18  
+not exactly, not currently, because if I type something else in here.
+
+Unknown Speaker  6:23  
+Now, this is this right here
+
+Unknown Speaker  6:28  
+is the location address for presenting purposes that's going to go into FileMaker.
+
+Unknown Speaker  6:37  
+And I could this one. I dropped the pin right there. That's Union Hills Drive and 16th Street, Phoenix, Arizona. Union Hills Drive and 16th Street,
+
+Unknown Speaker  6:49  
+and this, that's the address that would show
+
+Unknown Speaker  6:55  
+it's kind of an either or thing, really. You put something here, and then you put something, and then you select it from the list, or you go on the map, you find it, and you drop your marker.
+
+Unknown Speaker  7:11  
+I just use this sometimes. So if I click on the marker again, it disappears.
+
+Unknown Speaker  7:17  
+Sometimes I just come up here because, you know, the map could be showing anything. So I say, Okay, I at least want to go to Peoria AZ. And
+
+Unknown Speaker  7:30  
+it's going to take me to Peoria
+
+Unknown Speaker  7:33  
+AZ, which is somewhere on this map. I don't know exactly where it is,
+
+Unknown Speaker  7:38  
+it's up.
+
+Unknown Speaker  7:40  
+Oh, we are, like, right on it
+
+Unknown Speaker  7:43  
+almost
+
+Unknown Speaker  7:48  
+so, because you know the map, I think the map starts generally, like, right here on Phoenix, yeah, of course, as we, you know, as we grow and we're in more areas you never know where it's going to start. So you can just kind of type in a city to get you close and then zoom in and figure out where you want to put your marker.
+
+Unknown Speaker  8:12  
+And is this, is this ready to be tested yet? Or should
+
+Unknown Speaker  8:18  
+I this functionality? Yeah, sure. Okay, rest of the form. It's, it's close, but he just kind of finished it up today. So we are,
+
+Unknown Speaker  8:29  
+I'm still testing it. Gotcha and the map stuff he is. I've also asked him to, he's going to be adding two buttons that have to do with the map. The first button is going to
+
+Unknown Speaker  8:45  
+center on a marker, if you have a marker somewhere, so if you put the marker there, but then you've been doing other things, and you're all the way over here, you're going to click a button and it's going to go and put, like recently, on the marker that makes sense. The other one is going to be a clear marker, right now, if you click on the marker, it disappears again. If you happen to be off somewhere else, it's nice to just have a button that clears that marker. Okay,
+
+Unknown Speaker  9:14  
+so when it comes down to it, you want a marker set, either by picking the address from the list, or dropping the marker yourself manually,
+
+Unknown Speaker  9:26  
+and the identifier for that is right here,
+
+Unknown Speaker  9:30  
+so there needs to be some type of address here and that check mark, that means we have coordinates to wherever the marker is, and that's what we're going to be using
+
+Unknown Speaker  9:42  
+if what you're going for is not a single point, like a parade route, or,
+
+Unknown Speaker  9:52  
+you know, the southern border Yuma,
+
+Unknown Speaker  9:55  
+we still need you to pick a spot, like where the parade is going to start. Or.
+
+Unknown Speaker  10:00  
+Or you know what general point of the border they need to first report to. We need a singular spot so we can absolutely have
+
+Unknown Speaker  10:13  
+an address that southern border, Yuma, blah, blah, blah, but we still need a marker just to be able to map and tell them where to go to start, in order to have a map work.
+
+Unknown Speaker  10:25  
+Okay, that's why I was curious. Because there's some that we, you know, we pin it, but then we want it to say something else, like something that's why I was curious. If you could, like, not quite what I mean, but and we'll,
+
+Unknown Speaker  10:40  
+we're gonna, we're gonna look into how we want to do that.
+
+Unknown Speaker  10:45  
+It's probably going to be a like location, Name field, okay? And maybe we make it optional, you know, you put something in there, or you, if you put nothing in there, then it uses the address. Otherwise it uses whatever you put in there.
+
+Unknown Speaker  11:02  
+That's fine. We thought about that. I didn't think it was the most important for this, because remember, this is them creating internal jobs for them. So that's true. You're not getting money off of it, so screw that
+
+Unknown Speaker  11:15  
+isn't file maker. Yeah, I agree.
+
+Unknown Speaker  11:22  
+And they can absolutely,
+
+Unknown Speaker  11:26  
+you know, search for,
+
+Unknown Speaker  11:33  
+you know, four oaks middle school where my daughter goes to school.
+
+Unknown Speaker  11:37  
+You know, they can search for that. They can search for
+
+Unknown Speaker  11:43  
+a church name, something like that doesn't necessarily have to be an address.
+
+Unknown Speaker  11:49  
+So it's, it's, you know, Google's lookup. So Google maps look up. So it's, it's got places in there. You can search for places, and it'll find them for you.
+
+Unknown Speaker  12:01  
+You can test it some. Again, we're we're still tweaking it a little bit, because this is new for us.
+
+Unknown Speaker  12:09  
+We're tweaking it to make sure it handles
+
+Unknown Speaker  12:12  
+all your all your things that you need.
+
+Unknown Speaker  12:18  
+But that does give you what's going on. You can search for something, or you can pick it on the map.
+
+Unknown Speaker  12:26  
+Nice,
+
+Unknown Speaker  12:27  
+so that also, you know, that makes it easy to, you know, to pick a spot on the interstate where they got to do traffic for some construction or whatever. And yes, there's no darn address there.
+
+Unknown Speaker  12:41  
+Yeah, you just kind of go look at it and figure it out and drop it. We did look at that. And Google Maps, as far as we can tell, doesn't ship it. You can display exit numbers, but not mile marks. Yeah, a lot of times I'll have to, like, look on a dot and then compare it to my Google Maps.
+
+Unknown Speaker  13:05  
+Yeah, sorry, yeah, we do that. That's okay. We're used to that, at least for this iteration again, this is their internal jobs. I don't think there's going to be much of that. As far as I know, their internal jobs are mostly like schools, churches, maybe a funeral here and there, places that should have addresses. Yes, you're right. You're right.
+
+Unknown Speaker  13:30  
+So we have the rest of the form here. So again, once you've gone through whatever you need to do to get your location,
+
+Unknown Speaker  13:38  
+then we're going to
+
+Unknown Speaker  13:41  
+it's traffic by default. Could be security. They can change it. It's got a lot of the same stuff that you have in FileMaker. Is it a one time job? Is it a daily job? If you pick once, then you pick one date from the
+
+Unknown Speaker  13:56  
+from the calendar, if it's daily or weekly, you can pick a range,
+
+Unknown Speaker  14:04  
+and then you pick weekdays, or every day in the range. You give it a time, start time and end time.
+
+Unknown Speaker  14:14  
+He had this at,
+
+Unknown Speaker  14:20  
+yeah, see, he's gonna have to keeps breaking things as he tries to fix things.
+
+Unknown Speaker  14:26  
+This was military time and and working fine, but
+
+Unknown Speaker  14:31  
+now I can't put in 20,
+
+Unknown Speaker  14:35  
+but I'll make sure he gets back to that. I think it has to do with this time zone that I asked him to look into, it was just not displaying correctly.
+
+Unknown Speaker  14:45  
+As far as what the field looked like like. What was going on was working fine, but it just it looked ugly. It didn't look like these other fields.
+
+Unknown Speaker  14:54  
+So it is when you select something. So let me again, put in my address.
+
+Unknown Speaker  15:00  
+Yes, I click on it. We've got a verified address. It automatically looks up the time zone in the background.
+
+Unknown Speaker  15:08  
+It's in here somewhere. I've seen that working. It does it tells me I'm in New York, America, New York Time Zone. And then they can change it manually if they want.
+
+Unknown Speaker  15:22  
+And then again, weekly, like daily, you can pick a range, pick which days of the week you want the job to happen. Give it a start, time in time, all that kind of stuff. Yeah, number of officers needed, two officers, one officer, whatever. And then they can pick their settings, as far as if a agency, vehicle, POV cars needed, plain clothes, your stuff. There, they can put in a name for contact, a phone number, an email, and then notes.
+
+Unknown Speaker  15:59  
+I don't know how the officer is going to see these notes, but they can put in the notes because non billable jobs don't show up on the officer app. So
+
+Unknown Speaker  16:08  
+is, is all of these fields like as they are now?
+
+Unknown Speaker  16:13  
+Are any of them like required for them to create the job, or is it just kind of they can skip anything they want, just what we what I was about to discuss, oh, sorry, I'll let you finish. So a location with it is with a check mark is required. It's going to be required. They have to pick traffic or security. They have to pick all the date stuff, all the time, stuff, number of officers,
+
+Unknown Speaker  16:41  
+everything below number of officers, I have questions now i i, I'm sure they don't require any of these settings.
+
+Unknown Speaker  16:51  
+I did have questions on whether or not we want to require a contact, whether or not we want to require a phone number or an email.
+
+Unknown Speaker  17:00  
+These are internal jobs, so I've I thought, you know, I'll ask if they want to require any of that.
+
+Unknown Speaker  17:07  
+I'll find out. I mean, my initial thought was yes for the contact, but then again,
+
+Unknown Speaker  17:13  
+require, I don't know. I'll find out
+
+Unknown Speaker  17:19  
+if that's if that's a requirement, or if it's just a, you know, yeah, something, because I don't know how,
+
+Unknown Speaker  17:27  
+I don't know how useful it'll be. Again, I don't know how officers are going to see this, since non billable jobs aren't shown on the officer app. So,
+
+Unknown Speaker  17:37  
+so, you
+
+Unknown Speaker  17:41  
+know, they're, they're they're gonna have to tell them some other way anyway,
+
+Unknown Speaker  17:45  
+yep, okay, I'll find that out, and I'll email you, and then we want to know
+
+Unknown Speaker  17:52  
+there's not, I didn't know if there was exactly a customer, or if We want some type of customer name,
+
+Unknown Speaker  18:02  
+I think so. I don't know just an open field to put whatever in,
+
+Unknown Speaker  18:08  
+yes, because I would imagine they'd want it somehow
+
+Unknown Speaker  18:13  
+able to at least able to be labeled.
+
+Unknown Speaker  18:18  
+I would think so. I
+
+Unknown Speaker  18:29  
+I'll get back to you on that one too. I would think so, but I'll double check I
+
+Unknown Speaker  18:50  
+um,
+
+Unknown Speaker  18:51  
+so if we do add a
+
+Unknown Speaker  18:55  
+like, location, Name field,
+
+Unknown Speaker  19:00  
+what do we want displayed here on the list view
+
+Unknown Speaker  19:06  
+like which which one like
+
+Unknown Speaker  19:09  
+address or the location name that they gave it?
+
+Unknown Speaker  19:13  
+You know, for non billable,
+
+Unknown Speaker  19:18  
+I think most likely where they pin it on the map is going to be what they want to appear there. Now I feel differently about when it goes into scheduler and us as schedulers are scheduling our billable jobs. I think that might be different. So we'll come back to that when we get there. Then we'll just,
+
+Unknown Speaker  19:38  
+it's, like you said, like it's they're going to have more of the exact addresses, schools, churches, things like that, whereas we deal with a lot of different things. So, yeah, I don't know if they'll really be renaming that one as much as we would all right, so I'll, I'll discuss those with him on there. I did.
+
+Unknown Speaker  20:00  
+One more question. So one of the filters and jobs there's like, you can choose, yeah, right there location types where it's like, church, bar, not bar, I don't remember, school, wedding.
+
+Unknown Speaker  20:13  
+So is there a classification that they have to pick when they're creating the job for it to be able to filter it? Yes, right now, only you guys could do that, because that only exists, right? File maker, okay,
+
+Unknown Speaker  20:28  
+I wasn't going to add that into this, but I could, if you'd like. I
+
+Unknown Speaker  20:34  
+don't know how often they would really use the filter, because it is in their town. I'm sure they know, you know what it's for. I was just curious if the filter
+
+Unknown Speaker  20:43  
+area was still going to be there for them. Yeah, no, it goes to
+
+Unknown Speaker  20:50  
+location. Oh, yeah. I know where we put it, yeah, yeah. And mostly that was for your internal reporting. But it also could be for like, like Bonnie had suggested at one point, you know, some departments are like, No, my officers don't work at bars, or my officers don't work weddings. So that allows them to, you know, kind of filter those
+
+Unknown Speaker  21:19  
+and do what they need to do with them. Oddly enough, though, I will say I don't think it shows anywhere. I don't think it does either, so we definitely need to do something about that
+
+Unknown Speaker  21:32  
+somewhere.
+
+Unknown Speaker  21:36  
+I also have
+
+Unknown Speaker  21:41  
+Christina working on
+
+Unknown Speaker  21:48  
+making sure, like, this is a non billable job, so the release Job button shouldn't be there, and this other agency shouldn't be there, because it's no there's nobody assigned to this job. There's no officer assigned to this job, so
+
+Unknown Speaker  22:04  
+she's, she's working on the hide cases on these two objects here, okay,
+
+Unknown Speaker  22:11  
+I believe we have them working properly here, because, like, there is no release job for that, and there is no release job for that because somebody's already on there. So I think it's working on this screen, but it's not working on the detail. That's where Jake left off, and I have somebody else looking at that. Okay? So I guess I don't mind if you guys want to start playing around with like the mapping and such, just know that changes are still happening.
+
+Unknown Speaker  22:41  
+As far as testing is concerned, truthfully, I'm more interested in you guys testing out the AWS server and us getting that process rolling, rolled through and completed.
+
+Unknown Speaker  22:57  
+I'd like to get you guys production up on that AWS server, I want to say ASAP, but then I have to add on that the quickest it could happen is the probably the end of next week. Jake and Steve are on vacation starting tomorrow. They are both back Tuesday or Wednesday next week,
+
+Unknown Speaker  23:22  
+Jake's sister is getting married in Florida, and of course, Steve is Jake's father, so it's his daughter that's getting married.
+
+Unknown Speaker  23:30  
+So they are both going to Florida for a wedding.
+
+Unknown Speaker  23:37  
+And I definitely would want at least one of those two around, if not both, when we actually make the real switch. But I would like to do that as soon as they get back. And in order for that to happen, I need you guys testing and signing off on being able to use the system there and on AWS.
+
+Unknown Speaker  24:02  
+Have you guys, has anybody looked at it, connected to it? No, yeah, actually, I was going to check in with you on that, Brian, so last week, I sent an email that roped you in and Tom together in regards to whatever pieces he had to do on that server. I don't know if anything was done, or did he reach out to you? Or where was the status of that? That's why he left off. I started getting he wrote in Jasmine, and I started getting emails from her, okay, okay. She was on vacation, maybe, oh, okay, just
+
+Unknown Speaker  24:36  
+the last one. It was earlier today, and she was like, listing these security softwares and stuff that she wanted to install and testing that she wanted to do okay. And I truthfully looked at it and smacked my hand on my forehead. I literally listed out
+
+Unknown Speaker  24:59  
+three.
+
+Unknown Speaker  25:00  
+Three of the four that she mentioned as like, stuff that does not play well with file maker. Oh, no, of course, of course, literally listed these three and said those do not play with file maker. Tom.
+
+Unknown Speaker  25:15  
+And he said, I understand.
+
+Unknown Speaker  25:18  
+Okay, so we'll see how that how that works out, but apparently she's going to start with that, and she has reached out to Steve and Jake about getting meetings with them when they get back next week to
+
+Unknown Speaker  25:36  
+help again, show her the process that they use to create all of these server instances and everything so that she can support it. Okay? So, yeah, she's still taking her her crash course in AWS.
+
+Unknown Speaker  25:53  
+Got it? Okay? So I did see those emails go through. They will be meeting when they get back on that stuff. But yeah, she's, I'm guessing she's moving forward.
+
+Unknown Speaker  26:08  
+Okay, great. So at least we have some kind of update on our end so we can anticipate when we can start actually moving things over there and as well as actually start testing and logging in through that, through that side. Yeah, the only other thing I would like, I would like you guys to do some testing before she starts doing that stuff, so you have a benchmark to say, okay, it didn't break everything, but wow, crap is a lot slower.
+
+Unknown Speaker  26:35  
+Yeah, I think that's great idea. So we can test and see how, how much of a difference there really is, yeah, when once, once they put all of their extra meat on there, let's, let's see what the difference is. I like you guys to be able to see that and feel that truthfully.
+
+Unknown Speaker  26:54  
+So, yeah, any, any testing you could do would be great. I just, I want to make sure it works. You guys can connect. It's not unbearably slow. I don't know why it would be. It's fast for me and I'm on the other side of the country, I noticed that it's faster than me going to your office.
+
+Unknown Speaker  27:11  
+So that's a good thing. It might be slower again for you guys, because it's not in your office. So it is further for you,
+
+Unknown Speaker  27:19  
+but it should be, it should be fast enough. And I'd like to know some actual numbers and your actual feelings on it, if you connect and connect and mess around with it some, yeah, absolutely. What we can do that this week, Ash and I can jump on there, messing around with it, and see what's going on with it. Great. I also, I don't know if Ashley noticed, let's go to my
+
+Unknown Speaker  27:49  
+officer account.
+
+Unknown Speaker  27:53  
+Oh, I did notice I was talking to
+
+Unknown Speaker  27:56  
+so these are the native app is going to be using phone numbers, not email addresses. They do have the SMS texting stuff. It's not completely run, tested and running perfectly, but it is running. We are getting text messages from AWS.
+
+Unknown Speaker  28:16  
+So that's that's great. That's that part of the process is running now.
+
+Unknown Speaker  28:23  
+I did change the creation process. That's not that so now you have three to choose from for now, and of course, we'll probably add to those and take this one away. Eventually,
+
+Unknown Speaker  28:38  
+you just pick your type, and then it knows what to do. The
+
+Unknown Speaker  28:43  
+invite status. I'm not sure what that's going to look like as far as the native apps concerned, because
+
+Unknown Speaker  28:51  
+there it's not,
+
+Unknown Speaker  28:54  
+it's not validating your email address, and you clicking on that link, and it's, you know, the first time that type of stuff isn't happening. It's just sending to that phone number, and the person who can download it, who downloads it and has that phone number, can log in period. So I'm not quite sure what that status is going to look like
+
+Unknown Speaker  29:16  
+moving forward,
+
+Unknown Speaker  29:18  
+we did also
+
+Unknown Speaker  29:20  
+maybe I brought this up last week. I think we want to wait, but, you know, wait for maybe a version two or version 1.2 kind of thing. But we did want to throw out there, maybe you'd want a way, if the person downloads the app for them to request an account through the app. I don't know if that just emails you guys something maybe, but since you have to create the accounts in FileMaker
+
+Unknown Speaker  29:53  
+right now, they don't have a way. You know, in version one, they're not going to have a way to request an account other than calling.
+
+Unknown Speaker  30:00  
+You, I guess, you know, but through the app itself, they have no way to request an account.
+
+Unknown Speaker  30:09  
+I think that'd be a good idea, actually. So they can download the app, and then from there, they can request, you know, registration, yeah, aspects, yeah. I think that's a good that's a good do all the registration stuff,
+
+Unknown Speaker  30:21  
+yeah,
+
+Unknown Speaker  30:22  
+that's going to be v1 because I do not want to add anything to the scope. We're already really tight, but we do have that on a short list for, you know, for an upcoming update, yeah.
+
+Unknown Speaker  30:39  
+And that, I believe
+
+Unknown Speaker  30:43  
+it's pretty much that i i put on Trello, you know, some of the other fixes I had done and such after last week's meeting,
+
+Unknown Speaker  30:53  
+but I did want to show that stuff probably not too long after they get back. So I would say not next week, but the week after. Maybe I'll ask Jake if it's time for another demo for you guys, okay,
+
+Unknown Speaker  31:12  
+so that you're getting more than just a verbal update, but I can say the vast majority of what's happening right now is not, is not anything that you can really see. You know, it's it's all in the background. We're getting the API working, and the information and the data moving from one place to another. It's not glamorous, but it definitely needs to be done, and it needs to be done, right? So that's more what we're working on, but I'll see if, the week after next, if he's ready for another demo.
+
+Unknown Speaker  31:44  
+I do have that test flight installed on my phone so I can, you know, download and mess with the app, test it out some that's how I know what's going on on it. And it's not pulling a lot of live data yet. It's, it's still mostly just UI and fake data that was, that's kind of hand entered in there, but you can see how it works.
+
+Unknown Speaker  32:09  
+Um, I did pass to Steve the Google Play credentials. I'm sorry, Joe. I just that. That email says Apple developer credential. Yeah, that's why I it didn't occur to me that,
+
+Unknown Speaker  32:24  
+no, you're fine. I was gonna check on that. I was gonna make sure you guys are good to go with that. I know, like I said, if you guys get a verification code, which obviously you will, I have that set right now to Bonnie's phone. And so what I'm gonna do is I'll be that. I'll be that middle man. So need be I can either text one of you guys to get it over there relatively quickly. That's probably the best route, honestly, okay, but at least you guys have it. So we I went through that verification process last week. Everything is good. Apple, luckily for us, we already had that account, so that one was good, but our Google it seemed that it expired, so I had to go through the whole process, but we should be good now. Okay, yep, that was needed. And then the other thing that Steve wanted me to bring back is to your attention is
+
+Unknown Speaker  33:15  
+if you guys would be interested in a contract with AWS. So if you sign a
+
+Unknown Speaker  33:26  
+contract, I believe they're three and five year they they have a one year also. But it's not the best.
+
+Unknown Speaker  33:36  
+It definitely will cut the cost of your servers in half. Oh, wow, maybe a little bit more. And the reasoning behind it is so you're charged by the hour that the server is up and running, and you can cut it off and cut it back on when you need it. And for some use cases and some people, that's preferable, you know, they just cut it on and use it when they need it. We do that in case power goes down at our office or something. We just turn on all the servers we have up on AWS, and we only pay when it's up. Since you guys are going to be up all the time anyway, the contract pretty much just says, you know, I'm going to pay for the server to be up for a year, three years, whatever
+
+Unknown Speaker  34:24  
+you agree it's going to be up. You don't have to pay upfront, you know, that whole charge, that whole three years, or whatever. But it does cut the cost in half
+
+Unknown Speaker  34:34  
+if you're willing to, say, sign a contract saying this is going to be up for, you know, every day, all day for X number of years. Sure, sure. That makes sense. Yeah, Brian, if you can shoot that over to us, we can review it. That'd be, that'd be of some interest, no doubt about it. All right, yeah, I'll see if I can get the numbers from Steve. He kind of told them to me, but I I should get it in some type of writing.
+
+Unknown Speaker  35:00  
+But it was, it was literally half, a little bit under half for the longer, um,
+
+Unknown Speaker  35:06  
+for the longer contracts. So, okay, leaving useful, and that goes for everything. So not just your server instance, but the s3 that's, you know, holding your backups and holding all the photos and documents, the lambda functions which are used to do certain processing things,
+
+Unknown Speaker  35:29  
+all of that stuff, the price gets cut dramatically if you sign a contract.
+
+Unknown Speaker  35:35  
+Okay, great, yeah, you could shoot that over. We'll definitely review it. Great
+
+Unknown Speaker  35:41  
+that that is what I have today.
+
+Unknown Speaker  35:45  
+Unless you got some questions or something else you need an update on, I will pass it to miss Ashley.
+
+Unknown Speaker  35:56  
+All right, Ash, floor is yours. I think it looks great, though, at least the agency side,
+
+Unknown Speaker  36:01  
+great. I'm glad you like, yeah, we're, we're pretty proud of the mapping stuff that's that, that's damn ass.
+
+Unknown Speaker  36:13  
+All right, I'm going to start with the agency quickly.
+
+Unknown Speaker  36:21  
+Okay, so, like I was trying to just test some of the reports for what did I do? I did
+
+Unknown Speaker  36:31  
+the third through the ninth. That's what I did
+
+Unknown Speaker  36:36  
+do.
+
+Unknown Speaker  36:46  
+That's what I'm sorry.
+
+Unknown Speaker  36:55  
+This is the officer over hours report. First of all, I was wondering. So I requested this, and it took like 15 minutes to get which is totally fine. I still got it. Everything's good, but I was curious, is there a way that maybe at the top, or somewhere it can tell me the parameters that I picked, like
+
+Unknown Speaker  37:15  
+it does say officer over hours, but maybe the date range that I picked, or or anything like that? Would that be that be hard. It does. It's right there in the file name, 2025, 8383,
+
+Unknown Speaker  37:29  
+20 589, so
+
+Unknown Speaker  37:33  
+the eighth month, third day, okay,
+
+Unknown Speaker  37:39  
+you do it in military time style, because, number one, cops like to think they're the military. And number two, it sorts correctly. If you put month first and year last, then it doesn't sort correctly when you have a bunch of files. Interesting, okay,
+
+Unknown Speaker  37:57  
+I see it now. Did not see it earlier. The numbers at the end are pretty random. The
+
+Unknown Speaker  38:05  
+other thing about this one in particular is it only pulled Monique Duran, but like, I should be on there 100%
+
+Unknown Speaker  38:15  
+for sure.
+
+Unknown Speaker  38:17  
+Yoel Rich is another officer that should have been on this list, so I'm not sure if there's an issue.
+
+Unknown Speaker  38:24  
+Well, let's look at let's look at you. Yeah, here I'll show you.
+
+Unknown Speaker  38:34  
+I know you like to put yourself on a bunch of test jobs and then cancel them. This does not count cancel jobs. I promise it's not that of mine were canceled for that week. So fourth, fifth, I think it's the only one. But even then, 163
+
+Unknown Speaker  38:50  
+hours forgot to clock out. But either way, that should have triggered it. I think, I think
+
+Unknown Speaker  38:56  
+I can show you. Let's go to
+
+Unknown Speaker  38:59  
+Glendale agency record
+
+Unknown Speaker  39:05  
+Max hours is 10 a week. I just want, yes, oh, I get what you're saying. Yeah,
+
+Unknown Speaker  39:12  
+I said it at 10. It's that's not real. Just so, you know. But like, even your rich, I
+
+Unknown Speaker  39:26  
+so we worked the fifth, sixth, seventh, 812, 1212,
+
+Unknown Speaker  39:31  
+so I just, I'm not sure,
+
+Unknown Speaker  39:35  
+and I ran it twice for the same date range,
+
+Unknown Speaker  39:39  
+and I got the same results just her, which, I mean, hers is, right, it is. She didn't work 17.25 hours with two jobs. But I was just wondering why the other names didn't show up.
+
+Unknown Speaker  39:52  
+I don't know. Okay, do.
+
+Unknown Speaker  40:02  
+The other thing I kind of noticed, or maybe I just am not seeing it correctly, but I was trying to do the officer over hours.
+
+Unknown Speaker  40:12  
+And
+
+Unknown Speaker  40:14  
+is there a way, because, like, I don't see the rhyme or reason as to why these are in here. Well, you're saying order wise, huh?
+
+Unknown Speaker  40:24  
+So I can't just, like, scroll through and, I mean, you could, but if they wanted to, is there a way for them to have it alphabetized? Or no, we, we maybe could. I'm sure we could.
+
+Unknown Speaker  40:38  
+We can show the names. We can alphabetize them. Start to type a name.
+
+Unknown Speaker  40:46  
+Yeah, it gets you there really fast. Yeah, can you Yeah, I just want to see if, once you start to type a letter, are they sorted? No, they're not. No. I mean, I Well, now what else? Yeah, so there's technically an SI there and there something, yeah, yeah. Well, it's looking in both first and last names. Yeah. So
+
+Unknown Speaker  41:12  
+the sorting may be interesting, right? Okay, of course. What do we want to sort by? Because they're showing up in that list, first name and then last name.
+
+Unknown Speaker  41:24  
+So we could sort by last name, but I'm a
+
+Unknown Speaker  41:28  
+it might still look weird, since the first name is actually first, you know, yeah, here last name is first, yeah.
+
+Unknown Speaker  41:37  
+So we want that list to be last name, first, first name, last and sorted by last name,
+
+Unknown Speaker  41:46  
+I think so. It does make sense about the typing. It just,
+
+Unknown Speaker  41:51  
+you know, just trying to make it more user friendly for everyone. I get what you're saying, though it does. It does make sense.
+
+Unknown Speaker  42:01  
+I let me
+
+Unknown Speaker  42:04  
+know when you're
+
+Unknown Speaker  42:19  
+ready
+
+Unknown Speaker  42:22  
+be add last name, first.
+
+Unknown Speaker  42:39  
+Okay, okay, just real quickly on the app. I'm not going to spend a ton of time on it, just for the sake of time, but that Na, you know the it was giving me like jobs from the past. Yesterday, I had an officer who it was probably the longest I've ever seen it. Usually it auto cracks itself pretty, pretty quickly, but he had to log out twice, apparently, to get it to go away. Now I wasn't there, so I couldn't tell you, but he said he did. So I just wanted to let you know so it shows in a on the Job List, my jobs. Where does it show it again? It was a job location, I believe, because I it tells you a day, a date, and then it
+
+Unknown Speaker  43:24  
+okay. But is that on the Job List or the my jobs, active jobs? It's on the dashboard. Yeah, it's on the regular. The home, yeah, yeah, okay, yeah, yeah, location, yes. And I know we figured out why. I just wanted to let you know it was still
+
+Unknown Speaker  43:42  
+happening. And this one happened for a long time for him. I don't know why GPS, we actually already talked about that won't do that this.
+
+Unknown Speaker  43:52  
+I don't know Jake
+
+Unknown Speaker  43:55  
+has got a chance to look into this era icon,
+
+Unknown Speaker  44:00  
+but it's still, I had somebody look into that, and he
+
+Unknown Speaker  44:06  
+may have fixed it, but that is on dev that has not been pushed. Okay, I can still test it, though, because it pops up for me a lot on production. So I'll, I'll look at Dev,
+
+Unknown Speaker  44:20  
+do. Um,
+
+Unknown Speaker  44:24  
+do you still want me to I mean, the the Excel reports are still off, but not by a lot, honestly, miles and reports, Yeah, I bet that's on my list. I haven't gotten around to it. No worries.
+
+Unknown Speaker  44:41  
+Let's see
+
+Unknown Speaker  44:44  
+one thing I found that used to work, but I know it used to work because I've tested it, but that mass cancelation I just
+
+Unknown Speaker  44:54  
+want to show you,
+
+Unknown Speaker  44:57  
+from the recurring job level. Yes.
+
+Unknown Speaker  45:01  
+Um, so I put in this just to for the sake of showing so we went through.
+
+Unknown Speaker  45:22  
+Okay, if this works, it does say scratch. I don't know if you saw that. I don't know if that's normal, but it looks like it's working, and then I'll show you on the dashboard, because it does look like it has the check marks, right? Like,
+
+Unknown Speaker  45:37  
+like it's sent, but we're not getting those confirmation emails to info. But then, when I also went, let me apply filters really quick
+
+Unknown Speaker  45:48  
+to like the correspondence, because I was like, Okay, well, maybe it sent it to them, but didn't send it to us, and it didn't show up there either. So, yeah,
+
+Unknown Speaker  46:08  
+you do okay,
+
+Unknown Speaker  46:10  
+but it looks like it did. So I had to go through we had one earlier, that was real one, and I had to, like, go into each one and, you know, unclick and resend it. Yeah. So I just wanted to,
+
+Unknown Speaker  46:25  
+Oh, good. I
+
+Unknown Speaker  46:31  
+don't know.
+
+Unknown Speaker  46:37  
+I know it used to work, so it's just not right now, so see it looks like it did confirm, but I can show you my just
+
+Unknown Speaker  46:46  
+doesn't show
+
+Unknown Speaker  46:52  
+us that lying to me will help you in no way, Ashley, so just believe you. All right, all right. All right. All right. Anyway, so that's not working right now. The other thing, oh, let me know when I can go. I've noted, okay,
+
+Unknown Speaker  47:10  
+okay, so you know how you can. And I tested this both ways. So like, if I wanted to go in here, right? And it's I wanted to change it from fake, fake just to something else.
+
+Unknown Speaker  47:23  
+It works, right? I don't have to press refresh. I don't have to do anything. But today,
+
+Unknown Speaker  47:31  
+Marissa was in
+
+Unknown Speaker  47:35  
+Job invoice me.
+
+Unknown Speaker  47:44  
+So she and I don't see why it would be different,
+
+Unknown Speaker  47:47  
+but for some reason,
+
+Unknown Speaker  47:52  
+the fake one,
+
+Unknown Speaker  48:11  
+this one. So we went in here,
+
+Unknown Speaker  48:16  
+here,
+
+Unknown Speaker  48:21  
+I'll send it to big fake,
+
+Unknown Speaker  48:25  
+yes,
+
+Unknown Speaker  48:30  
+and it didn't it like normally, this would just correct right away, even if I do apply filters, I'll show you
+
+Unknown Speaker  48:39  
+didn't work. The only way I was able to get it to work was by
+
+Unknown Speaker  48:45  
+clicking this on each day. But if I were to have done it the other way, like just through normal tell site, I would have done it like the normal way, like through dashboard. It's it changes immediately. It's just when you do it through this page. Does that make sense? That might be that's what that Refresh All button is for. Oh, okay, well, I'll show you that too, because I tried that also. Where's my
+
+Unknown Speaker  49:12  
+There you go. Let me show you. Get that too,
+
+Unknown Speaker  49:17  
+but I don't normally have to hit that, like if I change it to fake, fake refresh all
+
+Unknown Speaker  49:22  
+see it doesn't change it.
+
+Unknown Speaker  49:25  
+Apply Filters again and let it
+
+Unknown Speaker  49:29  
+all right. I mean, I get I tried so many different ways because she's like, Did I do it wrong? I was like, No, you didn't see.
+
+Unknown Speaker  49:36  
+Can you click on, yeah. Let me see the detail.
+
+Unknown Speaker  49:44  
+Okay, so I don't think the job location is pushing to the when you change it there. Well, it's if I go through the job reports page, but like, if I wanted to go in through, let's find this one.
+
+Unknown Speaker  49:58  
+I.
+
+Unknown Speaker  50:11  
+Launch.
+
+Unknown Speaker  50:15  
+So not going to do
+
+Unknown Speaker  50:22  
+it. Pittsburgh, very when I did this earlier, like it changes thematically.
+
+Unknown Speaker  50:28  
+Maybe I shouldn't have fixed I don't know if I picked one that was I
+
+Unknown Speaker  50:50  
+don't know So many dead boys in the past,
+
+Unknown Speaker  50:55  
+either way I
+
+Unknown Speaker  51:17  
+Okay, well, I don't know either way it Used to, it used to just change like automatically, and I didn't have to go in and do this.
+
+Unknown Speaker  51:29  
+I can.
+
+Unknown Speaker  51:32  
+That's
+
+Unknown Speaker  51:34  
+the Refresh All button should do it. I don't think it should automatically. When you change it necessarily change all of those. I don't think it's coded like that. I thought the Refresh All button was required, but if that's not doing it, then that it should. I can look at that Refresh All button if we do want it to
+
+Unknown Speaker  51:56  
+automatically. When you change the customer on the location, it changes it in all the related jobs from today forward, we can, you know which is what the Refresh All button does. We could from today forward. But what about in the past? What about a past job? Because, like, that was a situation for with Marissa was because someone put it under Aguilar craft or Aguilar construction. And it was supposed to be Aguilar traffic, so she went in to change it, because we can't bill it to Aguilar construction, and she doesn't do the invoicing. Everything she's doing is in the past. Yeah, I'm i. The reason I, I chose the today, forward. Thing is because if something already is invoiced, you don't want to change it because it's at the same location.
+
+Unknown Speaker  52:52  
+Okay? So how would she get around that? Or does she just have to? It's maybe that's why it changed automatically. For me was because I was not doing a post job I was doing.
+
+Unknown Speaker  53:06  
+Yeah, today, forward, future I might have. What
+
+Unknown Speaker  53:13  
+should I tell her to do? That's okay.
+
+Unknown Speaker  53:17  
+I mean, I could just do all the related jobs to that job location. We can, we can do that. I, like I said, I'm just afraid of
+
+Unknown Speaker  53:27  
+of it changing something that's, you know, already been invoiced, that's already kind of been archived. This job is done, you know, it's already been invoiced, they've already been paid.
+
+Unknown Speaker  53:39  
+And you got to think more than just customers. Same with if you change the agency,
+
+Unknown Speaker  53:47  
+you know and how that pushes down,
+
+Unknown Speaker  53:50  
+or, God forbid, you change the address at some point.
+
+Unknown Speaker  53:57  
+Are these all things that you want to change in back jobs once you've already done them,
+
+Unknown Speaker  54:05  
+and once you've already invoiced them and such, because you get and you got to think through the
+
+Unknown Speaker  54:11  
+Way agencies going to see it and the way customers are going to see it at some point if, if Aguilar Construction has already been invoiced and paid for some job from a year ago. And you come in and change it to Aguilar traffic, and it goes and changes that, and then they go look at their history and the customer portal. Once we get that up, it's going to disappear. You know, that's, yeah, I get, I get what you're saying, if it's from, if it's from this point forward, though, and let's say that there are like, imagine that there's the sixth and the seventh, but then there was also ones from 2024,
+
+Unknown Speaker  54:52  
+and you change it from today forward with the ones that aren't today, the ones that are in the past, with those.
+
+Unknown Speaker  55:00  
+They'll say the old customer name, correct, yes. But if I searched it by address or Po,
+
+Unknown Speaker  55:09  
+it would say the new one.
+
+Unknown Speaker  55:12  
+Not necessarily sticky too fairly, because if you search by address, yes, it would say the new one. But the, you know, all the reporting and everything and dashboards would show the old ones,
+
+Unknown Speaker  55:27  
+the
+
+Unknown Speaker  55:28  
+and by PO number. There's no more that we're doing. The PO number at the job location doesn't need to exist. We've got it there now, but we're going to be removing that the PO number is at the reoccurring job level moving forward, so
+
+Unknown Speaker  55:46  
+that would show the customer name of whatever it was. You know, when, when the job happened. If you searched by PO number,
+
+Unknown Speaker  55:56  
+it's, it's sticky. I agree it's sticky.
+
+Unknown Speaker  56:01  
+Yeah. And the problem was, you know, like it shouldn't. It should have never been Aguilar
+
+Unknown Speaker  56:07  
+construction to begin with. The scheduler who put it in put it in incorrectly.
+
+Unknown Speaker  56:12  
+And thankfully, it was, yeah, it was only affecting, literally,
+
+Unknown Speaker  56:18  
+you know, two, two reoccurring which were both wrong.
+
+Unknown Speaker  56:23  
+Just trying to think, I guess I'm gonna, I'll ask her how often just do that. I could definitely see, like, if, if that person added on to the wrong one and us changing it, how that would affect it. I could see that,
+
+Unknown Speaker  56:39  
+dang it.
+
+Unknown Speaker  56:44  
+Because
+
+Unknown Speaker  56:46  
+it does work. Because if I went in on the six, and when I hit it here, it did update both places. So maybe I, for the time being, just have her,
+
+Unknown Speaker  57:01  
+because hers are always going to be passed. But if she just has to go and individually refresh each job assignment detail, would that work? It should, yeah, I don't think that that refresh doesn't care about date.
+
+Unknown Speaker  57:18  
+It just goes to the job location and pulls whatever the customer is, or whatever the agency is, okay? Well, I'll at least explain to look for, because I don't have to worry about that type all the date stuff, because it's only refreshing that one job when, when you're refreshing all when you're refreshing multiple jobs, then you have to start thinking about those odder scenarios and what that can to change. Because you're changing in bulk. You're not just changing one, yep.
+
+Unknown Speaker  57:51  
+So I mean, we can again, if you really want. We can just say, okay, all scheduled jobs related to this location. When you change the customer changes it at all of them.
+
+Unknown Speaker  58:03  
+But I can tell you there's definitely scenarios where that's going to be a bad choice. Yeah,
+
+Unknown Speaker  58:11  
+I'm trying to think of a
+
+Unknown Speaker  58:15  
+way to do this, but tell you the way to do it. Don't make any mistakes me, but think I know that would be great.
+
+Unknown Speaker  58:28  
+Okay, I will
+
+Unknown Speaker  58:30  
+least explain why it didn't work so we know,
+
+Unknown Speaker  58:35  
+okay.
+
+Unknown Speaker  58:36  
+Well, thank you, and I will
+
+Unknown Speaker  58:40  
+circle back around on if it wants to be anything other than from today forward, because, I bet should. That is why it
+
+Unknown Speaker  58:49  
+didn't do it automatically, and the other one did. So
+
+Unknown Speaker  58:55  
+where's my
+
+Unknown Speaker  58:57  
+agenda? See
+
+Unknown Speaker  59:00  
+if there's anything else on here that I was really needed.
+
+Unknown Speaker  59:12  
+I do have a quick question. So I was going through duplicates, and I kind of went like, you know, I did the search where I was looking for, you know, the same names,
+
+Unknown Speaker  59:27  
+and I got a bunch of lists, and I wrote them all down. And I thought, Okay, that's good. I got it. Then I found one when I was putting in an actual job, and I found out that, and you're going to be like, Oh, let me go to do it a different one, sorry.
+
+Unknown Speaker  59:48  
+Okay, I'm like, Wait, there's two of them. Those didn't show up on my duplicate when I was going through the first time. And I found out why after a while, one of them has a space. Yeah.
+
+Unknown Speaker  1:00:00  
+Yes, do spaces have to matter at the end, or is there a way to I don't get just trying to think because otherwise happening for duplicates. It's exact duplicates. Yeah, oh, I was like, Darn it. So there's so many, one, so many more than I was aware of just because of that silly little space at the end, which you can't see until you click inside. But
+
+Unknown Speaker  1:00:26  
+like for this one, there's obviously no PD on this one, but it has jobs on it, no contacts, but jobs. The other one has different jobs
+
+Unknown Speaker  1:00:39  
+and all. Yeah. So, I mean, one of the things we had thought about since it's there's not, like an easy way on the new system to merge these two together that I know of, anyways,
+
+Unknown Speaker  1:00:53  
+was, you know, renaming them, kind of not renaming them, but changing the company name. But they are almost all, well,
+
+Unknown Speaker  1:01:01  
+there's a mix between past and future, so that kind of makes that harder. What are your thoughts on, on that?
+
+Unknown Speaker  1:01:12  
+There's a quite a few of them that are like, just a complicated array of there's just a lot of information on both. So I can't just easily, you know, delete it or reschedule it. This is a great job for a data analyst or,
+
+Unknown Speaker  1:01:29  
+well, or maybe I'll get, um,
+
+Unknown Speaker  1:01:35  
+I mean, I can,
+
+Unknown Speaker  1:01:37  
+I can do stuff in the background.
+
+Unknown Speaker  1:01:40  
+I mean, it's, it's not going to be, it's not as important right now, but once we get that customer one, you know, up and rolling, I could see that being an issue.
+
+Unknown Speaker  1:01:51  
+I said in the background, I can just,
+
+Unknown Speaker  1:01:56  
+I can just merge the two. Oh, you can, yes. The thing is,
+
+Unknown Speaker  1:02:03  
+if the same job or the same contact exists on both then they're going to appear to be doubled. Because basically I Jake everything from from one of them and move them to the first one.
+
+Unknown Speaker  1:02:20  
+I want to say that. I want to say that at least in this one, that wouldn't be the case
+
+Unknown Speaker  1:02:29  
+only because when you're, you know, creating a job, you have to pick this, think safety or the other one.
+
+Unknown Speaker  1:02:38  
+But the contact is probably where. Well, the the one, not this one, this one has zero contacts. Like when they were creating the job, they must have pulled it from the other one, yeah, when they were searching, because there's no contacts attached to this one. So this one might be an easy one, but there's some QB ID, which means it's not the one that's attached to QuickBooks, which means this one exactly.
+
+Unknown Speaker  1:03:02  
+This one doesn't exist as far as your bookkeeping is concerned. So
+
+Unknown Speaker  1:03:08  
+I don't know how you
+
+Unknown Speaker  1:03:11  
+invoice or build for any of the jobs associated with this one. I don't know exactly how they do that either, but there's a few instincts, a few customers that have that same issue. I
+
+Unknown Speaker  1:03:23  
+don't know what they do or how they do that,
+
+Unknown Speaker  1:03:26  
+but this one AJP, it's literally a duplicate. So same jobs, same context, same everything, as far as I can tell. So I don't know how that even happened.
+
+Unknown Speaker  1:03:40  
+Does one of them have a QB and the other one does not? No, they both have the same qB. I'm just, I didn't want to delete anything, because I don't want to screw something up.
+
+Unknown Speaker  1:03:50  
+They even have the same customer ID. Like, I don't know, it just seemed, this one seemed weird, the same customer ID, yeah. Like, it's, literally, it's a, like, an exact duplex that's supposed to be a unique number, yes, and it's, it's exactly the same. As far as I can tell, you probably want to delete one of those. Okay, I just didn't want to. I mean it. There's so many jobs. I was like, I'm gonna wait and see what he recommends before I go deleting
+
+Unknown Speaker  1:04:18  
+one of this size. I would send that to me and have me deleted in the background, not
+
+Unknown Speaker  1:04:27  
+I want, yeah,
+
+Unknown Speaker  1:04:29  
+yeah. Okay, so I was just curious about the This one's another bad one.
+
+Unknown Speaker  1:04:36  
+Okay,
+
+Unknown Speaker  1:04:38  
+so I'll just go through them one by one, because a lot of them have just a single space at the end, so they weren't coming up on any of my reports. Boo Boo, I know. Um, okay, well, the other stuff that should be, and that's, truthfully, that's partially a training thing. So especially.
+
+Unknown Speaker  1:05:00  
+In your old system, you you couldn't have the same customer name on two customers. So if they put in the customer name and it would say, and you can't do this because this name already exists, and that's why they put a space there to make it different. Instead of finding a darn correct customer.
+
+Unknown Speaker  1:05:22  
+Your users were putting a space or something at the end to differentiate the name, to make sure it wasn't unique, instead of going and finding the original customer to do whatever they needed to do, to like they should have been.
+
+Unknown Speaker  1:05:36  
+I can guarantee you that's what was going on. That's fine.
+
+Unknown Speaker  1:05:42  
+That's partially a training thing to move forward with, like, come on, people, it's faces matter. Okay. Well, I will. I can send you a few. I have a whole list, but I've recently realized that my list is just a fraction because of spaces,
+
+Unknown Speaker  1:06:05  
+okay? And the rest of the stuff is not gonna,
+
+Unknown Speaker  1:06:10  
+you know, be too bad if I wait another week, it's not stressing, okay? So the availability list, I did fix the, oh, I saw that. Fine. Yes. Now as for the you know, the names disappearing, as you would say, they're not disappearing. You just have 90% of the records in your in availability don't have a name. So when, when the officer doesn't have a name, so when the officer was finding nothing because the officer find wasn't working properly. It just showed all which, when you go back to the beginning, is nothing but
+
+Unknown Speaker  1:06:49  
+was nothing but blank names, most of them didn't have an agency, a week of an officer. Name, nothing, just blank,
+
+Unknown Speaker  1:06:58  
+like from the old system or from the new system. It might have been from the old system. Very well may have been,
+
+Unknown Speaker  1:07:07  
+because I it didn't have a name, like in in here.
+
+Unknown Speaker  1:07:13  
+No, it's in the availability record. So do you see this? Yeah, I don't even know how you did that. Don't do that. Oh, I didn't, it's not me, but it does happen. There's two ways that this happens. A, you've had the UI open for a long time, and B, where this was positioned on my screen.
+
+Unknown Speaker  1:07:35  
+It's
+
+Unknown Speaker  1:07:38  
+hard, but it's and I've tested it like a few times, but it never happens right away. So like, if I were to have just opened it, it's it's when it's been sitting and I've been doing other things work wise.
+
+Unknown Speaker  1:07:55  
+But and if the UI is
+
+Unknown Speaker  1:07:59  
+towards this side of my screen.
+
+Unknown Speaker  1:08:02  
+It'll do that, very weird,
+
+Unknown Speaker  1:08:05  
+but I don't know fun for another day, I guess. Yeah,
+
+Unknown Speaker  1:08:10  
+we can look into, at some point, Okey,
+
+Unknown Speaker  1:08:13  
+dokey. That's,
+
+Unknown Speaker  1:08:18  
+that's what Ashley wanted to go over this week, I've got my notes. Mr. Joe, do you have any other questions, thoughts? You know what? I don't think anything on top of my head. Brian, I wait. You know what? Is it possible that you can send Ashley myself the
+
+Unknown Speaker  1:08:34  
+whatever we need to be able to log in the AWS, as far as a link or credentials, anything like that?
+
+Unknown Speaker  1:08:40  
+Yeah, I can send it again. It's just admin, dot blue dispatch.com,
+
+Unknown Speaker  1:08:47  
+okay, so it's admin, okay, yeah, that's what you add with your file maker as one of your favorites in your file maker posts. Okay, and then you log in however you would log in. You know you're it's the same as your local system. Got it?
+
+Unknown Speaker  1:09:05  
+Okay, awesome. Yeah, that was the one thing I think, other than I think we're good to go. Great. Yep, yeah, that one is admin. So far, the DNS addresses for blue dispatch are admin, which is your file maker, server app, which is your
+
+Unknown Speaker  1:09:22  
+officer web app,
+
+Unknown Speaker  1:09:26  
+and then Pro and Dev are going to be the API servers in the background that run the background of the native app. I think that's all we have currently.
+
+Unknown Speaker  1:09:38  
+Okay, perfect.
+
+Unknown Speaker  1:09:42  
+So we probably going to make one for again, once we get the okay and we move your production of FileMaker to that AWS, then the server that is currently your FileMaker server in your office is going to become the dev and we might name.
+
+Unknown Speaker  1:10:00  
+That one like admin, Dev, dot blue dispatch, or something like that, to make sure that there's nothing left. At least as far as stuff we're doing, we don't want anything left on L, E, S, A, z.com,
+
+Unknown Speaker  1:10:14  
+okay,
+
+Unknown Speaker  1:10:18  
+great. I think we're good on our end. All right, sounds great. Everybody, have great day and a great week, and
+
+Unknown Speaker  1:10:27  
+we'll see if we make it a week without having to talk. Awesome. Thanks again, Brian, all right, you have a great one. Guys, you too. Bye, bye.
+
+Transcribed by https://otter.ai

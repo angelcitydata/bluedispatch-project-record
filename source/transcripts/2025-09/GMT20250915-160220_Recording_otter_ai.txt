@@ -1,0 +1,1252 @@
+Unknown Speaker  0:12  
+Okay. I think that's everybody. I don't think we're missing anyone, missing Amanda, but that's
+
+Unknown Speaker  0:19  
+okay.
+
+Unknown Speaker  0:22  
+Yeah. Well, great.
+
+Unknown Speaker  0:25  
+Happy to hear everybody
+
+Unknown Speaker  0:28  
+we we do have some cool stuff to show today, though. It is mostly data movement in the background, more than flashy UI stuff,
+
+Unknown Speaker  0:42  
+but we'll, we'll be able to walk you through what you're seeing pretty easily, I hope, and you'll be able to see that the things are moving along. We've got data attached now. It's actually grabbing it from FileMaker. It's not fake data. And we've had to do a whole lot of other stuff along the way. I do want to
+
+Unknown Speaker  1:06  
+get out there early.
+
+Unknown Speaker  1:09  
+So the SMS process that we're using to log in and we'll eventually be using for any other type of SMS messages you want to send out.
+
+Unknown Speaker  1:19  
+So a couple of the
+
+Unknown Speaker  1:22  
+cell cell phone providers denied that request. It is a, I guess, a, f, what is it? F, C, C, yeah, we're missing an opt in workflow. So I'm currently be able to opt out by law, even if, for these purposes, it's kind of stupid, because if they lock, if they opt out, they can't get into the app, because that's how they're getting their code to get in. So, um, but nevertheless, we have to provide that process, and it has to be on a website, so we need to add that to the website that we had to build for marketing purposes, you know, in order to get the SMS thing going,
+
+Unknown Speaker  2:05  
+so that that is something we have to do. And you'll just, you'll see that as we get into the,
+
+Unknown Speaker  2:11  
+as we get into the demo and the login process, why it's working the way it is is because that SMS thing has not been accepted, and that is why, okay, so that's that's just sending out text messages, right? Yes, okay, so we can also send these out by email too, correct?
+
+Unknown Speaker  2:29  
+Well, these codes. So what happens is, when you try to log in, instead of having a username and password, you're you, you're signing in by your cell phone, and it sends a code to that cell phone number a text.
+
+Unknown Speaker  2:44  
+So that's what we're talking how would they deny it? Why would they deny it if everybody else does it? Oh, because we don't have the
+
+Unknown Speaker  2:50  
+because the Federal law says you have to give them away, to deny to opt out of getting those, of getting SMS messages from you. Period. The ones that we get, or says, If you don't no longer wish to get these messages, yeah, reply, stop, or something like that. Yeah, exactly, exactly, yeah. So, so, by law, it's got to have that for any type of mass SMS project or so, we got to develop that, that little process again, if they do opt out, then they won't be able to get into the app, because that's how they're getting their code. But we have to offer that process. Do we get notification that they opted out? We can and then, if they opt out, and they don't understand that they what they opt out of, how to, how to they get opted back in.
+
+Unknown Speaker  3:44  
+We'll go through that. That's part of the demo. I just, I just wanted to let you know that that's, that's something that is holding us back, you know, from getting this process completely finished, as far as to log in.
+
+Unknown Speaker  3:59  
+So we do need to, we do need to get that. We got to make the process, make a website, or a page on the website, at least, and allow it to talk to the system and opt them out. Joe, is that something you can handle? Yeah, I can work with Jake, and we can get something going on that absolutely, I'm working on getting the parameters for what exactly they're extremely vague on so I'm going to read you exactly what they said to us. This registration requires updates before it can be approved. The following feedback was was provided about your submitted registration. Opt in workflow, missing.
+
+Unknown Speaker  4:42  
+Do so very vague. I am working on figuring out what the parameters are for opt in workflow. You don't know it normally. They're these. This is AWS. These parameters change. So.
+
+Unknown Speaker  5:00  
+Need to fully understand what this is.
+
+Unknown Speaker  5:04  
+If, if one of you knows it and is can provide me with that, then that would be great. Typically, it's just a
+
+Unknown Speaker  5:12  
+for what I've seen before is just like a, you know, if you want to opt in, which is they, that's what they call it opt in. Brian, they don't call it opt out. And I've only ever seen opt out, so that's why this is strange. So it says no opt in workflow URL or image. So provide a compliant opt in process through a live opt in you opt in URL or a URL to hosted opt in image. But they don't explain what compliant opt in process is they just said, they just say, provide a compliant opt in process. So we want to make sure we don't have to submit this three or four times, so I could just do what we've always done and see if it works. But I want to make sure that we are compliant, even though we have been given no information about what compliancy actually means,
+
+Unknown Speaker  6:02  
+yeah, I think it comes down more programmatically. We know what to do, but we got to make sure the wording on the page is correct. Yeah, that's, that's, that's it. It's got a, you know, it's got to meet their, I don't know, their legal standards, their compliance standards for opting in or opting out. So that's something that Jake is looking into, and I can help you look into that if you'd like at any point, Jake. But thank you. Yeah, that that would be good. Wanted to move with that first, and then we'll save any other stuff or after the demo, and I'll
+
+Unknown Speaker  6:38  
+hand it over to Jake to start walking through what we've got to show you today.
+
+Unknown Speaker  6:46  
+Yeah, so, Brian, you want me to start with, like, the API, endpoint thing, the web, the web part, um,
+
+Unknown Speaker  6:55  
+yeah. Where do you want me to start? Let's start with the boring stuff, and then dazzling. Yeah. Well, how much dazzling there will be, but it is worth so, all right, so this is not meant for any officers or anyone else to see. This is just an admin portal for the API, just to kind of refresh everyone. The way that this app works is there is an app that's written for iPhone and Android.
+
+Unknown Speaker  7:20  
+That app communicates to an API layer, which is hosted on a server that les owns, rents from AWS, and then that API layer communicates with file maker. So
+
+Unknown Speaker  7:35  
+because we have an existing web app that we can't we can't go in file maker and start redefining things to work for the native app out of the box, because it would totally interrupt the the web app, the current app experience. And so we didn't want to break any of that, so we built this API layer where we can basically act it's an intermediary between the two buckets of information, the
+
+Unknown Speaker  8:04  
+FileMaker back end and the
+
+Unknown Speaker  8:08  
+and
+
+Unknown Speaker  8:11  
+so that's what this is. And this is behind a firewall, so you have to be on a static IP address to get into it. You can see here I am running a VPN tool that gets me a dedicated IP address. That IP address has been white listed on the server, so it allows me to get in here. So I'm going to go ahead and come in here and put in my phone number,
+
+Unknown Speaker  8:36  
+and I guess to break that down. Sorry, Jake, just to break that down real quick. You don't need this now, but this is going to allow you to do certain administrative functions going forward. And to do that, you're going to need a static IP address that can be whitelisted normally with your normal internet service provider that you've got. You get what's called dynamic IP address, which means it can change whenever.
+
+Unknown Speaker  9:04  
+So we need some process. If you have all the VPN stuff set up already, you should be able to get somebody to Jeff, or maybe someone at ginger sec to get you a VPN that has a static address so that we could white list certain people there at Les to be able to do the administrative functions here. Yep, so I'm going to verify my code here. And then again, this is nothing exciting. You're not looking at anything beautiful, but there's a lot of work that has gone into what this powers
+
+Unknown Speaker  9:40  
+this area here, this production app versions. What this is, is this is a way for us to control the the experience for Apple and for Google when they test our application. And so we will have fake data that's been seeded into the database without them being able to.
+
+Unknown Speaker  10:00  
+To work with the live data that's in your system. This area here will allow us to route them appropriately based on the app version. There's a lot of technical stuff here that I don't need to go into, because you'll all fall asleep, but what this is, is when we go push to Apple and Google to to, you know, actually get on the app store, they will be routed appropriately to the right place in the server, so that they're not tinkering with any of the actual live data. So that that is a huge deal. It's going to be how we're going to be able to get this, hopefully approved as quickly as possible. This next section, this is
+
+Unknown Speaker  10:41  
+when? When Are
+
+Unknown Speaker  10:46  
+we?
+
+Unknown Speaker  10:48  
+Oh, okay,
+
+Unknown Speaker  10:52  
+on the
+
+Unknown Speaker  10:56  
+floor. Do
+
+Unknown Speaker  11:00  
+I love
+
+Unknown Speaker  11:03  
+that all the same room.
+
+Unknown Speaker  11:05  
+Yeah, I heard some of that, but it kind of mumbled together for me. So was there a specific question in there? Just when? Just when does, when can we get that through our when did that all happen?
+
+Unknown Speaker  11:19  
+So talking to Google and Apple, we are looking at
+
+Unknown Speaker  11:28  
+probably the very end of this month, or the first couple of days of October. We're hoping we need to get this SMS process approved and through, because that's how you get onto the app, and we definitely need
+
+Unknown Speaker  11:44  
+AWS server to be your production server. So that process has got to happen. Yeah, we've been waiting for that for what, two months close to so we we need those two things definitely to happen.
+
+Unknown Speaker  11:59  
+We're on track to finish the coding in a week or two, and then that gives you,
+
+Unknown Speaker  12:08  
+you know that that means we would be ready coding wise. But we need those. We need the SMS, and we need AWS to be your production server. So when is that? When is the production server going to be on AWS? That I heard that was tomorrow, but,
+
+Unknown Speaker  12:23  
+yeah, that was the original plan. I still haven't gotten a
+
+Unknown Speaker  12:30  
+complete thumbs up from Ginger SEC that that they approve it. You know that all of their security, all their everything, is in place and they're ready to approve that to be your production server. Have you asked for that?
+
+Unknown Speaker  12:45  
+I'm sure a while ago, I haven't asked, probably since the beginning of last week, last time I had a meeting with Joe and we discussed and and I sent over an email. So yeah, last Tuesday, probably,
+
+Unknown Speaker  12:59  
+and then,
+
+Unknown Speaker  13:02  
+and then we have to plan downtime to do that. That's it'll take some downtime, probably,
+
+Unknown Speaker  13:10  
+probably at least an hour or two of of you being down for us to do that changeover, to get everything moved and get all the DNS pointed to different places. That's a little bit of a process. But those are the last two things. If you guys are planning on doing that Tuesday, what time we plan on doing that at?
+
+Unknown Speaker  13:35  
+I don't knew that was when we did it. I did see an email, I believe it was from you, Bonnie, that just requested that that be done in off hours. Not quite sure what off hours are when you guys are pretty much going 24 hours a day at least. I mean, you guys are up earlier than we are. So, yeah, start at six.
+
+Unknown Speaker  13:56  
+What time like? What time is it there right now it is 1216, yeah, we're three hours ahead, three hours. So for now, for now, in about a month and a half, though, it changes, yeah, it'll change, yeah, yeah, but, but when we start, I mean, we do have 24 hours, but really not a whole lot starts until 6am so like you guys are there at 3am that should give you plenty of time to do it. Am I correct or no? If
+
+Unknown Speaker  14:22  
+we can get started, it well, problem is we also need, we also kind of need Steve, Jake, and he's in Arizona with you guys. He's up really early, though, so 3am no no,
+
+Unknown Speaker  14:36  
+but he's up at, I think, 430 or five. So we could do that. We might be able to do five Arizona time.
+
+Unknown Speaker  14:46  
+In the end, what I've been what I'm waiting for is two approvals, one from Ginger SEC that security wise, they're happy and it's ready to go. And then one from you guys. I'm assuming Ashley is the point person.
+
+Unknown Speaker  15:00  
+That you've tested it, and you know you guys are okay with the speeds and connection and everything. Ashley, where you at on that? Yeah, when it comes down to the testing, specifically everything, all the changes that we made, all or that you made that we've discussed. Brian, those are all great. They worked perfectly. So I'm good, okay,
+
+Unknown Speaker  15:22  
+so I'm waiting on a message from Tom, and we'll find out if he's
+
+Unknown Speaker  15:28  
+okay. Yeah, once, once we have those two approvals, we can plan that and, and if it's, you know, tomorrow or Wednesday, or, you know, whenever we get that approval, and we'll just have to talk with Steve, because he's the, like I said, he's the one in Arizona, so he's the one that will be waking up extra early to try to pull that off. Is there anything that could break in the transfer, or is it just going to be as, like, we're not going to see anything happen? Maybe just it should be, if things go completely correctly. Yes, you shouldn't see, you know, or your users shouldn't see anything different, except there'll be a downtime, but when it comes back up, it should be working the same way, but faster for them.
+
+Unknown Speaker  16:12  
+I don't see a big reason why it should go wrong. We've done plenty of these. I've done it a few times, just, you know, restacking the FileMaker system on there. There's not a lot of room for error on the DNS repointing, which is what Steve will be up to. So I think, I think it's low risk.
+
+Unknown Speaker  16:35  
+Okay, good.
+
+Unknown Speaker  16:36  
+So when we do this, we want to just make sure that Phil and Tom are available also in business something exactly, yeah,
+
+Unknown Speaker  16:44  
+and as long as we'll we'll test beforehand to make sure Steve still has, still has open access to your DNS, because I know before he had to speak with with Brian about, you know, getting a code from a text message or Something like that before, but I think we got around. I think he's been delegated now, so he should be okay unless something's changed. But yeah, it is possible. Yeah, we'll just test to make sure before the day, so we're not running into that when we try to do it. It sounds terrifying, so I should have an answer for you. Okay, cool,
+
+Unknown Speaker  17:20  
+alrighty.
+
+Unknown Speaker  17:21  
+So I think that, I think that in preparation for that, well, we'll talk about, we'll talk on our side for that. Okay,
+
+Unknown Speaker  17:31  
+so the next thing that we had to do, because we've got this web app that there are many officers using already, and web apps and native apps are different. We had to basically sanitize data that was coming into the API to the native app without breaking what was going on for officers currently. And so, just to give you a visualization,
+
+Unknown Speaker  17:55  
+if I go into the job assignment table here, which is somewhere
+
+Unknown Speaker  18:02  
+Java sign,
+
+Unknown Speaker  18:04  
+yeah, okay.
+
+Unknown Speaker  18:06  
+These are all file maker fields.
+
+Unknown Speaker  18:09  
+We have to basically sanitize the data that's coming in from here so that they will work on the web app, and that is this area. So we've named all of the fields that we're using in FileMaker, and we're sanitizing them for the native app. You can see like notes, external becomes notes, underscore external. I know this isn't super fun to look at, but it is extremely important, and it's a good amount, it's a good amount of work. So this, this has ensured that getting live data into the app is not messing with the live data that is serving the current web app. So this was a this was a big deal to keep your users up and running for now,
+
+Unknown Speaker  18:50  
+something I think you guys may want to use
+
+Unknown Speaker  18:54  
+is Officer login history here. So if I go here, I can see we have a bunch of fake people in here that just randomly throughout the day, we have a server side cron job that just logs them in and logs them out so that we're able to kind of test our load and make sure that, you know, we're able to support multiple users at once, and that they're getting the right data and all that stuff. But you can see a lot of me in here. You can actually go in here. I put in the last four digits of my phone number, and you can see when they logged in, whether or not there's that session is currently active. So you can actually see who's logged in at any given time right then, which is, which is going to be great
+
+Unknown Speaker  19:36  
+once you've got, you know, several 100 people on here. The other thing that this lets us do is if for some reason, an officer is unable to receive a text message, you know, with a validation code, you will actually be able to provide them with a validation code here, which will be cool. So if they call in and they're like, I'm just not getting the text message for whatever reason, you'll have a validation code that you can give them.
+
+Unknown Speaker  20:00  
+So this, this should mitigate most login problems here. Does this tell you log in and log out times? Or is it
+
+Unknown Speaker  20:10  
+just, you know what? We have the log out data, but we're not showing it. We could.
+
+Unknown Speaker  20:17  
+I think Ashley, you can
+
+Unknown Speaker  20:19  
+talk about this, talk to this as we were just talking about having that officer here, so to be able to see who's in there, who's not in there, and what's going on. So this is really good,
+
+Unknown Speaker  20:30  
+but we were just talking about that, right? Ash, yes, yes. We were, yeah, that that this is exciting, actually, to see this. Yeah, I had a feeling actually, this would be your favorite page. Yeah. I mean, it's, it's relatively straightforward, you know. And we're not, I'm trying not to, like, use a million hours of your guys's billable time to, like, make all this stuff super duper nice. It's really, just really straightforward data information. So you can see, you know, if somebody were to go in and request a validation code, you would see the code here, and if they don't get a text message, you can be like, Oh, it's 650151,
+
+Unknown Speaker  21:06  
+you know, whatever that's that's how the validation code works. You can also see their current session here, and if they're a fake user, so like, if I reset this, you see all these fake users. So that way you can filter these out and things. So this should be pretty,
+
+Unknown Speaker  21:23  
+pretty useful. The other cool thing,
+
+Unknown Speaker  21:27  
+this side, the left side, searches the database. So it is going, we are storing this in a database on AWS. So this is not touching FileMaker. It's not bloating your file. It's not doing anything like that. We're storing it ourselves. And if I, for example, let's just do 757, because that's Brian. There he is. So, so I just searched the database. I can see two results. This might be two results. This might be 2000 results, but once I get this, I can go, you know,
+
+Unknown Speaker  21:56  
+well, this isn't going to be very helpful because there's only two records, but
+
+Unknown Speaker  22:02  
+you can search the list that you see that you're looking at with this top right. So just just to give you an example of what, what is going on there. The other thing that we're going to have, this isn't live yet, but
+
+Unknown Speaker  22:16  
+we need a place for the API to actually recognize officer accounts, and those are coming from FileMaker, and so we are going to aggregate those accounts into a data layer that's in the API and makes for the it's a faster transfer of data from here to the native app. And what's cool about that is that we'll be able to it'll be a back and forth connection to FileMaker. So you'll be able to go to officers here the users who are officers, you'll be able to see if they've been confirmed if or you know if they've they've registered if they're active. You can switch their status from active to inactive. You can also do all that in FileMaker. But this will get, this will receive all the information. So that's sort of the bucket that we're keeping that in. It doesn't go anywhere right now, but we're working on it. So this is the, this has been the the bulk of what you know, trying to get this app so that we're showing live data is not a small task. And so there's, these are the areas that we have been working on.
+
+Unknown Speaker  23:14  
+Again, did not try to make this flashy at all. It's just standard stuff. So that's been the API layer, and that has enabled us to let me. Let me do this real quick. I'm going to
+
+Unknown Speaker  23:30  
+pull my
+
+Unknown Speaker  23:32  
+actual application up, and it's right here. So this is blue dispatch. This is the process they'll go through to log in. So it's really great. They do not have to keep track of a password. There's no password reset. Everything's tied to their phone number, which also means that you know if they if their phone breaks, and they're using a temporary phone in the meantime that has the same number on it, which is really easy with your carrier. They can just type in their phone number and we get started. So you can see here, I just tapped a number, I put in
+
+Unknown Speaker  24:10  
+the number, and I'm going to press Continue. And because we don't have SMS working, the server is just providing an auto confirmation code. In fact, if I go like this
+
+Unknown Speaker  24:24  
+and
+
+Unknown Speaker  24:28  
+see this.
+
+Unknown Speaker  24:30  
+See this number here, 756583,
+
+Unknown Speaker  24:34  
+same code here. So you can see this user is attempting to log in, and that's their code. So for some reason, when we get the SMS turned on if, for some reason, they're not receiving the code, like, if they, you know, opted out of text messages or whatever,
+
+Unknown Speaker  24:50  
+mistakenly, Ashley, you'll be able to go, oh, yeah, I can see it right here. Your code is 756583,
+
+Unknown Speaker  24:56  
+they would type that in here. So actually, I can show you what that.
+
+Unknown Speaker  25:00  
+Looks like. So this page will look like this. How long is that code this for?
+
+Unknown Speaker  25:05  
+What's that I didn't understand you. How long is that code good for? Um, I think right now we're doing 15 minutes, but we can adjust that. Okay, that's good. Yeah. So what will happen is they'll receive a text, and then they can come in here and type that number, but if they don't receive the text, they call you and they go, I'm not getting the text. And you say, well, your code is 756583,
+
+Unknown Speaker  25:28  
+so they just tap there, 756583,
+
+Unknown Speaker  25:32  
+and when I go to confirm, we are brought to the homepage. And these are real jobs in your dev on your dev server, you can see fake customer. You guys should this should start looking familiar to you, because you've seen fake customer a million times in our testing over the last year or so.
+
+Unknown Speaker  25:51  
+We're getting the right address information. We are able to see latitude and longitude on the map if they are provided to us, which we will talk about here in a minute. Bonnie, I know one thing you wanted us to do was extrapolate the hourly rate and then the total rate. So now they can see it's 75 bucks per hour, $450 total for this job.
+
+Unknown Speaker  26:13  
+And we are able to, let's say, I want to just see stuff that's on Mondays. They would just do that. And now we're seeing only Monday's jobs. This is pulling from this week, basically, right now,
+
+Unknown Speaker  26:29  
+if they were to say, just show me Tuesday,
+
+Unknown Speaker  26:32  
+there's Tuesday, right? So they are able to make, you know, if they want to work Tuesday, Thursdays and maybe a Saturday, they just do that. And now they get their Tuesdays. I don't know if they're Yep, there's a couple Thursdays, and here's a couple Saturdays. And what's really neat is, Brian, if you want to make, oh, this supports pull down to refresh. It's going to feel way more native than what they have right now. So if I've just pulled down on this page, you see that loader pop up. See that guy? It's it happens kind of fast, so you got to be watching.
+
+Unknown Speaker  27:08  
+But that is pulling down to refresh the list. So Brian, I can't, I can't help you. As we planned, I actually have a complete internet outage at my house, I've just called back on my phone.
+
+Unknown Speaker  27:24  
+Oh, no, okay.
+
+Unknown Speaker  27:27  
+Do you want to walk me through the process, maybe, of creating new jobs that should show up here,
+
+Unknown Speaker  27:34  
+or should we just leave it for another time we can, but I figured they'd want to see one get created in FileMaker and actually show up here? Yeah, I could either walk you through it, or Ashley can do it. You just need to make a new job on the AWS server.
+
+Unknown Speaker  27:49  
+Make sure to make it. Make sure to make it either for Maricopa County or make it open to all. Yeah, open to all is the is the key right now.
+
+Unknown Speaker  27:59  
+Let me log
+
+Unknown Speaker  28:01  
+into AWS. It's on the other side.
+
+Unknown Speaker  28:09  
+Sorry, that's okay. Internet went out, and spectrum says they'll have it back in about two hours. Isn't that nice? I
+
+Unknown Speaker  28:17  
+wonder what happened. I don't know. It's not windy or rainy or nothing outside. So,
+
+Unknown Speaker  28:23  
+yeah, Starlink,
+
+Unknown Speaker  28:25  
+yeah, I think I am gonna get a Starlink as a backup. It works really, really well. Yeah, that's what I keep hearing. People are like, no. It's because I was like, Well, how fast could it be? Like, you know, 30 megs or whatever, and they're like, no, no. It's like 100 or over. And that's worth it. Yeah? To me, yeah. I actually have a friend of mine in Canada that works on the oil fields, and he takes his Starlink out to the oil fields in the middle of nowhere in Canada, and he and he plays hockey online, hockey on it. Have you ever seen this, the Starlink satellites? Yes. I mean, not in person, but
+
+Unknown Speaker  29:02  
+it's crazy.
+
+Unknown Speaker  29:04  
+Yeah,
+
+Unknown Speaker  29:06  
+what the heck yeah, we saw I was out. I was on a camping trip back in, I think, 2020
+
+Unknown Speaker  29:13  
+and we were looking up because the stars are obviously amazing. Way out there, we were out past Prescott, and all of a sudden you see this huge, like, band of moving stars. It looks like they're all in a perfect line, and they're all moving at the same speed. And we didn't know what they were, so obviously we're like, oh, great, here we go. You know, it's the aliens are here.
+
+Unknown Speaker  29:41  
+It was just Star League. Yeah, that's pretty cool to see him. Heck, yeah, it was awesome. Yeah, did you want this on certain days or just or did you for this week? That'd be great.
+
+Unknown Speaker  29:55  
+Wait a minute. What? Because I have internet No, no, continue to do what you're doing. But.
+
+Unknown Speaker  30:00  
+Months, you're ready to go to IACP, and we'll be talking to a lot of people all over the country. And
+
+Unknown Speaker  30:07  
+so, you know, when we set this up, obviously, and this is how I think it works, is when you have when, like, if we have a department and Colorado, say, Colorado? PD, I don't know. And so we sign up Colorado. PD, all those Colorado PDS are going to see Colorado, right? And they're not going to see all of Arizona, yeah, yeah, yeah. That's, that's the site. Is part of the search is, as long as we keep sight to mean, basically state,
+
+Unknown Speaker  30:35  
+they won't see another state, but they will see every other job in that state, if, if the job is set to be, you know, out of area, but we won't be able to single it down to their department. Yes, yeah, you will, okay, it'll work the same way that the departments now work. Yeah, we're not changing that. No,
+
+Unknown Speaker  30:59  
+I'm all done. Okay, by the way, I refresh this page and you see the validation code is gone, and now that session is active. You see that. So it tells a story here, which is, which is nice. Anytime data can do that. It's great. So okay, so you have new jobs in there. Do you know what customer you made it for? Yeah, it's a fake, fake ink LLC.
+
+Unknown Speaker  31:22  
+I
+
+Unknown Speaker  31:26  
+me all week
+
+Unknown Speaker  31:29  
+should be all week. Did you set them? Is open to all or out of area? Out of area, yeah, yep, and they're for mayor. Am I Maricopa or Brian? Are you Maricopa? Oh, there's a fake ink. There's one. Oh, sorry. So there's a lot of jobs in there, but there's, there's a job
+
+Unknown Speaker  31:49  
+that's been created. So that's on a Tuesday. So we'll just be like, just show me Tuesdays. And there's fake ink, LLC, there they all are. There's two of them. So, so that's, it's really fast. It's a lot faster than
+
+Unknown Speaker  32:05  
+what they've got. Now, you'll notice that, like when I load it, it's that fast, and it's, yeah, it, you kind of almost miss it, that it's loaded. So pretty cool. It is, it is live. It is working. It is only looking at the dev server right now. So, Ashley, you had to put that in to the AWS server. Once we move everything over, it'll look at the production server. Which is AWS, well, which is, yeah, which is will be AWS, yeah. I'm concerned
+
+Unknown Speaker  32:37  
+about is the amount
+
+Unknown Speaker  32:40  
+of jobs that will be in there versus how many you can see at one time. So I think that the map, I mean, the map's great, but it's it takes up a lot of space. So how many for one week do you think they'll see? Because this only pulls for the current week.
+
+Unknown Speaker  32:59  
+Are you talking we run, you know, 100 jobs a day. So, 100 jobs a day, okay,
+
+Unknown Speaker  33:05  
+you know, that's only, you know, okay, that's a lot of scrolling, and that's, that's what the filters are for, you know, yeah, exactly, yeah. That's, they're able to go just show me security or, you know, like, here's security. There's two security jobs, they can narrow it
+
+Unknown Speaker  33:24  
+down by area.
+
+Unknown Speaker  33:26  
+We don't have a concept of area in the system, but Brian, we've talked about that before. I don't know how we're going to do that, but if we have a concept of area, I can filter by it. Yeah, I think the what we'll do first, maybe, for phase one, is Jake, I'm going to want to add to these filters,
+
+Unknown Speaker  33:49  
+like my agency only, okay, so you're not seeing the out of area jobs. That'll make it smaller and get it closer to what is considered there. You know, sure their department or their area. Okay, do that without having to do a lot of mapping stuff. Sure, yeah, okay,
+
+Unknown Speaker  34:08  
+yes, they can discuss that, Bonnie, and we'll, we'll start to get into that. Ashley did send me, I don't think I've talked to you about this, Jake, but
+
+Unknown Speaker  34:18  
+or sent me questions about using a GIS file to make, yeah, I saw that to make a parameter and everything. Once we can get an example of that and we can start to dig into that,
+
+Unknown Speaker  34:31  
+that's I talked to Jeremy, who will be doing most that, and he feels it shouldn't be too bad to review only. Basically nothing is dependent on that. No progress, no process is dependent on that. It's just something that shows on the map. You know, this particular gridded off area.
+
+Unknown Speaker  34:51  
+That's fairly simple to do. We can do that. I'm sure we can have processes based off of that, but that's a lot more complex.
+
+Unknown Speaker  35:00  
+And I don't think it's going to be there for the initial release of this. Actually, I know it's not, yeah, yeah. So, so yeah. I mean, we're trying to mitigate, like, how many, much they're looking at by using these filters,
+
+Unknown Speaker  35:13  
+which they are very granular. But if we want to take the map out or put it there in a different way, that's fine. We're just trying to keep them from jumping around from application application, like they have to right now, which is, like, click the map button and that takes them to a totally different app, and then they have to come back and all that. So that's, that's the reasoning behind it.
+
+Unknown Speaker  35:33  
+So we could make it smaller, you know, there's but kind of wanted to give them a view of, like, the surrounding area with the pin in it, just to, just to give them some good context.
+
+Unknown Speaker  35:45  
+So, yeah, so that that is the lion's share of the work was, I know you're not seeing a lot here, but let me tell you, the back end is, is pretty crazy on this. And then that made it all possible to actually get real data flowing in here, which you just saw when Ashley created new new and if you saw on the
+
+Unknown Speaker  36:09  
+on the ones that I had created before Jake, they you know that had different addresses that the map and the pin is showing the address or, yeah, that's right. Oh, we do need to talk about that. Okay, so, so there's, let me just find the one Ashley put in there,
+
+Unknown Speaker  36:29  
+address, I think, and 57th and all of Well, no, that's like, no, that's 56 in Greenway. So, oh, that's, that's horizon High School. That's what I put in there, as if it doesn't have a latitude and longitude. Just put that there so, because I grew up right there. But okay, so we need a way when, when jobs are put in, and Brian has a workaround for this right now, but when jobs are put in through FileMaker to get the latitude and longitude of the job, because that's what you have to provide the map. The reason for that is because y'all do a lot of intersections, and we want to be able to give a precise coordinate for that. So like Brian, you had put, I forget what day it was on. Do you remember the the other intersection? No, it was something in Indian School road. I don't remember the other
+
+Unknown Speaker  37:29  
+Okay, let me just I think it was intersecting road. Maybe I want to say it was Wednesday.
+
+Unknown Speaker  37:36  
+Was it maybe Tuesday? But I think it was Wednesday.
+
+Unknown Speaker  37:41  
+Job for but, yeah, right. Here it is Seventh Avenue and Indian School. So what Brian did, actually, Brian, if you want to tell them what you did, yeah, how I got that was on the new create job, on the agency app. I started to type in that address, that intersection, clicked on it from the list, you know, and then I went into the dev tools and grabbed the the
+
+Unknown Speaker  38:06  
+latitude and longitude. So we do, as I've said before, we want to get the map function into FileMaker
+
+Unknown Speaker  38:16  
+so that you'll be creating,
+
+Unknown Speaker  38:20  
+you'll be creating locations, which is the job location record. You'll be creating those just like you do in the agency app when you create a new job, yeah, like here, so you'll type ahead and select from the list, or you'll drop a marker,
+
+Unknown Speaker  38:37  
+whatever it is, and it'll be able to grab the latitude and longitude
+
+Unknown Speaker  38:44  
+exactly like it is here, like this.
+
+Unknown Speaker  38:48  
+There it is. And then what Brian did is he went in here and grabbed these guys. That's a crazy workaround. You guys shouldn't have to do that. You know, we're going to build this in to the FileMaker create job process. But for now, if a job is put in and no latitude and longitude is provided, it's going to show horizon High School. So that that'll that'll change, obviously. But I just want you to be aware, because we were going to push this to test flight, I also want to show you.
+
+Unknown Speaker  39:22  
+So you remember, I logged in with my phone number, which is why when you go here, you can see Jake Johnson is logged in here. And if I go over to account, and now this, this API call section, is going to be gone when we go live, because we don't really want officers messing with this, and I have to go to light mode. Okay, you can see this really long token, this unique token, if I click that, it's going to go and it just queried FileMaker for who this is. And you can see my data here. Now if I log out
+
+Unknown Speaker  39:59  
+and I put in.
+
+Unknown Speaker  40:00  
+In Brian's phone number, which is 2917607,
+
+Unknown Speaker  40:08  
+and confirm. And then I go over here and I click User info, you can see we get Brian's information and not Jake's information. So one thing that we're trying to do again is just abstract any possible identifying information like that could be used, not that they would. No one would ever get into this, because it's an apple, you know, app, but we don't have, for example, like the officer's ID in here,
+
+Unknown Speaker  40:38  
+which could be used theoretically by a hacker, you know, or something to like, go and get officer information. What we do is we have a token here that then resolves with the API. The API, which is behind firewall, which is secure, has the officer information that it then get, relays to FileMaker, and filemaker sends back only the appropriate information for whatever the page is that you're looking at. So everything is very secure in here. There's no ex, you know, exposing of of Officer info beyond what the app actually needs. And then again, once you log out,
+
+Unknown Speaker  41:17  
+that token is gone. So it only exists during the session that they're in. So you can see, if I go 757,
+
+Unknown Speaker  41:27  
+and refresh, let's do search database refresh, yes,
+
+Unknown Speaker  41:34  
+and let's do, let's just open it up. 757,
+
+Unknown Speaker  41:40  
+I think it runs every minute. So you're going to see yes until it until it goes away. But essentially, I'm just trying to give you guys an idea of how, how the the three way handoff works, from app to API, from API to file maker, and then the other way, file maker to API, API to the app. So that is what we've done.
+
+Unknown Speaker  42:07  
+Do we have any more questions specifically on what Jake shown?
+
+Unknown Speaker  42:19  
+Things? Good, awesome.
+
+Unknown Speaker  42:22  
+That's my update.
+
+Unknown Speaker  42:26  
+Okay, yeah, that is where we are on that stuff. So we do have live stuff moving. That was kind of the goal I had set
+
+Unknown Speaker  42:35  
+for this demo, was to show real data instead of instead of the fake data we had hard coded in there before, and and we got there, and that's, that's a big part of the process. There's a lot of background stuff that has to happen to make that work, tons Absolutely So, so that's good, and we can, and we have that structure built. So now to make new calls for new pages, you know, doesn't take us as long, so we can move faster with this. Yep, the initial setup of anything always takes the longest time, of course, yeah, so we've got that stuff ready for you. Did you guys get all the updates on the
+
+Unknown Speaker  43:17  
+file maker those that that was the state's asked for
+
+Unknown Speaker  43:22  
+the the no JS for the on the AWS, is that what you're asking about
+
+Unknown Speaker  43:29  
+verification? About, yeah, that was before
+
+Unknown Speaker  43:33  
+he had to verify, you know, new,
+
+Unknown Speaker  43:38  
+I told him yes. I updated file maker. It's not to the newest version, and the Node js is not to the newest version, but it's much better than it was. And he responded that, you know, that's great. He just needs to run through, run his security sweep again and see what I don't remember the word he used,
+
+Unknown Speaker  43:59  
+what exceptions, what possible problems you know that new node js version could have, and I have not heard a response on that. Okay, all right. Just to shed some more light on that too, it is highly inadvised For us to independently update Node js from FileMaker server. It can break the entire environment, and FileMaker server no longer works. So, you know, a lot of these security tools that people like ginger SEC are using, they're great, but they don't necessarily read all the white papers from like FileMaker server, which is a crucial tool in your workflow, obviously. And so when we're being asked like, you need to update Node js to the latest version that is technically correct, except they don't know all the parameters under which we're working right? So we have to rely on FileMaker server to install the version of Node js that it needs to work that makes sense collaboration, where you have those conversations with each other.
+
+Unknown Speaker  45:00  
+Need certain things we have, yeah, we have had that conversation, and that's when we were getting the responses of, he's okay with it, but needs somebody else to sign off on the risk.
+
+Unknown Speaker  45:13  
+I don't know if that's still his position. We went, as far as the no JS version is concerned. It went from 18 to 2224
+
+Unknown Speaker  45:23  
+is the most up to date.
+
+Unknown Speaker  45:26  
+But that's that it does. That doesn't mean it's the most stable. Up to date does not mean stable. 22 is the most means the opposite of stable. Yeah, 22 is the most recent stable version of no JS,
+
+Unknown Speaker  45:39  
+which is also why we haven't updated your FileMaker server or your clients to the most recent version of FileMaker, because there is one more newer, but it's very new, and we're not recommending your business on that yet, until it's, you know, been tested and had a couple patches. Yep.
+
+Unknown Speaker  45:57  
+All right, that's
+
+Unknown Speaker  45:59  
+fine. No, I know he did say that he could do
+
+Unknown Speaker  46:04  
+any other updating. He need to and production. So I would say it's probably a green light, but I'll verify that with them. Yep, yeah. If we've got green lights from you and you know your team, that's, that's fine with us, I'll, I'll get with Jake and Steve, and we'll try to
+
+Unknown Speaker  46:21  
+come up with a early morning that we think we can do this and let you guys know, and then you'll have one more chance to approve or disapprove, you know that time the downtime that we're going to have. Okay, so I just got a green light from Tom, so we can go ahead and do that and then so
+
+Unknown Speaker  46:42  
+you want to verify the time then, yeah, I need to talk with Jake and Steve. Steve's not on the call, and he's going to be the most important person, because he's in Arizona, so we can only get started, but so early with him, he'll figure it out. Well, yeah, I know, I'm sure, but I just want we'll say by end of day, Bonnie, absolutely, I'll, I'll be sending the email out, getting with what day and time we think we can do it and give you a chance to say, Yay, nay. Yeah. Sounds good.
+
+Unknown Speaker  47:16  
+Yeah. The earlier, the better. I think.
+
+Unknown Speaker  47:20  
+All right,
+
+Unknown Speaker  47:22  
+as long as Ashley, you said you're totally good with the testing you've done on it, yeah, testing is was good, okay, and Brian, you have the updates from me on what I did to the dev file. Yep, yeah. I've just got to get this moved over to prod, so that when I move over prod,
+
+Unknown Speaker  47:41  
+that it'll bring those changes with it, and then we'll be in a good prod dev setup, you know, the way we want it moving forward.
+
+Unknown Speaker  47:53  
+Okay? And I do want to if, if we're finished with that particular bullet point.
+
+Unknown Speaker  48:01  
+Ashley, your questions on slow downs today? Yeah. Again, like you said, it's the servers just pegged.
+
+Unknown Speaker  48:11  
+I can get us a little more, and I want to actually, but again, this needs downtime. Doesn't need much, but I have to restart the server in order to make this, these two changes I want to make. One is this change the server cache size, shrink it a little bit for the current production server. And the bigger one is actually I want to put most of the system files into a separate folder. The ones that we want to back up, the BF helper file is grown exponentially larger than it was just two months ago, so I don't think that needs to be backed up every hour the helper file. So I want to remove that from the backup routine, at least for the hourly and the daily. I might still do it for the weekly,
+
+Unknown Speaker  49:00  
+but but that should also help, because backups won't take as long, and it won't be and you won't have multiple, multiple, multiple copies of this very large file.
+
+Unknown Speaker  49:12  
+Because you are, you did stack up. It was your storage was at 96%
+
+Unknown Speaker  49:18  
+I had to delete some old files, some old backups to make more space,
+
+Unknown Speaker  49:23  
+and that won't be as much of a problem if I separate the folders so we don't back up the helper file,
+
+Unknown Speaker  49:31  
+but that's if we're going to be doing the move in the next day or two. Anyway, I won't bother with that restart, because I don't want you guys to have any downtime, even for a little
+
+Unknown Speaker  49:45  
+bit just for that, you know, just to limp this along a little bit longer.
+
+Unknown Speaker  49:50  
+Make sense? Yes, yes. It does be on the
+
+Unknown Speaker  49:55  
+on the new one, anyway, right, correct? Yeah, I would. I would set up the folder.
+
+Unknown Speaker  50:00  
+Structure and the backups the way I want them on the new one before I move everything over. So yeah, and we've got plenty more space. The other thing too is that once we get this app up and running, the my,
+
+Unknown Speaker  50:14  
+my feeling, my supposition, is that the bulk of those helper file records that are getting created, Brian, are from the officers, yeah, and those will all be gone. So yeah, absolutely, I agree.
+
+Unknown Speaker  50:31  
+The next thing I need to find. The biggest problem here is just resource trying to find time with people on our team that can do it, but I do, as we said before, the functionality of the addresses and map that you have in the
+
+Unknown Speaker  50:49  
+in the agency web app, we need to get into file maker. When the
+
+Unknown Speaker  50:54  
+native app goes live, we need to be using latitudes and longitudes, not addresses. So in order to get that to work, you know, for when you guys are entering jobs, we need that in FileMaker. And just to let you know, I know that I'm working on trying to find a team member or two that has time for that
+
+Unknown Speaker  51:18  
+without distracting Jake, because Jake needs every second on the native app stuff.
+
+Unknown Speaker  51:23  
+I mean, I yeah, I can, I can advise Jeremy on it, yeah, but yeah, I should, probably shouldn't turn my attention to building it. I agree. No, I don't want you to. I've just, yeah,
+
+Unknown Speaker  51:38  
+I just wanted to, you know, Bonnie, Joe, everybody to know that that's on my mind, and that's what I'm working on.
+
+Unknown Speaker  51:46  
+I'm working on getting that done as soon as possible, because we do need it, and we do need it in file maker.
+
+Unknown Speaker  51:53  
+Think that's pretty much everything I've got. We can me Ashley and Joe can cover the normal stuff tomorrow on that meeting,
+
+Unknown Speaker  52:03  
+unless anybody has any other questions thoughts.
+
+Unknown Speaker  52:08  
+So once we get the approval for the
+
+Unknown Speaker  52:11  
+from Apple and Android, you said we're going to send that in towards the end of the month, or the first semester next month, that is currently the plan. Then, then, then, when do we roll out the app?
+
+Unknown Speaker  52:24  
+When they say, Yes, both of them or, I mean, I guess you could do one at a time, but
+
+Unknown Speaker  52:31  
+I've set up 30 days for that process. But realistically, it could be one day, it could be two weeks, and we're doing as much work front loaded as we can. We're trying not to guess so that those approval times are quick. Yeah, exactly.
+
+Unknown Speaker  52:52  
+So you're talking if you're doing the end of September or the first of October, then we're looking at the first of November, correct?
+
+Unknown Speaker  53:02  
+Yeah. I know we were shooting for the end of the second week of October, but I don't think we're going to hit that unless their approval is really fast. Yeah, which I've seen, I've seen approval in four hours before. Yeah, it is possible,
+
+Unknown Speaker  53:21  
+but that's, that's something I just gave a wide berth to, because we just don't control it.
+
+Unknown Speaker  53:29  
+And from our experience in the past, Apple tends to be a lot faster and easier. Yeah, Google is actually the one that's a pain
+
+Unknown Speaker  53:39  
+so, but we've done it before, and I've seen it go fast, so we kind of know what what they need. It's just whether or not you get a grumpy
+
+Unknown Speaker  53:50  
+approver to be, to be like, really honest that that's what it is. A lot of it's AI, like they had a lot of it is handled by AI, but it does pass through the hands of an actual tester. And the Google testers, for some reason, sometimes are just, man, they, I don't know if they haven't had coffee or, like, what's going on, but sometimes they're just, like, in a bad mood. So okay, I thought we were, like, moving ahead of schedule, rather than behind are we? Are we behind schedule? Now,
+
+Unknown Speaker  54:18  
+technically, yep, I we were, because we were planning on having primary development finished,
+
+Unknown Speaker  54:26  
+actually, last Friday.
+
+Unknown Speaker  54:28  
+So yeah, the 12th, I believe, was the date.
+
+Unknown Speaker  54:32  
+But we, you know, ran into needing to make that, that website and all of that functionality for the SMS campaign and
+
+Unknown Speaker  54:43  
+and we haven't. We haven't really been hitting the the Top Gear weekly hours that, you know, the the burn rate that we originally discussed, the will be this week, and we will be next week for sure. Yeah, we'll, we'll hit it. We'll hit it pretty hard. To push this a.
+
+Unknown Speaker  55:00  
+Push this over the finish line as fast as we can now again, if, if Apple and Google come back to us really quick, we could still hit that second week of October, but we
+
+Unknown Speaker  55:13  
+just don't know. I don't know. We just don't know because we're not in control of that. That's right. We'll do
+
+Unknown Speaker  55:19  
+everything we can to make sure it happens quickly, but you never know.
+
+Unknown Speaker  55:25  
+Very good.
+
+Unknown Speaker  55:28  
+I don't think I have anything
+
+Unknown Speaker  55:33  
+left. Jake, yes, do you still have the app up that you can? Did you see the one with that I added a bonus to
+
+Unknown Speaker  55:40  
+I don't know. I have not refreshed it. I saw it on there. I think, I'm not sure, but I think it's at 755, like 755 it looks like without space. Well, I'll take that. I'll take that job. Math was still right. So I think it's, it's just the way that it looked. What day of the week is it on? Oh, I think I did like, Monday and Tuesday.
+
+Unknown Speaker  56:07  
+And then I was curious, if the external section is, is Is there going to be? Like, if you are, are you able to open it up to see the external in the contact, or, there it is? Yeah,
+
+Unknown Speaker  56:20  
+55 an hour,
+
+Unknown Speaker  56:23  
+600 right? It's nothing, right? I think it's just, I'm not sure, I mean,
+
+Unknown Speaker  56:31  
+just looks silly or fun, yeah, that's, that's, that's, that would be a good job.
+
+Unknown Speaker  56:36  
+Yeah, instead of adding the 75 and the five, it just put the five on the end of the string. That's right. That's all I did.
+
+Unknown Speaker  56:45  
+But good catch, thank you. Yeah. And the to like, when you go to book the job is that when you get because I'm the external notes, especially like directing traffic, running a light, those kind of things, is that going to be on there anywhere the officers are in the My job section, yeah, they take it, though after. So what if they take it and then, yeah, they need to know what they have. Okay, we can do that.
+
+Unknown Speaker  57:12  
+And I mean, the contact that can be in the note the jobs like after they take it, but I could definitely see them taking a job and then giving it back, if they
+
+Unknown Speaker  57:21  
+depending on what it is, yep, yep.
+
+Unknown Speaker  57:25  
+Okay,
+
+Unknown Speaker  57:26  
+that's fine. We can do that so, but instead, so if you add that in, is that going to be added to the page then? So they'll be able to see
+
+Unknown Speaker  57:35  
+Yep, instead of having to search for each one, that would be Yeah. I think we'll probably make it swipeable, so that they so that the
+
+Unknown Speaker  57:46  
+basically, so that the
+
+Unknown Speaker  57:49  
+notes can take up the whole card, instead of, like, trying to shove them in. Yeah, yeah.
+
+Unknown Speaker  57:58  
+That is doable. Do? Sure.
+
+Unknown Speaker  58:05  
+Is there any other questions or thoughts there? Ashley,
+
+Unknown Speaker  58:10  
+one thing that I know that it might even be something that you guys are going to do later, but the if you flip it on its side, or are you able to zoom in any way for the people that you need in a bigger font. Great question. So,
+
+Unknown Speaker  58:25  
+so the way that this works is just like any other app on the phone,
+
+Unknown Speaker  58:32  
+which,
+
+Unknown Speaker  58:36  
+oh, okay, making it bigger. And this is going to look so ridiculous, I'm just, I'm telling you now,
+
+Unknown Speaker  58:45  
+but
+
+Unknown Speaker  58:47  
+hold on. Think I have to,
+
+Unknown Speaker  58:50  
+let's do this.
+
+Unknown Speaker  58:56  
+Yeah, there you go.
+
+Unknown Speaker  58:59  
+So you know, if they have gigantic tech, this is a huge exaggeration, I don't think anyone's gonna do that, but they might go to like,
+
+Unknown Speaker  59:08  
+you know, yeah, if they click on the map, are they able to zoom in? They can zoom in on the map,
+
+Unknown Speaker  59:15  
+yeah, so I have to refresh this. No,
+
+Unknown Speaker  59:19  
+you're good. So that's with larger text, which you know that that's that that appears fine to me. It's just when it gets into ridiculous territory that it and to be honest, nothing, nothing looks good here, right? Yeah, even like, yeah, your Facebook, your whatever's gonna look trash. And like this,
+
+Unknown Speaker  59:43  
+that's so crazy. Looks like a jitterbug. I don't know if you've seen, seen those uh, commercials for those phones. There we go. So I have that off and we'll just go to,
+
+Unknown Speaker  59:57  
+yeah, this is like your standard.
+
+Unknown Speaker  1:00:03  
+So it says on on that go back to that screen, yeah, where it says agency, vehicle and POV, vehicle. What does that mean? That means either or no, that's just bad selected. They're both selected. It's just bad data
+
+Unknown Speaker  1:00:16  
+you would almost never have that
+
+Unknown Speaker  1:00:19  
+you wouldn't have this is more likely. Keys
+
+Unknown Speaker  1:00:26  
+required, yeah, I made the text really small. Oh,
+
+Unknown Speaker  1:00:32  
+right,
+
+Unknown Speaker  1:00:34  
+you're making me strange. That's okay. There you go. That's a little better.
+
+Unknown Speaker  1:00:39  
+Jacob is the question, yeah,
+
+Unknown Speaker  1:00:43  
+Ashley and I were on the big screen, and I'm the laser on the older versions. We anytime that we went to school on the mask to increase its size, it would change the pen and we have to relocate it. That's been fixed. Yes. Oh, it has so many greats. Okay, awesome to make sure we're not hooking on it. But it, and then it continues to something else. So that's, that's great. Thank you.
+
+Unknown Speaker  1:01:10  
+Can you zoom in on the map now? Yeah, functionality there? Yeah, it's really hard on the simulator because you can't really get a spreadsheet.
+
+Unknown Speaker  1:01:21  
+Yeah,
+
+Unknown Speaker  1:01:22  
+so make sure we're excited for IACP to kind of demo, walk through everything. So actually, just helping us and getting us all set. And that was one thing that we were like, ah, it was moving all over the place on it. So thank you. Sure. We asked them if we can have, like a demo.
+
+Unknown Speaker  1:01:37  
+So we have a we have a display board, as a board that it's like a computer inside of the CDC, and that's a giant one, and it's interactive.
+
+Unknown Speaker  1:01:48  
+So we have one for
+
+Unknown Speaker  1:01:51  
+for the
+
+Unknown Speaker  1:01:52  
+agency app. We get one for the officer app.
+
+Unknown Speaker  1:01:58  
+That's a great question. It depends on, I think there's a few things there. You'd have to find a way to get this mirrored to that. And then it depends on, what's that actually? Are you working on this app right now? Or do you see this app? Or no, I've seen it, but I wasn't able to see it with the live data. So now I will be able to, hopefully test on it,
+
+Unknown Speaker  1:02:25  
+log into so we can do it on on that screen, you know the one you've been demoing? Yes, we have. So we are going to be pushing up to test flight sometime after this meeting, which is where you'll have to re download the new version of the app, and the and then you'll be able to, you know, to play with it like you did the others. And now that it does have the login set up, it's not completely set up because it's not using the actual SMS, but only specific phone numbers are have accounts and can get in. Currently with you guys, we just added Joe and Ashley today
+
+Unknown Speaker  1:03:02  
+is there. So would you like me to add, yeah, let me just double check that here, Ashley, what's your cell phone number? 503-820-9037,
+
+Unknown Speaker  1:03:14  
+and this also,
+
+Unknown Speaker  1:03:17  
+yeah, that works. So now you can see
+
+Unknown Speaker  1:03:21  
+there's Ashley,
+
+Unknown Speaker  1:03:24  
+yeah, we can add Amanda. We just need all her information like he's an officer record. I believe she has let me check
+
+Unknown Speaker  1:03:36  
+she does have an officer record, yes, and the cell phone number is really your cell phone number, 602-793-8158
+
+Unknown Speaker  1:03:47  
+what was it? 606027938158
+
+Unknown Speaker  1:03:55  
+let me approve her to do a couple things because her office. What's her email? Anything,
+
+Unknown Speaker  1:04:03  
+I'll slack it to you real quick. I don't want to Slack it to me. Brian
+
+Unknown Speaker  1:04:09  
+got it.
+
+Unknown Speaker  1:04:10  
+Boom, there's the email address, and I will be creating her an account
+
+Unknown Speaker  1:04:17  
+on the FileMaker side cap.
+
+Unknown Speaker  1:04:22  
+Let me know when you do that, and then we can set her up so that it should work with the auto the code, yeah,
+
+Unknown Speaker  1:04:35  
+record
+
+Unknown Speaker  1:04:37  
+her officer ID is
+
+Unknown Speaker  1:04:46  
+yes, and it's Markham, right, M, a r, k, H, A, M,
+
+Unknown Speaker  1:04:53  
+yes, okay,
+
+Unknown Speaker  1:04:58  
+your Maricopa. Which?
+
+Unknown Speaker  1:05:00  
+158, I'm pretty sure.
+
+Unknown Speaker  1:05:03  
+Yeah, she has Maricopa
+
+Unknown Speaker  1:05:07  
+and officer and Okay, she should be ready, Jake, yep, we just need
+
+Unknown Speaker  1:05:17  
+to add her. I
+
+Unknown Speaker  1:05:26  
+Right? We'll get that done,
+
+Unknown Speaker  1:05:28  
+yep, so those are the three you want for now. Are you Amanda test flight? So let's hold on, oh yeah.
+
+Unknown Speaker  1:06:05  
+Is not okay. So Amanda, what is your apple id like when you go to download an app? What do you use? I'm
+
+Unknown Speaker  1:06:30  
+Oh, you want
+
+Unknown Speaker  1:06:33  
+to
+
+Unknown Speaker  1:06:35  
+put it in the Zoom chat, yes,
+
+Unknown Speaker  1:06:39  
+okay.
+
+Unknown Speaker  1:06:46  
+Your Apple ID, your social security number and your mother's
+
+Unknown Speaker  1:06:51  
+maiden name, blood Type is optional, but we do
+
+Unknown Speaker  1:07:05  
+Okay, all right, you.
+
+Unknown Speaker  1:07:27  
+So you're going to get two invitations.
+
+Unknown Speaker  1:07:30  
+One is that you've been added to the blue
+
+Unknown Speaker  1:07:34  
+dispatch user group, and then one
+
+Unknown Speaker  1:07:40  
+is going to be to actually
+
+Unknown Speaker  1:07:43  
+test the app. So, oh, you have to verify yourself first before I can do that.
+
+Unknown Speaker  1:07:55  
+Let me
+
+Unknown Speaker  1:08:01  
+know when you get that, And then I can add you here.
+
+Unknown Speaker  1:08:36  
+Was that a question for us? I think I am. I think you did it, okay? One second,
+
+Unknown Speaker  1:08:48  
+yep, you did
+
+Unknown Speaker  1:08:51  
+there you go.
+
+Unknown Speaker  1:08:53  
+Now you have another invitation.
+
+Unknown Speaker  1:08:56  
+Ashley, is this something you can sign people up for you? Or now?
+
+Unknown Speaker  1:09:02  
+What? Well,
+
+Unknown Speaker  1:09:04  
+I think so
+
+Unknown Speaker  1:09:09  
+any of the Amanda, Joe and Ashley are all admins, so they should be able to log in and do that. Do
+
+Unknown Speaker  1:09:26  
+I also just, so, you know, I renamed the old app to old
+
+Unknown Speaker  1:09:34  
+because we had a namespace
+
+Unknown Speaker  1:09:38  
+conflict, and so obviously this is not live on the store because it's rejected. So once we go live with this, it'll just appear as blue dispatch, just so you know. And I'm gonna, I don't know if you want to use the same app icon or not, but I will need that as well.
+
+Unknown Speaker  1:10:11  
+And I also I think,
+
+Unknown Speaker  1:10:14  
+No, I haven't yet. So
+
+Unknown Speaker  1:10:18  
+I see something. I
+
+Unknown Speaker  1:10:25  
+i need
+
+Unknown Speaker  1:10:27  
+to download that slide. Yes, that's correct. I
+
+Unknown Speaker  1:10:52  
+so we also have these
+
+Unknown Speaker  1:10:57  
+that will go, I'll need you guys to kind of all,
+
+Unknown Speaker  1:11:03  
+let me do this. Just want that
+
+Unknown Speaker  1:11:10  
+continue
+
+Unknown Speaker  1:11:13  
+so on the app store when
+
+Unknown Speaker  1:11:18  
+you know we go live, the marketing content is pretty important
+
+Unknown Speaker  1:11:24  
+currently. This is what I've got for you.
+
+Unknown Speaker  1:11:30  
+Oh, great. Oh, 6.5 inch. All
+
+Unknown Speaker  1:11:34  
+right, I'll have to figure anyway. Let me show you, to show them, do you so you can see,
+
+Unknown Speaker  1:11:41  
+so it'll be stuff like this.
+
+Unknown Speaker  1:11:47  
+When you go to download an app, you see those marketing screenshots.
+
+Unknown Speaker  1:11:56  
+So
+
+Unknown Speaker  1:11:59  
+those are going to be ready to go to
+
+Unknown Speaker  1:12:02  
+I think what I'll probably do
+
+Unknown Speaker  1:12:07  
+here is the App Store write up for the old
+
+Unknown Speaker  1:12:12  
+blue dispatch. I don't know if we want to change that. I do have sort of a template.
+
+Unknown Speaker  1:12:21  
+Let me do this.
+
+Unknown Speaker  1:12:27  
+Yeah, see these? So, like when you go to the store, those would be there. I have marketing content that works pretty well. It also there's a whole lot of
+
+Unknown Speaker  1:12:42  
+best practices for what to put in these areas. What you guys had in the old app is kind of, it's not optimized, um, for the way that the App Store works now. And so I have these write ups. You know, here's what you would see as the small promotional text, and here's the full app description.
+
+Unknown Speaker  1:13:03  
+I'm happy to send these to you if you guys want Yeah, send those over, yeah, because
+
+Unknown Speaker  1:13:08  
+that's what needs a promotional text, right? That's all, yeah, yeah. That's right.
+
+Unknown Speaker  1:13:16  
+Let's say Bonnie.
+
+Unknown Speaker  1:13:19  
+We're gonna do Ashley.
+
+Unknown Speaker  1:13:22  
+Joe. Amanda, is there anyone else you want to have them? Amanda, which email Do you want this
+
+Unknown Speaker  1:13:33  
+going to
+
+Unknown Speaker  1:14:01  
+cool, and then I have keywords here.
+
+Unknown Speaker  1:14:05  
+Those are very important,
+
+Unknown Speaker  1:14:08  
+yeah,
+
+Unknown Speaker  1:14:11  
+okay, where are they?
+
+Unknown Speaker  1:14:14  
+Off Duty? Jobs, police scheduling, law enforcement, extra duty officer. Jobs, shift tracker, hacker
+
+Unknown Speaker  1:14:23  
+have that in the
+
+Unknown Speaker  1:14:28  
+so those
+
+Unknown Speaker  1:14:31  
+who created the keywords I did okay, so and but through, basically through a high ran it through an optimizer for the intent of the application, and this is what it this is what it came out with.
+
+Unknown Speaker  1:14:47  
+I think I added shift tracker so we can put whatever else we want in here. But this is a good place to start.
+
+Unknown Speaker  1:14:54  
+I think maybe we have, yeah, we are limited to
+
+Unknown Speaker  1:14:59  
+Jill has.
+
+Unknown Speaker  1:15:00  
+Those keywords also okay,
+
+Unknown Speaker  1:15:06  
+and that that those words should be in the emotional title, no, so your keywords are going to be so the way that the App Store search works is it kind of, there's some algorithm that it runs everything through, and where you place in terms of, are you the first one that that is discovered? Are you the second, the third, the what order your listing goes in that is determined by a combination of all this stuff. So, so I ran everything through a new tool that kind of gives you best practices for
+
+Unknown Speaker  1:15:40  
+App Store discovery to make it really easy to find. So I don't know that we should change it a whole lot, unless you see any like glaring errors, or you just want to add something here or there. What's that? Did you test it to see what comes up?
+
+Unknown Speaker  1:15:53  
+I mean, I know we're not on there, but if you, if you threw that in there, and it'll start, yeah, you know it's so you go to the App Store, I did. I mean, there's, there's, I think ODM shows up.
+
+Unknown Speaker  1:16:05  
+Let me just go on there. I did this about two months ago. So
+
+Unknown Speaker  1:16:09  
+excuse me real quick. Let's do off duty.
+
+Unknown Speaker  1:16:16  
+Yeah, Officer track is the first one that comes up when you search off duty.
+
+Unknown Speaker  1:16:21  
+If you search police,
+
+Unknown Speaker  1:16:25  
+I'm sure it's second one is Call of Duty. So, yeah, exactly
+
+Unknown Speaker  1:16:30  
+extra duty.
+
+Unknown Speaker  1:16:35  
+That's a responder app. So you know, if you want to change out this or something else that you think is more reasonable, you can do that
+
+Unknown Speaker  1:16:45  
+right now. I'm probably not looking to market it and
+
+Unknown Speaker  1:16:56  
+file that he has to
+
+Unknown Speaker  1:17:00  
+be keywords or off the track when an officer can't leave it unless there's the assignments signed up, yes,
+
+Unknown Speaker  1:17:10  
+but, but Les, if you pulled up through this bad they would be able to work jobs. So at least I would lost anything. So eventually I wanted to work kind of like either.
+
+Unknown Speaker  1:17:22  
+Well, lots of jobs?
+
+Unknown Speaker  1:17:25  
+And then
+
+Unknown Speaker  1:17:28  
+it was in there. Now,
+
+Unknown Speaker  1:17:32  
+by the way,
+
+Unknown Speaker  1:17:34  
+Amanda,
+
+Unknown Speaker  1:17:38  
+what's your cell phone?
+
+Unknown Speaker  1:17:41  
+So that's our that's something also, guys is because any officer can use this app. You don't have to be part of the ODM network. Off this app unless,
+
+Unknown Speaker  1:17:55  
+sorry, no,
+
+Unknown Speaker  1:17:57  
+that's another benefit. That's another one of these. 790, 381, 98 so Oh, 7938158,
+
+Unknown Speaker  1:18:08  
+and
+
+Unknown Speaker  1:18:10  
+so you are in too.
+
+Unknown Speaker  1:18:14  
+So Bonnie, as far as what you were just saying, like I tried the
+
+Unknown Speaker  1:18:20  
+ODM and the
+
+Unknown Speaker  1:18:23  
+what's the other one, roll call, what it was called, and you can download the app, but you can't really do anything. You can't search for jobs. You can't do anything until you fill out a form and have and have the app company, whoever you know, ODM or roll call, and like your supervisor, you know somebody from your police department, I guess that has to do it same here, like they're going to have to, they're going to have to fill out, they're going to have to fill out, they're they're going to have that. We're going to have to have their information. However, those guys, I don't know what the roll call does. I haven't out there, but ODM, their agency has to be signed up. Doesn't matter. They can sign up all day long, but they'll never be able to use the app, because, yeah, unless they're all their department signed up with them exactly. So yeah, and we kind of have the same thing. I think
+
+Unknown Speaker  1:19:17  
+it may not be phase one, but maybe phase 1.1 soon after we can put, we'll put a process in this when you first open it, to where you can fill out the form and request, you know, to be added as an officer on here.
+
+Unknown Speaker  1:19:33  
+But for now, it's going to continue to be, you know, on your website, or, you know, wherever they're signing up now, and if they don't, if their number is not in your database, it's not going to work. So when they go to log in, like, if I put in, yeah, you know, just a random number,
+
+Unknown Speaker  1:19:54  
+you notice it. There's an error down here. And so yeah, it's, it won't work until you.
+
+Unknown Speaker  1:20:00  
+Put in that come out on a log, though, you'll see that number on a log.
+
+Unknown Speaker  1:20:05  
+Um, you know what? I don't think we put that in there, but that's not a bad idea. Um, that's a good that's a good idea. I like that. I like that. Yeah,
+
+Unknown Speaker  1:20:20  
+that's a that's a cool idea.
+
+Unknown Speaker  1:20:39  
+Do
+
+Unknown Speaker  1:20:51  
+will
+
+Unknown Speaker  1:21:00  
+hope you guys are talking amongst yourselves, because
+
+Unknown Speaker  1:21:17  
+we have anything else you guys would like to look at or go over. No, we're good.
+
+Unknown Speaker  1:21:23  
+All righty, big burn around. That's good, yeah,
+
+Unknown Speaker  1:21:29  
+I'm trying to see if we did have the bad numbers listed here, and we don't.
+
+Unknown Speaker  1:21:34  
+That's all, yeah,
+
+Unknown Speaker  1:21:37  
+okay, all
+
+Unknown Speaker  1:21:40  
+right, great. Well, thank you very much, and I guess Ashley and Joe and whoever else will be there tomorrow, I'll talk to you tomorrow. Awesome. Thanks, fellas, everybody.
+
+Unknown Speaker  1:21:53  
+Have a great day. You too. Bye, bye.
+
+Transcribed by https://otter.ai

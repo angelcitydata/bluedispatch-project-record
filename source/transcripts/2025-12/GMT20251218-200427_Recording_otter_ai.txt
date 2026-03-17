@@ -1,0 +1,109 @@
+Speaker 1  0:00  
+ID, all right. Well, we're recording now,
+
+Unknown Speaker  0:08  
+so Oh, there she is. There she is.
+
+Unknown Speaker  0:13  
+She's on mute, but she's there.
+
+Speaker 2  0:17  
+Can you guys hear me? Okay, yeah, okay, sorry, I have to get on my main PC. The laptop doesn't want to recognize zoom for some reason today, whatever. Oh, what a Thursday. Sorry, guys,
+
+Unknown Speaker  0:31  
+technology rocks. Sometimes, right,
+
+Speaker 2  0:34  
+sometimes it gives us a huge headache. But I apologize that you're waiting on me. I am so sorry.
+
+Speaker 1  0:40  
+Ready to go, all right, yeah, we were just getting started. So okay, perfect. I guess the first update as I put in the email, what Tuesday, or maybe it was even yesterday, yeah, we did get our approval from Google.
+
+Unknown Speaker  0:55  
+Yes, first try, which I was amazed.
+
+Unknown Speaker  1:00  
+Well, not me, because you guys are awesome and we work.
+
+Speaker 1  1:05  
+Thank you. But after go, after the issues we went through with, you know, with Apple and historically, Google's worse is, yeah, gold. So we were not expecting that,
+
+Speaker 2  1:19  
+but Apple paved the way it sounds like, so we're good, yes.
+
+Speaker 1  1:24  
+So yeah, we had, we, we had had an approval from Apple and but when we went for updated versions, they got rejected, because basically, we get a different reviewer, and the the original one was approved, but we didn't go live into the store with it, so they consider it a new review. Basically, you know, they review everything as if it was new So, and it was all annoying stuff. The I don't know if I spoke last time we spoke, but the big thing seemed to be the word enable on buttons. They really didn't like that. They're like, enable, camera enable. No, no. They didn't want that. They flat out, called it inappropriate. I was like, Ooh,
+
+Speaker 1  2:16  
+inappropriate button label. I was like, All right, geez. I didn't know the word enable, offended someone. So we got that changed and and a little more explanation stuff, and we got it back through. That's no problem. So one point 4.7, is what is approved, and that is for now the plan of the version we'd go live with. But probably not. So we are on, I'm trying to open up and look right now I think we're on 149,
+
+Speaker 1  2:58  
+so we do continue. So we want to go, like we said, like a soft opening. We want to go live onto the store, most likely tomorrow, to to have something live and out there. And that changes the review process. So they only look at what we change, and mostly they just run it through an AI and see if, if the portion we change is going to break something. So as long as we don't change anything that has to do with permissions, we should be flying through reviews. Okay? It also kind of gives us leverage. If there is any type of rejection, we can say, you know, hey, this is live, and in our customers hands, you know, this is a crap time to tell us to change the name on a button. You know, we've already put this out live. So it does give us some leverage if something, you know, like I said, so we would like to
+
+Unknown Speaker  3:57  
+go live
+
+Speaker 1  3:59  
+again tomorrow on both Android and Apple, and then we'll be doing a bunch of testing for the next couple weeks. Now, next week, I think Jake might be working Monday. And other than that, he's pretty much out. I think I'm going to be out Wednesday through the rest of the week, so there's not going to be much too much done next week. It being Christmas week, the week after that, though, we're going to come back hard, and we have a bunch of testing that we want to do, you know, pointing servers and at least pointing stuff to production once or twice, and running a couple quick tests just to verify that, you know, it's going to work the same or technically better on the production server that we're going to be using for the real go live. So that's part of the testing, and what other just general tests. If there's any more problems in the app that you guys find or that anybody finds, we will be re submitting an update, not resubmitting, submitting for the first time, I guess an update probably like New Year's probably the second, because we have New Year's off, so we will be doing some testing, and unless there's some big changes that we end up having to make, which I doubt there will be, we we will be submitting that to both Google and Apple, so that hopefully, not, hopefully, we definitely should Have those two approved for the real go live. So the when the officers come on January 16 to download it, they'll be getting the newer, updated version. This is pretty standard stuff. I don't know how many you guys play video games. I love video games, and I download a video game the day it comes out, and it usually already has two or three patch updates waiting. Yeah, it makes sense, yeah, because it's just the way it is. So then that's what we'd have. We do have notifications up and running on the newest version, the actual phone notifications right now we don't have any automated versions of those. There's just two places in the dev version of FileMaker where you can initiate those share my screen real fast. Well, this was on my list. Yes, it is. The two places are going to be on the officer's record and, well, technically, on the web account record. So you go to the officer, you go to their web, and you go to the one that's for the officer app, the native app, which you can tell because it'll have a phone number instead of an email address. And in here, there's a new little cute button right here. I can open that, I can give the notification a title and a message and send that will send a message via notifications to the officer's phone. This is for general communication with a specific officer. You know, when it's not something that you want to do with email, if they touch the notification on their phone, it will open the app, but it just goes to the home screen. It just opens the app and goes to the home screen. The message itself, the notification itself, is the message. So there is character limits, because these are notifications that show up in little banners on your phone. So the title has a 30 character limit and the message has 130 character limit. So keep these pretty short. This isn't, you know, ways to send whole emails and job details or something like that. This is, you know, probably most likely going to be fairly specific. You know, hey, we put out a new job that you might want to see today. Or, you know, did you really mean to unbook so and so, a job, that kind of thing? So I can just put this, put this in here. This is a test, and you're not going to see because it's going to go to my phone, but you'll just have to believe me, and then we can test it with you guys. Is a test thing, right? And then I just hit send, and it goes to my phone,
+
+Unknown Speaker  8:32  
+and there it is. It's got
+
+Speaker 1  8:40  
+the the blue dispatch logo, and it says the title and the message that I just typed. So let's
+
+Unknown Speaker  8:50  
+you got your phone on you. Ashley
+
+Unknown Speaker  8:52  
+Boris, yes,
+
+Speaker 1  8:55  
+are what version of the ice found
+
+Speaker 3  9:01  
+the newest one below me. Don't you should be 149 Yeah, yeah, I am. I was testing this morning. Yep. Okie dokie,
+
+Speaker 1  9:13  
+triple check it's 149 but I
+
+Unknown Speaker  9:18  
+1.4 point 983,
+
+Unknown Speaker  9:21  
+in parentheses.
+
+Speaker 1  9:22  
+Build, 83 perfect. Yep, that's the newest one. Okay, that's a lot of builds. Yeah, go ahead and look into 83 it's not 83 just for one point 4.9 that's 83 builds overall. But yes, that is a good amount of builds. Um, could you quit the app on your phone? Oh yeah, sorry. Oh no, no. It doesn't have to be quit for the notification, but it Oh, it is, yeah. It makes the notification more impressive. And you are 5038209, Oh, three, seven, that's me. So
+
+Unknown Speaker  10:08  
+is a test.
+
+Speaker 1  10:12  
+Ashley, test, Notification message, boop, I'll hit send, and it's going to take couple seconds, but you should see a notification pop up. Yeah, you have notifications turned on. There you go. I do. That's the other thing you always have to remember. We cannot force them to keep notifications on, not programmatically. So if their notifications are off, you're you can send but it's never going to get there. It. We can't get around that both, both companies, both Google and Apple, require that you allow them to say no to notifications.
+
+Unknown Speaker  10:48  
+Does it tell you?
+
+Speaker 3  10:50  
+You know that it didn't send at all? No, just curious.
+
+Speaker 1  10:53  
+Okay, yeah, okay, so, yeah, I don't know. Tell you on that one, no, it's okay. I was just wondering, yeah, there's, there's not much we can do about that. Okay, so that one is general, most likely, the more useful one
+
+Unknown Speaker  11:14  
+is, I'll go here on the dashboard,
+
+Speaker 3  11:18  
+access and job reoccurring. Right? Job location?
+
+Unknown Speaker  11:23  
+No, that's where I saw it.
+
+Unknown Speaker  11:26  
+You shouldn't have I didn't put it there.
+
+Speaker 1  11:32  
+Oh, it's in the job us. It's in the job assignment details.
+
+Transcribed by https://otter.ai

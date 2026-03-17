@@ -1,0 +1,574 @@
+Speaker 1  0:04  
+Oh, righty, I guess I can report out real quick before I hand it over to Ashley. You know, I've obviously just got back to work yesterday, so it's been doing some catch up, making sure everybody where they're supposed to be and still rolling ahead, which seems to be happening. I saw that Jake got that website that was needed for the SMS campaign and everything for the native app up pretty quick for you guys, and looks like he made the changes that were requested. So that's that's up and running. That's great. I know the campaign was denied the first time around, and we at least last time I spoke to Steve, this morning, we were still waiting for the second round to see if we were approved there. So that's still in just a holding pattern as as we wait for that as, I mean, that's not stopping us from developing or doing anything that we're doing but,
+
+Unknown Speaker  1:19  
+but we're waiting for that.
+
+Speaker 1  1:23  
+We do have the file maker up and running, and I've got some copies that were right before I left for vacation, that of your system that are up there
+
+Unknown Speaker  1:38  
+that you guys can connect to,
+
+Unknown Speaker  1:41  
+and that is at
+
+Speaker 1  1:44  
+through file maker. And you know hosts. When you go to hosts, if you add a new host and send that to admin, dot blue dispatch.com, you'll see a copy of your system there. You can sign into it like you do your current system. Okay? We do want to do some testing on that. Mostly it's speed testing. I mean, there's no reason why it should not work the same way the other one does, but we want to make sure that we're okay with the performance. There, and Me and My guys are going to do some testing of your current officer web app and agency app using that. So we're going to be replaying the dev version to that here soon so that we can test with it. Once we get the okay from everybody, we will be ready to come down. It'll probably be about we'll go ahead and say two hours. I don't think it'll be that long, but just for safety's sake, we'll say two hours, and we're going to move that to be your production server for file maker. So we will be getting off the one that you have there in your office as soon as we get the okay from everybody that you know, that they like it, that they can connect, that we're going to be okay with the new one.
+
+Unknown Speaker  3:17  
+That sounds like a plan, yeah. And
+
+Speaker 2  3:19  
+you know what's funny is we were just discussing that downstairs. Bonnie had a question, and this was something I was going to address with you right now. Anyway, Brian was in regards to when we anticipated our scheduler being migrated over to AWS. And it sounds like you guys already kind of done that. Now it's at a point of testing, right? That sounds about right.
+
+Speaker 1  3:39  
+Yeah, yeah. We have, I mean, we have an old backup version of it, but there currently, but yes, so it's, it's come down to to just testing that to make sure it Okay, before we make that your production okay. It should be. It definitely is. So it's got almost three times the RAM power. It's got a lot more CPU power, and it's up on AWS, so it's got all the kind of bootstraps, type of stuff that comes with being on AWS. Hopefully that means that means we shouldn't have to worry about the thing restarting for updates or whatever, brought it down yesterday. Yeah, exactly that type of stuff. So the only other thing besides testing, I guess that's really needed, is we need, if whatever you guys want ginger sec to do to that. So we got it up the way we wanted it, but we did not add any extra security stuff that they seem to want. Okay. So, yeah, so if you guys want them to do something, I would. Definitely recommend that that gets done and we do our testing after that's done. I mean, you can start doing the testing before, but you'll have to do it kind of again afterwards. We got to make sure that we can still connect and things still work after they do all their security stuff.
+
+Speaker 2  5:17  
+Okay, let me make a note of that if we can Brian us when we get off this call, is it possible that you can shoot an email and CC myself and Tom on that just to rope them in and let them know, like, Hey, we're at this part. You know, we're at this phase now, at this point, if you guys do need to do anything, now's the time to kind of do it. Because I know, from our perspective, we kind of want to, we want to move relatively quickly as far as using FileMaker and scheduler in general with AWS, and then make that our main and only Avenue at this point, as opposed to just kind of holding off testing wise, which I know we have to do, obviously. But yeah, the faster with the switch Exactly. Yeah, so, but I think the faster the better, right? Ash, what do you think? From your perspective?
+
+Unknown Speaker  6:03  
+I agree. I agree. Okay, yeah. So if
+
+Speaker 2  6:06  
+we can do something like that, or if you want me to even Brian, I'll rope you and I'll shoot an email to Tom myself, rope you into that and see if there's anything on their end, which I'm sure there's going to be something. But just so we can stay on the same page and make sure that gets taken care of, and we can
+
+Speaker 1  6:23  
+move if you want to shoot that over. I believe we sent the name is Jasmine. I believe we sent her credentials and such. If they don't have them, I can send those over so that they can remote into that instance they I know they can get to it in the background through the the AWS admin console, because they have higher credentials than we do. But as for the actual machine, if they need that, I can send over those credentials. Okay, and then, yeah, they can do what they what they need to do now is, as far as speed's concerned, I, I've got concerns, and I've talked to them with Tom, and we, we've just kind of butted heads on the security needs there. Sure, Maker does not like a lot of the security stuff that he wants to do. And I, I can tell you it's we're going to have to go back and forth until we find a setup that works for both of us, because FileMaker just doesn't like a lot of that type of stuff. I already I had to turn off defender to get it to be able to connect to it. Which defender is the firewall that's built into Windows, right? It flat out, had to be turned off to get file maker to be able to even contact it from the outside world. Now, okay, AWS has all that stuff built into it, as far as file firewalls and such, but Tom seemed like he wanted to add other layers on to the actual OS level. File maker doesn't tend to play well with a lot of that stuff. We've I've discussed it with him, and I'm happy to try to work with him to you know if he runs into any problems, as he does what he needs to do. But just letting you know, FileMaker does not play nice with a lot of security stuff.
+
+Speaker 2  8:31  
+Okay, great, great information to pass on it. I'll go ahead and pass that on to Bonnie as well, just so we can get some kind of some clarification from her perspective as well. So on this email, when they, when I shoot it over to Tom, I'll, I might even just rope in Bonnie so she has an understanding as to what she what she's facing with with Tom's, you know, security levels and whatnot that he wants to implement.
+
+Speaker 1  8:54  
+Yep, okay, great. Hopefully we can get that work through. I pretty sure we can, you know, get work to and find a place that works for everybody. But I is, like I said, as far as speeds concerned, that may take trial and error to, you know, to go back and forth until we find that sweet spot. Yeah, sure. So if, if we want quick, then that's that's going to be a bottleneck, but that's ready, and you can connect to it already and start testing, you know, see how fast it is for you and all that kind of stuff, even as a more powerful machine, like I've said before you very well, may see it seem a tiny bit slower for you guys, but it's going to be a whole lot faster for anybody that's not physically at that office, meaning this, and it's definitely going to be faster for anybody who's, you know, connecting through the web apps and such. So for all. Of your clients, and you know, people in the field, it's going to be a lot faster, but for you guys, it might be a little slower, because it's got to go further than just the other room, right?
+
+Speaker 2  10:10  
+Yeah, understandable. Awesome. We appreciate that. Brian. Now all that information, like I said, at least from my end, you know, I got what I need out of it, so I'll shoot that email out and rope everybody in, and we can get testing on it. Great.
+
+Speaker 1  10:23  
+That sounds good. That's about what I have is, as far as the overall updates are concerned, we're moving forward, and I'm sure we will, we will be talking to Jake, I'm sure, in a week or two. And you know, for another demo
+
+Unknown Speaker  10:44  
+for you guys,
+
+Speaker 1  10:47  
+Oh, that's right. So there is something called Test Flight, which is what we use to allow you to actually download onto your phones the test version of the app that we will be updating, most likely every week. In order to do that, Jake currently is using his own Apple Developer Account, his personal one,
+
+Unknown Speaker  11:17  
+ACD, technically doesn't have one
+
+Speaker 1  11:22  
+with Apple. So it's come down to whether we do want to use an ACD one, or if you guys want to get one, and I can get with Jake on exactly how to do that, if you would like. That is used for your for your developer account, for you to be able to run this test flight, you know, versioning type stuff, he can add you to His but we, of course, moving forward, would prefer not to use his personal one. I believe he said it's like $100 a year for the for the Apple developer account. And then anybody who needs access to the test flight to be able to download on their phone, these test versions would have to have an Apple ID, you know, just a free, regular Apple ID. But somebody, even if it's, you know, les as a company, needs that paid developer account, and then everybody else who's connecting just needs a free account, you know, free Apple ID, like and if you have an iPhone, you have an Apple ID,
+
+Speaker 2  12:37  
+you know what? I think we might still have a test flight account under les Brian, just because with the prior developer, I set that up for us, and I got that up and running, and it was, like we said, 100 bucks a year. So let me do some digging around and see if I have that. I'm pretty sure I do, because I think I set some it was something where it was either info or something like that. But I'll track that down, because that can definitely save us some time there.
+
+Unknown Speaker  13:00  
+Yeah, that can save us some time. That'd
+
+Unknown Speaker  13:02  
+be great, yeah, so let me look out for that, for sure.
+
+Speaker 1  13:06  
+Yeah, we one way or the other. We get that, we get that moved over and such. And you can start adding people to that, and they can start testing, you know, what we have at any point right now, I've, I'm on there. I've downloaded it onto my phone, and it's, it's currently just UI, so, you know, it looks pretty but it's not attached to any real data. It's not attached to your file maker system yet. That is, I think, what they were working on today, or currently in general, is getting that up now that we have file maker up on AWS and everything properly and can connect to it. So we want to get that working, and that'll be part of our testing as ginger SEC puts security on there is making sure that that connection continues to work, okay, as well as your connection from your FileMaker machines. Okay,
+
+Speaker 1  14:08  
+alrighty. Then if you don't have anything else at this level, we can turn it over to Miss Ashley. I did see Jake. Gave us a Jake did give me a quick summary from last week's meeting while I was out. I do have those items. I don't think I've necessarily got to touch any of them, but I was wondering, especially on the like map and some of the other officer, web app stuff that you were having some odd problems with. If you had figured out a good, you know, line of, if you do this and this and this, it breaks
+
+Unknown Speaker  14:56  
+because, like, the map seems to be working for me. But.
+
+Speaker 3  15:00  
+Yes, yeah. And it's, it's really just Apple Maps that I'm having issues with. And it's, it's not all the time. It's, I don't know what triggers it to not work, but this is a an example of the Scottsdale and is this what you're talking about?
+
+Speaker 1  15:16  
+Like, yeah, yeah. Perfect. Yeah. Okay, that's what I need, is examples of, yeah. So at
+
+Speaker 3  15:20  
+first I started with just Scottsdale Road and her Berlin way, with no zip code. Got an address, or, you know, it pinned in a certain way, very different from Google Maps. And then I put in north and east, got a different it pinned it in a different area, put in a zip code that one gave me a different but none of them were right. There's been that one, and then there was a another one that me and Joe the 70th Avenue Meadows. And every time we would open maps, it would just take us to a different a
+
+Unknown Speaker  15:57  
+different location.
+
+Speaker 1  16:00  
+Does it always seem to be these intersections.
+
+Speaker 3  16:04  
+These are the ones that I kept testing and kept trying to manipulate, kept trying to, you know, seeing if I if it mattered, if I put a zip code in or the north and east. So these three for sure, the mckellips and Miller. That one was one
+
+Unknown Speaker  16:18  
+Scott it Scottsdale Road seems to be an issue.
+
+Speaker 3  16:22  
+Don't know why. Sometimes it'll just take me anywhere on Scottsdale road, and it's really just Apple Maps. So like, when we're putting it in into scheduler, and I hit, you know, map, it looks, usually it looks, it looks fine. See it's right there. So it's hard as a scheduler to know you know if it's if it's going to be wrong or not, and Apple Maps is the only one that just it's and then I remember when Jake was trying some of them that I had created, and it was taking him kind of closer to where he was living. It was like trying to find the closest area, even though it said Arizona, you know, the zip code. So I don't know if that has something to do with I don't know how what, you know, like the Ag book agro, say that, that it's pulling up. I think we did it actually.
+
+Unknown Speaker  17:19  
+That's not it. Here.
+
+Speaker 3  17:24  
+When we were mapping it, this is going to be an exact address, but I could build one, and we were looking at how it was coming up in here,
+
+Unknown Speaker  17:36  
+just with this. I think we were doing it with the meadows one. Do you remember Joe?
+
+Speaker 3  17:45  
+I'll just put one, I mean, and I know that with the native app, it's gonna, he said that, you know, since we're gonna have the longitude and latitude in there, because we'll be able to pin it that it's, you know, not, I don't know how much we should, you know, try to work on it, because it's not every job. It's just some of them. But it does present a problem when people show up to the wrong location and it's quote, unquote, our fault.
+
+Unknown Speaker  18:15  
+Yeah, yeah, that's, that's not cool. Yeah. Okay.
+
+Unknown Speaker  18:27  
+Yeah, that one's still on hold. Yeah, it's on
+
+Speaker 3  18:59  
+Thank you. That SM still keeps popping up. We tried to take it out
+
+Unknown Speaker  19:09  
+from there. This kept happening to me too, just on my
+
+Unknown Speaker  19:13  
+computer at the beginning. Yeah.
+
+Speaker 3  19:18  
+This was one in particular where every time we hit map on our apple, it just would give us completely different cross streets every time without changing it. Okay, any suggestions on how anyways, we were looking at, you know how it was,
+
+Unknown Speaker  19:38  
+putting it up there?
+
+Speaker 3  19:41  
+But, yeah, I haven't there's some that I just cannot successfully get it to work. I can get it close, I can get them in the general area, but that north and east doesn't always solve. My problem was so
+
+Unknown Speaker  19:58  
+that when you didn't have a zip code on.
+
+Unknown Speaker  20:00  
+One, this one, I didn't. I could. I've
+
+Speaker 3  20:04  
+done a lot of different testes, so I don't, I don't think I did it with this one. No, I could do that too.
+
+Speaker 1  20:17  
+It shouldn't necessarily be a big problem. But I did notice the address that's up at the top. You know, it's got that plus, which it uses for spaces in between things and at the end, because it's expecting a zip code that shouldn't make or break, but it should kind of improve.
+
+Unknown Speaker  20:57  
+Of another one of the issues that I've been having
+
+Unknown Speaker  21:00  
+is that the refresh isn't pushing
+
+Speaker 3  21:01  
+it's not, yeah, and he actually said to look at location value in JSON. That was one. He told me that okay, because it's even when I asked my dashboard, hold on, so I'll refresh it there, and it
+
+Unknown Speaker  21:27  
+just doesn't update you.
+
+Speaker 1  21:54  
+Yeah, might even this might help us with a couple things like this, doing the testing on the new server, because until we the production over there, I can put, I can point the dev of this officer app over to that, and then allow my developers to put a boatload of fake data in there, and it won't show up for your real officers
+
+Unknown Speaker  22:21  
+like it currently does.
+
+Speaker 3  22:24  
+Yeah, see it didn't even when I refreshed it in both areas, it still doesn't push it here.
+
+Unknown Speaker  22:31  
+That's interesting.
+
+Speaker 3  22:36  
+But the interesting thing though, also, I can't really show you very well on here, but on my phone, I'll notice that I'll refresh it, and although it doesn't look like I refreshed it, when I do hit map, it does take me to a different spot. Yeah, it's hard to Yeah, because it's not loading on my desktop. But so it's doing something. It does it does change. It does refresh, but it just doesn't look like it does to me from the apps point of view.
+
+Unknown Speaker  23:08  
+That's on my list too,
+
+Speaker 3  23:11  
+but yeah, so I'd say it's, you know, job I don't know Jake a day maybe where we'll have one that doesn't quite map right, just depends on the day.
+
+Unknown Speaker  23:28  
+But obviously, anything that's like,
+
+Speaker 3  23:33  
+like we have long i 17 and Bela River Bridge, and I figured out a way to get that one really close, at least it was taking me over in Buckeye
+
+Speaker 1  23:44  
+that I was able to bridge might be hard to, yeah, that's not an address and it's not an intersection, right?
+
+Speaker 3  23:52  
+And it was way off. So what I ended up doing on that one, I think, Oh, I had to find the this one, the zip code was the I once I put the zip code into this one. It at least took me to the right side of the valley, you know, because it was like way over here, where this the 10 and 85 meeting. That's wrong. So this one, I changed to Pinal County and but the zip code that was the key for this one to at least in it, in the general area. I mean, I've been trying to touch them, but it's, it's still definitely there sounds something wrong,
+
+Speaker 1  24:31  
+yeah, bridge or something like that. Yeah, that one we might have to look at. I don't know if, if maps, likes, maybe a mile marker or something, you know, because it's,
+
+Speaker 3  24:45  
+it's just funny you say that I put that here in here because I just said I knew where to go. But these ones in general, I wish, I wish I could pin and just be like, right? You know, yeah.
+
+Speaker 1  25:00  
+Right there for the officer, same with maybe an off ramp or, you know, something like an exit number or a mile marker. Maybe that might be something that we have to use for some things that aren't, you know, that's that's on an interstate, that's a bridge on an interstate, that's not an address, that's not an intersection. So, yeah, we might have to try to figure out the best way to come up with,
+
+Unknown Speaker  25:27  
+to come up with how to tell maps exactly where that is.
+
+Speaker 3  25:32  
+It's just interesting that, like the Google Maps and the Apple Maps are pulling up different Oh, I don't I didn't know that would happen?
+
+Speaker 1  25:42  
+Oh, absolutely, yeah, yeah,
+
+Speaker 3  25:49  
+that's where we were. Kind of ended with that one, because in the native app, though, they're going to make it so we can, we can pin it at schedulers, right, and get the longitude
+
+Speaker 1  26:00  
+and lab to Jake was saying we were doing that, but yes,
+
+Unknown Speaker  26:07  
+I thought
+
+Unknown Speaker  26:09  
+that would would be great. Yeah,
+
+Unknown Speaker  26:12  
+I would eliminate a lot of this for sure.
+
+Speaker 3  26:16  
+Okay, any other questions that I or anything else I could show you on, yeah, nice thing.
+
+Unknown Speaker  26:23  
+I've got a couple
+
+Speaker 1  26:26  
+I've got a couple examples written down that gives me something to hand over to. To Christina,
+
+Speaker 3  26:33  
+okay, I mean this, Na, it's happened a few times, once when you're on vacation,
+
+Unknown Speaker  26:44  
+doesn't last for very long.
+
+Speaker 3  26:49  
+Brian said something about for you to look at the scripting, but I don't it's kind of interesting, because I don't know exactly what's triggered it. I've personally seen it twice, like on my app, but it does seem to auto correct itself pretty quick. So I don't know what's positive actually, but just wanted to let them know that we've seen that a few times.
+
+Speaker 1  27:12  
+Okay, yeah, that's that might have something to do with the way we're we're playing around with some of this stuff to allow the creation of new jobs from agency to not require the recurring job level and the job location level and file maker, which means of saying, you know, if this is empty, then use this. And if that's empty, use this over here. Kind of things to say, because location could be coming from a different place. It's coming from the job location record, if it was created in scheduler, but if it was created from the agency app, we don't have a job location record, so it's being held at the job assignment record, because that's the only one we're creating for them. So it might be a little bit in that, but it's odd that it would fix itself. I don't know why that would happen.
+
+Speaker 3  28:09  
+Yeah, it does as soon as so for like, if I toggle in between things, or usually with officers, I'll just have them log out, log back in. Yeah, it's gone. I, you know, I don't know. It's, it's weird. The dates are, like, this one was 2019 but the one, while you were gone, he was telling me about this, this job that was there, and I didn't get a screenshot from him, but I was like, what if the date say? And he was like, it was like, June of 2024, and I was like, Okay, so that's, that's not real, right? And then it hit him. He's like, Oh my gosh. So we logged out and logged back in. It was fine. It was gone, and it's not everyone, so I don't know, but that's an update on that date on deep breath, ever since yesterday, when we had the little like, you know, thing with the app and the system and windows, yeah, yeah. This, this is back. This, it appears you're offline, which you're not technically, because as soon as you say, okay, it goes away. But it's causing confusion again, with officers thinking that it didn't clock them in, or, you know, our apps, quote, unquote, not working, but it's just this thing that pops up again. So I don't know what he did to fix that, or if anything that we reset yesterday did something, and I don't really know, but I just wanted you to know that it's shouldn't
+
+Speaker 1  29:40  
+have, but you know, we'll, we'll take note, and I'll see.
+
+Speaker 3  29:49  
+I've done a few jobs today and played around in the app, and I saw it like five or six times. So it's, it's pretty frequent. Yeah.
+
+Speaker 1  30:00  
+Yeah, is it mostly when you're trying to clock in or clock out, or is it just when you're navigating around?
+
+Speaker 3  30:11  
+Definitely when I'm clocking in, clocking out, that's and that's when officers have seen it the most. But I I've also seen it if I'm like, on the home screen and I'm kind of scrolling through and then I'll maybe stop and put set my phone down and come back.
+
+Unknown Speaker  30:26  
+Then it, you know, appears.
+
+Speaker 1  30:29  
+So this may have to do with what was going down yesterday, and shouldn't be happening once we move to AWS. So it looks okay. It looked to me. I didn't really go too deep into the logs, because that's, that's kind of Jeff's territory. But from what I saw, that server that you guys have there is, is just getting smashed by by the traffic. It's it's running. I saw it averaging at about 60 to 70% CPU usage, and just tanked at 100% memory usage at all times. Now, the 100% memory usage isn't the most terrible, and I have seen systems run successfully like that, but the CPU normally runs between 10 and 20% so the fact that it's been at 60 yesterday, I don't think that system that server is is really handling this very well, between this and other things that that physical machine does because it also runs your QuickBooks and your DNS and maybe some other things. I don't know all of what that physical machine runs for you guys, but once we get to AWS, that's a more powerful setup, and that's all it does is run file maker, so that should no longer, it shouldn't be stressed out as much as the machine that you guys currently and that could cause these offline things. Because usually when it says, you know, you might be offline or something, it's really timing out. It's not getting a response fast enough so it times out. And that could be because it's just trying to do too many things at once. It's trying to take on too much at once. The machine just isn't powerful enough to run.
+
+Unknown Speaker  32:28  
+This makes sense. It's crazy.
+
+Unknown Speaker  32:36  
+Yeah, the current much is a
+
+Speaker 1  32:41  
+it's a two 2.6 gigahertz processor. But again, that's running multiple things, not just file maker. And the FileMaker instance of the of the Windows Server has 22 gigs of RAM now windows on itself, holds between six and eight gigabytes of RAM just to run the operating system, which leaves you guys with with about 14 gigs of RAM to run file maker, which is totally not enough the AWS server, we gave it 64 gigs of RAM to for now. And as we grow, we can, it doesn't take much to to make that bigger. You can just tell AWS, you do have to bring it down for a little bit, you know, an hour or something. But you can just grow that. You can just say you want more and more and more where we don't want to do that until we need it, because it, of course, costs more, but, but it should, again, that's close to three times the power what you have currently. So it should be able to handle this a lot better. That
+
+Speaker 1  34:01  
+doesn't mean I won't have somebody looking, but
+
+Unknown Speaker  34:07  
+for whoever's listening and understands that,
+
+Unknown Speaker  34:10  
+I think it's interesting. I
+
+Speaker 3  34:13  
+yeah, I just, I know Jake had done a fix, and I just wanted to know where those back. I couldn't tell you what that makes sense. That's kind of it. And the only other thing, what's that still inaccurate, is the, you know, the mileage and the pay. I don't know how many people are actually requesting that right now. You know, it's not really tax season, so feel like we're all right.
+
+Speaker 1  34:40  
+I have on my list. I see the queue of report,
+
+Unknown Speaker  34:45  
+they're all mine. I want to say they're Yeah, 95%
+
+Unknown Speaker  34:50  
+okay, that's good,
+
+Speaker 3  34:52  
+all right, the scheduler, Oh, little singing. And I don't know, I feel like. Awesome may have happened because some of these on my list I have added today, and I'm not sure if it's because of yesterday's thing that happened, or I just happened to run across it today, and who knows, but I'll show you one of them's if I'm on officer detail, and I wanted to, like, go into here,
+
+Unknown Speaker  35:24  
+get that small one.
+
+Speaker 3  35:28  
+You know, usually it's bigger with the little map thing.
+
+Speaker 1  35:31  
+Is that normal? No, what did you do to get that again?
+
+Speaker 3  35:36  
+So Office or detail, and then time entries, and then Chevron to whichever one I wanted to open up job assignment detail, go into the old one, yeah. And I don't know if, if that's new as of today, or because I found it today, so I was like that. I don't probably, I don't know when it
+
+Speaker 1  35:58  
+probably never used that. That's lovely, true, very, very rarely in there,
+
+Speaker 3  36:04  
+yeah, because this one's good, like all the other places, I check for, you know, the bigger version, unless I change. So I noticed, if I, if I change the contact from the job detail, it it gets me, it gives me the small one. Also, I don't know if that's connected
+
+Speaker 1  36:24  
+once I'm still, yeah, sorry, go ahead. All right. What was the second
+
+Unknown Speaker  36:29  
+method? So I went here,
+
+Unknown Speaker  36:34  
+change the contact. What
+
+Speaker 3  36:44  
+and then I get it's all, like, squished here, and it looks like it's, you know, loading, but it's not
+
+Unknown Speaker  36:52  
+so job, assign,
+
+Speaker 1  37:01  
+change, P content,
+
+Speaker 3  37:06  
+no, yeah, the second one was through dashboard. The first one was just through officer detail, yeah. Okay, okay, so this missing hours Marissa was supposed to send me a screenshot, but I don't have it. We came straight from a meeting, so I forgot to ask her for it. So I will hold off on that one. But she said that yes. So yesterday, after the backup, she asked me if there was a reason why she would be missing hours in scheduler from like July and June. And I was like, no, if anything, like, he backed it up from 205, you know, to maybe four, but definitely, it's not that far. So I don't know
+
+Unknown Speaker  37:52  
+you guys lost, like, an hour
+
+Unknown Speaker  37:56  
+time, but
+
+Speaker 3  37:58  
+yeah, yeah. So I'll, I'll try to get those if, or maybe also see if it continues to happen, or if it was just I haven't had chance to look into it, so I'm going to skip that for now, but bring it up just as a placeholder for in the future. Do I don't know if there's much so the server that the thing that happened yesterday, so Joe, when he was trying to log into his app, he was getting an error message. One of the things once it came back up that we had him try the first thing was just to delete the app and then re save it to his home screen. That didn't work. But when I went to or from, like the desktop, you know, the app, the here, and then I sent him a recovery link for his you to reset a password, that's what did it. That's what got him back in. So I don't know if there's something related, because that's how I solved all those other officer issues on the July 11
+
+Unknown Speaker  39:11  
+certificate thing. I don't know.
+
+Speaker 3  39:14  
+I just wanted to bring it up. I don't know if there's something in that, in in the way that you know, you said that. I send that recovery link that makes a difference, but
+
+Speaker 1  39:25  
+that's fine. It's it's kind of hard to tell us. A lot of the authentication with FM better forms is kind of a black box that we don't have a lot of view into. Okay? So if, if it's a continuing problem, we can, we can rope in, if in better forms, and try to discuss it with them. If we can find a consistent, you know, set of actions that makes it happen,
+
+Unknown Speaker  39:59  
+I would. Say
+
+Speaker 1  40:02  
+the best thing we could do is not have a server that crashes or turns off. Yeah, yeah. Is the is the desirable if that's what causes this problem, that's the real problem, not that you get this error afterwards. The real problem is that the server shuts off, and that's the problem we should address.
+
+Speaker 3  40:27  
+This is just a quick question. So you know, the other day when that guy was getting all the notifications, and it was because Sean was still like, stuck in the field, are you the only one that can kick them out, or is there a way for us to kick them out.
+
+Unknown Speaker  40:42  
+I don't know I'm the only one, but
+
+Speaker 1  40:48  
+this is one of those things that I've talked a couple times about. You know, as this grows, you guys might want to look into either making someone there, and it's a kind of system administrator or data analysis analyst, or hire one what you know, whatever way you guys want to go, but that and other such things may require You to remote to the server, sign into the FileMaker, admin console, and do actions there right now, you know, yeah, I'm kind of the one that can do it. I'm happy to show somebody how to do it. But know, whoever I show how to do it, you're, you're going into an area where you can really screw things up if you don't do things correctly. So I'm happy to kind of show people how to do actions like that, or any other actions we may think that you want someone to know
+
+Speaker 4  41:54  
+is, May I interrupt, is that something that would be like for our IT guide.
+
+Speaker 1  42:01  
+Maybe that that could be fine. Um, I've but I mean, by your IT guy, you mean Jeff, yes, yeah. I mean that's fine, if you'd like me to show show him how to do it.
+
+Speaker 4  42:15  
+I'm just wondering. I don't know. I don't know if it's Ashley. I don't know if it's Jeff. I don't know. Is it something that's needed right now. Like, Ashley, do we feel like, no, no,
+
+Speaker 3  42:22  
+no, it's, it's definitely not right now. But I was just thinking like, in the future, when we're not so reliant on Brian, you know, doing things for us. Like, is there a way that I could learn, you know, not that I always want to be in the background, but also, you know, just for emergency reasons or for turning that off sec, I would have got that notification for every 15 minutes. So it's definitely not something we need tomorrow. But I was just wondering, you know, if that's something that could be taught or
+
+Speaker 1  42:50  
+yes at some point. Like, I've like, I've said, I recommend you guys have somebody that you know is, is more available than we're going to be at some point when you don't when we you know, once we've got this thing developed, you don't want to continue to have to contact us. And there's a lot of things, as far as running the server background that can be done, that I can teach again, it's just it needs to be somebody who's who's a tech person, who's pretty savvy and who you guys don't mind mucking around in areas that can really screw things up if they do it wrong.
+
+Speaker 4  43:34  
+Yeah, understood. I remember this earlier conversation about this too. I just didn't know if it was now or if it's something when we're up and running and that's when we need to pass that torch,
+
+Speaker 1  43:46  
+yeah, that's, that's up to you guys. I mean, it's okay for us. Of course, it's I was that happened to crash and have the problem, as far as yesterday was concerned, right into my day, and I kind of stuck around for a little bit, but in general, you know that happens on the weekends, if it happens in the middle of the night, you know, we're not your people for that. Yeah, yeah, I'm okay. I'm happy to make documentation and show people anything. It just needs to be somebody that that knows what they're doing, and you don't mind being in those very critical areas. Thank you.
+
+Speaker 3  44:39  
+This one weird. Brian Peterson, so she's not a new officer, I just it was weird because his address isn't here, but it's when I looked here,
+
+Unknown Speaker  44:53  
+nope. Like this one,
+
+Unknown Speaker  44:56  
+like the address is right here. I.
+
+Speaker 3  45:00  
+Was just kind of wondering, if you had any idea on does that just get? I don't know. I don't understand why it wouldn't get,
+
+Unknown Speaker  45:13  
+yeah, I am reported.
+
+Speaker 1  45:16  
+I am not. I can try to put time into figuring out how that would happen. But if it's, if it's a one off, it's probably not worth Yeah, okay, worth time, okay, especially considering you guys do have it so you could just enter it back in. But if it's a real problem, by all means, yes, I'll look into what's happening. But if it's a one off, you're probably going to have me spend three four hours to tell you who did it.
+
+Speaker 3  45:57  
+I'll skip an egg on it. Oh, I'm gonna skip this one just because it's it was alarming, but it's nothing you can do about it. I just did a search of, you know, active officers indoors with an Arizona address, just to load up my list a little bit, that did not have a traffic box checked, but had work traffic in the past. I know at one point it was, I was just going through that. I don't know when, when they was, you know, unchecked. It was a lot of them I went through and tried to clean up the ones that I knew.
+
+Unknown Speaker  46:38  
+But we talked about this one last week. Did
+
+Speaker 3  46:47  
+he talk to you about that? Like, when we do the native app, the maybe a different way of requesting to be removed, like, if they request to be removed, but it's an accident. The only way we can, you know, reverse that is by taking me off and then putting me right back on. That way I can block in and out from the app. We were talking about possibly having something in here that reversed that request. Or, I mean, it doesn't have to be something that's right now more. So I think it would be helpful when we get to the native when you know the native app is up and running, just some some way to reverse that request. Okay, I know it's gonna have the double Are you sure kind of thing? But you know, but they're still, you never know,
+
+Speaker 1  47:42  
+yeah, it asks you, Are you sure three times and you still accidentally get free?
+
+Speaker 3  47:47  
+That's right, yeah, it's gonna happen.
+
+Unknown Speaker  47:50  
+Brian, oh yes, yes, ma'am, yes, ma'am.
+
+Speaker 3  47:55  
+And like, I know that I have to take them on and off, but not everyone does, and then they can't clock in, and it's just a fun process. Um, this the, you know, how I, we ran the report, and there was, like a back door that didn't get closed to retest this door. Yeah, remember. So, okay, so I had ran a report because I was testing it, and then I tried to send a job assignment email, and it was giving me the hours needed one and useful told me that, oh yeah, it was like a backdoor that didn't get closed from when I was Yeah. Just wanted to bring it back up, maybe put it back on North somewhere. I haven't tested to see if it did it again.
+
+Speaker 1  48:44  
+I don't remember if I fixed that. If I did, it would have been in Trello. Otherwise, I do see it on my list here.
+
+Speaker 3  48:53  
+The Availability can change for someone's name. Oh, yeah, I don't think I I remember this one right where it just kind of turns the names go away if I search for someone on here. Yeah,
+
+Unknown Speaker  49:16  
+that's it. And then
+
+Speaker 3  49:20  
+I was curious, is there a way to make it so that all the names are auto alpha,
+
+Unknown Speaker  49:28  
+one officer name there at the top?
+
+Unknown Speaker  49:31  
+Oh, no, I know, I and I realized that you can do that. But that's
+
+Speaker 1  49:40  
+I mean, the problem is, I think by default, it's by date,
+
+Speaker 3  49:45  
+okay, or, you know, when we put it in, yeah, well, no, by week of well, because this is this week, this is this week, and if I want to go to another week, it's there. But how do you think. So if I added someone to this list right now, yeah, you know it?
+
+Unknown Speaker  50:06  
+Okay, well, I hit the it looks like it's an Alpha Order.
+
+Speaker 3  50:09  
+Well, it is, it is right now, because I hit the officer name, but it's not typically and so people will end up like putting I try to go in and clean it up, because they don't realize that he's already in there because he's not in the peas. And so they'll add him twice, which
+
+Speaker 1  50:27  
+the thing is, I think it is, it is sorting by alpha for the officer name. The problem is, it doesn't resort when you add somebody. So if you add somebody, it just puts them at the bottom until you do something else that makes it, you know, re put it or redo the sort so I could see,
+
+Unknown Speaker  50:51  
+oh, you, you just closed it.
+
+Unknown Speaker  50:53  
+I did that on purpose, so because I wanted to see,
+
+Unknown Speaker  51:02  
+that was something else.
+
+Speaker 3  51:17  
+Yeah, see, it's not alphabetical, okay, like, at least initially. If not, it's okay. I'll just try to keep telling people to make sure you hit that. I think once the search is fixed, hopefully that will eliminate the duplications. But either way.
+
+Speaker 3  51:46  
+The other request for this screen was when we add as someone new, having the cursor
+
+Unknown Speaker  51:54  
+just automatically go here.
+
+Speaker 3  51:57  
+That's easy or not, but that's been a big request besides the search features.
+
+Unknown Speaker  52:17  
+Now I know that is One second, Yeah, you're good. You
+
+Speaker 3  52:54  
+okay, one of the things I noticed also is if we have so like, if I put in a job and it has POV and I send a notification, you know, email to the officer on there, it says that the job requires a car, right? If I have one that is marked with agency, it doesn't show up that it needs a vehicle.
+
+Unknown Speaker  53:23  
+It doesn't show up where on the officer web app,
+
+Speaker 3  53:26  
+nope, on this email notification template, oh, see right here. Normally, I would say like, job requires a car, but it's just not right. It's not adding that with agencies. I
+
+Speaker 3  54:09  
+Okay? Favorite one, because I know we're running out of time. One of the things I did notice, though, was, if we change a contact on a jobs, it gives us the number, but there's no way to search for that number in the contact
+
+Unknown Speaker  54:39  
+area if we can add that,
+
+Unknown Speaker  54:46  
+that makes sense. Yep.
+
+Speaker 3  55:11  
+Okay, I mean, I can honestly save the rest for another day. I've noticed, okay,
+
+Speaker 1  55:28  
+that's great, yeah, that gives me just, just more and more and more on my list.
+
+Unknown Speaker  55:33  
+Yeah, welcome back. Sorry, yeah.
+
+Unknown Speaker  55:38  
+We missed you, Brian, that's why we did this. Yeah,
+
+Unknown Speaker  55:42  
+sorry, Brian,
+
+Speaker 1  55:44  
+so alrighty. Then I am, I am back, and I'm working along, and I will work along on the list when I get time in between, in between other clients and all the project management and stuff I'm doing for you guys that's tends to tend to come first, unless one of these things is an emergency. So I've been that's kind of what I've been working on, going back and forth between all of those items, and I will continue to do such. Any other thoughts, needs Joe something else you need an update on or to,
+
+Speaker 2  56:26  
+you know As of right now, nothing you know what? Actually, I just emailed Tom so he really roped you in with jasmine and everybody and his team. So that's a good thing. And apparently Jake can't get on with the credentials I provided him for the for the test flight for the developer side of things. So I'm going to work on that. But I do have a question. I emailed Jake, and I, in theory, I think this should work. If I can't reset that password, at least immediately, I can at least add you and Jake to that right and as admins and you guys should be able to just do what you need to do anyway,
+
+Speaker 1  56:57  
+I believe. So I you'd have to ask Jake. This is Jake's territory. I Okay, I've only clarified user on this, but he's, he's the person that would know his way around it a lot better than I
+
+Speaker 2  57:10  
+Okay, I'll wait for his reply. Then, just because I know I'll get, I'll get working on resetting that password, at least in the interim. Have you guys set up anyway as admins, so you guys can upload blue dispatch and things like that.
+
+Speaker 1  57:22  
+Yeah, I did find, because my I'm looking at your email, my Apple ID, I've got two of them that, luckily, I figured out a way to get connected. But the the email address there is the one it sends it to. So like, right at a Yahoo email address that is my Apple ID, but I actually don't have access to that Yahoo email anymore. Oh God, no idea what it is. So I have another one@me.com that I actually do have access to. So I just want to make sure if we are going to use that, someone there has access to that yahoo.com account?
+
+Speaker 2  58:05  
+Oh, yeah, absolutely. It's Yahoo Bonnie's husband that actually has access to it. But it's just, instead of trying to rope him in back and forth, waiting on the password resets, just with at least kind of streamline it in the interim. So,
+
+Speaker 1  58:22  
+okay, yeah, I'm sorry. Jake was just messaging me. We are going to need to double, triple and quadruple, verify that officer phone numbers are absolutely 100% unique in the FileMaker system. Okay, that's not for today, but apparently that's moving forward, and if we're going to use it for codes for them to be able to log into the native app, yes, we definitely need to make sure those are so I will be, at some point, I'll add that to my list to start checking and having a process that verifies that As you guys try to enter them or edit, edit them
+
+Unknown Speaker  59:05  
+to make sure that we don't have any duplicate phone numbers in there.
+
+Speaker 1  59:10  
+Just to let you know, that was something Jake just said to me, so I'll, I'll work on that validation at some point here. All right. Well, it sounds like we are good and
+
+Unknown Speaker  59:26  
+and we'll just keep chugging ahead. Awesome.
+
+Speaker 2  59:30  
+We appreciate it. Brian, like always, welcome back again.
+
+Unknown Speaker  59:33  
+Oh, thank you. Thank you. Thank you.
+
+Unknown Speaker  59:36  
+Alrighty. Well, everybody have a safe day, and if,
+
+Speaker 1  59:40  
+if no other reason, we'll speak next week, but I'm pretty sure some type of contact will happen this week.
+
+Unknown Speaker  59:46  
+Okay, have a good one. Yeah, all right. Okay, bye.
+
+Transcribed by https://otter.ai

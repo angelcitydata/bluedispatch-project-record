@@ -1,0 +1,505 @@
+Speaker 1  0:02  
+Brian, what's going on? How was your weekend
+
+Speaker 2  0:06  
+yard work? You know, last couple weekends to get all seeding and fertilizing and all that fun stuff done.
+
+Unknown Speaker  0:16  
+That's a problem in Arizona.
+
+Speaker 1  0:18  
+I try to put my rye in pretty soon here, but hopefully before the end of October, I got to have it be somewhat cold, right? We're still in the 90s, so it's tough, yeah, yeah.
+
+Speaker 3  0:28  
+We have that problem. We have to switch our grass over. Oh, switch it over. Yeah. We have to switch
+
+Unknown Speaker  0:33  
+it, yeah. Oh no. We don't switch
+
+Unknown Speaker  0:38  
+grass, yeah, yeah.
+
+Speaker 1  0:40  
+I'm not familiar with the switching either. Amanda, what do you guys? What do you
+
+Speaker 3  0:43  
+Oh, you don't scalp it. And then you have to put the rye like you have to, we have to change the grass, because our one grass will go brown if in the winter, and we have to switch it over to the green to the other one. Oh, okay. Oh yes,
+
+Unknown Speaker  0:59  
+yes. Let ours go brown
+
+Speaker 3  1:01  
+in the winter. Oh, we don't. Maybe that's why we have a water issue.
+
+Unknown Speaker  1:08  
+Like, yeah, no,
+
+Speaker 2  1:11  
+no, you just, you plant all your seed and do the fertilizer and stuff in the spring, and then again in the fall, it'll, it'll grow a little bit, and then it'll lay dormant brown for the winter, and then come back. So, oh, okay, that's, that's the only way to keep grass in your Well, in my yard, because my yard is all red clay, and nothing really grows very well in that.
+
+Unknown Speaker  1:33  
+So, oh, I can understand that. All right. Today, yep,
+
+Unknown Speaker  1:41  
+I think this is all of us, and
+
+Speaker 2  1:42  
+this phone number is somebody we know. I think Lori, oh, okay, hi, Laurie. Welcome, hello, right, all right. Well, if this is our quorum, we can get going. Um, let's see for some updates. After discussing with ginger sec and Bonnie last week, we decided to put up another AWS instance. We got that done, and I, you know, sent the email on that, emails on that today, so the we have a second instance up. I'm I'm asking Tom to as the emails go back and forth. I'm not, I'm not sure we're not having a miscommunication here. But I'm trying to ask him to do everything that they want to do to the prod server, do it on this new one, all the you know, any vulnerabilities they found that way. They wanted to close all of that kind of stuff. I'd like them to do it to this one, and then we move your system there and make that prod from there, we could just make a snapshot, and then we'd have two instances, so that we could easily flip back and forth to help with downtime, for future maintenance or anything else that happens.
+
+Unknown Speaker  3:14  
+So hopefully that happens
+
+Unknown Speaker  3:18  
+completely this time.
+
+Speaker 2  3:21  
+You know, everything that they need to do they can do on there, and we can test, and it's not going to cause, you know, any downtime until we want to move, move the system over and make that instance prod whenever, that is whenever they're happy that they've done everything they need to do on their side, and we are happy after testing that, you know, file maker still running everything properly, and all the web apps and other apps work. So that is the plan there.
+
+Unknown Speaker  3:58  
+So that is being moved forward on
+
+Speaker 2  4:03  
+I've have talked to Jake and Steve, and just seeing where they are, they're doing more processes such in the native app. I know we're getting the my jobs page. They're working on that and working on like booking jobs. And when we did the demo before. We wanted to be able to see notes and such on the main list screen, and be able to, like, swipe over and see, you know, more information about a job on that list screen. So I know he's working on that, and that's just kind of the stuff they're working on currently. What else do we have for you guys? I think that's mostly what I've got to update on. It's it took a lot for all that server stuff, so that did take a decent amount of my time. I did get to some small things from Ashley's.
+
+Unknown Speaker  5:01  
+This list last week and
+
+Speaker 2  5:05  
+dealing with notifications and a timing of notifications based off of Ashley's emails end of last week and beginning of this week. So hopefully that is running properly by now, I hope. And then last thing want to show real quick, everything it's going to do is not done, but the very basic is, so I've created a new job location here. This is on the 10 dash seven les server. So this is development. Go ahead and give it a site, go and a fake customer, just because I like to have something set in there,
+
+Unknown Speaker  5:52  
+at least an agency.
+
+Speaker 2  5:59  
+Okay? So some if you go, do go into the dev version, you're going to notice a few new things over here in the location detail the address section. So now we do have a job name, and that will be kind of what displays on the app. Yes, where currently the address is shown. This will be what's shown. So you can kind of put in an address, or, you know, however you'd like to type it, that you'd like them to see it. And then you can click on this right here, this little like GPS pin symbol, not quite sure what we call this. And we've got our mapping feature like in AGC app. So I can put in an address here, nice.
+
+Unknown Speaker  6:46  
+That's that looks good.
+
+Speaker 2  6:48  
+That's my house. And then I can center, I can clear, I can do all that stuff when I'm done, and I've got it right. And I see what I want to see here, I can hit save, and there it is. There's the address, there's the Latin long and the time zone that it's associated with, all gets set in there. So we've got some more work to do, because, like, if I go back to it, it just, it's blank and ready for you to select something new. So it's, we need to get it to show you know, this stuff. But the main thing was make sure we're getting Latin longs. That was the biggest deal. And now, if we, if we can test this and start using this, we'll have Latin long so that'll have us prepped for the native app, and we can say, you know, fake address, whatever you want this to say, it doesn't really matter. That is up to you guys. So that is up and running in dev, you know, Ashley or whoever, if you would like to do some testing on that, and once you give us a thumbs up, we can put that in your live system.
+
+Unknown Speaker  8:01  
+Yes, no, yes, okay,
+
+Speaker 2  8:07  
+but righty, that's, uh, that's what I've got to update and show before we get going on the list. Ashley, yes, you can take it away if you want to start, I see your agenda. You wanted to start on the the
+
+Unknown Speaker  8:23  
+login page for agency.
+
+Speaker 4  8:27  
+No, yeah, that, yeah, any order. But I was curious if there was any update on, if you like anything new.
+
+Speaker 2  8:34  
+I I spoke to Jake, and he was like, yeah, there's some stuff we can do on designing that page, on changing the UI, he would absolutely, you know, we would need the like hex codes and exactly what those colors are, the image that's in the background,
+
+Unknown Speaker  8:55  
+the font that's being used.
+
+Speaker 2  9:00  
+You know, everything we would need to recreate that correctly, okay? And then I also noticed on there, it shows a logo of, I guess, the agency that's trying to log in. And I'm not sure we could necessarily do that, because we don't know what agency is trying to log in until they log in,
+
+Unknown Speaker  9:21  
+right? That makes sense.
+
+Unknown Speaker  9:24  
+Exodus, font color
+
+Unknown Speaker  9:28  
+or the image is phone,
+
+Speaker 2  9:31  
+okay, and font what? Yeah, if it's not a basic one, which it does not look like it is, then we would need the install files for that font,
+
+Unknown Speaker  9:46  
+I will ask,
+
+Speaker 2  9:51  
+and with, as with any custom touch customized font like that, we can't guarantee it will. Will show up exactly like that and pretty on everybody's computer, because that if it's not a web ready font, then their browser has more control over what font is shown than we do.
+
+Speaker 4  10:16  
+Gotcha understood? Okay,
+
+Unknown Speaker  10:21  
+cool. Thank you.
+
+Unknown Speaker  10:27  
+Let's see. Oh, I didn't
+
+Speaker 4  10:36  
+just to update on the the weird white app that people were seeing. Yeah, okay, so it was like it was just the Galaxy people, not all of them, though, because I called one person who regularly uses it and he wasn't having issues. But the one thing that those two guys did have in common, aside from their having the same phone, is they the last time they had logged in, although recent, it was before that we switched over, but clearing their caches, or Chrome caches did the trick. So I don't know you know exactly what caused it, but it that did rectify it. So just wanted to update you on that it was just weird because it was just Galaxy S 22
+
+Unknown Speaker  11:31  
+I don't know interesting,
+
+Speaker 4  11:35  
+but I Yeah, okay, scheduler, so I don't know, I think, I kind of think it was just yesterday, because I so I usually, when I run into issues, I'll, like, put them on my list, and then I'll, you know, test them, and then the next day. So, like, today I'll go in and retest everything. And it was, it was working today. So I don't know if, if anything was being done or had changed in the mod log between yesterday and today. I imagine not, but I don't know. It's no only
+
+Speaker 2  12:15  
+I have not touched your production system now that we have a dev copy I can, I can program and test on dev like I'm supposed to, and not play with your production without it being, you know, tested and and all that. So, no, I haven't been making any changes there, right?
+
+Speaker 4  12:34  
+It was just so strange. So yesterday morning, Christine had changed
+
+Unknown Speaker  12:43  
+officers names.
+
+Unknown Speaker  12:47  
+Okay, and it's here. It just wasn't showing here
+
+Speaker 4  12:51  
+in the only thing it showed was just this one, the 822, these, this one and this one. Sorry, but this one wasn't there. So I it's obviously there now, but it just when I when we had looked, but she was like she had changed it to the wrong person, so she wanted to change it back to who she originally had, but it just wasn't showing in here. And then same thing with Stacey, she had entered hours for
+
+Speaker 4  13:34  
+Anthony Flores this morning, so I
+
+Speaker 4  13:43  
+it was just, I don't know, anyways, it wasn't there. Now it's there. So I just kind of wanted to ask to see if you had maybe,
+
+Unknown Speaker  13:57  
+nope, I was not playing. Okay.
+
+Unknown Speaker  14:02  
+Um, let's see notifications.
+
+Speaker 4  14:08  
+So the notifications so you had fixed it on Friday, and then it was still sending out notifications like crazy through the weekend, like and some guys were getting them a few days in advance, like, like, the job didn't start for two days. But when I came in on Monday, I did not I it seemed to have corrected itself. So I don't know if a delay is is normal or
+
+Speaker 2  14:37  
+it was, I did make a change yesterday, okay? Yesterday morning, that that probably was the fix I'm going to assume. Okay, I think it was just I missed a. Script or two that calls notifications because they come from a bunch of different places. You guys like notifications, so I've got,
+
+Unknown Speaker  15:09  
+I had to find them all, and apparently I didn't.
+
+Speaker 4  15:12  
+No, no worries. Yes, it seems to be better, at least as of Monday, so I'll keep an eye out, but seems good, seems back to normal. The next thing I know, I know it initially we had wanted this as default, but it's becoming especially as we've been getting more security jobs when people and this has nothing to do with programming, it's more paying attention. But can we have the category section not default to traffic? Maybe not default to anything, but be something that we have to. You know how we skip agency? It won't let you schedule a job. Oh, the problem is, is people are like, 95% of our jobs are traffic, right? So it's easy and it's nice to have a default, but when you get a security job and they're not going, they're not taking the time to
+
+Unknown Speaker  16:11  
+check it over, change it, yeah,
+
+Speaker 4  16:14  
+it's showing up as traffic, and people are able to see it because of the settings that we have, which are great and working, but if we don't schedule it right, then we have a little issue on our hands. So I'm just wondering how hard that would be.
+
+Speaker 2  16:28  
+It's not that hard. Do you want to do that?
+
+Speaker 4  16:32  
+Yeah, I think so. To
+
+Unknown Speaker  16:41  
+I'm happy I know
+
+Unknown Speaker  16:54  
+job locations,
+
+Unknown Speaker  17:00  
+blank. And
+
+Unknown Speaker  17:06  
+category two,
+
+Unknown Speaker  17:11  
+job creation, validation,
+
+Unknown Speaker  17:21  
+okay, okay,
+
+Speaker 4  17:26  
+let's see. This isn't exactly part of scheduler. Maybe it is, I don't know, and it doesn't happen often, but you remember so like, if someone has it. And maybe this is something that you can explain about, maybe how the native app would work. But for example, an officer is on the app, let's say, looking at Seventh Street and Garfield and Christine has it open and getting ready to, like, put an officer on there. It'll let you both take it at the same time. Is there? What are your thoughts on? If there's a way around that, or a notification, or because I don't want to restrict us from putting someone on, because if someone I don't know, I don't know exactly how it works, because all they have to do is hit the button. So that is it. Just literally, we are assigning and they're hitting the button at the exact same time. Is that how that's working?
+
+Unknown Speaker  18:33  
+Whoever does it second wins.
+
+Speaker 2  18:40  
+This truthfully, sounds to me like a great candidate for why we had a Publish button originally. Yeah, and maybe that's a feature. Is time to bring it's time to bring back.
+
+Speaker 4  18:56  
+Well, and a lot of times they've been like, it's a job that's been open for a while. It just so happens that she assigned someone and de la Oh took it at the same time. He got the email, but the person Christine put on it got the spot like his name was the last to show.
+
+Speaker 2  19:16  
+And if that job wasn't published, he wouldn't see it. You can unpublish it that button, and then go see who you want to assign to it.
+
+Speaker 4  19:26  
+Okay? And the publish button, that's going to be something that we were going to roll out later, right?
+
+Speaker 2  19:36  
+I guess we started to roll out. There was a little glitch with it, and it was, I was told to just not use that feature. Okay?
+
+Speaker 4  19:47  
+I mean, it doesn't happen often. It happened one, like, I think it's happened twice in the last two weeks, and before that, though, I hadn't seen it happen, so I wasn't sure if I just wanted to at least try and bring it.
+
+Speaker 2  20:00  
+Yeah, and this would a Publish button and such would help this scenario. But also, just in general, you know, give you guys kind of like the on hold almost, you know, just a way to create a job and not have an officer on an app see it, you know, because you haven't published it yet. So you can do whatever you want with it, assign officers to it, do things with it, you know, especially for those ones that you're going to be, you know, assigning to ODM or whatever, you know kind of thing instead of a regular officer. That's the perfect type of stuff that you can just not publish because you know that you're going to be assigned to it and you don't have to worry about hurrying up and doing it, you know, because you're afraid an officer might see it and take it.
+
+Speaker 4  20:49  
+Okay, yeah, that you're right. That's kind of what we've been essentially using the hold and or out of area button for at this point. But okay, so Publish button, though. I know,
+
+Speaker 2  21:19  
+yeah, that that is a, you know, a little bit of work and a good amount of testing so that that would be something I'd want a yay or nay on go ahead before I start messing with it.
+
+Unknown Speaker  21:31  
+Gotcha. Okay,
+
+Speaker 4  21:36  
+B, I R, Na, I'll get back to you on that one. Okay.
+
+Speaker 4  21:50  
+Contacts, cursor, I saw that the availability was fixed. Both things, that's good. Um, the opposite job, or go. We went over that last time
+
+Unknown Speaker  22:05  
+the Casa grand Avondale thing.
+
+Speaker 4  22:10  
+Oh, how hard would it be if I wanted to add to, you know, the email that officers get, the job notification email, if I wanted to add a line onto there,
+
+Speaker 2  22:22  
+which job notification? Oh, here, I'll show you the job detail when they book one. Yes, it's not too awfully hard, I guess. Depending on what it is, it's
+
+Speaker 4  22:35  
+it would just be somewhere like in this area, that officers have paid for hours worked,
+
+Speaker 2  22:41  
+yeah, is it a static line of text, or does it need information about the job in it,
+
+Speaker 4  22:46  
+just a static line of text would go out to everyone, kind of like the Okay, so just send you what I want, like, what you want. It's a whole new thing, perfect. I figured I just wanted to make sure.
+
+Unknown Speaker  23:00  
+Cool. Okay, so
+
+Speaker 4  23:07  
+I guess I'll start with mass cancel. So the mass cancel, I don't, I don't know if you can explain why, but I thought I'd bring it up just in case the mass cancel is taking a really long time to cancel out. But I noticed when I was trying to do it I don't want to cancel Jake's that she just
+
+Unknown Speaker  23:42  
+it so like if I,
+
+Unknown Speaker  23:57  
+yeah, okay, okay, so Well,
+
+Unknown Speaker  24:04  
+the actual cancelation or the sending of the messages,
+
+Speaker 4  24:08  
+I actually haven't tested mass cancel messages yet. Has that been fixed?
+
+Unknown Speaker  24:18  
+I believe it has. Okay.
+
+Speaker 4  24:20  
+I can test that. I haven't I haven't. I haven't tried. I was just doing a mass cancel, and it just took a long time. Maybe
+
+Speaker 4  24:35  
+it was this one, anyways, so I noticed that the mass cancel is coming up as UTC time, yep, but this one like, if someone were to cancel it, like through this way,
+
+Speaker 2  24:58  
+yeah, because one is using the two. Timestamp from your computer and one's using the timestamp from the server?
+
+Speaker 4  25:04  
+No, I'm just worried because we use, like the mod logs and the cancelations and all of all of it, as you know, a timestamp, and not knowing which one is pulling from UTC and which one's pulling from our computer, it's just kind of creating. It just, it's hard to know, because nothing says that this is, you know, UTC time, so and so, mass cancelation. I don't know. I guess I'm curious. I know you said that you found a short term fix for when we press this. I'm not going to do it, but when we press that, you know, like, I was just wondering if there's a possibility to make things very consistent. We use the mod logs a lot, like multiple times a day cancelations, like, if some If a company wants to know what time they canceled. Just, I can't even tell you all the different ways that we use them, but accounting uses them a lot, and we do so is it? Is there a long term fix. I know that you had said that it's a lot of work and very time consuming, but I'm just, I can see this coming. The people, yeah, especially the ones that are use it more. So like Stacey, uses it multiple times a day. And then, if we ever wanted to reference, you know, what time Nesbitt was canceled, will they remember to minus, you know, subtract the number and it's just, it's
+
+Unknown Speaker  26:53  
+just something I can definitely see,
+
+Speaker 4  26:57  
+keep Bringing it just keeps getting brought up to me. I you know, I just wasn't sure if your short term fix could be expanded in any way to other areas. Also, I don't know if I'll be able to find it.
+
+Unknown Speaker  27:20  
+I know where I can find it.
+
+Speaker 2  27:27  
+Um, you know, I I can't the the what's going to happen. It's definitely easier and technically better if I use UTC, but if I'm doing this, then I would be using UTC everywhere, not just in the mod log. So the creation and modification at the bottom would also be in UTC.
+
+Speaker 4  27:56  
+So like you see how the the even the map is going off of UTC like I clock in, not at 3:34pm I just, I honestly, I mean, and we can see where it goes. But I'm just telling you that they are not going to be super excited having to convert every time stamp and every time everything back to, you know
+
+Unknown Speaker  28:27  
+what? The actual time isn't here.
+
+Speaker 4  28:31  
+I don't know if that makes sense. If I quickly looked at this, I'd be like, Oh yeah, I was, I was right here at 3:34pm and, you know, tell the client that and then find out that, Oh, whoops, I was supposed to minus eight or minus seven.
+
+Speaker 2  28:49  
+The map stuff will be changing one way or the other, but you see that it's got your time in the actual clock in and clock out slot.
+
+Unknown Speaker  28:58  
+I did manage to do that,
+
+Unknown Speaker  29:00  
+yeah, and I saw that that's that's good,
+
+Speaker 2  29:05  
+the map, that map is going to be changed here once, once we get going, because the one of the next pieces we're working on for the native app and for the agency app. And by extension file maker is going to be viewing the location data stuff from the native app. So it'll look a lot more like what, what Jake had showed you guys in that demo, you know, having a lot more location data, and it's showing a whole path better than what it's showing there. So we're going to be replacing that map. So I don't want to get too deep into whatever that map's doing, because we're going to get rid of it. It's going to be a different one. As for the mod logs. See, the thing is, is it takes the time stamp. Stamps. It takes the time the mod log takes the timestamps from the tables. The tables take the timestamp currently from your guys computers, if you're the one that does the thing. So currently, the way it works, like if I edit something, the modification timestamp is actually Eastern time. It's actually my time because my computer is the one that did the edit. So it's coming from the computer, and that's why it's showing your time. But if the mod log is initiated by something that's happening on the server, like somebody's making a change on the web app, then it's using the servers, which is UTC. It's it's easier and technically more standard to use UTC all over the place, and I can just take the offset to change it for you, but, but, but I'm afraid. I'm afraid of the slowdown that that might cause. It's not a lot, but it's something, and it's already doing a lot.
+
+Unknown Speaker  31:24  
+I can look into it.
+
+Speaker 4  31:25  
+So when I changed from my computer, my base hours from four to six, yep, from my computer, why did it show up in UTC time?
+
+Speaker 2  31:36  
+Because it was your computer. So it showed up on your computer's time,
+
+Speaker 4  31:41  
+even though my computer's time is not 4:39pm
+
+Unknown Speaker  31:47  
+you did that just now?
+
+Speaker 4  31:49  
+No, I did this earlier this morning, like seven or eight hours before 439 oh, like I did this this morning.
+
+Speaker 2  31:59  
+Yeah, that one is grabbing that one is grabbing UTC time. I was thinking about the any, anything that's showing in the actual mod loan values. So, like, you know, if you open it up and there's any type of timestamp in there, there's not always, but if there is,
+
+Unknown Speaker  32:19  
+oh, I go like
+
+Unknown Speaker  32:22  
+this when you have it,
+
+Speaker 2  32:25  
+that one would be in regular time. So we can't we have we have a, what we call one table, which is where we keep all your like, company wide, settings and such. And we do have an offset in there, which is an offset from UTC that I can use, and that's what I'm using for the clock in and clock out function to show the that time. It does have to go, do go get it from a related table, and it has to do some math that, that's not a ton. But again, when you're doing some of these processes that are going a lot of records that that'll add up any math actually isn't too bad. But anytime you have to go to another table to get something in a process like that, it takes a tiny bit of time,
+
+Unknown Speaker  33:21  
+I can look into it, but I
+
+Speaker 2  33:26  
+don't have the best control over what is returned from the automated mod log process. So I'm afraid that in order to override it, I'm going to do something that's going to slow you down in some significant way.
+
+Unknown Speaker  33:43  
+So, again, it's, it's complex, and I can look into it.
+
+Speaker 4  33:52  
+I mean, so many people companies use AWS, and they all just function off of UTC time,
+
+Unknown Speaker  33:58  
+mostly, yeah, even,
+
+Speaker 2  34:01  
+like they either, they either function off of UTC time, or you can,
+
+Unknown Speaker  34:09  
+you can ask for,
+
+Speaker 2  34:13  
+for, I think it's DST time. The problem is there's DST time and there's STD time, something like that. And neither of them are you guys, because you guys don't change your clocks. So we can ask for PST time, but that's not going to work, because, you know, basically we could say if you were in PST, always in Pacific Time, like you are right now, we could ask for that, but you're not you change. You change. Well, actually everybody else, but that makes it you changing, because UTC does change. Okay, so it's. It. It stops me from automatically grabbing and yes, most you know companies that use AWS do use UTC time because their systems are available in more than one time zone. And instead of going through the problems of figuring out all the time zone stuff, they just use UTC especially programmatically.
+
+Speaker 4  35:24  
+Okay, and it's not something that we need to fix tomorrow, but it's something that I know it's just going to increasingly be brought up. So I just want to put it out there.
+
+Speaker 2  35:39  
+Understand that. I'm sure it's something we can do. I just, I fear it will be impactful if I don't figure out the exact right way to do it.
+
+Unknown Speaker  35:48  
+Yeah, and that makes sense. Okay, let's see. I think
+
+Speaker 4  35:59  
+that's really all that I had everything else, like we talked about last time, I'll check mass cancelations, didn't check that. Joe,
+
+Unknown Speaker  36:15  
+is there anything you wanted to go over?
+
+Speaker 1  36:19  
+No, nothing, nothing that you haven't already covered. I think for the most part, I think the biggest thing that stood out to us was this whole UTC thing. But obviously we know it's a little complicated.
+
+Speaker 2  36:30  
+So yeah, it's it's time is not fun.
+
+Speaker 1  36:35  
+Yeah, I think that was the only thing Brian, from our perspective, that we were looking at, that we wanted to look into and try to find an answer to but, I mean, it's understandable. That's pretty complex, like you said, especially that it's still in the time.
+
+Unknown Speaker  36:47  
+Yeah, and I really
+
+Speaker 2  36:50  
+it seems like an easier problem for you this minute, but I know you guys got big plans, and I'm, you know, hoping and cheering for your big plans, which means eventually you guys will be dealing with multiple time zones, you know, all over the place and what the officers see. So I want to make sure that whatever the solution to this problem is, it's not going to just work for you in Arizona,
+
+Unknown Speaker  37:20  
+right? Yeah, and that makes sense. Kind of future proof that,
+
+Speaker 2  37:22  
+yes, exactly. I don't. I don't want to pay this into that corner so that you know when you guys are doing jobs in Texas or here in North Carolina, we don't have to have a disclaimer that all times are in Arizona time or something like that. You know,
+
+Unknown Speaker  37:38  
+right? Yeah, that makes sense.
+
+Speaker 2  37:44  
+Alrighty, anything else I will talk to Jake. I kind of thought he was going to be putting up another version of the native app on test flight Friday, and it doesn't look like that happened. So I will be getting on him and seeing about getting another version up there that actually has that, that real connected data, like he showed in the demo, for you guys to test with. So I'll that'd be great poke him on that, and I'll let you know what the answer is.
+
+Speaker 1  38:20  
+Okay, I think, I think otherwise, I think we're, we're good to go.
+
+Speaker 2  38:25  
+All right. Well, everybody, have a great day, and hopefully we don't have to talk every day for the next you don't like.
+
+Speaker 1  38:33  
+You gotta hear from us. You got you like hearing from us. Brian, we know you do,
+
+Speaker 3  38:38  
+especially since we're getting closer to IACP. You know, it's going to be a lot, because we're going to be showcasing all of this.
+
+Speaker 2  38:45  
+Oh, am I supposed to know what an IACP is? No, it's the big, yeah,
+
+Speaker 3  38:50  
+sorry, yeah, that's a good one, huh? It's International Association chiefs of police. And so this is the big kind of unveiling. It's the 18th, 19th and 20th and 21st like more 19th, 20/21, and this is yes, and so this is where, that's why, you know, Ashley's got me set up Ramon set up because we want to, we want to showcase the app right there to everybody. So this is our big push. So yes, you are going to hear from us a lot, especially as that day get closer, because we're going to need a lot, you know how we are,
+
+Speaker 2  39:25  
+it's, it's going to be interesting to have to be able to say that the app is definitely going to be live by that date. But we can, I feel a lot more confident that you will have basically, through test flight, be able to have the app on your phones to show off, even if it's not actually live and in the App Store at that point.
+
+Speaker 3  39:50  
+Yeah, and we have that big digital screen, that huge, late, giant iPad. So that's what we're we're hoping, as we stand there and we can, yes, we can test
+
+Speaker 2  39:58  
+drive it. That's. I will discuss, I don't know if it's being if it's being developed to really work on a iPad, but I will ask, okay, really, for a phone, because most iPads don't have GPS and such. So it's going to check for GPS and location services, and if it's not there, or it's turned off, it's not going to let you sign into the app, because we need to track you while you're on a job.
+
+Speaker 4  40:25  
+Go ahead, Ashley, are you talking about because I was what I was showing you and demonstrating, was the agency app, not the officer app?
+
+Unknown Speaker  40:36  
+Yeah, I'm a little confused
+
+Speaker 2  40:38  
+as well. Oh, okay, yeah, the agency app is fine. That will definitely work on an iPad. Yes, talking about the native app that we're in the middle of developing, right?
+
+Speaker 3  40:46  
+And it's however far we are, right, that's exactly, that's what it that's what I'm looking at. So we will be talking to you a lot about that, to see if we're, if we're close to that, then that might be something we can show not than just agency, but yeah, just seeing how far we're just pushing the envelope a little bit.
+
+Speaker 2  41:02  
+Oh, no problem. Yeah, agency. Agency is fine, and that will definitely work on an iPad and and work fine because you don't need you don't need GPS and stuff on that. You just need Internet access, basically. So, yeah, that'll work. Okay, the native app, like I said, I feel confident definitely by then, we'd have something really nice that would be on test flight, that you could show off. It just may not be in the App Store, live, ready to download at that point.
+
+Speaker 3  41:30  
+Okay, if it's an option, and we can share that with Bonnie that I think that's great, yeah,
+
+Speaker 2  41:34  
+yeah, yeah. So that that should be able to be to be shown off fairly near completion.
+
+Unknown Speaker  41:40  
+I i I really hope that we are in,
+
+Speaker 2  41:46  
+that we are in like deep testing and ready to push for approval from Apple and Google, probably about that time period. But that means that what you can show off should be pretty darn close to done. Okay. All right,
+
+Speaker 3  42:05  
+all right, then I didn't mean to shake everybody up, you know, no, no problem.
+
+Speaker 2  42:11  
+I think I was actually thinking about this when I was going back and forth with ginger SEC today. I'm like, you know, we need to have a quick knowledge base or wiki of what all the terms mean that we're discussing to make sure you know what the agency app is called, the native app that this app, what servers called, What?
+
+Speaker 3  42:32  
+No, I guess you're right. Yeah. That would, yeah. I mean, Ashley and Joe know it to heart. You guys know it to heart.
+
+Speaker 2  42:37  
+Yeah, it would. It would help, I think, with a little bit of miscommunication, almost, but that's that's a lot for something very small, but it it can't get in the way. Anyhow, that's great. And, yeah, we can definitely help and make sure you guys are fully prepared for that.
+
+Speaker 3  42:54  
+Okay, sounds good. So that way you guys have the dates, October 18, 1920, 21 sounds good. Awesome. Anything else, guys that I blew up?
+
+Speaker 2  43:05  
+Okay, okay, all right, everybody, have a great day. Then thanks. Brad Hardy,
+
+Unknown Speaker  43:10  
+bye, appreciate you. Bye, bye.
+
+Transcribed by https://otter.ai
