@@ -41,6 +41,10 @@ This index lists extracted, timestamped, verbatim evidence entries and links to 
 - [SCOPE-002](./scope_and_phasing.md#scope-002) — May 5, 2025 — Dev proposes MVP + phasing due to size.
 - [SCOPE-003](./scope_and_phasing.md#scope-003) — May 5, 2025 — FileMaker-to-web work called out as new scope.
 - [SCOPE-004](./scope_and_phasing.md#scope-004) — Jan 13, 2026 — Brian to Joe: no proposal/estimate; no proper discovery, proposal, or project prep (speed-to-market).
+- [SCOPE-005](./scope_and_phasing.md#scope-005) — May 20, 2025 — Joe: Bonnie wants things “quick and fast”; six months “the sticking point.”
+- [SCOPE-006](./scope_and_phasing.md#scope-006) — May 27, 2025 — Dev: scope with broader numbers vs full proposal; full proposal would take discovery meeting(s) and time.
+- [SCOPE-007](./scope_and_phasing.md#scope-007) — May 5, 2025 — Client: “more cognizant of time,” “we pivot, pivot,” requirements outlined for scope.
+- [SCOPE-008](./scope_and_phasing.md#scope-008) — May 27, 2025 — Joe: native app option to Bonnie, decision by Friday; she wants “more narrow focus” on cost.
 
 ## COMMUNICATION (Project Communication / Meeting Record)
 
