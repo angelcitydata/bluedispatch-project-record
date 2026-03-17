@@ -100,23 +100,23 @@ Client explicitly treats January 16 as the fixed go date and frames decisions ar
 Date: Jan 6, 2026  
 Meeting: Pre-launch planning  
 Source File: `source/transcripts/2026-01/GMT20260106-200156_Recording_otter_ai.txt`  
-Speaker: Unknown Speaker (client)  
-Timestamp: 39:15
+Speaker: Joe Morales  
+Timestamp: 39:40
 
 Quote
 
-> "Honestly, I feel like I said, you know, the 16th is that day, and that's when we're going live. So beautiful,"
+> "Honestly, I feel like I said, you know, the 16th is that day, and that's when we're going live."
 
 Significance
 
-Client confirms the product is ready and the 16th is the launch day, with positive reaction ("So beautiful").
+Client confirms the product is ready and the 16th is the launch day, with positive reaction.
 
 ## SENTIMENT-008
 
 Date: Jan 6, 2026  
 Meeting: Pre-launch planning  
 Source File: `source/transcripts/2026-01/GMT20260106-200156_Recording_otter_ai.txt`  
-Speaker: Unknown Speaker (client)  
+Speaker: Amanda Markham  
 Timestamp: 45:00
 
 Quote
