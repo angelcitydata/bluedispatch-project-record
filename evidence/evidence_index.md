@@ -2,33 +2,6 @@
 
 This index lists extracted, timestamped, verbatim evidence entries and links to their full entries in the category files.
 
-## SCOPE (Project Scope / Development Phasing)
-
-- [SCOPE-001](./scope_and_phasing.md#scope-001) — May 5, 2025 — Client requests feasibility-based timeline/deadlines.
-- [SCOPE-002](./scope_and_phasing.md#scope-002) — May 5, 2025 — Dev proposes MVP + phasing due to size.
-- [SCOPE-003](./scope_and_phasing.md#scope-003) — May 5, 2025 — FileMaker-to-web work called out as new scope.
-
-## COMMUNICATION (Project Communication / Meeting Record)
-
-- [COMMUNICATION-001](./communication_and_project_management.md#communication-001) — Dec 29, 2025 — Written BD summary linking last and next meetings + status.
-- [COMMUNICATION-002](./communication_and_project_management.md#communication-002) — Dec 29, 2025 — Email lists coordinated testing, server work, and test plan.
-- [COMMUNICATION-003](./communication_and_project_management.md#communication-003) — Jan 6, 2026 — Email confirming go-live date and launch-day Zoom.
-- [COMMUNICATION-004](./communication_and_project_management.md#communication-004) — Dec 16, 2025 — Joe Morales: approve soft opening; appreciates updates and Google clearance.
-- [COMMUNICATION-005](./communication_and_project_management.md#communication-005) — Dec 15, 2025 — Bonnie Lucas: good news, questions on Google timing / Apple vs Android / launch process.
-
-## SENTIMENT (Client Feedback / Project Sentiment)
-
-- [SENTIMENT-001](./client_sentiment.md#sentiment-001) — May 5, 2025 — “This is fantastic” reaction to materials.
-- [SENTIMENT-002](./client_sentiment.md#sentiment-002) — May 5, 2025 — “We absolutely love the wish list.”
-- [SENTIMENT-003](./client_sentiment.md#sentiment-003) — Mar 12, 2026 — Email from Joe Morales: "You're the best! Thank you!"
-- [SENTIMENT-004](./client_sentiment.md#sentiment-004) — Dec 18, 2025 — Client (Amanda): "You guys are awesome and we work as a great team" (store approval).
-- [SENTIMENT-005](./client_sentiment.md#sentiment-005) — Jan 6, 2026 — Client: excited to get this thing rolling / huge milestone / zoom party.
-- [SENTIMENT-006](./client_sentiment.md#sentiment-006) — Jan 6, 2026 — Client: the 16th is the answer. Go date.
-- [SENTIMENT-007](./client_sentiment.md#sentiment-007) — Jan 6, 2026 — Client: that's when we're going live. So beautiful.
-- [SENTIMENT-008](./client_sentiment.md#sentiment-008) — Jan 6, 2026 — Client: huge milestone for Les... I love it.
-- [SENTIMENT-009](./client_sentiment.md#sentiment-009) — Dec 16, 2025 — Joe Morales: appreciate updates, great job on Google clearance.
-- [SENTIMENT-010](./client_sentiment.md#sentiment-010) — Dec 15, 2025 — Bonnie Lucas: "Thanks guys!! Great work!"
-
 ## REHYDRATION (Rehydration / Force-Close / Session Recovery)
 
 - [REHYDRATION-001](./rehydration.md#rehydration-001) — Dec 30, 2025 — Force-quit can leave user “still clocked in”.
@@ -45,3 +18,30 @@ This index lists extracted, timestamped, verbatim evidence entries and links to 
 - [LOCATION-004](./location_permissions.md#location-004) — June 25, 2025 — iOS system UI choices: “Allow while using” vs “always allow”.
 - [LOCATION-005](./location_permissions.md#location-005) — June 25, 2025 — Permission vs recording distinction (access at all times vs use when clocked in).
 - [LOCATION-006](./location_permissions.md#location-006) — Dec 9, 2025 — iOS background GPS indicator; app not sending that data to servers.
+
+## SENTIMENT (Client Feedback / Project Sentiment)
+
+- [SENTIMENT-001](./client_sentiment.md#sentiment-001) — May 5, 2025 — “This is fantastic” reaction to materials.
+- [SENTIMENT-002](./client_sentiment.md#sentiment-002) — May 5, 2025 — “We absolutely love the wish list.”
+- [SENTIMENT-003](./client_sentiment.md#sentiment-003) — Mar 12, 2026 — Email from Joe Morales: "You're the best! Thank you!"
+- [SENTIMENT-004](./client_sentiment.md#sentiment-004) — Dec 18, 2025 — Client (Amanda): "You guys are awesome and we work as a great team" (store approval).
+- [SENTIMENT-005](./client_sentiment.md#sentiment-005) — Jan 6, 2026 — Client: excited to get this thing rolling / huge milestone / zoom party.
+- [SENTIMENT-006](./client_sentiment.md#sentiment-006) — Jan 6, 2026 — Client: the 16th is the answer. Go date.
+- [SENTIMENT-007](./client_sentiment.md#sentiment-007) — Jan 6, 2026 — Client: that's when we're going live. So beautiful.
+- [SENTIMENT-008](./client_sentiment.md#sentiment-008) — Jan 6, 2026 — Client: huge milestone for Les... I love it.
+- [SENTIMENT-009](./client_sentiment.md#sentiment-009) — Dec 16, 2025 — Joe Morales: appreciate updates, great job on Google clearance.
+- [SENTIMENT-010](./client_sentiment.md#sentiment-010) — Dec 15, 2025 — Bonnie Lucas: "Thanks guys!! Great work!"
+
+## SCOPE (Project Scope / Development Phasing)
+
+- [SCOPE-001](./scope_and_phasing.md#scope-001) — May 5, 2025 — Client requests feasibility-based timeline/deadlines.
+- [SCOPE-002](./scope_and_phasing.md#scope-002) — May 5, 2025 — Dev proposes MVP + phasing due to size.
+- [SCOPE-003](./scope_and_phasing.md#scope-003) — May 5, 2025 — FileMaker-to-web work called out as new scope.
+
+## COMMUNICATION (Project Communication / Meeting Record)
+
+- [COMMUNICATION-001](./communication_and_project_management.md#communication-001) — Dec 29, 2025 — Written BD summary linking last and next meetings + status.
+- [COMMUNICATION-002](./communication_and_project_management.md#communication-002) — Dec 29, 2025 — Email lists coordinated testing, server work, and test plan.
+- [COMMUNICATION-003](./communication_and_project_management.md#communication-003) — Jan 6, 2026 — Email confirming go-live date and launch-day Zoom.
+- [COMMUNICATION-004](./communication_and_project_management.md#communication-004) — Dec 16, 2025 — Joe Morales: approve soft opening; appreciates updates and Google clearance.
+- [COMMUNICATION-005](./communication_and_project_management.md#communication-005) — Dec 15, 2025 — Bonnie Lucas: good news, questions on Google timing / Apple vs Android / launch process.
