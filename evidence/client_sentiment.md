@@ -52,7 +52,7 @@ Written expression of positive client sentiment toward the development team from
 Date: Dec 18, 2025  
 Meeting: Soft-open / store submission update  
 Source File: `source/transcripts/2025-12/GMT20251218-200427_Recording_otter_ai.txt`  
-Speaker: Amanda Markham
+Speaker: Amanda Markham  
 Timestamp: 1:00
 
 Quote
@@ -68,7 +68,7 @@ Client explicitly credits the development team for the approval outcome, contras
 Date: Jan 6, 2026  
 Meeting: Pre-launch planning / capacity discussion  
 Source File: `source/transcripts/2026-01/GMT20260106-200156_Recording_otter_ai.txt`  
-Speaker: Joe Morales & Amanda Markham
+Speaker: Joe Morales & Amanda Markham  
 Timestamp: 44:16
 
 Quote
