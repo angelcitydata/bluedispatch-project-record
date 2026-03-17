@@ -25,3 +25,11 @@ This index lists extracted, timestamped, verbatim evidence entries and links to 
 - [REHYDRATION-003](./rehydration.md#rehydration-003) — Dec 30, 2025 — Force quit stops location collection.
 - [REHYDRATION-004](./rehydration.md#rehydration-004) — Dec 18, 2025 — Reset workflow is for accidental force close.
 - [REHYDRATION-005](./rehydration.md#rehydration-005) — Dec 18, 2025 — Reset enables officer to clock back in.
+
+## LOCATION (Location Services / Permission Education)
+
+- [LOCATION-001](./location_permissions.md#location-001) — June 25, 2025 — “Always Allow” enables location access.
+- [LOCATION-002](./location_permissions.md#location-002) — June 25, 2025 — Onboarding needs location enabled for app to function.
+- [LOCATION-003](./location_permissions.md#location-003) — June 25, 2025 — Permission prompt messaging: “only track… when clocked into a job”.
+- [LOCATION-004](./location_permissions.md#location-004) — June 25, 2025 — iOS system UI choices: “Allow while using” vs “always allow”.
+- [LOCATION-005](./location_permissions.md#location-005) — June 25, 2025 — Permission vs recording distinction (access at all times vs use when clocked in).
