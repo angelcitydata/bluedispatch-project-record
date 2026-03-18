@@ -70,3 +70,6 @@ This index lists extracted, timestamped, verbatim evidence entries and links to 
 - [COMMUNICATION-009](./communication_and_project_management.md#communication-009) — Jan 2, 2026 — Brian emails Ashley the test plan; notes DB reset timing before testing.
 - [COMMUNICATION-010](./communication_and_project_management.md#communication-010) — Jan 15, 2026 — Email chain: run through test plan / final approvals (Brian–Joe); meeting record in participants CSV.
 - [COMMUNICATION-011](./communication_and_project_management.md#communication-011) — Jan 16, 2026 — Go-live rollout: soft launch weekend then full Monday blast.
+- [COMMUNICATION-012](./communication_and_project_management.md#communication-012) — Mar 16, 2026 — Commit to tighten comms cadence (monthly recaps).
+- [COMMUNICATION-013](./communication_and_project_management.md#communication-013) — Mar 16, 2026 — Escalation transparency: boss sit-down + full meeting reports.
+- [COMMUNICATION-014](./communication_and_project_management.md#communication-014) — Mar 16, 2026 — Strategic plan workshop framework (“NASA approach”).

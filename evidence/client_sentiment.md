@@ -5,7 +5,7 @@
 Date: Jan 29, 2026  
 Source: Email  
 Source File: `source/emails/bonnie_lucas_amanda_markham_brian_overby_2026_01_29.txt`  
-Author: Bonnie Lucas (President / CEO)  
+Author: Bonnie Lucas (President / CEO)
 
 Quote
 
@@ -24,7 +24,7 @@ While setting clear post-go-live remediation priorities, Bonnie frames the fixes
 Date: Jan 29, 2026  
 Source: Email  
 Source File: `source/emails/bonnie_lucas_amanda_markham_brian_overby_2026_01_29.txt`  
-Author: Amanda Markham  
+Author: Amanda Markham
 
 Quote
 
@@ -136,7 +136,7 @@ Client explicitly credits the development team for the approval outcome, contras
 Date: Dec 16, 2025  
 Source: Email  
 Source File: `source/emails/joe_morales_2025_12_16.txt`  
-Author: Joe Morales (Director of Marketing)
+Author: Joe Morales
 
 Quote
 
@@ -151,7 +151,7 @@ Client expresses appreciation for updates and explicit positive feedback on Goog
 Date: Dec 15, 2025  
 Source: Email  
 Source File: `source/emails/bonnie_lucas_2025_12_2025.txt`  
-Author: Bonnie Lucas (President / CEO)
+Author: Bonnie Lucas
 
 Quote
 
@@ -166,7 +166,7 @@ Client executive (President/CEO) expresses positive feedback and thanks to the t
 Date: Mar 12, 2026  
 Source: Email  
 Source File: `source/emails/joe_morales_2026_03_12.txt`  
-Author: Joe Morales (Director of Marketing)
+Author: Joe Morales
 
 Quote
 
