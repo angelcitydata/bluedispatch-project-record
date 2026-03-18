@@ -14,13 +14,20 @@ We need to get a few things completed before we can move forward.
 | Resolve outstanding issues with Scheduler and the Agency app                 | ✅     | Ashley Sidor follow-ups fixed                |
 | Deep dive into both to remove coordinator workarounds (make it efficient)    | ✅     | Sunset web app to simplify                   |
 
-### Detailed Notes
+---
+
+```bash
+Detailed Notes (Added by ACD for expository purposes)
 
 - Get all officers over to the native app: This involved sunsetting the web app and the LES team notifying all active officers that they should use the native app going forward.
 - Resolve conflicting clocking in/out issues quickly: Rehydration addressed this. Also had issues where officers were clocking in on the web app and trying to clock out on the native app—addressed by sunsetting the web app.
 - Resolve all AWS and local Dev server + security concerns before new projects: This fell under GingerSec domain.
 - Resolve outstanding issues with Scheduler and the Agency app: Issues identified by Ashley Sidor were addressed shortly after this email.
 - Deep dive into both to remove coordinator workarounds (make it efficient): This was addressed by sunsetting the web app so that schedulers no longer had to perform multiple functions in FileMaker to make jobs show up appropriately in both the web app and native app.
+
+```
+
+---
 
 I have a meeting tomorrow regarding security going forward.
 
