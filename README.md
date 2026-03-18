@@ -12,7 +12,7 @@ A **project record and evidence index** for the Blue Dispatch native app engagem
 | ---------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
 | **Get the big picture in one page**                              | [Executive summary](reports/executive_summary.md)                                                               |
 | **See all evidence in one place (with links)**                   | [Evidence Index](evidence/evidence_index.md) — one list, every entry, by topic                                  |
-| **Find narrative / findings**                                    | [Findings](reports/findings.md) · [Narrative timeline](reports/narrative_timeline.md)                           |
+| **Get a timeline of events**                                     | [Narrative timeline](reports/narrative_timeline.md)                                                             |
 | **Look up scope or “what was agreed”**                           | [Scope & phasing](evidence/scope_and_phasing.md) — e.g. no formal discovery, speed-to-market                    |
 | **Look up what we told the client (test plan, approvals, etc.)** | [Communication & project management](evidence/communication_and_project_management.md)                          |
 | **Look up technical limitations we communicated**                | [Rehydration / force-close](evidence/rehydration.md) · [Location permissions](evidence/location_permissions.md) |
