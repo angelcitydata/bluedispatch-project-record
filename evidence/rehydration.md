@@ -119,6 +119,22 @@ Shows the team’s plan to deliver the rehydration work to the client via TestFl
 
 ## REHYDRATION-008
 
+Date: March 2, 2026  
+Meeting: Email (rehydration release confirmation)
+Source File: [joe_morales_brian_overby_2026_03_02.txt](../source/emails/joe_morales_brian_overby_2026_03_02.txt)  
+Speaker: Joe Morales  
+Timestamp: March 2, 2026 at 12:15:43 PM EST
+
+Quote
+
+> "We’re still testing but overall everything looks good. I think we can push this update out to tomorrow, let’s shoot for 10am our time if possible."
+
+Significance
+
+Confirms the client’s post-TestFlight validation outcome: rehydration is “still testing” but “overall everything looks good,” and Joe requests pushing the rehydration update to production the next day—evidence that rehydration behavior was acceptable enough to release.
+
+## REHYDRATION-009
+
 Date: Dec 18, 2025  
 Meeting: Testing feedback / edge cases  
 Source File: [GMT20251218-201707_Recording_otter_ai.txt](../source/transcripts/2025-12/GMT20251218-201707_Recording_otter_ai.txt)  
@@ -134,7 +150,7 @@ Significance
 
 Confirms a non-negotiable platform constraint: closing/force-closing the app stops location tracking, and the team cannot prevent or fully recover that behavior in-app—supporting why “rehydration” and related mitigations are best-effort/graceful-failure rather than guaranteed continuity.
 
-## REHYDRATION-009
+## REHYDRATION-010
 
 Date: Nov 4, 2025  
 Meeting: Testing feedback / edge cases  
@@ -150,7 +166,7 @@ Significance
 
 Clear Q&A stating that force closing ends continuity (“it’s done”) and creates an operational need for a FileMaker-side administrative clock-out to recover.
 
-## REHYDRATION-010
+## REHYDRATION-011
 
 Date: Dec 30, 2025  
 Meeting: Pre–go-live testing updates  
@@ -167,7 +183,7 @@ Significance
 
 States a concrete technical limitation: force quitting stops location collection, limiting what session recovery can do.
 
-## REHYDRATION-011
+## REHYDRATION-012
 
 Date: Nov 4, 2025  
 Meeting: Testing feedback / edge cases  
@@ -183,7 +199,7 @@ Significance
 
 Distinguishes normal multitasking (backgrounding) from force closing, and explicitly ties force closing to a failure mode that “will mess things up.”
 
-## REHYDRATION-012
+## REHYDRATION-013
 
 Date: Dec 18, 2025  
 Meeting: Testing feedback / edge cases  
@@ -200,7 +216,7 @@ Significance
 
 Describes the intended recovery behavior: an internal reset enables an officer to clock back in after a force-close-related issue.
 
-## REHYDRATION-013
+## REHYDRATION-014
 
 Date: Dec 18, 2025  
 Meeting: Testing feedback / edge cases  
@@ -217,7 +233,7 @@ Significance
 
 Links the “reset button” workflow directly to an “accidentally force closed the app” scenario, i.e., an operational workaround for force-close recovery.
 
-## REHYDRATION-014
+## REHYDRATION-015
 
 Date: Oct 22, 2025  
 Meeting: Testing / app behavior discussion  
@@ -232,3 +248,4 @@ Quote
 Significance
 
 Directly states a key constraint tied to session recovery: force quitting terminates the app state, creating a known failure mode for ongoing jobs/tracking.
+

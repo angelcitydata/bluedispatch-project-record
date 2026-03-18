@@ -11,13 +11,14 @@ This index lists extracted, timestamped, verbatim evidence entries and links to 
 - [REHYDRATION-005](./rehydration.md#rehydration-005) — Feb 24, 2026 — TestFlight: “close app/open it up” failures not observed.
 - [REHYDRATION-006](./rehydration.md#rehydration-006) — Feb 24, 2026 — Ashley: clocking in/out “seems to be going well.”
 - [REHYDRATION-007](./rehydration.md#rehydration-007) — Feb 17, 2026 — Plan to push rehydration updates to TestFlight for client validation.
-- [REHYDRATION-008](./rehydration.md#rehydration-008) — Dec 18, 2025 — Closing app stops tracking; “nothing we can do about that”.
-- [REHYDRATION-009](./rehydration.md#rehydration-009) — Nov 4, 2025 — Force close doesn’t resume: “it’s done”; clock out in FileMaker.
-- [REHYDRATION-010](./rehydration.md#rehydration-010) — Dec 30, 2025 — Force quit stops location collection.
-- [REHYDRATION-011](./rehydration.md#rehydration-011) — Nov 4, 2025 — Backgrounding vs force closing; force close “will mess things up”.
-- [REHYDRATION-012](./rehydration.md#rehydration-012) — Dec 18, 2025 — Reset enables officer to clock back in.
-- [REHYDRATION-013](./rehydration.md#rehydration-013) — Dec 18, 2025 — Reset workflow tied to accidental force-close scenario.
-- [REHYDRATION-014](./rehydration.md#rehydration-014) — Oct 22, 2025 — Force quit kills the app from memory.
+- [REHYDRATION-008](./rehydration.md#rehydration-008) — Mar 2, 2026 — Joe: rehydration testing “overall everything looks good,” requests release tomorrow.
+- [REHYDRATION-009](./rehydration.md#rehydration-009) — Dec 18, 2025 — Closing app stops tracking; “nothing we can do about that”.
+- [REHYDRATION-010](./rehydration.md#rehydration-010) — Nov 4, 2025 — Force close doesn’t resume: “it’s done”; clock out in FileMaker.
+- [REHYDRATION-011](./rehydration.md#rehydration-011) — Dec 30, 2025 — Force quit stops location collection.
+- [REHYDRATION-012](./rehydration.md#rehydration-012) — Nov 4, 2025 — Backgrounding vs force closing; force close “will mess things up”.
+- [REHYDRATION-013](./rehydration.md#rehydration-013) — Dec 18, 2025 — Reset enables officer to clock back in.
+- [REHYDRATION-014](./rehydration.md#rehydration-014) — Dec 18, 2025 — Reset workflow tied to accidental force-close scenario.
+- [REHYDRATION-015](./rehydration.md#rehydration-015) — Oct 22, 2025 — Force quit kills the app from memory.
 
 ## LOCATION (Location Services / Permission Education)
 
