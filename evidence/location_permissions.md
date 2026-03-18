@@ -4,7 +4,7 @@
 
 Date: June 25, 2025  
 Meeting: Native app proof-of-concept (permissions + GPS)  
-Source File: `source/transcripts/2025-06/GMT20250625-200429_Recording_otter_ai.txt`  
+Source File: [GMT20250625-200429_Recording_otter_ai.txt](../source/transcripts/2025-06/GMT20250625-200429_Recording_otter_ai.txt)  
 Speaker: Unknown Speaker  
 Timestamp: 6:15
 
@@ -20,7 +20,7 @@ Direct, timestamped instance of “Always Allow” being presented as the settin
 
 Date: June 25, 2025  
 Meeting: Native app proof-of-concept (permissions + GPS)  
-Source File: `source/transcripts/2025-06/GMT20250625-200429_Recording_otter_ai.txt`  
+Source File: [GMT20250625-200429_Recording_otter_ai.txt](../source/transcripts/2025-06/GMT20250625-200429_Recording_otter_ai.txt)  
 Speaker: Unknown Speaker  
 Timestamp: 6:15
 
@@ -36,7 +36,7 @@ Explains that onboarding must educate users to enable location permissions and t
 
 Date: June 25, 2025  
 Meeting: Native app proof-of-concept (permissions + GPS)  
-Source File: `source/transcripts/2025-06/GMT20250625-200429_Recording_otter_ai.txt`  
+Source File: [GMT20250625-200429_Recording_otter_ai.txt](../source/transcripts/2025-06/GMT20250625-200429_Recording_otter_ai.txt)  
 Speaker: Unknown Speaker  
 Timestamp: 7:24
 
@@ -52,7 +52,7 @@ Documents planned user-facing permission education language (“we only track yo
 
 Date: June 25, 2025  
 Meeting: Native app proof-of-concept (permissions + GPS)  
-Source File: `source/transcripts/2025-06/GMT20250625-200429_Recording_otter_ai.txt`  
+Source File: [GMT20250625-200429_Recording_otter_ai.txt](../source/transcripts/2025-06/GMT20250625-200429_Recording_otter_ai.txt)  
 Speaker: Unknown Speaker  
 Timestamp: 7:24
 
@@ -68,7 +68,7 @@ Clarifies the permission choice is controlled by iOS system UI (not the app), an
 
 Date: June 25, 2025  
 Meeting: Native app proof-of-concept (geofencing + privacy discussion)  
-Source File: `source/transcripts/2025-06/GMT20250625-200429_Recording_otter_ai.txt`  
+Source File: [GMT20250625-200429_Recording_otter_ai.txt](../source/transcripts/2025-06/GMT20250625-200429_Recording_otter_ai.txt)  
 Speaker: Unknown Speaker  
 Timestamp: 30:23
 
@@ -84,7 +84,7 @@ Distinguishes between iOS-level permission (“access to their location at all t
 
 Date: Dec 9, 2025  
 Meeting: Native app behavior / background tracking  
-Source File: `source/transcripts/2025-12/GMT20251209-200151_Recording_otter_ai.txt`  
+Source File: [GMT20251209-200151_Recording_otter_ai.txt](../source/transcripts/2025-12/GMT20251209-200151_Recording_otter_ai.txt)  
 Speaker: Unknown Speaker  
 Timestamp: 17:09
 

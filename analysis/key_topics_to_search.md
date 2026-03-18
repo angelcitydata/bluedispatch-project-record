@@ -48,6 +48,9 @@ that's helpful
 that's good  
 that will work  
 perfect
+you guys are
+we love
+beautiful
 
 ---
 
