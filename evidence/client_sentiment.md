@@ -5,7 +5,7 @@
 Date: Jan 29, 2026  
 Source: Email  
 Source File: `source/emails/bonnie_lucas_amanda_markham_brian_overby_2026_01_29.txt`  
-Author: Bonnie Lucas (President / CEO)
+Author: Bonnie Lucas
 
 Quote
 
@@ -41,7 +41,7 @@ Shows explicit client (Amanda) celebration and positive project sentiment by nam
 Date: Jan 16, 2026  
 Source: Email (go-live day)
 Source File: `source/emails/bonnie_lucas_brian_overby_2026_01_16.txt`  
-Author: Bonnie Lucas (President / CEO)
+Author: Bonnie Lucas
 
 Quote
 
@@ -193,35 +193,3 @@ Quote
 Significance
 
 Captures a moment of client enthusiasm at release time: congratulating the team and celebrating go-live with explicit “high five” energy (“Congrats Everybody” and “digitally high fiving all of you”).
-
-## SENTIMENT-013
-
-Date: May 5, 2025  
-Meeting: Requirements document walkthrough / planning  
-Source File: `source/transcripts/2025-05/GMT20250505-180246_Recording_otter_ai.txt`  
-Speaker: Speaker 2  
-Timestamp: 39:07
-
-Quote
-
-> "for us, we absolutely love the wish list, perfect."
-
-Significance
-
-Positive sentiment toward the client’s comprehensive “wish list” requirements approach.
-
-## SENTIMENT-014
-
-Date: May 5, 2025  
-Meeting: Requirements document walkthrough / planning  
-Source File: `source/transcripts/2025-05/GMT20250505-180246_Recording_otter_ai.txt`  
-Speaker: Speaker 3  
-Timestamp: 13:19
-
-Quote
-
-> "Very helpful. Actually, wish, I wish everybody gave us this. This is fantastic."
-
-Significance
-
-Clear positive reaction to the client-provided visual aid / requirements materials.
