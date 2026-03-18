@@ -3,6 +3,7 @@
 ## Claim vs. Key Quotes
 
 ### Claim 1: Rehydration was supposed to be in before go-live
+Audio (full meeting): [`2025-12-30.m4a`](../source/audio/full-meetings/2025-12-30.m4a)
 
 Finding: The record explicitly describes rehydration/session recovery as **not included before Jan 16**, and planned as work **after go-live**.
 Key quotes:
@@ -11,6 +12,7 @@ Key quotes:
 - Date: Dec 30, 2025 — Speaker: Brian Overby — Timestamp: 3:25 — Quote: “that’ll be one of the updates we want to look into after go live.” ([`REHYDRATION-003`](../evidence/rehydration.md#rehydration-003))
 
 ### Claim 2: We never knew about the “Always On / Always Allow” location services permission
+Audio (full meeting): [`2025-06-25.m4a`](../source/audio/full-meetings/2025-06-25.m4a)
 
 Finding: Location permissions were explicitly discussed as iOS **“Always Allow”** requirements (including the system permission UI), and onboarding was tied to enabling location so the app could function as expected.
 Key quotes:
