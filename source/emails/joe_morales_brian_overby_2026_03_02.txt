@@ -1,0 +1,23 @@
+From: Joe Morales <joe@lesaz.com>
+Subject: Re: 1.6.0 rehydration
+Date: March 2, 2026 at 12:15:43 PM EST
+To: Brian Overby <boverby@angelcitydata.com>, Ashley Sidor <ashley@lesaz.com>
+
+Hey Brian, 
+
+We’re still testing but overall everything looks good. I think we can push this update out to tomorrow, let’s shoot for 10am our time if possible. For the past jobs piece, if you guys are ready for us to start testing that, we would love to have that also pushed out by the end of the week if possible. Let me know if this works for you and Jake. 
+
+Thanks, 
+
+Joe Morales | Director of Marketing
+ 
+From: Brian Overby <boverby@angelcitydata.com>
+Date: Monday, March 2, 2026 at 10:05 AM
+To: Joe Morales <joe@lesaz.com>
+Subject: 1.6.0 rehydration
+
+Hi Joe,
+
+Wondering if your side is feeling good about the testing and if you have decided on a release date/time? We are also thinking the navigation from past jobs. If you want to push this update live today or maybe even tomorrow, we will want to wait to add the nav from past jobs feature. We do want to make sure you have time to test it before going live. Let me know your thoughts.
+
+Brian
