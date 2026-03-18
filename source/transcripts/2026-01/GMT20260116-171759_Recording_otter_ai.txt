@@ -1,0 +1,181 @@
+Speaker 1  0:00  
+I'm, yeah, I'm unauthenticated.
+
+Unknown Speaker  0:04  
+Still, that's the same thing. Then I'm sure. Let me
+
+Unknown Speaker  0:09  
+find your account.
+
+Speaker 2  0:13  
+Let's start with Joe. Joe, what's your phone number? 623, yes. 7554590,
+
+Speaker 3  0:26  
+yep, okay. Boop. Boop, all right, yeah.
+
+Speaker 2  0:39  
+All right, you you definitely want to, like, force quit the app and stuff, Joe, but try again. It should let you in. Okay, let me try it. Yeah, I just forced closed it. So let me see. And Jake, what's your phone number?
+
+Unknown Speaker  0:49  
+Again? Mine. Phone number is 48082859834,
+
+Speaker 4  1:00  
+me, yeah, we're back in business. Brian, looking good.
+
+Speaker 2  1:06  
+Yeah, the officers shouldn't see that problem. It was a problem that we had
+
+Unknown Speaker  1:10  
+because we have multiple
+
+Unknown Speaker  1:11  
+accounts. Yeah, it makes sense.
+
+Unknown Speaker  1:15  
+Let me know when you're good for me. Brian,
+
+Unknown Speaker  1:18  
+yes, you should be good. Let me try.
+
+Unknown Speaker  1:23  
+Yep, sure, am
+
+Speaker 1  1:29  
+I see fake customer, fake customer, fake customer,
+
+Unknown Speaker  1:34  
+fake customer customers.
+
+Speaker 1  1:38  
+Yep, that's what I see, primavera, grading and paving. Looks like we got real data.
+
+Unknown Speaker  1:46  
+Power contracting LLC,
+
+Unknown Speaker  1:50  
+lot of fake customers.
+
+Speaker 4  1:52  
+Yeah, tons of them. What date are you looking at for that?
+
+Unknown Speaker  1:55  
+Primavera, Jake? Hold on. Let me scroll back up.
+
+Unknown Speaker  1:59  
+I see a few of them. I see Wednesday, January 21
+
+Speaker 1  2:03  
+Okay, I think was, was that the first one I saw? Now, third, Tuesday, January 20 I see one for them.
+
+Speaker 4  2:10  
+Okay, yeah, I'm starting to see them now too. I just had to scroll through all those fake jobs.
+
+Speaker 1  2:14  
+There's a lot of fakes, yeah, there's a lot of fake jobs. We can delete those.
+
+Unknown Speaker  2:17  
+We can delete those. Yeah, we just
+
+Speaker 4  2:18  
+definitely, probably should, yeah, at this point, just because, I mean, we, I think we're done with our testing
+
+Speaker 2  2:23  
+and, and, of course, this is just from Maricopa County and our Maricopa PD, which, yeah, right, I was told we don't really have a lot of users that we have to worry about for them.
+
+Speaker 1  2:35  
+Yeah, that's why we that's why we use it. That's why we chose it. Yeah, yeah.
+
+Speaker 2  2:42  
+So let me go to dashboard and I can start canceling some of those so they won't show up.
+
+Unknown Speaker  2:49  
+But all right, so
+
+Unknown Speaker  2:54  
+looks like we are live. Yes,
+
+Speaker 2  2:59  
+if I don't know if you guys want to send out an email or something anytime soon, any type of campaign thing, or just wait for them to try to sign on to the current web app and get the screen, which will be there when Jake,
+
+Speaker 1  3:14  
+yeah, I'm gonna, I'm gonna have that in Sometime in the next hour or so.
+
+Unknown Speaker  3:20  
+And basically
+
+Speaker 1  3:24  
+it'll go after they log out or after they log in. Sorry, but if they're already logged in, I'm not sure they'll see it. Well, I know they won't see it unless they log out and log back in. So I needed to ask, I wanted to ask you guys what you thought about where to put it? Or should we just basically lock them out of everything else and just have that screen? Or what do you think I
+
+Speaker 4  3:51  
+don't need to be able to use it for now? Yeah, we don't want to lock them out completely yet. I think you know for right now, at least because technically, yes, we launched it. It's live. But our plan here, at least internally, what we came up with was we're going to do the soft launch version right now, get as many officers as we can and get them through the weekend, just because we don't want anything catastrophic, something weird to happen, and no one's really here to take care of it. And then what we're planning on doing is doing the full on launch blast. We're going to hit everybody Monday. So that's so then
+
+Speaker 1  4:19  
+maybe the best place to do it is after login. That way they won't see it at all unless they log out and log back in.
+
+Speaker 4  4:25  
+Yeah, yeah. That sounds logical at this point. And like I said, we're going to get stragglers regardless. So our goal over here is going to be the corral them up, get them moved over. But at least this, this initial phase, is going to be a good, almost like a, like a litmus test of sorts, where we're okay. We got the guys over. It was a smooth transition and, etc, right? They didn't have many questions. And, okay, it wasn't anything arbitrary on their end. So I think that's our plan. I think when they log in, we have that bad boy pop up. They see it, it'll, it'll, you know, prompt and move over.
+
+Speaker 1  4:56  
+And it'll also let them move on to the rest of the app too. But it'll be the first thing they see when they log in. And then maybe we can get progressively more aggressive about where and how we show that message as time moves on. I guess Absolutely.
+
+Speaker 4  5:11  
+Yeah, okay, I think we'll ramp it up as we go. Because, I mean, right now, obviously some guys already are on jobs right now on that app, yeah, you know. And so we want to be a little delicate with that. And I think at least, you know, kind of trickle it in for maybe this first full week, okay, and see how we'll play it by ear, kind of, right? And we'll adjust it as we need to.
+
+Speaker 1  5:33  
+Okay, okay, that sounds good to me. Cool. All right. So what we'll
+
+Speaker 4  5:36  
+do in our end then is, yes, we know it's live, but we're we'll kind of hold off at least for the next hour until we know that page is up and running on your end, Jake, and then our end, we'll start slowly letting everybody know, hey, you know it's time to
+
+Speaker 5  5:49  
+move over. Okay, I'll send you guys an email. Perfect. That's I was gonna ask you read my mind.
+
+Speaker 1  5:54  
+Yep, yep. I will send that email. Okay, this is awesome. Yeah, Congrats Everybody. Yeah, seriously.
+
+Unknown Speaker  6:01  
+Great job high fiving.
+
+Speaker 1  6:04  
+Can we high five? I'm digitally high fiving all of you.
+
+Speaker 6  6:07  
+I'm trying to high five. Wait, I can't even find my high five. I don't even know where it is five. High five doesn't even have what is the high five? Whatever. Okay, I'll just
+
+Speaker 2  6:20  
+had the high five on those emotes. It has a like raise hand.
+
+Speaker 6  6:23  
+It does search for that darn emoji. Okay, all right,
+
+Unknown Speaker  6:28  
+exciting guys. Thank
+
+Speaker 2  6:30  
+you. This is awesome. Yes, thank you very much. Yes, yeah, we wanted to, you know, celebrate, yay. We're we're live. Yes. Wanted to thank you guys. You guys have been awesome to work with on this project. We really wanted to call out Ashley, and she's not here, I
+
+Speaker 6  6:50  
+know, but she'll be back. If we're stop launching today, we'll wait until next week. Joe. Is she coming Monday or she still?
+
+Speaker 4  6:56  
+We were not sure yet. Okay. I mean, when she's in, she's in, we'll let you guys now we'll
+
+Unknown Speaker  7:00  
+congratulate her when she gets back.
+
+Speaker 2  7:02  
+Yes, because special, absolutely pivotal, and we want to agree
+
+Speaker 1  7:07  
+we honestly couldn't have done this without her. She's been the best, the best help.
+
+Speaker 6  7:13  
+So yes, I'm gonna heart that one for her. That's hers. Okay, yeah, she's amazing. All right, guys, well, you'll send us the email and we're good to go. So thank you, yeah,
+
+Unknown Speaker  7:27  
+thank you guys. Happy Friday.
+
+Speaker 4  7:30  
+All right, we'll be in touch, guys, I'm sure. Thank you. No worries. Bye.
+
+Transcribed by https://otter.ai

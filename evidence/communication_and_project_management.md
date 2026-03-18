@@ -192,3 +192,19 @@ Quote
 Significance
 
 Coordinates time to run through the test plan and obtain final approvals: Brian (dev) invites Joe (client) to run through after finishing their round of testing; Joe accepts. The resulting meeting is documented in `source/documents/participants_83606332537_2026_01_16.csv`: topic **LES Go Live Prep**, Jan 15, 2026, 58 minutes, 6 participants including Brian Overby (host, full duration), Joe Morales (57 min), Jake Johnson (54 min), and others—evidence of client participation in the pre–go-live test run-through and approval step.
+
+## COMMUNICATION-011
+
+Date: Jan 16, 2026  
+Meeting / Source: Go-live celebration meeting (launch rollout plan)  
+Source File: `source/transcripts/2026-01/GMT20260116-171759_Recording_otter_ai.txt`  
+Speaker: Speaker 4  
+Timestamp: 3:51
+
+Quote
+
+> "our plan here, at least internally, what we came up with was we're going to do the soft launch version right now, get as many officers as we can and get them through the weekend... And then what we're planning on doing is doing the full on launch blast. We're going to hit everybody Monday."
+
+Significance
+
+Documents explicit go-live rollout management: a controlled soft launch for the weekend (“litmus test”) followed by a full launch blast Monday, demonstrating coordinated release execution and risk mitigation planning.

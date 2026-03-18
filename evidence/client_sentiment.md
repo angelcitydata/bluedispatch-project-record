@@ -2,82 +2,86 @@
 
 ## SENTIMENT-001
 
-Date: May 5, 2025  
-Meeting: Requirements document walkthrough / planning  
-Source File: `source/transcripts/2025-05/GMT20250505-180246_Recording_otter_ai.txt`  
-Speaker: Speaker 3  
-Timestamp: 13:19
+Date: Jan 29, 2026  
+Source: Email  
+Source File: `source/emails/bonnie_lucas_amanda_markham_brian_overby_2026_01_29.txt`  
+Author: Bonnie Lucas (President / CEO)  
 
 Quote
 
-> "Very helpful. Actually, wish, I wish everybody gave us this. This is fantastic."
+> "We need to get a few things completed before we can move forward."
+>
+> "Once we get all the current kinks identified and enhancements made we can move forward on the Broker / Client Apps…"
+>
+> "We will connect all the moving parts soon!"
 
 Significance
 
-Clear positive reaction to the client-provided visual aid / requirements materials.
+While setting clear post-go-live remediation priorities, Bonnie frames the fixes as prerequisites to moving forward rather than a shutdown—specifically pointing to continued work on Broker/Client Apps and a positive forward-looking plan (“connect all the moving parts soon”).
 
 ## SENTIMENT-002
 
-Date: May 5, 2025  
-Meeting: Requirements document walkthrough / planning  
-Source File: `source/transcripts/2025-05/GMT20250505-180246_Recording_otter_ai.txt`  
-Speaker: Speaker 2  
-Timestamp: 39:07
+Date: Jan 29, 2026  
+Source: Email  
+Source File: `source/emails/bonnie_lucas_amanda_markham_brian_overby_2026_01_29.txt`  
+Author: Amanda Markham  
 
 Quote
 
-> "for us, we absolutely love the wish list, perfect."
+> "It has been a few weeks since the Strategy Meeting and I wanted to take a moment to acknowledge what a strong milestone this has been. Congratulations, everyone!!"
+>
+> "Looking forward to continuing this incredible collab!"
 
 Significance
 
-Positive sentiment toward the client’s comprehensive “wish list” requirements approach.
+Shows explicit client (Amanda) celebration and positive project sentiment by naming the launch moment as a “strong milestone,” congratulating the team, and expressing intent to continue the collaboration into the next phase.
 
 ## SENTIMENT-003
 
-Date: Mar 12, 2026  
-Source: Email  
-Source File: `source/emails/joe_morales_2026_03_12.txt`  
-Author: Joe Morales (Director of Marketing)
+Date: Jan 16, 2026  
+Source: Email (go-live day)
+Source File: `source/emails/bonnie_lucas_brian_overby_2026_01_16.txt`  
+Author: Bonnie Lucas (President / CEO)
 
 Quote
 
-> "You're the best! Thank you!"
+> "awesome job people!"
 
 Significance
 
-Written expression of positive client sentiment toward the development team from a client director, post-launch.
+Explicitly congratulates the team on go-live day (“awesome job people!”), expressing positive client sentiment without any indication of dissatisfaction with what was delivered.
 
 ## SENTIMENT-004
 
-Date: Dec 18, 2025  
-Meeting: Soft-open / store submission update  
-Source File: `source/transcripts/2025-12/GMT20251218-200427_Recording_otter_ai.txt`  
+Date: Jan 6, 2026  
+Meeting: Pre-launch planning  
+Source File: `source/transcripts/2026-01/GMT20260106-200156_Recording_otter_ai.txt`  
 Speaker: Amanda Markham  
-Timestamp: 1:00
+Timestamp: 45:00
 
 Quote
 
-> "Well, not me, because you guys are awesome and we work as a great team."
+> "Season, in our case, years, I mean, I mean not, maybe not with you guys, but a long time. This is huge milestone for Les. Like, this is significant, yeah, we're excited little emotional about it."
 
 Significance
 
-Client explicitly credits the development team for the approval outcome, contrasting with prior expectations (developer had just noted "issues we went through with Apple" and that "historically, Google's worse" and "we were not expecting that").
+Client describes launch as a "huge milestone" and "significant" for LES after a long effort, and states they are excited and "a little emotional" and "I love it."
 
 ## SENTIMENT-005
 
 Date: Jan 6, 2026  
-Meeting: Pre-launch planning / capacity discussion  
+Meeting: Pre-launch planning  
 Source File: `source/transcripts/2026-01/GMT20260106-200156_Recording_otter_ai.txt`  
-Speaker: Joe Morales & Amanda Markham  
-Timestamp: 44:16
+Speaker: Joe Morales  
+Timestamp: 39:40
 
 Quote
 
-> "I think we're, we're excited to get this thing rolling. And yeah, see it all finally come to fruition after a long road. Let me tell you a long, long road, we're getting exciting. Yeah, we're going to have ourselves a little zoom party. Yeah, we have to. I was thinking like that meeting, when you send it out, we might want to send it to Bonnie. She, this is a huge milestone. So she, if she's available, she might want to be on the call when it happens. I know it's anti climatic, but that's the call. And, you know, I mean, but it's definitely, it's a milestone. It's huge. I yeah, I've been part of a multitude of those. It's just fun. It's just fun to be a part. It's great. Yeah, you put put several months into something. It's nice to see."
+> "Honestly, I feel like I said, you know, the 16th is that day, and that's when we're going live."
 
 Significance
 
-Strong client sentiment that launch (following successful store approvals) is a “huge milestone” after a “long, long road,” with explicit excitement about seeing the app come to fruition.
+Client confirms the product is ready and the 16th is the launch day, with positive reaction.
 
 ## SENTIMENT-006
 
@@ -98,34 +102,34 @@ Client explicitly treats January 16 as the fixed go date and frames decisions ar
 ## SENTIMENT-007
 
 Date: Jan 6, 2026  
-Meeting: Pre-launch planning  
+Meeting: Pre-launch planning / capacity discussion  
 Source File: `source/transcripts/2026-01/GMT20260106-200156_Recording_otter_ai.txt`  
-Speaker: Joe Morales  
-Timestamp: 39:40
+Speaker: Joe Morales & Amanda Markham  
+Timestamp: 44:16
 
 Quote
 
-> "Honestly, I feel like I said, you know, the 16th is that day, and that's when we're going live."
+> "I think we're, we're excited to get this thing rolling. And yeah, see it all finally come to fruition after a long road. Let me tell you a long, long road, we're getting exciting. Yeah, we're going to have ourselves a little zoom party. Yeah, we have to. I was thinking like that meeting, when you send it out, we might want to send it to Bonnie. She, this is a huge milestone. So she, if she's available, she might want to be on the call when it happens. I know it's anti climatic, but that's the call. And, you know, I mean, but it's definitely, it's a milestone. It's huge. I yeah, I've been part of a multitude of those. It's just fun. It's just fun to be a part. It's great. Yeah, you put put several months into something. It's nice to see."
 
 Significance
 
-Client confirms the product is ready and the 16th is the launch day, with positive reaction.
+Strong client sentiment that launch (following successful store approvals) is a “huge milestone” after a “long, long road,” with explicit excitement about seeing the app come to fruition.
 
 ## SENTIMENT-008
 
-Date: Jan 6, 2026  
-Meeting: Pre-launch planning  
-Source File: `source/transcripts/2026-01/GMT20260106-200156_Recording_otter_ai.txt`  
+Date: Dec 18, 2025  
+Meeting: Soft-open / store submission update  
+Source File: `source/transcripts/2025-12/GMT20251218-200427_Recording_otter_ai.txt`  
 Speaker: Amanda Markham  
-Timestamp: 45:00
+Timestamp: 1:00
 
 Quote
 
-> "Season, in our case, years, I mean, I mean not, maybe not with you guys, but a long time. This is huge milestone for Les. Like, this is significant, yeah, we're excited little emotional about it."
+> "Well, not me, because you guys are awesome and we work as a great team."
 
 Significance
 
-Client describes launch as a "huge milestone" and "significant" for LES after a long effort, and states they are excited and "a little emotional" and "I love it."
+Client explicitly credits the development team for the approval outcome, contrasting with prior expectations (developer had just noted "issues we went through with Apple" and that "historically, Google's worse" and "we were not expecting that").
 
 ## SENTIMENT-009
 
@@ -156,3 +160,68 @@ Quote
 Significance
 
 Client executive (President/CEO) expresses positive feedback and thanks to the team in writing during store-approval/launch phase.
+
+## SENTIMENT-011
+
+Date: Mar 12, 2026  
+Source: Email  
+Source File: `source/emails/joe_morales_2026_03_12.txt`  
+Author: Joe Morales (Director of Marketing)
+
+Quote
+
+> "You're the best! Thank you!"
+
+Significance
+
+Written expression of positive client sentiment toward the development team from a client director, post-launch.
+
+## SENTIMENT-012
+
+Date: Jan 16, 2026  
+Meeting: Go-live celebration meeting (high fives)  
+Source File: `source/transcripts/2026-01/GMT20260116-171759_Recording_otter_ai.txt`  
+Speaker: Joe Morales, Amanda Markham, Jake Johnson, Brian Overby  
+Timestamp: 5:54-6:04
+
+Quote
+
+> "Yep, yep. I will send that email. Okay, this is awesome. Yeah, Congrats Everybody. Yeah, seriously."
+>
+> "Can we high five? I'm digitally high fiving all of you."
+
+Significance
+
+Captures a moment of client enthusiasm at release time: congratulating the team and celebrating go-live with explicit “high five” energy (“Congrats Everybody” and “digitally high fiving all of you”).
+
+## SENTIMENT-013
+
+Date: May 5, 2025  
+Meeting: Requirements document walkthrough / planning  
+Source File: `source/transcripts/2025-05/GMT20250505-180246_Recording_otter_ai.txt`  
+Speaker: Speaker 2  
+Timestamp: 39:07
+
+Quote
+
+> "for us, we absolutely love the wish list, perfect."
+
+Significance
+
+Positive sentiment toward the client’s comprehensive “wish list” requirements approach.
+
+## SENTIMENT-014
+
+Date: May 5, 2025  
+Meeting: Requirements document walkthrough / planning  
+Source File: `source/transcripts/2025-05/GMT20250505-180246_Recording_otter_ai.txt`  
+Speaker: Speaker 3  
+Timestamp: 13:19
+
+Quote
+
+> "Very helpful. Actually, wish, I wish everybody gave us this. This is fantastic."
+
+Significance
+
+Clear positive reaction to the client-provided visual aid / requirements materials.

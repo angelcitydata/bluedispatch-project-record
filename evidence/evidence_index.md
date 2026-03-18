@@ -31,16 +31,20 @@ This index lists extracted, timestamped, verbatim evidence entries and links to 
 
 ## SENTIMENT (Client Feedback / Project Sentiment)
 
-- [SENTIMENT-001](./client_sentiment.md#sentiment-001) — May 5, 2025 — “This is fantastic” reaction to materials.
-- [SENTIMENT-002](./client_sentiment.md#sentiment-002) — May 5, 2025 — “We absolutely love the wish list.”
-- [SENTIMENT-003](./client_sentiment.md#sentiment-003) — Mar 12, 2026 — Email from Joe Morales: "You're the best! Thank you!"
-- [SENTIMENT-004](./client_sentiment.md#sentiment-004) — Dec 18, 2025 — Client (Amanda): "You guys are awesome and we work as a great team" (store approval).
-- [SENTIMENT-005](./client_sentiment.md#sentiment-005) — Jan 6, 2026 — Client: excited to get this thing rolling / huge milestone / zoom party.
-- [SENTIMENT-006](./client_sentiment.md#sentiment-006) — Jan 6, 2026 — Client: the 16th is the answer. Go date.
-- [SENTIMENT-007](./client_sentiment.md#sentiment-007) — Jan 6, 2026 — Client: that's when we're going live. So beautiful.
-- [SENTIMENT-008](./client_sentiment.md#sentiment-008) — Jan 6, 2026 — Client: huge milestone for Les... I love it.
-- [SENTIMENT-009](./client_sentiment.md#sentiment-009) — Dec 16, 2025 — Joe Morales: appreciate updates, great job on Google clearance.
-- [SENTIMENT-010](./client_sentiment.md#sentiment-010) — Dec 15, 2025 — Bonnie Lucas: "Thanks guys!! Great work!"
+- [SENTIMENT-001](./client_sentiment.md#sentiment-001) — Jan 29, 2026 — Bonnie: move forward on Broker / Client Apps; “connect all the moving parts soon”.
+- [SENTIMENT-002](./client_sentiment.md#sentiment-002) — Jan 29, 2026 — Amanda: launch called “a strong milestone”; “incredible collab”.
+- [SENTIMENT-003](./client_sentiment.md#sentiment-003) — Jan 16, 2026 — Bonnie: go-live day “awesome job people!”.
+- [SENTIMENT-004](./client_sentiment.md#sentiment-004) — Jan 6, 2026 — Amanda: huge/significant milestone; “excited” / “a little emotional”; “I love it.”
+- [SENTIMENT-005](./client_sentiment.md#sentiment-005) — Jan 6, 2026 — Joe: “the 16th is that day” / going live.
+- [SENTIMENT-006](./client_sentiment.md#sentiment-006) — Jan 6, 2026 — Joe: “the 16th is… the answer. Go date.”
+- [SENTIMENT-007](./client_sentiment.md#sentiment-007) — Jan 6, 2026 — Joe & Amanda: excited; long road; “huge milestone”; “zoom party”.
+- [SENTIMENT-008](./client_sentiment.md#sentiment-008) — Dec 18, 2025 — Amanda: “you guys are awesome” / team success.
+- [SENTIMENT-009](./client_sentiment.md#sentiment-009) — Dec 16, 2025 — Joe: appreciates updates; great Google clearance (“approvals are TOUGH!”).
+- [SENTIMENT-010](./client_sentiment.md#sentiment-010) — Dec 15, 2025 — Bonnie: “Thanks guys!! Great work!”
+- [SENTIMENT-011](./client_sentiment.md#sentiment-011) — Mar 12, 2026 — Joe: “You're the best! Thank you!”
+- [SENTIMENT-012](./client_sentiment.md#sentiment-012) — Jan 16, 2026 — Client excitement: “high five” / “digitally high fiving all of you”.
+- [SENTIMENT-013](./client_sentiment.md#sentiment-013) — May 5, 2025 — Client: “love the wish list, perfect.”
+- [SENTIMENT-014](./client_sentiment.md#sentiment-014) — May 5, 2025 — Client: “This is fantastic” reaction to materials.
 
 ## SCOPE (Project Scope / Development Phasing)
 
@@ -65,3 +69,4 @@ This index lists extracted, timestamped, verbatim evidence entries and links to 
 - [COMMUNICATION-008](./communication_and_project_management.md#communication-008) — Dec 30, 2025 — Test plan for native app completed; ready to send to Ashley for testing.
 - [COMMUNICATION-009](./communication_and_project_management.md#communication-009) — Jan 2, 2026 — Brian emails Ashley the test plan; notes DB reset timing before testing.
 - [COMMUNICATION-010](./communication_and_project_management.md#communication-010) — Jan 15, 2026 — Email chain: run through test plan / final approvals (Brian–Joe); meeting record in participants CSV.
+- [COMMUNICATION-011](./communication_and_project_management.md#communication-011) — Jan 16, 2026 — Go-live rollout: soft launch weekend then full Monday blast.
