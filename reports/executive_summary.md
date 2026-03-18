@@ -1,6 +1,6 @@
 # Executive Summary
 
-## Key Evidence (Client-Visible)
+## Key Evidence
 
 - Rehydration (session recovery) timeline: discussed as **not included before go-live**, planned as an update **after Jan 16**.
   Finding: The record explicitly describes rehydration/session recovery as **not included before Jan 16**, and planned as work **after go-live**.
