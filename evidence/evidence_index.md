@@ -14,6 +14,10 @@ This index lists extracted, timestamped, verbatim evidence entries and links to 
 - [REHYDRATION-008](./rehydration.md#rehydration-008) — Dec 18, 2025 — Reset workflow is for accidental force close.
 - [REHYDRATION-009](./rehydration.md#rehydration-009) — Dec 18, 2025 — Reset enables officer to clock back in.
 - [REHYDRATION-010](./rehydration.md#rehydration-010) — Oct 22, 2025 — “The only thing you can't do is force quit the app…”
+- [REHYDRATION-011](./rehydration.md#rehydration-011) — Feb 17, 2026 — Plan to push rehydration updates to TestFlight for client validation.
+- [REHYDRATION-012](./rehydration.md#rehydration-012) — Feb 24, 2026 — Dev: TestFlight build testing goes well; works even if app is closed.
+- [REHYDRATION-013](./rehydration.md#rehydration-013) — Feb 24, 2026 — Dev: not hearing “rehydration not working” in TestFlight testing (“close/open” flow).
+- [REHYDRATION-014](./rehydration.md#rehydration-014) — Feb 24, 2026 — Ashley: clocking in/out “seems to be going well” during TestFlight testing.
 
 ## LOCATION (Location Services / Permission Education)
 
