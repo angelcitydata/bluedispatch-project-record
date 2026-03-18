@@ -39,6 +39,11 @@ And the client pushed for a rapid decision by Friday (and cost focus):
 > `SCOPE-008` — “I’m hoping by Friday’s meeting at the latest… she wants more narrow focus as to what we’re going to expect cost wise…”  
 > (Source: `source/transcripts/2025-05/GMT20250527-200227_Recording_otter_ai.txt`)
 
+The engagement never fully followed a formal “proposal + discovery + estimate” path. In an early **Jan 13, 2026** email summary of the native app project history, the team explicitly states:
+
+> `SCOPE-004` — “we did not prepare a proposal or estimate exactly for the native app project… [and] we did not go through a proper discovery, proposal or project preparation.”  
+> (Source: `source/emails/brian_overby_2026_01_13.txt`)
+
 ## June 2025: Native app direction + location services requirements (Always Allow education)
 
 The June transcripts shift toward native app discovery and the practical iOS permissions needed for GPS-driven functionality.
@@ -253,3 +258,66 @@ And later positive client feedback is captured post-launch:
 - **Location services (“Always Allow” education)**: first explicitly evidenced on **June 25, 2025** (`LOCATION-001` + related entries).
 - **Rehydration / force-close constraints**: first explicitly evidenced on **Oct 22, 2025** (`REHYDRATION-015`).
 - **Session recovery (“rehydrate a job”) delivery timing**: explicitly described as _not_ before Jan 16 go-live on **Dec 30, 2025** (`REHYDRATION-001`), then validated in TestFlight on **Feb 24, 2026** (`REHYDRATION-004` / `REHYDRATION-005`) and released following validation (**Mar 2, 2026** `REHYDRATION-008`).
+
+## Appendix: Meeting-by-meeting transcript notes (from `analysis/transcript_index.md`)
+
+The `Notes` text below is copied directly from `analysis/transcript_index.md` so this appendix does not introduce any new claims beyond the repository’s mined transcript notes.
+
+| Date         | Transcript File | Notes |
+| ------------ | ---------------- | ----- |
+| May 5 2025   | GMT20250505-180246 | Early project discussions / scope + timeline. |
+| May 6 2025   | GMT20250506-200237 | Development planning. |
+| May 8 2025   | GMT20250508-200352 | Customer portal scope deep dive: validations, emergency publish, docs, performance. |
+| May 13 2025  | GMT20250513-200245 | Fixes triage; GPS quirks; kickoff planning for customer portal work. |
+| May 16 2025  | GMT20250516-200438 | Fixes + GPS constraints; debate native app need; meeting process reset. |
+| May 19 2025  | GMT20250519-181051 | Customer portal discovery follow-up: rates/late fees, documents, timeline. |
+| May 20 2025  | GMT20250520-200331 | Native app timeline pressure (“quick and fast”). |
+| May 22 2025  | GMT20250522-200143 | Dev fixes status; correspondence logging; planning dev-to-prod timeline. |
+| May 27 2025  | GMT20250527-200227 | Proposal vs discovery discussion. |
+| May 30 2025  | GMT20250530-200122 | Native app definition-of-done / estimates. |
+| June 3 2025  | GMT20250603-200201 | Jobs marked complete still active; flags/paydate/clock-out mismatch. |
+| June 10 2025 | GMT20250610-200254 | Agency release logic; officer past-jobs missing; mileage report quirks. |
+| June 13 2025 | GMT20250613-200222 | RFP scope review; permissions/location (geofencing); roles/SSO; AWS scaling. |
+| June 17 2025 | GMT20250617-200156 | Clock in/out failures; offline messaging; native app offline-sync plan. |
+| June 24 2025 | GMT20250624-200919 | Admin console bug triage (bulk assign), priorities shift, AWS instance/dev-prod planning. |
+| June 25 2025 | GMT20250625-200429 | Native app discovery + GPS proof-of-concept; iOS permissions; “move fast” kickoff. |
+| July 1 2025  | GMT20250701-200326 | Agency freezes/timeouts; server instability; dashboard on-hold jobs; report emails. |
+| July 8 2025  | GMT20250708-200311 | AWS setup coordination; 408/401 agency errors; RFP diagrams/capacity messaging. |
+| July 15 2025 | GMT20250715-200138 | SSL/cert outage postmortem; AWS progress; server migration timeline. |
+| July 22 2025 | GMT20250722-200252 | Native app UI demo; filters; dark mode; improved dashboards; booking confirmation. |
+| July 23 2025 | GMT20250723-173129 | Cert-cache login issues; Apple Maps inaccuracies; agency dev push readiness. |
+| Aug 5 2025   | GMT20250805-200537 | FileMaker on AWS ready for testing; security hardening; TestFlight account. |
+| Aug 12 2025  | GMT20250812-200151 | Coordinate-based job creation map; address verification; cross-user “my jobs” bug. |
+| Aug 19 2025  | GMT20250819-200246 | AWS security containers; testing window; report fixes; mapping UX improvements. |
+| Aug 26 2025  | GMT20250826-200248 | Server disk/RAM exhaustion; backup failures; scheduler usability tweaks; deployment risk. |
+| Sep 2 2025   | GMT20250902-200151 | AWS security hardening; Node/FileMaker risks; bug triage; test coordination. |
+| Sep 9 2025   | GMT20250909-200232 | Native app handshake; AWS capacity concerns; UI flow decisions; launch testing. |
+| Sep 11 2025  | GMT20250911-210337 | SMS login workflow; AWS migration; App Store submission planning. |
+| Sep 15 2025  | GMT20250915-160220 | AWS cutover readiness; FileMaker map/lat-long workflow; login UI updates. |
+| Sep 16 2025  | GMT20250916-200215 | AWS security configuration; native app bugs; geofencing; TestFlight steps. |
+| Sep 23 2025  | GMT20250923-200214 | AWS connectivity/SSL fallout; security rollbacks; native app priorities; testing needs. |
+| Sep 30 2025  | GMT20250930-200148 | AWS stability; TestFlight crash debugging; improving location/map behavior on-device. |
+| Oct 7 2025   | GMT20251007-200142 | AWS migration blocked by connectivity; TestFlight crashes; GPS demo prep. |
+| Oct 14 2025  | GMT20251014-200147 | Production AWS breakage (Java/SSL); security coordination; launch dependencies. |
+| Oct 22 2025  | GMT20251022-200300 | Force-close discussion. |
+| Oct 29 2025  | GMT20251029-200952 | Conference recap; rehydration after force-close; SMS opt-in; AWS testing status. |
+| Nov 4 2025   | GMT20251104-200328 | Force-close behavior + recovery constraints. |
+| Nov 11 2025  | GMT20251111-200226 | Android parity; UTC/DST handling; notifications; AWS server “nuke/rebuild”. |
+| Nov 18 2025  | GMT20251118-200225 | Notes/photos syncing; admin reset controls; privacy constraints; January target. |
+| Nov 25 2025  | GMT20251125-200444 | Notifications; background tracking “island”; app icon; release-button regression. |
+| Dec 9 2025   | GMT20251209-200151 | Background GPS indicator explanation. |
+| Dec 18 2025  | GMT20251218-200427 | GPS trace retention / security responsibilities; pen-test and compliance topics. |
+| Dec 18 2025  | GMT20251218-201604 | Google approval; soft-open strategy; FileMaker notifications; production concerns. |
+| Dec 18 2025  | GMT20251218-201707 | Notifications deep-links; profile uploads; force-close failure handling improvements. |
+| Dec 23 2025  | GMT20251223-195858 | Soft-open live stores; notification release; repointing test plan; clock-out anomalies. |
+| Dec 30 2025  | GMT20251230-200427 | Go-live readiness / rehydration described. |
+| Jan 6 2026   | GMT20260106-200156 | Go-live date confirmation / launch planning. |
+| Jan 13 2026  | GMT20260113-200305 | Go-live week final prep: migrate accounts, prod tests, email/notification changes. |
+| Jan 14 2026  | GMT20260114-172139 | Budget governance for next portals; fixed-cost planning; go-live support priority. |
+| Jan 16 2026  | GMT20260116-171759 | Go-live celebration; client thanks team; soft-launch weekend + full “hit everybody Monday” rollout plan. |
+| Jan 20 2026  | GMT20260120-200358 | Post-launch issues triage: login/clock bugs, emails, permissions, vulnerabilities. |
+| Jan 27 2026  | GMT20260127-200414 | Post-launch infra hardening: server cutover, backups strategy, dev/prod planning. |
+| Feb 3 2026   | GMT20260203-200426 | AWS migration; rollout/change management; tutorials; deprecating web app. |
+| Feb 10 2026  | GMT20260210-200526 | Bugfixes (job timing/UTC); rehydration work; location-permission policy scenarios. |
+| Feb 17 2026  | GMT20260217-200229 | Rehydration demo; offline/no-signal handling; location enforcement; dev/prod access issues. |
+| Feb 24 2026  | GMT20260224-200446 | TestFlight rehydration validation; dev/prod data leakage; location-services proposal; FileMaker quirks. |
