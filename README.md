@@ -1,6 +1,6 @@
 # Blue Dispatch Project Record
 
-A **project record and evidence index** for the Blue Dispatch native app engagement (ACD ↔ LES). Source materials (transcripts, emails, documents) plus **timestamped, verbatim evidence**—every entry links to a specific source so statements can be verified.
+A **project record and evidence index** for the Blue Dispatch native app engagement (ACD ↔ LES). Source materials (transcripts, emails, documents) plus **timestamped, verbatim quotes**—every entry links to a specific source so statements can be verified.
 
 ---
 
@@ -19,7 +19,7 @@ A **project record and evidence index** for the Blue Dispatch native app engagem
 | **Look up positive client feedback**                             | [Client sentiment](evidence/client_sentiment.md)                                                                |
 | **Check the original source (transcript, email, doc)**           | Each evidence entry lists its **Source File**; open that path under `source/` to verify.                        |
 
-**One-line rule:** [Evidence Index](evidence/evidence_index.md) has everything listed by category—click through to the full entry or the report you need.
+**One-line rule:** [Quote Index](evidence/evidence_index.md) has everything listed by category—click through to the full entry or the report you need.
 
 ---
 
@@ -39,7 +39,7 @@ A **project record and evidence index** for the Blue Dispatch native app engagem
 | **reports/**                                                 | [Executive summary](reports/executive_summary.md), [findings](reports/findings.md), [narrative timeline](reports/narrative_timeline.md) |
 | **analysis/**                                                | Working materials (playbooks, timelines, topic lists)                                                                                   |
 
-### Evidence categories (in the Index)
+### Quote categories (in the Index)
 
 1. **Rehydration** — Force-close behavior, “rehydrate” not by go-live, reset workflow.
 2. **Location** — How permissions and background location were explained.
@@ -47,4 +47,4 @@ A **project record and evidence index** for the Blue Dispatch native app engagem
 4. **Sentiment** — Client praise and positive feedback (verbatim).
 5. **Communication** — Test plan, TestFlight, run-through/approvals, go-live confirmation.
 
-Evidence is **fact-based and traceable**; interpretation and narrative live in [reports/](reports/).
+Quotes are **fact-based and traceable**; interpretation and narrative live in [reports/](reports/).
