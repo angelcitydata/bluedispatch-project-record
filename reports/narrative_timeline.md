@@ -44,6 +44,33 @@ The engagement never fully followed a formal “proposal + discovery + estimate�
 > `SCOPE-004` — “we did not prepare a proposal or estimate exactly for the native app project… [and] we did not go through a proper discovery, proposal or project preparation.”  
 > (Source: `source/emails/brian_overby_2026_01_13.txt`)
 
+### May–July 2025: “burn rate” as the working basis for officer native app resourcing + estimate
+
+In May, the team discusses “burn rate” in the context of resourcing so they can keep development moving once discovery is complete (within the same meeting where the agenda includes “officer app scheduler issues”):
+
+On **May 16, 2025** (Speaker 2, `7:39`), they say they want to “kick up that burn rate” after discovery and explain that adding a third person would let them offer “about the same burn rate as before” (or “even a little bit more”):
+
+> “once we start, once we finish discovery, and get on to starting the client app. You know, we want to kick up that burn rate a little bit, and this will allow us to do that, having a, having a third person helping us out, instead of just the two of us, we'll be able to offer you, offer you the probably about the same burn rate as before, or maybe even a little bit more. And otherwise we wouldn't be able to, because we've, you know, the boss is complaining that we're pushing deadlines for other clients, so this will allow us to to do that to keep a good burn rate for you guys moving Yeah.”  
+> (Source: `source/transcripts/2025-05/GMT20250516-200438_Recording_otter_ai.txt`)
+
+On **July 22, 2025**, the team ties burn rate and “hours per week” to projected estimate math and fixed-bid expectations for the **native app** (and explicitly calls out separating “native app” invoice work from other work):
+
+- Timestamp: `46:02–46:34` (Unknown Speaker) — Quote:  
+  > “to work. So if you want, can you give like a projected estimate? We understand that things are coming to play, but just leaving it open ended could be a million dollars. Oh, no, no, yeah, and I don't see that at all, like I had discussed with Joe and such before, we were looking at pushing a burn rate of somewhere between 120 and 140 in the hours per week as we hit top end. Now, we have not hit that. I don't believe we have hit 120 a week yet, but we've come pretty close, although that is including the native app and the other stuff that we're still doing, see that's what, that's what I want separated. Yeah.”
+  > (Source: `source/transcripts/2025-07/GMT20250722-200252_Recording_otter_ai.txt`)
+
+- Timestamp: `47:16–47:30` (Unknown Speaker) — Quote:  
+  > “for a general number, like I was saying, even if we hit that 120 hours burn rate per week from now through the expected deadline in October, the numbers looking somewhere around, around 275 275,000”
+  > (Source: `source/transcripts/2025-07/GMT20250722-200252_Recording_otter_ai.txt`)
+
+Finally, in the Jan 13 recap email, Brian explicitly describes how “burn rate” was the closest available basis for a loosely quoted estimate (because a formal proposal/estimate was not prepared):
+
+> “The best that was offered and discussed several times was the burn rate we hoped to meet originally. Project starting June 16th 2025 and an original hopeful go live of October 17th 2025. This is 18 weeks at the hopeful burn rate of 120-160 hours per week. This makes a loosely quoted estimate as follows:  
+> Low end: 18 weeks X 120 Hours per = 2,160  hours at $225 per hour = $486,000  
+> High end: 18 weeks X 160 hours per = 2,880 hours at $225 per hour = $648,000  
+> Making the loosely estimated range $486,000 - $648,000.”  
+> (Source: `source/emails/brian_overby_2026_01_13.txt`)
+
 ## June 2025: Native app direction + location services requirements (Always Allow education)
 
 The June transcripts shift toward native app discovery and the practical iOS permissions needed for GPS-driven functionality.
