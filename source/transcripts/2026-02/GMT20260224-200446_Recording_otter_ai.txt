@@ -1,0 +1,598 @@
+Speaker 1  0:00  
+At the awkward start our recording. Well, yeah, welcome to another week, another update meeting. What do I have to update on? We spent some time yesterday trying to make sure we deal with the issue Ashley had sometimes, of like, one or two officers were able to see and even book a job that was in dev when they were using the prod version of the app, I said, we put up some bumpers this morning to help make sure. What time was that created. I don't know
+
+Speaker 2  0:50  
+okay, because someone did take one this morning and then I just put them all on hold. It's that same Dave and Busters one. But I was just curious if that was before after,
+
+Unknown Speaker  0:59  
+yeah, and I'm seeing
+
+Speaker 1  1:02  
+one right now that probably shouldn't be at least they're getting a validation code from dev. We didn't give dev access to a Manny Hernandez, did we?
+
+Speaker 2  1:12  
+No, but ever since, that's one of the things on my list, too, something I noticed with that dev login that I was going to go over, but no, he's not a tester, and I almost guarantee you, when I call him, his won't say dev either, because he sees he most of the people I've confirmed with have, you know, just the one point 5.3
+
+Speaker 1  1:35  
+okay, I will let Steve know that we Need more bunkers. Do. Nice.
+
+Speaker 1  2:02  
+Yes, we a screenshot here. So he's got somebody else to work with, like, Dude, this is over here.
+
+Speaker 2  2:18  
+I don't know if you Yeah, I don't know if you noticed this also, but so it looks like, and I don't know when you guys started the test flight, and the dev and, like opened, you know, made that possible for us to get into but everything it looks like started on the 17th.
+
+Speaker 1  2:35  
+Yeah, yes, that's some change was made then, yes, and I'm not quite sure what it was, either, but we need to, we need to figure that out. I do have Steve looking at that and trying now, it probably was before the seventh. So the 17th was probably just the last time we reset the dev database, you know, cleared it and reset it. So that may or may not have anything to do with this. We just don't have logs older than that, because we deleted them all, you know, and kind of reset that database. So we will see I sent him another message, another picture and see if we can get some more information. I know we were looking at. The problem is we have to wait until we do another submission, but I have asked him to add the version of the app onto the officer login history screen.
+
+Unknown Speaker  3:45  
+Oh, good, okay, that's good. That would help
+
+Speaker 1  3:47  
+so we can see it right there. Yeah, what it thinks. So we'll look at that and see if see where that problem is. It does seem like we caught a couple, because it looks less today. So yes, we'll continue on it. It's probably multiple factors, and we got to find them and close them off, one at a time, so that we have been continuing to test on the test flight version ourselves. I've been doing a bunch of jobs and driving all over Hell's creation and turning it on and off and put it in airplane mode and every other thing I can think of, you know, to trip it up and such. So so far, it's gone very well, at least for me in my testing. So it's, it's working pretty good, no matter if I close the app or whatever. And then we have been discussing today and yesterday, actually we were, we were discussing Location Services changes that are requested for kind of the next up. Eight after the rehydration. So we're still working on that and getting a proposal together on all of that. There's, there's just a lot of different you know, what if they do this stupid thing? What if they do this thing? And we're also looking at, we will be able to capture, we should be able to capture, if the officer
+
+Unknown Speaker  5:23  
+put the phone into
+
+Unknown Speaker  5:26  
+airplane mode
+
+Speaker 1  5:29  
+and cut off their, you know, their internet connection manually. So we don't necessarily want to do anything with that except add it into when we notify you guys, you know that they're not that their location is not being tracked when they're required to by their agency. So that'll be another factor to help you say, you know, okay, you know, maybe it's not tracking them because they closed the app. Or, you know, something else weird is going on that is plausible but not ill intent. If they clock into a job and then put it into airplane mode and cut off their cell signal that has more ill intent to it, they purposely are trying to not allow you to track their location. So we want to capture that. If that's the method that they're doing it. So those are the type of things that we're talking about and looking through, for the for the location services. That's about all I can think of that I've been working on for you guys. Let me think, let me think since what we talked yesterday, so I don't think I've done much else new since yesterday. I told you yesterday that I fixed the time, different stuff in dev, right?
+
+Speaker 2  6:54  
+You did. Mine is still a little bit off, but I know that. I mean, I assume that once we go back to AWS, then your code will work right, correct, right? Because mine was still a little bit off. But it's not, it's not as bad.
+
+Speaker 1  7:16  
+We might we may look at one or two of those, make sure that you get it after, you know that you create, that you did everything with the job in question after, I made the changes yesterday, which was right before we met. Gotcha. So you know, anything I've done over the weekend or whatever? No, it was, I'm not going to change the time to the correct one. But like I said, I made the change right before we got the meeting, so probably noon or so, your time yesterday was when I made, yeah, so been, you know, booked, clocked in, clocked out, everything after that time,
+
+Unknown Speaker  7:54  
+stuff to be fixed.
+
+Unknown Speaker  7:56  
+Okay, yeah, and that might be,
+
+Speaker 1  8:00  
+and also remember that it is thinking that you are in the time zone of the job, right? The job that you're doing is in California or something. It's going to be an hour behind you, if it's here on the East Coast, it's going to be two hours in front of you, that kind of stuff. So it it's not going by where you actually are. It's going by where the job time zone is
+
+Unknown Speaker  8:25  
+understood. Okie dokie,
+
+Speaker 1  8:30  
+um, yeah, I think that's most of the updating that that I have here.
+
+Unknown Speaker  8:40  
+Ginger sec, would you like a chance
+
+Unknown Speaker  8:45  
+before we move on anything?
+
+Unknown Speaker  8:51  
+You're muted. Darren, if you're trying to speak, do
+
+Speaker 1  9:03  
+Okay, gonna take that as a nothing from Ginger. Sec, all right, we're nice and quick. Over to you, Miss Ashley,
+
+Speaker 2  9:13  
+okay, sounds like it looks like he went off new and I heard like a click,
+
+Speaker 1  9:18  
+but yeah, today I heard too, but not hearing him speak, yeah, Yeah, okay, well, my share.
+
+Unknown Speaker  9:37  
+My screen really quick.
+
+Speaker 2  9:42  
+So I wanted to show you. So Bonnie had called me earlier, and she was she had open she's not on Deaf, she's on production. And she goes, How come I can see a job from Yes. Her day last night. I was like, Ah, so I, you know, I looked, she told me what Shabbos. So I looked on the dashboard, and it was, it wasn't open, right? Somebody had taken it, or we canceled it out one of the two. So either way, she shouldn't have seen it. So I go downstairs, you know, just to, like, see for myself and pull up this picture. So I logged all the way out. I tried refreshing, I'll start there. I tried, you know, pulling down the screen, and it was there. And then, so I logged her completely out, logged back in, and it was gone. But hold on, I don't know if you can see this at all. So do you see at the top here where it says 223, to 315, this is after I logged back in. Why didn't that update to 224? To Blah?
+
+Speaker 1  10:52  
+Blah? Because I'm showing one minus one day. It's the only way we can continue capture those jobs that start at 1011, o'clock, you know, okay at night, but it shouldn't be showing one that's booked or canceled, you know. So yeah, that that should mean that you you would only see stuff from yesterday, technically, that was never booked and was never canceled. And so it should, you know, work itself out basically, yeah, it was everything should be canceled or booked by the end of the day. You know, even if that date is showing, technically showing yesterday, it shouldn't have any jobs from yesterday in Prague, because you guys assign them or cancel them all correct?
+
+Speaker 2  11:41  
+Yeah, it was just weird because I, you know, like, pulled down the screen to try to refresh it, and that wasn't doing the trick. Is that how it's supposed to be? Or don't you think refresh was refreshing?
+
+Speaker 1  11:53  
+It should. I mean, of course, in this the first job I see is the 25th which is totally logical.
+
+Speaker 2  11:59  
+Well, that's because I, literally, like, logged completely out, and then, like, put in her phone number and got back in to see if, if that would, if it would go away. And it did. So I maybe I should have tried to book it. It probably wouldn't have let me. I hope it wouldn't have let me, because it technically did not exist in in dashboard. It shouldn't have
+
+Unknown Speaker  12:20  
+been there didn't exist period, or was canceled
+
+Speaker 2  12:23  
+was it was, I'm in dub right now. So I could, I could tell you if it was canceled or taken if, if that would help. But either way, it was still there
+
+Speaker 1  12:36  
+in pride, in production. Yes. Okay. You mean you don't need to switch systems right now? Oh, okay,
+
+Speaker 2  12:44  
+all right, dang it, too late. Okay. I don't know, I just did that, but yeah, so that was one of the things I wanted to bring up, because, you know, it happened, and I don't, I didn't think like you'd have to literally log all the way out that felt a little off to me,
+
+Speaker 1  13:02  
+that that was that's definitely off. I might need to see it specifically to try to figure out, because I see that happening in dev, because we're making all these fake jobs, and people aren't taking them all. So sometimes it does show yesterday, because nobody ever booked the job. And technically, we are showing yesterday. That just helps us get those weird overnight, you know, over the midnight line type jobs.
+
+Speaker 2  13:25  
+I have to keep up on that, though, because I don't want people calling that a bug when really it wouldn't. It shouldn't ever happen in production.
+
+Speaker 1  13:34  
+Yeah, right. It shouldn't, yes, if, yeah, if you guys are keeping up with, you know, making sure the jobs are booked or canceled or whatever. Yeah, that's what I thought, too.
+
+Speaker 2  13:48  
+The other thing that happened today, and this one, okay, so here's the scenario. He had clocked into a job. This is on dev, clocked into a job. Everything was good. He ended up eventually, you know, clocking out. And then he said, 30 minutes went by and it was still in his my jobs page. And now, obviously I know I knew how to get rid of it, right? Like, hit that back button. But at what point does it, you know, like, refresh and move over to and I did try to refresh it by pulling down, see, that's what I thought, but
+
+Speaker 1  14:28  
+hit back or just go to a different tab, I think, okay,
+
+Unknown Speaker  14:34  
+yeah, try to sit there and
+
+Speaker 1  14:36  
+stare at it. You can consider because you can keep staring at it. And in truth, truthfully, even after you clock out, as long as you don't hit that back button or whatever, you can still upload photos and notes and such to that
+
+Unknown Speaker  14:50  
+job. We're gonna add that.
+
+Speaker 1  14:54  
+So that's why we leave it there is to allow them after they clock out, to still, you know, to upload a report. Port or something that they need to upload, or they forgot, you know, or a note, or anything like that, they can still do that until they hit back or, you know,
+
+Unknown Speaker  15:17  
+thank you the
+
+Speaker 2  15:22  
+next thing, this one, it this one, this next one that you've heard me say before, it's hard to recreate, because I don't know if it's every time, or if you know what it is, but some jobs for no rhyme or reason that I can see, because they're the you know, they were given to them at the same time, the same way, sometimes even the exact same location, and they're just that one date is not showing on their my jobs list. And I think Joe, that happened to you too, right?
+
+Speaker 3  15:54  
+Yeah, actually happened to me yesterday in
+
+Unknown Speaker  15:57  
+dev. Yeah, it's happened
+
+Speaker 2  16:00  
+in both areas. But his was definitely. His was Deb, but I've seen it happen to officers in Pro I
+
+Speaker 1  16:11  
+said it's we have to figure out what list of variables makes it happen. 100% of the time, there is a list of variables that makes something happen 100%
+
+Unknown Speaker  16:21  
+of the time there's never sometimes.
+
+Speaker 1  16:25  
+So we need to figure out what that you know, what that variable is. When you went and looked at the job in dev, say, for Joe's job that wasn't on his my jobs list, did you go there and, oh, I don't think I have the little i button on dev. Do I
+
+Speaker 2  16:46  
+you don't, actually, I was going to talk to you about that. Um, there is one other thing that happened that that I button would have been super cool to have.
+
+Speaker 1  16:55  
+Yeah, maybe I can drop that there on dev so that we can, because I would definitely want to know what that said, right?
+
+Unknown Speaker  17:05  
+But even then that
+
+Speaker 1  17:09  
+what jobs are there on the API server doesn't technically decide what shows up on your jobs list or your my jobs list. That's directly from file maker. So but I would want to know what that I said, and maybe we can try to figure out, because I have not seen that particular problem happen, so
+
+Speaker 2  17:34  
+I've seen it on production, and when I hit the eye, it typically says, Job is something and ready to be clocked in. I don't know what that tells you, but to me, it felt like good, like I'm like, that's good. The only way that I
+
+Speaker 1  17:47  
+they need to go to the My job screen and just pull down to refresh,
+
+Speaker 2  17:51  
+yeah, and that, I mean, that wasn't triggering it, but what did make it reappear, at least for one person, they had to literally log completely out and log back in with their phone number again, then it was magically there. But as for what made it disappear and not show in the first place? I can't quite pinpoint at all, because it was, you know, it was, it was like the 18th, 19th, 20th, 21st, and just the 19th wasn't showing. Um, me.
+
+Unknown Speaker  18:24  
+So. I mean, whatever
+
+Speaker 1  18:26  
+I can also be when they have a multiple jobs like that, you know, the in the my jobs, it'll say, you know, like today, and then it'll say this week. If they have multiple jobs, they're going to have to swipe to the left to see multiple jobs within that week.
+
+Speaker 2  18:43  
+Oh, yeah. No, I know. I mean, and they were like they were they could see the 18th and the 20th, just not the 19th. So I get what you're saying, but that in this particular case, that wasn't it, at least, like I said, it's kind of a more recent problem, and so I'm trying to gather as much information as I can, but I just don't know what.
+
+Speaker 1  19:05  
+Yeah, I mean, I can keep an eye out, but I unless I find it, I need you to find, you know what? What string of variables makes that happen? As many as much information and screenshots as you can give me, but you know, could help me find this stuff. I'll keep an eye out. Of course, myself, I'm like I said, I'm testing away, so okay, I must say in my test I probably should. I just haven't much tried to, like, bulk assign and bulk creation of jobs and bulk assigned to jobs. I haven't been doing that much because these are all fake jobs, and I don't like making 20 fake jobs, but
+
+Speaker 2  19:50  
+I have bulk assigned, so I'll let you know if that causes any issues. I did that twice. So. I'll let you I'll let you know on that one. If I notice anything, let's see. Oh, the eye on death button, though. So I was getting Bubba Swan his job, and he was actually on a job currently, right? So I clocked him out, but in his hours in production, and then we logged him out, went back, you know, did the whole nine yards on getting him enrolled through test flight. And then when he tried to clock into the one for today on dev side, it said that he couldn't clock in because he was active on another job and he was not because I had clocked him off. Now, is that because it is a have anything to do with it being the exact same location? But one was on dev, one was on production, so I didn't think that that would cause a conflict.
+
+Speaker 1  20:56  
+It should not. Is Bubba swan? Actually EDWARD SWAN or Yes. Sorry, nope. Same guy. So he is on an active job in dev. That was
+
+Speaker 2  21:06  
+right now. Oh, yeah, that was so I was able to clock him in through FileMaker. But when he tried to do it on his phone through the app, it said that he couldn't something. It said something went wrong. You are currently clocked into a job, yeah, and so I thought that was strange, so I'm going to see what happens, you know, on his next one, because I couldn't find him logged into any job on either, you know, the what's it called Dev, blue dispatch, or Pro. Okay, so just something I noticed. I'm not sure. Hopefully, I don't know if it had anything to do with the fact that he had already been on a job, that same job, on production. I don't know.
+
+Unknown Speaker  21:55  
+Okay, I don't know.
+
+Speaker 1  21:59  
+Cross streams, I agree. I can discuss with the team and see what they say
+
+Unknown Speaker  22:11  
+this may have to do with
+
+Unknown Speaker  22:15  
+with the issue of them being able to,
+
+Unknown Speaker  22:20  
+you know somebody on prod being able to
+
+Speaker 1  22:27  
+access dev data. You know that when we don't want them to,
+
+Speaker 2  22:31  
+that's someone here or
+
+Speaker 1  22:35  
+no, like, because, like an officer, well, yeah, when we were discussing earlier, you know you've got, yeah, you had somebody that was able to book a job on dev using the prod,
+
+Unknown Speaker  22:47  
+that definitely could not be so
+
+Speaker 1  22:51  
+I do see EDWARD SWAN clocked in multiple or not, clocked In, logged in multiple times today in dev, and I see a login and a log out, and then another login and that hasn't logged out yet.
+
+Unknown Speaker  23:11  
+That's good. Yeah, he should be on that that job right now.
+
+Speaker 1  23:19  
+Yeah, yeah, oh, he is, if you go to the active jobs, you can see his little line move around.
+
+Speaker 2  23:27  
+Yes, okay, well, I'm just gonna see how you know if he continues to get that error, or if it was just a
+
+Speaker 1  23:36  
+weird clue, like East Baseline Road, he's going up and down.
+
+Speaker 2  23:41  
+That sounds right, that sounds right, they're moving. They're they're actually moving a lot on that job. So I'm glad that one doesn't have the I know we don't have geofencing, but that would be an example of one that would be
+
+Speaker 1  23:53  
+annoying for geofencing. Yeah, yeah, yeah. I can see him moving up and down. One of the other things we were discussing for the in the location services update was actually tagging clock in and clock out geo locations as such. Right now we're basically just saying the first geo location we get, the first coordinates we get, is the start, and the last one is the end. That's not necessarily the location they were at when they when the clock in button was touched. Ow. It should be if they clock in and out on the app, but if Oh, in or the clock out happens from file maker, then that's not exactly true. So basically, we're just adding a value to that coordinates package that says, hey, this was them touching the clock in button. Here's the coordinates when they actually hit that button. So you wouldn't get that value if you plucked them in from file name. Maker or out really. So it would, you know, we would know, basically by looking at the location, we would know how they got clocked in or clocked out, whether it was from file maker, from the admin console or from the app themselves, them doing it correctly. Gotcha. Okay, that's just another piece of information that we would like to gather. And we're talking about adding to the location services stuff,
+
+Unknown Speaker  25:33  
+perfect. Let's see, oh,
+
+Unknown Speaker  25:37  
+on the agency side, if the blah blah
+
+Speaker 2  25:41  
+blah, blah. So on the agency side, if it's the agency says they always want them tracked, are is the agency side going to be able to see the officer's location in real time?
+
+Speaker 1  25:54  
+That is something we are discussing possibly adding as part of that. That's probably going to be an option on the proposal, because that's not a small task, okay, down to, you know, hey, if you want this to work the way you want, these are the things we have to do. And then we're going to say, while we're in, you know, while we're digging in this code and doing this stuff, we can also, you know, do this, this and this, and it'll be kind of a a la carte thing for you guys, because it's just going to be easier to add while we're in here doing all this location stuff. Anyway.
+
+Unknown Speaker  26:35  
+Sure. Okay, I will let him know.
+
+Speaker 2  26:41  
+The next one, the next one doesn't happen all the time. It kind of feels like some days it does and some days it doesn't, but it has to do with changing the hours, right? So sure, the one I'm going to show you isn't going to work, but what I've noticed is it's only when there's a decimal, but so it'll be, let's say it's 5.50 and then it's, you go to change it to six, right? So you highlight it, and you write six, and then it would just add the six to the end. So it's 5.506 and it's not every it's like, you know. So I don't know if it's always just five zeros, or if it's, you know, it, I don't think it's anything with a decimal, but it, it's just like, hit and miss. Sometimes. Does that ring a bell
+
+Speaker 1  27:32  
+at all? Aging it in the when you're like, here you're in the detail screen
+
+Speaker 2  27:39  
+shouldn't be, I know, but I want to see if I just
+
+Speaker 1  27:43  
+make that change that tries to make sure that if it's empty, it ends up with a zero instead of empty. I don't see how that would mess anything up, but
+
+Speaker 2  27:56  
+yeah, and it's trying to see if there's maybe one I could show you. Oh, then there'd be a fake one that I could change. But anyway, you know what I mean, though, right? Like, I'll highlight it, and then
+
+Speaker 1  28:20  
+it sounds like it's not replacing it. It's just adding it to the end. It is
+
+Speaker 2  28:24  
+and it's and it's just sometimes, though, and I want to say it's just when it's point five zero, but I don't know why that would matter, but I have, what do you need for me on that to help you narrow down why it's doing that.
+
+Speaker 1  28:49  
+Do we happen to know if it's happening in product, I mean, in dev, also,
+
+Speaker 2  28:54  
+sorry, I haven't tried in dev, to be honest with you, all I know is it's happened in production, for sure,
+
+Speaker 1  29:01  
+I can just try it and try to mess with it in dev, or even out, just make sure I use fake jobs.
+
+Speaker 2  29:08  
+But Okay, anyways, so that's something I need to figure out.
+
+Speaker 1  29:20  
+Officer see what we can do about realistically. Okay, no worries. It's best to thank you. If you're changing anything, it's best to click outside the field somewhere and let it commit before you hit close. That shouldn't cause problems, necessarily. But as a best practice that makes sure that all the mod logs and everything run properly. So like the way you just did that one right there, I would, yeah, been doing it that way. Okay.
+
+Speaker 2  29:54  
+No, I get you. I was just trying to see if I could trigger one. But I do. Understand, not clicking outside of the box. Let's
+
+Unknown Speaker  30:11  
+see. We already talked about officer scene Dev,
+
+Unknown Speaker  30:16  
+kind of strange. So I don't know that whole thing was strange.
+
+Speaker 2  30:21  
+I did end up putting all of those, you know? What else was weird about that one that Dave investors job in particular, that people are seeing was so on the dashboard in dev, right? Like they were, they were open, right? It looked like they were something you could pick and assign. But when I went, like, into the reoccurring job, right? Like, this is obviously the wrong job, but the names were all in there, so they weren't blank. Does that make sense? So, like, it looked like it was blank. But then when I go into the reoccurring part, and I went here, like there was a name there, and I'm like, how? How do these look blank when they're they have officers assigned. I don't know what that tells me exactly, but I thought that was very strange.
+
+Speaker 1  31:09  
+That is strange. I can look at that and see if it's a different lookup, but it shouldn't be. I can't imagine why it would be
+
+Speaker 2  31:17  
+right, and it's just the Dave and Buster spawn. I don't know. I don't know what's going on with that one, so I ended up putting them all on hold so that they weren't showing up at all in on the dashboard for dev people, so they could stop taking those
+
+Unknown Speaker  31:36  
+but want to share
+
+Unknown Speaker  31:41  
+favorites. Or recent, oh,
+
+Speaker 2  31:45  
+let me make sure before I go to this one, that there's not something more. Okay, I had a question for you on Okay, so you saw when I tried to log in, right? And it gave me that host thing, yeah, okay, let me try my best to explain this. Come on. Oh, I still want to show you that Broadway and 16th Street if I have time to but okay, so if I go this way, right, oh, show host, maybe I should do it a different way, so You can see I'll just again, Just gonna remove that.
+
+Speaker 2  32:58  
+Home by Gov. This way, it doesn't it, you know, doesn't give me that host error, right? Logs me in good. So you would think that the one that I just added to my favorites
+
+Unknown Speaker  33:16  
+would be good, right? Not necessarily.
+
+Speaker 2  33:19  
+Yeah, it's not so like, if I close out of it completely and come back in, it's going to re trigger. But so what's the difference? I guess my question is, what's the difference? What's happening between going from show hosts and going in that way, versus when it's being put in favorite or recent like, Why? Why is it
+
+Unknown Speaker  33:41  
+because your,
+
+Speaker 1  33:44  
+your files are being are being filtered by password, and it's not doing that. It's having problems doing that here in the favorites area is what I'm going to assume, like I've told you before, I always use the file show host. I never use these. The Favorites are recent, so the most experience with it, because, simply because I get these types of problems, especially in the recent one,
+
+Speaker 2  34:21  
+yeah, recent triggers it as well. But, I mean, we've always had them in favorites, and what was it? Maybe two weeks ago, this started,
+
+Speaker 1  34:32  
+yeah, I don't know why that would happen. It should have happened as soon as we get up to AWS, because that's when we turned on the the
+
+Unknown Speaker  34:41  
+password for him,
+
+Speaker 2  34:44  
+yeah, it, I mean, it's didn't This is literally, like, two weeks. But this triggers that email error, unknown error code that we were getting. So, like, if I were to log in right now, I say, Hey, okay, hit okay, and then go back in and. Do it again, that it does next email that I try to send, whether it's cancelation or just whatever it is. Well, that's what triggers that every single time. The only problem with doing it to this and hosts and show hosts is it just takes, it takes a while, and the amount of we're typically building extremely fast, and to have them log in this way every time. I mean, if there's no way to fix it, I you know, does it work? Yes. Does it take longer? Yes. And I just, it's, just, does that make sense? Like, is there anything we can do?
+
+Speaker 1  35:41  
+I don't know. I can look and see if I can find something. Yeah, I don't do off the top of my head, I get a very different opening screen. Anyway, do you Yeah?
+
+Speaker 2  35:58  
+Does it take us as long as mine does, like you have to go back and forth, otherwise it says connection not down.
+
+Speaker 1  36:04  
+Sometimes, yes, you can also, when that first screen comes up, can save your password so that you don't have to enter it twice.
+
+Unknown Speaker  36:18  
+Oh, this one, yeah, so save passwords and credential manager, yeah.
+
+Speaker 1  36:25  
+The only problem is you have to know how to go into your credential manager in Windows. And if you ever do change your password to this system, you would have to know how to go into the Windows Credential Manager and change it. There Interesting, okay, which is definitely an annoyance. And, you know, higher level it thing, okay,
+
+Speaker 1  37:01  
+um, go saw. I wonder if something tells me, I know he doesn't go in there much, but something tells me, Joe would not have this problem.
+
+Speaker 3  37:14  
+Yeah, it's not me. It's not me. Don't get on there
+
+Unknown Speaker  37:17  
+because he's on a Mac
+
+Speaker 2  37:19  
+Oh, some mac phones or the windows thing rather, yeah, we know
+
+Unknown Speaker  37:25  
+Max better. We know Max. We
+
+Unknown Speaker  37:27  
+know. Sorry,
+
+Speaker 2  37:30  
+I have zero choice as to what kind of computer,
+
+Speaker 1  37:34  
+yeah, I mean, I can try to look at it. The bigger problem for me is I don't have a Windows computers have a version of parallels that I can run. So I can run those on my Mac, but it's it's not the most up to date, and it's not it's not its own system.
+
+Speaker 2  37:53  
+So are you able to try and save that host to your favorites and see if you can trigger the same error the host that hosting Sure. I mean, I know it's a max so it probably won't, but I don't know. Of course, it's gonna try. I'm sure it will, but it's for the sake of, never know show hosts,
+
+Speaker 1  38:23  
+do? I always save like servers to favorites. I never save a single file add to favorites.
+
+Unknown Speaker  38:39  
+All right. Oh, don't forget, I
+
+Speaker 1  38:42  
+got where do I go see those favorites? I guess I gotta quit file maker completely
+
+Unknown Speaker  38:49  
+show favorites.
+
+Speaker 1  38:52  
+There they are. Yeah, it opens just fine for me when I add it to favorites.
+
+Speaker 2  39:00  
+Oh, it's it's not as big of a problem when it's sending an email, like a job assignment, but the cancelation one is a pain because you have to go in, uncheck the check mark, recheck the check mark. Like it's a process,
+
+Speaker 1  39:14  
+and people just don't know why that would affect the email thing either. Like those those two should have nothing to do with each other.
+
+Speaker 2  39:23  
+Oh, I mean, I agree with you. I just know that if I don't get that error right, like I go through the host, way I can send emails. Fine. If I get that error, I will trigger it the email thing every time. It's very strange. Oh, I know,
+
+Unknown Speaker  39:40  
+yeah, that is that's incredibly strange.
+
+Speaker 2  39:45  
+Okay, let's see if my maps will load. Think it was 16th Street and Broadway. Hope it was 16 i.
+
+Unknown Speaker  40:01  
+To the space. Isn't that weird?
+
+Unknown Speaker  40:06  
+Why? Why does it do that?
+
+Unknown Speaker  40:08  
+Why does it do what? Oh, you might
+
+Unknown Speaker  40:10  
+share my screen. Did you see that? Look at this
+
+Speaker 1  40:13  
+Phoenix. Phoenix. Yeah, I did.
+
+Speaker 2  40:16  
+So I went here right 16th Street, and Broadway picked it from my drop down, hit save,
+
+Unknown Speaker  40:23  
+and this is what it throws back at me, not where it
+
+Speaker 1  40:26  
+doesn't have a street address. So it just grabbed Phoenix,
+
+Speaker 2  40:30  
+but it did have a, what do you mean? It didn't have a street address? I put
+
+Speaker 1  40:34  
+in section is not a street address. So what makes and something that's a intersection, right?
+
+Speaker 2  40:42  
+And which we do all the time, though, and it works. Why is this one pulling up only Phoenix?
+
+Unknown Speaker  40:47  
+I have no idea. You'd have to ask Google
+
+Unknown Speaker  40:51  
+that's returning to us.
+
+Speaker 2  40:55  
+I also wanted to point this out. It it only does this when it so you see how it's on a bus stop? Yep, that I've noticed. So, like, we get that with Tempe sometimes too. And then obviously, 16th Street and Broadway, and it go in there
+
+Speaker 1  41:10  
+and start to put in the the intersection you want again.
+
+Unknown Speaker  41:17  
+Okay, hold on. It's
+
+Speaker 2  41:19  
+this one. I know I'm not going to click it, but it's that first one.
+
+Speaker 1  41:22  
+Yeah, so these, this is searching something called places. And places are specific addresses, and that must be a bus stop. Is that address, instead of it actually finding the intersection, if you,
+
+Unknown Speaker  41:44  
+yeah, that's the only one in Arizona.
+
+Unknown Speaker  41:50  
+Do we know?
+
+Speaker 1  41:53  
+Well, let's in front of this 16th. Let's put s space 16th. And East Broadway. Click that and see if it, yeah, see So, so it's it considers that that bus station it found without you specifying the, you know, south or east, but the intersection, it required it because that, technically, the intersection is not at 16th Street and Broadway. It's at South 16th Street and East Broadway. That's, that's going to be Google. There's nothing I can help you with.
+
+Unknown Speaker  42:37  
+There such a goal problem,
+
+Speaker 1  42:42  
+yeah, little girl, I would say, whenever you can try to use the, you know, east, south, north, you know, the direction thing, if you see that on the map, then, then it should, it may work better if you use that,
+
+Speaker 2  42:58  
+okay, I I think, I think that's all that I honestly have for today. Stay tuned, because I have a lot of people testing right now. So who knows? So who
+
+Unknown Speaker  43:12  
+knows what will happen next?
+
+Speaker 1  43:17  
+That's great, all right. Well, I mean, I'm, I'm hearing, you know, the, obviously, there's, there's still bugs, there's certain things we're trying to chase down, but I'm not hearing a lot that has to do with the
+
+Unknown Speaker  43:34  
+test flight version that you're dealing with right now.
+
+Speaker 1  43:38  
+So it doesn't sound like, you know, I'm not hearing this rehydration is not working. You know, I close the app, I open it up and I see nothing. And, you know, breaks in what we're testing, as far as that's concerned, which is good news to me.
+
+Speaker 2  43:52  
+Yeah, no. Brian, still. So far
+
+Speaker 1  43:57  
+that one perfection, we have to react to nothing. No, it's just, it's a good sign that we're that I'm not hearing a lot of, you know, a lot of bugs found in that testing, and we're not finding a lot either.
+
+Speaker 2  44:13  
+Yeah, so far, just the one thing with Bubba getting that one error message and then the the job disappearing. But other than that so far, when it comes down to clocking in and out, that seems to be going well,
+
+Speaker 1  44:26  
+yeah, you know, I don't know. I'm we're trying to lock them down the best we can, but I'm not the most worried about an issue that someone has, as you know immediately as they're switching from prod to dev versions and stuff on the phone, because the phone is ashes, a bunch of information, and, you know, it could still be using it. Because this is not something once, once stuff is full in production. And that your normal everyday officers are going to be using. They're not going to be flipping back and forth between problem. So this isn't something that we got to worry about in the long run.
+
+Speaker 2  45:10  
+There was one other thing that I don't know, because it was right after Bubba had got into the DEB side, but when he went to his past jobs, they were, like, all wrong. Now they were right. Like, when I look at them right in production, like in his profile, they're right. It was what it was showing him in his past jobs via the app.
+
+Speaker 1  45:33  
+Oh yeah, the stuff in his Dev. God, it could be whatever's in dev. I mean, who knows what? Okay for his past jobs, absolutely,
+
+Speaker 2  45:42  
+mine looked kind of correct. But then again, I don't know, but anyways, I that's the only other thing. Sorry. Now I'm done. Promise really, really done. This time I am really done.
+
+Speaker 1  45:56  
+Alrighty, Joe, Amanda, buddy, have anything else? It looks like Darren did drop off at some point. Yeah, I just noticed that. But nothing from my end. Amanda, what do you got? If anything, nothing.
+
+Unknown Speaker  46:12  
+Okay, not today.
+
+Speaker 1  46:14  
+All right. Well, we, like said, we're, we're plowing ahead on getting this location services stuff ready for you. I can probably move a little bit faster once Jake is 100% because he's still feeling like turd today.
+
+Unknown Speaker  46:31  
+Sorry to hear that. There's a lot that bug is going around pretty bad.
+
+Speaker 1  46:34  
+I did make him meet with me as he was running a fever, going hot and cold and putting on a blanket and then cursing the blanket because it's so hot. Yeah, so I made him work anyway, so
+
+Speaker 4  46:49  
+I'm sorry, and you were gonna get us some proposals after the location piece, right?
+
+Speaker 1  46:54  
+Well, the location piece is, well, rehydration is what we're testing now, and I'm working on the location services changes proposal, okay, I'm looking to get out to you guys as
+
+Speaker 4  47:11  
+soon as possible, like, I think by end of week, or what are you thinking,
+
+Speaker 1  47:15  
+maybe beginning of next week? But it's possible by end of week, okay, kind of depends on Jake's
+
+Speaker 4  47:21  
+health right now. Yes, of course, yeah, there's
+
+Unknown Speaker  47:25  
+a couple things that we're
+
+Speaker 1  47:29  
+we obviously aren't going to code completely, but we have to do some coding on to make sure we know what's going to work and not in order to to come up with the proposal, with the estimate. We got to know, we got to know what path we're going to be taking to push these things. And there's a couple of them where we need to do at least some basic coding to say, you know, hey, is this actually going to work, or are we just talking about it and it's not going to work the way we're talking so, okay, so yeah, it's, it's kind of on on Jake right now. I mean, I think we've got most of the basic scenarios. So like I was talking with Joe the other day. So we have, we have six basic paths at the very beginning, so the agency can say we're requiring always tracking, or we're not requiring tracking, and then there's three different notification or location services settings that the officer on their phone can possibly pick. So six times two tells us that that's our two times three is six, which gives us six basic paths of of what can happen, you know, with depending on what they have set on the phone versus what's set by the agency, then we have to take that times every single function they can do in the app to say what happens if you know this setting is this, this setting Is this, and they try to do this thing now, the same thing, but different settings, you know? So we have to go through all of those paths.
+
+Speaker 4  49:08  
+So you have to go in detail through your path to then be able to provide us with a high level for Bonnie, for the proposal. So you have to work it through. Because I don't, I will want to see the in depth, technical aspect of it. But Bonnie's not going to want to see that piece. She's just going to want to understand the timeline and cost.
+
+Speaker 1  49:26  
+I agree. And it's the cost that and the timeline that, yes, we need to get into that type of detail or, or we're going to be giving you a it's, it's either we go into this level of detail, or the proposal we're going to give you is going to be, you know, 100 to 250 hours. You know, it's going to be a big range if we don't go into the detail, if we're trying to give you a smaller range or even a specific number, yes, we got to get down into the detail and exactly how we're going to handle every possible situation.
+
+Speaker 4  49:55  
+Okay, all right, then we've got it. Then we'll be standing by the.
+
+Speaker 1  50:00  
+And I can, if you'd like. It's very simple. I usually, at the bottom of a proposal give a very quick summary. So you know, you, or anybody else who really wants to read through this stuff, can read through it, and then Bonnie can just flip to the last page and go, Okay, here's the couple sections that we're looking at, and here's the total
+
+Speaker 4  50:19  
+Yeah, and then ask us to help her with the with the technical speak of it. I got you exactly. Yeah, okay, no problems, all right. I just trying to understand, yep, that's all I have.
+
+Unknown Speaker  50:30  
+Alrighty. Alright guys. Anything else?
+
+Unknown Speaker  50:34  
+Awesome. We appreciate it. Brian.
+
+Unknown Speaker  50:38  
+Anytime Bye, Brian, tell Jake to feel better.
+
+Unknown Speaker  50:41  
+I sure will. Thank you. Bye, bye.
+
+Transcribed by https://otter.ai

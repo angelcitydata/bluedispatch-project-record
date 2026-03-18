@@ -1,0 +1,967 @@
+Speaker 1  0:00  
+Recording. So Another week, another meeting, fun stuff. I do see Ashley's agenda, and as always, we will try to get to you as quick as we can. As for updates, I think about the only thing that's really happened, I took few days off the end of last week. So I think about the only thing that really happened was the changing over of servers on the AWS side. As far, I haven't seen any, you know, complaints or things breaking. So have to conclude that was a success, at least so far. So that was, when did we do that? Wednesday, I believe, Last Wednesday, as it sounds, about right Tuesday or Wednesday. We did it last week. So that's up the FileMaker production server is on that FileMaker Pro two instance, which is which is a little beefier of a machine, also it has more storage and, I believe, a little more processing power. So that was just that was something else that we wanted to get in. So that's up and running. So Joe, I also I received your email about a built in tutorial for the native app.
+
+Unknown Speaker  1:36  
+Yeah, very important. Or I'm sorry, Brian,
+
+Speaker 1  1:40  
+so we can we, I talked to Jake, and we kind of come up with basically three different possible ways we can do something like that. One would be been probably the the best is a built in walk through type stuff you'd see on some apps where, the first time they log in, you know, it kind of walks them through some screens. And it'll show, you know, kind of black in the back of the screen, and then light up and point an arrow and be like, you know, this button does this. And, you know, it walks them through exactly. Yeah, it's second option is basically some screenshots that you add some error arrows and text to, you know, and show them almost like a slideshow the first time they log in. And then the third option would be basically make some like do two videos and link it in the, you know, in the info section there, so they can watch some of that. Of course, downsides with with videos are, you know, anytime you change something, you have to go redo those videos, right? You know, you know, you have to make those changes in the other two types of tutorials also, but you can just change that one thing with videos. You know, you're probably talking about multiple things per video. So if you change any of those things, you have to redo the whole video, right? So it's a little more static.
+
+Unknown Speaker  3:22  
+As for as for effort.
+
+Speaker 1  3:27  
+Off the top of our heads, we were able to feel like the, you know, the kind of top option that's going to give you a good in app walk through tutorial. We're thinking somewhere in the area of 40 to 48 hours. The second option with, you know, screenshots and such, and walking through that one probably
+
+Unknown Speaker  3:56  
+in the about the 32 hour area,
+
+Speaker 1  4:01  
+and probably about the same for the videos.
+
+Speaker 2  4:05  
+Okay, perfect. I know this is something that we want to get up and running relatively soon, so we'll, we'll bounce this back to Bonnie to see which route she wants to take, obviously, given the hours for each but that kind of goes hand in hand with Ashley and I have been talking about it. I think what we want to do is tomorrow, we want to actually shut down the web app altogether and kind of force everybody onto the native app. I think that's where we're at now. So we want to get something that's going to kind of align with with, you know, something that can relatively be, you know, quick and get onto the app as we're kind of pushing everybody over forcefully. So we're going to have to wing. We're going to have to really debate which one's going to be the better option for us, but at least we're giving you a heads up tomorrow. We'd like to shut down that web app and kind of force everybody to move over to the native app at this point.
+
+Speaker 1  4:57  
+Okay, yeah, that's great, and that was going to be an. Response to a lot of items on Ashley's list. Okay, you know, if you bring down the the web app, then you know, you won't have these problems of people trying to clock in on one of the apps and clock out on the other and all that kind of stuff, which obviously did, which doesn't work. So, yeah, yeah, we'll, we'll get to that when we get there. Okay, great. That's great. Yeah, you know, let me know on those, on the tutorial stuff, and I will try to try to get Jake started. Pretty soon after you tell me which one you'd like us to get started. One awesome. So the other was, I just received, not too long ago from Ashley, the native app wish list. So, you know, this is, this is great. I do see a couple items were added. That's, that's wonderful. And I've got kind of Yes, or, you know, not much of a priority as as my answers,
+
+Unknown Speaker  6:07  
+if there is,
+
+Speaker 1  6:10  
+if there is, you know, some items that you'd like me to work up a proposal for you. You know, if you want to identify those, I think there's, there's a decent amount of items with a yes on here. I don't think we want to, you know, work on proposals for all of these items at once. So maybe if I could get a, you know, top, top priority, say, two or three items that you'd like, you know, to see proposals for,
+
+Speaker 2  6:43  
+okay, that'd be great. Two to three, yeah,
+
+Speaker 1  6:46  
+just kind of point out, yeah, a couple that you'd like to see a proposal for. And I can work up proposals on those, right, okay, I can tell you, you know, some of them do kind of go together, like the, you know, notify
+
+Unknown Speaker  7:04  
+if an officer leaves a defined area
+
+Speaker 1  7:08  
+show on the island, if they are within an area and time range to clock in. So some of those, those all have to do with geo fencing. So, you know, it's, it's, if you're going to do those, doing them at one time is probably best, you know, instead of, like, picking one or because they're all going to use a lot of the same technology that we're going to have to build one
+
+Unknown Speaker  7:32  
+way or The other, right? Okay,
+
+Speaker 1  7:36  
+alrighty. I think that is about my last item. So yeah, if, if we can identify, like I said, two or three, I'll get you some proposals on those we're ready to move forward with whichever tutorial option you'd like us to move forward with. And then, yeah, we can absolutely discuss bringing down the the officer web app. You know how we want to do that, to be nice and make it look nice, absolutely, this thing's not available anymore and just disappeared. We want to do something that that looks a little nice so
+
+Unknown Speaker  8:20  
+we can discuss that.
+
+Unknown Speaker  8:27  
+Yep, that's about all I have.
+
+Speaker 1  8:32  
+Ginger sec, do you guys have anything before we turn it over to Ashley?
+
+Unknown Speaker  8:42  
+Oh, Darren on here, or am I Jake
+
+Unknown Speaker  8:46  
+Darren? It looks like he is on here, but he's Yeah,
+
+Unknown Speaker  8:52  
+okay, I guess I'll do it then.
+
+Speaker 3  8:55  
+Well, last week we, I think we talked about a little bit about treating you guys like treating this whole LEAs like enterprise, and as the week progressed, it was like, as the week turns like a soap opera, it looks like we're going to start pushing more towards getting Les sock and ISO certified, which the change management is going to be part of that.
+
+Unknown Speaker  9:26  
+So we've already kind of started that. So
+
+Speaker 3  9:29  
+we're going to be sending out emails to get everybody access to the change management
+
+Unknown Speaker  9:34  
+SharePoint page we have put together,
+
+Speaker 3  9:39  
+and we have to figure out when we want to discuss change management, and all of that goes so I think, Brian, you've been, you've said you've had experience with change management, correct. And I don't know if anybody else has or not, but basically, it's a form. Or anything that any changes go on there they go to the board, review it, and then implement the changes. And also, I think that would keep a lot of it and track for
+
+Unknown Speaker  10:15  
+just keeping things on task.
+
+Speaker 3  10:20  
+And I know that's going to be part of the audit and pen test that is ultimately going to happen. So we're working on that. I don't know if we want to discuss more on this type of meeting or set up another meeting decide who's needs to be involved in those that change management approval process do. So anyways, yeah, there's that.
+
+Unknown Speaker  10:45  
+And I think that's the biggest heavy lift for
+
+Unknown Speaker  10:52  
+this app, the web app,
+
+Unknown Speaker  10:54  
+everything else is with Leo's okay? Is
+
+Unknown Speaker  10:58  
+that about it? Jaren or
+
+Speaker 3  11:06  
+we will be pushing out more we use a Cronus, so we're gonna start pushing out a Cronus to more of AWS, but we'll put all that in the change management board, and I said, we'll have to start just doing that. So I don't know if you want to do like a trial run of just to see what the process is. Joe with shut down the web app and pushing it over.
+
+Speaker 2  11:33  
+Yeah, that wouldn't be a bad idea. Tom kind of a test run. Make sure everything runs smoothly from our side and moves over. Clearly, you can definitely do that.
+
+Speaker 3  11:41  
+What do you guys want to do that? We want to actually
+
+Speaker 2  11:45  
+have it. I mean, honestly, as soon as Brian and Jake and the team are logged in, as soon as they log in on their time, we want to go ahead and bring it
+
+Unknown Speaker  11:55  
+down. So, okay, I don't know what that's going to be.
+
+Unknown Speaker  11:58  
+Yeah, we would need to. Mm, do.
+
+Speaker 1  12:03  
+So I I know we need Jake to basically, you know, shut down everything, but that one screen that we've been showing them when they log in that, you know, basically says, Hey, we have a native app now go get it in a link. So Right? It's what we want them to see, and not anything else. I'm going to have to talk to him about how we can try to right now, if they're, you know, logged in and their device, you know, they're remembering the website is remembering their device. They're not going through the login process every time they sign on. So we can't necessarily what we can, but I don't know how we would lock them out. Currently, they would still be able to get in
+
+Unknown Speaker  12:51  
+as long as the site's there, you know
+
+Speaker 1  12:55  
+now, I mean, that's for like, 30 days from the last time they did log in. That's all the remember, my device lasts, but it skips over that process right now. So we'll have to, I'll have to talk to Jake and see if we can, you know, kind of force log in people, which would mean they'd be stuck at that screen that says, hey, go get the native app. Here's the link.
+
+Speaker 2  13:18  
+Yeah, that's, that's probably the smartest route to take, because we're going to anticipate, you know, folks still trying to get on or hey, they're going to call into us and say, Hey, what's going on? But at this point, it's just, it's going to be easier just to kind of do that, that mass take down and forcing these guys over. Yeah, exactly. That's what we got to do at this point, because we've noticed from our end, at least, yeah, we got people using the native app, no doubt about it. But at the same time, you have creatures of habit that are just constantly trying to get back to the web app, and they're creating unnecessary issues on our end. So it's better just to shut them out,
+
+Speaker 1  13:49  
+just to shut them down. That's absolutely fine. Yeah, we, we had never planned for, you know, to run both forever by, right? So it's been where are we at three, three weeks now. Yeah, that's been live so, you know, yeah, it's, it's about time to just start having that conversation. Anyway, yep, okay, I will try to discuss with Jake when I can and okay, see when we can get that done, and if what we would need to do to kind of basically kick people out, so that they have to try to, you know, so that it makes them try to log back in, go.
+
+Speaker 3  14:31  
+That'll be a fun that'll be a fun first run for you guys on the change change board.
+
+Speaker 2  14:35  
+We're gonna see how this plays out. This is your fault. We're gonna come back in Tom, this is your fault.
+
+Speaker 3  14:42  
+Actually, actually, if you go through it, it lays it out. It makes you, like, think of things like, oh, shit, I didn't even think about that. So catch, yeah, yeah, it's just more of
+
+Unknown Speaker  14:57  
+it's all based off of ITIL, which is.
+
+Unknown Speaker  15:01  
+A computer technology
+
+Unknown Speaker  15:04  
+project management, essentially, but
+
+Speaker 3  15:08  
+you'll see, we'll, we'll get links out to everybody. I'm assuming everybody in this meeting should be have access to it.
+
+Speaker 1  15:17  
+Yeah, absolutely, okay. I don't think I do, but no, no.
+
+Speaker 3  15:22  
+I mean, we need to get access. Because right now it's only me, Darren and Michael,
+
+Unknown Speaker  15:29  
+because we're doing some other stuff with Les,
+
+Speaker 3  15:33  
+but we knew that we were gonna have to include everybody else. We're kind of waiting for this meeting, so everybody else will get access or send out emails and start that process. And that's kind of dovetails into, if you remember that email I sent out a while ago about ownership, yeah, so like you will own the Amazon platform itself, or the SAS and Angel City, you guys will own the application, and then I can really think it was Ashley. I put for the data so that we all have our basically approval process to make sure changes don't impact those adversely. Just kind of cleans everything up, puts the rules of engagement down. It's a little clunky at first, but once the we get past the clunkiness, it actually follows pretty smooth. And then, of course, if you see anything that could be added or changed to it, please let us know, because we want it to work for everybody.
+
+Speaker 2  16:42  
+So it. So okay, that's all I have for now. Thanks.
+
+Unknown Speaker  16:46  
+Tom always security causing the issue
+
+Speaker 2  16:52  
+all the time. I can't and you got Darren on here too, so now we're getting double teamed.
+
+Unknown Speaker  16:57  
+Oh yeah. Well, we have Michael working on the back end too,
+
+Speaker 3  17:00  
+of course. But the good thing is, is we're cleaning up licensing also in Microsoft. And you know, you have people in your organization that have three licenses assigned that do the same thing.
+
+Speaker 2  17:14  
+Oh, that's cool. That's always cool if you need them.
+
+Speaker 3  17:19  
+Oh, my god, yeah, that you don't need. But anyways, don't get me started.
+
+Speaker 2  17:26  
+All right. All right, we'll be ready for Tom's side as well. But yeah, I think the big thing, Brian is, I mean, we hope early, earlier the better is what we can tell you. So whatever you get through the Jake, whatever you guys can find out, but the earlier the better tomorrow would be great.
+
+Speaker 1  17:40  
+Yep, I'm messaging with Jake right now. Okay, alrighty, if that's ginger sex time, then Miss Ashley like you are up. Okay?
+
+Speaker 4  17:59  
+I have a long list. So I hope I can get through as much as I can on here and remember everything. There's so much, so much has happened in this week that I just don't even know.
+
+Speaker 1  18:11  
+I'm gonna start really seem like notes to yourself that aren't meant to make sense to me.
+
+Speaker 4  18:17  
+Yeah, sorry about that. I don't have a ton of time to like put towards these agendas, and they're yeah,
+
+Unknown Speaker  18:24  
+anyways, so Robert
+
+Speaker 4  18:27  
+Avelar just gonna guess that. Okay, so he's an officer, and he can't get into the app. So at first he says, At first he tries to put his phone number in, and it tells then it tells me that the field, the email field, can't be empty. That doesn't make any sense to me. Why would, why would an email field matter
+
+Unknown Speaker  18:49  
+for the new app
+
+Unknown Speaker  18:52  
+and then can't be empty? Yes.
+
+Speaker 4  18:55  
+So he puts in his he goes to he goes, he puts in his phone number right then it says, it tells him that the email field can't be empty, which, like that doesn't make any sense to me why an email would matter. But then let's see,
+
+Speaker 1  19:17  
+see, then he tries to, does it just tell him that? Or does it like stop him from using the app and using the app until he
+
+Speaker 4  19:24  
+he's never been able, there's nowhere to put an email for one, but he's never been able to get into the app, and then that so I told him to just like, uninstall and reinstall it. And I, you know, tried to reactivate the phone number, but it just keeps saying tells him now that his phone number is unauthenticated
+
+Unknown Speaker  19:46  
+phone numbers.
+
+Speaker 4  19:48  
+Yeah, here, let me I mean, and it's like, on my end, all I can see, right? And, oh, I'll show you what is. Did I say that? Like I can see? In the you know that what is it called the probe blue dispatch. And it'll say unknown user, like I can see him trying, but it's just not letting him in. And this is, this is his account phone number,
+
+Speaker 1  20:13  
+the correct phone number, and that's the only account with that phone number in the system.
+
+Unknown Speaker  20:17  
+Yes, and I can see him trying, but I just
+
+Speaker 1  20:28  
+so it'll say unknown user in the pro dot blue dispatch until the first time they successfully log in. So that just means that when he's tried to log in, it has texted a code to or attempted to text a code to him, and he never entered it. So either he's not getting the text for some reason,
+
+Speaker 4  20:54  
+this might be, I can't tell when this was, but no, he has an Android. This was a few days ago. That's hard. It's hard when I'm like, doing things, you know, it's like 121 but anyways, he still can't get in and there's no way for me to see what's going. I can't see what's wrong. It's hard for me to help him through it. So I thought I'd see if any of those like the number is unauthenticated to me, that tells me that he's not putting
+
+Unknown Speaker  21:28  
+in the code that message. Or did you? Yeah, it
+
+Unknown Speaker  21:30  
+was, it was a pop up. It was a pop up
+
+Unknown Speaker  21:35  
+in the app.
+
+Unknown Speaker  21:37  
+Phone is not authentic phone number.
+
+Speaker 4  21:40  
+Phone number is not is unauthenticated?
+
+Unknown Speaker  21:43  
+Okay, I know I question
+
+Speaker 1  21:46  
+for Jake, is unauthenticated, and
+
+Speaker 4  22:00  
+as far as, as far as the email part of it, like, there's nowhere to put an email. So I don't know why.
+
+Speaker 1  22:08  
+Yes, there is in the like profile section you can see and edit your email address.
+
+Speaker 4  22:15  
+Well, yeah, but if you're first of all, if you're in there, yeah, yeah, it's right here. Go. I just, I don't know, and it's saying, yeah, that's, I just don't see the correlation as to why that would prevent him from getting in.
+
+Speaker 1  22:30  
+It shouldn't prevent him from getting in at all. Yeah, I, I don't know if we're using that, you know, if we're showing that we would like an email address. You know, in some way, I Okay, that wouldn't surprise me, because, of course, you guys like a lot of emails to go out when things happen, so we'd like to have an email address for them, but definitely should not stop them from getting in. I definitely agree there. So we'll have to look why.
+
+Speaker 4  23:01  
+Okay. Um, okay, the next one. So I do, it's probably not on this call for the sake of time, but I really do need to talk through the pointing of the job name versus street one, like all of the I need, we need. I just need to talk through all the different scenarios, because I tried to bring it up after the last call, and they're just, I have more questions on to make the right decision, so I don't think I'll be able to get through my list and and talk about that.
+
+Speaker 1  23:38  
+So that's fine. Let's talk tomorrow or something, if you'd like, Okay,
+
+Speaker 4  23:45  
+I don't have so we're people are still getting that error when they're taking people off of jobs and putting them back on the other day, on two, two. Christine's was every single person she was taking on and off. Lori's getting the message also, I still am not Sean's not.
+
+Unknown Speaker  24:05  
+That's where I was not a user either. No,
+
+Unknown Speaker  24:07  
+she's admin.
+
+Speaker 1  24:11  
+I think great admin, or she accounting. I thought we did have one for a county, but maybe she is. Oh no,
+
+Speaker 4  24:16  
+that's what I meant, accounting. That's what I meant. That's what I meant, yeah, which is a completely different so I so I don't know if it has to do with job or if it has to do it doesn't seem to be like a consistent officer every time. But so I don't have a big update on that. Aside from fact, it's still a problem.
+
+Speaker 1  24:37  
+It's still a problem, and it's doesn't tend to be a problem when I'm on a zoom call watching, I
+
+Speaker 4  24:44  
+know, except for the one time where she did it really fast and then it was able to, like, see what happened.
+
+Unknown Speaker  24:52  
+But okay, so my next
+
+Speaker 4  24:56  
+Okay, where do I start with this? Um.
+
+Speaker 1  25:02  
+So I will say, I think you'll see that problem. I think we can help either wipe away that problem, or, you know, severely take down the number of times that happens when we take down the officer web app, because what's most likely happening is the the API database and the file maker database are not in sync about that job for some reason. And that tends to happen when they're, you know, logging in or accepting jobs, doing something on the web app, and then trying to go to the native app and mess with it.
+
+Speaker 4  25:38  
+Okay, of course, I can't find one, so if let's see. So when I'm on the app sometimes, and this is also with a lot of officers as well, but obviously we know that when you force clothes, it locks, locks you out, which it doesn't, but it looks like it does on the app. But there's times where I don't force clothes and it just, you know, it looks like it clocks me out on the app side, and then when I log in, it says server error, like when I log, when I say login, I mean through here, hold on. It'll say server error. Can you explain what that is? Such a broad term like, I don't know what they mean by server error. Is it a connectivity thing? Is it? Yes? Is it literally a
+
+Speaker 1  26:34  
+server that's usually a connectivity thing and it's and it's kind of a crapshoot. If it's a connectivity from the web app to the server or the API to the data source, so Linux to file maker, it shouldn't be the number one force closing. It doesn't necessarily log you out.
+
+Unknown Speaker  27:09  
+No clock you out,
+
+Speaker 4  27:11  
+but it looks but it to them, it looks like it does, because to them it, you know, the red bar that's counting your time goes away and then it shows you to clock back in. So for them, they're like, oh, it clocked me out when I know it didn't, yeah, but it kind of to them, it does, you know. So I'm getting a lot of feedback. I can't clock in. I can't clock out.
+
+Speaker 1  27:35  
+What do you mean? I don't force clothes, but it's
+
+Speaker 4  27:39  
+so personally, personally, like, like, I'll be on a job, I'll clock in. I I do not force close it. I just have it in the background, and then it's, it acts like I force closed it, like it's, it's the same behavior where it's, you know, makes me look like I need to clock back in. That's when I'm getting that server error. Personally, I get the server error code while I'm sitting at my desk. That's just been happening to a lot of officers as well as me, so I personally know what happens. Okay, does that make sense? Like, obviously, because you know how it looks when you force close right, and then you open it back up, and it looks like looks like you need to clock back in,
+
+Speaker 1  28:25  
+yeah, yeah. But you can't, because the button is like, grayed out, it doesn't Yeah,
+
+Speaker 4  28:30  
+right, yeah. For me, I just keep getting a server error. So I just and a lot of these, like this one down here is a server error.
+
+Speaker 1  28:42  
+You get that something went wrong. Server area error when you try to clock in.
+
+Speaker 4  28:47  
+No, no, this is a different scenario. But that's what I'm saying, is it just says server error, but for a lot of different problems that we have, and so I don't really know what's you know, what's really happening? You have a lot of these people, you know, they'll send me screenshots, but I'm talking to them either on the phone or it's happening while I'm not working, so I'm getting it, you know, a day late, so I can't go in and and try to look at the eye and, you know, right here, or investigate what's going on. Okay, yeah. So if we could get different server errors, or if you can narrow, narrow down, you know what each might mean in each scenario, just for so I can try to help, I don't know.
+
+Speaker 1  29:35  
+Yeah, no, I don't think it's because it's it's probably the same error. So even from different contexts, it's still the same error. So it's going to return. We can change what that message says, but it's going to return that same message every time.
+
+Unknown Speaker  29:54  
+Yeah. So we need to
+
+Speaker 1  29:58  
+see if we can. Figure out why it's having that, you know, yeah, most likely a connection issue. We need to check logs and see if we can validate whether they are connection issues from the phone to the server, which we can't really help with.
+
+Speaker 4  30:21  
+How can I how can I see that through here?
+
+Speaker 1  30:24  
+I don't know. I Oh okay. I will talk to Steve and Jake and see if they can give me better answers. Because, oh no, yeah,
+
+Speaker 4  30:34  
+that's what I kind of want. Because I don't, you know, it's hard for me to tell what is, what really happened.
+
+Unknown Speaker  30:39  
+Yep, this self is back.
+
+Unknown Speaker  30:50  
+So this one Chris White,
+
+Unknown Speaker  30:54  
+he gets this is kind of the same.
+
+Speaker 1  31:02  
+Some something went wrong. Job for not found is definitely different than server error.
+
+Speaker 4  31:06  
+Oh yes, you know this is different. Okay, so like this guy, Chris White, he's having a lot of issues clocking in and clocking out, but he clocked into the job, which we can see,
+
+Unknown Speaker  31:23  
+he doesn't force close. So he says
+
+Speaker 1  31:28  
+it's hard for me to tell right there, I don't see that he's clocked in,
+
+Unknown Speaker  31:34  
+but he Yeah, I was just saying, but he did clock like you can see
+
+Unknown Speaker  31:39  
+on the model, he clocked in.
+
+Speaker 4  31:42  
+Yeah, he clocked in. He gets this. And then when I looked it up, though
+
+Unknown Speaker  31:49  
+in here,
+
+Speaker 1  32:01  
+I I see it third from top, first white. Or is that a different job for him? Oh, that's
+
+Speaker 4  32:08  
+a, that's a really different right? That's a really different job this.
+
+Speaker 1  32:13  
+But that's 123 and it's still in progress, yeah?
+
+Speaker 4  32:17  
+Oh, that's an another issue that I'll get so, oh, wait, maybe that's it.
+
+Speaker 1  32:21  
+Clock into two. Hold on, once, yeah, yeah,
+
+Speaker 4  32:25  
+trust me, that is an issue I'm falling into with the people using the old and the new app, yeah, to clock in and out and, okay, well, I found it before I was got on this call.
+
+Speaker 1  32:42  
+Well, there's a job number right next to it. Is that the job number that's in? Do you have a screenshot?
+
+Speaker 4  32:48  
+No, he didn't. I, he didn't know. I don't, you can't, you can't find it through file
+
+Speaker 1  32:55  
+maker, right? I'm clocked out of my current job. No, they're not.
+
+Speaker 4  32:59  
+It's I know, but they think they are because, like, you know, it looks like it clocks them out on from their view,
+
+Speaker 1  33:06  
+I can't see the screenshot. What's the screenshot?
+
+Unknown Speaker  33:11  
+February 3, today. It's a job he's on today.
+
+Speaker 1  33:14  
+The job he's on today. This one, this, yeah, 5145
+
+Speaker 4  33:19  
+but it looked weird. Oh, I remember where I was. Hold on. Did he
+
+Speaker 1  33:23  
+clock into that? Because it looks like he's in another
+
+Unknown Speaker  33:27  
+Yes. Where was I able to clock in?
+
+Speaker 4  33:35  
+You can Okay, there I was somewhere, and I was able to see I
+
+Unknown Speaker  33:47  
+able to see what maybe I can help.
+
+Unknown Speaker  33:50  
+I was able to see,
+
+Unknown Speaker  33:53  
+oh, I think it was this
+
+Speaker 4  33:56  
+that he, that he was launched like that, he's in there like, it doesn't say that,
+
+Speaker 1  34:02  
+no, it's saying that he launched the app while he was still active on a job, right?
+
+Speaker 4  34:08  
+Still active on a job. So this clocked in.
+
+Speaker 1  34:11  
+That's that job from 123, that never got clocked out of never got completed.
+
+Unknown Speaker  34:20  
+This job is the 623,
+
+Speaker 1  34:23  
+it should be, yeah, if you went and looked at that other one the active jobs,
+
+Speaker 4  34:31  
+where's white, I just don't get how he's able to clock in, because most people just so you know, most people aren't, and you
+
+Unknown Speaker  34:36  
+shouldn't be able to. I don't
+
+Speaker 4  34:41  
+know if that's where I was, but anyways, so just this is most of a lot of the issues that I'm dealing with when people are they don't force clothes, but it is giving them this. And then when I go
+
+Unknown Speaker  34:57  
+in here, hold on. I. Like,
+
+Speaker 4  35:03  
+you know, he's currently active and he's clocked in. So I just don't know what to tell them when I don't see a server error, I don't see, you know, he didn't force close. It like, I can't explain why his app is, you know, looks like this, where his doesn't even look great out this looks like obviously, if he clicked that, it wouldn't let him do anything. Give him an error message.
+
+Unknown Speaker  35:28  
+But, yeah, I don't know why it ran.
+
+Speaker 1  35:39  
+I Yeah, well, I also
+
+Unknown Speaker  35:46  
+kind of want to
+
+Speaker 1  35:51  
+close there. And that was 123
+
+Unknown Speaker  35:58  
+and what was the,
+
+Unknown Speaker  36:01  
+I guess the jaw of the company. Oh no,
+
+Speaker 1  36:06  
+file maker just crashed. That's awesome. Oh no, could you go on to like your dashboard back there on file maker and find that job. I want to see what file maker thinks about that job on 123
+
+Unknown Speaker  36:21  
+Oh, one, 123 Yeah,
+
+Speaker 1  36:23  
+yeah, we've seen the one that he's having a problem with today, but I want to see the One that it still thinks is open and active, sure.
+
+Unknown Speaker  36:58  
+Suffering cancer.
+
+Unknown Speaker  37:07  
+Dollars, Baseline Road. Do we know what customer that would be?
+
+Speaker 4  37:10  
+That's what I was hoping to find out on here, but it doesn't tell me.
+
+Unknown Speaker  37:20  
+Do we think? I wonder if it was canceled, he
+
+Unknown Speaker  37:26  
+clocked it and then it was canceled while he was clocked in.
+
+Unknown Speaker  37:29  
+Yeah, that would suck.
+
+Unknown Speaker  37:32  
+Happens more than you think.
+
+Unknown Speaker  37:39  
+I don't even see it.
+
+Unknown Speaker  37:44  
+It's not on his job list. Even if it was canceled, it would be here.
+
+Speaker 1  37:48  
+Yeah, give me one second, and then I'm gonna want that
+
+Unknown Speaker  37:55  
+job number that you see
+
+Unknown Speaker  37:57  
+in the right yeah. Saying it
+
+Unknown Speaker  38:13  
+slowly logging in.
+
+Speaker 1  38:21  
+Yeah, see it's even got plenty of movements if you want, like, click on the a pin and then click on the B pin or whatever, and it should show you the time that
+
+Unknown Speaker  38:33  
+no
+
+Unknown Speaker  38:34  
+12 or 3pm is the end.
+
+Unknown Speaker  38:39  
+839 is the beginning.
+
+Speaker 1  38:53  
+That's interesting. So about four hours before i
+
+Speaker 1  39:05  
+That was the that's the one it still thinks is active. So why does that time if you still think it's active, right? I think the end time is actually on that map. Is just the last time it was sent coordinates, not necessarily, and that clock out, yeah, that happens to tend to be clock out because we stopped tracking them, you know, when they clock out so, but I don't think, technically, programmatically, that it's a, you know, when they hit the clock out button. It's just the last time that they got any coordinates sent to them. Okay, I'm back into the system here jobs, and that is job number is that?
+
+Unknown Speaker  39:47  
+7863, yep. Let's see what this job is.
+
+Unknown Speaker  39:57  
+This job.
+
+Unknown Speaker  40:01  
+It's modified by O data user.
+
+Unknown Speaker  40:05  
+Customer Name is southwest barricades.
+
+Speaker 1  40:10  
+The officer is Christopher white. Is assigned to
+
+Speaker 1  40:21  
+it. The active flag is still one, so it does think it's active in FileMaker. Also, here's my is canceled flag. I don't see any cancel notes. Think it was canceled.
+
+Unknown Speaker  40:40  
+I just a job all and
+
+Unknown Speaker  40:47  
+open. It doesn't wasn't canceled.
+
+Speaker 1  40:52  
+Oh no, the job to be worked. What's the job? Date is two, 320, 26 it's today. That's that job. That's today's job.
+
+Speaker 4  41:03  
+So that's the job. Okay, so this is the job that he's on.
+
+Speaker 1  41:06  
+It's currently active. Why would it say at 123 date that we saw on the other screen must be when he booked it. Oh, okay, created. That's when it was created, which means, okay, okay. So that he's active on and it's not which is this one? Yeah, and I'm going to call this a he says he didn't force close it. I'm going to say I would need proof that he didn't looks exactly like he did. The only thing that would make me agree with him, that he may not have as is that you say you've seen this happen to you, and I believe you when you say you didn't force Yeah,
+
+Speaker 4  41:54  
+yeah, and but mine usually have some sort of error, like some of the ones I keep getting, though, are these where all I can see on me go back into
+
+Unknown Speaker  42:09  
+active jobs. It's the place where it says,
+
+Speaker 4  42:14  
+yeah, it's just the they've launched with active job, yeah. Why would that be in an Why do you think that would be in an error log?
+
+Speaker 1  42:25  
+Because when they're opening an app, opening the app, you know, from scratch, meaning it has been closed completely, and now I'm opening it, it should not have an active job. You shouldn't be clocked into any jobs. That's so it's telling you, hey, you're clocked into a job, and you're not going to be able to clock into any other jobs until this one is completed some way.
+
+Unknown Speaker  42:54  
+So if they're clocked into a job, though, and
+
+Speaker 1  42:58  
+then they force quit, it doesn't clock them out. It doesn't complete it. And basically they got to call you guys, and you guys have to use the clock out button in file maker.
+
+Speaker 4  43:08  
+So this would be an indication. Do you think that they force closed it?
+
+Speaker 1  43:13  
+Yes, absolutely. Or for some other reason it they force closed the app, they cut off the phone, I would have to ask, but I'm sure there's a certain amount of time that, you know, if they have no signal for you know, hours upon hours while they're clocked in. I'm not sure if they would consider that kind of the same as closing the app because it can't talk to the server. I don't know, though, I'd have to ask. I don't think that should be true. It should be able to run on the phone as as long as you don't, you know, completely close the app, or again, you know, if you run out of battery, I'd have to ask, I know my wife and my child, actually, but my wife especially will absolutely run that darn phone down to zero battery. And when she gets to like, 10% the phone goes, you know, moving to low power mode, and certain things may not function. And dot, dot, dot. While it's in low power mode, I don't know specifically what putting your phone on that low power mode may do to the app, because it may consider sending out your GPS coordinates every 1015, seconds, whatever we have it set at, as you know, not needed, and phone might stop it, I'm not sure. But if this is the type of person that's going to run their phone down to the nub, as far as battery is concerned, like my wonderful wife does, I'm not quite sure what type of problem that would entail or that would cause, but I can ask. Okay, see if I can get some better answers,
+
+Speaker 4  45:05  
+because I only have about 10 minutes left. So that's so much what I want to talk about. More importantly,
+
+Unknown Speaker  45:16  
+Okay, this one, I think so
+
+Unknown Speaker  45:19  
+I'll come back to him, Okay, this
+
+Speaker 1  45:22  
+kind of, actually, this, this is kind of this meeting is kind of turned into a, you know, high level management project, you know, update, kind of meeting. You have more of this, you know, down in the in the detail, kind of dirt stuff you need to discuss with me. We can absolutely talk tomorrow. We could, you know, quite a lot until next week. Okay, I'm
+
+Unknown Speaker  45:50  
+happy to go through this stuff with you anytime.
+
+Speaker 4  45:53  
+I don't know if I should do, if I should wait this way. This might be a longer one than I than 10 minutes worth, but this has been happening a lot, and at first, when it was first happening, it was because when we switched from right the old app to the new app, and if they booked it on the 16th or before we were getting this job not found or an active error, yep, but it's still happening. And it's kind of strange, because it is kind of, I don't know if it's certain officers or the way that they were put on the job, but it doesn't have to do with it just being booked from the old app, because there's some officers that I know, like you, I can see that we gave it To him, but I mean, what does work is, if I, you know, basically take his name off, put it right back on, yeah, but why does that happen? Too much if, yeah,
+
+Speaker 1  46:51  
+if you guys gave them the job, booked them on the jobs, but you got that error that you're saying, you know, Christina has been getting every time.
+
+Unknown Speaker  47:00  
+This is a different error, though. This is the something went wrong.
+
+Unknown Speaker  47:03  
+I'm saying, if you get that error when you're booking them,
+
+Speaker 4  47:07  
+I don't, well, I don't, yeah, but you're saying
+
+Speaker 1  47:10  
+that if that happens, that would cause the scenario that that screenshot is showing, interesting, because that error means when you booked it. FileMaker understood, but it had a problem telling the API server that that Job was booked for that officer.
+
+Speaker 4  47:28  
+Okay, The only hiccup to that theory is there was some that Becky had put on a job, and she doesn't get that error message. I do understand what you're what you're saying. One thing I have noticed, though, before, so like before, I'll, you know, replace their name again. This isn't going to work because it's not probably going to happen to him, but I'll, like, go to click here, and nothing happens. Like, I'll click and it doesn't respond. And I don't know what that tells you, but I do know that almost every time before I replace his name, I'll click here just to you know, I'm just curious, and it won't do anything. It won't respond. It won't give me a pop up with what's going on.
+
+Speaker 1  48:17  
+It should always respond, yeah, even if the response is doesn't work, right?
+
+Speaker 4  48:23  
+Yeah, no, and I've noticed that, so the last few days at least, I'll click that and it won't if it doesn't do anything and they're getting that error message. I just there something, something is related
+
+Unknown Speaker  48:37  
+that may have to do with let me
+
+Speaker 4  48:40  
+I could give you a name of someone that I replaced, you know, like had to do that to but unfortunately, like, I did already fix the problem because they needed to clock in. So it's in the past, so I don't know if that's helpful. Well, let me see about Escobedo. It happens to him. Go ahead.
+
+Speaker 1  48:59  
+I'm looking here. You know that script really shouldn't it
+
+Unknown Speaker  49:06  
+should just work or not work.
+
+Unknown Speaker  49:09  
+Oh no, okay, so right here,
+
+Speaker 1  49:14  
+yeah, if, if I get a bad status,
+
+Unknown Speaker  49:20  
+then it won't show anything.
+
+Speaker 4  49:26  
+Oh, see this one watch, and it happens to him a lot. Becky, put him on today.
+
+Speaker 1  49:34  
+See nothing. Hold on. That's that's perfect.
+
+Speaker 4  49:37  
+So, yeah, it happens to him a lot, I don't know why.
+
+Unknown Speaker  49:42  
+And the customer is Nesbitt
+
+Unknown Speaker  49:45  
+contracting Nesbit
+
+Unknown Speaker  49:48  
+Oh, this, this job, though, is for 250
+
+Speaker 4  49:53  
+sorry, I had to pick one in the future because I've already fixed the one for today.
+
+Unknown Speaker  49:57  
+I. But I'm, I'm opening up the dashboard.
+
+Speaker 1  50:09  
+Okay, 2525, apply filters,
+
+Unknown Speaker  50:20  
+and let me it
+
+Unknown Speaker  50:28  
+is sorting.
+
+Speaker 1  50:41  
+Is I? Is good. Yeah, all right, now let me see what's happening. Yeah?
+
+Speaker 4  50:54  
+Cuz that's, that's how I would say, like 50% of 50% are people that, you know, force clothes or server error, can't clock out. But the other half, a lot of them are, this is something went wrong, so they can't clock in.
+
+Speaker 1  51:09  
+Success, false, invalid job number, so it has nothing to to look at it for. So the see, but it should say this job has not been booked on API server. That's what I got. That's what I get when I click on that for that same button, that same person, that same everything, yeah, an error that says Job has not been booked on this server.
+
+Speaker 4  51:43  
+Okay, I just get it. Well, it might just look like it just doesn't respond.
+
+Speaker 1  51:47  
+That's odd, because that's what it should be telling you. So because that just that just means that exactly what it says, according to the API server, nobody's been booked on IT job.
+
+Unknown Speaker  52:01  
+How is that possible?
+
+Speaker 1  52:07  
+Either somebody booked Esposito on the old app, or when they hear they got an error talking to the API server when they secured file maker,
+
+Speaker 4  52:19  
+I know she did it here, because she was this literally happened today at 906, and I remember, that's why I was like, being like
+
+Speaker 1  52:27  
+I and she didn't get no bookings.
+
+Unknown Speaker  52:31  
+She says she doesn't,
+
+Speaker 4  52:33  
+but I'm not. I didn't. I was watching her computer, so I couldn't tell you for sure.
+
+Speaker 1  52:39  
+Yeah, that's I'm on that exact same record, and when I click on that little eye, yeah, it pulls up a box that says error job has not been booked on API server.
+
+Speaker 4  53:00  
+Okay, so we need to figure out, yeah, because it's, I mean, this is just gonna keep happening. I mean, I'll, I'm trying to think of a way to test it. Or, do you think it has to do with the officer or the job? Like, do you when I'm having her take things on and off?
+
+Speaker 1  53:19  
+I think it has to do with where the job is being booked.
+
+Speaker 4  53:27  
+So through file maker, I can tell you that. And most of Christine's issue, though, when she's getting those pop ups, is through file maker as well.
+
+Unknown Speaker  53:35  
+Yeah, that
+
+Speaker 1  53:39  
+that we need to figure out. I'm sorry, I'm looking for
+
+Unknown Speaker  53:44  
+you. Okay, yeah,
+
+Speaker 1  53:48  
+trying to make sure. Where are you? What is your name? Again, your name is. Get API, Job Status. Get you
+
+Unknown Speaker  54:03  
+API, Job Status, so,
+
+Unknown Speaker  54:13  
+yeah,
+
+Unknown Speaker  54:29  
+yeah, I can,
+
+Unknown Speaker  54:32  
+I can look and work on on that some
+
+Unknown Speaker  54:36  
+again, I have a feeling.
+
+Speaker 1  54:39  
+I have a feeling some of this is going to slow down, disappear when we've locked out the web app. Thank you so much. And can validate that stuff is not being done there at all.
+
+Speaker 4  54:53  
+He doesn't use the he didn't use the old app. Yeah, he's been trying to. Is the new app, but every morning he calls me and I have to unassign him and reassign him. Don't you think it'd be weird, though, isn't it strange that, like, she puts him on the job and it doesn't connect or click or talk something, but I do it, and it's fine. We have the same users. Like, I don't understand, I guess I don't understand why. What would make the difference?
+
+Speaker 1  55:24  
+I don't either, which is why I tried to see it happen in front of me while I'm on Zoom, so I can try to walk through and see what's happening. Because I don't understand why. Either it's
+
+Speaker 4  55:34  
+Yeah, and this was Becky. Did this one? Not Christine so, but I guess I'll see if, if I can trigger an error or see or put an officer on a job,
+
+Speaker 1  55:49  
+it's more fun stuff for us to look into.
+
+Speaker 4  55:53  
+Yeah, I got a full list here so, but I know it's two that was an important one, so we can figure that out. That would be, that would be a lot of my issues. I do agree that having the old web app is it's complicating things, because it makes things blurry. It's hard to know, you know, what's, what's connected to that, versus if it was just the new app, then it would be a little bit clearer for me.
+
+Speaker 1  56:27  
+Do you still have that job? Two, five, like, really close, handy, sure, yeah. One second, yeah.
+
+Speaker 5  56:44  
+And before we close out, I don't know if you guys mentioned this, and I, I may have missed it. We just, I think Joe and Ashley were going to give a quick update about some discussions we had yesterday around a parallel for accreditation. Did you guys mention that in the beginning? I had a lot of people in my office, so I apologize.
+
+Unknown Speaker  57:02  
+No, we did not. Okay, good, okay.
+
+Unknown Speaker  57:06  
+Ashley, click the i,
+
+Unknown Speaker  57:12  
+nada, still, nothing, huh?
+
+Speaker 1  57:18  
+Yeah, I'm gonna have to sit with you
+
+Unknown Speaker  57:23  
+to try to click it one more time? Nope, I know
+
+Speaker 1  57:33  
+that's insane because I consistently on that same job, did the exact
+
+Unknown Speaker  57:40  
+box that I think I should get,
+
+Speaker 4  57:42  
+and that's, that's the box I feel like I should get, because I've noticed that anytime I click and I don't get a response, it's because, you know, it has some correlation with it. So at least that made sense
+
+Unknown Speaker  57:56  
+a little bit, not why it's happening.
+
+Unknown Speaker  58:00  
+Yeah, I'll, I'll look at it. Is
+
+Speaker 1  58:06  
+that where you want to call it bird now and again. I'm happy to give you time to tomorrow to dig into this list more. Maybe I can get,
+
+Unknown Speaker  58:19  
+maybe I can get time with Jake. I don't know,
+
+Speaker 2  58:22  
+yeah, I think would be wise Brian, because I know there's things we got to cover. And we also had a meeting with some some Texas accreditation folks. So there's going to be some tweaks that we want to make just to give them access and to be able to utilize our blue dispatch software. Okay, so it might be something we'll touch on tomorrow, because I'd like for us to touch base anyway. After we've, we've shut down the app so we can just kind of reconvene and see how everything went.
+
+Speaker 1  58:48  
+All right, yeah, I'll, I'll talk to Jake. I'll try to talk to him, you know, right after we finish here and see what, what we'll recommend to, you know, turn kind of turn off the app.
+
+Speaker 2  59:02  
+Okay, that'd be perfect. And I think ash, unless you want to, you want to, you know, vaguely touching those three points that we want to make in regards to that Texas move,
+
+Unknown Speaker  59:13  
+yeah, Amanda, is that what you're going to say? Yeah, I
+
+Speaker 5  59:15  
+was going to say to at least give it to him, and then that way he has more to give Jake to talk to.
+
+Speaker 4  59:21  
+Okay, yeah. So some of the things and we just kind of, I believe she wanted to just know, like, not, not something that we wanted you to do right now, but rather, just get, like, maybe a, I don't know the right word, a quote, or how much money and how much time it would take to, yeah, thank you. Okay, so having to start so if this company were to use the internal jobs through the agency app, okay, so having internal jobs show on the app, because currently. They do not, right? It's just las jobs or external so we they would probably would need some sort of capacity to show internal jobs on the app, some sort of an approval logic, right? So Brian took job on blank date for here, and then have like a superior on the agency side be able to approve that. Let's see. And I
+
+Unknown Speaker  1:00:28  
+think the last thing was rank.
+
+Speaker 4  1:00:31  
+Yes, ranking. So what we would probably have to do is put them in this officer area, right? But maybe adding two different ranks in here. One would be like assessor, and the other would be team lead. We would need that in there as well. I mean, if
+
+Speaker 1  1:00:50  
+it just needs to display or does well.
+
+Speaker 4  1:00:54  
+So the thing is also, well,
+
+Unknown Speaker  1:00:58  
+I would say, in order for me,
+
+Speaker 1  1:01:02  
+I'm happy to do what you ask, this thing you ask, we would probably need to have a meeting, at least one meeting, sit down and go over exactly what we want, kind of, what the parameters are, right before I can, you know, I can sit down and make a proposal, But if, for now, we're just saying, you know, Brian, keep this in mind and and can we do it? The answer is, you know, okay, I'll happy to keep it in mind. And yes, I'm sure we can.
+
+Speaker 5  1:01:31  
+It's, it's probably more than that, Brian. So tell me exactly what you need from us to send you so that you can look at it. Because she does want to know cost they have. There's a big conference in May, and they're looking to us to have somewhat if we can light proof of concept of what this looks like. But before we can agree to do that or even present on it, for that matter, she wants to know a timetable. She wants to know a projected cost. So it's a little bit more than keep in mind. So tell me exactly what you want from us, so that I can invite you at least outline,
+
+Speaker 1  1:02:03  
+yep, I need an exact what we need to show on the native app, what we need to show on the the agency app. What are the constraints and parameters as for you know when this function can be used when this function would you know, these jobs would show on the native app
+
+Speaker 5  1:02:28  
+we're waiting for them to send us, like their workflow and some Excel, modern Excel spreadsheets that they're sending us so that we can answer all of those questions we have, like a kind of a high level of what that looks like. Would you be opposed to just simply send us. I'm sure you may have a template of exactly what you want from us, so that we can, we can template that, and we can fill that in so we can get this to you. Because I know Bonnie is going to want some detail around this.
+
+Speaker 1  1:02:51  
+Yep, sure I can. I can get over something that, you know, basically a bunch of questions that we need that
+
+Speaker 5  1:02:58  
+would be perfect. I'll help. I think that'll help guide us. Um, we have a lot that we can answer, but I just want to make sure that we reduce the back and forth and we can answer that. And while you're generating that, we should be getting the forms back from and the the solution information, the API, things like that, back from the person we the the folks that we spoke with,
+
+Speaker 1  1:03:17  
+yep, so but at a high level, we're talking about people that are not officers, not not necessarily Police Department Ed either audits, and you want them to be able to make non billable jobs from the agency app that would be viewed on the native app. And what can they do there on the native app? Are they talking and out? Are they notes, right?
+
+Speaker 4  1:03:53  
+So you want me to answer, or do you are these just, oh
+
+Speaker 1  1:03:56  
+no, no. These are definitely because, based off of these answers, I would have more or less questions.
+
+Unknown Speaker  1:04:02  
+Absolutely, yeah, yeah.
+
+Speaker 2  1:04:05  
+As far as clocking in and clocking out, I don't know. Actually, they
+
+Speaker 4  1:04:08  
+didn't, they didn't mention anything like that. I know for a fact they would need to be able to see the jobs that are posted, be able to take them, remove them, be able to get, you know, notification emails. They would be. They would need to be after they're taken. They need to be approved by whoever, and that's something we don't have so that those are when you say, Did I leave anything out?
+
+Speaker 1  1:04:37  
+What are you saying? That they need to be able to remove themselves from a job, from the app or from the agency,
+
+Speaker 4  1:04:45  
+probably both, but definitely, I believe he wanted it through the they but no, the officers, not officers, the assessors, need to be able to remove themselves if, if it conflicts with their schedule or anything. Yeah. Yeah, like a give back, basically, yeah, yeah. Like a give back, a remove, my removed from job. It's like we have it in, in the native app now,
+
+Speaker 2  1:05:08  
+yeah, we have a lot. We have a lot already in place. Brian, I think what it is now in our end, it's, if anything, it's almost like a stripped down version of what we have now for our officers. So we know, from our view, from their basic workflow they gave us yesterday. A lot of it runs in tandem with what we do now. So it's just a matter of making a few tweaks in regards to, you know, the agency side, for these guys to be able to see a couple things that we don't have currently. And really, that's about it. But like I said, this is really, you know, from a from a 30,000 foot view right now.
+
+Speaker 1  1:05:39  
+So yeah, I can do that. They'll end up doing.
+
+Unknown Speaker  1:05:42  
+There'll be a lot more questions on the native app than the agency.
+
+Unknown Speaker  1:05:48  
+Agency web, the website we,
+
+Speaker 1  1:05:52  
+I mean, we have just as much control on the native app, but it's, it's a bigger process to make changes on the native app than it is the agency plus, we have us, you know, a staple of users that we're about to force a lot more onto. Right. As far as the native app, the agency app, we can make pretty big changes, and it's not going to affect a lot of users. That's, you know, that's definitely different on the native app. And you're talking about, you know, if we need some stripped down version of functionality, then do we have to worry about basically, within the native app, presenting things different workflows depending on the user?
+
+Unknown Speaker  1:06:33  
+I don't think so. It
+
+Speaker 2  1:06:35  
+seems almost exactly the same template, to be honest with you. Brian, like I said, when we say stripped down, it's, it doesn't even need the, I mean, as far as we know, as of right now, we don't even need the parameters, as far as the clock in, the clock out. So that's something that, I mean, once we get confirmation, but I mean, that's an example of something that we probably won't even utilize for this.
+
+Speaker 5  1:06:54  
+Yeah. Brian also, yeah. I'll send you like a little synopsis. I'll copy everybody on it of exactly what it is that the intent of the application by the Accreditation folks are, if that helps. So that gives you context, yes, and that might help
+
+Speaker 1  1:07:10  
+you frame your pitch. And I'll, yeah, I'll frame my questions.
+
+Speaker 5  1:07:13  
+So yep, I will do that. I'll get that to you so that we can get working on this awesome Did I miss anything? Guys? Trainer, I think he covered it. Amanda, okay, okay, perfect. Alright. Guys, well, I'll get that over to you today. Brian, okay, alright. Thank you very much. You're welcome.
+
+Speaker 2  1:07:31  
+Thanks. Guys, yep, and then Brian, tomorrow, we'll we'll reconvene after we get that shut down of the app, and we'll finish off with Ashley's list. Sounds good.
+
+Speaker 5  1:07:41  
+All right, good luck. Guys appreciate it. All right, bye, bye, bye.
+
+Transcribed by https://otter.ai

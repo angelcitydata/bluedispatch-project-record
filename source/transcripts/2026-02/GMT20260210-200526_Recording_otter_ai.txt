@@ -1,0 +1,1270 @@
+Unknown Speaker  0:03  
+Confident. So Another week,
+
+Unknown Speaker  0:06  
+another fun sprint meeting. So
+
+Unknown Speaker  0:12  
+updates.
+
+Unknown Speaker  0:14  
+We
+
+Unknown Speaker  0:16  
+have worked through a couple of identified issues, including sometimes jobs disappearing from the my jobs list when it got close to time for the job, when they were at night, your jobs that started late at night and went into the next
+
+Unknown Speaker  0:37  
+day, it was getting confused about what day it was, because everything uses UTC time, as far as the phones and the background servers are concerned.
+
+Unknown Speaker  0:48  
+And it wasn't in every situation, but it was some scenarios, and I found
+
+Unknown Speaker  0:54  
+and put in a fix for that. I've tested it a few times at night, and so far it's been working for me.
+
+Unknown Speaker  1:01  
+You notice saying, yeah, yeah,
+
+Unknown Speaker  1:04  
+I think we might have that one dealt with there.
+
+Unknown Speaker  1:10  
+We were also having an issue with some not showing up, specifically at certain times with on the My job screen. I think I've dealt with that too, and again, been testing and
+
+Unknown Speaker  1:26  
+these, both of these seem to be very time sensitive. So you you know, you can only test it kind of once a day, you know, at night, in the middle of the night, so
+
+Unknown Speaker  1:36  
+I can't cut them over and over whenever I want.
+
+Unknown Speaker  1:40  
+But that seems to have fixed that one also. It does leave one
+
+Unknown Speaker  1:46  
+hanging, I guess, kind of issue, if you are looking at it at night, on the my jobs, so ones you are booked on,
+
+Unknown Speaker  1:56  
+it will, you know, depending on which time zone you're in and such, it may switch from the today kind of horizontal list to the this week Horizontal List,
+
+Unknown Speaker  2:10  
+and today becomes the next day, you know, one. So if it's the eighth, it'll show the ninth
+
+Unknown Speaker  2:17  
+for today, and then the eighth will go down to this week because it's, you know, it's dealing with that time over the, you know, over the midnight mark.
+
+Unknown Speaker  2:27  
+I've already discussed that with Jake, and to make it stay in the today spot correctly and everything, it's going to take a that's going to be part of a code change to the app that we have to resubmit. So we want to do more than just that before we resubmit, but it is least temporarily. It's working. It's there. They can find it. They can clock in. It's not disappearing for anybody anymore. From all I can tell
+
+Unknown Speaker  2:55  
+I was working on and I've sent over a bunch of
+
+Unknown Speaker  2:59  
+questions I had in
+
+Unknown Speaker  3:02  
+in response for the the
+
+Unknown Speaker  3:05  
+asks about the assessor proposal stuff, but it looks like we're going to wait for you guys to get back to me now that we've pivoted over to other things we want to Do on the native app first. So as far as I could see from Amanda's email, that's just temporarily on hold, right?
+
+Unknown Speaker  3:30  
+So we did pivot over. I got quick estimate over to you earlier today, Joe on rehydration, we've, we've already, you know, started working on it per your request Friday, but Bonnie wanted an estimate couple numbers, so I passed that to you this morning, and
+
+Unknown Speaker  3:53  
+we're continuing to work on that. We do have some questions and scenarios that we need to go over before I can really give you numbers on the,
+
+Unknown Speaker  4:05  
+you know, changing of location services stuff, as we discussed yesterday.
+
+Unknown Speaker  4:12  
+So we can, we can go through some of those questions now. Or you can, you know, we can make a meeting to do that. That's up to you, Joe, you know, let's go ahead and do it now, just because we're all here and I think ash and I have a pretty good grasp what we're looking for. Okay,
+
+Unknown Speaker  4:30  
+first things first, when the agency says they don't need to track them, are we going to remember, there's three options, not two options, as far as the user is concerned,
+
+Unknown Speaker  4:45  
+on location services. So
+
+Unknown Speaker  4:50  
+when the agency says they don't want to track them, are we going to
+
+Unknown Speaker  4:55  
+only let them choose? You know, they could still choose always, if they want. And.
+
+Unknown Speaker  5:00  
+But we're going to allow them to choose while in use or all we are. We also going to allow them to choose. Not at all, no,
+
+Unknown Speaker  5:09  
+I'll tell you, if we do, no, not at all.
+
+Unknown Speaker  5:13  
+There are several features in the app that will not work,
+
+Unknown Speaker  5:18  
+you know, giving them the distance from where they are to the job. That little number that shows up there, being able to give them directions to the job immediately from the app won't work. None of the mapping stuff when you're clocked into a job, you know, you can see where you are on the map, and you can turn and you'll see what direction and kind of a lot it, most of the mapping functionality will not work
+
+Unknown Speaker  5:43  
+if they are allowed to cut it off. X, you know, permission completely
+
+Unknown Speaker  5:50  
+and definitely when we get into geo fencing, which is something that we have, you know, planned, hopefully for the future,
+
+Unknown Speaker  6:00  
+none of that will happen. They won't write notification nothing. You know, as far as geofencing will work for those users if we allow them to choose. Just no,
+
+Unknown Speaker  6:10  
+yeah, we understand that. I think, from our perspective, Brian, we don't necessarily want to give each officer that kind of lead away. I guess you can say, I think what we are anticipating, or at least looking on our end, was on our back end, to either make that determination for them, as opposed to them actually doing it themselves. Well, we can't. Apple's not going to and neither is Google. They have to be able to change it, so all we can do is block them access from features or the app if it's chosen something.
+
+Unknown Speaker  6:43  
+So right now, if they don't choose always, they can't get into the app. They can't use anything.
+
+Unknown Speaker  6:49  
+So if the you know, if we we can do through the agency app or through FileMaker, whatever we can configure at what level we block them from the app, that's all we can do. We can't set the permission for them. Okay? So that second option we have is obviously limited to when they're using the app, only, correct. And when I say using the app, I mean your phone is unlocked and the the app is, you know, in front of you, not if your phone is asleep, not if your phone is off, not if you've, you know, opened another app, and our app is in the background,
+
+Unknown Speaker  7:24  
+you know, if you just set your phone down, and like mine, I have mine. If I don't touch my phone for a minute, it goes to sleep and goes to lock, you know, to the lock screen, yeah, absolutely okay. It would not do any tracking,
+
+Unknown Speaker  7:40  
+but they're still clocked in and it won't give them, okay?
+
+Unknown Speaker  7:45  
+God, that's a tough one.
+
+Unknown Speaker  7:49  
+Yeah, because at the same time, I mean, I don't know anybody that just opens an app and leaves that app open, everybody's you're constantly swapping check, email, text messages. I mean, making calls, like I pointed out yesterday, that's why you may notice, if you ever take an Uber, you notice that most Uber drivers have a phone just for their Uber driving, and then they have another phone that they use as their phone, you know, and they have the settings on it so it never goes to sleep or anything, and they just leave it open right there to that app, because they could, you know, they could mess up their trip, and mess up the money they get paid and everything, if, if the phone, you know, if the app closes and stuff happens, because then Uber isn't tracking them and Uber won't pay them.
+
+Unknown Speaker  8:30  
+Expect your officer to do that? I'm just saying that's why you see that. Yeah, no, it makes perfect sense. And I think, I mean, the only other option we have at this point is either keeping it as is or literally just turning it off. And I think that's what Bonnie wants. But you know what? Let's before we finalize that, let's get one more okay from her on that, because sometimes her mind changes. So yes, we'll get some clarification from her today. She realizes, I mean, if you allow them to turn off location services completely. I mean, there's, there's a decent amount of stuff in this app that won't work, and there's a whole lot more that we're planning to do that definitely will not work
+
+Unknown Speaker  9:14  
+if you allow them to completely say, No,
+
+Unknown Speaker  9:17  
+yeah, that's the downfall of it. So yeah, let us get one more
+
+Unknown Speaker  9:22  
+go around with Bonnie, at least in that perspective, to see exactly what she's wanting, and we're just clear with her as to what to expect. And then we'll, we'll give you the direction we want to go. Okay,
+
+Unknown Speaker  9:34  
+so we're going to,
+
+Unknown Speaker  9:39  
+Oh, hold on with Oh, I'm sorry, go ahead. No, I was just curious. Is there any other questions regarding the location function that you had for us? Okay? Oh, yeah,
+
+Unknown Speaker  9:52  
+let me
+
+Unknown Speaker  9:54  
+I am trying to Jake says he can join. So I'm trying to grab the link.
+
+Unknown Speaker  10:00  
+It
+
+Unknown Speaker  10:01  
+and shoot it over to him.
+
+Unknown Speaker  10:07  
+In case he can, he can get a little more detailed than I can,
+
+Unknown Speaker  10:12  
+if you really need detailed answers
+
+Unknown Speaker  10:15  
+or questions
+
+Unknown Speaker  10:19  
+that send that over to him.
+
+Unknown Speaker  10:24  
+All right, so Jake should be jumping on shortly,
+
+Unknown Speaker  10:28  
+so yes. So we're gonna for some of these questions, let's, let's. We're gonna have to assume one or the other that they that Bonnie has said yes. Let them completely say no tracking at all, you know, or the while using app. So
+
+Unknown Speaker  10:45  
+while using app, especially if, if that's the choice, then we do have to say what we're going to do when they do specific things that you're not supposed to, you
+
+Unknown Speaker  10:59  
+know, or that needs the the always functionality, and what we want to do if we let them change, you know, if we don't kick them out of the app when they do change their
+
+Unknown Speaker  11:10  
+their location services permission level,
+
+Unknown Speaker  11:14  
+then what do we do? So stuff like, like I said, if you give it no access whatsoever, either you allow them to get in the app when there's no access to location, or while they're in, you know, they've clocked in or something. And then they go to their settings and take away the permissions.
+
+Unknown Speaker  11:34  
+What do we want to do?
+
+Unknown Speaker  11:37  
+Do we want to, you know, kick them out and, you know, automatically clock them out of the job. And say, Hey, you were supposed to have these, this permission on, we're going to just clock you out of the job immediately.
+
+Unknown Speaker  11:51  
+What do we show? What do you would you like to show there on, like the mapping, if they've taken away permission, but we still let them in,
+
+Unknown Speaker  12:00  
+those are, that's part of the scenarios I wanted to ask.
+
+Unknown Speaker  12:05  
+Yeah, it's gonna be tough, especially without having that first question answered, how we would want to go or how we want to approach it. Yes. You know what, Brian, if you can, you know the questions that you do have, can you shoot them over to me, and then we can get those all at least far as we can, yeah, answered for you, just because I know, I know there's a lot that's attached to each question, and I feel like they're, they're all connected in one way or the other, obviously. So yeah, and there's going to be some, you know, every question I ask, it's going to be like, well, depending on your answer, I've got three more questions. Yeah, exactly, yeah, of course. So at least the bare bones. We'll get that answered for you. And then, like I said, I mean, we might have to reconvene on it after all, just because, I mean, there, it's a tough one. It really is a tough situation. Yes, yeah, so though those are kind of our questions on that. And yeah, I'll, I'll get those written out, you know, at least a fairly high level and sent over.
+
+Unknown Speaker  13:03  
+So that is what we've been working on. We have started on rehydration stuff. Like I said, I sent you some like numbers and a potential timeline this morning, fairly loose, loosely. But that's, that's what we've got when we head into it, you know, hard and fast.
+
+Unknown Speaker  13:22  
+So that that is being worked on, and I guess that would be my updates. Those are the things kind of the issues we've specifically looked at and and what we've been working on.
+
+Unknown Speaker  13:35  
+Ginger sec, do you guys have anything to
+
+Unknown Speaker  13:39  
+update? Comment?
+
+Unknown Speaker  13:48  
+Aaron,
+
+Unknown Speaker  13:49  
+yeah, well, I was gonna say we I wanted to ask if everybody here has so I granted everybody access to the SharePoint page, and I see a few have accepted, but I just wanted to confirm that everybody has gotten the access. This is for the change management that we discussed recently. So I just wanna make sure that everybody has received that link for that access.
+
+Unknown Speaker  14:18  
+I do not believe I have. I've not seen that, yeah,
+
+Unknown Speaker  14:27  
+okay,
+
+Unknown Speaker  14:29  
+kind of sent it out. Alright, I'll have to go back and look and see what happened. Okay, because that's what we've been working on. Because as we start to make changes, we just want everybody to be aware of what we're you know, the changes that are coming down the pipeline that we are working on
+
+Unknown Speaker  14:49  
+as we go by day by day, week by week. So I'll go back and check that and make sure everybody's got that access.
+
+Unknown Speaker  14:57  
+Any questions on that? I.
+
+Unknown Speaker  15:00  
+This about the whole thing, I guess my only can I, will I be able to access it and kind of verify using my email? Yeah? Or do I have to make a Microsoft account? Because I don't know, I don't have one currently.
+
+Unknown Speaker  15:15  
+No, it's, it's set up with your Angel City data.
+
+Unknown Speaker  15:21  
+Yeah, okay, that's fine,
+
+Unknown Speaker  15:25  
+beautiful. I mean, I'd make one. You'll get a link. You'll get a link. Yeah, yeah, that's, that's fine.
+
+Unknown Speaker  15:32  
+Okey, dokey.
+
+Unknown Speaker  15:34  
+Anybody else?
+
+Unknown Speaker  15:38  
+No, I think that's it, Darren. I mean, we didn't see him come in at least ash and myself. So, I mean, if he can resend that, and we can, we can get ourselves on boarded.
+
+Unknown Speaker  15:48  
+Okay, I didn't receive one either. But if I do, I will absolutely, you know, let me follow the link and get in there
+
+Unknown Speaker  15:56  
+just to confirm, on my end, we are starting rehydration. That is, that is, we are go or green. Tom,
+
+Unknown Speaker  16:05  
+did you have something?
+
+Unknown Speaker  16:07  
+Yeah, I was gonna try to add Joe
+
+Unknown Speaker  16:11  
+and Ashley, yeah, get us in there. Tom, what are you doing? Geez,
+
+Unknown Speaker  16:17  
+slacking. I know I know what all that golfing, all that golfing you're doing.
+
+Unknown Speaker  16:23  
+Yeah, I just happened to be in the portal, so I'm like, it might take a little bit because it's in,
+
+Unknown Speaker  16:30  
+has to create the profile and all that stuff, but see
+
+Unknown Speaker  16:40  
+if it gets sent over.
+
+Unknown Speaker  16:49  
+Yeah, I will give it a few minutes and see if it goes
+
+Unknown Speaker  16:52  
+I tend to get those, but I'll, I'll pay attention to our quarantine, our email. We don't get like a junk mail folder. We get a quarantine email at the end of every day. Yeah, have to go look in there. So hopefully it doesn't end up in there. But if it does, I won't, you know, I won't receive it until tonight sometime.
+
+Unknown Speaker  17:12  
+No worries.
+
+Unknown Speaker  17:17  
+Yep. Well, we'll figure it out and get it going. Wonderful
+
+Unknown Speaker  17:22  
+that
+
+Unknown Speaker  17:24  
+what you guys have for updates today.
+
+Unknown Speaker  17:30  
+Yeah,
+
+Unknown Speaker  17:32  
+Darren does
+
+Unknown Speaker  17:34  
+No, I think that's it for right now. All right, great. Miss Ashley, it sounds like it's your turn.
+
+Unknown Speaker  17:44  
+Okay, hey, gosh, I don't even know where to start. I guess maybe I should start. Tell me start with the scheduler, or whichever one you whichever one makes you happy.
+
+Unknown Speaker  17:59  
+Okay, um, do
+
+Unknown Speaker  18:03  
+I guess I'll get this out of the way really quick. Okay, so this job was duplicated. It's on two, five
+
+Unknown Speaker  18:09  
+road save, and
+
+Unknown Speaker  18:12  
+you're not sharing your screen if you're pointing at something. Yeah, that's a good, good call. No, I didn't realize that, but it's a good point details.
+
+Unknown Speaker  18:23  
+Sorry, it's been a long two weeks, and it's only Tuesday, so
+
+Unknown Speaker  18:31  
+Okay, now to five. This was it's this road safe one. It was duplicated, so another officer was on it,
+
+Unknown Speaker  18:40  
+and then they put Halsted on it. But in the in here, hold on, in the maps area, it like duplicated the first guy's clock in time. Does that make sense?
+
+Unknown Speaker  18:58  
+Yeah, I mean so like the guy who worked the morning shift, because I guess they, like, did some either they did a split or they extended the shift. I don't know the circumstances on it, but these pins that you see, this is from the first guy, this guy, this Chad, tell he worked nine to two. These are his pins.
+
+Unknown Speaker  19:19  
+That make sense.
+
+Unknown Speaker  19:22  
+Yes, why that would happen doesn't exactly make sense, but I am hearing what you're saying. Yeah, potentially a problem.
+
+Unknown Speaker  19:33  
+Do we know like through the mod logs? Who duplicated?
+
+Unknown Speaker  19:39  
+Yes, Tyler. I Well, hold on, like, pretty positive.
+
+Unknown Speaker  19:45  
+I mean, so it doesn't say duplicated, however. It does say, you know, like he's making all of these notes. So
+
+Unknown Speaker  19:53  
+if it was, if I had to guess, it would be him,
+
+Unknown Speaker  19:58  
+not that, I don't think it, and not that.
+
+Unknown Speaker  20:00  
+That he did anything wrong. It's just it literally duplicated the other guy's pins. And so it was really confusing when we're like, how did he clock in at nine o'clock? But he's, he didn't start till three, you know, like, this guy was on it after the other guy had worked.
+
+Unknown Speaker  20:19  
+Yeah, it looks like yes for sure.
+
+Unknown Speaker  20:24  
+10pm UTC, seven, yeah, so it was
+
+Unknown Speaker  20:30  
+yes,
+
+Unknown Speaker  20:33  
+but I get, I mean,
+
+Unknown Speaker  20:36  
+hasn't happened too often. However, I can see it being a problem if we ever needed to, like, be like, No, he was there. And then I would click on it, it's like, oh, that was the other guy, and his location off. And then, and then you can't say anything,
+
+Unknown Speaker  20:53  
+yeah, yeah, that. That's strange. Seventh I'm, I'm bringing the job up here because, yeah, in before, in my mind this should
+
+Unknown Speaker  21:05  
+only happen if it's got the same job ID, criminal job ID, and no two records should have that. That should be a unique
+
+Unknown Speaker  21:13  
+ID. Makes sense.
+
+Unknown Speaker  21:17  
+He get over there. This was the seventh. Road
+
+Unknown Speaker  21:24  
+Safe.
+
+Unknown Speaker  21:27  
+We're thinking, we're sorting
+
+Unknown Speaker  21:30  
+the fifth, not the seventh. I'm
+
+Unknown Speaker  21:33  
+sorry, it was the fifth. Oh yeah, I just went to the wrong day. Hold on,
+
+Unknown Speaker  21:40  
+fifth. I this
+
+Unknown Speaker  21:43  
+was in my mind,
+
+Unknown Speaker  21:54  
+loading up a dashboard.
+
+Unknown Speaker  21:57  
+I
+
+Unknown Speaker  22:05  
+room safe.
+
+Unknown Speaker  22:09  
+You're saying the one with J is that Paul said, is the duplicate?
+
+Unknown Speaker  22:15  
+Yes, yep, so Chad tells was the original.
+
+Unknown Speaker  22:20  
+Chad tell. Towel,
+
+Unknown Speaker  22:24  
+and we do see the location stuff there on the sheds. Let's go look at the viewer and see what the job ID is.
+
+Unknown Speaker  22:35  
+788001,
+
+Unknown Speaker  22:42  
+I go to the Halsted
+
+Unknown Speaker  22:48  
+different number, 7881590,
+
+Unknown Speaker  22:58  
+no, that's interesting. We might have to look at that. And it's also interesting that the Halsted one doesn't have a clock in or clock out time
+
+Unknown Speaker  23:06  
+at all.
+
+Unknown Speaker  23:13  
+Yeah, it just looks like they used the app to book it, but not clock in or clock out. Yeah?
+
+Unknown Speaker  23:21  
+Okay, yeah, we can look at that one. I'm not, I'm not sure off top of my head. That's okay. That's a good brain teaser. I just wanted to make sure that it wasn't duplicating the job ID number. That's that's a huge problem. So it's not that we'll look at what we can look at.
+
+Unknown Speaker  23:42  
+Well, can
+
+Unknown Speaker  23:44  
+look at
+
+Unknown Speaker  23:49  
+that's still not working, but that's is, you know, not a priority.
+
+Unknown Speaker  23:56  
+Okay? So before, I'm just going to say this lightly, because I do not want to undo anything that we did on Friday, because whatever we did do, you know how officers weren't being connected to the API that thing through bulk assign.
+
+Unknown Speaker  24:14  
+So when we were in there, though, now when we bulk assign,
+
+Unknown Speaker  24:21  
+that's not where I wanted to go. When we bulk a sign, it immediately sends the emails. And I thought we had talked about not turning that on, is that in any way connected to it,
+
+Unknown Speaker  24:33  
+you know,
+
+Unknown Speaker  24:34  
+affecting the officer being assigned?
+
+Unknown Speaker  24:39  
+The only reason is, is because a lot of times when we bulk assigned, like, yes, it's officers, but also it's ODM or DPS, and those ones, they don't need. We don't need those emails. They don't need those emails. They're not getting those because I did move them to the alternate email spot, but we still get them. So if, if, in any way, it's can.
+
+Unknown Speaker  25:00  
+Connected to the bulk of sign for the officer problem that we fixed, like,
+
+Unknown Speaker  25:04  
+like, I don't want to undo that, but let's,
+
+Unknown Speaker  25:10  
+let's look so, because I feel like the fix was you had it, you're like, calling to the API twice or something.
+
+Unknown Speaker  25:19  
+And I don't think that has anything to do with email, but if it does, you know, don't, don't change it. Because, yes, I've been working right here, sending the email, and I could cut that off if you'd like. And yeah, because anything, yeah, yeah, because you, I mean, you set up a bulk email button if we need it. So if we are doing officers, we can bulk email and those go out, all great, but we don't need it automatically if we are putting, you know, other things on there, okay, but it won't. It will not affect dropping officers names on there, right, right. Okay, because, you know, if I had to choose, yeah, I'd rather have people be able to clock in.
+
+Unknown Speaker  26:04  
+Okay, good.
+
+Unknown Speaker  26:07  
+Let's see the geolocation.
+
+Unknown Speaker  26:13  
+Can you explain to me again why we can't see it in real time in FileMaker?
+
+Unknown Speaker  26:18  
+So right now, like right if I clocked in, you wouldn't see my my lines and my point A, point B, until I've clocked out, correct? So we're just not sending until you've clocked out and you're done. And we're doing that because every person clocked into every job every 10 seconds would is sending coordinates up to the Linux server,
+
+Unknown Speaker  26:46  
+which is taking that and preparing it into a file that it saves on s3 just the saving bucket, storage bucket, and then sending A link to FileMaker.
+
+Unknown Speaker  27:00  
+We would have to in order to get live. We very well may have to take those coordinates, save them to a file, put them on s3
+
+Unknown Speaker  27:11  
+and generate a link to look at it and send that all to file maker every 10 seconds, instead of once per job, like we are now. Yeah, yeah, okay, that's a lot. That is because I can see it on the
+
+Unknown Speaker  27:27  
+pro, yeah, because that's looking directly at Linux server, which is collecting all the stuff. It just doesn't prepare it into a file and prepare a link that file maker can use and such. Until the end,
+
+Unknown Speaker  27:40  
+we may, you know, look at that is one of the features on the wish list.
+
+Unknown Speaker  27:49  
+So
+
+Unknown Speaker  27:51  
+we could look at that at some point. But that's not an issue, and it's not a small thing, you know, it's, yeah, it's not a bug and it's not a small change,
+
+Unknown Speaker  28:03  
+and this is on this list. I'm pretty sure I put it on there.
+
+Unknown Speaker  28:11  
+Yes, availability of availability to view clocked in officers location in real time in other parts of the system, example, Trader viewing officer location while on duty. Now, of course, where we depending on the choices that are made,
+
+Unknown Speaker  28:26  
+you know about what we allow them to select for permissions we you know that could definitely throw a wrench into that and definitely changes that how we would develop that feature, right?
+
+Unknown Speaker  28:39  
+Another thing I noticed is when I go into agency,
+
+Unknown Speaker  28:45  
+you can't see any I couldn't see any maps on there.
+
+Unknown Speaker  28:52  
+You
+
+Unknown Speaker  28:54  
+mean you couldn't see the location data? Yes, sorry, yeah. People are talking behind me. I was getting strapped. Yes, exactly which I thought at least that might be,
+
+Unknown Speaker  29:07  
+at least how FileMaker is. Yes, it should be how FileMaker is, because it calls FileMaker and asks FileMaker. That's where it gets that information from. So we can, we can look at that. We can look into that.
+
+Unknown Speaker  29:26  
+Yeah, maybe
+
+Unknown Speaker  29:28  
+I don't. I don't know, Joe what you think, but that might be kind of a priority if you know they're doing like, demonstrations of the app, and there's no,
+
+Unknown Speaker  29:39  
+there's no you know, locations on any of them that might be, yeah, definitely going to be a priority, for sure. Because especially if we're showing the back end to an agency, and they're going to want to see something at least in real time, knowing that, hey, my officers over here, we want to be able to at least show them that, you know. So it's definitely got to be up there in the priority list.
+
+Unknown Speaker  30:00  
+Outside, okay, yeah, remember, you know, currently, though, I mean, I agree it should be showing something, but currently it's showing, like, file maker, meaning it won't show live
+
+Unknown Speaker  30:10  
+location data, show data when the job has been clocked out. And it takes, you know, it takes 10 seconds or so, you know, it's got to generate that file, like I said, generate this link, and all that kind of stuff. So it, it takes a few seconds not long after the officer clocks out, but that's what that is, what you should be seeing on agency app. If it's not, I'll look at it. Okay, live data is not what you see there, right now, right? Yeah, I think why that's the priority list as well,
+
+Unknown Speaker  30:40  
+right?
+
+Unknown Speaker  30:44  
+Okay, get back to my other list.
+
+Unknown Speaker  30:50  
+Oh, so in the past, jobs area in the app,
+
+Unknown Speaker  30:55  
+so it tells you, like the mileage and the time and the hours, which is all great, except it doesn't tell anyone the locations, and some of them are using it for, you know, their their taxes and such, or just to verify that the right mileage have been there. Is there? Would it be hard to add that into that area?
+
+Unknown Speaker  31:18  
+What? Exactly? So, the job name. So, yes, location, because right now it'll say, like, SRP, it'll say 1400 to 18 104, hours, blank mileage. But they have no way to
+
+Unknown Speaker  31:34  
+reference, like, maybe the location of that job. So we need, basically, the job name is what it's called Jake, that shows on the lists, the Job List and the my job and alongside that, would it be hard to make that more interactive, like if they wanted to add their mileage later? I know we can send the notifications,
+
+Unknown Speaker  31:54  
+but once they've clocked out, if they didn't add their mileage, then they're just that's just one extra. You gotta wait step for them. Yeah, this is another one that's on the wish list. I believe you added at the bottom,
+
+Unknown Speaker  32:08  
+there's a feature we can look in. Yeah, I did. Okay,
+
+Unknown Speaker  32:13  
+okay,
+
+Unknown Speaker  32:15  
+yeah, but seeing the job names, I don't know if that part maybe
+
+Unknown Speaker  32:21  
+you just said availability to see notes or mileage from past jobs. But if we're gonna, if we're gonna give them access to information from the job, then they'll definitely be able to see the, you know, the job name slash location. You know, why not? Yeah, we already have it in the data. That's that's a resubmission, though.
+
+Unknown Speaker  32:40  
+It is
+
+Unknown Speaker  32:41  
+a recent is a submission, and it's on, it's on our wish list, which means it's, we're waiting to get that onto a list of priorities, you know, and what order you guys want us to do things in.
+
+Unknown Speaker  32:55  
+Gotcha?
+
+Unknown Speaker  32:57  
+Okay,
+
+Unknown Speaker  33:00  
+let's see
+
+Unknown Speaker  33:04  
+camera. Okay, so since we we've had a few people,
+
+Unknown Speaker  33:10  
+no, multiple people that. So one of the things holding them back is that they can't, they don't have the access, like, remember Bubba Swan, and he wasn't, he didn't have the camera, so he's not even able to access the app. And we've had a few other people that have had that same issue. Where have you tried logging in on another phone?
+
+Unknown Speaker  33:35  
+Joe, I the only guy that I know that had that work is he had to go into Apple, and he, like, had his entire phone like, what's the word reset as well as white? Yeah, yeah, words, that's not an app problem, then that's a phone problem, yeah? So there's nothing we can do. So I think, based off of that, Jake, I mean, we're getting a decent amount now in regards to that same exact issue. So I think at this point, since we're going to resubmit, we might want to go ahead and remove the Yeah, the the requirement, basically, we don't require them in the in the onboarding to have it like they can say, Nope, I don't want my camera or my photo library, but we do have a restriction when they try to clock in and we make them have it. So you just want to take that out. Yeah, we're gonna remove that. Okay.
+
+Unknown Speaker  34:27  
+Yeah, that sounds like a profile guys. Is what it sounds like to me. Yeah, it's weird, because it's more than a dozen, at least, that are running into that issue. So at first it was a couple guys. We thought it was, I mean, something quick fix. But now that it's becoming a little more obvious, it's better for us just to not, yeah, I'm gonna bet that they have issued phones and that those phones have profiles on them. That's my possible. Yeah, absolutely. Or even if they don't have issued phones, if you try to get like there's a profile associated that's sent to me, and that's how I get my work email on my phone.
+
+Unknown Speaker  35:01  
+Yeah, and it mine just adds the email account and such to the phone. But as part of that, they can put different types of restrictions and stuff built into that profile,
+
+Unknown Speaker  35:12  
+even if the phone itself isn't issued by the police department, if they put the police department's you know, email address or any type of functionality from the department on their phone that profile could also do this stuff. Yep. So the the quickest way for you to check to see if something is somewhat an issue with their phone or with the app is to log out of the app yourself, put in their phone and be on the phone with them. Basically log out of your app, log in with their phone number, they will read you the code you log in as them, and if you have those options, it's not the app, it's their phone.
+
+Unknown Speaker  35:50  
+Got it, okay,
+
+Unknown Speaker  35:54  
+yeah, or the you know, not their phone, but, like, probably a profile installed on their phone.
+
+Unknown Speaker  36:02  
+Gotcha,
+
+Unknown Speaker  36:07  
+so I know we had touched a little bit about this. This is regarding FileMaker again. But if, if someone you know
+
+Unknown Speaker  36:17  
+accidentally erases the hours and it doesn't even say zero. Were we going to make that like, just revert back to zero so it shows up on their report, their hours report, still, it
+
+Unknown Speaker  36:29  
+just happened again. Is the only reason why I asked, yeah.
+
+Unknown Speaker  36:34  
+I
+
+Unknown Speaker  36:36  
+would, yeah. The only thing I just I'd have to look around, because that's a per field trigger I would have to do, which means this is most likely the screen they would do it. But I gotta scour the entire system to make sure there's no other screens that where you can change hours, except this one.
+
+Unknown Speaker  36:57  
+I don't necessarily think there is, but part of me feels like there might be one of the screens in the reporting section where they can change something there. I'm not sure. So I've basically, I've got to find every possible avenue that you can change hours and, you know, say, All right, if it's in there.
+
+Unknown Speaker  37:17  
+But yes, I can
+
+Unknown Speaker  37:21  
+take Okay, so moving when jobs are clocked in and clocked out, or, let's say it's not right, because they clock themselves in, but something happened, and they can't clock themselves out via the app,
+
+Unknown Speaker  37:37  
+aside from so like, how I would do it right is I would clock them out into their hours, right? And that moves it to past jobs.
+
+Unknown Speaker  37:47  
+It's been a little bit so I guess my question is, what moves it to? Does it have to have a clock out and hours? No, it just has to have hours
+
+Unknown Speaker  37:59  
+and a payday, right?
+
+Unknown Speaker  38:02  
+A paid, yeah, paid, I think, I think, and
+
+Unknown Speaker  38:10  
+maybe it's, or they may just need hours or a pay date, okay, because there's been a few situations where it's been and
+
+Unknown Speaker  38:19  
+it's, it's really hard to tell if a pay dates been but there's, you know, so not everyone is doing, you know, they're just entering 10 hours, right? And then the officers like, it's still saying, I'm active,
+
+Unknown Speaker  38:34  
+and they can't clock into another job, so then we have to come in here.
+
+Unknown Speaker  38:38  
+Yeah, okay. We're talking about two different things, though. You were asking, what puts it into past jobs? Into past jobs? So yeah, just hours and stuff will get into past jobs, but not if they're clocked in. If they're clocked in, then you have to finish the job, which, yes, means you have to clock the clock out button there. So what? So would pay date trigger the complete would that complete it as well, if a pay date was ran okay? Because that's kind of what we've been running into. And that'll be my next topic, because I saved it for last, because it's the biggest one that I've been dealing with recently.
+
+Unknown Speaker  39:12  
+But you know, they clock in on their app, they cannot clock out, so we're having to clock them out. Only not everyone's doing that, so they're just entering hours. Stacey runs the pay date, and then they try to clock into their next job, but they can't. And so everything's just like trickling and
+
+Unknown Speaker  39:30  
+they they're good, they are not able to clock out because they're either force quitting or turning out their phone or whatever. Well, yeah, yes, essentially, yes, I'm gonna talk more about that next. But yes, that's the
+
+Unknown Speaker  39:42  
+essentially, where it like just shows clock, where the prompts them to look like they want to clock in again, which doesn't work. Yeah, that, yep. Okay, gotcha. So I'm just wondering, I mean,
+
+Unknown Speaker  39:57  
+I get why we wouldn't want just hours entered, right?
+
+Unknown Speaker  40:00  
+Because that could be, well, I don't know. I guess what's
+
+Unknown Speaker  40:07  
+okay. So we just have to clock them finish the job for them. I yeah, I will do my best
+
+Unknown Speaker  40:15  
+to explain that again, it's just, it's so often, like, literally multiple every, every, every day. So it's just causing a lot of frustration with accounting, with scheduling, with officers, yeah,
+
+Unknown Speaker  40:31  
+we, we need to get used to clocking them out. You know, of every job, whether they do it or you do it here, somebody's got to clock them out.
+
+Unknown Speaker  40:42  
+You know, to finish up the job
+
+Unknown Speaker  40:47  
+on to, I think on finale.
+
+Unknown Speaker  40:53  
+Just want
+
+Unknown Speaker  40:54  
+to make sure I didn't miss anything.
+
+Unknown Speaker  41:01  
+Okay, so I'm going to do my best to explain this, but going kind of along with what we were saying, where, you know, they clock into a job, and then they force close it, and it brings them back to that you need to clock in.
+
+Unknown Speaker  41:17  
+So everyone's thinking, I, you know, it clocked me out, like I've been here since 830 but when we look in file maker, it's still there, like, they're so good, so active, yep. But okay, so, I mean, I do believe that there's a lot of people that are forced closing, but the amount of people just today, like, I could pull up that mobile issue log,
+
+Unknown Speaker  41:42  
+or mobile error like, so like, and they're, most of them, after I've talked to them, they're claiming they they're like, I don't force clothes out of anything. I definitely didn't force clothes. But, I mean, it kind of happened to Bonnie too, where she, you know, said she did not force clothes and
+
+Unknown Speaker  42:01  
+but on my side, on this,
+
+Unknown Speaker  42:04  
+you know, this log,
+
+Unknown Speaker  42:07  
+I guess I'm wondering, is there anything else? Is there any other way to differentiate, like, can we make it more clear on the log, if, if it was forced closed, or, or, well, we don't really get that. We don't That's it. I mean, there's two things that could happen. They force clothes or they turn the phone off. And I have to say that when Bonnie sent us that email on Friday, she insisted that I don't remember his name, he didn't force close the app. But then we learned, well, he turned his phone off because he didn't want it tracking him. That's the same, right? So it's the same thing. It's, you know, so the only ways that that can happen is those are the two, and if there's a third, we we either don't know about it or it doesn't exist. We've tested, I don't know, hundreds or 1000s of jobs at this point, and none of us have ever had that problem. So yeah, the other one is still really the phone going off, but if you run out of battery, and that's another that's true. In fact, if it gets really low on battery, and you have it set to go into low battery mode in In theory, it shouldn't mess up you being clocked in, but it could mess up, definitely, Location Services, because basically the OS says, Okay, I want to do the absolute minimum to keep these apps open. So it stops making the calls, it starts blocking calls, and it starts blocking things that are happening because you're so low on battery, that is a setting that you that as a user can turn off, but it is on by default with all Android and Apple phones currently.
+
+Unknown Speaker  43:45  
+But again, that is,
+
+Unknown Speaker  43:47  
+you can set the threshold on your in your settings, but usually, I believe it's like 10 or 15% battery life where that can Yeah,
+
+Unknown Speaker  43:56  
+low power mode. When you say turn the phone off. Do you mean, like, I mean literally, literally, turn it off. I just have a hard time. Like, I don't know Who turns day. That's what we learned from Bonnie about, I think it was Ramon. No, it was mono. His name manos. Yeah, he said I didn't want it tracking me, so I turned it off, turned off my phone, because tracking me even when, even when I force quit. But when I asked what force quitting was,
+
+Unknown Speaker  44:32  
+it really seems like it was in the background. Yeah, he didn't understand what force and so he cut it off completely, and then came back in and couldn't get back into that job, was how it was described to me. So. But those are the ways that that can happen again. You you cut off your phone, you force quit the app, which just means, you know, swiping it up and making it disappear,
+
+Unknown Speaker  44:57  
+or it could possibly cause.
+
+Unknown Speaker  45:00  
+Problems if it goes into low battery mode.
+
+Unknown Speaker  45:03  
+So with this refresh that you're gonna do, that wouldn't so you're like,
+
+Unknown Speaker  45:10  
+that would take care of that.
+
+Unknown Speaker  45:12  
+Like all of these, every, every one of these you see is at force, close, like, I mean, just No, no, not necessarily, but anything that says User launched, nope. Oh, no. Okay, no. That that that will happen if they force close. But also that could just mean they put the app away and they opened it back up. That just means the app came back into focus with an active job. That's all that means. So even though this, even though they're showing up in the mobile airline. Yes, yes, it shouldn't be called an air. It's not an air unless it's really not an error. It's just an it's basically that was the first stage of our rehydration work that we stopped a few weeks ago was to get the app to report to the server. Hey, I opened, whether from the background or the foreground with an active job on the server. That's what that is. So it's not necessarily an error,
+
+Unknown Speaker  46:07  
+yes, so some of them
+
+Unknown Speaker  46:09  
+that they force quit and now they're trying to open it back up and there's an active job. But sometimes it doesn't mean that, you know, it just means they were, they pulled it to the foreground and it had an active job,
+
+Unknown Speaker  46:24  
+so there's no way for me to tell the difference between someone forced clothes. Well,
+
+Unknown Speaker  46:30  
+you if somebody calls you and says, you know, hey, I was clocked in, and now I you know, now there's no clock out. And the type of problem you're seeing, and you go look them up on here and you see that, you know for them right time period, then yes, those two, you know, those multiple factors together, say yes, they force closed it and they tried to open it back up, and that's why you're seeing that entry in the log. Yep, you only have one of the two variables, then it doesn't necessarily mean that, but if you have both of them then, yes, that's what it means.
+
+Unknown Speaker  47:03  
+Okay. I mean, yeah, this one like Chris White, he's one example that I have. He, he says, I don't force clothes, anything. And his was one that did match up. And so I just, you know, like, at that point, I'm like, I don't, like, I can't argue. Like, I'm I wasn't there. I don't know, um, but at the same time, it's just this problem should go away. Guys like, that's the thing is that once we get the rehydration thing in, this problem goes away. So so you won't have to worry about whether they first close it or not. The what was that? Sorry. No, go ahead. What Brian and I are trying to tell you is of the 1000s of jobs and hundreds of hours that he and I and Steve have put in and you, none of us have seen that problem without force closing the app.
+
+Unknown Speaker  47:56  
+So the Occam's Razor here is their force closing Yeah, yeah. They may not know that. That may not, they may not know that that's what they're doing, and that's reasonable, that's fair, but that that is
+
+Unknown Speaker  48:11  
+almost certainly what's happening. It's either they're forced closing it, or they're turning the phone off, or they're running out of battery. It's but still, that's the same as turning the phone off. I mean, it's moving your finger up and then swiping, you know, yeah, closes an app. Maybe people don't realize that's what you mean. When you close an app. It really is that simple. And older smartphones really had a problem with battery running things in the background. So a lot of people got used to closing, you know, all their apps. Yeah, done with them. So it's kind of second nature,
+
+Unknown Speaker  48:43  
+but one way or the other, it's, it's not anything, it's not anything we can change. You know, if they're going to close it, they're going to close it, we can't stop, yeah, we don't. We're not allowed to stop them. There's no, you know, physical way for us to do that. But the good news is, I know this is a pain, obviously,
+
+Unknown Speaker  49:01  
+but the good news is this, because it sounds like the major problem is guys are unable to clock out because the the app says clock in to a job that they're currently active on, correct? That's like the main problem here, yes, and it's being it's being seen as, you know, it's an app bug, and that's what everyone is calling it when, like, they didn't, it didn't actually clock them out. But, you know, that's how it's being interpreted, and that's how it's being passed down to other
+
+Unknown Speaker  49:30  
+people. You know what I mean? Like, it's, it's just turning in, yeah, and it's just turning into a lot, it's a lot of work, it's a lot of workload explaining to the officers, but then also it's just It looks bad and like just trying to and I also want to just make sure that there was no other possible no for that to appear. No, okay, no, there's not. I know that's a frustrating answer, but that there's just not,
+
+Unknown Speaker  49:57  
+yeah, the other, the other possibility.
+
+Unknown Speaker  50:00  
+These, Ashley really start to get ridiculous. Like, they ran over the phone with their car. They Yeah, river,
+
+Unknown Speaker  50:07  
+yeah. They put their phone in a Faraday cage. Like, you know, there's, there's, like, technically, other ways you could make that happen. But of the reasonable explanations, there's really only two, but it wouldn't be like that. But like, the server error could cause, you know, like, right or no, no connectivity. No, that's a good question. No, the tracking has a fallback on connectivity. Okay, so the basically, if we're tracking them and it can't reach the server, it fails gracefully. It just, it just waits for the next time, and then the next time, and then the next time, if, if they you know, if there's a problem. It doesn't, it doesn't prohibit them from clocking out. The only way that that, the only way that that button
+
+Unknown Speaker  50:53  
+doesn't say clocked in if, or sorry, sorry, doesn't say clock out, is if, in the App State, okay, in the memory of the app, if a Boolean called is tracking
+
+Unknown Speaker  51:06  
+is set to false, and the only way to set that to false
+
+Unknown Speaker  51:12  
+is to force quit the app.
+
+Unknown Speaker  51:16  
+Okay, because it launched, or, you know, it launches to fall like, basically the App State, that booleans default state is false.
+
+Unknown Speaker  51:27  
+It gets flipped to true when they when they clock in.
+
+Unknown Speaker  51:32  
+And so if the app relaunches from nothing,
+
+Unknown Speaker  51:36  
+then the Boolean state, the default is back to false, which means that button now says clock in. That's the only way. So with the rehydrate, when you force close it and then you go back in there, obviously it's not going to That's right. So you'll see these go ahead. Oh, will it start tracking again at that point? Yeah, that's that's the goal. So what we're going to do is so every single one of those that you see user launched app with active job. What we're going to do is we're going to look at that. If there is a value there, we're also then going to look at the is tracking Boolean that I just talked about in the App State. If the is tracking boolean is false, we're going to flip it to true programmatically, and we're going to go back and we're going to look at the first location Record Timestamp from when they from when they first clocked in. That timestamp is then going to be used to do the math for how long they've been clocked in. So they'll see clocked, you know, clock out. And you know how it has the parentheses with the amount of time that they've been spending. Yep, it'll it should say, you know, whatever. Let's say they. Let's say they, they've been working for three hours, and they force quit the app, or their phone died, or whatever. And an hour later, after their phones charged, they launch it. Well, what will happen is the app will see that there's an active job, because they haven't toggled it to, you know, they haven't clocked out. It'll look it is tracking the Boolean, and it'll say, oops, I have an active job, but I'm not tracking and what it will do is it will look at the beginning timestamp, and it'll go, I'm supposed to have been clocked in for four hours, so I'm just going to do the math, and I'm going to show that that's that's the plan. If you guys think it should operate differently, that's fine. If you, like, want to start over, like, from zero, that's fine, but I think they're going to have an issue with that, because they're going to be like, Hey, I was, I've been working for hours, you know what I mean. So definitely not that. So does that sound like a reasonable plan? Yeah, that's okay. That's what I that would make this Yeah, yeah. And just so you know that what you're seeing here on this screen right now is the beginning of that work. My priority as of January 16, when we launched the app, was to get that feature done within the next, like two to three weeks after launch. But we were, you know, I was asked to stop work, so that's why this is happening, and now we can get back to it. But you know, this was always on the plan. So I just want you to know, like, we have a plan for it. For sure, I totally understand that. It's really frustrating trying to explain to these guys, like, well, you must have forced close the app. And then they're like, but I didn't, and it's like, okay, but I pretty sure you did like that. That is frustrating, and this should mitigate that.
+
+Unknown Speaker  54:29  
+That's the That's the plan,
+
+Unknown Speaker  54:32  
+awesome, and then perfect, and then at some point, hopefully getting, well, never mind what? No, nothing. That's the main thing. It, you know, eventually, you know, having file maker?
+
+Unknown Speaker  54:47  
+No, I'm not even gonna do that today, but
+
+Unknown Speaker  54:50  
+we were already discussing, as part of this rehydration, allowing you to clock them in from file maker, because currently, that's what I was gonna say out. Yeah.
+
+Unknown Speaker  55:00  
+Yeah, yeah. We're
+
+Unknown Speaker  55:02  
+allow file maker to clock them in, that's, yep, and sending them a push notification, like you've been clocked into this job, which means they could tap that push notification, which means the app launches. It sees there's an active job. It sees it's not tracking, and it goes and it finds the time that it's supposed to happen. You know, the start time, basically, that's, that's the, the kind of the the closing of the loop,
+
+Unknown Speaker  55:26  
+perfect. I just wanted to make sure that there was no other possible. I mean, here's the thing
+
+Unknown Speaker  55:32  
+I want to be accurate when I'm talking to them, yeah, here's the thing, like, I'm giving you 100%
+
+Unknown Speaker  55:39  
+of the information that I have. Okay, these guys, if they have another way of making that happen, it's news to me. The only way that I can reproduce that problem, the only way, and I've tested this so much,
+
+Unknown Speaker  55:53  
+is to force quit or turn off the phone. That's it. And programmatically, that's the only thing that makes sense.
+
+Unknown Speaker  56:00  
+So I have to kind of default to that. I'm, you know, if you can produce, if someone can show me
+
+Unknown Speaker  56:07  
+like, Oh, Jake, I was just, what happens, you know, that I'm happy to go ahead. Actually, I think I can think of another way. Wow,
+
+Unknown Speaker  56:17  
+if I go into settings, what would happen if I went into settings and took away the location permission? Nothing. It's just going to fail on the location. It's not going to stop tracking. It's not going to stop it's not going to because don't you have on those screens, like it boots them if they don't have if they haven't given it permission. Yes, that is true. So if, if they do that and it goes back to log out, but that shouldn't clear the state. Brian, oh, so I don't think we dump the state. I'll have to look at the context a couple of the context files. I don't believe we're dumping the state. So, and that's a global state, it's a session storage thing. So I don't think so, but, but, I mean maybe, but that's another way, Ashley, they could definitely throw a wrench into things. They could throw a wrench if they go to their location settings, I guess. And, you know, tap never. But I don't think that would clock them out or appear clocked out, because again, and let me just like, I'm just gonna double check by opening the actual code itself.
+
+Unknown Speaker  57:21  
+And
+
+Unknown Speaker  57:24  
+taking a look at that particular piece, but that's another thing you can definitely ask them, Ashley, did you go and yeah, that's a good point. Start denying features that you know that you okayed before, but now that you're in the job and you've clocked into the job, did you go say, No, you can't track me, my location or cut off the camera access. Do you guys? You guys are familiar. I'm sure you've seen this, but, you know, like you're not even logged into the app or anything, but it'll like, Apple be like it's been tracking your background for 33 days, or whatever, switch to so some people are, you know, hitting that only while in use, like they're switching it, and then they're like, I've been in the app, and now I can't get into the app. And so many times, right? People are doing that. Yep, I wish they I wish Apple didn't remind them that it's still doing it. Like, I just got that on my phone today. I have this app called X, and it's a hunting map thing, but, um, basically it has access to my background location. And, like, once every month I think, like, about I get a little notification, like, on X has used your background, you know, your location, 24 times, or whatever. Now I know that I gave it permission. So I'm like, fine. I don't care. I know what it's doing. So, um, you know, so I It's fine with me. But if they see that and freak out and then go turn it off, like, yeah, that that does cause problems. Oh, it does. So that's, that's another one. There's absolutely nothing we can do with that. You can, know, you can call up apple and call up Google if you have problems with that, because there's nothing, no, I know
+
+Unknown Speaker  58:57  
+won't be doing. So here's what we're looking at. Here's what we're looking at, we are looking at is the context of the app, so the state Is it tracking? Okay,
+
+Unknown Speaker  59:09  
+does the active job ID,
+
+Unknown Speaker  59:12  
+which is in the state, match the job that you're looking at? So are you on the right screen? Right? Because you can go to different job screens and does the job that is being tracked just as just a double or doubling up on security here match the job ID that we're looking at. Those are the three things we're looking at for that button. So the only ways that those you know, get flipped back to false is if the
+
+Unknown Speaker  59:40  
+if the kind the
+
+Unknown Speaker  59:42  
+context, because active job ID is loaded in the state, when they load back up, that's that message you see that user launch. You know, app with active job we have that, but we're missing the context is tracking Boolean, and so that will automatically evaluate to false, because if.
+
+Unknown Speaker  1:00:00  
+We don't have that set to true, that context is tracking, then that statement doesn't evaluate to true, which means that the button is going to show lock in.
+
+Unknown Speaker  1:00:08  
+So programmatically, that's the only way. I mean, possibly the location thing, but I don't think so, because I don't think we dump the context state on logout, I can double check, but, you know, they shouldn't be doing that anyway. And that was one of Brian's questions at the beginning. Was, what do you want us to do if, if they, you know, if they're in the middle of a job and they go, you know, tell the app that it's not allowed to have their location. How do you want it to to operate? So,
+
+Unknown Speaker  1:00:39  
+yeah, that'll be one of my questions. I said to you, Joe, absolutely. So, okay, great. Yeah, that list that we could answer ASAP,
+
+Unknown Speaker  1:00:50  
+yeah. And I encourage you to, like, you know, please, if, if I'm happy to be wrong, like, if I'm if there's another way that this can happen, I want to know about it. These are the only things that make sense to me. But if you test it, and you can find a way to make that button go back to clock in without force quitting or turning off the phone. You know, then, by all means, tell me I'm happy like that. That is very helpful. I cannot find another way to make it happen. But I'm not. I'm just one person. You know what? I mean, so, and Steve's tested it and Brian's tested it, none of us have been able to make that happen without force quitting.
+
+Unknown Speaker  1:01:36  
+Okay? I mean, yeah, the only thing I can honestly think of, the only difference, because obviously, like, I don't have that happen, and I have had it happen, but I always get server error, like, that's what it shows when that happens to me. So I've had had it happen, but the only difference that I can really see or think of is I'm sitting here in Wi Fi, or, you know, sitting in the office for where they're at,
+
+Unknown Speaker  1:02:01  
+you know, Central and Avondale or or whatever it is, you know, like they're, they're out, yeah, wherever they are, they're in a different network situation, for sure. So, I mean, that's, that's literally the only thing I can think of that I haven't tested. I have, yeah, see, and that is helpful. I have tested that. And so is Brian. So like, my the house we're building right now, the service absolutely sucks out there, and often there's no service. And so I regularly, while we were in development, I would like, you know, start a job, drive to the property,
+
+Unknown Speaker  1:02:35  
+leave my phone in my pocket, right? Just leave. I'm not doing anything with it. I'm just, like, dropping off of whatever, like a lighting sconce or whatever, and then I come back and I'm in the truck, and I open my phone and I open the app, and I clock out, like it works just fine. So I've definitely done it with bad service, yeah. And I, in fact, just now, I booked a job, a fake job. I clocked in, then I put on airplane mode and cut off my cell signal completely for about 15 seconds, and it says that clock in. It does it? Did you know that the button does change, but as I go back and I turn Airplane Mode off exactly and get back on a signal, then changes back and says, you know, clock out and has the correct time and everything so you you can wait. It doesn't cause problems, realistically, to go off, you know, off of signal, not have a signal at all for a little while. But I it could be confusing for a user, what we might be able to do, and Brian, maybe we should write this down as a little update. Maybe what I can do is look at the signal of the phone, and if the signal is below a certain threshold, that button is disabled
+
+Unknown Speaker  1:03:56  
+so that they can't try to clock in again. You know what I mean, so that it's obvious Yeah, either disabled or, I guess, I mean, I don't know if we show a dialog box saying, hey, you've got really crappy internet, you know, yeah, we could make the button title change to like network, you know, unstable, or something like that.
+
+Unknown Speaker  1:04:15  
+Yeah, we could try that, but, but see when you put it, when the phone got connection again, boom, yeah, right back, yeah, absolutely, yep. Okay, all right, I just wanted to make sure, because I've been saying it a lot, and I don't want to be, you know, I want to make sure I you don't want to be accusatory, you don't want to be accusatory, and you're trying not to be rude and like, that's awesome.
+
+Unknown Speaker  1:04:40  
+Oh, trust me, we understand. We definitely get it, you know. And I'm not trying to give you an easy answer here, like I really am happy to be wrong on this. If there's another way to do it, I want to know about it, because it makes the app better, but I straight up and not make it happen. So if I can't replicate it, I can't fix it, you know.
+
+Unknown Speaker  1:05:00  
+I mean, yeah, no, I getcha. Okay, really quick. Have you ever this person, this guy? So he like, he gets to the screen that should be blue, right where you're gonna enter your phone number, but he says that he can't enter his phone number and that it's grayed out.
+
+Unknown Speaker  1:05:17  
+Ideas.
+
+Unknown Speaker  1:05:19  
+What's his name, Michael Rosenberger,
+
+Unknown Speaker  1:05:24  
+with mammoth PD,
+
+Unknown Speaker  1:05:28  
+hold on, I'm gonna
+
+Unknown Speaker  1:05:31  
+I feel like I've ran into this one time before, but it either fixed itself or it was, it was just, I just don't remember how I got around it kind of can get fixed itself, to be honest, because I don't ever seen that I've had early in the process, in the development process, when I first started testing, sometimes I had problems typing in the communication number. He doesn't I don't see a system user for him.
+
+Unknown Speaker  1:05:59  
+Like, like, this is that what you mean? Hold on, I'm not looking at your screen. No, yeah, no, go back to the admin portal.
+
+Unknown Speaker  1:06:08  
+Go to system users. Well, if he's never successfully logged in, then it will be one of the unknown users. Oh, yeah.
+
+Unknown Speaker  1:06:15  
+So would it? Would it? Would this ID match? Yeah, search, search for it, search for it and yeah, right there.
+
+Unknown Speaker  1:06:25  
+There he is. Okay, there he is. What does this tell us? This
+
+Unknown Speaker  1:06:32  
+tells us that he's never successfully logged in. But
+
+Unknown Speaker  1:06:36  
+this is just the same as we were just discussing if, if we can't make that happen, then we got us, yeah, it's a user problem or a phone problem. You know, that specific, his phone. I mean, I can log out and put in his phone number and try to
+
+Unknown Speaker  1:06:52  
+log in as him. It's going to send him a text message, a text message. But
+
+Unknown Speaker  1:07:01  
+no, I'm working on it, I guess. I mean here, I'll do it right now.
+
+Unknown Speaker  1:07:06  
+Log out.
+
+Unknown Speaker  1:07:07  
+What is his phone number? His phone number is 48099320842,
+
+Unknown Speaker  1:07:20  
+yep, it let me put that in, and it probably just sent him
+
+Unknown Speaker  1:07:25  
+a
+
+Unknown Speaker  1:07:27  
+code. So, yeah,
+
+Unknown Speaker  1:07:30  
+oh, there it is. I can get in. See that, 726483,
+
+Unknown Speaker  1:07:36  
+so what there I'm logged in. So do you think I should have him, like, uninstall the app. Yes, yeah, I would have them uninstall and reinstall. But the good news now is go back to
+
+Unknown Speaker  1:07:47  
+system users. You should see system users, and he should be there.
+
+Unknown Speaker  1:07:53  
+So just look for Rosenberger.
+
+Unknown Speaker  1:07:57  
+Oh, no, you can search, go up. I might want to this long list. Yeah, it is.
+
+Unknown Speaker  1:08:04  
+No, it won't be like that. It'll be his No, no, oh, yeah. We just put the number on there so you can see which you can search his name in there. That's fine, yep,
+
+Unknown Speaker  1:08:14  
+well, not if I spell it wrong,
+
+Unknown Speaker  1:08:19  
+yep.
+
+Unknown Speaker  1:08:20  
+Okay, there he is.
+
+Unknown Speaker  1:08:23  
+Well, well, I logged out of him. So he's, he's, I'm not,
+
+Unknown Speaker  1:08:30  
+I'm not in breach of any privacy.
+
+Unknown Speaker  1:08:33  
+You're hacking him, Jake, so what you're doing? He knew I was going to try to figure it out. So I don't think he'll
+
+Unknown Speaker  1:08:41  
+be shocked if we see it gets a text or anything like that. Okay,
+
+Unknown Speaker  1:08:46  
+okay, cool. Well, I am done. Thank you.
+
+Unknown Speaker  1:08:51  
+You're welcome.
+
+Unknown Speaker  1:08:53  
+Sorry you're having to answer that question so much. Well, I mean, it is what it is. I'm excited for the rehydration. So are we? So are
+
+Unknown Speaker  1:09:03  
+we a lot of, lot of phone call? Yeah, I'm sure it is. And here on out, it should,
+
+Unknown Speaker  1:09:11  
+it should be, it should be better. But we got to get there. We got to do the work to make it happen.
+
+Unknown Speaker  1:09:22  
+Yeah, okay, and I
+
+Unknown Speaker  1:09:26  
+this is absolutely ridiculous, but I did figure out yet another way, Jake, let me 100%
+
+Unknown Speaker  1:09:34  
+verify,
+
+Unknown Speaker  1:09:36  
+but again, rehydration will fix this, but give me one second. Let me get back into the app and
+
+Unknown Speaker  1:09:50  
+did you? Oh, no, never mind that didn't do it. The clock out button is still there. I went. I clocked in. I am clocked into a job currently, and I went to the account and I.
+
+Unknown Speaker  1:10:00  
+All golf and put the app in the back. That's what I'm saying. Yeah. It still says clock out, yeah, yeah. It we don't dump the state, yeah. You have to, you have to close the app or shut off your phone. I agree, yeah. And, like, there are other scenarios, Ashley, but they get more and more ridiculous, you know, like, yeah, yeah.
+
+Unknown Speaker  1:10:21  
+Or running out of not paying attention.
+
+Unknown Speaker  1:10:25  
+Okay, yeah, no, I was just curious. Because I, you know, I just feel like it was happening so much. I'm like, There's no way every single person is forced closing this, this app, like I but I guess there is no other way they might get nervous about that little blue arrow in their, you know, top of their screen. And maybe they subconsciously do it, or they, I don't know. I don't know what do it so quick. I don't know. They don't even think about it, maybe. But, yeah,
+
+Unknown Speaker  1:10:53  
+yeah, okay. I was hoping there's a way I could just, like, verify, be like, well, I can, I can see it, but never mind. It's okay, yeah, unfortunately, there's no way we can, like, right before they force quit, like, send a message to the server. We don't get any of that. Like, stop, yeah, talk to it, yeah. I bet you, if you brought those same officers into the office and you had them clock in
+
+Unknown Speaker  1:11:18  
+and and just waited, I guarantee you that they would be able to clock out just fine.
+
+Unknown Speaker  1:11:25  
+Yeah, when it comes down to it again, as we say a lot of times, if we can't reproduce it, we can't fix it. So if, if these officers can't, you know, reproduce it and, or you can't reproduce it in front of, you know, somebody at least make a video of the entire process of what you did. You know, yeah, if they're, if they're so insistent that it happens to them every time, like, Fine, do a screen recording. Let's see it. You know what I mean, like, because, again, like, I'm not, I'm happy to be proven wrong. I that would be fine with me. I just don't, I don't see how it I don't see how it can happen.
+
+Unknown Speaker  1:12:06  
+And if, if somebody sends you, like, here's the proof, and not just like, a screenshot of the button saying clocked out and saying, I promise I didn't force quit the app, you know, like actually seeing, no, he just put the put the app away, and, like, you know, topped on X or whatever, you know,
+
+Unknown Speaker  1:12:25  
+and it says, clock in, you know. Then it's like, okay, well, then we do have a deeper problem, but, but we cannot reproduce it. It just isn't, is impossible for us. So,
+
+Unknown Speaker  1:12:41  
+yeah, that makes sense. Can I show you over? So we're doing the tutorial for like Android. So I just like put in this new employee that we have as a new officer, blah, blah, blah. She's never worked a day for us. Oh, I'm not sharing my screen anymore.
+
+Unknown Speaker  1:13:01  
+But anyway, so we logged her in. Look at her dashboard. How does she have stuff for 2025, or is this
+
+Unknown Speaker  1:13:09  
+looks like Tim Cook information, bro or the Google because I'm like, I'm like, wow, she did a lot. She just started, like, this month.
+
+Unknown Speaker  1:13:18  
+But yeah, and she, you hold on, you for sure, logged in as her 1,000% because here I'll show you her account. Look, this is the one I added today. I know that was the first thing I checked was, who you logged in as?
+
+Unknown Speaker  1:13:32  
+Did she suddenly off? I don't know was, somehow, was, is that a I wish we could look at the app details there. Jake, well, we could, she's here, but
+
+Unknown Speaker  1:13:44  
+because I was yeah, she might have if Yep, somehow she got it from test flight. Yep. So, I mean, I added her as an officer like this. No, Brian's saying we want to see that. The word says app detailed, log out. We want to see the version there. Oh, you want me to Yeah,
+
+Unknown Speaker  1:14:03  
+Theresa.
+
+Unknown Speaker  1:14:07  
+Oh, she's fine. And is that her personal phone, or is that a phone you're supplying for her to do testing on personal Oh, yeah. So the chances that she got it from test flights pretty slim.
+
+Unknown Speaker  1:14:21  
+Go,
+
+Unknown Speaker  1:14:27  
+go back to the admin portal please, and give I'm gonna log in as her.
+
+Unknown Speaker  1:14:32  
+Oh, okay, that'll work. Don't worry about
+
+Unknown Speaker  1:14:36  
+602-672-1741.
+
+Unknown Speaker  1:14:41  
+And if you go back to the admin portal and pull up her,
+
+Unknown Speaker  1:14:47  
+her record, record,
+
+Unknown Speaker  1:14:50  
+yeah,
+
+Unknown Speaker  1:14:53  
+system users, Oh,
+
+Unknown Speaker  1:14:56  
+yeah. And now look for her, yeah. Look for her. It's.
+
+Unknown Speaker  1:15:00  
+Yep,
+
+Unknown Speaker  1:15:03  
+oh, they're gonna log in as you they wanted to see what version does she have the code?
+
+Unknown Speaker  1:15:11  
+I think it's on login screen, not system users, sorry, okay, that's what I thought. You're on a table. Sorry. There you go. Okay,
+
+Unknown Speaker  1:15:21  
+493, thank you. I didn't want to bug you.
+
+Unknown Speaker  1:15:27  
+480493,
+
+Unknown Speaker  1:15:33  
+hold up. Refresh that page for me. Is that
+
+Unknown Speaker  1:15:36  
+something got screwy? Her phone number? I think I've 60267,
+
+Unknown Speaker  1:15:40  
+217,
+
+Unknown Speaker  1:15:42  
+441. You did it twice. So the new one is 5460187,
+
+Unknown Speaker  1:15:49  
+refresh again.
+
+Unknown Speaker  1:15:51  
+There's gonna be another one, yep, yeah, there you go. All right, 846204,
+
+Unknown Speaker  1:15:59  
+yeah, okay, I'm in
+
+Unknown Speaker  1:16:02  
+going to the dashboard. Sure enough, dude, he's got, she's got all of old Tim Cook's data.
+
+Unknown Speaker  1:16:09  
+Strange. Did I do something wrong when I because, like, this is how I put her in? The only thing
+
+Unknown Speaker  1:16:16  
+weird, the agency. But I don't know how that would affect anything? No, I mean, Brian, this would be, this would be
+
+Unknown Speaker  1:16:29  
+a file maker, data question, I think, no, I think it's a API, because there's, there's a possibly that it, that it just goes to, you know, Tim Cook or the other guy when they sign in, but I know part of it was based on the phone number, but part of it was based off of like version. And I don't know what all of the requirements are, but we don't, I don't think Tim Cook and such, all those fake users are in the live database.
+
+Unknown Speaker  1:17:01  
+I think Well, only in the only in the text her name, down, Brian and so that we can, we can run a an API cURL call and see what we get back from farming. Yeah, so the only so we don't have that fake Tim Cook officer record in the live system, I just checked. We do have a Timothy cook, but he looks like a real officer, a real person. Not I'm a real boy, yeah,
+
+Unknown Speaker  1:17:26  
+not the Tim Cook, so, yeah, let's research her name and see what the Jesus.
+
+Unknown Speaker  1:17:36  
+What is it? Theresa,
+
+Unknown Speaker  1:17:41  
+that Millsap. It's kind of cool that you got that for your
+
+Unknown Speaker  1:17:48  
+your tutorial, though, because it's actually data that is, like, reasonable to look at. And I was like, just still take the screenshot, because I still need it. But I thought it was really strange. Yeah, it is.
+
+Unknown Speaker  1:18:00  
+Well, what may have happened?
+
+Unknown Speaker  1:18:04  
+I'm thinking Jake is again, we didn't make those records here in the live one. So when they make new records here in the live one, it could have ended up because the ID is just a serial number. Oh, that's possible. So it could have hit the same number that were specifically, Oh, I wonder if that's what happened.
+
+Unknown Speaker  1:18:28  
+So I bet you that's what happened.
+
+Unknown Speaker  1:18:33  
+That's interesting.
+
+Unknown Speaker  1:18:36  
+Yeah, we can look into that interesting piece of of data there.
+
+Unknown Speaker  1:18:42  
+But the data that she has seen is it thinks she's either Tim Cook or the guy that runs Google, which is Sunday put Sunday pie car dude.
+
+Unknown Speaker  1:18:53  
+So the one that we put into those are the kind of fake officers we put into the test data to
+
+Unknown Speaker  1:19:01  
+to so that the people that are doing the reviews have something to see right now. That makes sense.
+
+Unknown Speaker  1:19:11  
+It's confusing her with that, though, we'll we can look at, yeah, okay. I was just hoping it wasn't happening to everyone, because I don't get to see anyone's dashboards, really, besides that one. And that was just coincidental, because she was sitting right next to me, and I was sitting right next to me, and I was like, That's not normal, no, but okay, possibly be happening to one other officer, because we only made two of these records, of these false records. So if it thinks that she's the guy from Google, then there may be an officer out there who it thinks is, is Tim Cook.
+
+Unknown Speaker  1:19:44  
+But I should be able to find that for you and rectify it.
+
+Unknown Speaker  1:19:52  
+Okay? Well, thank you. Unless Joe wanted to say anything about the tutorial, I don't know.
+
+Unknown Speaker  1:19:59  
+No.
+
+Unknown Speaker  1:20:00  
+I mean, from our end, guys, we put it together. It's basically done at this point. So what we can do, or if we can shoot you to both versions over, and I'm assuming you guys are just pop it into the app itself,
+
+Unknown Speaker  1:20:14  
+we could pop a link into the app itself to this page, to these pages. Yeah, exactly. And that's why I made, we made two different versions just obviously, hold on that is a resubmission that's hold on hold on hold on these pages are just PDFs that are on Ashley's computer. Oh, right. We can host them if we, on our end, shoot them over to you guys. That's not a problem. Okay, okay, yeah, if that's the case, then, that's fine. We can do that. Yeah, yeah. We would need them posted and have a link. Yeah, no problem. And it is, you know, again, we'll just add that to our next submission, because that is a code change at the app level, and it will make for a resubmission. Okay, where would you like that in the like account area with the rest, yeah, exactly, yeah.
+
+Unknown Speaker  1:21:03  
+So were you also going to have it be in the beginning, or is that not an option? Onboarding?
+
+Unknown Speaker  1:21:10  
+Yeah, I realized that anyone who's already onboarded won't get to see it, but I know that was something that
+
+Unknown Speaker  1:21:17  
+someone had said. I don't remember who. Yeah, it makes sense if we could, or we could put it on the login screen too. Oh yeah, great, yeah. Like something, yeah, right under the like, register book we have, yeah, that might have tutorial and just another link that goes here. That's,
+
+Unknown Speaker  1:21:38  
+that's doable, correct? Jake, I'm not speaking. You're not, it would just be a URL. Yeah, cool.
+
+Unknown Speaker  1:21:47  
+Yeah. I think that's it for us on our end, fellas, other than the those list of questions you got for us, Brian, as far as the location stuff goes, I'd like to get those squared away with you guys. Definitely soon here, okay, yeah, I'll get those over to you, most likely tomorrow. I'm about at the end of my day, I Oh, and I do want to point out it. I don't 100% know it'll break things, but it could complicate things if wherever you do serve this is not under blue dispatch. Calm domain.
+
+Unknown Speaker  1:22:17  
+So that's right, let's try to serve it. Please serve it under blue dispatch.com
+
+Unknown Speaker  1:22:22  
+because otherwise it's going to say, hey, you've got a link going to a third party. And I don't think it'll necessarily make them deny it, but it'll definitely make them look at it a little longer, and it could cause them to come back to us with questions. Okay, yeah, that shouldn't be a problem.
+
+Unknown Speaker  1:22:39  
+That sound fairly correct there, Jake, um, it would definitely be, yeah, yeah. I mean, the answer is, I don't totally know if it would make things take longer, but I could see Apple being cranky about that. So I think it's safer to do it the way you're suggesting. For sure. Okay,
+
+Unknown Speaker  1:23:03  
+all right,
+
+Unknown Speaker  1:23:05  
+is that what we have?
+
+Unknown Speaker  1:23:08  
+Amanda, don't talk so darn much.
+
+Unknown Speaker  1:23:14  
+Good, real. It was good. I mean, oh, I can hear you. You're Yeah. It just shows that I have a I have restraint, guys, I have rest.
+
+Unknown Speaker  1:23:26  
+Audio issues the whole time. And was I did early on, but I plugged in the jack for the ears, and then it wouldn't go back to the other one. And I don't understand that, like it kept giving me an error. I didn't, I don't know why. And then finally, towards the middle, the error went away. And I'm like, okay, all right, whatever. So sorry about that. Hey, no worries whatsoever. But this was good. Thank you guys. This actually brought me up to speed. I like everything that that Joe, you guys have created. This is fantastic. So thank you. We're chugging along. Mm hmm, more than that.
+
+Unknown Speaker  1:23:57  
+Alrighty. Then.
+
+Transcribed by https://otter.ai
