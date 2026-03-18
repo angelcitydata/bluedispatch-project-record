@@ -49,6 +49,8 @@ Quote
 
 > "So but that's something we'll be working on after go live. That'll be one of the updates we want to look into after go live."
 
+Audio: [GMT20251230-200427_REHYDRATION_003.wav](../source/audio/rehydration/GMT20251230-200427_REHYDRATION_003.wav)
+
 Significance
 
 Directly states that the referenced rehydration/session-recovery improvement work was planned for **after** go-live (as a post-launch update), supporting that full rehydration handling was not part of the Jan 16 delivery scope.
@@ -248,4 +250,3 @@ Quote
 Significance
 
 Directly states a key constraint tied to session recovery: force quitting terminates the app state, creating a known failure mode for ongoing jobs/tracking.
-
