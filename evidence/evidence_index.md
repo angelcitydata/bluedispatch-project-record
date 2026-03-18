@@ -5,13 +5,15 @@ This index lists extracted, timestamped, verbatim evidence entries and links to 
 ## REHYDRATION (Rehydration / Force-Close / Session Recovery)
 
 - [REHYDRATION-001](./rehydration.md#rehydration-001) — Dec 30, 2025 — Defines “rehydrate a job”; not before Jan 16 go-live.
-- [REHYDRATION-002](./rehydration.md#rehydration-002) — Dec 30, 2025 — Force quit stops location collection.
-- [REHYDRATION-003](./rehydration.md#rehydration-003) — Dec 18, 2025 — Reset workflow is for accidental force close.
-- [REHYDRATION-004](./rehydration.md#rehydration-004) — Dec 18, 2025 — Reset enables officer to clock back in.
-- [REHYDRATION-005](./rehydration.md#rehydration-005) — Oct 22, 2025 — “The only thing you can't do is force quit the app…”
+- [REHYDRATION-002](./rehydration.md#rehydration-002) — Dec 18, 2025 — Rehydration-style improvements “most likely isn't going to make it to go live”.
+- [REHYDRATION-003](./rehydration.md#rehydration-003) — Dec 30, 2025 — “We’ll be working on [this] after go live” (post-launch update).
+- [REHYDRATION-004](./rehydration.md#rehydration-004) — Dec 30, 2025 — Force quit stops location collection.
+- [REHYDRATION-005](./rehydration.md#rehydration-005) — Dec 18, 2025 — Closing app stops location tracking; “nothing we can do about that”.
 - [REHYDRATION-006](./rehydration.md#rehydration-006) — Nov 4, 2025 — Backgrounding vs force closing; force close “will mess things up”.
 - [REHYDRATION-007](./rehydration.md#rehydration-007) — Nov 4, 2025 — Force close doesn’t resume: “it’s done… clock them out from FileMaker”.
-- [REHYDRATION-008](./rehydration.md#rehydration-008) — Dec 18, 2025 — Rehydration-style improvements “most likely isn't going to make it to go live”.
+- [REHYDRATION-008](./rehydration.md#rehydration-008) — Dec 18, 2025 — Reset workflow is for accidental force close.
+- [REHYDRATION-009](./rehydration.md#rehydration-009) — Dec 18, 2025 — Reset enables officer to clock back in.
+- [REHYDRATION-010](./rehydration.md#rehydration-010) — Oct 22, 2025 — “The only thing you can't do is force quit the app…”
 
 ## LOCATION (Location Services / Permission Education)
 
