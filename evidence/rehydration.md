@@ -22,7 +22,7 @@ Explicitly defines “rehydrate a job” as a session-recovery approach after fo
 Date: Dec 18, 2025  
 Meeting: Testing feedback / edge cases  
 Source File: `source/transcripts/2025-12/GMT20251218-201707_Recording_otter_ai.txt`  
-Attendees: Brian Overby, Joe Morales, Amanda Markham, Joe Morales  
+Attendees: Brian Overby, Joe Morales, Amanda Markham, Ashley Sidor  
 Speaker: Brian Overby  
 Timestamp: 6:47
 
@@ -73,7 +73,7 @@ States a concrete technical limitation: force quitting stops location collection
 Date: Dec 18, 2025  
 Meeting: Testing feedback / edge cases  
 Source File: `source/transcripts/2025-12/GMT20251218-201707_Recording_otter_ai.txt`  
-Attendees: Brian Overby, Joe Morales, Amanda Markham, Joe Morales  
+Attendees: Brian Overby, Joe Morales, Amanda Markham, Ashley Sidor  
 Speaker: Brian Overby  
 Timestamp: 7:07
 
@@ -122,7 +122,7 @@ Clear Q&A stating that force closing ends continuity (“it’s done”) and cre
 Date: Dec 18, 2025  
 Meeting: Testing feedback / edge cases  
 Source File: `source/transcripts/2025-12/GMT20251218-201707_Recording_otter_ai.txt`  
-Attendees: Brian Overby, Joe Morales, Amanda Markham, Joe Morales  
+Attendees: Brian Overby, Joe Morales, Amanda Markham, Ashley Sidor  
 Speaker: Brian Overby  
 Timestamp: 37:56
 
@@ -139,7 +139,7 @@ Links the “reset button” workflow directly to an “accidentally force close
 Date: Dec 18, 2025  
 Meeting: Testing feedback / edge cases  
 Source File: `source/transcripts/2025-12/GMT20251218-201707_Recording_otter_ai.txt`  
-Attendees: Brian Overby, Joe Morales, Amanda Markham, Joe Morales  
+Attendees: Brian Overby, Joe Morales, Amanda Markham, Ashley Sidor  
 Speaker: Brian Overby  
 Timestamp: 38:02
 
