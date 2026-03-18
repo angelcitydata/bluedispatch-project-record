@@ -13,7 +13,7 @@ Quote
 
 > "We do have ideas for allowing you to what we call rehydrate a job. Basically, that means you can force quit the app and later try to come back and go into it, and it'll notice that you're locked clocked in and take you to that job and allow you to continue it. It's very tricky, and it's definitely not going to be in before go live on the 16th."
 
-Audio: [GMT20251230-200427_REHYDRATION_001.m4a.wav](../source/audio/rehydration/GMT20251230-200427_REHYDRATION_001.wav)
+Audio: [GMT20251230-200427_REHYDRATION_001.wav](../source/audio/rehydration/GMT20251230-200427_REHYDRATION_001.wav)
 
 Significance
 
