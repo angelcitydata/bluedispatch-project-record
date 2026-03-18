@@ -4,7 +4,7 @@
 
 Date: Dec 30, 2025  
 Meeting: Pre–go-live testing updates  
-Source File: `source/transcripts/2025-12/GMT20251230-200427_Recording_otter_ai.txt`  
+Source File: [GMT20251230-200427_Recording_otter_ai.txt](../source/transcripts/2025-12/GMT20251230-200427_Recording_otter_ai.txt)  
 Attendees: Brian Overby, Amanda Markham, Ashley Sidor  
 Speaker: Brian Overby  
 Timestamp: 2:17
@@ -21,7 +21,7 @@ Explicitly defines “rehydrate a job” as a session-recovery approach after fo
 
 Date: Dec 18, 2025  
 Meeting: Testing feedback / edge cases  
-Source File: `source/transcripts/2025-12/GMT20251218-201707_Recording_otter_ai.txt`  
+Source File: [GMT20251218-201707_Recording_otter_ai.txt](../source/transcripts/2025-12/GMT20251218-201707_Recording_otter_ai.txt)  
 Attendees: Brian Overby, Joe Morales, Amanda Markham, Ashley Sidor  
 Speaker: Brian Overby  
 Timestamp: 6:47
@@ -38,7 +38,7 @@ Explicitly indicates that improved session-recovery/rehydration behavior for “
 
 Date: Dec 30, 2025  
 Meeting: Testing feedback / edge cases  
-Source File: `source/transcripts/2025-12/GMT20251230-200427_Recording_otter_ai.txt`  
+Source File: [GMT20251230-200427_Recording_otter_ai.txt](../source/transcripts/2025-12/GMT20251230-200427_Recording_otter_ai.txt)  
 Attendees: Brian Overby, Amanda Markham, Ashley Sidor  
 Speaker: Brian Overby  
 Timestamp: 3:25
@@ -55,7 +55,7 @@ Directly states that the referenced rehydration/session-recovery improvement wor
 
 Date: Dec 30, 2025  
 Meeting: Pre–go-live testing updates  
-Source File: `source/transcripts/2025-12/GMT20251230-200427_Recording_otter_ai.txt`  
+Source File: [GMT20251230-200427_Recording_otter_ai.txt](../source/transcripts/2025-12/GMT20251230-200427_Recording_otter_ai.txt)  
 Attendees: Brian Overby, Amanda Markham, Ashley Sidor  
 Speaker: Brian Overby  
 Timestamp: 2:56
@@ -72,7 +72,7 @@ States a concrete technical limitation: force quitting stops location collection
 
 Date: Dec 18, 2025  
 Meeting: Testing feedback / edge cases  
-Source File: `source/transcripts/2025-12/GMT20251218-201707_Recording_otter_ai.txt`  
+Source File: [GMT20251218-201707_Recording_otter_ai.txt](../source/transcripts/2025-12/GMT20251218-201707_Recording_otter_ai.txt)  
 Attendees: Brian Overby, Joe Morales, Amanda Markham, Ashley Sidor  
 Speaker: Brian Overby  
 Timestamp: 7:07
@@ -89,7 +89,7 @@ Confirms a non-negotiable platform constraint: closing/force-closing the app sto
 
 Date: Nov 4, 2025  
 Meeting: Testing feedback / edge cases  
-Source File: `source/transcripts/2025-11/GMT20251104-200328_Recording_otter_ai.txt`  
+Source File: [GMT20251104-200328_Recording_otter_ai.txt](../source/transcripts/2025-11/GMT20251104-200328_Recording_otter_ai.txt)  
 Speaker: Brian Overby  
 Timestamp: 26:02
 
@@ -105,7 +105,7 @@ Distinguishes normal multitasking (backgrounding) from force closing, and explic
 
 Date: Nov 4, 2025  
 Meeting: Testing feedback / edge cases  
-Source File: `source/transcripts/2025-11/GMT20251104-200328_Recording_otter_ai.txt`  
+Source File: [GMT20251104-200328_Recording_otter_ai.txt](../source/transcripts/2025-11/GMT20251104-200328_Recording_otter_ai.txt)  
 Speaker: Ashley Sidor & Brian Overby  
 Timestamp: 29:28
 
@@ -121,7 +121,7 @@ Clear Q&A stating that force closing ends continuity (“it’s done”) and cre
 
 Date: Dec 18, 2025  
 Meeting: Testing feedback / edge cases  
-Source File: `source/transcripts/2025-12/GMT20251218-201707_Recording_otter_ai.txt`  
+Source File: [GMT20251218-201707_Recording_otter_ai.txt](../source/transcripts/2025-12/GMT20251218-201707_Recording_otter_ai.txt)  
 Attendees: Brian Overby, Joe Morales, Amanda Markham, Ashley Sidor  
 Speaker: Brian Overby  
 Timestamp: 37:56
@@ -138,7 +138,7 @@ Links the “reset button” workflow directly to an “accidentally force close
 
 Date: Dec 18, 2025  
 Meeting: Testing feedback / edge cases  
-Source File: `source/transcripts/2025-12/GMT20251218-201707_Recording_otter_ai.txt`  
+Source File: [GMT20251218-201707_Recording_otter_ai.txt](../source/transcripts/2025-12/GMT20251218-201707_Recording_otter_ai.txt)  
 Attendees: Brian Overby, Joe Morales, Amanda Markham, Ashley Sidor  
 Speaker: Brian Overby  
 Timestamp: 38:02
@@ -155,7 +155,7 @@ Describes the intended recovery behavior: an internal reset enables an officer t
 
 Date: Oct 22, 2025  
 Meeting: Testing / app behavior discussion  
-Source File: `source/transcripts/2025-10/GMT20251022-200300_Recording_otter_ai.txt`  
+Source File: [GMT20251022-200300_Recording_otter_ai.txt](../source/transcripts/2025-10/GMT20251022-200300_Recording_otter_ai.txt)  
 Speaker: Jake Johnson  
 Timestamp: 2:08
 

@@ -4,7 +4,7 @@
 
 Date: May 5, 2025  
 Meeting: Requirements document walkthrough / planning  
-Source File: `source/transcripts/2025-05/GMT20250505-180246_Recording_otter_ai.txt`  
+Source File: [GMT20250505-180246_Recording_otter_ai.txt](../source/transcripts/2025-05/GMT20250505-180246_Recording_otter_ai.txt)  
 Speaker: Speaker 1  
 Timestamp: 1:35
 
@@ -20,7 +20,7 @@ Establishes that the client team is explicitly seeking a feasibility-based timel
 
 Date: May 5, 2025  
 Meeting: Requirements document walkthrough / planning  
-Source File: `source/transcripts/2025-05/GMT20250505-180246_Recording_otter_ai.txt`  
+Source File: [GMT20250505-180246_Recording_otter_ai.txt](../source/transcripts/2025-05/GMT20250505-180246_Recording_otter_ai.txt)  
 Speaker: Speaker 2  
 Timestamp: 38:32
 
@@ -36,7 +36,7 @@ Shows the development team is proposing MVP/phasing because attempting the entir
 
 Date: May 5, 2025  
 Meeting: Requirements document walkthrough / planning  
-Source File: `source/transcripts/2025-05/GMT20250505-180246_Recording_otter_ai.txt`  
+Source File: [GMT20250505-180246_Recording_otter_ai.txt](../source/transcripts/2025-05/GMT20250505-180246_Recording_otter_ai.txt)  
 Speaker: Speaker 3  
 Timestamp: 43:05
 
@@ -52,7 +52,7 @@ Documents a specific scope boundary: moving functionality from FileMaker into th
 
 Date: Jan 13, 2026  
 Meeting / Source: Email  
-Source File: `source/emails/brian_overby_2026_01_13.txt`  
+Source File: [brian_overby_2026_01_13.txt](../source/emails/brian_overby_2026_01_13.txt)  
 Author: Brian Overby (to Joe Morales)
 
 Quote
@@ -69,7 +69,7 @@ Explicitly states that the native app project had no formal proposal or estimate
 
 Date: May 20, 2025  
 Meeting: Planning / native app discussion  
-Source File: `source/transcripts/2025-05/GMT20250520-200331_Recording_otter_ai.txt`  
+Source File: [GMT20250520-200331_Recording_otter_ai.txt](../source/transcripts/2025-05/GMT20250520-200331_Recording_otter_ai.txt)  
 Speaker: Speaker 1 (Joe Morales)  
 Timestamp: 13:52
 
@@ -85,7 +85,7 @@ Client (Joe) explicitly frames Bonnie’s expectations as “quick and fast” a
 
 Date: May 27, 2025  
 Meeting: Native app direction / proposal discussion  
-Source File: `source/transcripts/2025-05/GMT20250527-200227_Recording_otter_ai.txt`  
+Source File: [GMT20250527-200227_Recording_otter_ai.txt](../source/transcripts/2025-05/GMT20250527-200227_Recording_otter_ai.txt)  
 Speaker: Speaker 2 (Brian)  
 Timestamp: 53:39, 54:15
 
@@ -101,7 +101,7 @@ Development team offers a choice: quicker “scope with broader numbers” versu
 
 Date: May 5, 2025  
 Meeting: Requirements document walkthrough / planning  
-Source File: `source/transcripts/2025-05/GMT20250505-180246_Recording_otter_ai.txt`  
+Source File: [GMT20250505-180246_Recording_otter_ai.txt](../source/transcripts/2025-05/GMT20250505-180246_Recording_otter_ai.txt)  
 Speaker: Speaker 1  
 Timestamp: 1:35
 
@@ -117,7 +117,7 @@ Client frames the engagement around being “more cognizant of time” and frequ
 
 Date: May 27, 2025  
 Meeting: Native app direction / proposal discussion  
-Source File: `source/transcripts/2025-05/GMT20250527-200227_Recording_otter_ai.txt`  
+Source File: [GMT20250527-200227_Recording_otter_ai.txt](../source/transcripts/2025-05/GMT20250527-200227_Recording_otter_ai.txt)  
 Speaker: Speaker 1 (Joe Morales)  
 Timestamp: 53:01
 
