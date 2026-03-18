@@ -15,9 +15,9 @@ Key quotes:
 Finding: Location permissions were explicitly discussed as iOS **“Always Allow”** requirements (including the system permission UI), and onboarding was tied to enabling location so the app could function as expected.
 Key quotes:
 
+- Date: June 25, 2025 — Speaker: Jake Johnson — Timestamp: 6:15 — Quote: “we really need them to enable location… otherwise the app is not going to function.” ([`LOCATION-002`](../evidence/location_permissions.md#location-002))
 - Date: June 25, 2025 — Speaker: Jake Johnson — Timestamp: 6:15 — Quote: “always allow… location access has been enabled right.” ([`LOCATION-001`](../evidence/location_permissions.md#location-001))
 - Date: June 25, 2025 — Speaker: Jake Johnson — Timestamp: 7:24 — Quote: “Allow while using, and then always allow… now is enabled.” ([`LOCATION-004`](../evidence/location_permissions.md#location-004))
-- Date: June 25, 2025 — Speaker: Jake Johnson — Timestamp: 6:15 — Quote: “we really need them to enable location… otherwise the app is not going to function.” ([`LOCATION-002`](../evidence/location_permissions.md#location-002))
 
 ### Claim 3: Client sentiment around launch and right after was unfavorable
 
