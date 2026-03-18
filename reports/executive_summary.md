@@ -31,7 +31,7 @@ Key quotes:
 - Date: Jan 29, 2026 — Author: Bonnie Lucas — Quote: “We will connect all the moving parts soon!” ([`SENTIMENT-001`](../evidence/client_sentiment.md#sentiment-001))
   Email: [`bonnie_lucas_amanda_markham_brian_overby_2026_01_29.txt`](../source/emails/bonnie_lucas_2026_01_29.md)
 - Date: Jan 29, 2026 — Author: Amanda Markham — Quote: “Congratulations, everyone!!” / “Looking forward to continuing this incredible collab!” ([`SENTIMENT-002`](../evidence/client_sentiment.md#sentiment-002))
-  Email: [`bonnie_lucas_amanda_markham_brian_overby_2026_01_29.txt`](../source/emails/bonnie_lucas_amanda_markham_brian_overby_2026_01_29.txt)
+  Email: [`amanda_markham_2026_01_29.txt`](../source/emails/amanda_markham_2026_01_29.txt)
 - Date: Jan 16, 2026 — Author: Bonnie Lucas — Quote: “awesome job people!” ([`SENTIMENT-003`](../evidence/client_sentiment.md#sentiment-003))
   Email: [`bonnie_lucas_brian_overby_2026_01_16.txt`](../source/emails/bonnie_lucas_brian_overby_2026_01_16.txt)
 - Date: Mar 12, 2026 — Author: Joe Morales — Quote: “You’re the best! Thank you!” ([`SENTIMENT-011`](../evidence/client_sentiment.md#sentiment-011))
