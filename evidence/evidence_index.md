@@ -9,8 +9,8 @@ This index lists extracted, timestamped, verbatim evidence entries and links to 
 - [REHYDRATION-003](./rehydration.md#rehydration-003) — Dec 30, 2025 — Rehydration work planned for **after** go-live.
 - [REHYDRATION-004](./rehydration.md#rehydration-004) — Feb 24, 2026 — TestFlight: rehydration works even if app is closed.
 - [REHYDRATION-005](./rehydration.md#rehydration-005) — Feb 24, 2026 — TestFlight: “close app/open it up” failures not observed.
-- [REHYDRATION-006](./rehydration.md#rehydration-006) — Feb 17, 2026 — Plan to push rehydration updates to TestFlight for client validation.
-- [REHYDRATION-007](./rehydration.md#rehydration-007) — Feb 24, 2026 — Ashley: clocking in/out “seems to be going well.”
+- [REHYDRATION-006](./rehydration.md#rehydration-006) — Feb 24, 2026 — Ashley: clocking in/out “seems to be going well.”
+- [REHYDRATION-007](./rehydration.md#rehydration-007) — Feb 17, 2026 — Plan to push rehydration updates to TestFlight for client validation.
 - [REHYDRATION-008](./rehydration.md#rehydration-008) — Dec 18, 2025 — Closing app stops tracking; “nothing we can do about that”.
 - [REHYDRATION-009](./rehydration.md#rehydration-009) — Nov 4, 2025 — Force close doesn’t resume: “it’s done”; clock out in FileMaker.
 - [REHYDRATION-010](./rehydration.md#rehydration-010) — Dec 30, 2025 — Force quit stops location collection.

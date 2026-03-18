@@ -87,22 +87,6 @@ Captures that, during TestFlight validation, the team is specifically listening 
 
 ## REHYDRATION-006
 
-Date: Feb 17, 2026  
-Meeting: Rehydration progress + TestFlight planning  
-Source File: [GMT20260217-200229_Recording_otter_ai.txt](../source/transcripts/2026-02/GMT20260217-200229_Recording_otter_ai.txt)  
-Speaker: Unknown Speaker  
-Timestamp: 17:29–18:13
-
-Quote
-
-> "we're still thinking the end of the week, right? Jake, … probably by the end of the week, we'll work on being able to get this up to test flight for you guys. … we want to make sure we get it on test flight and and allow them to put it through its paces."
-
-Significance
-
-Shows the team’s plan to deliver the rehydration work to the client via TestFlight for real-world validation (“put it through its paces”), i.e., the mechanism for client acceptance/testing of the rehydration behavior discussed in December.
-
-## REHYDRATION-007
-
 Date: Feb 24, 2026  
 Meeting: TestFlight validation + rehydration testing  
 Source File: [GMT20260224-200446_Recording_otter_ai.txt](../source/transcripts/2026-02/GMT20260224-200446_Recording_otter_ai.txt)  
@@ -116,6 +100,22 @@ Quote
 Significance
 
 Corroborates `REHYDRATION-005` from the client side during TestFlight testing: beyond a specific reported error, Ashley reports clock in/out behavior “going well,” consistent with rehydration-related stability in the distributed build.
+
+## REHYDRATION-007
+
+Date: Feb 17, 2026  
+Meeting: Rehydration progress + TestFlight planning  
+Source File: [GMT20260217-200229_Recording_otter_ai.txt](../source/transcripts/2026-02/GMT20260217-200229_Recording_otter_ai.txt)  
+Speaker: Unknown Speaker  
+Timestamp: 17:29–18:13
+
+Quote
+
+> "we're still thinking the end of the week, right? Jake, … probably by the end of the week, we'll work on being able to get this up to test flight for you guys. … we want to make sure we get it on test flight and and allow them to put it through its paces."
+
+Significance
+
+Shows the team’s plan to deliver the rehydration work to the client via TestFlight for real-world validation (“put it through its paces”), i.e., the mechanism for client acceptance/testing of the rehydration behavior discussed in December.
 
 ## REHYDRATION-008
 
